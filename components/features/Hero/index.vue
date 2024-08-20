@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-  <div class="bg-navbar-color w-full h-[50rem] flex flex-row pt-16 justify-evenly absolute">
+  <div class="bg-navbar-color w-full  flex flex-row pt-16 justify-evenly ">
     <div class="ml-20 mt-12 flex-1">
       <h1 class="uppercase font-[600] text-[80px] w-[60rem] font-playfairDisplay">
         Creating your dream outdoor space with
@@ -31,8 +31,10 @@ export default {
 
     <div class="mr-28 flex flex-row ">
       <img :src="garden" alt="garden image" class="w-[49rem] relative "/>
-      <img :src="chat" alt="chat icon" class="w-[60px] h-[60px]  absolute right-20 top-[700px] cursor-pointer  ">
+      <img :src="chat" alt="chat icon" class="w-[60px] h-[60px]  absolute right-20 top-[800px] cursor-pointer  ">
     </div>
+
   </div>
+
 </template>
 

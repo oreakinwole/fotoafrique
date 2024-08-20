@@ -19,7 +19,6 @@ export default {
       bagIcon,
       isOpen: false,
       selectedOption: 'Select',
-      underlineText: '',
     };
   },
   props: {
@@ -47,7 +46,7 @@ export default {
   <div class="flex flex-col gap-8  bg-navbar-color font-inter">
 
     <!-- first layout -->
-    <div class="flex flex-row bg-black items-center justify-center relative">
+    <div class="flex flex-row bg-black items-center justify-center relative h-[40px]">
       <h4 class="text-white text-center uppercase cursor-pointer">Schedule Your Free Consultation Today! Click Here</h4>
       <img :src="closeIcon" alt="close png" class="cursor-pointer absolute right-24" width="20">
     </div>
@@ -95,7 +94,7 @@ export default {
       <div class="flex flex-row items-center gap-20 uppercase">
         <p :class="{'cursor-pointer' : true, 'underline-black': underlineText === 'Home'}">Home</p>
         <select :class="{'bg-navbar-color uppercase cursor-pointer': true, 'underline-black': underlineText === 'Select'}">
-          <option>Select</option>
+          <option>Services</option>
         </select>
         <p :class="{'cursor-pointer' : true,'underline-black': underlineText === 'Gallery'}">Gallery</p>
         <p :class="{'cursor-pointer' : true,'underline-black': underlineText === 'Contact'}">Contact</p>

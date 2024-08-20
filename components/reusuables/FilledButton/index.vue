@@ -4,15 +4,18 @@ export default {
   props : {
     text : {
       default : "",
-      type : String
+      type : String,
+      required : true
     },
     backgroundColor : {
       type : String,
-      default: ''
+      default: '',
+      required: true
     },
     textColor : {
       type : String,
-      default : ''
+      default : '',
+      required : true
     }
   }
 }
