@@ -81,13 +81,13 @@ export default {
     <div class="flex justify-center items-center">
       <div class="flex flex-row items-center gap-20 uppercase">
         <p :class="{'underline-black': underlineText === 'Home'}">Home</p>
-        <select class="bg-white uppercase">
+        <select :class="{'bg-white uppercase': true, 'underline-black': underlineText === 'Select'}">
           <option>Select</option>
         </select>
         <p :class="{'underline-black': underlineText === 'Gallery'}">Gallery</p>
         <p :class="{'underline-black': underlineText === 'Contact'}">Contact</p>
         <p :class="{'underline-black': underlineText === '3D Packages'}">3D Packages</p>
-        <select class="bg-white  uppercase">
+        <select :class="{'bg-white uppercase': true, 'underline-black': underlineText === 'More'}">
           <option>More</option>
         </select>
       </div>
@@ -97,6 +97,7 @@ export default {
 </template>
 
 <style scoped>
+
 .underline-black {
   position: relative;
   display: inline-block;
