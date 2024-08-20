@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import NavBar from "~/component/reusuables/NavBar/index.vue";
+import NavBar from "~/components/reusuables/NavBar/index.vue";
 
 </script>
 
 <template>
-  <NavBar/>
+  <NavBar underlineText="Home" />
 <!--  <div class="flex items-center justify-center">-->
 <!--    <p class="text-lg text-white bg-amber-950">html here</p>-->
 <!--  </div>-->
