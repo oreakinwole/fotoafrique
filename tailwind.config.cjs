@@ -24,6 +24,7 @@ module.exports = {
         secondary: "#7E43AD",
         "body-color": "#462C64",
         "gray-color": "",
+        "navbar-color" : "#F8f5F3",
       },
       zIndex: {
         60: "60",
@@ -31,6 +32,10 @@ module.exports = {
       },
       screens: {
         xs: "400px",
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        playfairDisplay : ['Playfair Display', 'serif']
       },
     },
   },
