@@ -7,8 +7,10 @@ import modernYardzIcon from "public/images/navbar/imgs/logo.png"
 import  searchIcon from "public/images/navbar/icons/Search.png"
 import bagIcon from "public/images/navbar/icons/bag.png"
 import dummyProfileIcon from "public/images/navbar/icons/Icon Frame.png"
+import PopUpModal from "~/components/reusuables/PopUpModal/index.vue";
 export default {
   name : 'NavBar',
+  components: {PopUpModal},
   data(){
     return {
       closeIcon,
@@ -43,20 +45,17 @@ export default {
 
 <template>
 
-  <div class="flex flex-col gap-8  bg-navbar-color font-inter">
+  <div class="flex flex-col   bg-navbar-color font-inter">
 
     <!-- first layout -->
-    <div class="flex flex-row bg-black items-center justify-center relative h-[40px]">
-      <h4 class="text-white text-center uppercase cursor-pointer">Schedule Your Free Consultation Today! Click Here</h4>
-      <img :src="closeIcon" alt="close png" class="cursor-pointer absolute right-24" width="20">
-    </div>
+   <PopUpModal text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
 
 
 
 
     <!-- second layout  -->
 
-    <div class="flex flex-row  justify-between">
+    <div class="flex flex-row mt-10  justify-between">
 
       <div class="flex flex-row gap-14 uppercase ml-24">
         <p class="cursor-pointer">About</p>
@@ -90,7 +89,7 @@ export default {
 
     <!--third layout -->
 
-    <div class="flex justify-center items-center border-b border-black">
+    <div class="flex justify-center items-center border-b border-black mt-8">
       <div class="flex flex-row items-center gap-20 uppercase">
         <p :class="{'cursor-pointer' : true, 'underline-black': underlineText === 'Home'}">Home</p>
         <select :class="{'bg-navbar-color uppercase cursor-pointer': true, 'underline-black': underlineText === 'Select'}">

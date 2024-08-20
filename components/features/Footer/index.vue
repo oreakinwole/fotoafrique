@@ -107,11 +107,12 @@ export default {
           <p class="border border-[#665244]  px-[3.8rem] py-5 border-t-0 cursor-pointer">Twitter</p>
         </div>
 
-        <div class="py-16 ml-12">
-          <select class="bg-black py-2">
-            <option class="">United States</option>
+        <div class="py-16 ml-16">
+          <select class="bg-black py-2 font-inter text-[14px] font-[300]">
+            <option class="">🇺🇸 &nbsp;&nbsp; United States</option>
           </select>
         </div>
+
 
       </div>
 
