@@ -51,7 +51,7 @@ export default {
       <div class="flex flex-row justify-between mt-28 font-inter text-[#D0C2B0] px-32  ">
 
         <div class="border border-[#665244]  border-l-0 pt-10 pb-28 w-[150rem]  pl-10">
-          <h4 class="uppercase">Subscribe to receive grape news & offers</h4>
+          <h4 class="uppercase">Subscribe to receive ModernYardz news & offers</h4>
 
           <div class="bg-[#523825] w-[480px] h-[55px] mt-5 pl-5">
             <input type="email" placeholder="Enter your email" class="bg-[#523825] w-[410px] h-[55px] outline-none text-[#A89C93] text-[16px] placeholder-[16px] placeholder-[#A89C93]"/>
@@ -152,7 +152,7 @@ export default {
     <!-- fourth layout -->
     <div class="text-[#D0C2B0] flex flex-row justify-between mt-10 px-72 text-[12px] font-inter font-[400]" >
 
-      <p>© 2021 MODERNYARDZ.com. All rights reserved.</p>
+      <p>© 2024 MODERNYARDZ.com. All rights reserved.</p>
       <p>Privacy Policy | Terms of Use</p>
 
     </div>

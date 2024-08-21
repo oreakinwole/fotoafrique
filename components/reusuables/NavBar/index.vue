@@ -45,7 +45,7 @@ export default {
 
 <template>
 
-  <div class="flex flex-col   bg-navbar-color font-inter">
+  <div class="flex flex-col   bg-navbar-color font-inter fixed w-full z-10">
 
     <!-- first layout -->
    <PopUpModal text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
@@ -111,7 +111,7 @@ export default {
             </svg>
           </button>
 
-          <div v-if="isOpen" class="absolute left-[-61rem] z-10 mt-1 w-[93rem] origin-top-right bg-navbar-color border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px]">
+          <div v-if="isOpen" class="absolute left-[-61rem] z-10 mt-[1px] w-[93rem] origin-top-right bg-navbar-color border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px]">
 
             <!-- Dropdown content -->
             <div class="py-1 flex flex-row gap-10 px-10 mt-5 mb-5">
