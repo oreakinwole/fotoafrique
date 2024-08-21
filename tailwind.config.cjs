@@ -37,6 +37,10 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
         playfairDisplay : ['Playfair Display', 'serif']
       },
+      boxShadow: {
+        'custom-light': '0 2px 4px rgba(0, 0, 0, 0.1)',
+        'custom-dark': '0 4px 6px rgba(0, 0, 0, 0.5)',
+      },
     },
   },
 };
