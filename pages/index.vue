@@ -2,12 +2,14 @@
 import NavBar from "~/components/reusuables/NavBar/index.vue";
 import Hero from "~/components/features/Hero/index.vue";
 import Footer from "~/components/features/Footer/index.vue";
+import HomeSecondSegment from "~/components/features/HomeSecondSegment/index.vue";
 
 </script>
 
 <template>
   <NavBar underlineText="Home" />
   <Hero/>
+  <HomeSecondSegment/>
   <Footer/>
 </template>
 
