@@ -31,15 +31,15 @@ export default {
 
 <template>
 
-  <div class="py-52 px-20 flex flex-row justify-between font-inter gap-10">
+  <div class="py-52 px-28 flex flex-row justify-between font-inter ">
 
-    <div>
+    <div class="">
       <img :src="img1" alt="house with pool" class="w-[653px] h-[653px]"/>
     </div>
 
     <div>
        <div>
-         <h1 class="font-[400] text-[46px] w-[60rem] mr-10"> WE STRIVE TO ENHANCE THE SYNERGY BETWEEN AESTHETICS, STRUCTURE, AND ENVIRONMENTAL DESIGN.</h1>
+         <h1 class="font-[400] text-[46px] w-[60rem] mr-14"> WE STRIVE TO ENHANCE THE SYNERGY BETWEEN AESTHETICS, STRUCTURE, AND ENVIRONMENTAL DESIGN.</h1>
        </div>
 
       <div class="ml-[43rem] mt-6">

@@ -37,7 +37,7 @@ export default {
 
     <div class="relative flex flex-1 justify-center items-center  lg:mt-0 lg:ml-[59rem] ">
       <img :src="garden" alt="garden image" class="w-full lg:w-auto max-w-3xl" />
-      <img :src="chat" alt="chat icon" class="w-14 h-14  right-4 bottom-4 lg:right-20 lg:bottom-10 cursor-pointer fixed" />
+      <img :src="chat" alt="chat icon" class="w-[77.63px] h-[77.63px]  right-4 bottom-4 lg:right-20 lg:bottom-10 cursor-pointer fixed" />
     </div>
   </div>
 </template>

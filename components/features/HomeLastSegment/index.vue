@@ -3,7 +3,12 @@ import house from "public/images/homelastsegment/imgs/house.png"
 import icon1 from "public/images/homelastsegment/icons/Rectangle 263.png"
 import icon2 from "public/images/homelastsegment/icons/Rectangle 427.png"
 import OutlinedButton from "~/components/reusuables/OutlinedButton/index.vue";
-import blueHouse from "/public/images/homelastsegment/imgs/Mask group(2).png"
+import blueHouse from "/public/images/homelastsegment/imgs/Mask group(2).png";
+import instagram from  "/public/images/homelastsegment/icons/ant-design_instagram-filled.png";
+import image1 from "public/images/homelastsegment/imgs/Image 1.png";
+import image2 from "public/images/homelastsegment/imgs/Image 2.png";
+import image3 from "public/images/homelastsegment/imgs/Image 3.png";
+import image4 from "public/images/homelastsegment/imgs/Image 4.png"
 export default {
   name : 'HomeLastSegment',
   components: {OutlinedButton},
@@ -12,7 +17,12 @@ export default {
       house,
       icon1,
       icon2,
-      blueHouse
+      blueHouse,
+      instagram,
+      image1,
+      image2,
+      image3,
+      image4
     }
   }
 }
@@ -62,10 +72,35 @@ export default {
   </div>
 
 
-  <div style="background-image: url('public/images/homelastsegment/imgs/Mask group(2).png'); background-size: cover; background-position: center; height: 500px; width: 100%">
+ <div class="pb-72">
+   <img :src="blueHouse" alt="blue house"/>
+   <div class="mt-[-37rem]">
+     <h3 class="text-white ml-20 flex flex-col font-playfairDisplay font-[600] text-[100px]">Creating curb appeal <span>One home at a time</span></h3>
+   </div>
+
+ </div>
+
+
+<div>
+  <div class="flex flex-row justify-between px-28 py-28">
+    <p class="text-black font-[600] text-[32px]">#modernyardz</p>
+
+    <div class="flex flex-row gap-2">
+      <img :src="instagram" alt="instagram icon" class="w-[24px] h-[24px]">
+      <p class="uppercase font-inter font-[400] text-[16px] text-[#665244]">Follow us on instagram</p>
+    </div>
+
   </div>
 
 
+  <div class="flex flex-row  justify-evenly px-10 pb-44">
+    <img :src="image1" alt="image1" class="w-[367px] h-[392px]">
+    <img :src="image2" alt="image2" class="w-[366px] h-[392px]">
+    <img :src="image3" alt="image3" class="w-[366px] h-[392px]">
+    <img :src="image4" alt="image4" class="w-[366px] h-[392px]">
+  </div>
+
+</div>
 
 
 
