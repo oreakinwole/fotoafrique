@@ -85,7 +85,7 @@ export default {
   <div class="flex flex-row justify-between px-28 py-28">
     <p class="text-black font-[600] text-[32px]">#modernyardz</p>
 
-    <div class="flex flex-row gap-2">
+    <div class="flex flex-row gap-2 cursor-pointer">
       <img :src="instagram" alt="instagram icon" class="w-[24px] h-[24px]">
       <p class="uppercase font-inter font-[400] text-[16px] text-[#665244]">Follow us on instagram</p>
     </div>
