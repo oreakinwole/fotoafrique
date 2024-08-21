@@ -19,7 +19,7 @@ export default {
 
 <template>
 
-  <div class="py-52 px-32 flex flex-row justify-between font-inter gap-10">
+  <div class="py-52 px-20 flex flex-row justify-between font-inter gap-10">
 
     <div>
       <img :src="img1" alt="house with pool" class="w-[653px] h-[653px]"/>
