@@ -1,3 +1,4 @@
+
 <script>
 import closeIcon from "public/images/navbar/icons/Close.png"
 import phoneIcon from "public/images/navbar/icons/call.png"
@@ -27,6 +28,7 @@ export default {
       isServiceOpen: false,
       isMoreOpen: false,
       selectedOption: 'Select',
+      activeDropdown: null,
     };
   },
   props: {
@@ -37,22 +39,46 @@ export default {
   },
   methods: {
     toggleServiceDropdown() {
-      this.isServiceOpen = !this.isServiceOpen;
-      if (this.isServiceOpen) {
+      if (this.activeDropdown === 'service') {
+        this.isServiceOpen = false;
+        this.activeDropdown = null;
+      } else {
+        this.isServiceOpen = !this.isServiceOpen;
         this.isMoreOpen = false;
+        this.activeDropdown = 'service';
       }
+      this.updateUnderline();
     },
     toggleMoreDropdown() {
-      this.isMoreOpen = !this.isMoreOpen;
-      if (this.isMoreOpen) {
+      if (this.activeDropdown === 'more') {
+        this.isMoreOpen = false;
+        this.activeDropdown = null;
+      } else {
+        this.isMoreOpen = !this.isMoreOpen;
         this.isServiceOpen = false;
+        this.activeDropdown = 'more';
       }
+      this.updateUnderline();
     },
     selectOption(option) {
       this.selectedOption = option;
       this.underlineText = option;
       this.isServiceOpen = false;
       this.isMoreOpen = false;
+      this.activeDropdown = null;
+      this.updateUnderline();
+    },
+    updateUnderline() {
+      if (this.activeDropdown === 'service') {
+        this.underlineText = 'Service';
+      } else if (this.activeDropdown === 'more') {
+        this.underlineText = 'More';
+      } else {
+        this.underlineText = '';
+      }
+    },
+    getArrowDirection(isOpen) {
+      return isOpen ? 'rotate-180' : '';
     }
   }
 }
@@ -76,7 +102,7 @@ export default {
       </div>
 
       <div class="">
-        <img :src="modernYardzIcon" alt="modern yardz logo" width="100" />
+        <img :src="modernYardzIcon" alt="modern yardz logo" width="100" class="mr-20" />
       </div>
 
       <div class="flex flex-row gap-20 mr-24">
@@ -96,29 +122,27 @@ export default {
     <div class="flex justify-center items-center border-b border-black mt-8">
       <div class="flex flex-row items-center gap-20 uppercase">
 
-        <p :class="{'cursor-pointer' : true, 'underline-black': underlineText === 'Home'}">Home</p>
+        <p :class="{'cursor-pointer' : true, 'underline-black': underlineText === 'Home' && activeDropdown === null}">Home</p>
 
-
-
-        <!--Service select button -->
+        <!-- Service select button -->
         <div class="relative inline-block text-left" @click="toggleServiceDropdown">
           <!-- Selected Option -->
-          <button class="bg-navbar-color uppercase  inline-flex items-center justify-between w-full p-2"
-                  :class="{'underline-black': underlineText === 'Service'}">
+          <button class="bg-navbar-color uppercase inline-flex items-center justify-between w-full p-2"
+                  :class="{'underline-black': activeDropdown === 'service'}">
             <span>Services</span>
-            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20">
+            <svg :class="['w-5 h-5 ml-2 -mr-1', getArrowDirection(isServiceOpen)]" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.23 8.29a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
             </svg>
           </button>
 
-          <div v-if="isServiceOpen" class="absolute left-[-33rem] z-10 mt-[1px] w-[96rem] origin-top-right bg-navbar-color border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px]">
+          <div v-if="isServiceOpen" class="absolute left-[-33rem] z-10 mt-[1px] w-[96rem] origin-top-right bg-navbar-color border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px] shadow-custom-light space-y-4">
             <!-- Dropdown content -->
             <div class="py-1 flex flex-row gap-10 px-10 mt-5 mb-5">
               <!-- first container -->
-              <button @click="selectOption('More')" class="block w-full text-left px-4 py-2 border border-solid border-[#E4DBD1] h-[251px] rounded-[25px]">
-                <div class="ml-3 mt-2">
-                  <p class="font-[600] text-[16px] text-black">Landscape Design SD</p>
-                  <p class="font-[400] text-[14px] text-[#A89C93] mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button @click="selectOption('More')" class="block w-full text-left px-4 py-2 border border-solid border-[#E4DBD1] h-[251px] rounded-[25px] group hover:bg-black">
+                <div class="ml-3 mt-2 text-black group-hover:text-white">
+                  <p class="font-[600] text-[16px]">Landscape Design SD</p>
+                  <p class="font-[400] text-[14px] text-[#A89C93] mt-1 group-hover:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="w-[300px] h-[154px] mt-7 ml-20 bg-[#A89C93] rounded-tl-[20px] rounded-tr-[20px] custom-cursor-button">
                   <img :src="image1" alt="first image" class="">
@@ -126,69 +150,54 @@ export default {
               </button>
 
               <!-- second container -->
-              <button @click="selectOption('More')" class="block w-full text-left px-4 py-2 border border-solid border-[#E4DBD1] h-[251px] rounded-[25px]">
-                <div class="ml-3 mt-2">
-                  <p class="font-[600] text-[16px] text-black">Pavers San Diego</p>
-                  <p class="font-[400] text-[14px] text-[#A89C93] mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button @click="selectOption('More')" class="block w-full text-left px-4 py-2 border border-solid border-[#E4DBD1] h-[251px] rounded-[25px] group hover:bg-black">
+                <div class="ml-3 mt-2 group-hover:text-white">
+                  <p class="font-[600] text-[16px] text-black group-hover:text-white">Pavers San Diego</p>
+                  <p class="font-[400] text-[14px] text-[#A89C93] mt-1 group-hover:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="w-[300px] h-[154px] mt-7 ml-20 bg-[#665244] rounded-tl-[20px] rounded-tr-[20px] ">
-                  <img :src="image2" alt="second image">
+                  <img :src="image2" alt="second image" class="cursor-custom-cursor">
                 </div>
               </button>
 
               <!-- third container -->
               <div @click="selectOption('More')" class="block w-full text-left  h-[251px] rounded-[25px]">
                 <div class="">
-
-
                   <div class="flex flex-row justify-between font-inter px-6 ml-[-18px]">
-
                     <div class="flex flex-col gap-4">
                       <h4 class="text-[black] font-[600] text-[16px] mt-4">More Services</h4>
-
-                        <p class="font-[400] text-[15px] cursor-pointer">Pools and Spas</p>
-                        <p class="font-[400] text-[15px] cursor-pointer">Outdoor Kitchens</p>
-                        <p class="font-[400] text-[15px] cursor-pointer">Concrete San Diego</p>
-                        <p class="font-[400] text-[15px] cursor-pointer">Artificial Turf San Diego</p>
-                        <p class="font-[400] text-[15px] cursor-pointer">Patio Covers and Pergolas</p>
-
-
+                      <p class="font-[400] text-[15px] cursor-pointer">Pools and Spas</p>
+                      <p class="font-[400] text-[15px] cursor-pointer">Outdoor Kitchens</p>
+                      <p class="font-[400] text-[15px] cursor-pointer">Concrete San Diego</p>
+                      <p class="font-[400] text-[15px] cursor-pointer">Artificial Turf San Diego</p>
+                      <p class="font-[400] text-[15px] cursor-pointer">Patio Covers and Pergolas</p>
                     </div>
-
-                    <div class=" mt-[50px] ">
+                    <div class="mt-[50px]">
                       <img :src="allButton" alt="arrow" class="h-[105px] w-[105px] cursor-pointer">
                     </div>
-
-
                   </div>
-
                 </div>
-
               </div>
             </div>
           </div>
         </div>
 
+        <p :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Gallery' && activeDropdown === null}">Gallery</p>
+        <p :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Contact' && activeDropdown === null}">Contact</p>
+        <p :class="{'cursor-pointer': true, 'underline-black': underlineText === '3D Packages' && activeDropdown === null}">3D Packages</p>
 
-
-
-        <p :class="{'cursor-pointer' : true,'underline-black': underlineText === 'Gallery'}">Gallery</p>
-        <p :class="{'cursor-pointer' : true,'underline-black': underlineText === 'Contact'}">Contact</p>
-        <p :class="{'cursor-pointer' : true,'underline-black': underlineText === '3D Packages'}">3D Packages</p>
-
-
-        <!--More select button -->
+        <!-- More select button -->
         <div class="relative inline-block text-left" @click="toggleMoreDropdown">
           <!-- Selected Option -->
           <button class="bg-navbar-color uppercase cursor-pointer inline-flex items-center justify-between w-full p-2"
-                  :class="{'underline-black': underlineText === 'More'}">
+                  :class="{'underline-black': activeDropdown === 'more'}">
             <span>More</span>
-            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20">
+            <svg :class="['w-5 h-5 ml-2 -mr-1', getArrowDirection(isMoreOpen)]" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.23 8.29a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
             </svg>
           </button>
 
-          <div v-if="isMoreOpen" class="absolute left-[-61rem] z-10 mt-[1px] w-[93rem] origin-top-right bg-navbar-color border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px]">
+          <div v-if="isMoreOpen" class="absolute left-[-61rem] z-10 mt-[1px] w-[93rem] origin-top-right bg-navbar-color border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px] shadow-custom-light space-y-4">
             <!-- Dropdown content -->
             <div class="py-1 flex flex-row gap-10 px-10 mt-5 mb-5">
               <!-- first container -->
@@ -221,14 +230,12 @@ export default {
           </div>
         </div>
 
-
-
-
-
       </div>
     </div>
   </div>
 </template>
+
+
 
 <style scoped>
 .underline-black{
@@ -236,10 +243,5 @@ export default {
   padding-bottom: 5px;
   padding-top: 8px;
 }
-
-.custom-cursor-button {
-  cursor: url('public/images/navbar/icons/Explore.png'), pointer;
-}
-
 
 </style>
