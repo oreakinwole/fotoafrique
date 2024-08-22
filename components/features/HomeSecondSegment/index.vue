@@ -8,6 +8,10 @@ import belgard from "public/images/homesecondsegment/icons/belgard.png"
 import orco from "public/images/homesecondsegment/icons/Orco.png"
 import techo from "public/images/homesecondsegment/icons/Techo bloc.png"
 import unilock from "public/images/homesecondsegment/icons/Unilock.png"
+import icon1 from "public/images/homelastsegment/icons/Rectangle 263.png"
+import icon2 from "public/images/homelastsegment/icons/Rectangle 427.png"
+import  house1 from  "public/images/homesecondsegment/imgs/house1.png"
+import  house2 from  "public/images/homesecondsegment/imgs/house2.png"
 
 export default {
   name : 'HomeSecondSegment',
@@ -21,7 +25,11 @@ export default {
       belgard,
       orco,
       techo,
-      unilock
+      unilock,
+      icon1,
+      icon2,
+      house1,
+      house2
     }
   }
 }
@@ -73,6 +81,67 @@ export default {
         <img :src="acher" alt="acher stone logo" class="w-[76px] h-[51px]"/>
       </div>
     </div>
+  </div>
+
+
+  <div>
+
+    <div>
+      <h2>Our Design Pro<Span>C</Span>ess</h2>
+      <div>
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="flex justify-center items-center text-center ">
+    <div class="font-playfairDisplay italic font-[600] text-[100px] flex flex-row gap-3">
+      <h1>The</h1>
+      <img :src="icon1" alt="icon 1" class="w-[240px] h-[128px]  mx-2"/>
+      <h1>Outdoor Oasis</h1>
+    </div>
+  </div>
+
+  <div class="flex justify-center items-center text-center ">
+    <div class="font-playfairDisplay italic font-[600] text-[100px] flex flex-row gap-3">
+      <h1>A Contemporary Yard Design for</h1>
+    </div>
+  </div>
+
+  <div class="flex justify-center items-center text-center">
+    <div  class="font-playfairDisplay italic font-[600] text-[100px] flex flex-row gap-3">
+      <h1>The Modern</h1>
+      <img :src="icon2" alt="icon 2" class="w-[256px] h-[128px] mx-2"/>
+      <h1>Lifestyle</h1>
+    </div>
+  </div>
+
+
+
+  <div class="flex flex-row justify-evenly mt-48 w-full bg-[#F8F5F3] pt-24 pb-24">
+
+    <div class="mt-44">
+      <img :src="house1" alt="house 1" class="w-[350px] h-[389px]"/>
+    </div>
+
+    <div class="text-center leading-[8rem]">
+      <p class="font-inter font-[400] text-[16px] uppercase">Shop By Category</p>
+      <h4 class="font-playfairDisplay font-[500] text-[60px] text-[#A89C93] cursor-pointer" >New Construction</h4>
+      <h4 class="font-playfairDisplay font-[500] text-[60px] text-black cursor-pointer">Home Design</h4>
+      <h4 class="font-playfairDisplay font-[500] text-[60px] text-[#A89C93] cursor-pointer">Pool Design</h4>
+      <h4 class="font-playfairDisplay font-[500] text-[60px] text-[#A89C93] cursor-pointer">Horticulture</h4>
+      <h4 class="font-playfairDisplay font-[500] text-[60px] text-[#A89C93] cursor-pointer">Outdoor Decor</h4>
+      <p class="underline font-[500] text-[16px] uppercase cursor-pointer">See More</p>
+    </div>
+
+    <div  class="mt-44">
+      <img :src="house2" alt="house 2" class="w-[350px] h-[389px]"/>
+    </div>
+
   </div>
 
 
