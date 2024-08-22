@@ -19,6 +19,7 @@
     "tailwindcss": "^3.3.1"
   },
   "dependencies": {
-    "ipx": "^3.0.1"
+    "ipx": "^3.0.1",
+    "vue-router": "^4.4.3"
   }
 }

@@ -10,6 +10,7 @@ import PopUpModal from "~/components/reusuables/PopUpModal/index.vue";
 import image1 from "public/images/navbar/imgs/Mask group(4).png"
 import image2 from "public/images/navbar/imgs/img.png"
 import allButton from "public/images/navbar/icons/See all button.png"
+import { useRouter } from 'vue-router';
 
 export default {
   name: 'NavBar',
@@ -30,6 +31,18 @@ export default {
       selectedOption: 'Select',
       activeDropdown: null,
     };
+  },
+  setup() {
+    const router = useRouter();
+
+    function navigateToServices() {
+      router.push('/services');
+    }
+
+    function navigateToHome() {
+      router.push('/home');
+    }
+    return { navigateToServices , navigateToHome };
   },
   props: {
     underlineText: {
@@ -122,18 +135,21 @@ export default {
     <div class="flex justify-center items-center border-b border-black mt-8">
       <div class="flex flex-row items-center gap-20 uppercase">
 
-        <p :class="{'cursor-pointer' : true, 'underline-black': underlineText === 'Home' && activeDropdown === null}">Home</p>
+        <p @click="navigateToHome" :class="{'cursor-pointer' : true, 'underline-black': underlineText === 'Home' && activeDropdown === null}">Home</p>
 
         <!-- Service select button -->
         <div class="relative inline-block text-left">
           <!-- Selected Option -->
-          <button class="bg-navbar-color uppercase inline-flex items-center justify-between w-full p-2"
+          <div class="bg-navbar-color uppercase inline-flex items-center justify-between w-full p-2"
                   :class="{'underline-black': activeDropdown === 'service'}">
-            <span>Services</span>
+            <div>
+              <span @click="navigateToServices" :class="{'cursor-pointer': true, 'underline-black2': underlineText === 'Services' && activeDropdown === null}">Services</span>
+
+            </div>
             <svg :class="['w-5 h-5 ml-2 -mr-1', getArrowDirection(isServiceOpen)]" fill="currentColor" viewBox="0 0 20 20" @click="toggleServiceDropdown">
               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.23 8.29a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
             </svg>
-          </button>
+          </div>
 
           <div v-if="isServiceOpen" class="absolute left-[-33rem] z-10 mt-[1px] w-[96rem] origin-top-right bg-navbar-color border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px] shadow-custom-light space-y-4">
             <!-- Dropdown content -->
@@ -185,6 +201,9 @@ export default {
         <p :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Gallery' && activeDropdown === null}">Gallery</p>
         <p :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Contact' && activeDropdown === null}">Contact</p>
         <p :class="{'cursor-pointer': true, 'underline-black': underlineText === '3D Packages' && activeDropdown === null}">3D Packages</p>
+
+
+
 
         <!-- More select button -->
         <div class="relative inline-block text-left" @click="toggleMoreDropdown">
@@ -243,5 +262,24 @@ export default {
   padding-bottom: 5px;
   padding-top: 8px;
 }
+.underline-black2 {
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 8px;
+}
+
+.underline-black2::after {
+  content: "";
+  display: block;
+  width: 150%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: -8px;
+}
+
+
+
 
 </style>
