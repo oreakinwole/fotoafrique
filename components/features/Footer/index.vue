@@ -26,7 +26,7 @@ export default {
 
 <template>
 
-  <div class=" w-full h-fit pb-12 bg-black text-white pt-20">
+  <footer class=" w-full h-fit pb-12 bg-black text-white pt-20">
 
     <!-- first layout -->
 
@@ -157,7 +157,7 @@ export default {
 
     </div>
 
-  </div>
+  </footer>
 
 </template>
 
