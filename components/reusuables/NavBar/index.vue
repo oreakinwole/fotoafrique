@@ -146,7 +146,7 @@ export default {
               <span @click="navigateToServices" :class="{'cursor-pointer': true, 'underline-black2': underlineText === 'Services' && activeDropdown === null}">Services</span>
 
             </div>
-            <svg :class="['w-5 h-5 ml-2 -mr-1', getArrowDirection(isServiceOpen)]" fill="currentColor" viewBox="0 0 20 20" @click="toggleServiceDropdown">
+            <svg :class="['w-5 h-5 ml-2 -mr-1', getArrowDirection(isServiceOpen)]" fill="currentColor" viewBox="0 0 20 20" @click="toggleServiceDropdown" class="cursor-pointer">
               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.23 8.29a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
             </svg>
           </div>

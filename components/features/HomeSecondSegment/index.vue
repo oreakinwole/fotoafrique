@@ -69,7 +69,7 @@ export default {
       </div>
     </div>
   </div>
-  <div class="mb-96 mt-16">
+  <div class="mb-80 mt-16">
     <p class="uppercase text-center font-inter font-[400] text-[16px]">Our Partners</p>
     <div class="flex justify-center mt-20">
       <div class="flex flex-row gap-20 border-t border-b border-[#A89C93] border-solid py-14 px-16">
@@ -84,13 +84,126 @@ export default {
   </div>
 
 
-  <div>
+  <div class="flex flex-row justify-between mb-24 px-32">
 
     <div>
-      <h2>Our Design Pro<Span>C</Span>ess</h2>
-      <div>
-        <p></p>
+      <h2 class="font-playfairDisplay font-[500] text-[60px]">Our Design Pro<Span class="font-imperial text-[80px] font-[400] text-[#A89C93]">C</Span>ess</h2>
+      <div class="mt-2">
+        <p class="font-inter font-[400] text-[16px] text-[#665244] w-[30rem]">Our design process is a collaborative journey, tailored to bring your unique outdoor space to life. From initial consultation to final installation, we guide you through:</p>
       </div>
+    </div>
+
+    <p class="text-[#665244] text-[16px] font-inter font-[400] w-[29rem] mt-[8rem]">Together, let's create a space that reflects your personality and enhances your lifestyle.</p>
+
+  </div>
+
+
+  <div class="flex flex-row justify-between px-32 mb-96">
+
+
+    <OutlinedButton
+        border-color="#000"
+        text-color="#000"
+        background-color="white"
+        text="SEE MORE"
+    />
+
+    <div class="flex flex-col mr-20">
+      <!-- upper container -->
+      <div class="flex flex-row ">
+
+        <div  class="w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4">
+          <div class="flex flex-row justify-between">
+            <h3 class="flex flex-col font-inter font-[700] text-[20px]">Free Design <span>Consultation</span></h3>
+            <p class="pt-1 text-[#A89C93] text-[16px] font-inter font-[400]">/01</p>
+          </div>
+
+          <div class="pt-5">
+            <p class="text-[#665244] w-[16rem] font-[400] text-[14px]">Embark on the transformation journey with a free design consultation.</p>
+          </div>
+
+          <div>
+            <p class="font-[300] text-[#A89C93] text-[27px] pt-[6rem] "> &#43;</p>
+          </div>
+        </div>
+
+        <div  class="w-[300px] h-[295px]">
+
+        </div>
+
+
+
+        <div  class="w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4">
+          <div class="flex flex-row justify-between">
+            <h3 class="flex flex-col font-inter font-[700] text-[20px]">Ultra Realistic <span>3D Design Renderings</span></h3>
+            <p class="pt-1 text-[#A89C93] text-[16px] font-inter font-[400]">/03</p>
+          </div>
+
+          <div class="pt-5">
+            <p class="text-[#665244] w-[14rem] font-[400] text-[14px]">Taking the design process a step further, we translate the 2D plan into ultra-realistic 3D renderings.</p>
+          </div>
+
+          <div>
+            <p class="font-[300] text-[#A89C93] text-[27px] pt-[4.3rem] "> &#43;</p>
+          </div>
+        </div>
+
+
+
+        <div  class="w-[300px] h-[295px]">
+
+        </div>
+
+      </div>
+
+
+      <!-- lower container -->
+      <div class="flex flex-row mt-[-2px]">
+        <div  class="w-[300px] h-[295px]">
+
+        </div>
+
+        <div  class="w-[304px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-2px]">
+         <div class="flex flex-row justify-between">
+           <h3 class="flex flex-col font-inter font-[700] text-[20px]">2D Landscape <span>Design</span></h3>
+           <p class="pt-1 text-[#A89C93] text-[16px] font-inter font-[400]">/02</p>
+         </div>
+
+          <div class="pt-5">
+            <p class="text-[#665244] w-[14rem] font-[400] text-[14px]">Following our in-person meeting, we craft a 2D landscape design.</p>
+          </div>
+
+          <div>
+            <p class="font-[300] text-[#A89C93] text-[27px] pt-[6rem] "> &#43;</p>
+          </div>
+        </div>
+
+        <div  class="w-[300px] h-[295px]">
+
+        </div>
+
+
+
+        <div  class="w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-4px]">
+          <div class="flex flex-row justify-between">
+            <h3 class="flex flex-col font-inter font-[700] text-[20px]">Comprehensive <span>Quote</span></h3>
+            <p class="pt-1 text-[#A89C93] text-[16px] font-inter font-[400]">/04</p>
+          </div>
+
+          <div class="pt-5">
+            <p class="text-[#665244] w-[15rem] font-[400] text-[14px]">With the designs refined and your dream backyard taking shape, we present a detailed and itemized quote for the proposed design.</p>
+          </div>
+
+          <div>
+            <p class="font-[300] text-[#A89C93] text-[27px] pt-[3.5rem] "> &#43;</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
     </div>
 
   </div>
