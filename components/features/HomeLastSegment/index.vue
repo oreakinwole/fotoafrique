@@ -45,8 +45,8 @@ export default {
 
 
 <div>
-  <div class="flex flex-row justify-between px-28 py-28">
-    <p class="text-black font-[600] text-[32px]">#modernyardz</p>
+  <div class="flex flex-row justify-between px-44 pt-28">
+    <p class="text-black font-[600] text-[32px] font-playfairDisplay">#modernyardz</p>
 
     <div class="flex flex-row gap-2 cursor-pointer">
       <img :src="instagram" alt="instagram icon" class="w-[24px] h-[24px]">
@@ -56,7 +56,7 @@ export default {
   </div>
 
 
-  <div class="flex flex-row  justify-evenly px-10 pb-44">
+  <div class="flex flex-row  justify-evenly px-36 pb-44 pt-10">
     <img :src="image1" alt="image1" class="w-[367px] h-[392px]">
     <img :src="image2" alt="image2" class="w-[366px] h-[392px]">
     <img :src="image3" alt="image3" class="w-[366px] h-[392px]">

@@ -1,68 +1,199 @@
 <script>
+import OurPortfolio from "~/components/reusuables/OurPortfolio/index.vue";
 import OutlinedButton from "~/components/reusuables/OutlinedButton/index.vue";
 import image1 from "public/images/homethirdsegment/imgs/img(1).png";
-import OurPortfolio from "~/components/reusuables/OurPortfolio/index.vue";
-
-
-
+import bg from "public/images/homethirdsegment/icons/bg.png";
+import before from "public/images/homethirdsegment/imgs/image 28.svg";
+import after from "public/images/homethirdsegment/imgs/after.svg";
+import arrow from "public/images/homethirdsegment/icons/arrow.svg";
 
 export default {
   name: "HomeThirdSegment",
-  components: {OurPortfolio, OutlinedButton },
+  components: {OutlinedButton, OurPortfolio},
   data() {
     return {
       image1,
+      bg,
+      before,
+      after,
+      arrow,
+      sliderPosition: 50
+    };
+  },
+  mounted() {
+    this.initSlider();
+  },
+  methods: {
+    initSlider() {
+      const slider = this.$el.querySelector('.slider-handle');
+      const beforeImage = this.$el.querySelector('.before-image');
+      const afterImage = this.$el.querySelector('.after-image');
+      const sliderLine = this.$el.querySelector('.slider-line');
 
-    }}
+      const onMouseMove = (e) => {
+        const rect = this.$el.querySelector('.comparison-slider').getBoundingClientRect();
+        let position = ((e.clientX - rect.left) / rect.width) * 100;
+        position = Math.max(0, Math.min(position, 100));
+        this.sliderPosition = position;
+
+        // Update the clip path and position of slider line and handle
+        beforeImage.style.clipPath = `inset(0 ${100 - this.sliderPosition}% 0 0)`;
+        afterImage.style.clipPath = `inset(0 0 0 ${this.sliderPosition}%)`;
+        slider.style.left = `${this.sliderPosition}%`;
+        sliderLine.style.left = `${this.sliderPosition}%`;
+      };
+
+      const onMouseDown = () => {
+        window.addEventListener('mousemove', onMouseMove);
+      };
+
+      const onMouseUp = () => {
+        window.removeEventListener('mousemove', onMouseMove);
+      };
+
+      slider.addEventListener('mousedown', onMouseDown);
+      window.addEventListener('mouseup', onMouseUp);
+
+      // Ensure correct positioning on initialization
+      this.$nextTick(() => {
+        slider.style.left = `${this.sliderPosition}%`;
+        sliderLine.style.left = `${this.sliderPosition}%`;
+      });
+    }
+  }
+
+
 };
 </script>
 
 
-
 <template>
-  <div class="flex flex-col mb-32 mt-40">
+  <div class="home-third-segment">
+    <div class="flex flex-col mb-32 mt-40">
+      <div class="ml-28">
+        <h4 class="font-playfairDisplay font-[500] text-[120px] text-black">
+          Our <span class="text-[180px] font-[600] font-playfairDisplay text-[#A89C93] italic">PASSION</span>
+        </h4>
+        <h4 class="font-playfairDisplay font-[500] text-[120px] text-black mt-[-6rem]">
+          Is the <span class="text-[180px] font-[600] font-playfairDisplay text-[#A89C93] italic">WOW</span>
+        </h4>
+      </div>
 
-    <div class="ml-28">
-      <h4 class="font-playfairDisplay font-[500] text-[120px] text-black">
-        Our <span class="text-[180px] font-[600] font-playfairDisplay text-[#A89C93] italic">PASSION</span>
-      </h4>
-      <h4 class="font-playfairDisplay font-[500] text-[120px] text-black mt-[-6rem]">
-        Is the <span class="text-[180px] font-[600] font-playfairDisplay text-[#A89C93] italic">WOW</span>
-      </h4>
+      <div class="flex flex-row justify-end gap-24 mr-28 mt-[-3.5rem]">
+        <div class="mt-[17rem]">
+          <p class="font-inter text-[#665244] font-[400] text-[16px] w-[25rem]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
+          </p>
+          <OutlinedButton
+              border-color="#000"
+              text-color="#000"
+              background-color="white"
+              text="SCHEDULE A CALL"
+              class="mt-10"
+          />
+        </div>
+
+        <div class="flex flex-row">
+          <div class="flex-none mr-28">
+            <img :src="image1" alt="house image" class="w-[433px] h-[720px]" />
+          </div>
+          <div class="flex-none flex absolute right-28 mt-[37.8rem]">
+            <span class="text-[16px] font-[400] text-[#665244] font-inter rotate-90 whitespace-nowrap">
+              Lorem ipsum dolor sit amet
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-    <div class="flex flex-row justify-end gap-24 mr-28 mt-[-3.5rem]">
-      <div class="mt-[17rem]">
-        <p class="font-inter text-[#665244] font-[400] text-[16px] w-[25rem]">
+    <!-- Before and After Section -->
+    <div class="bg-[#F8F5F3] w-full pt-28 pb-1 mb-20">
+      <div class="flex flex-col justify-center items-center">
+        <h3 class="font-playfairDisplay font-[500] text-[60px] text-black">
+          Before <span class="text-[#A89C93] font-imperial font-[400]">&</span> After
+        </h3>
+        <p class="font-inter font-[400] text-[16px] text-[#665244] w-[34.8rem] text-center mt-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
         </p>
         <OutlinedButton
             border-color="#000"
             text-color="#000"
-            background-color="white"
-            text="SCHEDULE A CALL"
-            class="mt-10"
+            background-color="#F8F5F3"
+            text="SEE MORE"
+            class="mt-12"
         />
       </div>
 
-
-      <div class="flex flex-row">
-        <div class="flex-none mr-28 ">
-          <img :src="image1" alt="house image" class="w-[433px] h-[720px]" />
+      <!-- Image Comparison Slider -->
+      <div class="comparison-slider ml-52 w-[1500px] h-[850px] mb-[10rem] mt-[5rem] relative border-[1rem] border-[#000000] rounded-[40px] shadow-custom-dark bg-black">
+        <div class="comparison-images absolute inset-0 w-full h-full p-6">
+          <img :src="before" alt="before image" class="comparison-img before-image absolute inset-0 h-full object-cover"/>
+          <img :src="after" alt="after image" class="comparison-img after-image absolute inset-0 h-full object-cover"/>
         </div>
-        <div class="flex-none flex  absolute right-28 mt-[37.8rem]">
-        <span class="text-[16px] font-[400] text-[#665244] font-inter rotate-90 whitespace-nowrap ">
-          Lorem ipsum dolor sit amet
-        </span>
+
+        <!-- Slider Line -->
+        <div class="slider-line absolute top-0 bottom-0" :style="{ left: sliderPosition + '%' }"></div>
+
+        <!-- Slider Handle -->
+        <div class="slider-handle absolute top-1/2 transform -translate-y-1/2 cursor-pointer" :style="{ left: sliderPosition + '%' } ">
+          <img :src="arrow" alt="arrow image" class="w-[71px] h-[71px]"/>
         </div>
       </div>
-
-
-
     </div>
-  </div>
 
- <OurPortfolio/>
+    <OurPortfolio class="mb-16"/>
+  </div>
 </template>
 
+
+
+<style scoped>
+.comparison-slider {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.comparison-images {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.comparison-img {
+  transition: clip-path 0.2s ease;
+}
+
+.before-image {
+  clip-path: inset(0 50% 0 0);
+}
+
+.after-image {
+  clip-path: inset(0 0 0 50%);
+}
+
+.slider-line {
+  width: 4px;
+  background-color: #A89C93;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.slider-handle {
+  z-index: 3;
+  width: 71px;
+  height: 71px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+  cursor: pointer;
+  position: absolute;
+}
+
+</style>
