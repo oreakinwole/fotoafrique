@@ -319,8 +319,8 @@ export default {
             <div class="w-[67.8rem] h-[1px] bg-[#A89C93]"></div>
 
             <div class="flex flex-row gap-8 justify-end mr-[17.8rem] font-[300] mt-[-9px]">
-              <img :src="lessthanicon" alt="less than icon"/>
-              <img :src="greaterthanicon" alt="graeter than icon"/>
+              <img :src="lessthanicon" alt="less than icon" class="cursor-pointer"/>
+              <img :src="greaterthanicon" alt="graeter than icon" class="cursor-pointer"/>
 
             </div>
 
