@@ -6,6 +6,8 @@ import bg from "public/images/homethirdsegment/icons/bg.png";
 import before from "public/images/homethirdsegment/imgs/image 28.svg";
 import after from "public/images/homethirdsegment/imgs/after.svg";
 import arrow from "public/images/homethirdsegment/icons/arrow.svg";
+import customerpicture from  "public/images/homethirdsegment/imgs/img.svg";
+import circle from "public/images/homethirdsegment/icons/cir.svg";
 
 export default {
   name: "HomeThirdSegment",
@@ -17,6 +19,8 @@ export default {
       before,
       after,
       arrow,
+      customerpicture,
+      circle,
       sliderPosition: 50
     };
   },
@@ -124,11 +128,31 @@ export default {
         />
       </div>
 
-      <!-- Image Comparison Slider -->
-      <div class="comparison-slider ml-52 w-[1500px] h-[850px] mb-[10rem] mt-[5rem] relative border-[1rem] border-[#000000] rounded-[40px] shadow-custom-dark bg-black">
+<!--       Image Comparison Slider-->
+      <div class="comparison-slider ml-52 w-[1500px] h-[850px] mb-[10rem] mt-[5rem] relative border-[1rem] border-black rounded-[40px] shadow-custom-dark bg-black bg-[linear-gradient(to_right,_silver_98%,_transparent_50%,_transparent_98%,_silver_98%)]">
         <div class="comparison-images absolute inset-0 w-full h-full p-6">
           <img :src="before" alt="before image" class="comparison-img before-image absolute inset-0 h-full object-cover"/>
           <img :src="after" alt="after image" class="comparison-img after-image absolute inset-0 h-full object-cover"/>
+        </div>
+
+
+        <div class="bg-white w-[823px] h-[80px] rounded-[50px] absolute top-[40rem] ml-[20%]  z-10 p-3  flex gap-5 flex-row">
+          <div class="flex flex-row ml-12">
+         <div class="absolute ">
+           <img :src="customerpicture" alt="customer picture"/>
+
+         </div>
+
+            <div class="relative ml-[-47px] ">
+              <img :src="circle"  alt="circle"/>
+            </div>
+
+          </div>
+
+          <div class="pt-1 ml-10">
+            <h4 class="font-inter font-[500] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus tem.</h4>
+            <h4 class="font-[400] text-[#A89C93] text-[18px]">Nicole, Home Owner</h4>
+          </div>
         </div>
 
         <!-- Slider Line -->
@@ -138,7 +162,19 @@ export default {
         <div class="slider-handle absolute top-1/2 transform -translate-y-1/2 cursor-pointer" :style="{ left: sliderPosition + '%' } ">
           <img :src="arrow" alt="arrow image" class="w-[71px] h-[71px]"/>
         </div>
+
+
+
       </div>
+
+
+
+
+
+
+
+
+
     </div>
 
     <OurPortfolio class="mb-16"/>

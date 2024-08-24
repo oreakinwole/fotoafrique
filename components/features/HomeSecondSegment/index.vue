@@ -12,10 +12,16 @@ import icon1 from "public/images/getyouryard/icon/Rectangle 263.png"
 import icon2 from "public/images/getyouryard/icon/Rectangle 427.png"
 import  house1 from  "public/images/homesecondsegment/imgs/house1.png"
 import  house2 from  "public/images/homesecondsegment/imgs/house2.png"
-
+import FilledButton from "~/components/reusuables/FilledButton/index.vue";
+import backyard from "public/images/homesecondsegment/imgs/Backyard.svg"
+import frontyard from "public/images/homesecondsegment/imgs/frontyard.svg"
+import fullyard from "public/images/homesecondsegment/imgs/FullYard.svg"
+import renovation from "public/images/homesecondsegment/imgs/Renovation.svg"
+import greaterthanicon from "public/images/homesecondsegment/icons/grt.svg"
+import lessthanicon from "public/images/homesecondsegment/icons/lst.svg"
 export default {
   name : 'HomeSecondSegment',
-  components: {OutlinedButton},
+  components: {FilledButton, OutlinedButton},
   data(){
     return{
       img1,
@@ -29,7 +35,13 @@ export default {
       icon1,
       icon2,
       house1,
-      house2
+      house2,
+      frontyard,
+      backyard,
+      fullyard,
+      renovation,
+      greaterthanicon,
+      lessthanicon
     }
   }
 }
@@ -234,8 +246,96 @@ export default {
   </div>
 
 
+  <div class="mt-80 flex flex-row">
+    <div class="ml-32 mt-10">
+      <div>
+        <h4 class="font-playfairDisplay text-[60px] font-[500]">Servi<span class="text-[#A89C93] font-imperial font-[400] text-[80px]">C</span>es</h4>
+      </div>
 
-  <div class="flex flex-row justify-evenly mt-48 w-full bg-[#F8F5F3] pt-24 pb-24">
+      <p class="text-[#665244] text-[16px] font-[400] font-inter w-[25rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.</p>
+      <FilledButton background-color="black" text="SCHEDULE A CALL" text-color="white" class="mt-16"/>
+    </div>
+
+    <div>
+
+      <div class="ml-20">
+
+        <div class="flex flex-row gap-8">
+          <div>
+            <div class="relative w-[340px] h-[420px] cursor-pointer group">
+              <img :src="frontyard" alt="frontyard picture" class="w-full h-full"/>
+              <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+            </div>
+
+            <div class="flex flex-row justify-between mt-5">
+              <h4 class="font-inter font-[500] text-[18px]">Front Yard</h4>
+              <p class="font-[400] font-inter text-[16px]">$1,890.80</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="relative w-[340px] h-[420px] cursor-pointer group">
+              <img :src="backyard" alt="backyard picture"  class="w-full h-full"/>
+              <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+            </div>
+
+            <div class="flex flex-row justify-between mt-5">
+              <h4 class="font-inter font-[500] text-[18px]">Back Yard</h4>
+              <p class="font-[400] font-inter text-[16px]">$1,745.99</p>
+            </div>
+          </div>
+
+          <div>
+
+            <div class="relative w-[340px] h-[420px] cursor-pointer group">
+              <img :src="fullyard" alt="fullyard picture"  class="w-full h-full"/>
+              <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+            </div>
+
+            <div class="flex flex-row justify-between mt-5">
+              <h4 class="font-inter font-[500] text-[18px]">Full Yard</h4>
+              <p class="font-[400] font-inter text-[16px]">$2,745.56</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="relative w-[340px] h-[420px] cursor-pointer group">
+              <img :src="renovation" alt="renovation picture"  class="w-full h-full"/>
+              <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+            </div>
+
+            <div class="flex flex-row justify-between mt-5">
+              <h4 class="font-inter font-[500] text-[18px]">Renovation</h4>
+              <p class="font-[400] font-inter text-[16px]">$45.80</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+
+          <div class="flex flex-row justify-between mt-12">
+
+            <div class="w-[67.8rem] h-[1px] bg-[#A89C93]"></div>
+
+            <div class="flex flex-row gap-8 justify-end mr-[17.8rem] font-[300] mt-[-9px]">
+              <img :src="lessthanicon" alt="less than icon"/>
+              <img :src="greaterthanicon" alt="graeter than icon"/>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="flex flex-row justify-evenly mt-44 w-full bg-[#F8F5F3] pt-14 pb-24">
 
     <div class="mt-44">
       <img :src="house1" alt="house 1" class="w-[350px] h-[389px]"/>
