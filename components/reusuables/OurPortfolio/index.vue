@@ -144,12 +144,12 @@ export default defineComponent({
       </div>
     </div>
 
-    <div class="flex justify-center mx-auto py-20">
+    <div class="flex justify-center mx-auto py-20 pb-32">
       <OutlinedButton
           border-color="#fff"
           text-color="#fff"
           background-color="black"
-          text="SCHEDULE A CALL"
+          text="SEE MORE"
           class="mt-10"
       />
     </div>

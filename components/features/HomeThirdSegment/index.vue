@@ -36,7 +36,7 @@ export default {
         position = Math.max(0, Math.min(position, 100));
         this.sliderPosition = position;
 
-        // Update the clip path and position of slider line and handle
+
         beforeImage.style.clipPath = `inset(0 ${100 - this.sliderPosition}% 0 0)`;
         afterImage.style.clipPath = `inset(0 0 0 ${this.sliderPosition}%)`;
         slider.style.left = `${this.sliderPosition}%`;
@@ -54,7 +54,7 @@ export default {
       slider.addEventListener('mousedown', onMouseDown);
       window.addEventListener('mouseup', onMouseUp);
 
-      // Ensure correct positioning on initialization
+
       this.$nextTick(() => {
         slider.style.left = `${this.sliderPosition}%`;
         sliderLine.style.left = `${this.sliderPosition}%`;
@@ -69,7 +69,7 @@ export default {
 
 <template>
   <div class="home-third-segment">
-    <div class="flex flex-col mb-32 mt-40">
+    <div class="flex flex-col mb-48 mt-40">
       <div class="ml-28">
         <h4 class="font-playfairDisplay font-[500] text-[120px] text-black">
           Our <span class="text-[180px] font-[600] font-playfairDisplay text-[#A89C93] italic">PASSION</span>
@@ -107,7 +107,7 @@ export default {
     </div>
 
     <!-- Before and After Section -->
-    <div class="bg-[#F8F5F3] w-full pt-28 pb-1 mb-20">
+    <div class="bg-[#F8F5F3] w-full pt-28 pb-1 mb-20 ">
       <div class="flex flex-col justify-center items-center">
         <h3 class="font-playfairDisplay font-[500] text-[60px] text-black">
           Before <span class="text-[#A89C93] font-imperial font-[400]">&</span> After
