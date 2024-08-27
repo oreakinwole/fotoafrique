@@ -58,26 +58,31 @@ export default {
     </div>
 
     <div>
-       <div>
-         <h1 class="font-[400] text-[46px] w-[60rem] mr-14"> WE STRIVE TO ENHANCE THE SYNERGY BETWEEN AESTHETICS, STRUCTURE, AND ENVIRONMENTAL DESIGN.</h1>
-       </div>
+      <div>
+        <h1 class="font-[400] text-[46px] w-[60rem] mr-14"> WE STRIVE TO ENHANCE THE SYNERGY BETWEEN AESTHETICS, STRUCTURE, AND ENVIRONMENTAL DESIGN.</h1>
+      </div>
 
       <div class="ml-[43rem] mt-6">
         <img :src="img2" alt="house with garden" class="w-[317px] h-[339px]">
       </div>
 
       <div class="mt-[-5rem]">
-       <div class="mb-10 font-[400] text-[20px]">
-         <h3>The best design for your space</h3>
-         <p class="text-[#A89C93]">Located in San Diego</p>
-       </div>
-        <OutlinedButton
-            border-color="#000"
-            text-color="#000"
-            background-color="white"
-            text="SCHEDULE A CALL"
+        <div class="mb-10 font-[400] text-[20px]">
+          <h3>The best design for your space</h3>
+          <p class="text-[#A89C93]">Located in San Diego</p>
+        </div>
 
-        />
+
+        <div class="mt-[-65px]">
+          <OutlinedButton
+              border-color="#000"
+              text-color="#000"
+              background-color="white"
+              text="SCHEDULE A CALL"
+
+          />
+        </div>
+
       </div>
     </div>
   </div>
@@ -176,10 +181,10 @@ export default {
         </div>
 
         <div  class="w-[304px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-2px]">
-         <div class="flex flex-row justify-between">
-           <h3 class="flex flex-col font-inter font-[700] text-[20px]">2D Landscape <span>Design</span></h3>
-           <p class="pt-1 text-[#A89C93] text-[16px] font-inter font-[400]">/02</p>
-         </div>
+          <div class="flex flex-row justify-between">
+            <h3 class="flex flex-col font-inter font-[700] text-[20px]">2D Landscape <span>Design</span></h3>
+            <p class="pt-1 text-[#A89C93] text-[16px] font-inter font-[400]">/02</p>
+          </div>
 
           <div class="pt-5">
             <p class="text-[#665244] w-[14rem] font-[400] text-[14px]">Following our in-person meeting, we craft a 2D landscape design.</p>
@@ -262,7 +267,7 @@ export default {
 
         <div class="flex flex-row gap-8">
           <div>
-            <div class="relative w-[340px] h-[420px] cursor-pointer group">
+            <div class="relative w-[340px] h-[420px] cursor-pointer group" >
               <img :src="frontyard" alt="frontyard picture" class="w-full h-full"/>
               <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
             </div>

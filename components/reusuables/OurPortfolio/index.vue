@@ -7,10 +7,11 @@ import portfolioAudio1 from "public/audio/portfolio/Beyonce_-_XO_talkglitz.tv.mp
 import portfolioAudio2 from "public/audio/portfolio/YAH - Dunsin Oyekan.mp4";
 import portfolioAudio3 from "public/audio/portfolio/Beyonce_-_XO_talkglitz.tv.mp3";
 import portfolioAudio4 from "public/audio/portfolio/YAH - Dunsin Oyekan.mp4";
+import OutlinedButtonBlack from "~/components/reusuables/OutlinedButton(BLACK)/index.vue";
 
 export default defineComponent({
   name : 'OurPortfolio',
-  components: {OutlinedButton},
+  components: {OutlinedButtonBlack, OutlinedButton},
   data() {
     return {
       corridorImg,
@@ -145,7 +146,7 @@ export default defineComponent({
     </div>
 
     <div class="flex justify-center mx-auto py-20 pb-32">
-      <OutlinedButton
+      <OutlinedButtonBlack
           border-color="#fff"
           text-color="#fff"
           background-color="black"

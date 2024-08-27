@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'OutlinedButton',
+  name: 'OutlinedButtonBlack',
   props: {
     text: {
       type: String,
@@ -50,7 +50,7 @@ button span:first-child {
 
 button span:last-child {
   z-index: 5;
-  background-color: black;
+  background-color: white;
   position: absolute;
   left: 0;
   top: 0;
@@ -66,7 +66,7 @@ button:hover span:last-child {
 
 button:hover span:first-child {
 
-  color: white;
+  color: black;
 }
 </style>
 
