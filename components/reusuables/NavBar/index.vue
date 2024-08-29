@@ -103,9 +103,9 @@ export default {
     <PopUpModal text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
 
     <!-- second layout  -->
-    <div class="flex flex-row mt-10 justify-between">
-      <div class="flex flex-row gap-14 uppercase ml-24">
-        <p class="cursor-pointer">About</p>
+    <div class="flex flex-row mt-10 justify-between text-[15px]">
+      <div class="flex flex-row gap-14 uppercase ml-36">
+        <p class="cursor-pointer ">About</p>
         <div class="flex flex-row gap-2 cursor-pointer">
           <div>
             <img :src="phoneIcon" alt="phone icon" width="20" />
@@ -115,24 +115,24 @@ export default {
       </div>
 
       <div class="">
-        <img :src="modernYardzIcon" alt="modern yardz logo" width="100" class="mr-20" />
+        <img :src="modernYardzIcon" alt="modern yardz logo" width="90" class="mr-20 mt-[-10px]" />
       </div>
 
-      <div class="flex flex-row gap-20 mr-24">
+      <div class="flex flex-row gap-20 mr-36">
         <div>
-          <img :src="searchIcon" alt="search icon" width="20" class="cursor-pointer" />
+          <img :src="searchIcon" alt="search icon" width="19" class="cursor-pointer" />
         </div>
         <div>
-          <img :src="dummyProfileIcon" alt="dummy profile icon" width="20" class="cursor-pointer" />
+          <img :src="dummyProfileIcon" alt="dummy profile icon" width="19" class="cursor-pointer" />
         </div>
         <div>
-          <img :src="bagIcon" alt="bag icon" width="20" class="cursor-pointer" />
+          <img :src="bagIcon" alt="bag icon" width="19" class="cursor-pointer" />
         </div>
       </div>
     </div>
 
     <!--third layout -->
-    <div class="flex justify-center items-center border-b border-black mt-8">
+    <div class="flex justify-center items-center border-b border-black mt-8 text-[15px]">
       <div class="flex flex-row items-center gap-20 uppercase">
 
         <p @click="navigateToHome" :class="{'cursor-pointer' : true, 'underline-black': underlineText === 'Home' && activeDropdown === null}">Home</p>
