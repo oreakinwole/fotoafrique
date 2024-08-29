@@ -50,8 +50,8 @@
     </section>
 
     <section class="pt-48">
-      <div class="flex max-w-screen-md mx-auto">
-        <div>
+      <div class="flex max-w-screen-md mx-auto gap-x-12">
+        <div class="w-1/2 pt-16">
           <p class="text-4xl font-medium font-playfairDisplay">
             Package
             <span class="text-new-gray font-imperial text-5xl uppercase"
@@ -59,7 +59,7 @@
             >etails
           </p>
 
-          <div>
+          <div class="text-xs space-y-6 pt-6 text-brown max-w-64 text-justify">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               non risus eget mauris malesuada porttitor quis
@@ -77,13 +77,26 @@
           </div>
         </div>
 
-        <div class="h-[400px]">
+        <div class="w-1/2 h-[550px]">
           <img
             src="@/assets/images/package_detail.png"
             class="h-full w-full object-cover"
           />
         </div>
       </div>
+    </section>
+
+    <section class="pt-48 space-y-5 max-w-md">
+      <p class="text-4xl font-medium font-playfairDisplay">
+        More
+        <span class="text-new-gray font-imperial text-5xl uppercase">3D </span
+        >Assets
+      </p>
+     
+
+      <p class="text-xs text-brown">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non risus eget mauris malesuada porttitor quis sed odio.
+        </p>
     </section>
   </div>
 </template>
