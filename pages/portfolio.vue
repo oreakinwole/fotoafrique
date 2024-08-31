@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import OurPortfolio from "~/components/reusuables/OurPortfolio/index.vue";
+import GetYourYard from "~/components/reusuables/GetYourYard/index.vue";
 
 </script>
 
@@ -89,6 +90,7 @@ import OurPortfolio from "~/components/reusuables/OurPortfolio/index.vue";
 
   </div>
   <OurPortfolio/>
+  <GetYourYard />
  </div>
 
 </template>

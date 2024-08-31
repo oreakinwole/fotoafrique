@@ -27,20 +27,20 @@ export default {
 
 <template>
 
-  <footer class=" w-full h-fit pb-12 bg-black text-white pt-20">
+  <footer class=" w-full h-fit pb-12 bg-black text-white pt-10">
 
     <!-- first layout -->
 
     <div class="flex flex-col items-center justify-center ">
-      <h1 class="text-center font-playfairDisplay text-[70px] flex flex-col italic">
+      <h1 class="text-center font-playfairDisplay text-6xl flex flex-col italic">
         We Provide best <span>handpicked home decor</span>
       </h1>
-      <div class="font-inter font-[500] text-[16px] mt-14 ">
+      <div class="font-inter font-[500] text-[16px] mt-12 ">
         <OutlinedButtonBlack
             border-color="#FCFBFA"
             text-color="#FCFBFA"
             background-color="black"
-            text="Explore our Products"
+            text="EXPLORE OUR PRODUCTS"
 
         />
       </div>
@@ -49,7 +49,7 @@ export default {
 
 
     <!-- second layout -->
-      <div class="flex flex-row justify-between mt-28 font-inter text-[#D0C2B0] px-32  ">
+      <div class="flex flex-row justify-between mt-14 font-inter text-[#D0C2B0] px-32  ">
 
         <div class="border border-[#665244]  border-l-0 pt-10 pb-28 w-[150rem]  pl-10">
           <h4 class="uppercase">Subscribe to receive ModernYardz news & offers</h4>

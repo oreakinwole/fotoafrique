@@ -1,34 +1,42 @@
 <script>
 export default {
-  name: 'OutlinedButton',
+  name: "OutlinedButton",
   props: {
     text: {
       type: String,
-      required: true
+      required: true,
     },
     backgroundColor: {
       type: String,
-      required: true
+      required: true,
     },
     textColor: {
       type: String,
-      required: true
+      required: true,
     },
     borderColor: {
       type: String,
-      required: true
+      required: true,
     },
-    hoverTextColor : {
-      type : String
+    hoverTextColor: {
+      type: String,
     },
-  }
-}
+  },
+};
 </script>
 <template>
-  <button class="relative w-[299px] h-[67px] overflow-hidden mt-[60px]"
-          :style="{ backgroundColor: backgroundColor, color: textColor, border: `1px solid ${borderColor}` }">
+  <button
+    class="relative w-[299px] h-[67px] overflow-hidden"
+    :style="{
+      backgroundColor: backgroundColor,
+      color: textColor,
+      border: `1px solid ${borderColor}`,
+    }"
+  >
     <span>{{ text }}</span>
-    <span class=" inset-0 bg-black transition-transform duration-[0.5s] transform -translate-x-full"></span>
+    <span
+      class="inset-0 bg-black transition-transform duration-[0.5s] transform -translate-x-full"
+    ></span>
   </button>
 </template>
 
@@ -65,8 +73,6 @@ button:hover span:last-child {
 }
 
 button:hover span:first-child {
-
   color: white;
 }
 </style>
-
