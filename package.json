@@ -18,5 +18,8 @@
     "postcss": "^8.4.21",
     "tailwindcss": "^3.3.1",
     "vue3-carousel-nuxt": "^1.1.2"
+  },
+  "dependencies": {
+    "ipx": "^3.0.1"
   }
 }

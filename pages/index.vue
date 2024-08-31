@@ -1,11 +1,18 @@
 <script setup lang="ts">
-const anonVariable = "";
+import NavBar from "~/components/reusuables/NavBar/index.vue";
+import Hero from "~/components/features/Hero/index.vue";
+import Footer from "~/components/features/Footer/index.vue";
+import HomeSecondSegment from "~/components/features/HomeSecondSegment/index.vue";
+import HomeLastSegment from "~/components/features/HomeLastSegment/index.vue";
+
 </script>
 
 <template>
-  <div class="flex items-center justify-center">
-    <p class="text-lg">html here</p>
-  </div>
+  <NavBar underlineText="Home" />
+  <Hero/>
+  <HomeSecondSegment/>
+  <HomeLastSegment/>
+  <Footer/>
 </template>
 
 <style>

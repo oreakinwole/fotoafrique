@@ -38,8 +38,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        playfairDisplay : ['Playfair Display', 'serif'],
-        imperial : ["Imperial Script", 'cursive']
+        playfairDisplay : ['Playfair Display', 'serif']
       },
       boxShadow: {
         'custom-light': '0 2px 4px rgba(0, 0, 0, 0.1)',
