@@ -18,10 +18,10 @@ export default {
 
 <template>
 
-  <div class="bg-navbar-color w-full flex flex-col lg:flex-row pt-64 justify-between">
+  <div class="bg-navbar-color w-full flex flex-col lg:flex-row pt-52 justify-between">
     <!-- first container -->
-    <div class="mt-20 flex-1 absolute lg:ml-[8rem]">
-      <h3 class="uppercase font-semibold text-4xl lg:text-6xl xl:text-[70px] font-playfairDisplay leading-tight text-left lg:w-[55rem]" style="line-height: 90px">
+    <div class="flex-1 absolute lg:ml-[8rem]">
+      <h3 class="uppercase font-semibold text-5xl font-playfairDisplay leading-tight text-left lg:max-w-xl" >
         Creating your dream
         outdoor space
         with the finest backyard
@@ -36,8 +36,8 @@ export default {
     <!--second container -->
 
     <div class="relative flex flex-1 justify-center items-center  lg:mt-0 lg:ml-[49rem] ">
-      <img :src="garden" alt="garden image" class="w-full lg:w-auto max-w-[48rem]" />
-      <img :src="chat" alt="chat icon" class="w-[65px] h-[65px]  right-4 bottom-4 lg:right-[10rem] lg:bottom-10 cursor-pointer fixed z-50" />
+      <img :src="garden" alt="garden image" width="500"/>
+      <!-- <img :src="chat" alt="chat icon" class="w-[65px] h-[65px]  right-4 bottom-4 lg:right-[10rem] lg:bottom-10 cursor-pointer fixed z-50" /> -->
     </div>
   </div>
 </template>

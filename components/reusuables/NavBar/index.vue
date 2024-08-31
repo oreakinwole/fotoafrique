@@ -103,12 +103,12 @@ export default {
     <PopUpModal text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
 
     <!-- second layout  -->
-    <div class="flex flex-row mt-10 justify-between text-[15px]">
+    <div class="flex flex-row mt-10 justify-between text-xs">
       <div class="flex flex-row gap-14 uppercase ml-36">
         <p class="cursor-pointer ">About</p>
-        <div class="flex flex-row gap-2 cursor-pointer">
+        <div class="flex gap-2 cursor-pointer">
           <div>
-            <img :src="phoneIcon" alt="phone icon" width="20" />
+            <img :src="phoneIcon" alt="phone icon" width="14" />
           </div>
           <p>Schedule A Call</p>
         </div>
@@ -120,22 +120,22 @@ export default {
 
       <div class="flex flex-row gap-20 mr-36">
         <div>
-          <img :src="searchIcon" alt="search icon" width="19" class="cursor-pointer" />
+          <img :src="searchIcon" alt="search icon" width="15" class="cursor-pointer" />
         </div>
         <div>
-          <img :src="dummyProfileIcon" alt="dummy profile icon" width="19" class="cursor-pointer" />
+          <img :src="dummyProfileIcon" alt="dummy profile icon" width="15" class="cursor-pointer" />
         </div>
         <div>
-          <img :src="bagIcon" alt="bag icon" width="19" class="cursor-pointer" />
+          <img :src="bagIcon" alt="bag icon" width="15" class="cursor-pointer" />
         </div>
       </div>
     </div>
 
     <!--third layout -->
-    <div class="flex justify-center items-center border-b border-black mt-8 text-[15px]">
-      <div class="flex flex-row items-center gap-20 uppercase">
+    <div class="flex justify-center  items-center border-b border-black mt-8 text-xs">
+      <div class="flex items-center gap-20 uppercase">
 
-        <p @click="navigateToHome" :class="{'cursor-pointer' : true, 'underline-black': underlineText === 'Home' && activeDropdown === null}">Home</p>
+        <p class="text-xs" @click="navigateToHome" :class="{'cursor-pointer' : true, 'underline-black': underlineText === 'Home' && activeDropdown === null}">Home</p>
 
         <!-- Service select button -->
         <div class="relative inline-block text-left">
@@ -143,7 +143,7 @@ export default {
           <div class="bg-navbar-color uppercase inline-flex items-center justify-between w-full p-2"
                   :class="{'underline-black': activeDropdown === 'service'}">
             <div>
-              <span @click="navigateToServices" :class="{'cursor-pointer': true, 'underline-black2': underlineText === 'Services' && activeDropdown === null}">Services</span>
+              <span class="text-xs" @click="navigateToServices" :class="{'cursor-pointer': true, 'underline-black2': underlineText === 'Services' && activeDropdown === null}">Services</span>
 
             </div>
             <svg :class="['w-5 h-5 ml-2 -mr-1', getArrowDirection(isServiceOpen)]" fill="currentColor" viewBox="0 0 20 20" @click="toggleServiceDropdown" class="cursor-pointer">
@@ -198,9 +198,9 @@ export default {
           </div>
         </div>
 
-        <p :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Gallery' && activeDropdown === null}">Gallery</p>
-        <p :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Contact' && activeDropdown === null}">Contact</p>
-        <p :class="{'cursor-pointer': true, 'underline-black': underlineText === '3D Packages' && activeDropdown === null}">3D Packages</p>
+        <p class="text-xs" :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Gallery' && activeDropdown === null}">Gallery</p>
+        <p class="text-xs" :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Contact' && activeDropdown === null}">Contact</p>
+        <p class="text-xs" :class="{'cursor-pointer': true, 'underline-black': underlineText === '3D Packages' && activeDropdown === null}">3D Packages</p>
 
 
 
@@ -210,7 +210,7 @@ export default {
           <!-- Selected Option -->
           <button class="bg-navbar-color uppercase cursor-pointer inline-flex items-center justify-between w-full p-2"
                   :class="{'underline-black': activeDropdown === 'more'}">
-            <span>More</span>
+            <span class="text-xs">More</span>
             <svg :class="['w-5 h-5 ml-2 -mr-1', getArrowDirection(isMoreOpen)]" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.23 8.29a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
             </svg>
