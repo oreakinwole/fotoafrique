@@ -38,15 +38,14 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        playfairDisplay : ['Playfair Display', 'serif']
+        playfairDisplay : ['Playfair Display', 'serif'],
+        imperial : ["Imperial Script", 'system-ui']
       },
       boxShadow: {
         'custom-light': '0 2px 4px rgba(0, 0, 0, 0.1)',
         'custom-dark': '0 4px 6px rgba(0, 0, 0, 0.5)',
       },
-      cursor: {
-        'custom-cursor': 'url("public/images/navbar/icons/Explore.png"), pointer',
-      },
+
     },
   },
 };

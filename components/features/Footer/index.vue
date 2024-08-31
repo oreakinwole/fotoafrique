@@ -6,11 +6,12 @@ import googlePay from "public/images/footer/icons/GooglePay.png";
 import jcb from "public/images/footer/icons/JCB.png";
 import masterCard from "public/images/footer/icons/Mastercard.png";
 import visa from "public/images/footer/icons/Visa Classic.png";
+import OutlinedButtonBlack from "~/components/reusuables/OutlinedButton(BLACK)/index.vue";
 
 
 export default {
   name : 'Footer',
-  components: {OutlinedButton},
+  components: {OutlinedButtonBlack, OutlinedButton},
   data(){
     return{
       amazon,
@@ -26,7 +27,7 @@ export default {
 
 <template>
 
-  <div class=" w-full h-fit pb-12 bg-black text-white pt-20">
+  <footer class=" w-full h-fit pb-12 bg-black text-white pt-20">
 
     <!-- first layout -->
 
@@ -35,7 +36,7 @@ export default {
         We Provide best <span>handpicked home decor</span>
       </h1>
       <div class="font-inter font-[500] text-[16px] mt-14 ">
-        <OutlinedButton
+        <OutlinedButtonBlack
             border-color="#FCFBFA"
             text-color="#FCFBFA"
             background-color="black"
@@ -157,7 +158,7 @@ export default {
 
     </div>
 
-  </div>
+  </footer>
 
 </template>
 
