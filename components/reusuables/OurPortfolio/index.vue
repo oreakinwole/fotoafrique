@@ -1,6 +1,5 @@
 <script>
-
-import {defineComponent} from "vue";
+import { defineComponent } from "vue";
 import OutlinedButton from "~/components/reusuables/OutlinedButton/index.vue";
 import corridorImg from "public/images/ourportfolio/imgs/img(2).png";
 import portfolioAudio1 from "public/audio/portfolio/Beyonce_-_XO_talkglitz.tv.mp3";
@@ -10,8 +9,8 @@ import portfolioAudio4 from "public/audio/portfolio/YAH - Dunsin Oyekan.mp4";
 import OutlinedButtonBlack from "~/components/reusuables/OutlinedButton(BLACK)/index.vue";
 
 export default defineComponent({
-  name : 'OurPortfolio',
-  components: {OutlinedButtonBlack, OutlinedButton},
+  name: "OurPortfolio",
+  components: { OutlinedButtonBlack, OutlinedButton },
   data() {
     return {
       corridorImg,
@@ -86,40 +85,51 @@ export default defineComponent({
     formatTime(time) {
       const minutes = Math.floor(time / 60) || 0;
       const seconds = Math.floor(time % 60) || 0;
-      return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+      return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(
+        2,
+        "0"
+      )}`;
     },
   },
-})
+});
 </script>
 
 <template>
-
   <!--our portfolio -->
-  <div class="w-full  bg-black text-white pt-20 pb-8">
-    <h3 class="text-[180px] font-playfairDisplay font-[600] text-center ">Our Portfolio</h3>
-    <div class="px-[10rem] mt-20">
-      <img :src="corridorImg" alt="image 2" class="w-[1670px] h-[700px]">
+  <div class="w-full bg-black text-white pt-20 pb-8">
+    <h3 class="text-7xl font-playfairDisplay font-[600] text-center">
+      Our Portfolio
+    </h3>
+    <div class="px-20 mt-20">
+      <img :src="corridorImg" alt="image 2" class="" />
     </div>
 
-    <h4 class="flex flex-col text-center text-white font-playfairDisplay font-[600] text-[80px] leading-[6rem] mt-[-6rem]">Eco-Friendly <span>Backyard</span> </h4>
-
+    <h4
+      class="flex flex-col text-center text-white font-playfairDisplay font-[600] text-[80px] leading-[6rem] mt-[-6rem]"
+    >
+      Eco-Friendly <span>Backyard</span>
+    </h4>
 
     <div class="mt-40 text-center pb-32">
-      <h4 class="font-playfairDisplay font-[600] text-[180px] text-white">Got Questions?</h4>
-      <p class="font-inter text-[24px] text-white w-[55rem] mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
+      <h4 class="font-playfairDisplay font-[600] text-8xl text-white">
+        Got Questions?
+      </h4>
+
+      <p class="font-inter text-xs text-white max-w-[550px] mt-6  mx-auto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
+        dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
+        vestibulum tortor feugiat.
       </p>
     </div>
-
 
     <!-- FAQ Section -->
     <div>
       <div
-          v-for="faq in faqs"
-          :key="faq.id"
-          class="flex flex-row justify-between items-center px-2 border-t border-b border-[#F5F0EA] py-6 mr-8 ml-8"
+        v-for="faq in faqs"
+        :key="faq.id"
+        class="flex justify-between items-center px-2 border-t border-b border-[#F5F0EA] py-6 mx-8"
       >
-        <h4 class="font-[600] font-inter text-[48px] flex-grow">
+        <h4 class="font-[600] font-inter text-4xl flex-grow">
           {{ faq.question }}
         </h4>
 
@@ -136,26 +146,23 @@ export default defineComponent({
         </div>
 
         <audio
-            :ref="'audioPlayer' + faq.id"
-            :src="faq.audioSrc"
-            @loadedmetadata="setDuration(faq)"
-            @timeupdate="updateCurrentTime(faq)"
-            @ended="resetToDuration(faq)"
+          :ref="'audioPlayer' + faq.id"
+          :src="faq.audioSrc"
+          @loadedmetadata="setDuration(faq)"
+          @timeupdate="updateCurrentTime(faq)"
+          @ended="resetToDuration(faq)"
         ></audio>
       </div>
     </div>
 
     <div class="flex justify-center mx-auto py-20 pb-32">
       <OutlinedButtonBlack
-          border-color="#fff"
-          text-color="#fff"
-          background-color="black"
-          text="SEE MORE"
-          class="mt-10"
+        border-color="#fff"
+        text-color="#fff"
+        background-color="black"
+        text="SEE MORE"
+        class="mt-10"
       />
     </div>
-
-
   </div>
-
 </template>

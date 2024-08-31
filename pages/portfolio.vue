@@ -1,6 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import OurPortfolio from "~/components/reusuables/OurPortfolio/index.vue";
+
+</script>
 
 <template>
+ <div>
   <div class="px-20">
     <section
       class="flex gap-x-8 justify-between h-[580px] py-10 pb-20 border-b border-new-gray border-opacity-25"
@@ -81,7 +85,12 @@
         </div>
       </div>
     </section>
+
+
   </div>
+  <OurPortfolio/>
+ </div>
+
 </template>
 
 <style></style>
