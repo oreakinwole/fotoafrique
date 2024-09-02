@@ -19,5 +19,4 @@ export default {
   </div>
   <OurPortfolio/>
   <GetYourYard/>
-  <Footer/>
 </template>

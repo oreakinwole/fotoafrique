@@ -16,7 +16,8 @@ export default {
 </script>
 
 <template>
-  <div class="pt-32">
+  <div class="py-48 bg-[#fcfbfa]">
+  <div class="">
     <div class="flex justify-center items-center text-center">
       <div
         class="font-playfairDisplay italic font-[600] text-6xl flex flex-row gap-3"
@@ -42,12 +43,14 @@ export default {
       </p>
     </div>
   </div>
-  <div class="flex justify-center items-center mt-8">
+  <div class="flex justify-center items-center mt-4">
     <OutlinedButton
       border-color="#000"
       text-color="#000"
-      background-color="white"
+      background-color=""
       text="GET IN TOUCH"
     />
+  </div>  
   </div>
+  
 </template>
