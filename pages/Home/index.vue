@@ -22,5 +22,4 @@ export default defineComponent({
   <HomeSecondSegment/>
   <HomeThirdSegment/>
   <HomeLastSegment/>
-  <Footer/>
 </template>

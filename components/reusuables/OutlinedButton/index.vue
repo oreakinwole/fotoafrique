@@ -26,14 +26,14 @@ export default {
 </script>
 <template>
   <button
-    class="relative w-[299px] h-[67px] overflow-hidden"
+    class="relative w-[240px] h-[55px] overflow-hidden"
     :style="{
       backgroundColor: backgroundColor,
       color: textColor,
       border: `1px solid ${borderColor}`,
     }"
   >
-    <span>{{ text }}</span>
+    <span class="text-sm">{{ text }}</span>
     <span
       class="inset-0 bg-black transition-transform duration-[0.5s] transform -translate-x-full"
     ></span>
