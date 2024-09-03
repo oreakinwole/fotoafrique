@@ -1,26 +1,7 @@
 <script setup lang="ts">
 import OutlinedButton from "~/components/reusuables/OutlinedButton/index.vue";
 import OurPortfolio from "~/components/reusuables/OurPortfolio/index.vue";
-
-
-import "vue3-carousel/dist/carousel.css";
-const settings = ref({
-  itemsToShow: 1,
-  snapAlign: "center",
-});
-
-const breakpoints = ref({
-  // 700px and up
-  700: {
-    itemsToShow: 3.5,
-    snapAlign: "center",
-  },
-  // 1024 and up
-  1024: {
-    itemsToShow: 5,
-    snapAlign: "start",
-  },
-});
+import AssetsSlider from "~/components/reusuables/AssetsSlider";
 </script>
 
 <template>
@@ -36,17 +17,7 @@ const breakpoints = ref({
       </ul>
 
       <div class="py-28">
-        <Carousel v-bind="settings" :breakpoints="breakpoints">
-          <Slide v-for="slide in 10" :key="slide">
-            <!-- <div class="carousel__item">{{ slide }}</div> -->
-
-            <img src="@/assets/images/flowerr__.png" />
-          </Slide>
-
-          <template #addons>
-            <Navigation />
-          </template>
-        </Carousel>
+        <AssetsSlider />
       </div>
     </div>
 
@@ -67,31 +38,6 @@ const breakpoints = ref({
       />
     </section>
 
-  <OurPortfolio/>
-
+    <OurPortfolio />
   </div>
 </template>
-
-<style>
-.carousel__item {
-  min-height: 200px;
-  width: 100%;
-  background-color: var(--vc-clr-primary);
-  color: var(--vc-clr-white);
-  font-size: 20px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel__slide {
-  padding: 10px;
-}
-
-.carousel__prev,
-.carousel__next {
-  box-sizing: content-box;
-  border: 5px solid white;
-}
-</style>

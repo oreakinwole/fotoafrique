@@ -10,7 +10,6 @@ import PopUpModal from "~/components/reusuables/PopUpModal/index.vue";
 import image1 from "public/images/navbar/imgs/Mask group(4).png"
 import image2 from "public/images/navbar/imgs/img.png"
 import allButton from "public/images/navbar/icons/See all button.png"
-import { useRouter } from 'vue-router';
 
 export default {
   name: 'NavBar',
@@ -33,16 +32,7 @@ export default {
     };
   },
   setup() {
-    const router = useRouter();
-
-    function navigateToServices() {
-      router.push('/services');
-    }
-
-    function navigateToHome() {
-      router.push('/home');
-    }
-    return { navigateToServices , navigateToHome };
+    
   },
   props: {
     underlineText: {
@@ -135,7 +125,7 @@ export default {
     <div class="flex justify-center  items-center border-b border-black mt-8 text-xs">
       <div class="flex items-center gap-20 uppercase">
 
-        <p class="text-xs" @click="navigateToHome" :class="{'cursor-pointer' : true, 'underline-black': underlineText === 'Home' && activeDropdown === null}">Home</p>
+        <p class="text-xs" :class="{'cursor-pointer' : true, 'underline-black': underlineText === 'Home' && activeDropdown === null}"><NuxtLink to="/">Home</NuxtLink></p>
 
         <!-- Service select button -->
         <div class="relative inline-block text-left">
@@ -143,7 +133,7 @@ export default {
           <div class="bg-navbar-color uppercase inline-flex items-center justify-between w-full p-2"
                   :class="{'underline-black': activeDropdown === 'service'}">
             <div>
-              <span class="text-xs" @click="navigateToServices" :class="{'cursor-pointer': true, 'underline-black2': underlineText === 'Services' && activeDropdown === null}">Services</span>
+              <span class="text-xs" :class="{'cursor-pointer': true, 'underline-black2': underlineText === 'Services' && activeDropdown === null}"><NuxtLink to="/services">Services</NuxtLink></span>
 
             </div>
             <svg :class="['w-5 h-5 ml-2 -mr-1', getArrowDirection(isServiceOpen)]" fill="currentColor" viewBox="0 0 20 20" @click="toggleServiceDropdown" class="cursor-pointer">
@@ -198,8 +188,8 @@ export default {
           </div>
         </div>
 
-        <p class="text-xs" :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Gallery' && activeDropdown === null}">Gallery</p>
-        <p class="text-xs" :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Contact' && activeDropdown === null}">Contact</p>
+        <p class="text-xs" :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Gallery' && activeDropdown === null}"><NuxtLink to="/portfolio">Gallery</NuxtLink></p>
+        <p class="text-xs" :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Contact' && activeDropdown === null}"><NuxtLink to="/contact">Contact</NuxtLink></p>
         <p class="text-xs" :class="{'cursor-pointer': true, 'underline-black': underlineText === '3D Packages' && activeDropdown === null}"><NuxtLink to="/3d-packages">3D Packages</NuxtLink></p>
 
 

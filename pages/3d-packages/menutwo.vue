@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AssetsSlider from "~/components/reusuables/AssetsSlider";
+</script>
 
 <template>
   <div class="px-20">
@@ -92,12 +94,16 @@
         <span class="text-new-gray font-imperial text-5xl uppercase">3D </span
         >Assets
       </p>
-     
 
       <p class="text-xs text-brown">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non risus eget mauris malesuada porttitor quis sed odio.
-        </p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non
+        risus eget mauris malesuada porttitor quis sed odio.
+      </p>
     </section>
+
+    <div class="py-12">
+      <AssetsSlider />
+    </div>
   </div>
 </template>
 
