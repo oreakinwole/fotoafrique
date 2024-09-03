@@ -6,12 +6,12 @@ import bg from "public/images/homethirdsegment/icons/bg.png";
 import before from "public/images/homethirdsegment/imgs/image 28.svg";
 import after from "public/images/homethirdsegment/imgs/after.svg";
 import arrow from "public/images/homethirdsegment/icons/arrow.svg";
-import customerpicture from  "public/images/homethirdsegment/imgs/img.svg";
+import customerpicture from "public/images/homethirdsegment/imgs/img.svg";
 import circle from "public/images/homethirdsegment/icons/cir.svg";
 
 export default {
   name: "HomeThirdSegment",
-  components: {OutlinedButton, OurPortfolio},
+  components: { OutlinedButton, OurPortfolio },
   data() {
     return {
       image1,
@@ -21,7 +21,7 @@ export default {
       arrow,
       customerpicture,
       circle,
-      sliderPosition: 50
+      sliderPosition: 50,
     };
   },
   mounted() {
@@ -29,72 +29,83 @@ export default {
   },
   methods: {
     initSlider() {
-      const slider = this.$el.querySelector('.slider-handle');
-      const beforeImage = this.$el.querySelector('.before-image');
-      const afterImage = this.$el.querySelector('.after-image');
-      const sliderLine = this.$el.querySelector('.slider-line');
+      const slider = this.$el.querySelector(".slider-handle");
+      const beforeImage = this.$el.querySelector(".before-image");
+      const afterImage = this.$el.querySelector(".after-image");
+      const sliderLine = this.$el.querySelector(".slider-line");
 
       const onMouseMove = (e) => {
-        const rect = this.$el.querySelector('.comparison-slider').getBoundingClientRect();
+        const rect = this.$el
+          .querySelector(".comparison-slider")
+          .getBoundingClientRect();
         let position = ((e.clientX - rect.left) / rect.width) * 100;
         position = Math.max(0, Math.min(position, 100));
         this.sliderPosition = position;
 
-
-        beforeImage.style.clipPath = `inset(0 ${100 - this.sliderPosition}% 0 0)`;
+        beforeImage.style.clipPath = `inset(0 ${
+          100 - this.sliderPosition
+        }% 0 0)`;
         afterImage.style.clipPath = `inset(0 0 0 ${this.sliderPosition}%)`;
         slider.style.left = `${this.sliderPosition}%`;
         sliderLine.style.left = `${this.sliderPosition}%`;
       };
 
       const onMouseDown = () => {
-        window.addEventListener('mousemove', onMouseMove);
+        window.addEventListener("mousemove", onMouseMove);
       };
 
       const onMouseUp = () => {
-        window.removeEventListener('mousemove', onMouseMove);
+        window.removeEventListener("mousemove", onMouseMove);
       };
 
-      slider.addEventListener('mousedown', onMouseDown);
-      window.addEventListener('mouseup', onMouseUp);
-
+      slider.addEventListener("mousedown", onMouseDown);
+      window.addEventListener("mouseup", onMouseUp);
 
       this.$nextTick(() => {
         slider.style.left = `${this.sliderPosition}%`;
         sliderLine.style.left = `${this.sliderPosition}%`;
       });
-    }
-  }
-
-
+    },
+  },
 };
 </script>
-
 
 <template>
   <div class="home-third-segment bg-white">
     <div class="flex flex-col mb-48 pt-20">
       <div class="ml-28">
         <h4 class="font-playfairDisplay font-[500] text-8xl text-black">
-          Our <span class="text-8xl font-[600] font-playfairDisplay text-[#A89C93] italic">PASSION</span>
+          Our
+          <span
+            class="text-8xl font-[600] font-playfairDisplay text-[#A89C93] italic"
+            >PASSION</span
+          >
         </h4>
 
-        <h4 class="font-playfairDisplay font-[500] text-8xl text-black ">
-          Is the <span class="text-8xl font-[600] font-playfairDisplay text-[#A89C93] italic">WOW</span>
+        <h4 class="font-playfairDisplay font-[500] text-8xl text-black">
+          Is the
+          <span
+            class="text-8xl font-[600] font-playfairDisplay text-[#A89C93] italic"
+            >WOW</span
+          >
         </h4>
       </div>
 
       <div class="flex flex-row justify-end gap-24 mr-28 mt-[-3.5rem]">
         <div class="mt-[17rem]">
-          <p class="font-inter text-[#665244] font-[400] text-xs max-w-xs leading-loose">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
+          <p
+            class="font-inter text-[#665244] font-[400] text-xs max-w-xs leading-loose"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
+            dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
+            vestibulum tortor feugiat.
           </p>
           <OutlinedButton
-              border-color="#000"
-              text-color="#000"
-              background-color="white"
-              text="SCHEDULE A CALL"
-              class="mt-10"
+            border-color="#000"
+            text-color="#000"
+            background-color="white"
+            text="SCHEDULE A CALL"
+            class="mt-10"
           />
         </div>
 
@@ -103,7 +114,9 @@ export default {
             <img :src="image1" alt="house image" width="300" />
           </div>
           <div class="flex-none flex absolute right-6 bottom-20">
-            <span class="text-xs font-[400] text-[#665244] font-inter rotate-90 whitespace-nowrap">
+            <span
+              class="text-xs font-[400] text-[#665244] font-inter rotate-90 whitespace-nowrap"
+            >
               Lorem ipsum dolor sit amet
             </span>
           </div>
@@ -112,77 +125,88 @@ export default {
     </div>
 
     <!-- Before and After Section -->
-    <div class="bg-[#F8F5F3] w-full pt-28 pb-1 mb-20 ">
+    <div class="bg-[#F8F5F3] w-full pt-20 pb-1 mb-20">
       <div class="flex flex-col justify-center items-center">
-        <h3 class="font-playfairDisplay font-[500] text-[60px] text-black">
-          Before <span class="text-[#A89C93] font-imperial font-[400]">&</span> After
+        <h3 class="font-playfairDisplay font-[500] text-5xl text-black">
+          Before
+          <span class="text-[#A89C93] font-imperial font-[400]">&</span> After
         </h3>
-        <p class="font-inter font-[400] text-[16px] text-[#665244] w-[34.8rem] text-center mt-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
+        <p
+          class="font-inter font-[400] text-xs text-[#665244] max-w-md text-center mt-3"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
+          dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
+          vestibulum tortor feugiat.
         </p>
         <OutlinedButton
-            border-color="#000"
-            text-color="#000"
-            background-color="#F8F5F3"
-            text="SEE MORE"
-            class="mt-12"
+          border-color="#000"
+          text-color="#000"
+          background-color="#F8F5F3"
+          text="SEE MORE"
+          class="mt-8"
         />
       </div>
 
-<!--       Image Comparison Slider-->
-      <div class="comparison-slider ml-52 w-[1500px] h-[850px] mb-[10rem] mt-[5rem] relative border-[1rem] border-black rounded-[40px] shadow-custom-dark bg-black bg-[linear-gradient(to_right,_silver_98%,_transparent_50%,_transparent_98%,_silver_98%)]">
+      <!--       Image Comparison Slider-->
+      <div
+        class="comparison-slider  w-[1500px] h-[850px] mb-[10rem] mt-[5rem] relative border-[1rem] border-black rounded-[40px] shadow-custom-dark bg-black bg-[linear-gradient(to_right,_silver_98%,_transparent_50%,_transparent_98%,_silver_98%)]"
+      >
         <div class="comparison-images absolute inset-0 w-full h-full p-6">
-          <img :src="before" alt="before image" class="comparison-img before-image absolute inset-0 h-full object-cover"/>
-          <img :src="after" alt="after image" class="comparison-img after-image absolute inset-0 h-full object-cover"/>
+          <img
+            :src="before"
+            alt="before image"
+            class="comparison-img before-image absolute inset-0 h-full object-cover"
+          />
+          <img
+            :src="after"
+            alt="after image"
+            class="comparison-img after-image absolute inset-0 h-full object-cover"
+          />
         </div>
 
-
-        <div class="bg-white w-[823px] h-[80px] rounded-[50px] absolute top-[40rem] ml-[20%]  z-10 p-3  flex gap-5 flex-row">
+        <div
+          class="bg-white w-[823px] h-[80px] rounded-[50px] absolute top-[40rem] ml-[20%] z-10 p-3 flex gap-5 flex-row"
+        >
           <div class="flex flex-row ml-12">
-         <div class="absolute ">
-           <img :src="customerpicture" alt="customer picture"/>
-
-         </div>
-
-            <div class="relative ml-[-47px] ">
-              <img :src="circle"  alt="circle"/>
+            <div class="absolute">
+              <img :src="customerpicture" alt="customer picture" />
             </div>
 
+            <div class="relative ml-[-47px]">
+              <img :src="circle" alt="circle" />
+            </div>
           </div>
 
           <div class="pt-1 ml-10">
-            <h4 class="font-inter font-[500] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus tem.</h4>
-            <h4 class="font-[400] text-[#A89C93] text-[18px]">Nicole, Home Owner</h4>
+            <h4 class="font-inter font-[500] text-[18px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              luctus tem.
+            </h4>
+            <h4 class="font-[400] text-[#A89C93] text-[18px]">
+              Nicole, Home Owner
+            </h4>
           </div>
         </div>
 
         <!-- Slider Line -->
-        <div class="slider-line absolute top-0 bottom-0" :style="{ left: sliderPosition + '%' }"></div>
+        <div
+          class="slider-line absolute top-0 bottom-0"
+          :style="{ left: sliderPosition + '%' }"
+        ></div>
 
         <!-- Slider Handle -->
-        <div class="slider-handle absolute top-1/2 transform -translate-y-1/2 cursor-pointer" :style="{ left: sliderPosition + '%' } ">
-          <img :src="arrow" alt="arrow image" class="w-[71px] h-[71px]"/>
+        <div
+          class="slider-handle absolute top-1/2 transform -translate-y-1/2 cursor-pointer"
+          :style="{ left: sliderPosition + '%' }"
+        >
+          <img :src="arrow" alt="arrow image" class="w-[71px] h-[71px]" />
         </div>
-
-
-
       </div>
-
-
-
-
-
-
-
-
-
     </div>
 
-    <OurPortfolio class="mb-16"/>
+    <OurPortfolio class="mb-16" />
   </div>
 </template>
-
-
 
 <style scoped>
 .comparison-slider {
@@ -211,7 +235,7 @@ export default {
 
 .slider-line {
   width: 4px;
-  background-color: #A89C93;
+  background-color: #a89c93;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -232,5 +256,4 @@ export default {
   cursor: pointer;
   position: absolute;
 }
-
 </style>

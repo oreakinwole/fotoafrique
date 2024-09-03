@@ -58,13 +58,13 @@ export default {
       </div>
 
       <div class="w-2/3 h-full">
-        <p class="max-w-xl text-3xl">
+        <p class="max-w-xl text-3xl" data-aos="fade-up" >
           WE STRIVE TO ENHANCE THE SYNERGY BETWEEN AESTHETICS, STRUCTURE, AND
           ENVIRONMENTAL DESIGN.
         </p>
 
         <div class="my-4 mt-20 grid grid-cols-3">
-          <div class="place-content-end ">
+          <div class="place-content-end">
             <p class="font-medium">The best design for your space</p>
             <span class="text-new-gray">Located in San Diego</span>
           </div>
@@ -104,7 +104,9 @@ export default {
         >ess
       </h2>
       <div class="mt-2">
-        <p class="font-inter font-[400] text-xs text-[#665244] max-w-sm leading-relaxed">
+        <p
+          class="font-inter font-[400] text-xs text-[#665244] max-w-sm leading-relaxed"
+        >
           Our design process is a collaborative journey, tailored to bring your
           unique outdoor space to life. From initial consultation to final
           installation, we guide you through:
@@ -278,12 +280,14 @@ export default {
         </h4>
       </div>
 
-      <p class="text-[#665244] text-xs font-[400] font-inter max-w-lg leading-relaxed">
+      <p
+        class="text-[#665244] text-xs font-[400] font-inter max-w-lg leading-relaxed"
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
         dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
         vestibulum tortor feugiat.
       </p>
-      
+
       <FilledButton
         background-color="black"
         text="SCHEDULE A CALL"
@@ -392,9 +396,7 @@ export default {
     </div>
   </div>
 
-  <div
-    class="flex flex-row justify-evenly mt-44 w-full bg-[#F8F5F3] pt-14 "
-  >
+  <div class="flex flex-row justify-evenly mt-44 w-full bg-[#F8F5F3] pt-14">
     <div class="mt-44">
       <img :src="house1" alt="house 1" class="w-[350px] h-[389px]" />
     </div>

@@ -32,7 +32,7 @@ export default {
         <h3
           class="uppercase font-semibold text-5xl font-playfairDisplay leading-tight text-left lg:max-w-xl"
         >
-          Creating your dream outdoor space
+          Creating your dream outdoor space,
         </h3>
       </VueWriter>
 
