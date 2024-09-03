@@ -1,6 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
+  <NuxtLayout name="404">
+
+  
   <div class="px-28 pt-12">
     <img src="@/assets/svg/logo.svg" width="100" />
 
@@ -36,6 +39,7 @@
       </div>
     </div>
   </div>
+</NuxtLayout>
 </template>
 
 <style></style>

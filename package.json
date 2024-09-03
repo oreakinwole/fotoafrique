@@ -20,7 +20,9 @@
     "vue3-carousel-nuxt": "^1.1.2"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "ipx": "^3.0.1",
-    "vue-router": "^4.4.3"
+    "vue-router": "^4.4.3",
+    "vue-writer": "^1.2.0"
   }
 }

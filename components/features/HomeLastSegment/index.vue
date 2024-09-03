@@ -56,7 +56,7 @@ export default {
   </div>
 
 
-  <div class="flex flex-row  justify-evenly px-36 pb-44 pt-10">
+  <div class="flex flex-row  justify-evenly px-36  pt-10">
     <img :src="image1" alt="image1" class="w-[367px] h-[392px]">
     <img :src="image2" alt="image2" class="w-[366px] h-[392px]">
     <img :src="image3" alt="image3" class="w-[366px] h-[392px]">

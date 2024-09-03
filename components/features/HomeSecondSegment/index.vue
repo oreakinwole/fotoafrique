@@ -49,9 +49,7 @@ export default {
 
 <template>
   <div class="py-20 px-20">
-    <section
-      class="flex gap-x-8 justify-between h-[580px] py-10 pb-20 "
-    >
+    <section class="flex gap-x-8 justify-between h-[530px] py-10">
       <div class="w-1/3 h-full">
         <img
           src="@/assets/images/pool1.png"
@@ -60,15 +58,13 @@ export default {
       </div>
 
       <div class="w-2/3 h-full">
-        <p class="max-w-xl text-3xl ">
-          WE STRIVE TO ENHANCE THE SYNERGY
-          BETWEEN AESTHETICS, STRUCTURE,
-          AND ENVIRONMENTAL DESIGN.
+        <p class="max-w-xl text-3xl">
+          WE STRIVE TO ENHANCE THE SYNERGY BETWEEN AESTHETICS, STRUCTURE, AND
+          ENVIRONMENTAL DESIGN.
         </p>
-       
 
         <div class="my-4 mt-20 grid grid-cols-3">
-          <div class="place-content-end">
+          <div class="place-content-end ">
             <p class="font-medium">The best design for your space</p>
             <span class="text-new-gray">Located in San Diego</span>
           </div>
@@ -76,64 +72,39 @@ export default {
           <div>&nbsp;</div>
           <img src="@/assets/images/port1.png" width="200" />
         </div>
-       
+
         <div class="max-w-20 bg-green-500">
           <OutlinedButton
-              border-color="#000"
-              text-color="#000"
-              background-color="white"
-              text="SCHEDULE A CALL"
-
+            border-color="#000"
+            text-color="#000"
+            background-color="white"
+            text="SCHEDULE A CALL"
           />
         </div>
       </div>
     </section>
   </div>
 
-  <div class="mb-80 mt-16">
+  <div class="mb-40 pt-16">
     <p class="uppercase text-center font-inter font-[400] text-[16px]">
       Our Partners
     </p>
-    <div class="flex justify-center mt-20">
-      <div
-        class="flex flex-row gap-20 border-t border-b border-[#A89C93] border-solid py-14 px-16"
-      >
-        <img
-          :src="angelus"
-          alt="angelus logo"
-          class="w-[133.64px] h-[55.57px]"
-        />
-        <img :src="orco" alt="orco logo" class="w-[89.05px] h-[50.81px]" />
-        <img
-          :src="unilock"
-          alt="unilock logo"
-          class="w-[211.71px] h-[40.67px] pt-4"
-        />
-        <img
-          :src="belgard"
-          alt="belgard logo"
-          class="w-[48.58px] h-[51.05px]"
-        />
-        <img
-          :src="techo"
-          alt="techo bloc logo"
-          class="w-[382.67px] h-[40.65px] pt-4"
-        />
-        <img :src="acher" alt="acher stone logo" class="w-[76px] h-[51px]" />
-      </div>
+
+    <div class="mt-8">
+      <img src="@/assets/images/partners.png" class="mx-auto" />
     </div>
   </div>
 
   <div class="flex flex-row justify-between mb-24 px-32">
     <div>
-      <h2 class="font-playfairDisplay font-[500] text-[60px]">
+      <h2 class="font-playfairDisplay font-[500] text-5xl">
         Our Design Pro<Span
-          class="font-imperial text-[80px] font-[400] text-[#A89C93]"
+          class="font-imperial text-6xl font-[400] text-[#A89C93]"
           >C</Span
         >ess
       </h2>
       <div class="mt-2">
-        <p class="font-inter font-[400] text-[16px] text-[#665244] w-[30rem]">
+        <p class="font-inter font-[400] text-xs text-[#665244] max-w-sm leading-relaxed">
           Our design process is a collaborative journey, tailored to bring your
           unique outdoor space to life. From initial consultation to final
           installation, we guide you through:
@@ -142,7 +113,7 @@ export default {
     </div>
 
     <p
-      class="text-[#665244] text-[16px] font-inter font-[400] w-[29rem] mt-[8rem]"
+      class="text-[#665244] text-xs leading-relaxed font-inter font-[400] max-w-sm mt-[8rem]"
     >
       Together, let's create a space that reflects your personality and enhances
       your lifestyle.
@@ -269,12 +240,12 @@ export default {
     </div>
   </div>
 
-  <div class="flex justify-center items-center text-center ">
+  <div class="flex justify-center items-center text-center">
     <div
       class="font-playfairDisplay italic font-[600] text-6xl flex flex-row gap-3"
     >
       <h1>The</h1>
-      <img :src="icon1" alt="icon 1" width="150" class=" mx-2" />
+      <img :src="icon1" alt="icon 1" width="150" class="mx-2" />
       <h1>Outdoor Oasis</h1>
     </div>
   </div>
@@ -292,31 +263,32 @@ export default {
       class="font-playfairDisplay italic font-[600] text-6xl flex flex-row gap-3"
     >
       <h1>The Modern</h1>
-      <img :src="icon2" alt="icon 2" width="150" class=" mx-2" />
+      <img :src="icon2" alt="icon 2" width="150" class="mx-2" />
       <h1>Lifestyle</h1>
     </div>
   </div>
 
-  <div class="mt-80 flex flex-row">
-    <div class="ml-32 mt-10">
+  <div class="mt-80 flex">
+    <div class="ml-32 mt-20">
       <div>
-        <h4 class="font-playfairDisplay text-[60px] font-[500]">
-          Servi<span class="text-[#A89C93] font-imperial font-[400] text-[80px]"
+        <h4 class="font-playfairDisplay text-5xl font-[500]">
+          Servi<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
             >C</span
           >es
         </h4>
       </div>
 
-      <p class="text-[#665244] text-[16px] font-[400] font-inter w-[25rem]">
+      <p class="text-[#665244] text-xs font-[400] font-inter max-w-lg leading-relaxed">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
         dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
         vestibulum tortor feugiat.
       </p>
+      
       <FilledButton
         background-color="black"
         text="SCHEDULE A CALL"
         text-color="white"
-        class="mt-16"
+        class="mt-6"
       />
     </div>
 
@@ -421,7 +393,7 @@ export default {
   </div>
 
   <div
-    class="flex flex-row justify-evenly mt-44 w-full bg-[#F8F5F3] pt-14 pb-24"
+    class="flex flex-row justify-evenly mt-44 w-full bg-[#F8F5F3] pt-14 "
   >
     <div class="mt-44">
       <img :src="house1" alt="house 1" class="w-[350px] h-[389px]" />

@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import OutlinedButton from "~/components/reusuables/OutlinedButton/index.vue";
+import OurPortfolio from "~/components/reusuables/OurPortfolio/index.vue";
+
+
 import "vue3-carousel/dist/carousel.css";
 const settings = ref({
   itemsToShow: 1,
@@ -46,7 +50,7 @@ const breakpoints = ref({
       </div>
     </div>
 
-    <section class=" text-center">
+    <section class="text-center mb-32">
       <p class="max-w-screen-md leading-8 mx-auto text-[#665244] mb-12">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
         dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
@@ -54,8 +58,17 @@ const breakpoints = ref({
         adipiscing. Suspendisse pharetra est nunc, eget varius libero pretium
       </p>
 
-      <button class="uppercase text-sm py-4 px-10 border border-black">Schedule a call</button>
+      <OutlinedButton
+        border-color="#000"
+        text-color="#000"
+        background-color="white"
+        text="SCHEDULE A CALL"
+        class="mt-10"
+      />
     </section>
+
+  <OurPortfolio/>
+
   </div>
 </template>
 

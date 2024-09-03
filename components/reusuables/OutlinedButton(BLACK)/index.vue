@@ -25,9 +25,9 @@ export default {
 }
 </script>
 <template>
-  <button class="relative w-[299px] h-[67px] overflow-hidden "
+  <button class="relative w-[200px] h-[50px] overflow-hidden "
           :style="{ backgroundColor: backgroundColor, color: textColor, border: `1px solid ${borderColor}` }">
-    <span>{{ text }}</span>
+    <span class="text-xs">{{ text }}</span>
     <span class=" inset-0 bg-black transition-transform duration-[0.5s] transform -translate-x-full"></span>
   </button>
 </template>

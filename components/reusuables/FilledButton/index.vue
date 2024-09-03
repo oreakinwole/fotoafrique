@@ -22,9 +22,9 @@ export default {
 </script>
 
 <template>
-  <button class="relative w-[299px] h-[67px] overflow-hidden"
+  <button class="relative w-[200px] h-[50px] overflow-hidden"
           :style="{ backgroundColor: backgroundColor, color: textColor }">
-    <span class="relative z-10 transition-colors duration-[0.5s] ease-out">{{text}}</span>
+    <span class="relative z-10 transition-colors duration-[0.5s] ease-out text-xs">{{text}}</span>
     <span class="absolute inset-0 bg-white"></span>
   </button>
 </template>

@@ -72,8 +72,8 @@ export default {
 
 
 <template>
-  <div class="home-third-segment">
-    <div class="flex flex-col mb-48 mt-40">
+  <div class="home-third-segment bg-white">
+    <div class="flex flex-col mb-48 pt-20">
       <div class="ml-28">
         <h4 class="font-playfairDisplay font-[500] text-8xl text-black">
           Our <span class="text-8xl font-[600] font-playfairDisplay text-[#A89C93] italic">PASSION</span>

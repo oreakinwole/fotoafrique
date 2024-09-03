@@ -98,7 +98,7 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-col bg-navbar-color font-inter fixed w-full z-10">
+  <div class="flex flex-col bg-navbar-color font-inter w-full">
     <!-- first layout -->
     <PopUpModal text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
 

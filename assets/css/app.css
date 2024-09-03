@@ -29,6 +29,7 @@ body{
     @apply bg-body transition overflow-x-hidden;
     
     font-family: "Inter", sans-serif;
+    background-color: #fcfbfa;
 }
 
 .invisible-scroll{
