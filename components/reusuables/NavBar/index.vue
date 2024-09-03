@@ -200,7 +200,7 @@ export default {
 
         <p class="text-xs" :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Gallery' && activeDropdown === null}">Gallery</p>
         <p class="text-xs" :class="{'cursor-pointer': true, 'underline-black': underlineText === 'Contact' && activeDropdown === null}">Contact</p>
-        <p class="text-xs" :class="{'cursor-pointer': true, 'underline-black': underlineText === '3D Packages' && activeDropdown === null}">3D Packages</p>
+        <p class="text-xs" :class="{'cursor-pointer': true, 'underline-black': underlineText === '3D Packages' && activeDropdown === null}"><NuxtLink to="/3d-packages">3D Packages</NuxtLink></p>
 
 
 
