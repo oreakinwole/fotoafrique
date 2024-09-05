@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import OutlinedButton from "~/components/reusuables/OutlinedButton/index.vue";
-import OurPortfolio from "~/components/reusuables/OurPortfolio/index.vue";
-import AssetsSlider from "~/components/reusuables/AssetsSlider";
 </script>
 
 <template>

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import AssetsSlider from "~/components/reusuables/AssetsSlider";
 </script>
 
 <template>

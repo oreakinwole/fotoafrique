@@ -1,7 +1,6 @@
 <script>
 import img1 from "public/images/homesecondsegment/imgs/Mask group.png";
 import img2 from "public/images/homesecondsegment/imgs/Mask group2.png";
-import OutlinedButton from "~/components/reusuables/OutlinedButton/index.vue";
 import acher from "public/images/homesecondsegment/icons/Acher Stone.png";
 import angelus from "public/images/homesecondsegment/icons/Angelus logo 1.png";
 import belgard from "public/images/homesecondsegment/icons/belgard.png";
@@ -12,7 +11,6 @@ import icon1 from "public/images/getyouryard/icon/Rectangle 263.png";
 import icon2 from "public/images/getyouryard/icon/Rectangle 427.png";
 import house1 from "public/images/homesecondsegment/imgs/house1.png";
 import house2 from "public/images/homesecondsegment/imgs/house2.png";
-import FilledButton from "~/components/reusuables/FilledButton/index.vue";
 import backyard from "public/images/homesecondsegment/imgs/Backyard.svg";
 import frontyard from "public/images/homesecondsegment/imgs/frontyard.svg";
 import fullyard from "public/images/homesecondsegment/imgs/FullYard.svg";
@@ -21,7 +19,6 @@ import greaterthanicon from "public/images/homesecondsegment/icons/grt.svg";
 import lessthanicon from "public/images/homesecondsegment/icons/lst.svg";
 export default {
   name: "HomeSecondSegment",
-  components: { FilledButton, OutlinedButton },
   data() {
     return {
       img1,
@@ -48,7 +45,7 @@ export default {
 </script>
 
 <template>
-  <div class="py-20 px-20">
+  <div class="pt-20 px-20">
     <section class="flex gap-x-8 justify-between h-[530px] py-10">
       <div class="w-1/3 h-full">
         <img
@@ -58,7 +55,7 @@ export default {
       </div>
 
       <div class="w-2/3 h-full">
-        <p class="max-w-xl text-3xl" data-aos="fade-up" >
+        <p class="max-w-xl text-3xl" data-aos="fade-up">
           WE STRIVE TO ENHANCE THE SYNERGY BETWEEN AESTHETICS, STRUCTURE, AND
           ENVIRONMENTAL DESIGN.
         </p>
@@ -70,10 +67,10 @@ export default {
           </div>
 
           <div>&nbsp;</div>
-          <img src="@/assets/images/port1.png" width="200" />
+          <img src="@/assets/images/port1.png" width="200" data-aos="fade-right" />
         </div>
 
-        <div class="max-w-20 bg-green-500">
+        <div class="max-w-20 ">
           <OutlinedButton
             border-color="#000"
             text-color="#000"
@@ -95,152 +92,28 @@ export default {
     </div>
   </div>
 
-  <div class="flex flex-row justify-between mb-24 px-32">
-    <div>
-      <h2 class="font-playfairDisplay font-[500] text-5xl">
-        Our Design Pro<Span
-          class="font-imperial text-6xl font-[400] text-[#A89C93]"
-          >C</Span
-        >ess
-      </h2>
-      <div class="mt-2">
-        <p
-          class="font-inter font-[400] text-xs text-[#665244] max-w-sm leading-relaxed"
-        >
-          Our design process is a collaborative journey, tailored to bring your
-          unique outdoor space to life. From initial consultation to final
-          installation, we guide you through:
-        </p>
-      </div>
-    </div>
 
-    <p
-      class="text-[#665244] text-xs leading-relaxed font-inter font-[400] max-w-sm mt-[8rem]"
-    >
-      Together, let's create a space that reflects your personality and enhances
-      your lifestyle.
-    </p>
+  <div class="h-[600px] mt-14 relative px-28">
+    <video
+      id="myVideo"
+      src="/Ashlee_Wilson.mp4"
+      autoplay="true"
+      loop
+      muted
+      class="h-full object-cover rounded-3xl"
+    ></video>
+
+    <div class="absolute top-32">
+     <h3 class="text-white ml-20 flex flex-col font-playfairDisplay font-[500] text-[70px]">Creating curb appeal <span>One home at a time</span></h3>
+   </div>
   </div>
 
-  <div class="flex flex-row justify-between px-32 mb-52">
-    <OutlinedButton
-      border-color="#000"
-      text-color="#000"
-      background-color="white"
-      text="SEE MORE"
-    />
+ 
 
-    <div class="flex flex-col mr-20">
-      <!-- upper container -->
-      <div class="flex flex-row">
-        <div class="w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4">
-          <div class="flex flex-row justify-between">
-            <h3 class="flex flex-col font-inter font-[700] text-[20px]">
-              Free Design <span>Consultation</span>
-            </h3>
-            <p class="pt-1 text-[#A89C93] text-[16px] font-inter font-[400]">
-              /01
-            </p>
-          </div>
+  <GetYourYard />
+  <DesignProcess />
 
-          <div class="pt-5">
-            <p class="text-[#665244] w-[16rem] font-[400] text-[14px]">
-              Embark on the transformation journey with a free design
-              consultation.
-            </p>
-          </div>
 
-          <div>
-            <p class="font-[300] text-[#A89C93] text-[27px] pt-[6rem]">&#43;</p>
-          </div>
-        </div>
-
-        <div class="w-[300px] h-[295px]"></div>
-
-        <div class="w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4">
-          <div class="flex flex-row justify-between">
-            <h3 class="flex flex-col font-inter font-[700] text-[20px]">
-              Ultra Realistic <span>3D Design Renderings</span>
-            </h3>
-            <p class="pt-1 text-[#A89C93] text-[16px] font-inter font-[400]">
-              /03
-            </p>
-          </div>
-
-          <div class="pt-5">
-            <p class="text-[#665244] w-[14rem] font-[400] text-[14px]">
-              Taking the design process a step further, we translate the 2D plan
-              into ultra-realistic 3D renderings.
-            </p>
-          </div>
-
-          <div>
-            <p class="font-[300] text-[#A89C93] text-[27px] pt-[4.3rem]">
-              &#43;
-            </p>
-          </div>
-        </div>
-
-        <div class="w-[300px] h-[295px]"></div>
-      </div>
-
-      <!-- lower container -->
-      <div class="flex flex-row mt-[-2px]">
-        <div class="w-[300px] h-[295px]"></div>
-
-        <div
-          class="w-[304px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-2px]"
-        >
-          <div class="flex flex-row justify-between">
-            <h3 class="flex flex-col font-inter font-[700] text-[20px]">
-              2D Landscape <span>Design</span>
-            </h3>
-            <p class="pt-1 text-[#A89C93] text-[16px] font-inter font-[400]">
-              /02
-            </p>
-          </div>
-
-          <div class="pt-5">
-            <p class="text-[#665244] w-[14rem] font-[400] text-[14px]">
-              Following our in-person meeting, we craft a 2D landscape design.
-            </p>
-          </div>
-
-          <div>
-            <p class="font-[300] text-[#A89C93] text-[27px] pt-[6rem]">&#43;</p>
-          </div>
-        </div>
-
-        <div class="w-[300px] h-[295px]"></div>
-
-        <div
-          class="w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-4px]"
-        >
-          <div class="flex flex-row justify-between">
-            <h3 class="flex flex-col font-inter font-[700] text-[20px]">
-              Comprehensive <span>Quote</span>
-            </h3>
-            <p class="pt-1 text-[#A89C93] text-[16px] font-inter font-[400]">
-              /04
-            </p>
-          </div>
-
-          <div class="pt-5">
-            <p class="text-[#665244] w-[15rem] font-[400] text-[14px]">
-              With the designs refined and your dream backyard taking shape, we
-              present a detailed and itemized quote for the proposed design.
-            </p>
-          </div>
-
-          <div>
-            <p class="font-[300] text-[#A89C93] text-[27px] pt-[3.5rem]">
-              &#43;
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="flex justify-center items-center text-center">
     <div
@@ -270,7 +143,7 @@ export default {
     </div>
   </div>
 
-  <div class="mt-80 flex">
+  <div class="mt-20 flex">
     <div class="ml-32 mt-20">
       <div>
         <h4 class="font-playfairDisplay text-5xl font-[500]">
@@ -440,3 +313,13 @@ export default {
     </div>
   </div>
 </template>
+
+<style>
+#myVideo {
+  /* position: fixed;
+  right: 0;
+  bottom: 0; */
+  min-width: 100%;
+  min-height: 100%;
+}
+</style>

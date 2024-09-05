@@ -1,6 +1,5 @@
 <script>
-import OurPortfolio from "~/components/reusuables/OurPortfolio/index.vue";
-import OutlinedButton from "~/components/reusuables/OutlinedButton/index.vue";
+import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 import image1 from "public/images/homethirdsegment/imgs/img(1).png";
 import bg from "public/images/homethirdsegment/icons/bg.png";
 import before from "public/images/homethirdsegment/imgs/image 28.svg";
@@ -11,7 +10,7 @@ import circle from "public/images/homethirdsegment/icons/cir.svg";
 
 export default {
   name: "HomeThirdSegment",
-  components: { OutlinedButton, OurPortfolio },
+  components: { ImgComparisonSlider },
   data() {
     return {
       image1,
@@ -21,52 +20,10 @@ export default {
       arrow,
       customerpicture,
       circle,
-      sliderPosition: 50,
     };
   },
-  mounted() {
-    this.initSlider();
-  },
-  methods: {
-    initSlider() {
-      const slider = this.$el.querySelector(".slider-handle");
-      const beforeImage = this.$el.querySelector(".before-image");
-      const afterImage = this.$el.querySelector(".after-image");
-      const sliderLine = this.$el.querySelector(".slider-line");
-
-      const onMouseMove = (e) => {
-        const rect = this.$el
-          .querySelector(".comparison-slider")
-          .getBoundingClientRect();
-        let position = ((e.clientX - rect.left) / rect.width) * 100;
-        position = Math.max(0, Math.min(position, 100));
-        this.sliderPosition = position;
-
-        beforeImage.style.clipPath = `inset(0 ${
-          100 - this.sliderPosition
-        }% 0 0)`;
-        afterImage.style.clipPath = `inset(0 0 0 ${this.sliderPosition}%)`;
-        slider.style.left = `${this.sliderPosition}%`;
-        sliderLine.style.left = `${this.sliderPosition}%`;
-      };
-
-      const onMouseDown = () => {
-        window.addEventListener("mousemove", onMouseMove);
-      };
-
-      const onMouseUp = () => {
-        window.removeEventListener("mousemove", onMouseMove);
-      };
-
-      slider.addEventListener("mousedown", onMouseDown);
-      window.addEventListener("mouseup", onMouseUp);
-
-      this.$nextTick(() => {
-        slider.style.left = `${this.sliderPosition}%`;
-        sliderLine.style.left = `${this.sliderPosition}%`;
-      });
-    },
-  },
+ 
+ 
 };
 </script>
 
@@ -148,59 +105,67 @@ export default {
       </div>
 
       <!--       Image Comparison Slider-->
-      <div
-        class="comparison-slider  w-[1500px] h-[850px] mb-[10rem] mt-[5rem] relative border-[1rem] border-black rounded-[40px] shadow-custom-dark bg-black bg-[linear-gradient(to_right,_silver_98%,_transparent_50%,_transparent_98%,_silver_98%)]"
-      >
-        <div class="comparison-images absolute inset-0 w-full h-full p-6">
+      <div class="px-32 my-20 h-[600px] relative">
+        <ImgComparisonSlider class="h-full">
+          <!-- eslint-disable -->
           <img
-            :src="before"
-            alt="before image"
-            class="comparison-img before-image absolute inset-0 h-full object-cover"
+            class="rounded-2xl"
+            slot="first"
+            style="width: 100%; height: 100%"
+            src="@/assets/images/before.png"
           />
           <img
-            :src="after"
-            alt="after image"
-            class="comparison-img after-image absolute inset-0 h-full object-cover"
+            slot="second"
+            style="width: 100%; height: 100%"
+            src="@/assets/images/after.png"
           />
-        </div>
+
+          <svg
+            slot="handle"
+            class="w-12"
+            width="71"
+            height="71"
+            viewBox="0 0 71 71"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="35.5" cy="35.5" r="35.5" fill="#D0C2B0" />
+            <path
+              d="M51.1997 34.4899L49.2297 32.5199L46.0197 29.3099C45.3397 28.6399 44.1797 29.1199 44.1797 30.0799V36.3099V41.9199C44.1797 42.8799 45.3397 43.3599 46.0197 42.6799L51.1997 37.4999C52.0297 36.6799 52.0297 35.3199 51.1997 34.4899Z"
+              fill="white"
+            />
+            <path
+              d="M20.8003 34.4899L22.7703 32.5199L25.9803 29.3099C26.6603 28.6399 27.8203 29.1199 27.8203 30.0799V36.3099V41.9199C27.8203 42.8799 26.6603 43.3599 25.9803 42.6799L20.8003 37.4999C19.9703 36.6799 19.9703 35.3199 20.8003 34.4899Z"
+              fill="white"
+            />
+          </svg>
+
+          <!-- eslint-enable -->
+        </ImgComparisonSlider>
 
         <div
-          class="bg-white w-[823px] h-[80px] rounded-[50px] absolute top-[40rem] ml-[20%] z-10 p-3 flex gap-5 flex-row"
-        >
-          <div class="flex flex-row ml-12">
-            <div class="absolute">
-              <img :src="customerpicture" alt="customer picture" />
-            </div>
-
-            <div class="relative ml-[-47px]">
-              <img :src="circle" alt="circle" />
-            </div>
-          </div>
-
-          <div class="pt-1 ml-10">
-            <h4 class="font-inter font-[500] text-[18px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              luctus tem.
-            </h4>
-            <h4 class="font-[400] text-[#A89C93] text-[18px]">
-              Nicole, Home Owner
-            </h4>
-          </div>
+      class="bg-white w-[823px] h-[80px] rounded-[50px] absolute bottom-10 ml-[20%] z-10 p-3 flex gap-5 flex-row"
+    >
+      <div class="flex flex-row ml-12">
+        <div class="absolute">
+          <img :src="customerpicture" alt="customer picture" />
         </div>
 
-        <!-- Slider Line -->
-        <div
-          class="slider-line absolute top-0 bottom-0"
-          :style="{ left: sliderPosition + '%' }"
-        ></div>
-
-        <!-- Slider Handle -->
-        <div
-          class="slider-handle absolute top-1/2 transform -translate-y-1/2 cursor-pointer"
-          :style="{ left: sliderPosition + '%' }"
-        >
-          <img :src="arrow" alt="arrow image" class="w-[71px] h-[71px]" />
+        <div class="relative ml-[-47px]">
+          <img :src="circle" alt="circle" />
         </div>
+      </div>
+
+      <div class="pt-1 ml-10">
+        <h4 class="font-inter font-[500] text-[18px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          luctus tem.
+        </h4>
+        <h4 class="font-[400] text-[#A89C93] text-[18px]">
+          Nicole, Home Owner
+        </h4>
+      </div>
+    </div>
       </div>
     </div>
 
