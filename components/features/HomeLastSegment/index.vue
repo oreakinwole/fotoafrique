@@ -1,6 +1,5 @@
 <script>
 import house from "public/images/homelastsegment/imgs/house.png";
-import OutlinedButton from "~/components/reusuables/OutlinedButton/index.vue";
 import blueHouse from "/public/images/homelastsegment/imgs/Mask group(2).png";
 import instagram from "/public/images/homelastsegment/icons/ant-design_instagram-filled.png";
 import image1 from "public/images/homelastsegment/imgs/Image 1.png";
@@ -9,7 +8,6 @@ import image3 from "public/images/homelastsegment/imgs/Image 3.png";
 import image4 from "public/images/homelastsegment/imgs/Image 4.png";
 export default {
   name: "HomeLastSegment",
-  components: { OutlinedButton },
   data() {
     return {
       house,

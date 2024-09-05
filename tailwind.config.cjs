@@ -28,6 +28,7 @@ module.exports = {
         "navbar-color" : "#F8f5F3",
         "new-gray": "#A89C93",
         "brown": "#665244",
+        "loader-brown": '#D0C2B0'
       },
       zIndex: {
         60: "60",

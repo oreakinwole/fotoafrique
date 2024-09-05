@@ -31,7 +31,7 @@ export default {};
       </p>
     </div>
 
-    <div class="flex justify-between px-32 mb-52">
+    <div class="flex justify-between px-32 mb-28">
       <OutlinedButton
         border-color="#000"
         text-color="#000"
@@ -153,6 +153,23 @@ export default {};
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="mb-48">
+      <p
+        class="text-center mx-auto text-[#665244] font-[400] text-xs w-[25rem]"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+        tempor malesuada. Ut vitae lorem id mi vulputate gravida ut in arcu.
+      </p>
+      <div class="flex justify-center items-center mt-4">
+        <OutlinedButton
+          border-color="#000"
+          text-color="#000"
+          background-color="white"
+          text="GET IN TOUCH"
+        />
       </div>
     </div>
   </div>

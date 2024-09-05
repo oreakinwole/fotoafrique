@@ -55,7 +55,7 @@ export default {
       </div>
 
       <div class="w-2/3 h-full">
-        <p class="max-w-xl text-3xl" data-aos="fade-up">
+        <p class="max-w-xl text-3xl" data-aos="fade-in" data-aos-duration="2000">
           WE STRIVE TO ENHANCE THE SYNERGY BETWEEN AESTHETICS, STRUCTURE, AND
           ENVIRONMENTAL DESIGN.
         </p>
@@ -67,7 +67,7 @@ export default {
           </div>
 
           <div>&nbsp;</div>
-          <img src="@/assets/images/port1.png" width="200" data-aos="fade-right" />
+          <img src="@/assets/images/port1.png" width="200" data-aos="fade-right" data-aos-duration="2000" />
         </div>
 
         <div class="max-w-20 ">

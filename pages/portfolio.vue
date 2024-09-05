@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import OurPortfolio from "~/components/reusuables/OurPortfolio/index.vue";
-import GetYourYard from "~/components/reusuables/GetYourYard/index.vue";
-
-</script>
-
 <template>
  <div>
   <div class="px-20">

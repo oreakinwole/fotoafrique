@@ -17,24 +17,24 @@ export default {
 
 <template>
   <div
-    class="bg-navbar-color w-full flex flex-col lg:flex-row pt-12 justify-between"
+    class="bg-navbar-color w-full flex flex-col lg:flex-row pt-12 justify-between min-h-[500px]"
   >
     <!-- first container -->
-    <div class="flex-1 absolute lg:ml-[8rem]">
-      <VueWriter
+    <div class="flex-1 absolute lg:ml-[5rem]">
+      <!-- <VueWriter
         class="uppercase font-semibold text-5xl font-playfairDisplay leading-tight text-left lg:max-w-xl"
         :array="['with the finest backyard designs', 'tailored to your needs']"
         :typeSpeed="100"
         :iterations="1"
+      > -->
+      <h3
+        class="uppercase font-semibold text-5xl font-playfairDisplay leading-normal text-left lg:max-w-xl"
       >
-        <h3
-          class="uppercase font-semibold text-5xl font-playfairDisplay leading-tight text-left lg:max-w-xl"
-        >
-          Creating your dream outdoor space,
-        </h3>
-      </VueWriter>
+        Creating your dream outdoor space, with the finest backyard designs.
+      </h3>
+      <!-- </VueWriter> -->
 
-      <div class="mt-14 animate__animated animate__shakeY" >
+      <div class="mt-14" data-aos="fade-up" data-aos-duration="2000">
         <FilledButton
           background-color="black"
           text="BOOK FREE CONSULTATION"

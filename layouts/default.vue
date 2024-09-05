@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
 
-<template>
-  <div>
+<template>  
+  <div class="max-w-[1600px] mx-auto ">
+
+
     <NavBar underlineText="Home" />
     <slot />
     <Footer class="mt-32" />
