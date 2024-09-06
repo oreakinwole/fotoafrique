@@ -36,7 +36,7 @@ const handleBookConsult = () => {
           background-color="black"
           text="BOOK FREE CONSULTATION"
           text-color="white"
-          @click="handleBookConsult"
+          @click.once="handleBookConsult"
         />
       </div>
     </div>

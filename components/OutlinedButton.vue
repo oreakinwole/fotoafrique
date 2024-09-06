@@ -53,7 +53,7 @@ button {
 button span:first-child {
   z-index: 10;
   position: relative;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 button span:last-child {
@@ -65,7 +65,7 @@ button span:last-child {
   bottom: 0;
   width: 100%;
   transform: translateX(-100%);
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 button:hover span:last-child {

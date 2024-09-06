@@ -159,11 +159,14 @@ export default {};
     <div class="mb-48">
       <p
         class="text-center mx-auto text-[#665244] font-[400] text-xs w-[25rem]"
+        data-aos-duration="1000" data-aos-delay="400" data-aos="fade-up"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
         tempor malesuada. Ut vitae lorem id mi vulputate gravida ut in arcu.
       </p>
-      <div class="flex justify-center items-center mt-4">
+
+
+      <div class="flex justify-center items-center mt-4" data-aos-duration="1000" data-aos-delay="400" data-aos="fade-up">
         <OutlinedButton
           border-color="#000"
           text-color="#000"

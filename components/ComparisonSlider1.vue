@@ -139,7 +139,7 @@ export default {
 }
 
 .comparison-img {
-  transition: clip-path 0.2s ease;
+  transition: clip-path 0.4s ease;
 }
 
 .before-image {

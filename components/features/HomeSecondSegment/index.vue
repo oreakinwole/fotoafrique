@@ -143,7 +143,7 @@ export default {
     </div>
   </div>
 
-  <div class="mt-20 flex">
+  <div class="mt-20 flex" data-aos-duration="2000" data-aos-delay="400" data-aos="fade-in">
     <div class="ml-32 mt-20">
       <div>
         <h4 class="font-playfairDisplay text-5xl font-[500]">
