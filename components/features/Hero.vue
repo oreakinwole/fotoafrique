@@ -1,17 +1,14 @@
-<script>
-import VueWriter from "vue-writer";
+<script setup lang="ts">
+// import VueWriter from "vue-writer";
 import garden from "public/images/hero/imgs/garden.png";
 import chat from "public/images/hero/icons/chat.png";
 
-export default {
-  name: "Hero",
-  components: { VueWriter },
-  data() {
-    return {
-      garden,
-      chat,
-    };
-  },
+const handleBookConsult = () => {
+  const calendly = useCalendly();
+  
+  calendly.initPopupWidget({
+    url: "https://calendly.com/d/2sx-n9t-6g7",
+  });
 };
 </script>
 
@@ -39,6 +36,7 @@ export default {
           background-color="black"
           text="BOOK FREE CONSULTATION"
           text-color="white"
+          @click="handleBookConsult"
         />
       </div>
     </div>

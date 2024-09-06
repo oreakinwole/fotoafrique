@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [// '@nuxtjs/color-mode',
-  '@nuxt/image', 'vue3-carousel-nuxt', 'nuxt-aos'],
+  '@nuxt/image', 'vue3-carousel-nuxt', 'nuxt-aos', 'nuxt-calendly'],
 
   css:[
       '~/assets/css/app.css',
