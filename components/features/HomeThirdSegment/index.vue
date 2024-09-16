@@ -57,7 +57,7 @@ export default {
             border-color="#000"
             text-color="#000"
             background-color="white"
-            text="SCHEDULE A CALL"
+            text="TRANSFORM YOUR YARD"
             class="mt-10"
           />
         </div>

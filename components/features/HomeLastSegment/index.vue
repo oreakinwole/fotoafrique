@@ -62,23 +62,6 @@ export default {
     </div>
   </div>
 
-  <div class="flex justify-center items-center text-center">
-    <div
-      class="font-playfairDisplay italic font-[600] text-6xl flex flex-row gap-3"
-    >
-      <h1>A Contemporary Yard Design for</h1>
-    </div>
-  </div>
-
-  <div class="flex justify-center items-center text-center mt-6">
-    <div
-      class="font-playfairDisplay italic font-[600] text-6xl flex flex-row gap-3"
-    >
-      <h1>The Modern</h1>
-      <img :src="icon2" alt="icon 2" width="150" class="mx-2" />
-      <h1>Lifestyle</h1>
-    </div>
-  </div>
 
 
 
