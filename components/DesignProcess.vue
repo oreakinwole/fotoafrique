@@ -3,8 +3,8 @@ export default {};
 </script>
 
 <template>
-  <div>
-    <div class="flex flex-row justify-between mb-24 px-32">
+  <div class="mt-24">
+    <div class="flex flex-row justify-between  px-32">
       <div>
         <h2 class="font-playfairDisplay font-[500] text-5xl">
           Our Design Pro<Span
@@ -156,22 +156,23 @@ export default {};
       </div>
     </div>
 
-    <div class="mb-48">
+    <div class="mb-20">
       <p
         class="text-center mx-auto text-[#665244] font-[400] text-xs w-[25rem]"
-        data-aos-duration="1000" data-aos-delay="400" data-aos="fade-up"
+        data-aos-duration="1000"  data-aos="fade-up"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
-        tempor malesuada. Ut vitae lorem id mi vulputate gravida ut in arcu.
+        Get your yard design started in simple steps. click to get started
       </p>
 
 
-      <div class="flex justify-center items-center mt-4" data-aos-duration="1000" data-aos-delay="400" data-aos="fade-up">
+      <div class="flex justify-center items-center mt-4" 
+      data-aos-duration="1000"  data-aos="fade-up"
+      >
         <OutlinedButton
           border-color="#000"
           text-color="#000"
           background-color="white"
-          text="GET IN TOUCH"
+          text="GET STARTED"
         />
       </div>
     </div>

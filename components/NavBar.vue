@@ -88,7 +88,7 @@ export default {
 <template>
   <div class="flex flex-col bg-navbar-color font-inter w-full">
     <!-- first layout -->
-    <PopUpModal text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+    <PopUpModal text="BOOK A FREE DESIGN CONSULTATION." />
 
     <!-- second layout  -->
     <div class="flex flex-row mt-10 justify-between text-xs">

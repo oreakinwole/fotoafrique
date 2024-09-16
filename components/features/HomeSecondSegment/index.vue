@@ -1,4 +1,6 @@
 <script>
+import { ImgComparisonSlider } from "@img-comparison-slider/vue";
+
 import img1 from "public/images/homesecondsegment/imgs/Mask group.png";
 import img2 from "public/images/homesecondsegment/imgs/Mask group2.png";
 import acher from "public/images/homesecondsegment/icons/Acher Stone.png";
@@ -17,8 +19,14 @@ import fullyard from "public/images/homesecondsegment/imgs/FullYard.svg";
 import renovation from "public/images/homesecondsegment/imgs/Renovation.svg";
 import greaterthanicon from "public/images/homesecondsegment/icons/grt.svg";
 import lessthanicon from "public/images/homesecondsegment/icons/lst.svg";
+import customerpicture from "public/images/homethirdsegment/imgs/img.svg";
+import circle from "public/images/homethirdsegment/icons/cir.svg";
+
+
 export default {
   name: "HomeSecondSegment",
+  components: { ImgComparisonSlider },
+
   data() {
     return {
       img1,
@@ -39,6 +47,8 @@ export default {
       renovation,
       greaterthanicon,
       lessthanicon,
+      customerpicture,
+      circle
     };
   },
 };
@@ -82,40 +92,89 @@ export default {
     </section>
   </div>
 
-  <div class="mb-40 pt-16">
-    <p class="uppercase text-center font-inter font-[400] text-[16px]">
-      Our Partners
-    </p>
-
-    <div class="mt-8">
-      <img src="@/assets/images/partners.png" class="mx-auto" />
-    </div>
-  </div>
-
-
-  <div class="h-[600px] mt-14 relative px-28">
-    <video
-      id="myVideo"
-      src="/Ashlee_Wilson.mp4"
-      autoplay="true"
-      loop
-      muted
-      class="h-full object-cover rounded-3xl"
-    ></video>
-
-    <div class="absolute top-32">
-     <h3 class="text-white ml-20 flex flex-col font-playfairDisplay font-[500] text-[70px]">Creating curb appeal <span>One home at a time</span></h3>
-   </div>
-  </div>
-
- 
-
-  <GetYourYard />
   <DesignProcess />
+  <GetYourYard />
+
+    <!-- Before and After Section -->
+    <div class="bg-[#F8F5F3] w-full pt-20 pb-1 mb-20">
+      <div class="flex flex-col justify-center items-center">
+        <h3 class="font-playfairDisplay font-[500] text-5xl text-black">
+          Before
+          <span class="text-[#A89C93] font-imperial font-[400]">&</span> After
+        </h3>
+       
+       
+    <!--       Image Comparison Slider-->
+    <div class="px-32 my-20 h-[600px] relative">
+        <ImgComparisonSlider class="h-full">
+          <!-- eslint-disable -->
+          <img
+            class="rounded-2xl"
+            slot="first"
+            style="width: 100%; height: 100%"
+            src="@/assets/images/before.png"
+          />
+          <img
+            slot="second"
+            style="width: 100%; height: 100%"
+            src="@/assets/images/after.png"
+          />
+
+          <svg
+            slot="handle"
+            class="w-12"
+            width="71"
+            height="71"
+            viewBox="0 0 71 71"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="35.5" cy="35.5" r="35.5" fill="#D0C2B0" />
+            <path
+              d="M51.1997 34.4899L49.2297 32.5199L46.0197 29.3099C45.3397 28.6399 44.1797 29.1199 44.1797 30.0799V36.3099V41.9199C44.1797 42.8799 45.3397 43.3599 46.0197 42.6799L51.1997 37.4999C52.0297 36.6799 52.0297 35.3199 51.1997 34.4899Z"
+              fill="white"
+            />
+            <path
+              d="M20.8003 34.4899L22.7703 32.5199L25.9803 29.3099C26.6603 28.6399 27.8203 29.1199 27.8203 30.0799V36.3099V41.9199C27.8203 42.8799 26.6603 43.3599 25.9803 42.6799L20.8003 37.4999C19.9703 36.6799 19.9703 35.3199 20.8003 34.4899Z"
+              fill="white"
+            />
+          </svg>
+
+          <!-- eslint-enable -->
+        </ImgComparisonSlider>
+
+        <div
+      class="bg-white w-[823px] h-[80px] rounded-[50px] absolute bottom-10 ml-[20%] z-10 p-3 flex gap-5 flex-row"
+    >
+      <div class="flex flex-row ml-12">
+        <div class="absolute">
+          <img :src="customerpicture" alt="customer picture" />
+        </div>
+
+        <div class="relative ml-[-47px]">
+          <img :src="circle" alt="circle" />
+        </div>
+      </div>
+
+      <div class="pt-1 ml-10">
+        <h4 class="font-inter font-[500] text-[18px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          luctus tem.
+        </h4>
+        <h4 class="font-[400] text-[#A89C93] text-[18px]">
+          Nicole, Home Owner
+        </h4>
+      </div>
+    </div>
+      </div>
+      </div>
+
+    
+    </div>
 
 
 
-  <div class="flex justify-center items-center text-center">
+  <div class="flex justify-center items-center text-center pt-20">
     <div
       class="font-playfairDisplay italic font-[600] text-6xl flex flex-row gap-3"
     >
@@ -143,12 +202,75 @@ export default {
     </div>
   </div>
 
-  <div class="mt-20 flex" data-aos-duration="2000" data-aos-delay="400" data-aos="fade-in">
+  
+  <div class="h-[600px] mt-14 relative px-28">
+    <video
+      id="myVideo"
+      src="/Ashlee_Wilson.mp4"
+      autoplay="true"
+      loop
+      muted
+      class="h-full object-cover rounded-3xl"
+    ></video>
+
+    <!-- <div class="absolute top-32">
+     <h3 class="text-white ml-20 flex flex-col font-playfairDisplay font-[500] text-[70px]">Creating curb appeal <span>One home at a time</span></h3>
+   </div> -->
+  </div>
+
+
+ 
+<!-- 
+  <div class="flex flex-row justify-evenly mt-44 w-full bg-[#F8F5F3] pt-14">
+    <div class="mt-44">
+      <img :src="house1" alt="house 1" class="w-[350px] h-[389px]" />
+    </div>
+
+    <div class="text-center leading-[8rem]">
+      <p class="font-inter font-[400] text-[16px] uppercase">
+        Shop By Category
+      </p>
+      <h4
+        class="font-playfairDisplay font-[500] text-[60px] text-[#A89C93] cursor-pointer"
+      >
+        New Construction
+      </h4>
+      <h4
+        class="font-playfairDisplay font-[500] text-[60px] text-black cursor-pointer"
+      >
+        Home Design
+      </h4>
+      <h4
+        class="font-playfairDisplay font-[500] text-[60px] text-[#A89C93] cursor-pointer"
+      >
+        Pool Design
+      </h4>
+      <h4
+        class="font-playfairDisplay font-[500] text-[60px] text-[#A89C93] cursor-pointer"
+      >
+        Horticulture
+      </h4>
+      <h4
+        class="font-playfairDisplay font-[500] text-[60px] text-[#A89C93] cursor-pointer"
+      >
+        Outdoor Decor
+      </h4>
+      <p class="underline font-[500] text-[16px] uppercase cursor-pointer">
+        See More
+      </p>
+    </div>
+
+    <div class="mt-44">
+      <img :src="house2" alt="house 2" class="w-[350px] h-[389px]" />
+    </div>
+  </div> -->
+
+  <div class="mt-40 flex" data-aos-duration="2000" data-aos-delay="400" data-aos="fade-in">
     <div class="ml-32 mt-20">
       <div>
         <h4 class="font-playfairDisplay text-5xl font-[500]">
-          Servi<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
-            >C</span
+          Packa<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
+            >G</span
           >es
         </h4>
       </div>
@@ -163,7 +285,7 @@ export default {
 
       <FilledButton
         background-color="black"
-        text="SCHEDULE A CALL"
+        text="GET STARTED"
         text-color="white"
         class="mt-6"
       />
@@ -266,50 +388,6 @@ export default {
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div class="flex flex-row justify-evenly mt-44 w-full bg-[#F8F5F3] pt-14">
-    <div class="mt-44">
-      <img :src="house1" alt="house 1" class="w-[350px] h-[389px]" />
-    </div>
-
-    <div class="text-center leading-[8rem]">
-      <p class="font-inter font-[400] text-[16px] uppercase">
-        Shop By Category
-      </p>
-      <h4
-        class="font-playfairDisplay font-[500] text-[60px] text-[#A89C93] cursor-pointer"
-      >
-        New Construction
-      </h4>
-      <h4
-        class="font-playfairDisplay font-[500] text-[60px] text-black cursor-pointer"
-      >
-        Home Design
-      </h4>
-      <h4
-        class="font-playfairDisplay font-[500] text-[60px] text-[#A89C93] cursor-pointer"
-      >
-        Pool Design
-      </h4>
-      <h4
-        class="font-playfairDisplay font-[500] text-[60px] text-[#A89C93] cursor-pointer"
-      >
-        Horticulture
-      </h4>
-      <h4
-        class="font-playfairDisplay font-[500] text-[60px] text-[#A89C93] cursor-pointer"
-      >
-        Outdoor Decor
-      </h4>
-      <p class="underline font-[500] text-[16px] uppercase cursor-pointer">
-        See More
-      </p>
-    </div>
-
-    <div class="mt-44">
-      <img :src="house2" alt="house 2" class="w-[350px] h-[389px]" />
     </div>
   </div>
 </template>

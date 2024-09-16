@@ -50,4 +50,16 @@ const handleBookConsult = () => {
       <!-- <img :src="chat" alt="chat icon" class="w-[65px] h-[65px]  right-4 bottom-4 lg:right-[10rem] lg:bottom-10 cursor-pointer fixed z-50" /> -->
     </div>
   </div>
+
+  
+  <div class=" pt-16">
+    <p class="uppercase text-center font-inter font-[400] text-[16px]">
+      Our Partners
+    </p>
+
+    <div class="mt-8">
+      <img src="@/assets/images/partners.png" class="mx-auto" />
+    </div>
+  </div>
+
 </template>

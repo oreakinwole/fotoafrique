@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div class="py-48 bg-[#fcfbfa]">
+  <div class="py-20 bg-[#fcfbfa]">
     <div class="">
       <div class="flex justify-center items-center text-center">
         <div

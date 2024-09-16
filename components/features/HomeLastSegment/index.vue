@@ -6,6 +6,14 @@ import image1 from "public/images/homelastsegment/imgs/Image 1.png";
 import image2 from "public/images/homelastsegment/imgs/Image 2.png";
 import image3 from "public/images/homelastsegment/imgs/Image 3.png";
 import image4 from "public/images/homelastsegment/imgs/Image 4.png";
+import backyard from "public/images/homesecondsegment/imgs/Backyard.svg";
+import frontyard from "public/images/homesecondsegment/imgs/frontyard.svg";
+import fullyard from "public/images/homesecondsegment/imgs/FullYard.svg";
+import renovation from "public/images/homesecondsegment/imgs/Renovation.svg";
+import greaterthanicon from "public/images/homesecondsegment/icons/grt.svg";
+import lessthanicon from "public/images/homesecondsegment/icons/lst.svg";
+import icon2 from "public/images/getyouryard/icon/Rectangle 427.png";
+
 export default {
   name: "HomeLastSegment",
   data() {
@@ -17,15 +25,20 @@ export default {
       image2,
       image3,
       image4,
+      frontyard,
+      backyard,
+      fullyard,
+      renovation,
+      greaterthanicon,
+      lessthanicon,
+      icon2
     };
   },
 };
 </script>
 
 <template>
-  <div>
-    <img :src="house" alt="house img" />
-  </div>
+
 
   <div>
     <div class="flex flex-row justify-between px-44 pt-28">
@@ -48,5 +61,26 @@ export default {
       <img :src="image4" alt="image4" class="w-[366px] h-[392px]" />
     </div>
   </div>
+
+  <div class="flex justify-center items-center text-center">
+    <div
+      class="font-playfairDisplay italic font-[600] text-6xl flex flex-row gap-3"
+    >
+      <h1>A Contemporary Yard Design for</h1>
+    </div>
+  </div>
+
+  <div class="flex justify-center items-center text-center mt-6">
+    <div
+      class="font-playfairDisplay italic font-[600] text-6xl flex flex-row gap-3"
+    >
+      <h1>The Modern</h1>
+      <img :src="icon2" alt="icon 2" width="150" class="mx-2" />
+      <h1>Lifestyle</h1>
+    </div>
+  </div>
+
+
+
 </template>
 
