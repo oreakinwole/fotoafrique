@@ -1,31 +1,23 @@
-<script>
-export default {
-  name: "OutlinedButton",
-  props: {
-    text: {
-      type: String,
-      required: true,
-    },
-    backgroundColor: {
-      type: String,
-      required: true,
-    },
-    textColor: {
-      type: String,
-      required: true,
-    },
-    borderColor: {
-      type: String,
-      required: true,
-    },
-    hoverTextColor: {
-      type: String,
-    },
-  },
+<script setup>
+defineProps([
+  "text",
+  "backgroundColor",
+  "textColor",
+  "borderColor",
+  "hoverTextColor",
+]);
+
+const handleBookConsult = () => {
+  const calendly = useCalendly();
+
+  calendly.initPopupWidget({
+    url: "https://calendly.com/d/2sx-n9t-6g7",
+  });
 };
 </script>
 <template>
   <button
+    @click="handleBookConsult"
     class="relative w-[200px] h-[50px] overflow-hidden"
     :style="{
       backgroundColor: backgroundColor,

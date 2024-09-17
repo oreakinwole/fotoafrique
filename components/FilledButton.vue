@@ -1,30 +1,25 @@
-<script>
-export default {
-  name: 'FilledButton',
-  props: {
-    text: {
-      type: String,
-      default: '',
-      required: true
-    },
-    backgroundColor: {
-      type: String,
-      default: '',
-      required: true
-    },
-    textColor: {
-      type: String,
-      default: '',
-      required: true
-    }
-  }
-}
+<script setup>
+defineProps(["text", "backgroundColor", "textColor"]);
+
+const handleBookConsult = () => {
+  const calendly = useCalendly();
+
+  calendly.initPopupWidget({
+    url: "https://calendly.com/d/2sx-n9t-6g7",
+  });
+};
 </script>
 
 <template>
-  <button class="relative w-[200px] h-[50px] overflow-hidden"
-          :style="{ backgroundColor: backgroundColor, color: textColor }">
-    <span class="relative z-10 transition-colors duration-[0.5s] ease-out text-xs">{{text}}</span>
+  <button
+    @click="handleBookConsult"
+    class="relative w-[200px] h-[50px] overflow-hidden"
+    :style="{ backgroundColor: backgroundColor, color: textColor }"
+  >
+    <span
+      class="relative z-10 transition-colors duration-[0.5s] ease-out text-xs"
+      >{{ text }}</span
+    >
     <span class="absolute inset-0 bg-white"></span>
   </button>
 </template>
