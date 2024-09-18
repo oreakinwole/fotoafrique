@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>  
-  <div class="max-w-[1600px] mx-auto ">
+  <div class="max-w-[1600px] mx-auto overflow-hidden ">
 
 
     <NavBar underlineText="Home" />

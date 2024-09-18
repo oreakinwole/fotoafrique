@@ -1,5 +1,5 @@
 <script>
-export default {};
+
 </script>
 
 <template>
@@ -32,12 +32,7 @@ export default {};
     </div>
 
     <div class="flex justify-between px-32 mb-28">
-      <OutlinedButton
-        border-color="#000"
-        text-color="#000"
-        background-color="white"
-        text="SEE MORE"
-      />
+     
 
       <div class="flex flex-col mr-20">
         <!-- upper container -->

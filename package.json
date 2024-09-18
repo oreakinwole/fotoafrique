@@ -19,6 +19,7 @@
     "nuxt-aos": "^1.2.5",
     "nuxt-calendly": "^0.1.21",
     "postcss": "^8.4.21",
+    "sass-embedded": "^1.78.0",
     "tailwindcss": "^3.3.1",
     "vue3-carousel-nuxt": "^1.1.2"
   },

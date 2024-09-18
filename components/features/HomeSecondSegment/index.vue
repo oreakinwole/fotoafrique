@@ -77,7 +77,7 @@ export default {
           </div>
 
           <div>&nbsp;</div>
-          <img src="@/assets/images/port1.png" width="200" data-aos="fade-right" data-aos-duration="2000" />
+          <img class="spin_mod" src="@/assets/images/port1.png" width="200"  />
         </div>
 
         <div class="max-w-20 ">

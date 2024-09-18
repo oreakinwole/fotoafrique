@@ -86,7 +86,7 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-col bg-navbar-color font-inter w-full">
+  <div class="hidden lg:flex flex-col bg-navbar-color font-inter w-full">
     <!-- first layout -->
     <PopUpModal text="BOOK A FREE DESIGN CONSULTATION." />
 

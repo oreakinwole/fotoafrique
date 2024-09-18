@@ -1,5 +1,6 @@
 <script>
 import image1 from "public/images/homethirdsegment/imgs/img(1).png";
+import owner from "public/images/homethirdsegment/imgs/owner.png";
 import bg from "public/images/homethirdsegment/icons/bg.png";
 import before from "public/images/homethirdsegment/imgs/image 28.svg";
 import after from "public/images/homethirdsegment/imgs/after.svg";
@@ -16,6 +17,7 @@ export default {
       after,
       arrow,
       circle,
+      owner
     };
   },
  
@@ -25,7 +27,8 @@ export default {
 
 <template>
   <div class="home-third-segment bg-white">
-    <div class="flex flex-col mb-48 pt-40">
+    <MeetDesigner class="mt-20"/>
+    <div class="flex flex-col mb-48 pt-20">
       <div class="ml-28">
         <h4 class="font-playfairDisplay font-[500] text-8xl text-black">
           Our
@@ -64,15 +67,15 @@ export default {
 
         <div class="flex flex-row relative">
           <div class="flex-none mr-28">
-            <img :src="image1" alt="house image" width="300" />
+            <img :src="owner" alt="Meet the designer" width="300" />
           </div>
-          <div class="flex-none flex absolute right-6 bottom-20">
+          <!-- <div class="flex-none flex absolute right-6 bottom-20">
             <span
               class="text-xs font-[400] text-[#665244] font-inter rotate-90 whitespace-nowrap"
             >
               Lorem ipsum dolor sit amet
             </span>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
