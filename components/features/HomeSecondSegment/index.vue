@@ -22,7 +22,6 @@ import lessthanicon from "public/images/homesecondsegment/icons/lst.svg";
 import customerpicture from "public/images/homethirdsegment/imgs/img.svg";
 import circle from "public/images/homethirdsegment/icons/cir.svg";
 
-
 export default {
   name: "HomeSecondSegment",
   components: { ImgComparisonSlider },
@@ -48,7 +47,7 @@ export default {
       greaterthanicon,
       lessthanicon,
       customerpicture,
-      circle
+      circle,
     };
   },
 };
@@ -57,15 +56,16 @@ export default {
 <template>
   <div class="pt-20 px-20">
     <section class="flex gap-x-8 justify-between h-[530px] py-10">
-      <div class="w-1/3 h-full">
-        <img
-          src="@/assets/images/pool1.png"
-          class="h-full w-full object-cover"
-        />
-      </div>
+      <div
+        class="w-1/3 h-full bg-[url('@/assets/images/pool1.png')] bg-no-repeat bg-center bg-cover bg-fixed"
+      ></div>
 
       <div class="w-2/3 h-full">
-        <p class="max-w-xl text-3xl" data-aos="fade-in" data-aos-duration="2000">
+        <p
+          class="max-w-xl text-3xl"
+          data-aos="fade-in"
+          data-aos-duration="2000"
+        >
           WE STRIVE TO ENHANCE THE SYNERGY BETWEEN AESTHETICS, STRUCTURE, AND
           ENVIRONMENTAL DESIGN.
         </p>
@@ -77,10 +77,10 @@ export default {
           </div>
 
           <div>&nbsp;</div>
-          <img class="spin_mod" src="@/assets/images/port1.png" width="200"  />
+          <img class="spin_mod" src="@/assets/images/port1.png" width="200" />
         </div>
 
-        <div class="max-w-20 ">
+        <div class="max-w-20">
           <OutlinedButton
             border-color="#000"
             text-color="#000"
@@ -95,17 +95,16 @@ export default {
   <DesignProcess />
   <GetYourYard />
 
-    <!-- Before and After Section -->
-    <div class="bg-[#F8F5F3] w-full pt-20 pb-1 mb-20">
-      <div class="flex flex-col justify-center items-center">
-        <h3 class="font-playfairDisplay font-[500] text-5xl text-black">
-          Before
-          <span class="text-[#A89C93] font-imperial font-[400]">&</span> After
-        </h3>
-       
-       
-    <!--       Image Comparison Slider-->
-    <div class="px-32 my-20 h-[600px] relative">
+  <!-- Before and After Section -->
+  <div class="bg-[#F8F5F3] w-full pt-20 pb-1 mb-20">
+    <div class="flex flex-col justify-center items-center">
+      <h3 class="font-playfairDisplay font-[500] text-5xl text-black">
+        Before
+        <span class="text-[#A89C93] font-imperial font-[400]">&</span> After
+      </h3>
+
+      <!--       Image Comparison Slider-->
+      <div class="px-32 my-20 h-[600px] relative">
         <ImgComparisonSlider class="h-full">
           <!-- eslint-disable -->
           <img
@@ -144,35 +143,31 @@ export default {
         </ImgComparisonSlider>
 
         <div
-      class="bg-white w-[823px] h-[80px] rounded-[50px] absolute bottom-10 ml-[20%] z-10 p-3 flex gap-5 flex-row"
-    >
-      <div class="flex flex-row ml-12">
-        <div class="absolute">
-          <img :src="customerpicture" alt="customer picture" />
-        </div>
+          class="bg-white w-[823px] h-[80px] rounded-[50px] absolute bottom-10 ml-[20%] z-10 p-3 flex gap-5 flex-row"
+        >
+          <div class="flex flex-row ml-12">
+            <div class="absolute">
+              <img :src="customerpicture" alt="customer picture" />
+            </div>
 
-        <div class="relative ml-[-47px]">
-          <img :src="circle" alt="circle" />
-        </div>
-      </div>
+            <div class="relative ml-[-47px]">
+              <img :src="circle" alt="circle" />
+            </div>
+          </div>
 
-      <div class="pt-1 ml-10">
-        <h4 class="font-inter font-[500] text-[18px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          luctus tem.
-        </h4>
-        <h4 class="font-[400] text-[#A89C93] text-[18px]">
-          Nicole, Home Owner
-        </h4>
+          <div class="pt-1 ml-10">
+            <h4 class="font-inter font-[500] text-[18px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              luctus tem.
+            </h4>
+            <h4 class="font-[400] text-[#A89C93] text-[18px]">
+              Nicole, Home Owner
+            </h4>
+          </div>
+        </div>
       </div>
     </div>
-      </div>
-      </div>
-
-    
-    </div>
-
-
+  </div>
 
   <div class="flex justify-center items-center text-center pt-20">
     <div
@@ -202,7 +197,6 @@ export default {
     </div>
   </div>
 
-  
   <div class="h-[600px] mt-14 relative px-28">
     <video
       id="myVideo"
@@ -218,9 +212,7 @@ export default {
    </div> -->
   </div>
 
-
- 
-<!-- 
+  <!-- 
   <div class="flex flex-row justify-evenly mt-44 w-full bg-[#F8F5F3] pt-14">
     <div class="mt-44">
       <img :src="house1" alt="house 1" class="w-[350px] h-[389px]" />
@@ -265,7 +257,12 @@ export default {
     </div>
   </div> -->
 
-  <div class="mt-40 flex" data-aos-duration="2000" data-aos-delay="400" data-aos="fade-in">
+  <div
+    class="mt-40 flex"
+    data-aos-duration="2000"
+    data-aos-delay="400"
+    data-aos="fade-in"
+  >
     <div class="ml-32 mt-20">
       <div>
         <h4 class="font-playfairDisplay text-5xl font-[500]">
