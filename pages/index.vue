@@ -14,7 +14,7 @@ import "animate.css";
 <style>
 @keyframes spin {
   to {
-    transform: rotateY(2turn);
+    transform: rotateY(3turn);
   }
 }
 
