@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div class="bg-[#fcfbfa]">
+  <div >
     <div class="">
       <div class="flex justify-center items-center text-center">
         <div

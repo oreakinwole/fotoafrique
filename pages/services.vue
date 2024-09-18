@@ -3,7 +3,7 @@
 <template>
   <div class="px-20">
     <section class="flex gap-x-20 justify-between h-[600px] py-10">
-      <div class="w-1/2 bg-green-500 h-full">
+      <div class="w-1/2 h-full">
         <img
           src="@/assets/images/backyard_1.png"
           class="h-full w-full object-cover"
@@ -48,7 +48,7 @@
     </section>
 
     <section class="pt-48">
-      <div class="flex max-w-screen-md mx-auto gap-x-12">
+      <div class="flex max-w-screen-lg mx-auto gap-x-12">
         <div class="w-1/2 pt-16">
           <p class="text-4xl font-medium font-playfairDisplay">
             Our Design Pro
@@ -57,7 +57,7 @@
             >ess
           </p>
 
-          <div class="text-xs space-y-6 pt-6 text-brown max-w-64 text-justify">
+          <div class="text-xs space-y-6 pt-6 text-brown text-justify">
             <p>
               Our design process is a collaborative journey, tailored to bring
               your unique outdoor space to life. From initial consultation to
@@ -76,10 +76,10 @@
           </div>
         </div>
 
-        <div class="w-1/2 h-[550px]">
+        <div class="w-[800px] ">
           <img
-            src="@/assets/images/package_detail.png"
-            class="h-full w-full object-cover"
+            src="/images/hero/imgs/garden.png"
+            class="h-full w-full object-contain"
           />
         </div>
       </div>

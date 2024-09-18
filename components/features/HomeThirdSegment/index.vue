@@ -27,9 +27,10 @@ export default {
 
 <template>
   <div class="home-third-segment bg-white">
-    <MeetDesigner class="mt-20"/>
     <div class="flex flex-col mb-48 pt-20">
       <div class="ml-28">
+    <MeetDesigner class="mb-20"/>
+
         <h4 class="font-playfairDisplay font-[500] text-8xl text-black">
           Our
           <span
