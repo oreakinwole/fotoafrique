@@ -31,13 +31,13 @@
       </p>
     </div>
 
-    <div class="flex justify-between px-32 mb-28">
+    <div class="flex justify-between px-32 mb-28 relative">
      
 
       <div class="flex flex-col mr-20">
         <!-- upper container -->
         <div class="flex flex-row">
-          <div class="w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4">
+          <div class="process-item w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4">
             <div class="flex flex-row justify-between">
               <h3 class="flex flex-col font-inter font-[700] text-[20px]">
                 Free Design <span>Consultation</span>
@@ -63,7 +63,7 @@
 
           <div class="w-[300px] h-[295px]"></div>
 
-          <div class="w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4">
+          <div class="process-item w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4">
             <div class="flex flex-row justify-between">
               <h3 class="flex flex-col font-inter font-[700] text-[20px]">
                 Ultra Realistic <span>3D Design Renderings</span>
@@ -95,7 +95,7 @@
           <div class="w-[300px] h-[295px]"></div>
 
           <div
-            class="w-[304px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-2px]"
+            class="process-item w-[304px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-2px]"
           >
             <div class="flex flex-row justify-between">
               <h3 class="flex flex-col font-inter font-[700] text-[20px]">
@@ -122,7 +122,7 @@
           <div class="w-[300px] h-[295px]"></div>
 
           <div
-            class="w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-4px]"
+            class="process-item w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-4px]"
           >
             <div class="flex flex-row justify-between">
               <h3 class="flex flex-col font-inter font-[700] text-[20px]">
@@ -173,3 +173,19 @@
     </div>
   </div>
 </template>
+
+
+<style lang="scss">
+.process-item::after {
+  content: url("@/assets/images/hov_process.png");
+  position: absolute;
+  opacity: 0;
+  transition: all 1s;
+  top: 0;
+}
+
+.process-item:hover::after {
+  opacity: 1;
+  top: 6em;
+}
+</style>

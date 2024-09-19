@@ -288,7 +288,7 @@ export default {
       />
     </div>
 
-    <div>
+    <div >
       <div class="ml-20">
         <div class="flex flex-row gap-8">
           <div>

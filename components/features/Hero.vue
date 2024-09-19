@@ -2,19 +2,36 @@
 // import VueWriter from "vue-writer";
 import garden from "public/images/hero/imgs/garden.png";
 import chat from "public/images/hero/icons/chat.png";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
+// const hero = ref();
 const handleBookConsult = () => {
   const calendly = useCalendly();
-  
+
   calendly.initPopupWidget({
     url: "https://calendly.com/d/2sx-n9t-6g7",
   });
 };
+
+onMounted(() => {
+  gsap.to(".heroo", {
+    borderRadius: "0 0 50% 50%",
+    backgroundColor: "#5e402c",
+    scrollTrigger: {
+      trigger: ".heroo",
+      start: "top top",
+      
+      scrub: true,
+    },
+  });
+});
 </script>
 
 <template>
   <div
-    class="bg-navbar-color w-full flex flex-col lg:flex-row pt-12 justify-between min-h-[500px]"
+    class="heroo bg-navbar-color bg-no-repeat bg-center bg-cover bg-fixed w-full flex flex-col lg:flex-row pt-12 justify-between min-h-[500px]"
   >
     <!-- first container -->
     <div class="flex-1 absolute lg:ml-[5rem] px-20 lg:px-0">
@@ -25,7 +42,7 @@ const handleBookConsult = () => {
         :iterations="1"
       > -->
       <h3
-        class="uppercase font-semibold  text-3xl lg:text-5xl font-playfairDisplay leading-normal text-left lg:max-w-xl"
+        class="uppercase font-semibold text-3xl lg:text-5xl font-playfairDisplay leading-normal text-left lg:max-w-xl"
       >
         Creating your dream outdoor space, with the finest backyard designs.
       </h3>
@@ -51,8 +68,7 @@ const handleBookConsult = () => {
     </div>
   </div>
 
-  
-  <div class=" pt-16">
+  <div class="pt-16">
     <p class="uppercase text-center font-inter font-[400] text-[16px]">
       Our Partners
     </p>
@@ -61,5 +77,5 @@ const handleBookConsult = () => {
       <img src="@/assets/images/partners.png" class="mx-auto" />
     </div>
   </div>
-
 </template>
+
