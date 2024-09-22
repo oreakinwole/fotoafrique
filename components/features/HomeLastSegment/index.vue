@@ -38,7 +38,8 @@ export default {
 </script>
 
 <template>
-
+ <div class="bg-[url('/images/homelastsegment/imgs/house.png')] bg-no-repeat bg-center bg-cover bg-fixed h-[600px]">
+  </div>
 
   <div>
     <div class="flex flex-row justify-between px-44 pt-28">

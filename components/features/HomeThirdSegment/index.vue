@@ -68,7 +68,7 @@ export default {
         </div>
 
         <div class="flex flex-row relative">
-          <div class="flex-none mr-28">
+          <div class="flex-none mr-28" data-aos-duration="2000"  data-aos="slide-up">
             <img :src="owner" alt="Meet the designer" width="300" />
           </div>
           <!-- <div class="flex-none flex absolute right-6 bottom-20">
