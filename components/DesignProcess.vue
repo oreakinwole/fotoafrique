@@ -1,9 +1,19 @@
-<script>
+<script setup>
+import gsap from 'gsap';
 
+onMounted(() => {
+  gsap.to(".designPro", {
+    x:-1200,
+    scrollTrigger: {
+      trigger: ".designPro",
+      scrub: true,
+    },
+  });
+});
 </script>
 
 <template>
-  <div class="mt-24">
+  <div class="mt-24 designPro">
     <div class="flex flex-row justify-between  px-32">
       <div>
         <h2 class="font-playfairDisplay font-[500] text-5xl">
@@ -95,7 +105,7 @@
           <div class="w-[300px] h-[295px]"></div>
 
           <div
-            class="process-item w-[304px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-2px]"
+            class=" w-[304px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-2px]"
           >
             <div class="flex flex-row justify-between">
               <h3 class="flex flex-col font-inter font-[700] text-[20px]">
@@ -122,7 +132,7 @@
           <div class="w-[300px] h-[295px]"></div>
 
           <div
-            class="process-item w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-4px]"
+            class=" w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-4px]"
           >
             <div class="flex flex-row justify-between">
               <h3 class="flex flex-col font-inter font-[700] text-[20px]">
@@ -151,26 +161,7 @@
       </div>
     </div>
 
-    <div class="mb-20">
-      <p
-        class="text-center mx-auto text-[#665244] font-[400] text-xs w-[25rem]"
-        data-aos-duration="1000"  data-aos="fade-up"
-      >
-        Get your yard design started in simple steps. click to get started
-      </p>
-
-
-      <div class="flex justify-center items-center mt-4" 
-      data-aos-duration="1000"  data-aos="fade-up"
-      >
-        <OutlinedButton
-          border-color="#000"
-          text-color="#000"
-          background-color="white"
-          text="GET STARTED"
-        />
-      </div>
-    </div>
+ 
   </div>
 </template>
 
@@ -186,6 +177,12 @@
 
 .process-item:hover::after {
   opacity: 1;
-  top: 6em;
+  top: -6em;
+}
+
+.designPro {
+  position: relative;
+  right: -800px;
+  transition: all .3s;
 }
 </style>

@@ -18,10 +18,10 @@ const handleBookConsult = () => {
 onMounted(() => {
   gsap.to(".heroo", {
     borderRadius: "0 0 50% 50%",
-    backgroundColor: "#5e402c",
+    backgroundColor: "#f0d6c5",
     scrollTrigger: {
       trigger: ".heroo",
-      start: "top top",
+      start: "center center",
       
       scrub: true,
     },

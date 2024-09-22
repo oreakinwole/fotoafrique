@@ -109,8 +109,7 @@ export default defineComponent({
   <!--our portfolio -->
   <div class="w-full bg-black text-white pt-20 pb-8">
     <h3 class="text-[100px] font-playfairDisplay font-[600] text-center">Our Portfolio</h3>
-    <div class="px-[10rem] mt-20">
-      <img :src="corridorImg" alt="image 2" class="w-[1070px] h-[600px] xl:w-[1600px] xl:h-[600px]" />
+    <div class="px-[40px] mt-20 w-[1070px] h-[600px] xl:w-[1600px] xl:h-[600px] bg-[url('/images/ourportfolio/imgs/img(2).png')] bg-no-repeat bg-center bg-contain bg-fixed">
     </div>
 
     <h4 class="flex flex-col text-center text-white font-playfairDisplay font-[600] text-[50px] leading-[6rem] mt-[-6rem]">

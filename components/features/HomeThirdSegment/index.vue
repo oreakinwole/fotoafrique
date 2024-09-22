@@ -43,13 +43,14 @@ export default {
           Is the
           <span
             class="text-8xl font-[600] font-playfairDisplay text-[#A89C93] italic"
+            data-aos-duration="1000"  data-aos="fade-up"
             >WOW</span
           >
         </h4>
       </div>
 
       <div class="flex flex-row justify-end gap-24 mr-28 mt-[-3.5rem]">
-        <div class="mt-[17rem]">
+        <div class="mt-[17rem]"  data-aos-duration="1000"  data-aos="fade-up">
           <p
             class="font-inter text-[#665244] font-[400] text-xs max-w-xs leading-loose"
           >
