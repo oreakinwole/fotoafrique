@@ -4,7 +4,6 @@ import garden from "public/images/hero/imgs/garden.png";
 import chat from "public/images/hero/icons/chat.png";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 // const hero = ref();
 const handleBookConsult = () => {
@@ -16,13 +15,15 @@ const handleBookConsult = () => {
 };
 
 onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
   gsap.to(".heroo", {
     borderRadius: "0 0 50% 50%",
     backgroundColor: "#f0d6c5",
     scrollTrigger: {
       trigger: ".heroo",
       start: "center center",
-      
+
       scrub: true,
     },
   });
@@ -78,4 +79,3 @@ onMounted(() => {
     </div>
   </div>
 </template>
-
