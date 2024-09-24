@@ -6,6 +6,7 @@ onMounted(() => {
     x:-1200,
     scrollTrigger: {
       trigger: ".designPro",
+      end: 2500,
       scrub: true,
     },
   });

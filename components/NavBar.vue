@@ -92,7 +92,7 @@ export default {
 
     <!-- second layout  -->
     <div class="flex flex-row mt-10 justify-between text-xs">
-      <div class="invisible flex-row gap-14 uppercase ml-36">
+      <div class="flex flex-row gap-14 uppercase ml-36">
         <p class="cursor-pointer ">About</p>
         <div class="flex gap-2 cursor-pointer">
           <div>
@@ -106,12 +106,12 @@ export default {
         <img :src="modernYardzIcon" alt="modern yardz logo" width="90" class="mr-20 mt-[-10px]" />
       </div>
 
-      <div class="flex flex-row gap-20 mr-36">
+      <div class="flex flex-row gap-8 mr-36 ">
         <div>
           <img :src="searchIcon" alt="search icon" width="15" class="cursor-pointer" />
         </div>
         <div>
-          <img :src="dummyProfileIcon" alt="dummy profile icon" width="15" class="cursor-pointer" />
+          <!-- <img :src="dummyProfileIcon" alt="dummy profile icon" width="15" class="cursor-pointer" /> -->
         </div>
         <div>
           <img :src="bagIcon" alt="bag icon" width="15" class="cursor-pointer" />
