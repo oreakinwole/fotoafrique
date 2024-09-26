@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// import VueWriter from "vue-writer";
+import VueWriter from "vue-writer";
 import garden from "public/images/hero/imgs/garden.png";
 import chat from "public/images/hero/icons/chat.png";
 import gsap from "gsap";
@@ -32,22 +32,24 @@ onMounted(() => {
 
 <template>
   <div
-    class="heroo bg-navbar-color bg-no-repeat bg-center bg-cover bg-fixed w-full flex flex-col lg:flex-row pt-12 justify-between min-h-[500px]"
+    class="heroo bg-navbar-color bg-no-repeat bg-center bg-cover bg-fixed w-full flex flex-col lg:flex-row items-center py-20 justify-between min-h-[500px]"
   >
     <!-- first container -->
-    <div class="flex-1 absolute lg:ml-[5rem] px-20 lg:px-0">
-      <!-- <VueWriter
-        class="uppercase font-semibold text-5xl font-playfairDisplay leading-tight text-left lg:max-w-xl"
+    <div class="flex-1 absolute lg:ml-[5rem] px-20 lg:px-0 leading-loose">
+      <VueWriter
+        class="uppercase font-semibold text-5xl font-playfairDisplay leading-normal text-left lg:max-w-xl"
         :array="['with the finest backyard designs', 'tailored to your needs']"
-        :typeSpeed="100"
-        :iterations="1"
-      > -->
-      <h3
-        class="uppercase font-semibold text-3xl lg:text-5xl font-playfairDisplay leading-normal text-left lg:max-w-xl"
+        :typeSpeed="200"
+      >
+      
+      <p class="">Creating your dream outdoor space, </p>
+     
+      </VueWriter>
+       <!-- <p
+        class="uppercase font-semibold text-3xl lg:text-5xl font-playfairDisplay  text-left lg:max-w-3xl"
       >
         Creating your dream outdoor space, with the finest backyard designs.
-      </h3>
-      <!-- </VueWriter> -->
+      </p> -->
 
       <div class="mt-14" data-aos="fade-up" data-aos-duration="2000">
         <FilledButton
@@ -69,13 +71,13 @@ onMounted(() => {
     </div>
   </div>
 
-  <div class="pt-16">
-    <p class="uppercase text-center font-inter font-[400] text-[16px]">
+  <div class="pt-32 pb-20">
+    <p class="uppercase text-center font-inter font-[400] text-[12px]">
       Our Partners
     </p>
 
     <div class="mt-8">
-      <img src="@/assets/images/partners.png" class="mx-auto" />
+      <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
     </div>
   </div>
 </template>

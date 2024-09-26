@@ -54,7 +54,7 @@ export default {
 </script>
 
 <template>
-  <div class="pt-20 px-20">
+  <div class="pt-20 px-20 ">
     <section class="flex gap-x-8 justify-between h-[530px] py-10">
       <div
         class="w-1/3 h-full bg-[url('@/assets/images/pool1.png')] bg-no-repeat bg-center bg-cover bg-fixed"
@@ -77,7 +77,7 @@ export default {
           </div>
 
           <div>&nbsp;</div>
-          <img class="spin_mod" src="@/assets/images/port1.png" width="200" />
+          <img  src="@/assets/images/port1.png" width="200" />
         </div>
 
         <div class="max-w-20">

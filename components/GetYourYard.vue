@@ -15,26 +15,7 @@ export default {
 
 <template>
   <div class="pb-20 bg-[#fcfbfa]">
-    <div class="mb-20">
-      <p
-        class="text-center mx-auto text-[#665244] font-[400] text-xs w-[25rem]"
-        data-aos-duration="1000"  data-aos="fade-up"
-      >
-        Get your yard design started in simple steps. click to get started
-      </p>
-
-
-      <div class="flex justify-center items-center mt-4" 
-      data-aos-duration="1000"  data-aos="fade-up"
-      >
-        <OutlinedButton
-          border-color="#000"
-          text-color="#000"
-          background-color="white"
-          text="GET STARTED"
-        />
-      </div>
-    </div>
+    
     <div class="">
       <div class="flex justify-center items-center text-center">
         <div

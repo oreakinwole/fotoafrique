@@ -1,9 +1,9 @@
 <script setup>
-import gsap from 'gsap';
+import gsap from "gsap";
 
 onMounted(() => {
   gsap.to(".designPro", {
-    x:-1200,
+    x: -1200,
     scrollTrigger: {
       trigger: ".designPro",
       end: 2500,
@@ -14,8 +14,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="mt-24 designPro">
-    <div class="flex flex-row justify-between  px-32">
+  <div class="mt-24" data-aos="slide-left" data-aos-duration="2000">
+    <div class="flex flex-row justify-between px-32">
       <div>
         <h2 class="font-playfairDisplay font-[500] text-5xl">
           Our Design Pro<Span
@@ -23,32 +23,41 @@ onMounted(() => {
             >C</Span
           >ess
         </h2>
-        <div class="mt-2">
+        <div class="flex lg:space-x-96 ">
           <p
-            class="font-inter font-[400] text-xs text-[#665244] max-w-sm leading-relaxed"
+            class="font-inter font-[400] text-xs text-[#665244] max-w-sm "
           >
             Our design process is a collaborative journey, tailored to bring
             your unique outdoor space to life. From initial consultation to
             final installation, we guide you through:
           </p>
+
+          <p
+            class="text-[#665244] text-xs  font-inter font-[400] max-w-sm"
+          >
+            Together, let's create a space that reflects your personality and
+            enhances your lifestyle.
+          </p>
+        </div>
+
+        <div class="my-12">
+          <OutlinedButton
+            border-color="#000"
+            text-color="#000"
+            background-color="white"
+            text="GET STARTED"
+          />
         </div>
       </div>
-
-      <p
-        class="text-[#665244] text-xs leading-relaxed font-inter font-[400] max-w-sm mt-[8rem]"
-      >
-        Together, let's create a space that reflects your personality and
-        enhances your lifestyle.
-      </p>
     </div>
 
     <div class="flex justify-between px-32 mb-28 relative">
-     
-
       <div class="flex flex-col mr-20">
         <!-- upper container -->
         <div class="flex flex-row">
-          <div class="process-item w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4">
+          <div
+            class="process-item w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4"
+          >
             <div class="flex flex-row justify-between">
               <h3 class="flex flex-col font-inter font-[700] text-[20px]">
                 Free Design <span>Consultation</span>
@@ -74,7 +83,9 @@ onMounted(() => {
 
           <div class="w-[300px] h-[295px]"></div>
 
-          <div class="process-item w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4">
+          <div
+            class="process-item w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4"
+          >
             <div class="flex flex-row justify-between">
               <h3 class="flex flex-col font-inter font-[700] text-[20px]">
                 Ultra Realistic <span>3D Design Renderings</span>
@@ -106,7 +117,7 @@ onMounted(() => {
           <div class="w-[300px] h-[295px]"></div>
 
           <div
-            class=" w-[304px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-2px]"
+            class="w-[304px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-2px]"
           >
             <div class="flex flex-row justify-between">
               <h3 class="flex flex-col font-inter font-[700] text-[20px]">
@@ -133,7 +144,7 @@ onMounted(() => {
           <div class="w-[300px] h-[295px]"></div>
 
           <div
-            class=" w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-4px]"
+            class="w-[300px] h-[295px] border-2 border-[#A89C93] px-4 py-4 ml-[-4px]"
           >
             <div class="flex flex-row justify-between">
               <h3 class="flex flex-col font-inter font-[700] text-[20px]">
@@ -161,11 +172,8 @@ onMounted(() => {
         </div>
       </div>
     </div>
-
- 
   </div>
 </template>
-
 
 <style lang="scss">
 .process-item::after {
@@ -184,6 +192,6 @@ onMounted(() => {
 .designPro {
   position: relative;
   right: -800px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 </style>
