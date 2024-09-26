@@ -118,16 +118,18 @@ export default defineComponent({
     <h3 class="text-[100px] font-playfairDisplay font-[600] text-center">
       Our Portfolio
     </h3>
-    <div
-      class="scape-explore-cursor px-[40px] mt-20 w-[1070px] h-[600px] xl:w-[1600px] xl:h-[600px] bg-[url('/images/ourportfolio/imgs/img(2).png')] bg-no-repeat bg-center bg-contain bg-fixed "
-    ></div>
+    <NuxtLink to="portfolio">
+      <div
+        class="scape-explore-cursor px-[40px] mt-20 w-[1070px] h-[600px] xl:w-[1600px] xl:h-[600px] bg-[url('/images/ourportfolio/imgs/img(2).png')] bg-no-repeat bg-center bg-contain bg-fixed"
+      ></div>
+    </NuxtLink>
 
     <h4
       class="flex flex-col text-center text-white font-playfairDisplay font-[600] text-[50px] leading-[6rem] mt-[-6rem]"
     >
       Eco-Friendly <span>Backyard</span>
     </h4>
-    <p class="font-inter text-sm text-white w-[55rem] mx-auto ">
+    <p class="font-inter text-sm text-white w-[55rem] mx-auto">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
       dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
       vestibulum tortor feugiat. Lorem ipsum dolor sit amet, consectetur
