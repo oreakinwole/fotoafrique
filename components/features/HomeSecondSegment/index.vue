@@ -54,13 +54,13 @@ export default {
 </script>
 
 <template>
-  <div class="pt-20 px-20 ">
+  <div class="pt-20 px-20">
     <section class="flex gap-x-8 justify-between h-[530px] py-10">
       <div
-        class="w-1/3 h-full bg-[url('@/assets/images/pool1.png')] bg-no-repeat bg-center bg-cover bg-fixed"
+        class="explore-item w-1/3 h-full bg-[url('@/assets/images/pool1.png')] bg-no-repeat bg-center bg-cover bg-fixed"
       ></div>
 
-      <div class="w-2/3 h-full">
+      <div class="w-2/3 h-full" id="portfolioIntro">
         <p
           class="max-w-xl text-3xl"
           data-aos="fade-in"
@@ -77,7 +77,7 @@ export default {
           </div>
 
           <div>&nbsp;</div>
-          <img  src="@/assets/images/port1.png" width="200" />
+          <img src="@/assets/images/port1.png" width="200" />
         </div>
 
         <div class="max-w-20">
@@ -93,7 +93,7 @@ export default {
   </div>
 
   <DesignProcess />
-  <GetYourYard />
+  <!-- <GetYourYard /> -->
 
   <!-- Before and After Section -->
   <div class="bg-[#F8F5F3] w-full pt-20 pb-1 mb-20">
@@ -102,13 +102,26 @@ export default {
         Before
         <span class="text-[#A89C93] font-imperial font-[400]">&</span> After
       </h3>
+      <p
+        class="font-inter font-[400] text-xs text-[#665244] max-w-sm text-center mt-3"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
+        dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
+        vestibulum tortor feugiat.
+      </p>
+      <OutlinedButton
+        border-color="#000"
+        text-color="#000"
+        background-color="#F8F5F3"
+        text="SEE MORE"
+        class="mt-8"
+      />
 
       <!--       Image Comparison Slider-->
       <div class="px-32 my-20 h-[600px] relative">
-        <ImgComparisonSlider class="h-full">
+        <ImgComparisonSlider class="h-full rounded-2xl">
           <!-- eslint-disable -->
           <img
-            class="rounded-2xl"
             slot="first"
             style="width: 100%; height: 100%"
             src="@/assets/images/before.png"
@@ -197,7 +210,7 @@ export default {
     </div>
   </div>
 
-  <div class="h-[600px] mt-14 relative px-28">
+  <div class="h-[600px] mt-14 relative px-28 explore-item">
     <video
       id="myVideo"
       src="/Ashlee_Wilson.mp4"
@@ -288,11 +301,11 @@ export default {
       />
     </div>
 
-    <div >
+    <div>
       <div class="ml-20">
         <div class="flex flex-row gap-8">
           <div>
-            <div class="relative w-[340px] h-[420px] cursor-pointer group">
+            <div class="relative w-[340px] h-[420px] cursor-pointer group explore-item">
               <img
                 :src="frontyard"
                 alt="frontyard picture"
@@ -310,7 +323,7 @@ export default {
           </div>
 
           <div>
-            <div class="relative w-[340px] h-[420px] cursor-pointer group">
+            <div class="relative w-[340px] h-[420px] cursor-pointer group explore-item">
               <img
                 :src="backyard"
                 alt="backyard picture"
@@ -328,7 +341,7 @@ export default {
           </div>
 
           <div>
-            <div class="relative w-[340px] h-[420px] cursor-pointer group">
+            <div class="relative w-[340px] h-[420px] cursor-pointer group explore-item">
               <img
                 :src="fullyard"
                 alt="fullyard picture"

@@ -14,7 +14,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="mt-24" data-aos="slide-left" data-aos-duration="2000">
+  <div class="mt-24" data-aos="slide-right" data-aos-duration="1500">
     <div class="flex flex-row justify-between px-32">
       <div>
         <h2 class="font-playfairDisplay font-[500] text-5xl">
@@ -23,18 +23,14 @@ onMounted(() => {
             >C</Span
           >ess
         </h2>
-        <div class="flex lg:space-x-96 ">
-          <p
-            class="font-inter font-[400] text-xs text-[#665244] max-w-sm "
-          >
+        <div class="flex lg:space-x-96">
+          <p class="font-inter font-[400] text-xs text-[#665244] max-w-sm">
             Our design process is a collaborative journey, tailored to bring
             your unique outdoor space to life. From initial consultation to
             final installation, we guide you through:
           </p>
 
-          <p
-            class="text-[#665244] text-xs  font-inter font-[400] max-w-sm"
-          >
+          <p class="text-[#665244] text-xs font-inter font-[400] max-w-sm">
             Together, let's create a space that reflects your personality and
             enhances your lifestyle.
           </p>
@@ -51,8 +47,8 @@ onMounted(() => {
       </div>
     </div>
 
-    <div class="flex justify-between px-32 mb-28 relative">
-      <div class="flex flex-col mr-20">
+    <div class="flex justify-end mb-28 relative">
+      <div class="flex flex-col pr-8">
         <!-- upper container -->
         <div class="flex flex-row">
           <div
@@ -182,6 +178,8 @@ onMounted(() => {
   opacity: 0;
   transition: all 1s;
   top: 0;
+  cursor: url("@/assets/images/process_cursor.png"), auto;
+
 }
 
 .process-item:hover::after {
@@ -194,4 +192,6 @@ onMounted(() => {
   right: -800px;
   transition: all 0.3s;
 }
+
+
 </style>

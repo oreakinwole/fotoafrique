@@ -1,7 +1,5 @@
 <script>
 import "animate.css";
-
-
 </script>
 
 <template>
@@ -24,6 +22,7 @@ import "animate.css";
   }
 }
 
-
-
+.explore-item:hover {
+  cursor: url("@/assets/images/explore_cursor.png"), auto;
+}
 </style>
