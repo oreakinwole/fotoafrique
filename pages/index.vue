@@ -22,7 +22,18 @@ import "animate.css";
   }
 }
 
+.scape-explore-cursor:hover {
+  cursor: url("@/assets/images/bestill.png"), auto;
+  cursor: url("@/assets/images/explore_cursor.png"), auto;
+  cursor: url("@/assets/images/bestill.png"), auto;
+
+
+}
+
 .explore-item:hover {
   cursor: url("@/assets/images/explore_cursor.png"), auto;
+  
 }
+
+
 </style>

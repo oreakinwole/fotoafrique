@@ -31,7 +31,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <NuxtLink to="#portfolioIntro" >
+  <NuxtLink to="#portfolioIntro">
     <div
       class="heroo explore-item bg-navbar-color bg-no-repeat bg-center bg-cover bg-fixed w-full flex flex-col lg:flex-row items-center py-20 justify-between min-h-[500px]"
     >
@@ -64,7 +64,6 @@ onMounted(() => {
       </div>
 
       <!--second container -->
-
       <div
         class="hidden relative lg:flex flex-1 justify-center items-center lg:mt-0 lg:ml-[49rem]"
       >
@@ -85,4 +84,11 @@ onMounted(() => {
   </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+.heroo {
+  background-image: url("@/assets/images/hero_background.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+</style>

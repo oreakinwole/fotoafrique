@@ -7,9 +7,8 @@ import portfolioAudio3 from "public/audio/portfolio/Beyonce_-_XO_talkglitz.tv.mp
 import portfolioAudio4 from "public/audio/portfolio/YAH - Dunsin Oyekan.mp4";
 import maskGroup from "public/images/ourportfolio/imgs/Mask group.png";
 
-
 export default defineComponent({
-  name: 'OurPortfolio',
+  name: "OurPortfolio",
   data() {
     return {
       corridorImg,
@@ -19,9 +18,11 @@ export default defineComponent({
         {
           id: 1,
           question: "What makes Modern Yardz a top landscaper in...?",
-          fullQuestion: "What makes Modern Yardz a top landscaper in San Diego?",
-          description: "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
-          image: maskGroup, 
+          fullQuestion:
+            "What makes Modern Yardz a top landscaper in San Diego?",
+          description:
+            "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
+          image: maskGroup,
           audioSrc: portfolioAudio1,
           audioPlaying: false,
           duration: 0,
@@ -30,8 +31,10 @@ export default defineComponent({
         {
           id: 2,
           question: "Can Modern Yardz help with small landscaping...?",
-          fullQuestion: "Can Modern Yardz help with small landscaping projects?",
-          description: "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
+          fullQuestion:
+            "Can Modern Yardz help with small landscaping projects?",
+          description:
+            "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
           image: maskGroup,
           audioSrc: portfolioAudio2,
           audioPlaying: false,
@@ -41,8 +44,10 @@ export default defineComponent({
         {
           id: 3,
           question: "Does Modern Yardz offer eco-friendly landscapi...?",
-          fullQuestion: "Does Modern Yardz offer eco-friendly landscaping solutions?",
-          description: "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
+          fullQuestion:
+            "Does Modern Yardz offer eco-friendly landscaping solutions?",
+          description:
+            "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
           image: maskGroup,
           audioSrc: portfolioAudio3,
           audioPlaying: false,
@@ -52,8 +57,10 @@ export default defineComponent({
         {
           id: 4,
           question: "How long does a typical landscaping project take...?",
-          fullQuestion: "How long does a typical landscaping project take to complete?",
-          description: "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
+          fullQuestion:
+            "How long does a typical landscaping project take to complete?",
+          description:
+            "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
           image: maskGroup,
           audioSrc: portfolioAudio4,
           audioPlaying: false,
@@ -100,7 +107,7 @@ export default defineComponent({
     // },
     updateHoverPosition(event) {
       this.hoverPosition = { x: event.clientX, y: event.clientY };
-    }
+    },
   },
 });
 </script>
@@ -108,36 +115,63 @@ export default defineComponent({
 <template>
   <!--our portfolio -->
   <div class="w-full bg-black text-white pt-20 pb-8">
-    <h3 class="text-[100px] font-playfairDisplay font-[600] text-center">Our Portfolio</h3>
-    <div class="px-[40px] mt-20 w-[1070px] h-[600px] xl:w-[1600px] xl:h-[600px] bg-[url('/images/ourportfolio/imgs/img(2).png')] bg-no-repeat bg-center bg-contain bg-fixed">
-    </div>
+    <h3 class="text-[100px] font-playfairDisplay font-[600] text-center">
+      Our Portfolio
+    </h3>
+    <div
+      class="scape-explore-cursor px-[40px] mt-20 w-[1070px] h-[600px] xl:w-[1600px] xl:h-[600px] bg-[url('/images/ourportfolio/imgs/img(2).png')] bg-no-repeat bg-center bg-contain bg-fixed "
+    ></div>
 
-    <h4 class="flex flex-col text-center text-white font-playfairDisplay font-[600] text-[50px] leading-[6rem] mt-[-6rem]">
+    <h4
+      class="flex flex-col text-center text-white font-playfairDisplay font-[600] text-[50px] leading-[6rem] mt-[-6rem]"
+    >
       Eco-Friendly <span>Backyard</span>
     </h4>
-    <p class="font-inter text-sm text-white w-[55rem] mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-      </p>
-      
+    <p class="font-inter text-sm text-white w-[55rem] mx-auto ">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
+      dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
+      vestibulum tortor feugiat. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui
+      molestie, sit amet vestibulum tortor feugiat. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim
+      turpis nec dui molestie, sit amet vestibulum tortor feugiat. Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam.
+      Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor
+      feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+      vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
+      vestibulum tortor feugiat. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui
+      molestie, sit amet vestibulum tortor feugiat. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim
+      turpis nec dui molestie, sit amet vestibulum tortor feugiat. Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam.
+      Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor
+      feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+      vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
+      vestibulum tortor feugiat. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui
+      molestie, sit amet vestibulum tortor feugiat. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim
+      turpis nec dui molestie, sit amet vestibulum tortor feugiat. Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam.
+      Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor
+      feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+      vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
+      vestibulum tortor feugiat. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui
+      molestie, sit amet vestibulum tortor feugiat. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim
+      turpis nec dui molestie, sit amet vestibulum tortor feugiat.
+    </p>
 
     <div class="mt-32 text-center pb-32">
-      <h4 class="font-playfairDisplay font-[600] text-[100px] text-white">Got Questions?</h4>
+      <h4 class="font-playfairDisplay font-[600] text-[100px] text-white">
+        Got Questions?
+      </h4>
       <p class="font-inter text-[24px] text-white w-[55rem] mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet vestibulum tortor feugiat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
+        dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
+        vestibulum tortor feugiat.
       </p>
     </div>
 
@@ -151,7 +185,9 @@ export default defineComponent({
         @mouseleave="faq.hover = false"
         @mousemove="updateHoverPosition($event)"
       >
-        <h4 class="font-[600] font-inter text-[30px] xl:text-[40px] flex-grow">{{ faq.question }}</h4>
+        <h4 class="font-[600] font-inter text-[30px] xl:text-[40px] flex-grow">
+          {{ faq.question }}
+        </h4>
 
         <!-- <div class="flex items-center ml-4">
           <div @click="togglePlayPause(faq)" class="cursor-pointer mr-40">
@@ -163,28 +199,34 @@ export default defineComponent({
 
         <!-- Hover Box for full question and image -->
         <div
-  v-if="faq.hover"
-  :style="{ top: '-100px', left: hoverPosition.x + 'px' }"
-  class="absolute w-[240px] h-[370px] p-4 bg-white text-black shadow-lg z-10 rounded-t-[38%] cursor-pointer"
->
- 
-  <div class="flex  w-[240px]">
-    <img :src="faq.image" alt="FAQ Image" class="w-full h-[150px] ml-[-1rem] mt-[-2rem]" />
-  </div>
+          v-if="faq.hover"
+          :style="{ top: '-100px', left: hoverPosition.x + 'px' }"
+          class="absolute w-[240px] h-[370px] p-4 bg-white text-black shadow-lg z-10 rounded-t-[38%] cursor-pointer"
+        >
+          <div class="flex w-[240px]">
+            <img
+              :src="faq.image"
+              alt="FAQ Image"
+              class="w-full h-[150px] ml-[-1rem] mt-[-2rem]"
+            />
+          </div>
 
-  <p class="font-inter text-[15px] font-[600] w-[13rem] mb-4 ml-[-4px] mt-5  ">{{ faq.fullQuestion }}</p>
+          <p
+            class="font-inter text-[15px] font-[600] w-[13rem] mb-4 ml-[-4px] mt-5"
+          >
+            {{ faq.fullQuestion }}
+          </p>
 
-  <p class="font-inter text-[12px] mb-4 ">{{ faq.description }}</p>
-</div>
+          <p class="font-inter text-[12px] mb-4">{{ faq.description }}</p>
+        </div>
 
-
-        <audio
+        <!-- <audio
           :ref="'audioPlayer' + faq.id"
           :src="faq.audioSrc"
           @loadedmetadata="setDuration(faq)"
           @timeupdate="updateCurrentTime(faq)"
           @ended="resetToDuration(faq)"
-        ></audio>
+        ></audio> -->
       </div>
     </div>
 
