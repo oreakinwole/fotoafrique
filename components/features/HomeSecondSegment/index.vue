@@ -305,6 +305,8 @@ export default {
       <div class="ml-20">
         <div class="flex flex-row gap-8">
           <div>
+           <NuxtLink to="3d-packages">
+
             <div class="relative w-[340px] h-[420px] cursor-pointer group explore-item">
               <img
                 :src="frontyard"
@@ -315,6 +317,7 @@ export default {
                 class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
               ></div>
             </div>
+           </NuxtLink>
 
             <div class="flex flex-row justify-between mt-5">
               <h4 class="font-inter font-[500] text-[18px]">Front Yard</h4>
@@ -323,6 +326,7 @@ export default {
           </div>
 
           <div>
+            <NuxtLink to="3d-packages">
             <div class="relative w-[340px] h-[420px] cursor-pointer group explore-item">
               <img
                 :src="backyard"
@@ -333,6 +337,7 @@ export default {
                 class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
               ></div>
             </div>
+          </NuxtLink>
 
             <div class="flex flex-row justify-between mt-5">
               <h4 class="font-inter font-[500] text-[18px]">Back Yard</h4>
@@ -341,6 +346,8 @@ export default {
           </div>
 
           <div>
+            <NuxtLink to="3d-packages">
+
             <div class="relative w-[340px] h-[420px] cursor-pointer group explore-item">
               <img
                 :src="fullyard"
@@ -351,6 +358,7 @@ export default {
                 class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
               ></div>
             </div>
+            </NuxtLink>
 
             <div class="flex flex-row justify-between mt-5">
               <h4 class="font-inter font-[500] text-[18px]">Full Yard</h4>
