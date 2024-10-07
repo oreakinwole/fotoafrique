@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full justify-between py-8 px-28">
+  <div class="flex w-full justify-between py-8 px-28 max-w-[1600px]">
     
     <img src="@/assets/svg/logo.svg" width="80" />
 
