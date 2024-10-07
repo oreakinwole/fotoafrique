@@ -54,7 +54,152 @@ export default {
 </script>
 
 <template>
-  <div class="pt-20 px-20">
+  <DesignProcess />
+
+  <div
+    class="mt-48 flex"
+    data-aos-duration="2000"
+    data-aos-delay="400"
+    data-aos="fade-in"
+  >
+    <div class="ml-32 mt-20">
+      <div>
+        <h4 class="font-playfairDisplay text-5xl font-[500]">
+          Packa<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
+            >G</span
+          >es
+        </h4>
+      </div>
+
+      <p
+        class="text-[#665244] text-xs font-[400] font-inter max-w-lg leading-relaxed"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
+        dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
+        vestibulum tortor feugiat.
+      </p>
+
+      <FilledButton
+        background-color="black"
+        text="SCHEDULE A CALL"
+        text-color="white"
+        class="mt-6"
+      />
+    </div>
+
+    <div>
+      <div class="ml-20">
+        <div class="flex flex-row gap-8">
+          <div>
+            <NuxtLink to="3d-packages">
+              <div
+                class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+              >
+                <img
+                  :src="frontyard"
+                  alt="frontyard picture"
+                  class="w-full h-full"
+                />
+                <div
+                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                ></div>
+              </div>
+            </NuxtLink>
+
+            <div class="flex flex-row justify-between mt-5">
+              <h4 class="font-inter font-[500] text-[18px]">Front Yard</h4>
+              <p class="font-[400] font-inter text-[16px]">$1,890.80</p>
+            </div>
+          </div>
+
+          <div>
+            <NuxtLink to="3d-packages">
+              <div
+                class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+              >
+                <img
+                  :src="backyard"
+                  alt="backyard picture"
+                  class="w-full h-full"
+                />
+                <div
+                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                ></div>
+              </div>
+            </NuxtLink>
+
+            <div class="flex flex-row justify-between mt-5">
+              <h4 class="font-inter font-[500] text-[18px]">Back Yard</h4>
+              <p class="font-[400] font-inter text-[16px]">$1,745.99</p>
+            </div>
+          </div>
+
+          <div>
+            <NuxtLink to="3d-packages">
+              <div
+                class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+              >
+                <img
+                  :src="fullyard"
+                  alt="fullyard picture"
+                  class="w-full h-full"
+                />
+                <div
+                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                ></div>
+              </div>
+            </NuxtLink>
+
+            <div class="flex flex-row justify-between mt-5">
+              <h4 class="font-inter font-[500] text-[18px]">Full Yard</h4>
+              <p class="font-[400] font-inter text-[16px]">$2,745.56</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="relative w-[340px] h-[420px] cursor-pointer group">
+              <img
+                :src="renovation"
+                alt="renovation picture"
+                class="w-full h-full"
+              />
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+              ></div>
+            </div>
+
+            <div class="flex flex-row justify-between mt-5">
+              <h4 class="font-inter font-[500] text-[18px]">Renovation</h4>
+              <p class="font-[400] font-inter text-[16px]">$45.80</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex flex-row justify-between mt-12">
+            <div class="w-[67.8rem] h-[1px] bg-[#A89C93]"></div>
+
+            <div
+              class="flex flex-row gap-8 justify-end mr-[17.8rem] font-[300] mt-[-9px]"
+            >
+              <img
+                :src="lessthanicon"
+                alt="less than icon"
+                class="cursor-pointer"
+              />
+              <img
+                :src="greaterthanicon"
+                alt="graeter than icon"
+                class="cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-32 px-20">
     <section class="flex gap-x-8 justify-between h-[530px] py-10">
       <div
         class="explore-item w-1/3 h-full bg-[url('@/assets/images/pool1.png')] bg-no-repeat bg-center bg-cover bg-fixed"
@@ -92,7 +237,6 @@ export default {
     </section>
   </div>
 
-  <DesignProcess />
   <!-- <GetYourYard /> -->
 
   <!-- Before and After Section -->
@@ -269,145 +413,6 @@ export default {
       <img :src="house2" alt="house 2" class="w-[350px] h-[389px]" />
     </div>
   </div> -->
-
-  <div
-    class="mt-40 flex"
-    data-aos-duration="2000"
-    data-aos-delay="400"
-    data-aos="fade-in"
-  >
-    <div class="ml-32 mt-20">
-      <div>
-        <h4 class="font-playfairDisplay text-5xl font-[500]">
-          Packa<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
-            >G</span
-          >es
-        </h4>
-      </div>
-
-      <p
-        class="text-[#665244] text-xs font-[400] font-inter max-w-lg leading-relaxed"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
-        dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
-        vestibulum tortor feugiat.
-      </p>
-
-      <FilledButton
-        background-color="black"
-        text="GET STARTED"
-        text-color="white"
-        class="mt-6"
-      />
-    </div>
-
-    <div>
-      <div class="ml-20">
-        <div class="flex flex-row gap-8">
-          <div>
-           <NuxtLink to="3d-packages">
-
-            <div class="relative w-[340px] h-[420px] cursor-pointer group explore-item">
-              <img
-                :src="frontyard"
-                alt="frontyard picture"
-                class="w-full h-full"
-              />
-              <div
-                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-              ></div>
-            </div>
-           </NuxtLink>
-
-            <div class="flex flex-row justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">Front Yard</h4>
-              <p class="font-[400] font-inter text-[16px]">$1,890.80</p>
-            </div>
-          </div>
-
-          <div>
-            <NuxtLink to="3d-packages">
-            <div class="relative w-[340px] h-[420px] cursor-pointer group explore-item">
-              <img
-                :src="backyard"
-                alt="backyard picture"
-                class="w-full h-full"
-              />
-              <div
-                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-              ></div>
-            </div>
-          </NuxtLink>
-
-            <div class="flex flex-row justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">Back Yard</h4>
-              <p class="font-[400] font-inter text-[16px]">$1,745.99</p>
-            </div>
-          </div>
-
-          <div>
-            <NuxtLink to="3d-packages">
-
-            <div class="relative w-[340px] h-[420px] cursor-pointer group explore-item">
-              <img
-                :src="fullyard"
-                alt="fullyard picture"
-                class="w-full h-full"
-              />
-              <div
-                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-              ></div>
-            </div>
-            </NuxtLink>
-
-            <div class="flex flex-row justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">Full Yard</h4>
-              <p class="font-[400] font-inter text-[16px]">$2,745.56</p>
-            </div>
-          </div>
-
-          <div>
-            <div class="relative w-[340px] h-[420px] cursor-pointer group">
-              <img
-                :src="renovation"
-                alt="renovation picture"
-                class="w-full h-full"
-              />
-              <div
-                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-              ></div>
-            </div>
-
-            <div class="flex flex-row justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">Renovation</h4>
-              <p class="font-[400] font-inter text-[16px]">$45.80</p>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="flex flex-row justify-between mt-12">
-            <div class="w-[67.8rem] h-[1px] bg-[#A89C93]"></div>
-
-            <div
-              class="flex flex-row gap-8 justify-end mr-[17.8rem] font-[300] mt-[-9px]"
-            >
-              <img
-                :src="lessthanicon"
-                alt="less than icon"
-                class="cursor-pointer"
-              />
-              <img
-                :src="greaterthanicon"
-                alt="graeter than icon"
-                class="cursor-pointer"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 
 <style>

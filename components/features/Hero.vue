@@ -73,15 +73,7 @@ onMounted(() => {
     </div>
   </NuxtLink>
 
-  <div class="pt-32 pb-20">
-    <p class="uppercase text-center font-inter font-[400] text-[12px]">
-      Our Partners
-    </p>
-
-    <div class="mt-8">
-      <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
-    </div>
-  </div>
+  
 </template>
 
 <style lang="scss">

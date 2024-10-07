@@ -3,10 +3,11 @@ import "animate.css";
 </script>
 
 <template>
-  <FeaturesHero />
-  <FeaturesHomeSecondSegment />
-  <FeaturesHomeThirdSegment />
-  <FeaturesHomeLastSegment />
+  <HeroNew />
+
+   <FeaturesHomeSecondSegment />
+ <!-- <FeaturesHomeThirdSegment />
+  <FeaturesHomeLastSegment /> -->
 </template>
 
 <style>

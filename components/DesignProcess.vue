@@ -1,20 +1,20 @@
 <script setup>
-import gsap from "gsap";
+// import gsap from "gsap";
 
-onMounted(() => {
-  gsap.to(".designPro", {
-    x: -1200,
-    scrollTrigger: {
-      trigger: ".designPro",
-      end: 2500,
-      scrub: true,
-    },
-  });
-});
+// onMounted(() => {
+//   gsap.to(".designPro", {
+//     x: -1200,
+//     scrollTrigger: {
+//       trigger: ".designPro",
+//       end: 2500,
+//       scrub: true,
+//     },
+//   });
+// });
 </script>
 
 <template>
-  <div class="mt-24" data-aos="slide-right" data-aos-duration="1500">
+  <div class="mt-24" >
     <div class="flex flex-row justify-between px-32">
       <div>
         <h2 class="font-playfairDisplay font-[500] text-5xl">
@@ -179,7 +179,6 @@ onMounted(() => {
   transition: all 1s;
   top: 0;
   cursor: url("@/assets/images/process_cursor.png"), auto;
-
 }
 
 .process-item:hover::after {
@@ -192,6 +191,4 @@ onMounted(() => {
   right: -800px;
   transition: all 0.3s;
 }
-
-
 </style>
