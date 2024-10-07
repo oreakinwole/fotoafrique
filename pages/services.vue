@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="px-20">
+  <div class="px-20 pt-28">
     <section class="flex gap-x-20 justify-between h-[600px] py-10">
       <div class="w-1/2 h-full">
         <img

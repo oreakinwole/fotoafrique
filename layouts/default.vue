@@ -25,7 +25,8 @@ let counter = ref(null);
       <p class="text-xs text-loader-brown">Loading...</p>
     </div>
   </div>
-  <div class="max-w-[1600px] mx-auto overflow-hidden">
+
+  <div class="max-w-[1600px]  mx-auto overflow-hidden">
     <NavBarNew class="absolute top-0" />
     <slot />
     <Footer class="mt-32" />

@@ -5,11 +5,11 @@
 
 
     <ul class="flex text-sm justify-between w-2/5  ">
-        <li>HOME</li>
-        <li>SERVICES</li>
-        <li>PORTFOLIO</li>
-        <li>CONTACT</li>
-        <li>3D PACKAGES</li>
+        <li>  <NuxtLink to="/">HOME</NuxtLink></li>
+        <li>  <NuxtLink to="/services">SERVICES</NuxtLink></li>
+        <li> <NuxtLink to="/portfolio">PORTFOLIO</NuxtLink> </li>
+        <li><NuxtLink to="/contact">CONTACT</NuxtLink> </li>
+        <li><NuxtLink to="/3d-packages">3D PACKAGES</NuxtLink> </li>
     </ul>
 
   </div>

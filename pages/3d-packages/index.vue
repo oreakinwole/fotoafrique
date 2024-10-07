@@ -3,7 +3,7 @@
 
 <template>
   <div>
-    <div class="pl-28">
+    <div class="pl-28 pt-28">
       <p class="font-playfairDisplay text-6xl py-10 font-[500]">
         Custom <span class="italic text-new-gray">3D Design</span> Assets
       </p>

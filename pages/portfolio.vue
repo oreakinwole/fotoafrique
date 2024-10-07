@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="px-20">
+    <div class="px-20 pt-28">
       <section
         class="flex gap-x-8 justify-between h-[580px] py-10 pb-20 border-b border-new-gray border-opacity-25"
       >
