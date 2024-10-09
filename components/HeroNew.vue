@@ -3,7 +3,7 @@
     <div
       class="min-h-screen pt-28 bg-[url('@/assets/images/hero_bg2.png')] bg-no-repeat bg-top bg-cover"
     >
-      <div class="text-center space-y-3">
+      <div class="text-center space-y-3"  >
         <p class="text-sm font-medium">CREATING YOUR DREAM</p>
         <p class="text-8xl font-bold">OUTDOOR SPACE</p>
         <p class="text-sm font-light max-w-sm mx-auto">
@@ -16,12 +16,12 @@
       <img src="@/assets/images/screen.png" width="80%" class="mx-auto mt-12" />
     </div>
 
-    <div class="pt-48 mb-36 h-96 ">
+    <div class="pt-48 mb-36 h-96 " data-aos="fade-up" data-aos-duration="2000">
       <p class="uppercase text-center font-inter font-[400] text-[12px]">
         Our Partners
       </p>
 
-      <div class="mt-8">
+      <div class="mt-8" >
         <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
       </div>
     </div>

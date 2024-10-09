@@ -210,6 +210,7 @@ export default {
   <div class="py-48 pb-96 bg-white">
     <h1
       class="font-playfairDisplay text-center drop-shadow-md font-extrabold text-9xl text-[#7e7d7d]"
+       data-aos="slide-down" data-aos-duration="2000"
     >
       Meet the Designer
     </h1>
@@ -235,6 +236,7 @@ export default {
         class="absolute -top-40 right-0"
         width="300"
         src="@/assets/images/designerr__.png"
+         data-aos="slide-up" data-aos-duration="2000"
       />
     </div>
   </div>
