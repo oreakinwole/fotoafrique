@@ -1,75 +1,106 @@
 <script setup>
-const isShowLoader = ref(false);
+const isShowLoader = ref(true);
 let counter = ref(null);
 
-// onMounted(() => {
-//   counter = setTimeout(() => {
-//     isShowLoader.value = false;
-//   }, 5000);
-// });
+onMounted(() => {
+  counter = setTimeout(() => {
+    isShowLoader.value = false;
+  }, 5000);
+});
 
-// onBeforeUnmount(() => {
-//   clearTimeout(counter);
-// });
+onBeforeUnmount(() => {
+  clearTimeout(counter);
+});
 </script>
 
 <template>
   <div
-    class="h-[1200px] w-full z-10 bg-black absolute top-0 left-0"
+    class="h-screen w-full z-10 bg-black absolute top-0 left-0"
     v-if="isShowLoader"
   >
-    <div
-      class="loading effect-1 w-48 h-48 rounded-full border border-loader-brown text-center pt-[4em] absolute left-[44%] top-[21%]"
+    <svg
+      class="spinner"
+      width="174px"
+      height="174px"
+      viewBox="0 0 66 66"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <p class="text-loader-brown text-2xl">95%</p>
-      <p class="text-xs text-loader-brown">Loading...</p>
-    </div>
+      <circle
+        class="pathspin"
+        fill="transparent"
+        stroke-width=".5"
+        cx="33"
+        cy="33"
+        r="30"
+        stroke="url(#gradient)"
+      ></circle>
+      <defs>
+      <linearGradient id="gradient">
+        <stop offset="50%" stop-color="#D0C2B0" stop-opacity="1" />
+        <stop offset="65%" stop-color="#D0C2B0" stop-opacity=".5" />
+        <stop offset="100%" stop-color="#D0C2B0" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+
+      <!-- <svg
+        class="spinner-dot dot"
+        width="5px"
+        height="5px"
+        viewBox="0 0 66 66"
+        xmlns="http://www.w3.org/2000/svg"
+        x="37"
+        y="1.5"
+      >
+        <circle class="pathspin" fill="#D0C2B0" cx="33" cy="33" r="30"></circle>
+      </svg> -->
+    </svg>
   </div>
 
-  <div class="max-w-[1600px]  mx-auto overflow-hidden">
+  <div class="max-w-[1600px]  mx-auto overflow-hidden" v-else>
     <NavBarNew class="absolute top-0" />
     <slot />
     <Footer class="mt-32" />
   </div>
 </template>
 
-<style>
-.loading .effect-1 {
-  animation: rotate 1s ease infinite;
+<style scoped>
+.spinner {
+  animation: rotate 1.4s linear infinite;
+  -webkit-animation: rotate 1.4s linear infinite;
+  -moz-animation: rotate 1.4s linear infinite;
+  width: 174px;
+  height: 174px;
+  margin: 20% auto 0;
+  position: relative;
 }
 
-.loading .effect-2 {
-  animation: rotate-opacity 1s ease infinite 0.1s;
-}
-
-.loading .effect-3 {
-  animation: rotate-opacity 1s ease infinite 0.2s;
-}
-
-.loading .effects {
-  transition: all 0.3s ease;
+.spinner-dot {
+  width: 274px;
+  height: 274px;
+  position: relative;
+  top: 0;
 }
 
 @keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(1turn);
+  to {
+    transform: rotate(360deg);
   }
 }
 
-@keyframes rotate-opacity {
-  0% {
-    opacity: 0.1;
-    transform: rotate(0deg);
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
   }
+}
 
-  100% {
-    opacity: 1;
-    transform: rotate(1turn);
+@-moz-keyframes rotate {
+  to {
+    transform: rotate(360deg);
   }
+}
+
+.pathspin {
+  stroke-dasharray: 170;
+  stroke-dashoffset: 20;
 }
 </style>
-s
