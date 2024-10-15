@@ -2,7 +2,7 @@
 import autoAnimate from "@formkit/auto-animate";
 
 const turfGallery = ref(1);
-const turfSection = ref();
+const autoAniSection = ref();
 
 const incrementTurf = () => {
   if (turfGallery.value === 3) return (turfGallery.value = 1);
@@ -15,7 +15,7 @@ const decrementTurf = () => {
 };
 
 onMounted(() => {
-  autoAnimate(turfSection.value);
+  autoAnimate(autoAniSection.value);
 });
 </script>
 
@@ -59,11 +59,11 @@ onMounted(() => {
         </div>
       </section>
 
-      <div class="relative mt-10" ref="turfSection">
+      <div class="relative mt-10" ref="autoAniSection">
         <div class="absolute top-0 right-0 flex gap-x-4">
           <svg
             @click="decrementTurf"
-            class="w-6"
+            class="w-6 cursor-pointer hover:w-7 transition-all duration-200 ease-out"
             width="37"
             height="37"
             viewBox="0 0 37 37"
@@ -86,7 +86,7 @@ onMounted(() => {
 
           <svg
             @click="incrementTurf"
-            class="w-6"
+            class="w-6 cursor-pointer hover:w-7 transition-all duration-200 ease-out"
             width="37"
             height="37"
             viewBox="0 0 37 37"
