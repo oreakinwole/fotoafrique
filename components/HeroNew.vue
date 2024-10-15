@@ -4,12 +4,11 @@
       class="min-h-screen pt-28 bg-[url('@/assets/images/hero_bg2.png')] bg-no-repeat bg-top bg-cover"
     >
       <div class="text-center space-y-3"  >
-        <p class="text-sm font-medium">CREATING YOUR DREAM</p>
-        <p class="text-8xl font-bold">OUTDOOR SPACE</p>
+        <p class="text-sm font-medium">DON’T JUST LIKE YOUR YARD</p>
+        <p class="text-8xl font-bold">LOVE IT!</p>
         <p class="text-sm font-light max-w-sm mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra,
-          ipsum vitae euismod consequat, dui enim fringilla dui, in efficitur
-          eros dolor in tellus.
+          Let us turn your outdoor space into a beautiful,
+custom-designed haven that you’ll enjoy for years to come.
         </p>
       </div>
 
