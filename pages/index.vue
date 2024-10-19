@@ -3,10 +3,12 @@ import "animate.css";
 </script>
 
 <template>
+ <div class="landing-container">
   <HeroNew />
   <FeaturesHomeSecondSegment />
    <FeaturesHomeThirdSegment />
  <!-- <FeaturesHomeLastSegment /> -->
+ </div>
 </template>
 
 <style>
