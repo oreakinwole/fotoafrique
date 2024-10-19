@@ -16,19 +16,23 @@ onMounted(() => {
       class="cursor-wait min-h-screen pt-28 bg-[url('@/assets/images/hero_bg2.png')] bg-no-repeat bg-top bg-cover"
     >
       <div class="text-center space-y-3">
-        <p class="text-md font-semibold tracking-[.6em]">
-          DON’T JUST LIKE YOUR YARD
-        </p>
+        <VueWriter
+          class="text-md font-semibold tracking-[.6em]"
+          :array="[`DON'T JUST LIKE YOUR YARD`]"
+          :iterations="1"
+          :typeSpeed="100"
+        />
         <p class="text-8xl font-bold flex items-center justify-center">
           L
           <span
-            class="transition-all delay-500 duration-1000 ease-in-out w-9 h-9 py-6 px-7 border-[12px] border-black rounded-full hover:rounded-5xl"
+            class="transition-all delay-[2600ms] duration-[2500ms] ease-in-out w-9 h-9 py-6 px-7 border-[12px] border-black rounded-full hover:rounded-5xl"
             :class="animateCaption && 'lg:px-36'"
           >
             &nbsp;
           </span>
 
-          VE IT<span class="animate__animated animate__bounceIn animate__delay-2s "
+          VE IT<span
+            class="animate__animated animate__bounceIn animate__delay-4s"
             >!</span
           >
         </p>
@@ -40,7 +44,7 @@ onMounted(() => {
         </p>
       </div>
 
-      <img src="@/assets/images/screen.png" width="80%" class="mx-auto mt-12" />
+      <img src="@/assets/images/screen.jpg" width="80%" class="mx-auto mt-12" />
     </div>
 
     <!-- <div class="pt-48 mb-36 h-96" data-aos="fade-up" data-aos-duration="2000">

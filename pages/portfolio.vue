@@ -21,7 +21,7 @@ onMounted(() => {
 
 <template>
   <div>
-    <div class="px-20 pt-28">
+    <div class="px-20 pt-28 cursor-default">
       <section
         class="flex gap-x-8 justify-between h-[580px] py-10 pb-20 border-b border-new-gray border-opacity-25"
       >
@@ -60,7 +60,7 @@ onMounted(() => {
       </section>
 
       <div class="relative mt-10" ref="autoAniSection">
-        <div class="absolute top-0 right-0 flex gap-x-4">
+        <div class="absolute top-0 right-0 flex gap-x-4 ">
           <svg
             @click="decrementTurf"
             class="w-6 cursor-pointer hover:w-7 transition-all duration-200 ease-out"

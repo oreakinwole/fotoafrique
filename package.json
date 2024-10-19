@@ -36,6 +36,7 @@
     "ipx": "^3.0.1",
     "scrollmagic": "^2.0.8",
     "vue-router": "^4.4.3",
+    "vue-typer": "^1.2.0",
     "vue-writer": "^1.2.0"
   }
 }

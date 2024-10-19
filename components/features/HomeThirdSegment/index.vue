@@ -38,14 +38,21 @@
   </div>
 
   <Testimonial />
-  
+
   <div class="py-48 pb-96 bg-white">
     <h1
-      class="font-playfairDisplay text-center drop-shadow-md font-extrabold text-9xl text-[#7e7d7d]"
-      data-aos="slide-down"
+      class="font-playfairDisplay text-center font-bold text-9xl text-[#665244] opacity-50"
+      data-aos="slide-left"
       data-aos-duration="2000"
     >
-      Meet the Designer
+      Why Choose
+    </h1>
+    <h1
+      class="font-playfairDisplay text-center font-bold text-9xl text-[#665244] opacity-50"
+      data-aos="slide-right"
+      data-aos-duration="2000"
+    >
+      Modern Yardz?
     </h1>
 
     <div class="max-w-screen-sm relative ml-[25em] mt-28">
@@ -74,6 +81,6 @@
       />
     </div>
   </div>
-  
+
   <OurPortfolio class="mb-16" />
 </template>
