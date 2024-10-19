@@ -1,8 +1,10 @@
 <template>
-  <div class="flex w-full items-center justify-between py-8 px-28 max-w-[1600px]">
-    <img src="@/assets/svg/logo.svg" width="80" />
+  <div class="cursor-default flex w-full items-center justify-between py-8 px-28 max-w-[1600px]">
+<NuxtLink to="/">
+  <img src="@/assets/svg/logo.svg" width="80" />
 
-    <p class="text-xs font-medium">Start Your Transformation Today – <span class="font-bold border-black border-b">Book a Free Consultation</span></p>
+</NuxtLink>
+    <p class="text-xs font-medium">Start Your Transformation Today – <span class="font-bold border-black border-b" @click="handleBookConsult" role="button">Book a Free Consultation</span></p>
 
     <svg
     class="w-8"
@@ -19,6 +21,14 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+ const handleBookConsult = () => {
+  const calendly = useCalendly();
+
+  calendly.initPopupWidget({
+    url: "https://calendly.com/d/2sx-n9t-6g7",
+  });
+};
+</script>
 
 <style></style>

@@ -8,7 +8,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 
 <template>
   <!-- Before and After Section -->
-  <div class="bg-[#F8F5F3] w-full pt-20 pb-1 mt-40 ">
+  <div class="bg-[#F8F5F3] w-full pt-20 pb-1 mt-40 cursor-wait">
    <div class="flex flex-col justify-center items-center">
      <h3 class="font-playfairDisplay font-[500] text-5xl text-black">
        Before

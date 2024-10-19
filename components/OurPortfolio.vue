@@ -166,7 +166,7 @@ export default defineComponent({
       turpis nec dui molestie, sit amet vestibulum tortor feugiat.
     </p>
 
-    <div class="mt-32 space-y-8 text-center pb-32">
+    <div class="mt-32 space-y-8 text-center pb-32 cursor-help">
       <h4 class="font-playfairDisplay font-[600] text-7xl text-white">
         Got Questions?
       </h4>
@@ -182,7 +182,7 @@ export default defineComponent({
       <div
         v-for="faq in faqs"
         :key="faq.id"
-        class="flex flex-row justify-between items-center px-2 border-t border-b border-[#F5F0EA] py-6 mr-8 ml-8 relative cursor-pointer"
+        class=" flex flex-row justify-between items-center px-2 border-t border-b border-[#F5F0EA] py-6 mr-8 ml-8 relative"
         @mouseenter="faq.hover = true"
         @mouseleave="faq.hover = false"
         @mousemove="updateHoverPosition($event)"
