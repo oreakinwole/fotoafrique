@@ -36,6 +36,8 @@ body {
 
   font-family: "Inter", sans-serif;
   /* background-color: #fcfbfa; */
+  cursor: url("@/assets/images/process_cursor.png"), auto;
+
 }
 
 * {
