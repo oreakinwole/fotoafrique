@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
   <div class="py-32 px-20">
     <section class="flex gap-x-8 justify-between h-[530px] py-10">
@@ -41,7 +37,8 @@
     </section>
   </div>
 
-  <!-- <GetYourYard /> -->
+  <Testimonial />
+  
   <div class="py-48 pb-96 bg-white">
     <h1
       class="font-playfairDisplay text-center drop-shadow-md font-extrabold text-9xl text-[#7e7d7d]"
@@ -79,6 +76,4 @@
   </div>
   
   <OurPortfolio class="mb-16" />
- 
-
 </template>

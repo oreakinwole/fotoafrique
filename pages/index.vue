@@ -28,7 +28,12 @@ import "animate.css";
   cursor: url("@/assets/images/bestill.png"), auto;
 }
 
+.explore-item{
+  transition: all 0.8s ease;
+}
+
 .explore-item:hover {
   cursor: url("@/assets/images/explore_cursor.png"), auto;
+  
 }
 </style>

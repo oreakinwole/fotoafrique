@@ -1,17 +1,21 @@
 <template>
-  <div class="flex w-full justify-between py-8 px-28 max-w-[1600px]">
-    
+  <div class="flex w-full items-center justify-between py-8 px-28 max-w-[1600px]">
     <img src="@/assets/svg/logo.svg" width="80" />
 
+    <p class="text-xs font-medium">Start Your Transformation Today – <span class="font-bold border-black border-b">Book a Free Consultation</span></p>
 
-    <ul class="flex text-sm justify-between w-2/5  ">
-        <li>  <NuxtLink to="/">HOME</NuxtLink></li>
-        <li>  <NuxtLink to="/services">SERVICES</NuxtLink></li>
-        <li> <NuxtLink to="/portfolio">PORTFOLIO</NuxtLink> </li>
-        <li><NuxtLink to="/contact">CONTACT</NuxtLink> </li>
-        <li><NuxtLink to="/3d-packages">3D PACKAGES</NuxtLink> </li>
-    </ul>
-
+    <svg
+    class="w-8"
+      width="60"
+      height="39"
+      viewBox="0 0 60 39"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line y1="1.5" x2="60" y2="1.5" stroke="black" stroke-width="3" />
+      <line y1="19.5" x2="60" y2="19.5" stroke="black" stroke-width="3" />
+      <line y1="37.5" x2="60" y2="37.5" stroke="black" stroke-width="3" />
+    </svg>
   </div>
 </template>
 

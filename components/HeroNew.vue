@@ -4,11 +4,35 @@
       class="min-h-screen pt-28 bg-[url('@/assets/images/hero_bg2.png')] bg-no-repeat bg-top bg-cover"
     >
       <div class="text-center space-y-3">
-        <p class="text-sm font-medium">DON’T JUST LIKE YOUR YARD</p>
-        <p class="text-8xl font-bold">LOVE IT!</p>
-        <p class="text-sm font-light max-w-sm mx-auto">
-          Let us turn your outdoor space into a beautiful, custom-designed haven
-          that you’ll enjoy for years to come.
+        <p class="text-md font-semibold tracking-[.6em]">
+          DON’T JUST LIKE YOUR YARD
+        </p>
+        <p class="text-8xl font-bold flex items-center justify-center">
+          L
+          <svg
+            class="h-16"
+            width="340"
+            height="81"
+            viewBox="0 0 340 81"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="7"
+              y="7"
+              width="326"
+              height="67"
+              rx="33.5"
+              stroke="black"
+              stroke-width="14"
+            />
+          </svg>
+
+          VE IT!
+        </p>
+        <p class="text-xs font-light max-w-xl mx-auto tracking-[.3em] leading-relaxed">
+          Let us turn your outdoor space into a beautiful, <br>
+          custom-designed haven that you’ll enjoy for years to come.
         </p>
       </div>
 
