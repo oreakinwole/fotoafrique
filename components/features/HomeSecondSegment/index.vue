@@ -46,7 +46,7 @@
                 class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
               >
                 <img
-                  src="/images/homesecondsegment/imgs/frontyard.svg"
+                  src="@/assets/images/services/paver.png"
                   alt="frontyard picture"
                   class="w-full h-full"
                 />
@@ -93,7 +93,8 @@
                 class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
               >
                 <img
-                  src="/images/homesecondsegment/imgs/Backyard.svg"
+                src="@/assets/images/services/concrete.png"
+
                   alt="backyard picture"
                   class="w-full h-full"
                 />
@@ -140,7 +141,8 @@
                 class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
               >
                 <img
-                  src="/images/homesecondsegment/imgs/FullYard.svg"
+                src="@/assets/images/services/turf.png"
+
                   alt="fullyard picture"
                   class="w-full h-full"
                 />
