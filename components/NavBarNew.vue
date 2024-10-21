@@ -1,5 +1,5 @@
 <script setup>
-const isShowMobileNav = ref(true);
+const isShowMobileNav = ref(false);
 
 const toggleNav = () => {
   isShowMobileNav.value = !isShowMobileNav.value;
