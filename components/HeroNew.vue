@@ -25,7 +25,7 @@ onMounted(() => {
         <p class="text-8xl font-bold flex items-center justify-center">
           L
           <span
-            class="transition-all delay-[2600ms] duration-[2500ms] ease-in-out w-9 h-9 py-6 px-7 border-[12px] border-black rounded-full hover:rounded-5xl"
+            class="transition-all delay-[2600ms] duration-1000 ease-in-out w-9 h-9 py-6 px-7 border-[12px] border-black rounded-full hover:rounded-5xl"
             :class="animateCaption && 'lg:px-36'"
           >
             &nbsp;

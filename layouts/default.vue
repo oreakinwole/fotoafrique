@@ -1,15 +1,23 @@
-<script setup>
+<script setup lang="ts">
 const isShowLoader = ref(true);
-let counter = ref(null);
+
+const loaderCountInterval = ref();
+const loaderCount = ref(0);
 
 onMounted(() => {
-  counter = setTimeout(() => {
-    isShowLoader.value = false;
-  }, 5000);
+  loaderCountInterval.value = setInterval(() => {
+    if (loaderCount.value < 100) {
+      loaderCount.value += 10;
+    }
+  }, 150);
 });
 
 onBeforeUnmount(() => {
-  clearTimeout(counter);
+  clearInterval(loaderCountInterval.value);
+});
+
+watch(loaderCount, (val: number) => {
+  if (val === 100) isShowLoader.value = false;
 });
 </script>
 
@@ -18,45 +26,42 @@ onBeforeUnmount(() => {
     class="h-screen w-full z-10 bg-black absolute top-0 left-0"
     v-if="isShowLoader"
   >
-    <svg
-      class="spinner"
-      width="174px"
-      height="174px"
-      viewBox="0 0 66 66"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <circle
-        class="pathspin"
-        fill="transparent"
-        stroke-width=".5"
-        cx="33"
-        cy="33"
-        r="30"
-        stroke="url(#gradient)"
-      ></circle>
-      <defs>
-      <linearGradient id="gradient">
-        <stop offset="50%" stop-color="#D0C2B0" stop-opacity="1" />
-        <stop offset="65%" stop-color="#D0C2B0" stop-opacity=".5" />
-        <stop offset="100%" stop-color="#D0C2B0" stop-opacity="0" />
-      </linearGradient>
-    </defs>
-
-      <!-- <svg
-        class="spinner-dot dot"
-        width="5px"
-        height="5px"
+    <div class="relative">
+      <svg
+        class="spinner"
+        width="174px"
+        height="174px"
         viewBox="0 0 66 66"
         xmlns="http://www.w3.org/2000/svg"
-        x="37"
-        y="1.5"
       >
-        <circle class="pathspin" fill="#D0C2B0" cx="33" cy="33" r="30"></circle>
-      </svg> -->
-    </svg>
+        <circle
+          class="pathspin"
+          fill="transparent"
+          stroke-width=".5"
+          cx="33"
+          cy="33"
+          r="30"
+          stroke="url(#gradient)"
+        ></circle>
+        <defs>
+          <linearGradient id="gradient">
+            <stop offset="50%" stop-color="#D0C2B0" stop-opacity="1" />
+            <stop offset="65%" stop-color="#D0C2B0" stop-opacity=".5" />
+            <stop offset="100%" stop-color="#D0C2B0" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div
+        class="absolute flex flex-col items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#D0C2B0] text-4xl"
+      >
+        <p>{{ loaderCount }}%</p>
+        <p class="text-xs font-semibold">Loading...</p>
+      </div>
+    </div>
   </div>
 
-  <div class="max-w-[1600px]  mx-auto overflow-hidden" v-else>
+  <div class="max-w-[1600px] mx-auto overflow-hidden" v-else>
     <NavBarNew class="absolute top-0" />
     <slot />
     <Footer class="mt-32" />
