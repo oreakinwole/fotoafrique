@@ -8,11 +8,12 @@
 
   <div
     class="mt-48 flex"
-    data-aos-duration="2000"
-    data-aos-delay="400"
-    data-aos="fade-in"
+    
   >
-    <div class="ml-32 mt-20">
+    <div class="ml-32 mt-20"
+    data-aos="fade-up"
+        data-aos-easing="linear"
+    >
       <div>
         <h4 class="font-playfairDisplay text-5xl font-[500]">
           Servi<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
@@ -37,7 +38,9 @@
       />
     </div>
 
-    <div>
+    <div data-aos-duration="2000"
+    data-aos-delay="400"
+    data-aos="fade-in">
       <div class="ml-20">
         <div class="flex flex-row gap-8">
           <div>

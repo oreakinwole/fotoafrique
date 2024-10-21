@@ -22,11 +22,21 @@
 
     <div class="flex-[1] flex flex-col items-center  space-y-4">
       <header class="flex items-end space-x-4">
-        <div>
+        <div
+        data-aos="slide-up"
+        data-aos-duration="1500"
+        data-aos-delay="300"
+        data-aos-easing="linear"
+        >
           <img src="@/assets/images/testimonial/test_1.jpg" width="220" />
         </div>
 
-        <div>
+        <div
+        data-aos="zoom-in"
+        data-aos-duration="1200"
+        data-aos-delay="600"
+        data-aos-easing="linear"
+        >
           <img src="@/assets/images/testimonial/test_2.jpg" width="220" />
         </div>
 
@@ -34,13 +44,28 @@
       </header>
 
       <footer class="flex space-x-4">
-        <div>
+        <div
+        data-aos="slide-right"
+        data-aos-duration="1500"
+        data-aos-easing="linear"
+        >
           <img src="@/assets/images/testimonial/test_3.jpg" width="220" />
         </div>
-        <div>
+        <div
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+        data-aos-delay="600"
+        data-aos-easing="linear"
+        >
           <img src="@/assets/images/testimonial/test_4.jpg" width="220" />
         </div>
-        <div>
+        <div
+        
+        data-aos="slide-left"
+        data-aos-duration="1500"
+        data-aos-delay="300"
+        data-aos-easing="linear"
+        >
           <img src="@/assets/images/testimonial/test_5.jpg" width="220" />
         </div>
       </footer>

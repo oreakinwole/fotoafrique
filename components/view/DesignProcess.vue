@@ -26,21 +26,32 @@ onMounted(() => {
   <div class="mt-48 px-10">
     <div class="leading-[3.4em] px-20">
       <p class="font-bold">Our Design Process</p>
-      <p class="text-7xl font-normal">Simple Steps to Your Dream Yard</p>
-      <p class="text-7xl font-normal mt-3">Here’s how it works:</p>
+      <p
+        class="text-7xl font-normal"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+      >
+        Simple Steps to Your Dream Yard
+      </p>
+      <p
+        class="text-7xl font-normal mt-3"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1200"
+      >
+        Here’s how it works:
+      </p>
     </div>
 
     <section class="h-[450px] flex gap-4 mt-20 relative">
       <div
-       @mouseover="stepsShowing = 1"
-          @mouseleave="stepsShowing = null"
+        @mouseover="stepsShowing = 1"
+        @mouseleave="stepsShowing = null"
         ref="autoAniSection"
-
-        class="explore-item overflow-hidden h-full flex-[5] hover:flex-[10] rounded-2xl bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center  bg-cover  relative"
+        class="explore-item overflow-hidden h-full flex-[5] hover:flex-[10] rounded-2xl bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
           class="bg-black text-white rounded-2xl p-5 absolute left-1 bottom-1 w-[98%]"
-         
         >
           <h5 class="font-bold text-center">
             Step One: Free Design Consultation
@@ -69,14 +80,13 @@ onMounted(() => {
       </div>
 
       <div
-       @mouseover="stepsShowing = 2"
-          @mouseleave="stepsShowing = null"
+        @mouseover="stepsShowing = 2"
+        @mouseleave="stepsShowing = null"
         ref="autoAniSection"
-        class="explore-item h-full flex-[5] hover:flex-[10] rounded-2xl border bg-[url('@/assets/images/step_two.jpg')] bg-no-repeat bg-center  bg-cover  relative"
+        class="explore-item h-full flex-[5] hover:flex-[10] rounded-2xl border bg-[url('@/assets/images/step_two.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
           class="bg-black text-white rounded-2xl p-5 absolute left-1 bottom-1 w-[98%]"
-         
         >
           <h5 class="font-bold text-center">Step Two: ...</h5>
 
@@ -104,13 +114,12 @@ onMounted(() => {
 
       <div
         @mouseover="stepsShowing = 3"
-          @mouseleave="stepsShowing = null"
+        @mouseleave="stepsShowing = null"
         ref="autoAniSection"
-        class="explore-item h-full flex-[5] hover:flex-[10] rounded-2xl border bg-[url('@/assets/images/step_three.jpg')] bg-no-repeat bg-center  bg-cover  relative"
+        class="explore-item h-full flex-[5] hover:flex-[10] rounded-2xl border bg-[url('@/assets/images/step_three.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
           class="bg-black text-white rounded-2xl p-5 absolute left-1 bottom-1 w-[98%]"
-        
         >
           <h5 class="font-bold text-center">Step Three: ...</h5>
 
@@ -137,14 +146,13 @@ onMounted(() => {
       </div>
 
       <div
-      @mouseover="stepsShowing = 4"
-          @mouseleave="stepsShowing = null"
+        @mouseover="stepsShowing = 4"
+        @mouseleave="stepsShowing = null"
         ref="autoAniSection"
-        class="explore-item h-full flex-[5] hover:flex-[10] rounded-2xl border bg-[url('@/assets/images/step_four.jpg')] bg-no-repeat bg-center  bg-cover  relative"
+        class="explore-item h-full flex-[5] hover:flex-[10] rounded-2xl border bg-[url('@/assets/images/step_four.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
           class="bg-black text-white rounded-2xl p-5 absolute left-1 bottom-1 w-[98%]"
-          
         >
           <h5 class="font-bold text-center">Step Four: Comprehensive Quote</h5>
 
