@@ -4,7 +4,9 @@
   <img src="@/assets/svg/logo.svg" width="80" />
 
 </NuxtLink>
-    <p class="text-xs font-medium">Start Your Transformation Today – <span class="font-bold border-black border-b" @click="handleBookConsult" role="button">Book a Free Consultation</span></p>
+    <p class="text-xs font-medium animate__animated animate__flipInX animate__delay-3s"
+    
+    >Start Your Transformation Today – <span class="font-bold border-black border-b" @click="handleBookConsult" role="button">Book a Free Consultation</span></p>
 
     <svg
     class="w-8"
