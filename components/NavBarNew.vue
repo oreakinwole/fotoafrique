@@ -18,7 +18,14 @@ const handleBookConsult = () => {
   <div
     class="cursor-default flex w-full items-center justify-between py-8 px-28 max-w-[1600px]"
   >
-    <NuxtLink to="/">
+    <NuxtLink
+      to="/"
+      :class="
+        isShowMobileNav
+          ? 'animate__animated animate__fadeOut animate__slow'
+          : 'animate__animated animate__fadeIn animate__slow'
+      "
+    >
       <img src="@/assets/svg/logo.svg" width="80" />
     </NuxtLink>
     <p
@@ -62,7 +69,7 @@ const handleBookConsult = () => {
 
         <div class="w-2/3 px-8 bg-[#F8F5F3]">
           <nav class="flex justify-between pt-2 items-center h-14">
-            <div>
+            <div class="animate__animated animate__fadeIn animate__delay-2s">
               <img src="@/assets/svg/logo.svg" width="70" />
             </div>
 
@@ -166,5 +173,3 @@ const handleBookConsult = () => {
     </div>
   </div>
 </template>
-
-<style></style>

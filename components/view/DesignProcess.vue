@@ -43,7 +43,7 @@ onMounted(() => {
       </p>
     </div>
 
-    <section class="h-[450px] flex gap-4 mt-20 relative">
+    <section class="h-[540px] flex gap-4 mt-20 relative">
       <div
         @mouseover="stepsShowing = 1"
         @mouseleave="stepsShowing = null"

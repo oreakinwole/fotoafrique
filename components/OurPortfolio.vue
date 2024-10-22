@@ -1,8 +1,7 @@
 <script>
-import { defineComponent } from "vue";
 import maskGroup from "public/images/ourportfolio/imgs/Mask group.png";
 
-export default defineComponent({
+export default {
   name: "OurPortfolio",
   data() {
     return {
@@ -60,51 +59,18 @@ export default defineComponent({
       ],
     };
   },
+
   methods: {
-    // togglePlayPause(faq) {
-    //   const audio = this.$refs[`audioPlayer${faq.id}`][0];
-    //   if (audio.paused) {
-    //     this.faqs.forEach((f) => {
-    //       if (f.id !== faq.id) {
-    //         const otherAudio = this.$refs[`audioPlayer${f.id}`][0];
-    //         otherAudio.pause();
-    //         f.audioPlaying = false;
-    //       }
-    //     });
-    //     audio.play();
-    //     faq.audioPlaying = true;
-    //   } else {
-    //     audio.pause();
-    //     faq.audioPlaying = false;
-    //   }
-    // },
-    // setDuration(faq) {
-    //   const audio = this.$refs[`audioPlayer${faq.id}`][0];
-    //   faq.duration = audio.duration;
-    // },
-    // updateCurrentTime(faq) {
-    //   const audio = this.$refs[`audioPlayer${faq.id}`][0];
-    //   faq.currentTime = audio.currentTime;
-    // },
-    // resetToDuration(faq) {
-    //   faq.audioPlaying = false;
-    //   faq.currentTime = 0;
-    // },
-    // formatTime(time) {
-    //   const minutes = Math.floor(time / 60) || 0;
-    //   const seconds = Math.floor(time % 60) || 0;
-    //   return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
-    // },
     updateHoverPosition(event) {
       this.hoverPosition = { x: event.clientX, y: event.clientY };
     },
   },
-});
+};
 </script>
 
 <template>
   <!--our portfolio -->
-  <div class="w-full bg-black text-white pb-8">
+  <div class="w-full bg-black text-white pb-8 cursor-help">
     <h2
       class="text-7xl cursor-default py-20 font-playfairDisplay font-[600] text-center"
     >
@@ -117,7 +83,7 @@ export default defineComponent({
     </NuxtLink>
 
     <h4
-      class="flex flex-col text-center text-white font-playfairDisplay font-[600] text-[50px] leading-[6rem] mt-[-6rem]"
+      class="cursor-default  flex flex-col text-center text-white font-playfairDisplay font-[600] text-[50px] leading-[6rem] mt-[-6rem]"
     >
       Eco-Friendly <span>Backyard</span>
     </h4>
@@ -158,7 +124,7 @@ export default defineComponent({
       turpis nec dui molestie, sit amet vestibulum tortor feugiat.
     </p> -->
 
-    <div class="mt-32 space-y-8 text-center pb-32 cursor-help">
+    <div class="mt-32 space-y-8 text-center pb-32 ">
       <h4 class="font-playfairDisplay font-[600] text-7xl text-white">
         Got Questions?
       </h4>
@@ -170,7 +136,7 @@ export default defineComponent({
     </div>
 
     <!-- FAQ Section -->
-    <div>
+    <div class="">
       <div
         v-for="faq in faqs"
         :key="faq.id"
@@ -195,7 +161,7 @@ export default defineComponent({
         <div
           v-if="faq.hover"
           :style="{ top: '-100px', left: hoverPosition.x + 'px' }"
-          class="absolute w-[240px] h-[370px] p-4 bg-white text-black shadow-lg z-10 rounded-t-[38%] cursor-pointer"
+          class="absolute w-[240px] h-[370px] p-4 bg-white text-black shadow-lg z-10 rounded-t-[38%] cursor-pointer animate__animated animate__fadeIn animate__slow"
         >
           <div class="flex w-[240px]">
             <img
