@@ -1,48 +1,46 @@
 <script>
-import house from "public/images/homelastsegment/imgs/house.png";
-import blueHouse from "/public/images/homelastsegment/imgs/Mask group(2).png";
 import instagram from "/public/images/homelastsegment/icons/ant-design_instagram-filled.png";
 import image1 from "public/images/homelastsegment/imgs/Image 1.png";
 import image2 from "public/images/homelastsegment/imgs/Image 2.png";
 import image3 from "public/images/homelastsegment/imgs/Image 3.png";
 import image4 from "public/images/homelastsegment/imgs/Image 4.png";
-import backyard from "public/images/homesecondsegment/imgs/Backyard.svg";
-import frontyard from "public/images/homesecondsegment/imgs/frontyard.svg";
-import fullyard from "public/images/homesecondsegment/imgs/FullYard.svg";
-import renovation from "public/images/homesecondsegment/imgs/Renovation.svg";
-import greaterthanicon from "public/images/homesecondsegment/icons/grt.svg";
-import lessthanicon from "public/images/homesecondsegment/icons/lst.svg";
-import icon2 from "public/images/getyouryard/icon/Rectangle 427.png";
 
 export default {
   name: "HomeLastSegment",
+
   data() {
     return {
-      house,
-      blueHouse,
       instagram,
       image1,
       image2,
       image3,
       image4,
-      frontyard,
-      backyard,
-      fullyard,
-      renovation,
-      greaterthanicon,
-      lessthanicon,
-      icon2
     };
   },
 };
 </script>
 
 <template>
- <div class="bg-[url('/images/homelastsegment/imgs/house.png')] bg-no-repeat bg-center bg-cover bg-fixed h-[600px]">
+  <div
+    class="h-[600px] p-36 pb-0 bg-[url('/images/homelastsegment/imgs/bluehouse.jpg')] bg-no-repeat bg-center bg-contain bg-fixed"
+  >
+    <h3 class="text-white font-playfairDisplay font-[600] text-5xl">
+      Not sure where to start?<br />
+      Take our quiz to find your<br />
+      design package.
+    </h3>
+
+    <OutlinedButton
+        border-color="#000"
+        text-color="#000"
+        background-color="#F8F5F3"
+        text="TAKE A QUIZ"
+        class="mt-8"
+      />
   </div>
 
-  <div>
-    <div class="flex flex-row justify-between px-44 pt-28">
+  <!-- <div>
+    <div class="flex flex-row justify-between px-44 pt-28 ig">
       <p class="text-black font-[600] text-[32px] font-playfairDisplay">
         #modernyardz
       </p>
@@ -55,15 +53,42 @@ export default {
       </div>
     </div>
 
-    <div class="flex flex-row justify-evenly px-36 pt-10">
-      <img :src="image1" alt="image1" class="w-[367px] h-[392px]" />
-      <img :src="image2" alt="image2" class="w-[366px] h-[392px]" />
-      <img :src="image3" alt="image3" class="w-[366px] h-[392px]" />
-      <img :src="image4" alt="image4" class="w-[366px] h-[392px]" />
+    <div class="flex flex-row justify-evenly gap-5 px-36 pb-44 pt-10 ig">
+      <img
+        :src="image1"
+        alt="image1"
+        class="w-[367px] h-[392px] lg:w-[270px] lg:h-[320px] pix"
+      />
+      <img
+        :src="image2"
+        alt="image2"
+        class="w-[366px] h-[392px] lg:w-[270px] lg:h-[320px] pix"
+      />
+      <img
+        :src="image3"
+        alt="image3"
+        class="w-[366px] h-[392px] lg:w-[270px] lg:h-[320px] pix"
+      />
+      <img
+        :src="image4"
+        alt="image4"
+        class="w-[366px] h-[392px] lg:w-[270px] lg:h-[320px] pix"
+      />
     </div>
-  </div>
-
-
-
+  </div> -->
 </template>
 
+<style scoped>
+@media (min-width: 1450px) {
+  .pix {
+    width: 367px;
+    height: 392px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ig {
+    display: none;
+  }
+}
+</style>

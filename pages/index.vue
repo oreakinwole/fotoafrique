@@ -7,7 +7,7 @@ import "animate.css";
     <HeroNew />
     <FeaturesHomeSecondSegment />
     <FeaturesHomeThirdSegment />
-    <!-- <FeaturesHomeLastSegment /> -->
+    <FeaturesHomeLastSegment />
   </div>
 </template>
 

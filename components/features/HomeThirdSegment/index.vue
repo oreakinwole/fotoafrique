@@ -39,7 +39,7 @@
 
   <Testimonial />
 
-  <div class="py-48 pb-96 bg-white">
+  <div class="pt-20 pb-56  bg-white">
     <h1
       class="font-playfairDisplay text-left pl-20 font-bold text-9xl text-[#665244] opacity-50"
       data-aos="slide-left"
