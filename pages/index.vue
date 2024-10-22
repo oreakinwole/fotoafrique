@@ -3,12 +3,12 @@ import "animate.css";
 </script>
 
 <template>
- <div class="landing-container">
-  <HeroNew />
-  <FeaturesHomeSecondSegment />
-   <FeaturesHomeThirdSegment />
- <!-- <FeaturesHomeLastSegment /> -->
- </div>
+  <div class="landing-container">
+    <HeroNew />
+    <FeaturesHomeSecondSegment />
+    <FeaturesHomeThirdSegment />
+    <!-- <FeaturesHomeLastSegment /> -->
+  </div>
 </template>
 
 <style>
@@ -24,18 +24,11 @@ import "animate.css";
   }
 }
 
-.scape-explore-cursor:hover {
-  cursor: url("@/assets/images/bestill.png"), auto;
-  cursor: url("@/assets/images/explore_cursor.png"), auto;
-  cursor: url("@/assets/images/bestill.png"), auto;
-}
-
-.explore-item{
+.explore-item {
   transition: all 0.8s ease;
 }
 
 .explore-item:hover {
-  cursor: url("@/assets/images/explore_cursor.png"), auto;
-  
+  cursor: url("@/assets/images/explore_new_cursor.svg"), auto;
 }
 </style>

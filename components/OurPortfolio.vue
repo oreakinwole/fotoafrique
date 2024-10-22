@@ -1,17 +1,11 @@
 <script>
 import { defineComponent } from "vue";
-import corridorImg from "public/images/ourportfolio/imgs/img(2).png";
-import portfolioAudio1 from "public/audio/portfolio/Beyonce_-_XO_talkglitz.tv.mp3";
-import portfolioAudio2 from "public/audio/portfolio/YAH - Dunsin Oyekan.mp4";
-import portfolioAudio3 from "public/audio/portfolio/Beyonce_-_XO_talkglitz.tv.mp3";
-import portfolioAudio4 from "public/audio/portfolio/YAH - Dunsin Oyekan.mp4";
 import maskGroup from "public/images/ourportfolio/imgs/Mask group.png";
 
 export default defineComponent({
   name: "OurPortfolio",
   data() {
     return {
-      corridorImg,
       maskGroup,
       hoverPosition: { x: 0, y: 0 },
       faqs: [
@@ -23,7 +17,6 @@ export default defineComponent({
           description:
             "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
           image: maskGroup,
-          audioSrc: portfolioAudio1,
           audioPlaying: false,
           duration: 0,
           currentTime: 0,
@@ -36,7 +29,6 @@ export default defineComponent({
           description:
             "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
           image: maskGroup,
-          audioSrc: portfolioAudio2,
           audioPlaying: false,
           duration: 0,
           currentTime: 0,
@@ -49,7 +41,6 @@ export default defineComponent({
           description:
             "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
           image: maskGroup,
-          audioSrc: portfolioAudio3,
           audioPlaying: false,
           duration: 0,
           currentTime: 0,
@@ -62,7 +53,6 @@ export default defineComponent({
           description:
             "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
           image: maskGroup,
-          audioSrc: portfolioAudio4,
           audioPlaying: false,
           duration: 0,
           currentTime: 0,
@@ -114,13 +104,15 @@ export default defineComponent({
 
 <template>
   <!--our portfolio -->
-  <div class="w-full bg-black text-white pt-20 pb-8">
-    <h2 class="text-7xl font-playfairDisplay font-[600] text-center">
+  <div class="w-full bg-black text-white pb-8">
+    <h2
+      class="text-7xl cursor-default py-20 font-playfairDisplay font-[600] text-center"
+    >
       Our Portfolio
     </h2>
     <NuxtLink to="portfolio">
       <div
-        class="scape-explore-cursor px-[40px] mt-20 w-[1070px] h-[600px] xl:w-[1600px] xl:h-[600px] bg-[url('/images/ourportfolio/imgs/img(2).png')] bg-no-repeat bg-center bg-contain bg-fixed"
+        class="scape-explore-cursor px-[40px] w-[1070px] h-[600px] xl:w-[1600px] xl:h-[600px] bg-[url('/images/ourportfolio/imgs/portbackyard.jpg')] bg-no-repeat bg-center bg-contain bg-fixed"
       ></div>
     </NuxtLink>
 
@@ -129,7 +121,7 @@ export default defineComponent({
     >
       Eco-Friendly <span>Backyard</span>
     </h4>
-    <p class="font-inter text-sm text-white w-[55rem] mx-auto">
+    <!-- <p class="font-inter text-sm text-white w-[55rem] mx-auto">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
       dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
       vestibulum tortor feugiat. Lorem ipsum dolor sit amet, consectetur
@@ -164,7 +156,7 @@ export default defineComponent({
       molestie, sit amet vestibulum tortor feugiat. Lorem ipsum dolor sit amet,
       consectetur adipiscing elit. Integer vel dictum diam. Vivamus dignissim
       turpis nec dui molestie, sit amet vestibulum tortor feugiat.
-    </p>
+    </p> -->
 
     <div class="mt-32 space-y-8 text-center pb-32 cursor-help">
       <h4 class="font-playfairDisplay font-[600] text-7xl text-white">
@@ -182,7 +174,7 @@ export default defineComponent({
       <div
         v-for="faq in faqs"
         :key="faq.id"
-        class=" flex flex-row justify-between items-center px-2 border-t border-b border-[#F5F0EA] py-6 mr-8 ml-8 relative"
+        class="flex flex-row justify-between items-center px-2 border-t border-b border-[#F5F0EA] py-6 mr-8 ml-8 relative"
         @mouseenter="faq.hover = true"
         @mouseleave="faq.hover = false"
         @mousemove="updateHoverPosition($event)"
@@ -243,3 +235,9 @@ export default defineComponent({
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.scape-explore-cursor:hover {
+  cursor: url("@/assets/images/bestill.png"), auto;
+}
+</style>

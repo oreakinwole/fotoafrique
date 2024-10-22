@@ -39,7 +39,7 @@ body {
 }
 
 .landing-container {
-  cursor: url("@/assets/images/process_cursor.png"), auto;
+  cursor: url("@/assets/images/process_cursor_small.svg"), auto;
 }
 
 * {

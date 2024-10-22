@@ -188,7 +188,7 @@ onMounted(() => {
   opacity: 0;
   transition: all 1s;
   top: 0;
-  cursor: url("@/assets/images/process_cursor.png"), auto;
+  cursor: url("@/assets/images/process_cursor_small.svg"), auto;
 }
 
 .process-item:hover::after {

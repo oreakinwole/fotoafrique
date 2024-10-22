@@ -33,7 +33,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
       <div
         class="px-32 my-20 h-[600px] relative"
         data-aos="zoom-in"
-        data-aos-offset="500"
+        data-aos-offset="300"
         data-aos-duration="2000"
       >
         <ImgComparisonSlider
