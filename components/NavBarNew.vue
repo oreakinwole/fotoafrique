@@ -16,7 +16,7 @@ const handleBookConsult = () => {
 
 <template>
   <div
-    class="cursor-default flex w-full items-center justify-between py-8 px-28 max-w-[1600px]"
+    class="hero-trigger cursor-default flex w-full items-center justify-between py-8 px-28 max-w-[1600px]"
   >
     <NuxtLink
       to="/"
