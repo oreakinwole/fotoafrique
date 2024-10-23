@@ -9,30 +9,30 @@
       <template #default>
         <div class="h-screen">
           <svg
-      class="spinner"
-      width="174px"
-      height="174px"
-      viewBox="0 0 66 66"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <circle
-        class="pathspin"
-        fill="transparent"
-        stroke-width=".5"
-        cx="33"
-        cy="33"
-        r="30"
-        stroke="url(#gradient)"
-      ></circle>
-      <defs>
-      <linearGradient id="gradient">
-        <stop offset="50%" stop-color="#D0C2B0" stop-opacity="1" />
-        <stop offset="65%" stop-color="#D0C2B0" stop-opacity=".5" />
-        <stop offset="100%" stop-color="#D0C2B0" stop-opacity="0" />
-      </linearGradient>
-    </defs>
+            class="spinner"
+            width="174px"
+            height="174px"
+            viewBox="0 0 66 66"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              class="pathspin"
+              fill="transparent"
+              stroke-width=".5"
+              cx="33"
+              cy="33"
+              r="30"
+              stroke="url(#gradient)"
+            ></circle>
+            <defs>
+              <linearGradient id="gradient">
+                <stop offset="50%" stop-color="#D0C2B0" stop-opacity="1" />
+                <stop offset="65%" stop-color="#D0C2B0" stop-opacity=".5" />
+                <stop offset="100%" stop-color="#D0C2B0" stop-opacity="0" />
+              </linearGradient>
+            </defs>
 
-      <!-- <svg
+            <!-- <svg
         class="spinner-dot dot"
         width="5px"
         height="5px"
@@ -43,7 +43,7 @@
       >
         <circle class="pathspin" fill="#D0C2B0" cx="33" cy="33" r="30"></circle>
       </svg> -->
-    </svg>
+          </svg>
         </div>
       </template>
     </NuxtLoadingIndicator>

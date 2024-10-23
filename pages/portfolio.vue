@@ -27,7 +27,7 @@ onMounted(() => {
       >
         <div class="w-1/3 h-full">
           <img
-            src="@/assets/images/pool1.png"
+            src="@/assets/images/pool1.jpg"
             class="h-full w-full object-cover"
           />
         </div>
@@ -116,7 +116,7 @@ onMounted(() => {
             class="mt-10 flex gap-x-8 justify-between pb-20 border-b border-new-gray border-opacity-25"
           >
             <div class="w-1/3">
-              <img src="@/assets/images/pool1.png" />
+              <img src="@/assets/images/pool1.jpg" />
             </div>
 
             <div class="w-2/3">
@@ -165,7 +165,7 @@ onMounted(() => {
             </p>
 
             <div class="w-2/3 flex gap-x-6">
-              <img src="@/assets/images/pool1.png" width="400" />
+              <img src="@/assets/images/pool1.jpg" width="400" />
 
               <div class="grid grid-cols-2 gap-4">
                 <img src="@/assets/images/port1.png" width="200" />
@@ -207,7 +207,7 @@ onMounted(() => {
               </div>
 
               <div class="w-2/3 flex gap-x-4">
-                <img src="@/assets/images/pool1.png" width="400" />
+                <img src="@/assets/images/pool1.jpg" width="400" />
 
                 <div class="grid grid-cols-2 gap-4">
                   <img

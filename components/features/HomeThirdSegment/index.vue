@@ -2,7 +2,7 @@
   <div class="py-32 px-20">
     <section class="flex gap-x-8 justify-between h-[530px] py-10">
       <div
-        class="explore-item w-1/3 h-full bg-[url('@/assets/images/pool1.png')] bg-no-repeat bg-left-top bg-contain bg-fixed"
+        class="explore-item w-1/3 h-full bg-[url('@/assets/images/pool1.jpg')] bg-no-repeat bg-left-top bg-contain bg-fixed"
       ></div>
 
       <div class="w-2/3 h-full" id="portfolioIntro">

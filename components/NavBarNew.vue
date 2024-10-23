@@ -62,7 +62,7 @@ const handleBookConsult = () => {
       <main class="flex h-full">
         <div class="h-full w-2/5">
           <img
-            src="@/assets/images/mobilenavvid.png"
+            src="@/assets/images/mobilenavvid.jpg"
             class="h-full w-full object-cover"
           />
         </div>

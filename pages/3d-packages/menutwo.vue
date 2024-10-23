@@ -6,7 +6,7 @@
     <section class="flex gap-x-20 justify-between h-[600px] py-10">
       <div class="w-1/2 bg-green-500 h-full">
         <img
-          src="@/assets/images/backyard_1.png"
+          src="@/assets/images/backyard_1.jpg"
           class="h-full w-full object-cover"
         />
       </div>
