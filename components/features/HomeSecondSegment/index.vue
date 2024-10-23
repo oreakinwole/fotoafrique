@@ -256,7 +256,7 @@
     </div>
   </div>
 
- <ViewBeforeAndAfter/>
+ <!-- <ViewBeforeAndAfter/> -->
 </template>
 
 <style>

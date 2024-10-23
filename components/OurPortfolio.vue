@@ -70,7 +70,7 @@ export default {
 
 <template>
   <!--our portfolio -->
-  <div class="w-full bg-black text-white pb-8 cursor-help">
+  <div class="w-full bg-black text-white mb-28 cursor-help">
     <h2
       class="text-7xl cursor-default py-20 font-playfairDisplay font-[600] text-center"
     >
@@ -83,7 +83,7 @@ export default {
     </NuxtLink>
 
     <h4
-      class="cursor-default  flex flex-col text-center text-white font-playfairDisplay font-[600] text-[50px] leading-[6rem] mt-[-6rem]"
+      class="cursor-default flex flex-col text-center text-white font-playfairDisplay font-[600] text-[50px] leading-[6rem] mt-[-6rem]"
     >
       Eco-Friendly <span>Backyard</span>
     </h4>
@@ -124,7 +124,7 @@ export default {
       turpis nec dui molestie, sit amet vestibulum tortor feugiat.
     </p> -->
 
-    <div class="mt-32 space-y-8 text-center pb-32 ">
+    <div class="mt-32 space-y-8 text-center pb-32">
       <h4 class="font-playfairDisplay font-[600] text-7xl text-white">
         Got Questions?
       </h4>
@@ -191,11 +191,12 @@ export default {
     </div>
 
     <div class="flex justify-center mx-auto py-20 pb-32">
-      <OutlinedButtonBlack
+      <OutlinedButton(BLACK)
         border-color="#fff"
         text-color="#fff"
-        background-color="black"
+        background-color="transparent"
         text="SEE MORE"
+
         class="mt-10"
       />
     </div>

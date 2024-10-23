@@ -22,7 +22,7 @@ export default {
 
 <template>
   <div
-    class="h-[600px] p-36 pb-0 bg-[url('/images/homelastsegment/imgs/bluehouse.jpg')] bg-no-repeat bg-center bg-contain bg-fixed"
+    class="cursor-default h-[600px] p-36 pb-0 bg-[url('/images/homelastsegment/imgs/bluehouse.jpg')] bg-no-repeat bg-center bg-contain bg-fixed"
   >
     <h3 class="text-white font-playfairDisplay font-[600] text-5xl">
       Not sure where to start?<br />
@@ -30,12 +30,13 @@ export default {
       design package.
     </h3>
 
-    <OutlinedButton
-        border-color="#000"
-        text-color="#000"
-        background-color="#F8F5F3"
+     <OutlinedButton(BLACK)
+        border-color="#fff"
+        text-color="#fff"
+        background-color="transparent"
         text="TAKE A QUIZ"
-        class="mt-8"
+
+        class="mt-10"
       />
   </div>
 

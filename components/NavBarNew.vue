@@ -60,7 +60,7 @@ const handleBookConsult = () => {
       v-if="isShowMobileNav"
     >
       <main class="flex h-full">
-        <div class="h-full w-2/5">
+        <div class="h-full w-2/5 bg-gray-200">
           <img
             src="@/assets/images/mobilenavvid.jpg"
             class="h-full w-full object-cover"

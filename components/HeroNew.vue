@@ -13,7 +13,7 @@ onMounted(() => {
 <template>
   <div>
     <div
-      class="cursor-wait min-h-screen pt-28 bg-[url('@/assets/images/hero_bg1.png')] bg-no-repeat bg-top bg-cover"
+      class="cursor-wait min-h-screen pt-28 bg-[url('@/assets/images/hero_bg1.png')] bg-no-repeat bg-top bg-cover pb-28"
     >
       <div class="text-center space-y-3">
         <VueWriter
@@ -44,7 +44,7 @@ onMounted(() => {
         </p>
       </div>
 
-      <img src="@/assets/images/screen.jpg" width="80%" class="mx-auto mt-12" />
+      <img src="@/assets/images/screen.jpg" width="80%" class="mx-auto mt-12 rounded-2xl shadow-2xl border-black border-8" />
     </div>
 
     <!-- <div class="pt-48 mb-36 h-96" data-aos="fade-up" data-aos-duration="2000">
