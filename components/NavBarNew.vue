@@ -56,7 +56,7 @@ const handleBookConsult = () => {
     </svg>
 
     <div
-      class="animate__animated animate__slideInRight absolute top-5 right-5 bg-white h-[650px] w-4/5 z-10"
+      class="animate__animated animate__slideInDown absolute top-0  right-0 bg-white h-screen w-full z-10"
       v-if="isShowMobileNav"
     >
       <main class="flex h-full">
@@ -102,7 +102,7 @@ const handleBookConsult = () => {
             </svg>
           </nav>
 
-          <section class="flex justify-between items-center">
+          <section class="flex justify-between items-center animate__animated animate__fadeIn animate__slow">
             <ul class="space-y-10">
               <li class="text-6xl font-playfairDisplay">Services</li>
               <li class="text-6xl font-playfairDisplay">Portfolio</li>

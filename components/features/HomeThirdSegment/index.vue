@@ -15,23 +15,19 @@
           ENVIRONMENTAL DESIGN.
         </p>
 
-        <div class="my-4 mt-20 grid grid-cols-3">
-          <div class="place-content-end">
-            <p class="font-medium">The best design for your space</p>
-            <span class="text-new-gray">Located in San Diego</span>
+        <div class="my-4 h-[calc(100%-7.9rem)] grid grid-cols-3">
+          <div class="place-content-end col-span-2">
+            <p class="text-brown text-sm leading-relaxed max-w-md text-justify">
+              At Modern Yardz, we’re passionate about crafting outdoor spaces
+              that blend beauty, functionality, and the natural environment.
+              Every design is created with care to ensure it complements both
+              your lifestyle and the unique characteristics of your home.
+            </p>
           </div>
 
-          <div>&nbsp;</div>
-          <img src="@/assets/images/port1.png" width="200" />
-        </div>
-
-        <div class="max-w-20">
-          <OutlinedButton
-            border-color="#000"
-            text-color="#000"
-            background-color="white"
-            text="SCHEDULE A CALL"
-          />
+          <div class="col-span-1 ">
+            <img src="@/assets/images/port1.png" width="200" />
+          </div>
         </div>
       </div>
     </section>
@@ -39,7 +35,7 @@
 
   <Testimonial />
 
-  <div class="pt-20 pb-56  bg-white">
+  <div class="pt-20 pb-56 bg-white">
     <h1
       class="font-playfairDisplay text-left pl-20 font-bold text-9xl text-[#665244] opacity-50"
       data-aos="slide-left"

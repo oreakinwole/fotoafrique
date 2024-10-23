@@ -130,32 +130,32 @@ export default {
       </div>
 
       <div
-        class="flex flex-row gap-4 border border-[#665244] border-r-0 w-[180rem] pl-40 py-16 border-t-0 font-inter font-[400]"
+        class="flex flex-row space-x-4 border border-[#665244] border-r-0 w-[180rem]  pl-5 pt-20 border-t-0 font-inter font-[400]"
       >
-        <p class="text-[13px] mt-1">We Accept</p>
+        <p class="text-sm mt-1 font-light">We Accept</p>
 
         <div>
-          <img :src="amazon" alt="amazon icon" width="45" />
+          <img :src="amazon" alt="amazon icon" width="35" />
         </div>
 
         <div>
-          <img :src="applePay" alt="apple pay icon" width="45" />
+          <img :src="applePay" alt="apple pay icon" width="35" />
         </div>
 
         <div>
-          <img :src="googlePay" alt="google pay icon" width="45" />
+          <img :src="googlePay" alt="google pay icon" width="35" />
         </div>
 
         <div>
-          <img :src="jcb" alt="jcb icon" width="45" />
+          <img :src="jcb" alt="jcb icon" width="35" />
         </div>
 
         <div>
-          <img :src="masterCard" alt="master card icon" width="45" />
+          <img :src="masterCard" alt="master card icon" width="35" />
         </div>
 
         <div>
-          <img :src="visa" alt="visa classic icon" width="45" />
+          <img :src="visa" alt="visa classic icon" width="35" />
         </div>
       </div>
     </div>
