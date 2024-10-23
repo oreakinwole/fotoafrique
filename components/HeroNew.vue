@@ -1,19 +1,32 @@
 <script setup>
-// import autoAnimate from "@formkit/auto-animate";
-// const autoAniSection = ref();
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
 const animateCaption = ref(false);
 
 onMounted(() => {
-  // autoAnimate(autoAniSection.value);
-
   animateCaption.value = true;
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to(".anihero", {
+    borderRadius: 0,
+    border: "none",
+    width: "100%",
+
+    scrollTrigger: {
+      trigger: ".anihero",
+      start: "center center",
+      scrub: true,
+    },
+  });
 });
 </script>
 
 <template>
   <div>
     <div
-      class="cursor-wait min-h-screen pt-28 bg-[url('@/assets/images/hero_bg1.png')] bg-no-repeat bg-top bg-cover pb-28"
+      class="cursor-wait min-h-screen pt-28 bg-[url('@/assets/images/hero_bg1.png')] bg-no-repeat bg-top bg-cover"
     >
       <div class="text-center space-y-3">
         <VueWriter
@@ -44,7 +57,10 @@ onMounted(() => {
         </p>
       </div>
 
-      <img src="@/assets/images/screen.jpg" width="80%" class="mx-auto mt-12 rounded-2xl shadow-2xl border-black border-8" />
+      <img
+        src="@/assets/images/screen.jpg"
+        class="w-4/5 mx-auto mt-12 shadow-2xl rounded-2xl border-black border-8 anihero"
+      />
     </div>
 
     <!-- <div class="pt-48 mb-36 h-96" data-aos="fade-up" data-aos-duration="2000">

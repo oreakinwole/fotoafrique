@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-  <div class="py-20 px-20 flex items-center mt-2">
+  <div class="px-20 flex items-center mb-20">
     <div class="flex-[1] space-y-8">
       <img src="@/assets/svg/stars.svg" width="80" />
 

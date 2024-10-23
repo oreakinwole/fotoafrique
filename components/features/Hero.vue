@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import VueWriter from "vue-writer";
 import garden from "public/images/hero/imgs/garden.png";
 import chat from "public/images/hero/icons/chat.png";
