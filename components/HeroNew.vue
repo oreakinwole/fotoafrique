@@ -59,7 +59,7 @@ onMounted(() => {
 
       <img
         src="@/assets/images/screen.jpg"
-        class="w-4/5 mx-auto mt-12 shadow-2xl rounded-2xl border-black border-8 anihero"
+        class="w-4/5 mx-auto mt-20 shadow-2xl rounded-2xl border-black border-8 anihero"
       />
     </div>
 
