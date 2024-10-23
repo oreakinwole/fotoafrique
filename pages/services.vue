@@ -78,7 +78,7 @@
 
         <div class="w-[800px] ">
           <img
-            src="/images/hero/imgs/garden.png"
+            src="/images/hero/imgs/garden.jpg"
             class="h-full w-full object-contain"
           />
         </div>

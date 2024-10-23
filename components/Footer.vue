@@ -122,7 +122,7 @@ export default {
           </p>
         </div>
 
-        <div class="py-16 ml-16">
+        <div class="pt-8 pb-4 ml-16">
           <select class="bg-black py-2 font-inter text-[14px] font-[300]">
             <option class="">🇺🇸 &nbsp;&nbsp; United States</option>
           </select>

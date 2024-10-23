@@ -56,7 +56,7 @@ const handleBookConsult = () => {
     </svg>
 
     <div
-      class="animate__animated animate__slideInDown absolute top-0  right-0 bg-white h-screen w-full z-10"
+      class="animate__animated animate__slideInDown absolute top-0 right-0 bg-white h-screen w-full z-10"
       v-if="isShowMobileNav"
     >
       <main class="flex h-full">
@@ -102,12 +102,22 @@ const handleBookConsult = () => {
             </svg>
           </nav>
 
-          <section class="flex justify-between items-center animate__animated animate__fadeIn animate__slow">
+          <section
+            class="flex justify-between items-center animate__animated animate__fadeIn animate__slow"
+          >
             <ul class="space-y-10">
-              <li class="text-6xl font-playfairDisplay">Services</li>
-              <li class="text-6xl font-playfairDisplay">Portfolio</li>
-              <li class="text-6xl font-playfairDisplay">3D Packages</li>
-              <li class="text-6xl font-playfairDisplay">Contact</li>
+              <li class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay" @click="isShowMobileNav=false">
+                <NuxtLink to="/services">Services</NuxtLink>
+              </li>
+              <li class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay" @click="isShowMobileNav=false">
+                <NuxtLink to="portfolio">Portfolio</NuxtLink>
+              </li>
+              <li class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay" @click="isShowMobileNav=false">
+                <NuxtLink to="3d-packages">3D Packages</NuxtLink>
+              </li>
+              <li class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay" @click="isShowMobileNav=false">
+                <NuxtLink to="contact">Contact</NuxtLink>
+              </li>
             </ul>
 
             <svg
