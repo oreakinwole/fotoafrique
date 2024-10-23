@@ -42,13 +42,13 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
           <!-- eslint-disable -->
           <img
             slot="first"
-            style="width: 100%; height: 100%"
-            src="@/assets/images/before.png"
+            style="width: 1200px; object-fit: cover; height: 100%"
+            src="@/assets/images/before.jpg"
           />
           <img
             slot="second"
-            style="width: 100%; height: 100%"
-            src="@/assets/images/after.png"
+            style="width: 1200px; object-fit: cover; height: 100%"
+            src="@/assets/images/after.jpg"
           />
 
           <svg

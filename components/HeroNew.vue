@@ -6,7 +6,6 @@ const animateCaption = ref(false);
 
 onMounted(() => {
   animateCaption.value = true;
-
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.to(".anihero", {
@@ -15,8 +14,9 @@ onMounted(() => {
     width: "100%",
 
     scrollTrigger: {
-      trigger: ".anihero",
-      start: "center center",
+      trigger: ".hero-trigger",
+      start: "top top",
+      end: '+=500',
       scrub: true,
     },
   });
@@ -57,10 +57,14 @@ onMounted(() => {
         </p>
       </div>
 
-      <img
-        src="@/assets/images/screen.jpg"
-        class="w-4/5 mx-auto mt-20 shadow-2xl rounded-2xl bg-black border-black border-8 anihero"
-      />
+      <div
+        class="w-4/5 h-[780px] bg-black mt-8 shadow-2xl rounded-2xl border-black border-8 mx-auto anihero"
+      >
+        <img
+          src="@/assets/images/screen.jpg"
+          class="w-full h-full object-cover"
+        />
+      </div>
     </div>
 
     <!-- <div class="pt-48 mb-36 h-96" data-aos="fade-up" data-aos-duration="2000">
@@ -74,5 +78,3 @@ onMounted(() => {
     </div> -->
   </div>
 </template>
-
-<style></style>
