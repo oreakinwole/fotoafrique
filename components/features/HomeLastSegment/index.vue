@@ -40,7 +40,7 @@ export default {
       />
   </div>
 
-  <!-- <div>
+  <div class="cursor-default">
     <div class="flex flex-row justify-between px-44 pt-28 ig">
       <p class="text-black font-[600] text-[32px] font-playfairDisplay">
         #modernyardz
@@ -54,7 +54,7 @@ export default {
       </div>
     </div>
 
-    <div class="flex flex-row justify-evenly gap-5 px-36 pb-44 pt-10 ig">
+    <div class="flex flex-row justify-evenly gap-5 px-36  pt-10 ig">
       <img
         :src="image1"
         alt="image1"
@@ -76,7 +76,7 @@ export default {
         class="w-[366px] h-[392px] lg:w-[270px] lg:h-[320px] pix"
       />
     </div>
-  </div> -->
+  </div>
 </template>
 
 <style scoped>
