@@ -98,6 +98,7 @@
           class="w-full h-full bg-black object-cover rounded-t-full"
           autoplay
           muted
+          loop
         >
           <source src="/video/why_ch_vid.mp4" type="video/mp4" />
           Something went wrong while playing video
