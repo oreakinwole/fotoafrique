@@ -58,11 +58,10 @@ onMounted(() => {
       </div>
 
       <div
-        class="w-4/5 h-[780px] bg-black mt-8 shadow-2xl rounded-2xl border-black border-8 mx-auto anihero"
+        class="w-4/5 h-[780px] bg-blue-100 mt-8 shadow-2xl rounded-2xl border-black border-8 mx-auto anihero"
       >
-        <!-- <img src="@/assets/images/screen.jpg" /> -->
 
-        <video class="w-full h-full bg-black object-cover" autoplay muted loop>
+        <video class="w-full h-full bg-blue-100 object-cover" autoplay muted loop>
           <source src="/video/hero-video.mp4" type="video/mp4" />
           Something went wrong while playing video
         </video>

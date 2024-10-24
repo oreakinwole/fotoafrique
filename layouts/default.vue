@@ -9,7 +9,7 @@ onMounted(() => {
     if (loaderCount.value < 100) {
       loaderCount.value += 10;
     }
-  }, 150);
+  }, 180);
 });
 
 onBeforeUnmount(() => {
