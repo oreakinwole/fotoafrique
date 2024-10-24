@@ -1,6 +1,9 @@
 <script setup>
 const isShowMobileNav = ref(false);
 
+// const mobileNav = ref(null);
+// const isMobileNavLocked = useScrollLock(mobileNav);
+
 const toggleNav = () => {
   isShowMobileNav.value = !isShowMobileNav.value;
 };
@@ -12,10 +15,15 @@ const handleBookConsult = () => {
     url: "https://calendly.com/d/2sx-n9t-6g7",
   });
 };
+
+// watch(isShowMobileNav, (val) => {
+//   if (val === true) isMobileNavLocked.value = true;
+// });
 </script>
 
 <template>
   <div
+    ref="mobileNav"
     class="hero-trigger cursor-default flex w-full items-center justify-between py-8 px-28 max-w-[1600px]"
   >
     <NuxtLink
@@ -106,16 +114,28 @@ const handleBookConsult = () => {
             class="flex justify-between items-center animate__animated animate__fadeIn animate__slow"
           >
             <ul class="space-y-10">
-              <li class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay" @click="isShowMobileNav=false">
+              <li
+                class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                @click="isShowMobileNav = false"
+              >
                 <NuxtLink to="/services">Services</NuxtLink>
               </li>
-              <li class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay" @click="isShowMobileNav=false">
+              <li
+                class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                @click="isShowMobileNav = false"
+              >
                 <NuxtLink to="portfolio">Portfolio</NuxtLink>
               </li>
-              <li class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay" @click="isShowMobileNav=false">
+              <li
+                class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                @click="isShowMobileNav = false"
+              >
                 <NuxtLink to="3d-packages">3D Packages</NuxtLink>
               </li>
-              <li class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay" @click="isShowMobileNav=false">
+              <li
+                class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                @click="isShowMobileNav = false"
+              >
                 <NuxtLink to="contact">Contact</NuxtLink>
               </li>
             </ul>

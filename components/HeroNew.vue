@@ -62,7 +62,7 @@ onMounted(() => {
       >
         <!-- <img src="@/assets/images/screen.jpg" /> -->
 
-        <video class="w-full h-full bg-black object-cover" autoplay muted>
+        <video class="w-full h-full bg-black object-cover" autoplay muted loop>
           <source src="/video/hero-video.mp4" type="video/mp4" />
           Something went wrong while playing video
         </video>
