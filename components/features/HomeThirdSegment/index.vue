@@ -25,7 +25,7 @@
             </p>
           </div>
 
-          <div class="col-span-1 ">
+          <div class="col-span-1">
             <img src="@/assets/images/port1.png" width="200" />
           </div>
         </div>
@@ -89,13 +89,20 @@
         </p>
       </div>
 
-      <img
-        class="absolute -top-40 right-0"
-        width="400"
-        src="@/assets/images/designerr__.png"
+      <div
         data-aos="slide-up"
         data-aos-duration="2000"
-      />
+        class="w-[300px] h-[500px] bg-black rounded-t-full absolute -top-40 right-0"
+      >
+        <video
+          class="w-full h-full bg-black object-cover rounded-t-full"
+          autoplay
+          muted
+        >
+          <source src="/video/why_ch_vid.mp4" type="video/mp4" />
+          Something went wrong while playing video
+        </video>
+      </div>
     </div>
   </div>
 
