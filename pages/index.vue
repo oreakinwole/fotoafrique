@@ -1,16 +1,9 @@
 <script setup>
 import "animate.css";
-
-// const landingHand = ref(null);
-// const isMobileNavLocked = useScrollLock(landingHand);
-
-// onMounted(() => {
-//   isMobileNavLocked.value = true;
-// });
 </script>
 
 <template>
-  <div ref="landingHand" class="landing-container">
+  <div class="landing-container">
     <HeroNew />
     <FeaturesHomeSecondSegment />
     <FeaturesHomeThirdSegment />

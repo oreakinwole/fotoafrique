@@ -92,10 +92,10 @@
       <div
         data-aos="slide-up"
         data-aos-duration="2000"
-        class="w-[300px] h-[500px] bg-black rounded-t-full absolute -top-40 right-0"
+        class="w-[300px] h-[500px] bg-blue-100 rounded-t-full absolute -top-40 right-0"
       >
         <video
-          class="w-full h-full bg-black object-cover rounded-t-full"
+          class="w-full h-full bg-blue-100 object-cover rounded-t-full"
           autoplay
           muted
           loop

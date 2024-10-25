@@ -1,9 +1,6 @@
 <script setup>
 const isShowMobileNav = ref(false);
 
-// const mobileNav = ref(null);
-// const isMobileNavLocked = useScrollLock(mobileNav);
-
 const toggleNav = () => {
   isShowMobileNav.value = !isShowMobileNav.value;
 };
@@ -15,15 +12,10 @@ const handleBookConsult = () => {
     url: "https://calendly.com/d/2sx-n9t-6g7",
   });
 };
-
-// watch(isShowMobileNav, (val) => {
-//   if (val === true) isMobileNavLocked.value = true;
-// });
 </script>
 
 <template>
   <div
-    ref="mobileNav"
     class="hero-trigger cursor-default flex w-full items-center justify-between py-8 px-28 max-w-[1600px]"
   >
     <NuxtLink
@@ -64,7 +56,7 @@ const handleBookConsult = () => {
     </svg>
 
     <div
-      class="animate__animated animate__slideInDown absolute top-0 right-0 bg-white h-screen w-full z-10"
+      class="animate__animated animate__slideInDown fixed top-0 right-0 bg-white h-screen w-full z-10"
       v-if="isShowMobileNav"
     >
       <main class="flex h-full">
