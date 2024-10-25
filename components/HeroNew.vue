@@ -66,7 +66,7 @@ onMounted(() => {
           muted
           loop
         >
-          <source src="/video/hero-video.mp4" type="video/mp4" />
+          <source src="/video/hero-video2.mp4" type="video/mp4" />
           Something went wrong while playing video
         </video>
       </div>

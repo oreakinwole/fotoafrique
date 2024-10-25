@@ -95,12 +95,12 @@
         class="w-[300px] h-[500px] bg-blue-100 rounded-t-full absolute -top-40 right-0"
       >
         <video
-          class="w-full h-full bg-blue-100 object-cover rounded-t-full"
+          class="w-full h-full object-cover rounded-t-full bg-[url('@/assets/images/why_ch_bg.jpg')] bg-no-repeat bg-top bg-cover"
           autoplay
           muted
           loop
         >
-          <source src="/video/why_ch_vid.mp4" type="video/mp4" />
+          <source src="/video/why_ch_vid2.mp4" type="video/mp4" />
           Something went wrong while playing video
         </video>
       </div>
