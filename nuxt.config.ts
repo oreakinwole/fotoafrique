@@ -1,11 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [// '@nuxtjs/color-mode',
-  '@nuxt/image', '@builder.io/sdk-vue/nuxt', 'vue3-carousel-nuxt', 'nuxt-aos', 'nuxt-calendly', 'nuxt-marquee', "nuxt-locomotive-scroll"],
-
-  css:[
-      '~/assets/css/app.css',
+  modules: [
+    // '@nuxtjs/color-mode',
+    "@nuxt/image",
+    "@builder.io/sdk-vue/nuxt",
+    "vue3-carousel-nuxt",
+    "nuxt-aos",
+    "nuxt-calendly",
+    "nuxt-marquee",
   ],
+
+  css: ["~/assets/css/app.css"],
 
   // colorMode:{
   //     preference: 'system', // default value of $colorMode.preference
@@ -17,12 +22,12 @@ export default defineNuxtConfig({
   //     classSuffix: '',
   //     storageKey: 'nuxt-color-mode'
   // },
-  postcss:{
-      plugins: {
-          tailwindcss: {},
-          autoprefixer: {}
-      }
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
 
-  compatibilityDate: '2024-08-19',
-})
+  compatibilityDate: "2024-08-19",
+});

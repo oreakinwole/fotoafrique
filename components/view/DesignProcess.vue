@@ -1,53 +1,19 @@
 <script setup>
 const stepsShowing = ref(null);
-import autoAnimate from "@formkit/auto-animate";
-
-const autoAniSection = ref();
-
-onMounted(() => {
-  autoAnimate(autoAniSection.value);
-});
-
-// import gsap from "gsap";
-
-// onMounted(() => {
-//   gsap.to(".designPro", {
-//     x: -1200,
-//     scrollTrigger: {
-//       trigger: ".designPro",
-//       end: 2500,
-//       scrub: true,
-//     },
-//   });
-// });
 </script>
 
 <template>
-  <div class="mt-48 px-10">
+  <div class="mt-48 px-10 w-screen">
     <div class="leading-[3.4em] px-20">
       <p class="font-bold">Our Design Process</p>
-      <p
-        class="text-7xl font-normal"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-      >
-        Simple Steps to Your Dream Yard
-      </p>
-      <p
-        class="text-7xl font-normal mt-3"
-        data-aos="fade-right"
-        data-aos-easing="ease-in-sine"
-        data-aos-duration="1200"
-      >
-        Here’s how it works:
-      </p>
+      <p class="text-7xl font-normal">Simple Steps to Your Dream Yard</p>
+      <p class="text-7xl font-normal mt-3">Here’s how it works:</p>
     </div>
 
     <section class="h-[540px] flex gap-4 mt-20 relative">
       <div
         @mouseover="stepsShowing = 1"
         @mouseleave="stepsShowing = null"
-        ref="autoAniSection"
         class="explore-item overflow-hidden h-full flex-[5] hover:flex-[10] rounded-2xl bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
@@ -57,7 +23,7 @@ onMounted(() => {
             Step One: Free Design Consultation
           </h5>
 
-          <div ref="autoAniSection">
+          <div>
             <div v-if="stepsShowing === 1">
               <p class="py-4 text-sm">
                 We start with a free consultation to discuss your vision and
@@ -82,7 +48,6 @@ onMounted(() => {
       <div
         @mouseover="stepsShowing = 2"
         @mouseleave="stepsShowing = null"
-        ref="autoAniSection"
         class="explore-item h-full flex-[5] hover:flex-[10] rounded-2xl border bg-[url('@/assets/images/step_two.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
@@ -90,7 +55,7 @@ onMounted(() => {
         >
           <h5 class="font-bold text-center">Step Two: ...</h5>
 
-          <div ref="autoAniSection">
+          <div>
             <div v-if="stepsShowing === 2">
               <p class="py-4 text-sm">
                 We start with a free consultation to discuss your vision and
@@ -115,7 +80,6 @@ onMounted(() => {
       <div
         @mouseover="stepsShowing = 3"
         @mouseleave="stepsShowing = null"
-        ref="autoAniSection"
         class="explore-item h-full flex-[5] hover:flex-[10] rounded-2xl border bg-[url('@/assets/images/step_three.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
@@ -123,7 +87,7 @@ onMounted(() => {
         >
           <h5 class="font-bold text-center">Step Three: ...</h5>
 
-          <div ref="autoAniSection">
+          <div>
             <div v-if="stepsShowing === 3">
               <p class="py-4 text-sm">
                 We start with a free consultation to discuss your vision and
@@ -148,7 +112,6 @@ onMounted(() => {
       <div
         @mouseover="stepsShowing = 4"
         @mouseleave="stepsShowing = null"
-        ref="autoAniSection"
         class="explore-item h-full flex-[5] hover:flex-[10] rounded-2xl border bg-[url('@/assets/images/step_four.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
@@ -156,7 +119,7 @@ onMounted(() => {
         >
           <h5 class="font-bold text-center">Step Four: Comprehensive Quote</h5>
 
-          <div ref="autoAniSection">
+          <div>
             <div v-if="stepsShowing === 4">
               <p class="py-4 text-sm">
                 We start with a free consultation to discuss your vision and
@@ -194,11 +157,5 @@ onMounted(() => {
 .process-item:hover::after {
   opacity: 1;
   top: -6em;
-}
-
-.designPro {
-  position: relative;
-  right: -800px;
-  transition: all 0.3s;
 }
 </style> -->

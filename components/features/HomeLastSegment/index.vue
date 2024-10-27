@@ -21,16 +21,15 @@ export default {
 </script>
 
 <template>
-  <div
-    class="cursor-default h-[600px] p-36 pb-0 bg-[url('/images/homelastsegment/imgs/bluehouse.jpg')] bg-no-repeat bg-center bg-contain bg-fixed"
-  >
-    <h3 class="text-white font-playfairDisplay font-[600] text-5xl">
-      Not sure where to start?<br />
-      Take our quiz to find your<br />
-      design package.
-    </h3>
+  <div class="cursor-default bg-black h-[600px] relative">
+    <div class="absolute top-28 left-20 z-10 ">
+      <h3 class="text-white leading-normal font-playfairDisplay font-[600] text-5xl">
+        Not sure where to start?<br />
+        Take our quiz to find your<br />
+        design package.
+      </h3>
 
-     <OutlinedButton(BLACK)
+      <OutlinedButton(BLACK)
         border-color="#fff"
         text-color="#fff"
         background-color="transparent"
@@ -38,6 +37,14 @@ export default {
 
         class="mt-10"
       />
+    </div>
+
+    <div class="bg-black absolute top-0 left-0 h-full w-full opacity-85"></div>
+
+    <video class="w-full h-full object-cover" autoplay muted loop>
+      <source src="/video/quizvid.mp4" type="video/mp4" />
+      Something went wrong while playing video
+    </video>
   </div>
 
   <div class="cursor-default">
@@ -54,7 +61,7 @@ export default {
       </div>
     </div>
 
-    <div class="flex flex-row justify-evenly gap-5 px-36  pt-10 ig">
+    <div class="flex flex-row justify-evenly gap-5 px-36 pt-10 ig">
       <img
         :src="image1"
         alt="image1"

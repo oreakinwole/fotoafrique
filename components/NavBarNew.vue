@@ -60,11 +60,15 @@ const handleBookConsult = () => {
       v-if="isShowMobileNav"
     >
       <main class="flex h-full">
-        <div class="h-full w-2/5 bg-gray-200">
-          <img
-            src="@/assets/images/mobilenavvid.jpg"
-            class="h-full w-full object-cover"
-          />
+        <div class="h-full w-2/5 bg-gray-200 relative">
+          <div
+            class="bg-black absolute top-0 left-0 h-full w-full opacity-85"
+          ></div>
+
+          <video class="w-full h-full object-cover" autoplay muted loop>
+            <source src="/video/quizvid.mp4" type="video/mp4" />
+            Something went wrong while playing video
+          </video>
         </div>
 
         <div class="w-2/3 px-8 bg-[#F8F5F3]">
