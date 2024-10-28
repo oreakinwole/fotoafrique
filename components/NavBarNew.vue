@@ -74,7 +74,9 @@ const handleBookConsult = () => {
         <div class="w-2/3 px-8 bg-[#F8F5F3]">
           <nav class="flex justify-between pt-2 items-center h-14">
             <div class="animate__animated animate__fadeIn animate__delay-2s">
-              <img src="@/assets/svg/logo.svg" width="70" />
+              <NuxtLink to="/">
+                <img src="@/assets/svg/logo.svg" width="70"  @click="isShowMobileNav = false" />
+              </NuxtLink>
             </div>
 
             <svg

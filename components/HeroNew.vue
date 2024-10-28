@@ -72,17 +72,17 @@ onMounted(() => {
       </div>
     </div>
 
-    <div class="pt-48 mb-36 h-96" data-aos="fade-up" data-aos-duration="2000">
+    <!-- <div class="pt-48 mb-36 h-96" data-aos="fade-up" data-aos-duration="2000">
       <p class="uppercase text-center font-inter font-[400] text-[12px]">
         Our Partners
       </p>
 
-      <!-- <div class="mt-8">
+      <div class="mt-8">
         <NuxtMarquee class="max-w-[55em] mx-auto" :speed="20">
           <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
         </NuxtMarquee>
-      </div> -->
-    </div>
+      </div>
+    </div> -->
 
   </div>
 </template>

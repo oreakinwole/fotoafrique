@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import autoAnimate from "@formkit/auto-animate";
 
 const turfGallery = ref(1);

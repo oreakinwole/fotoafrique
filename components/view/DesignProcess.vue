@@ -3,7 +3,7 @@ const stepsShowing = ref(null);
 </script>
 
 <template>
-  <div class="mt-48 px-10 w-screen">
+  <div class="mt-28 px-10 w-screen">
     <div class="leading-[3.4em] px-20">
       <p class="font-bold">Our Design Process</p>
       <p class="text-7xl font-normal">Simple Steps to Your Dream Yard</p>

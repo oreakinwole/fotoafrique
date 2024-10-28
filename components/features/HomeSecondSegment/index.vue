@@ -3,7 +3,7 @@
 <template>
   <ViewDesignProcess />
 
-  <div class="mt-48 flex cursor-default">
+  <div class="mt-36 flex cursor-default">
     <div class="ml-32 mt-20" data-aos="fade-up" data-aos-easing="linear">
       <div>
         <h4 class="font-playfairDisplay text-5xl font-[500]">

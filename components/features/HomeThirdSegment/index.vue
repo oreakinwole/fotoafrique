@@ -1,5 +1,5 @@
 <template>
-  <div class="py-32 px-20">
+  <div class="py-24 px-20">
     <section class="flex gap-x-8 justify-between h-[530px] py-10">
       <div
         class="explore-item w-1/3 h-full bg-[url('@/assets/images/pool1.jpg')] bg-no-repeat bg-left-top bg-contain bg-fixed"
@@ -35,7 +35,7 @@
 
   <Testimonial />
 
-  <div class="pt-20 pb-56 bg-white">
+  <div class="pb-56 bg-white">
     <h1
       class="font-playfairDisplay text-left pl-20 font-bold text-9xl text-[#665244] opacity-50"
       data-aos="slide-left"
@@ -92,7 +92,7 @@
       <div
         data-aos="slide-up"
         data-aos-duration="2000"
-        class="w-[300px] h-[500px] bg-blue-100 rounded-t-full absolute -top-40 right-0"
+        class="w-[400px] h-[630px] bg-blue-100 rounded-t-full absolute -top-40 right-0"
       >
         <video
           class="w-full h-full object-cover rounded-t-full bg-[url('@/assets/images/why_ch_bg.jpg')] bg-no-repeat bg-top bg-cover"
