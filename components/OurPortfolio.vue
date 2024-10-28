@@ -10,7 +10,7 @@ export default {
       faqs: [
         {
           id: 1,
-          question: "What makes Modern Yardz a top landscaper in...?",
+          question: "What makes Modern Yardz a top landscaper in San Diego?",
           fullQuestion:
             "What makes Modern Yardz a top landscaper in San Diego?",
           description:
@@ -22,7 +22,7 @@ export default {
         },
         {
           id: 2,
-          question: "Can Modern Yardz help with small landscaping...?",
+          question: "Can Modern Yardz help with small landscaping projects?",
           fullQuestion:
             "Can Modern Yardz help with small landscaping projects?",
           description:
@@ -34,7 +34,7 @@ export default {
         },
         {
           id: 3,
-          question: "Does Modern Yardz offer eco-friendly landscapi...?",
+          question: "Does Modern Yardz offer eco-friendly landscaping solutions?",
           fullQuestion:
             "Does Modern Yardz offer eco-friendly landscaping solutions?",
           description:
@@ -46,7 +46,7 @@ export default {
         },
         {
           id: 4,
-          question: "How long does a typical landscaping project take...?",
+          question: "How long does a typical landscaping project take to complete?",
           fullQuestion:
             "How long does a typical landscaping project take to complete?",
           description:
@@ -136,11 +136,11 @@ export default {
     </div>
 
     <!-- FAQ Section -->
-    <div class="">
+    <div class="px-5">
       <div
         v-for="faq in faqs"
         :key="faq.id"
-        class="flex flex-row justify-between items-center px-2 border-t border-b border-[#F5F0EA] py-6 mr-8 ml-8 relative"
+        class="flex flex-row max-w-[85%] pl-5 justify-between items-center px-2 border-t border-b border-[#F5F0EA] py-6 mr-8 ml-8 relative"
         @mouseenter="faq.hover = true"
         @mouseleave="faq.hover = false"
         @mousemove="updateHoverPosition($event)"

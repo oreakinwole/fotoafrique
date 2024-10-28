@@ -107,5 +107,168 @@
     </div>
   </div>
 
+  <div class="my-36 flex cursor-default">
+    <div class="ml-32 mt-20" data-aos="fade-up" data-aos-easing="linear">
+      <div>
+        <h4 class="font-playfairDisplay text-5xl font-[500]">
+          Packa<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
+            >G</span
+          >es
+        </h4>
+      </div>
+
+      <p
+        class="text-[#665244] text-xs font-[400] font-inter  leading-relaxed"
+      >
+      Every outdoor space has the potential to be extraordinary. Our custom design packages are crafted to fit your needs, whether you’re looking to refresh your front yard, revamp your backyard, or completely transform your outdoor living space. Choose the package that works best for you, and let us bring your vision to life.
+      </p>
+
+      <FilledButton
+        background-color="black"
+        text="TAKE A QUIZ"
+        text-color="white"
+        class="mt-6"
+      />
+    </div>
+
+    <div data-aos-duration="2000" data-aos-delay="400" data-aos="fade-in">
+      <div class="ml-20">
+        <NuxtMarquee class="max-w-[120em]">
+          <div class="flex flex-row gap-8">
+            <div>
+              <NuxtLink to="3d-packages">
+                <div
+                  class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                >
+                  <img
+                    src="@/assets/images/services/paver.png"
+                    alt="frontyard picture"
+                    class="w-full h-full"
+                  />
+                  <div
+                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  ></div>
+                </div>
+              </NuxtLink>
+
+              <div class="flex flex-row justify-between mt-5">
+                <h4 class="font-inter font-[500] text-[18px]">Full Yard Design</h4>
+                <p class="font-[400] font-inter text-[16px]">
+                  $1,890.80
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <NuxtLink to="3d-packages">
+                <div
+                  class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                >
+                  <img
+                    src="@/assets/images/services/concrete.png"
+                    alt="backyard picture"
+                    class="w-full h-full"
+                  />
+                  <div
+                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  ></div>
+                </div>
+              </NuxtLink>
+
+              <div class="flex flex-row justify-between mt-5">
+                <h4 class="font-inter font-[500] text-[18px]">
+                  Backyard Design
+                </h4>
+                <p class="font-[400] font-inter text-[16px]">
+                  $1,745.99
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <NuxtLink to="3d-packages">
+                <div
+                  class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                >
+                  <img
+                    src="@/assets/images/services/turf.png"
+                    alt="fullyard picture"
+                    class="w-full h-full"
+                  />
+                  <div
+                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  ></div>
+                </div>
+              </NuxtLink>
+
+              <div class="flex flex-row justify-between mt-5">
+                <h4 class="font-inter font-[500] text-[18px]">
+                  Front Yard Design
+                </h4>
+                <p class="font-[400] font-inter text-[16px]">
+                  $2,745.56
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <NuxtLink to="3d-packages">
+                <div
+                  class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                >
+                  <img
+                    src="/images/homesecondsegment/imgs/Renovation.svg"
+                    alt="renovation picture"
+                    class="w-full h-full"
+                  />
+                  <div
+                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  ></div>
+                </div>
+              </NuxtLink>
+
+              <div class="flex flex-row justify-between mt-5">
+                <h4 class="font-inter font-[500] text-[18px]">
+                  Outdoor Transformation
+                </h4>
+                <p class="font-[400] font-inter text-[16px]">
+                  $2,745.56
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <NuxtLink to="3d-packages">
+                <div
+                  class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                >
+                  <img
+                    src="/images/homesecondsegment/imgs/Renovation.svg"
+                    alt="renovation picture"
+                    class="w-full h-full"
+                  />
+                  <div
+                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  ></div>
+                </div>
+              </NuxtLink>
+
+              <div class="flex flex-row justify-between mt-5">
+                <h4 class="font-inter font-[500] text-[18px]">
+                  Premium Design
+                </h4>
+                <p class="font-[400] font-inter text-[16px]">
+                  $4,000.00
+                </p>
+              </div>
+            </div>
+          </div>
+
+        
+        </NuxtMarquee>
+      </div>
+    </div>
+  </div>
+
   <OurPortfolio class="mb-16" />
 </template>

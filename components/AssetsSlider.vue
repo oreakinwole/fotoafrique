@@ -29,8 +29,10 @@
   <Carousel ref="carousel" v-bind="settings" :breakpoints="breakpoints">
     <Slide v-for="slide in 10" :key="slide">
       <!-- <div class="carousel__item">{{ slide }}</div> -->
+       
+      <!-- <img src="@/assets/images/flowerr__.png" /> -->
 
-      <img src="@/assets/images/flowerr__.png" />
+      <img src="/images/homesecondsegment/imgs/Renovation.svg" />
     </Slide>
 
     <template #addons>
