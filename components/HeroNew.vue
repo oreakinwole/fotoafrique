@@ -9,14 +9,24 @@ onMounted(() => {
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.to(".anihero", {
-    borderRadius: 0,
-    border: "none",
+    // borderRadius: 0,
+    // border: "none",
     width: "100%",
 
     scrollTrigger: {
       trigger: ".hero-trigger",
       start: "top top",
       end: "+=500",
+      scrub: true,
+    },
+  });
+
+  gsap.to(".anihero", {
+    borderRadius: 0,
+    border: "none",
+    scrollTrigger: {
+      trigger: "#hero-vid-sect",
+      start: "top top",
       scrub: true,
     },
   });
@@ -58,6 +68,7 @@ onMounted(() => {
       </div>
 
       <div
+        id="hero-vid-sect"
         class="w-4/5 h-[780px] bg-blue-100 mt-8 shadow-2xl rounded-2xl border-black border-8 mx-auto anihero"
       >
         <video
@@ -83,6 +94,5 @@ onMounted(() => {
         </NuxtMarquee>
       </div>
     </div> -->
-
   </div>
 </template>
