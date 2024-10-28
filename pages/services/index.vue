@@ -30,15 +30,16 @@ onMounted(() => {
           class="bg-black absolute top-0 left-0 h-full w-full opacity-65"
         ></div>
 
-        <div class="absolute bottom-28 left-20 z-10 ">
-      <h2 class="text-white leading-tight font-playfairDisplay font-[600] text-5xl">
-        Sweating the Small Stuff<br />
-        For <span class="text-loader-brown italic">Exceptional</span> Results<br />
-        
-      </h2>
-
-     
-    </div>
+        <div class="absolute bottom-28 left-20 z-10">
+          <h2
+            class="text-white leading-tight font-playfairDisplay font-[600] text-5xl"
+          >
+            Sweating the Small Stuff<br />
+            For
+            <span class="text-loader-brown italic">Exceptional</span>
+            Results<br />
+          </h2>
+        </div>
 
         <img
           src="@/assets/images/backyard_1.jpg"
@@ -49,68 +50,86 @@ onMounted(() => {
       <div class="w-1/2 grid grid-cols-2 gap-4">
         <main class="col-span-1 space-y-20 mt-28">
           <div
-            class="w-[300px] h-[400px] hover:scale-110 explore-item duration-300 ease-linear bg-black"
+            class="w-[300px] h-[400px] hover:scale-110  duration-300 ease-linear bg-black"
           >
-            <img src="@/assets/images/services/1slandscape_sd.jpg" />
+            <NuxtLink to="services/landscape">
+              <img src="@/assets/images/services/1slandscape_sd.jpg" class="explore-item" />
+            </NuxtLink>
           </div>
 
           <div
-            class="w-[300px] h-[400px] hover:scale-110 explore-item duration-300 ease-linear bg-black"
+            class="w-[300px] h-[400px] hover:scale-110  duration-300 ease-linear bg-black"
             id="pin-windmill-svg"
           >
-            <img src="@/assets/images/services/2spavers_sd.jpg" />
+            <NuxtLink to="services/landscape">
+              <img class="explore-item" src="@/assets/images/services/2spavers_sd.jpg" />
+            </NuxtLink>
           </div>
 
           <div
-            class="w-[300px] h-[400px] hover:scale-110 explore-item duration-300 ease-linear bg-black"
+            class="w-[300px] h-[400px] hover:scale-110  duration-300 ease-linear bg-black"
           >
-            <img src="@/assets/images/services/3spools.jpg" />
+            <NuxtLink to="services/landscape">
+              <img class="explore-item" src="@/assets/images/services/3spools.jpg" />
+            </NuxtLink>
           </div>
 
-            <div
-            class="w-[300px] h-[400px] hover:scale-110 explore-item duration-300 ease-linear bg-black"
+          <div
+            class="w-[300px] h-[400px] hover:scale-110  duration-300 ease-linear bg-black"
             id="pin-windmill-wrap"
           >
-            <img src="@/assets/images/services/4outdoor.jpg" />
+            <NuxtLink to="services/landscape">
+              <img class="explore-item" src="@/assets/images/services/4outdoor.jpg" />
+            </NuxtLink>
           </div>
           <div
-            class="w-[300px] h-[400px] hover:scale-110 explore-item duration-300 ease-linear bg-black"
+            class="w-[300px] h-[400px] hover:scale-110  duration-300 ease-linear bg-black"
           >
-            <img
-              src="@/assets/images/services/5sconcretesandiego.jpg"
-            />
+            <NuxtLink to="services/landscape">
+              <img class="explore-item" src="@/assets/images/services/5sconcretesandiego.jpg" />
+            </NuxtLink>
           </div>
         </main>
 
         <main class="col-span-1 space-y-20">
           <div
-            class="w-[300px] h-[400px] hover:scale-110 explore-item duration-300 ease-linear bg-black"
+            class="w-[300px] h-[400px] hover:scale-110  duration-300 ease-linear bg-black"
           >
-            <img src="@/assets/images/services/6artifical.jpg" />
+            <NuxtLink to="services/landscape">
+              <img class="explore-item" src="@/assets/images/services/6artifical.jpg" />
+            </NuxtLink>
           </div>
 
           <div
-            class="w-[300px] h-[400px] hover:scale-110 explore-item duration-300 ease-linear bg-black"
+            class="w-[300px] h-[400px] hover:scale-110  duration-300 ease-linear bg-black"
           >
-            <img src="@/assets/images/services/7patio.jpg" />
+            <NuxtLink to="services/landscape">
+              <img class="explore-item" src="@/assets/images/services/7patio.jpg" />
+            </NuxtLink>
           </div>
 
           <div
-            class="w-[300px] h-[400px] hover:scale-110 explore-item duration-300 ease-linear bg-black"
+            class="w-[300px] h-[400px] hover:scale-110  duration-300 ease-linear bg-black"
           >
-            <img src="@/assets/images/services/8fire.jpg" />
+            <NuxtLink to="services/landscape">
+              <img class="explore-item" src="@/assets/images/services/8fire.jpg" />
+            </NuxtLink>
           </div>
 
           <div
-            class="w-[300px] h-[400px] hover:scale-110 explore-item duration-300 ease-linear bg-black"
+            class="w-[300px] h-[400px] hover:scale-110  duration-300 ease-linear bg-black"
           >
-            <img src="@/assets/images/services/9seat.jpg" />
+            <NuxtLink to="services/landscape">
+              <img class="explore-item" src="@/assets/images/services/9seat.jpg" />
+            </NuxtLink>
           </div>
 
           <div
-            class="w-[300px] h-[400px] hover:scale-110 explore-item duration-300 ease-linear bg-black"
+            class="w-[300px] h-[400px] hover:scale-110 duration-300 ease-linear bg-black"
           >
-            <img src="@/assets/images/services/10light.jpg" />
+            <NuxtLink to="services/landscape">
+              <img class="explore-item" src="@/assets/images/services/10light.jpg" />
+            </NuxtLink>
           </div>
         </main>
       </div>

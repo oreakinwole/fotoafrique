@@ -3,7 +3,7 @@
 <template>
   <ViewDesignProcess />
 
-  <div class="mt-48 flex">
+  <div class="mt-48 flex cursor-default">
     <div class="ml-32 mt-20" data-aos="fade-up" data-aos-easing="linear">
       <div>
         <h4 class="font-playfairDisplay text-5xl font-[500]">
@@ -34,7 +34,7 @@
         <NuxtMarquee class="max-w-[95em]">
           <div class="flex flex-row gap-8">
             <div>
-              <NuxtLink to="3d-packages">
+              <NuxtLink to="services">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -81,7 +81,7 @@
             </div>
 
             <div>
-              <NuxtLink to="3d-packages">
+              <NuxtLink to="services">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -130,7 +130,7 @@
             </div>
 
             <div>
-              <NuxtLink to="3d-packages">
+              <NuxtLink to="services">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -179,16 +179,20 @@
             </div>
 
             <div>
-              <div class="relative w-[340px] h-[420px] cursor-pointer group">
-                <img
-                  src="/images/homesecondsegment/imgs/Renovation.svg"
-                  alt="renovation picture"
-                  class="w-full h-full"
-                />
+              <NuxtLink to="services">
                 <div
-                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                ></div>
-              </div>
+                  class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                >
+                  <img
+                    src="/images/homesecondsegment/imgs/Renovation.svg"
+                    alt="renovation picture"
+                    class="w-full h-full"
+                  />
+                  <div
+                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  ></div>
+                </div>
+              </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
                 <h4 class="font-inter font-[500] text-[18px]">

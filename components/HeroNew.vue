@@ -77,11 +77,11 @@ onMounted(() => {
         Our Partners
       </p>
 
-      <div class="mt-8">
+      <!-- <div class="mt-8">
         <NuxtMarquee class="max-w-[55em] mx-auto" :speed="20">
           <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
         </NuxtMarquee>
-      </div>
+      </div> -->
     </div>
 
   </div>
