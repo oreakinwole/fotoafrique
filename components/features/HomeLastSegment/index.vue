@@ -21,33 +21,9 @@ export default {
 </script>
 
 <template>
-  <div class="cursor-default bg-black h-[600px] relative">
-    <div class="absolute top-28 left-20 z-10 ">
-      <h3 class="text-white leading-normal font-playfairDisplay font-[600] text-5xl">
-        Not sure where to start?<br />
-        Take our quiz to find your<br />
-        design package.
-      </h3>
+  
 
-      <OutlinedButton(BLACK)
-        border-color="#fff"
-        text-color="#fff"
-        background-color="transparent"
-        text="TAKE A QUIZ"
-
-        class="mt-10"
-      />
-    </div>
-
-    <div class="bg-black absolute top-0 left-0 h-full w-full opacity-85"></div>
-
-    <video class="w-full h-full object-cover" autoplay muted loop>
-      <source src="/video/quizvid.mp4" type="video/mp4" />
-      Something went wrong while playing video
-    </video>
-  </div>
-
-  <div class="cursor-default">
+  <div class="">
     <div class="flex flex-row justify-between px-44 pt-28 ig">
       <p class="text-black font-[600] text-[32px] font-playfairDisplay">
         #modernyardz

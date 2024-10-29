@@ -24,11 +24,11 @@ import "animate.css";
   }
 }
 
-.explore-item {
+/* .explore-item {
   transition: all 0.8s ease;
 }
 
 .explore-item:hover {
   cursor: url("@/assets/images/explore_new_cursor.svg"), auto;
-}
+} */
 </style>

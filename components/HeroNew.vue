@@ -36,7 +36,7 @@ onMounted(() => {
 <template>
   <div>
     <div
-      class="cursor-wait min-h-screen pt-28 bg-[url('@/assets/images/hero_bg1.png')] bg-no-repeat bg-top bg-cover"
+      class="min-h-screen pt-28 bg-[url('@/assets/images/hero_bg1.png')] bg-no-repeat bg-top bg-cover"
     >
       <div class="text-center space-y-3">
         <VueWriter

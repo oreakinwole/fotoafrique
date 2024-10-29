@@ -5,6 +5,7 @@ defineProps([
   "textColor",
   "borderColor",
   "hoverTextColor",
+  "noAction",
 ]);
 
 const handleBookConsult = () => {
@@ -17,7 +18,7 @@ const handleBookConsult = () => {
 </script>
 <template>
   <button
-    @click="handleBookConsult"
+    @click="noAction ? null : handleBookConsult()"
     class="relative w-[200px] h-[50px] overflow-hidden"
     :style="{
       backgroundColor: backgroundColor,

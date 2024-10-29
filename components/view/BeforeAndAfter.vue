@@ -4,7 +4,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 
 <template>
   <!-- Before and After Section -->
-  <div class="bg-[#F8F5F3] w-full pt-20 pb-1 mt-40 cursor-wait">
+  <div class="bg-[#F8F5F3] w-full pt-20 pb-1 my-40">
     <div class="flex flex-col justify-center items-center">
       <h3
         class="font-playfairDisplay font-[500] text-5xl text-black"
@@ -17,18 +17,19 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
       <p
         class="font-inter font-[400] text-xs text-[#665244] max-w-sm text-center mt-3"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
-        dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
-        vestibulum tortor feugiat.
+       See a sample of before and after Design by Us !
       </p>
-      <OutlinedButton
-        border-color="#000"
-        text-color="#000"
-        background-color="#F8F5F3"
-        text="SEE MORE"
-        class="mt-8"
-      />
 
+      <NuxtLink to="portfolio">
+        <OutlinedButton
+          :no-action="true"
+          border-color="#000"
+          text-color="#000"
+          background-color="#F8F5F3"
+          text="SEE MORE"
+          class="mt-8"
+        />
+      </NuxtLink>
       <!--       Image Comparison Slider-->
       <div
         class="px-32 my-20 h-[600px] relative"

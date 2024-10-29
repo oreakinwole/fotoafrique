@@ -4,13 +4,16 @@ const stepsShowing = ref(null);
 
 <template>
   <div class="mt-28 px-10 w-screen">
-    <div class="leading-[3.4em] px-20">
+    <div class="leading-[3.4em] px-20 max-w-screen-lg">
       <p class="font-bold">Our Design Process</p>
-      <p class="text-7xl font-normal">Simple Steps to Your Dream Yard</p>
-      <p class="text-7xl font-normal mt-3">Here’s how it works:</p>
+      <p class="text-5xl">
+        Creating the outdoor space you’ve always wanted is easier than you
+        think.
+      </p>
+      <p class="text-4xl font-normal mt-4">Here’s how it works:</p>
     </div>
 
-    <section class="h-[540px] flex gap-4 mt-20 relative">
+    <section class="h-[450px] flex gap-4 mt-20 relative">
       <div
         @mouseover="stepsShowing = 1"
         @mouseleave="stepsShowing = null"
@@ -27,9 +30,10 @@ const stepsShowing = ref(null);
             <div v-if="stepsShowing === 1">
               <p class="py-4 text-sm">
                 We start with a free consultation to discuss your vision and
-                goals. During this appointment, we will:
+                goals.
               </p>
-              <ul class="text-sm list-disc leading-loose">
+
+              <!-- <ul class="text-sm list-disc leading-loose">
                 <li>
                   Understand your style, needs, and how you want to use your
                   outdoor space.
@@ -39,7 +43,7 @@ const stepsShowing = ref(null);
                 <li>
                   Take photos and videos to ensure every detail is covered.
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
@@ -53,15 +57,15 @@ const stepsShowing = ref(null);
         <div
           class="bg-black text-white rounded-2xl p-5 absolute left-1 bottom-1 w-[98%]"
         >
-          <h5 class="font-bold text-center">Step Two: ...</h5>
+          <h5 class="font-bold text-center">Step Two: 2D Landscape Design</h5>
 
           <div>
             <div v-if="stepsShowing === 2">
               <p class="py-4 text-sm">
-                We start with a free consultation to discuss your vision and
-                goals. During this appointment, we will:
+                We create a 2D design plan that shows a clear, overhead view of
+                your future landscape.
               </p>
-              <ul class="text-sm list-disc leading-loose">
+              <!-- <ul class="text-sm list-disc leading-loose">
                 <li>
                   Understand your style, needs, and how you want to use your
                   outdoor space.
@@ -71,7 +75,7 @@ const stepsShowing = ref(null);
                 <li>
                   Take photos and videos to ensure every detail is covered.
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
@@ -85,15 +89,17 @@ const stepsShowing = ref(null);
         <div
           class="bg-black text-white rounded-2xl p-5 absolute left-1 bottom-1 w-[98%]"
         >
-          <h5 class="font-bold text-center">Step Three: ...</h5>
+          <h5 class="font-bold text-center">
+            Step Three: 3D Design Renderings
+          </h5>
 
           <div>
             <div v-if="stepsShowing === 3">
               <p class="py-4 text-sm">
-                We start with a free consultation to discuss your vision and
-                goals. During this appointment, we will:
+                We take it a step further by transforming the 2D plan into a
+                realistic 3D rendering.
               </p>
-              <ul class="text-sm list-disc leading-loose">
+              <!-- <ul class="text-sm list-disc leading-loose">
                 <li>
                   Understand your style, needs, and how you want to use your
                   outdoor space.
@@ -103,7 +109,7 @@ const stepsShowing = ref(null);
                 <li>
                   Take photos and videos to ensure every detail is covered.
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
@@ -122,10 +128,10 @@ const stepsShowing = ref(null);
           <div>
             <div v-if="stepsShowing === 4">
               <p class="py-4 text-sm">
-                We start with a free consultation to discuss your vision and
-                goals. During this appointment, we will:
+                Once the design is finalized, we provide a detailed, itemized
+                quote.
               </p>
-              <ul class="text-sm list-disc leading-loose">
+              <!-- <ul class="text-sm list-disc leading-loose">
                 <li>
                   Understand your style, needs, and how you want to use your
                   outdoor space.
@@ -135,12 +141,26 @@ const stepsShowing = ref(null);
                 <li>
                   Take photos and videos to ensure every detail is covered.
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <footer class="flex items-center justify-between px-20 mt-10">
+      <FilledButton
+        background-color="black"
+        text="Book Your Free Design Consultation Today!"
+        text-color="white"
+        class="uppercase w-[390px]"
+      />
+
+      <p class="text-xs text-brown w-2/4 max-w-lg">
+        Transform your outdoor space with ease. Book your
+        free design consultation today and let’s create a yard you’ll love!
+      </p>
+    </footer>
   </div>
 </template>
 
