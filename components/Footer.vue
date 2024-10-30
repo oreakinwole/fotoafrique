@@ -27,9 +27,9 @@ export default {
 
     <div class="flex flex-col items-center justify-center">
       <h1
-        class="text-center font-playfairDisplay text-6xl flex flex-col italic"
+        class="text-center font-playfairDisplay text-6xl flex flex-col italic max-w-screen-sm"
       >
-        We Provide best <span>handpicked home decor</span>
+       We'll definitely give you value for your money
       </h1>
       <div class="font-inter font-[500] text-[16px] mt-12">
         <OutlinedButton(BLACK)

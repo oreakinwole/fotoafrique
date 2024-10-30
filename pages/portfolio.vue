@@ -60,7 +60,7 @@ onMounted(() => {
       </section>
 
       <div class="relative mt-10" ref="autoAniSection">
-        <div class="absolute top-0 right-0 flex gap-x-4 ">
+        <!-- <div class="absolute top-0 right-0 flex gap-x-4 ">
           <svg
             @click="decrementTurf"
             class="w-6 cursor-pointer hover:w-7 transition-all duration-200 ease-out"
@@ -100,9 +100,9 @@ onMounted(() => {
               stroke-width="1.5"
             />
           </svg>
-        </div>
+        </div> -->
 
-        <section class="h-[750px]" v-if="turfGallery === 1">
+        <section class="h-[750px]">
           <p class="font-playfairDisplay text-4xl font-medium">
             Paver
             <span class="text-new-gray font-imperial text-5xl">G</span>allery
@@ -145,7 +145,7 @@ onMounted(() => {
           </div>
         </section>
 
-        <section class="h-[750px]" v-if="turfGallery === 2">
+        <section class="h-[750px]">
           <p class="font-playfairDisplay text-4xl font-medium">
             Concrete
             <span class="text-new-gray font-imperial text-5xl">G</span>allery
@@ -180,7 +180,7 @@ onMounted(() => {
           </div>
         </section>
 
-        <section class="h-[750px]" v-if="turfGallery === 3">
+        <section class="h-[750px]">
           <div>
             <p class="font-playfairDisplay text-4xl font-medium">
               Turf

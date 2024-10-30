@@ -13,19 +13,17 @@
         </h4>
       </div>
 
-      <p
+      <!-- <p
         class="text-[#665244] text-xs font-[400] font-inter max-w-lg leading-relaxed"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
-        dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
-        vestibulum tortor feugiat.
-      </p>
+       Here are our main services
+      </p> -->
 
       <FilledButton
         background-color="black"
         text="SCHEDULE A CALL"
         text-color="white"
-        class="mt-6"
+        class="mt-28"
       />
     </div>
 

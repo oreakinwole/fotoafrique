@@ -5,29 +5,32 @@ const stepsShowing = ref(null);
 <template>
   <div class="mt-28 px-10 w-screen">
     <div class="leading-[3.4em] px-20 max-w-screen-lg">
-      <p class="font-bold">Our Design Process</p>
-      <p class="text-5xl">
-        Creating the outdoor space you’ve always wanted is easier than you
-        think.
+      <p class="font-normal text-5xl font-playfairDisplay mb-8">Our Design Pro<span class="font-imperial text-6xl text-[#A89C93]">C</span>ess</p>
+      <p class="text-4xl font-medium font-playfairDisplay">
+        Creating the outdoor space you’ve always wanted is
+        <span class="font-imperial text-7xl text-[#A89C93] border-b border-dashed  p-0">easier&nbsp;</span> than
+        you think.
       </p>
-      <p class="text-4xl font-normal mt-4">Here’s how it works:</p>
+      <!-- <p class="text-3xl  mt-6 font-playfairDisplay">
+        Here is how it works:
+      </p> -->
     </div>
 
     <section class="h-[450px] flex gap-4 mt-20 relative">
       <div
         @mouseover="stepsShowing = 1"
         @mouseleave="stepsShowing = null"
-        class="explore-item overflow-hidden h-full flex-[5] hover:flex-[10] rounded-2xl bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover relative"
+        class="overflow-hidden h-full flex-[5] rounded-2xl bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
-          class="bg-black text-white rounded-2xl p-5 absolute left-1 bottom-1 w-[98%]"
+          class="bg-black text-white h-[30%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
         >
           <h5 class="font-bold text-center">
             Step One: Free Design Consultation
           </h5>
 
           <div>
-            <div v-if="stepsShowing === 1">
+            <div>
               <p class="py-4 text-sm">
                 We start with a free consultation to discuss your vision and
                 goals.
@@ -52,15 +55,15 @@ const stepsShowing = ref(null);
       <div
         @mouseover="stepsShowing = 2"
         @mouseleave="stepsShowing = null"
-        class="explore-item h-full flex-[5] hover:flex-[10] rounded-2xl border bg-[url('@/assets/images/step_two.jpg')] bg-no-repeat bg-center bg-cover relative"
+        class="h-full flex-[5] rounded-2xl border bg-[url('@/assets/images/step_two.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
-          class="bg-black text-white rounded-2xl p-5 absolute left-1 bottom-1 w-[98%]"
+          class="bg-black text-white h-[30%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
         >
           <h5 class="font-bold text-center">Step Two: 2D Landscape Design</h5>
 
           <div>
-            <div v-if="stepsShowing === 2">
+            <div>
               <p class="py-4 text-sm">
                 We create a 2D design plan that shows a clear, overhead view of
                 your future landscape.
@@ -84,17 +87,17 @@ const stepsShowing = ref(null);
       <div
         @mouseover="stepsShowing = 3"
         @mouseleave="stepsShowing = null"
-        class="explore-item h-full flex-[5] hover:flex-[10] rounded-2xl border bg-[url('@/assets/images/step_three.jpg')] bg-no-repeat bg-center bg-cover relative"
+        class="h-full flex-[5] rounded-2xl border bg-[url('@/assets/images/step_three.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
-          class="bg-black text-white rounded-2xl p-5 absolute left-1 bottom-1 w-[98%]"
+          class="bg-black text-white h-[30%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
         >
           <h5 class="font-bold text-center">
             Step Three: 3D Design Renderings
           </h5>
 
           <div>
-            <div v-if="stepsShowing === 3">
+            <div>
               <p class="py-4 text-sm">
                 We take it a step further by transforming the 2D plan into a
                 realistic 3D rendering.
@@ -118,15 +121,15 @@ const stepsShowing = ref(null);
       <div
         @mouseover="stepsShowing = 4"
         @mouseleave="stepsShowing = null"
-        class="explore-item h-full flex-[5] hover:flex-[10] rounded-2xl border bg-[url('@/assets/images/step_four.jpg')] bg-no-repeat bg-center bg-cover relative"
+        class="h-full flex-[5] rounded-2xl border bg-[url('@/assets/images/step_four.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
-          class="bg-black text-white rounded-2xl p-5 absolute left-1 bottom-1 w-[98%]"
+          class="bg-black text-white h-[30%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
         >
           <h5 class="font-bold text-center">Step Four: Comprehensive Quote</h5>
 
           <div>
-            <div v-if="stepsShowing === 4">
+            <div>
               <p class="py-4 text-sm">
                 Once the design is finalized, we provide a detailed, itemized
                 quote.
@@ -157,8 +160,8 @@ const stepsShowing = ref(null);
       />
 
       <p class="text-xs text-brown w-2/4 max-w-lg">
-        Transform your outdoor space with ease. Book your
-        free design consultation today and let’s create a yard you’ll love!
+        Transform your outdoor space with ease. Book your free design
+        consultation today and let’s create a yard you’ll love!
       </p>
     </footer>
   </div>
