@@ -1,3 +1,9 @@
+<script setup>
+useHead({
+  script: [{ src: "https://embed.typeform.com/next/embed.js" }],
+});
+</script>
+
 <template>
   <!-- <div class="py-24 px-20">
     <section class="flex gap-x-8 justify-between h-[530px] py-10">
@@ -419,13 +425,17 @@
         design package.
       </h3>
 
-      <OutlinedButton(BLACK)
+      <!-- <OutlinedButton(BLACK)
         border-color="#fff"
         text-color="#fff"
         background-color="transparent"
         text="TAKE A QUIZ NOW"
         class="mt-10"
-      />
+      /> -->
+
+      <ClientOnly>
+        <div class="mt-12" data-tf-live="01JBCJ0CFAY1HW94C4WJCBNZQZ"></div>
+      </ClientOnly>
     </div>
 
     <div class="bg-black absolute top-0 left-0 h-full w-full opacity-85"></div>

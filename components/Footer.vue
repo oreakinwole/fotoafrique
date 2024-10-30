@@ -1,23 +1,10 @@
-<script>
-import amazon from "public/images/footer/icons/AmazonPay.png";
-import applePay from "public/images/footer/icons/ApplePay.png";
-import googlePay from "public/images/footer/icons/GooglePay.png";
-import jcb from "public/images/footer/icons/JCB.png";
-import masterCard from "public/images/footer/icons/Mastercard.png";
-import visa from "public/images/footer/icons/Visa Classic.png";
+<script setup>
+const handleBookConsult = () => {
+  const calendly = useCalendly();
 
-export default {
-  name: "Footer",
-  data() {
-    return {
-      amazon,
-      applePay,
-      googlePay,
-      jcb,
-      masterCard,
-      visa,
-    };
-  },
+  calendly.initPopupWidget({
+    url: "https://calendly.com/d/2sx-n9t-6g7",
+  });
 };
 </script>
 
@@ -29,7 +16,7 @@ export default {
       <h1
         class="text-center font-playfairDisplay text-3xl lg:text-6xl flex flex-col italic max-w-80 lg:max-w-screen-sm"
       >
-       We'll definitely give you value for your money
+        We'll definitely give you value for your money
       </h1>
       <div class="font-inter font-[500] text-[16px] mt-12">
         <OutlinedButton(BLACK)
@@ -52,18 +39,22 @@ export default {
           Subscribe to receive ModernYardz news & offers
         </h4>
 
-        <div class="lg:bg-[#523825] lg:w-[480px] h-[55px] mt-5 lg:pl-5 ">
+        <div class="lg:bg-[#523825] lg:w-[480px] h-[55px] mt-5 lg:pl-5">
           <input
             type="email"
             placeholder="Enter your email"
             class="bg-[#523825] pl-4 lg:pl-0 w-[90%] lg:w-[410px] h-[55px] outline-none text-[#A89C93] text-[16px] placeholder-[16px] placeholder-[#A89C93]"
           />
-          <span class="hidden lg:inline pl-4 text-[#A89C93] text-[18px]">&gt;</span>
+          <span class="hidden lg:inline pl-4 text-[#A89C93] text-[18px]"
+            >&gt;</span
+          >
         </div>
 
         <div class="flex flex-row gap-2 mt-8 lg:mt-0">
           <input type="checkbox" class="mt-6 cursor-pointer" />
-          <p class="ml-2 font-[300] text-xs lg:text-[14px] mt-5 w-[21rem] lg:w-[25rem]">
+          <p
+            class="ml-2 font-[300] text-xs lg:text-[14px] mt-5 w-[21rem] lg:w-[25rem]"
+          >
             I've read the Privacy Policy and I consent to Modern Yardz sending
             me marketing communications
           </p>
@@ -74,28 +65,44 @@ export default {
         class="flex flex-row gap-12 font-[400] text-[16px] border border-[#665244] border-r-0 py-10 pl-5 lg:pl-12 w-[180rem]"
       >
         <div class="flex flex-col gap-5">
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Our Services</h4>
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">3d Packages</h4>
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Our Design Process</h4>
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Lowest Prices</h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
+            Our Services
+          </h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
+            3d Packages
+          </h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
+            Our Design Process
+          </h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
+            Lowest Prices
+          </h4>
         </div>
 
         <div class="flex flex-col gap-5">
           <h4 class="text-xs lg:text-lg uppercase cursor-pointer">About Us</h4>
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Contact Us</h4>
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">My Account</h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
+            Contact Us
+          </h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
+            My Account
+          </h4>
         </div>
 
         <div class="flex flex-col gap-5">
           <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Reviews</h4>
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Privacy Policy</h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
+            Privacy Policy
+          </h4>
           <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Portfolio</h4>
         </div>
       </div>
     </div>
 
     <!-- third layout -->
-    <div class="hidden lg:flex lg:flex-row justify-between text-[#D0C2B0] px-32">
+    <div
+      class="hidden lg:flex lg:flex-row justify-between text-[#D0C2B0] px-32"
+    >
       <div
         class="border border-[#665244] border-l-0 border-t-0 w-[150rem] text-[12px] font-inter font-[400]"
       >
@@ -130,32 +137,52 @@ export default {
       </div>
 
       <div
-        class="flex flex-row space-x-4 border border-[#665244] border-r-0 w-[180rem]  pl-5 pt-20 border-t-0 font-inter font-[400]"
+        class="flex flex-row space-x-4 border border-[#665244] border-r-0 w-[180rem] pl-5 pt-20 border-t-0 font-inter font-[400]"
       >
         <p class="text-sm mt-1 font-light">We Accept</p>
 
         <div>
-          <img :src="amazon" alt="amazon icon" width="35" />
+          <img
+            src="/images/footer/icons/AmazonPay.png"
+            alt="amazon icon"
+            width="35"
+          />
         </div>
 
         <div>
-          <img :src="applePay" alt="apple pay icon" width="35" />
+          <img
+            src="/images/footer/icons/ApplePay.png"
+            alt="apple pay icon"
+            width="35"
+          />
         </div>
 
         <div>
-          <img :src="googlePay" alt="google pay icon" width="35" />
+          <img
+            src="/images/footer/icons/GooglePay.png"
+            alt="google pay icon"
+            width="35"
+          />
         </div>
 
         <div>
-          <img :src="jcb" alt="jcb icon" width="35" />
+          <img src="/images/footer/icons/JCB.png" alt="jcb icon" width="35" />
         </div>
 
         <div>
-          <img :src="masterCard" alt="master card icon" width="35" />
+          <img
+            src="/images/footer/icons/Mastercard.png"
+            alt="master card icon"
+            width="35"
+          />
         </div>
 
         <div>
-          <img :src="visa" alt="visa classic icon" width="35" />
+          <img
+            src="/images/footer/icons/Visa Classic.png"
+            alt="visa classic icon"
+            width="35"
+          />
         </div>
       </div>
     </div>
@@ -168,16 +195,16 @@ export default {
       <p>Privacy Policy | Terms of Use</p>
     </div>
 
-
-    <div class="hidden relative lg:flex-1 lg:flex justify-center items-center mt-10 lg:mt-0">
-   
+    <div
+      class="hidden relative lg:flex-1 lg:flex justify-center items-center mt-10 lg:mt-0 animate__animated animate__fadeIn animate__slower"
+    >
       <img
-        src="public/images/hero/icons/chat.png"
+        @click="handleBookConsult"
+        src="/images/hero/icons/chat.png"
         alt="chat icon"
-        class="w-16 h-16 lg:w-14 lg:h-14 xl:w-20 xl:h-20 fixed right-4 bottom-4 lg:right-10 lg:bottom-10 cursor-pointer z-50 chat"
+        class=" hover:scale-110 duration-200 ease-linear w-16 h-16 lg:w-14 lg:h-14 xl:w-20 xl:h-20 fixed right-4 bottom-4 lg:right-10 lg:bottom-10 cursor-pointer z-50 chat"
       />
     </div>
-
   </footer>
 </template>
 

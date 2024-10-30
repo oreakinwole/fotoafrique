@@ -1,5 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  // app: {
+  //   head: {
+  //     meta: [
+  //       // <meta name="viewport" content="width=device-width, initial-scale=1">
+  //       // { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+  //     ],
+  //     script: [
+  //       // <script src="https://myawesome-lib.js"></script>
+  //       { src: "https://embed.typeform.com/next/embed.js" },
+  //     ],
+  //   },
+  // },
+
   modules: [
     // '@nuxtjs/color-mode',
     "@nuxt/image",
