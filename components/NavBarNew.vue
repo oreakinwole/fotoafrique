@@ -26,7 +26,7 @@ const handleBookConsult = () => {
           : 'animate__animated animate__fadeIn animate__slow'
       "
     >
-      <img src="@/assets/svg/logo.svg" width="80" />
+      <img src="@/assets/svg/logo.svg" class="w-16 lg:w-20" />
     </NuxtLink>
     <p
       class="text-xs font-medium animate__animated animate__flipInX animate__delay-3s"
@@ -36,14 +36,14 @@ const handleBookConsult = () => {
         class="font-bold border-black border-b"
         @click="handleBookConsult"
         role="button"
-        >Book a Free Consultation</span
+        > Book a Free Consultation</span
       >
     </p>
 
     <svg
       role="button"
       @click="toggleNav"
-      class="w-8"
+      class="w-5 lg:w-8"
       width="60"
       height="39"
       viewBox="0 0 60 39"
