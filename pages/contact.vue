@@ -7,8 +7,7 @@
         We’d love to hear from you
       </p>
       <p class="text-xs max-w-sm mx-auto mt-6 text-brown">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt
-        ipsum quis rhoncus aliquam.
+        Do send us a message. We’d love to hear from you!
       </p>
     </header>
 

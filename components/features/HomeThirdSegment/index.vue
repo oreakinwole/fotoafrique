@@ -138,7 +138,7 @@
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
                   <img
-                    src="@/assets/images/services/paver.png"
+                    src="@/assets/images/packages/p-fullyard.jpg"
                     alt="frontyard picture"
                     class="w-full h-full"
                   />
@@ -162,7 +162,7 @@
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
                   <img
-                    src="@/assets/images/services/concrete.png"
+               src="@/assets/images/packages/p-backyard.jpg"
                     alt="backyard picture"
                     class="w-full h-full"
                   />
@@ -186,7 +186,7 @@
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
                   <img
-                    src="@/assets/images/services/turf.png"
+                    src="@/assets/images/packages/p-frontyard.jpg"
                     alt="fullyard picture"
                     class="w-full h-full"
                   />
@@ -210,9 +210,9 @@
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
                   <img
-                    src="/images/homesecondsegment/imgs/Renovation.svg"
+                  src="@/assets/images/packages/p-outdoor.jpg"
                     alt="renovation picture"
-                    class="w-full h-full"
+                    class="w-full h-full object-cover"
                   />
                   <div
                     class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"

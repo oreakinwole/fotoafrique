@@ -102,7 +102,7 @@ onMounted(() => {
           </svg>
         </div> -->
 
-        <section class="h-[750px]">
+        <section class="h-[680px]">
           <p class="font-playfairDisplay text-4xl font-medium">
             Paver
             <span class="text-new-gray font-imperial text-5xl">G</span>allery
@@ -113,7 +113,7 @@ onMounted(() => {
           >
 
           <div
-            class="mt-10 flex gap-x-8 justify-between pb-20 border-b border-new-gray border-opacity-25"
+            class="mt-10 flex gap-x-8 justify-between pb-12 border-b border-new-gray border-opacity-25"
           >
             <div class="w-1/3">
               <img src="@/assets/images/pool1.jpg" />
@@ -145,7 +145,7 @@ onMounted(() => {
           </div>
         </section>
 
-        <section class="h-[750px]">
+        <section class="h-[680px]">
           <p class="font-playfairDisplay text-4xl font-medium">
             Concrete
             <span class="text-new-gray font-imperial text-5xl">G</span>allery
@@ -180,7 +180,7 @@ onMounted(() => {
           </div>
         </section>
 
-        <section class="h-[750px]">
+        <section class="h-[680px]">
           <div>
             <p class="font-playfairDisplay text-4xl font-medium">
               Turf
@@ -192,7 +192,7 @@ onMounted(() => {
             >
 
             <div
-              class="mt-10 flex gap-x-4 pb-20 border-b border-new-gray border-opacity-25"
+              class="mt-10 flex gap-x-4 pb-12 border-b border-new-gray border-opacity-25"
             >
               <div class="w-1/3 flex flex-col justify-between items-end">
                 <p class="text-xs max-w-48">
