@@ -60,7 +60,7 @@ onMounted(() => {
           >
         </p>
         <p
-          class="text-xs font-light max-w-xl mx-auto tracking-[.3em] leading-relaxed"
+          class="text-xs  max-w-xl mx-auto tracking-[.3em] leading-relaxed"
         >
           Let us turn your outdoor space into a beautiful, <br />
           custom-designed haven that you’ll enjoy for years to come.
