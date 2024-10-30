@@ -165,7 +165,7 @@ onMounted(() => {
       </div>
     </section>
 
-    <section>
+    <section class="lg:hidden">
       <div class="h-[700px] relative">
         <div
           class="bg-black absolute top-0 left-0 h-full w-full opacity-65"
@@ -188,7 +188,7 @@ onMounted(() => {
         />
       </div>
 
-      <div class="grid grid-cols-1 place-items-center gap-4 px-4 mb-20">
+      <div class="mt-20   grid grid-cols-1 place-items-center gap-4 px-4 mb-20">
         <main class="col-span-1 space-y-20 ">
           <div
             class="w-full lg:h-[400px]  duration-300 ease-linear bg-black"

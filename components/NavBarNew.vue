@@ -56,7 +56,7 @@ const handleBookConsult = () => {
     </svg>
 
     <div
-      class="animate__animated animate__slideInDown fixed top-0 right-0 bg-white h-screen w-full z-10"
+      class="animate__animated animate__slideInDown fixed top-0 right-0 bg-white h-screen w-full z-20"
       v-if="isShowMobileNav"
     >
       <main class="flex h-full">
