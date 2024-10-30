@@ -54,11 +54,11 @@ const isViewingFaq = ref(null);
 <template>
   <!--our portfolio -->
   <div class="w-full bg-black text-white pt-10 lg:pt-20 mb-28 cursor-help">
-    <div class="space-y-8 text-center pb-16 lg:pb-32">
+    <div class="space-y-8 text-center pb-14 lg:pb-32">
       <h4 class="font-playfairDisplay font-[600] text-5xl lg:text-7xl text-white">
         Got Questions?
       </h4>
-      <p class="font-inter text-xs font-light text-white max-w-sm lg:max-w-md mx-auto">
+      <p class="font-inter text-xs font-light text-white max-w-[300px] lg:max-w-md mx-auto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
         dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
         vestibulum tortor feugiat.
@@ -70,12 +70,12 @@ const isViewingFaq = ref(null);
       <div
         v-for="(faq, index) in faqs"
         :key="faq.id"
-        class="max-w-[85%] pl-5 px-2 border-t border-b border-[#F5F0EA] py-6 mx-8 relative"
+        class="lg:max-w-[85%] lg:pl-5 px-2 border-t border-b border-[#F5F0EA] py-6 mx-3 lg:mx-8 relative"
         @mouseenter="faq.hover = true"
         @mouseleave="faq.hover = false"
         @click="isViewingFaq = index"
       >
-        <div class="flex justify-between items-center">
+        <div class="flex lg:space-x-4 lg:justify-between items-center">
           <h4 class="font-[600] font-inter text-xl lg:text-4xl tracking-wider flex-grow">
             {{ faq.question }}
           </h4>

@@ -21,18 +21,27 @@ onMounted(() => {
 
 <template>
   <div>
-    <div class="px-20 pt-28 cursor-default">
+    <div class="px-4 lg:px-20 pt-28">
+      <p class="lg:hidden font-playfairDisplay text-4xl font-medium">
+        Portfoli<span class="text-new-gray font-imperial text-4xl">O</span>
+      </p>
+      <ul class="flex justify-between max-w-[220px] font-medium">
+        <li>Style</li>
+        <li class="text-new-gray">Elegance</li>
+        <li class="text-new-gray">Creative</li>
+      </ul>
+
       <section
         class="flex gap-x-8 justify-between h-[580px] py-10 pb-20 border-b border-new-gray border-opacity-25"
       >
-        <div class="w-1/3 h-full">
+        <div class="w-full lg:w-1/3 h-full">
           <img
             src="@/assets/images/pool1.jpg"
             class="h-full w-full object-cover"
           />
         </div>
 
-        <div class="w-2/3 h-full">
+        <div class="hidden lg:block w-2/3 h-full">
           <p class="font-playfairDisplay text-7xl font-medium">
             Portfoli<span class="text-new-gray font-imperial text-7xl">O</span>
           </p>
@@ -102,7 +111,7 @@ onMounted(() => {
           </svg>
         </div> -->
 
-        <section class="h-[680px]">
+        <section class="h-[570px] lg:h-[680px]">
           <p class="font-playfairDisplay text-4xl font-medium">
             Paver
             <span class="text-new-gray font-imperial text-5xl">G</span>allery
@@ -145,7 +154,7 @@ onMounted(() => {
           </div>
         </section>
 
-        <section class="h-[680px]">
+        <section class="h-[420px] lg:h-[680px]">
           <p class="font-playfairDisplay text-4xl font-medium">
             Concrete
             <span class="text-new-gray font-imperial text-5xl">G</span>allery
@@ -180,7 +189,7 @@ onMounted(() => {
           </div>
         </section>
 
-        <section class="h-[680px]">
+        <section class="h-[510px] lg:h-[680px]">
           <div>
             <p class="font-playfairDisplay text-4xl font-medium">
               Turf

@@ -3,8 +3,9 @@
 
 <template>
   <div>
-    <div class="pl-28 pt-28">
-      <p class="font-playfairDisplay text-6xl py-10 font-[500]">
+    <div class="lg:pl-28 pt-28">
+     <div class="px-4 lg:px-0">
+      <p class="font-playfairDisplay text-4xl lg:text-6xl pb-5 lg:py-10 font-[500]">
         Custom <span class="italic text-new-gray">3D Design</span> Assets
       </p>
       <ul class="flex justify-between max-w-[280px] font-medium">
@@ -12,14 +13,15 @@
         <li class="text-new-gray">Back Yard</li>
         <li class="text-new-gray">Full Yard</li>
       </ul>
+     </div>
 
-      <div class="py-28">
+      <div class="px-4 lg:px-0 py-10 lg:py-28">
         <AssetsSlider />
       </div>
     </div>
 
-    <section class="text-center mb-32">
-      <p class="max-w-screen-md leading-8 mx-auto text-[#665244] mb-12">
+    <section class="text-center mx-4 lg:mx-0 mb-32">
+      <p class="text-sm lg:text-md lg:max-w-screen-md leading-8 mx-auto text-[#665244] mb-12">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
         dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
         vestibulum tortor feugiat. Lorem ipsum dolor sit amet, consectetur
@@ -31,7 +33,7 @@
         text-color="#000"
         background-color="white"
         text="SCHEDULE A CALL"
-        class="mt-10"
+        class="lg:mt-10"
       />
     </section>
 

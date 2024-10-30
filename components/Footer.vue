@@ -43,7 +43,7 @@ export default {
 
     <!-- second layout -->
     <div
-      class="flex flex-row flex-wrap gap-8 justify-between mt-14 font-inter text-[#D0C2B0] lg:px-32"
+      class="flex flex-row flex-wrap lg:flex-nowrap gap-8 lg:gap-0 justify-between mt-14 font-inter text-[#D0C2B0] lg:px-32"
     >
       <div
         class="border border-[#665244] border-l-0 pt-10 pb-28 lg:w-[150rem] mx-5 lg:mx-0 lg:pl-10"
@@ -74,22 +74,22 @@ export default {
         class="flex flex-row gap-12 font-[400] text-[16px] border border-[#665244] border-r-0 py-10 pl-5 lg:pl-12 w-[180rem]"
       >
         <div class="flex flex-col gap-5">
-          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Our Services</h4>
-          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">3d Packages</h4>
-          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Our Design Process</h4>
-          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Lowest Prices</h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Our Services</h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">3d Packages</h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Our Design Process</h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Lowest Prices</h4>
         </div>
 
         <div class="flex flex-col gap-5">
-          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">About Us</h4>
-          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Contact Us</h4>
-          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">My Account</h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">About Us</h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Contact Us</h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">My Account</h4>
         </div>
 
         <div class="flex flex-col gap-5">
-          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Reviews</h4>
-          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Privacy Policy</h4>
-          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Portfolio</h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Reviews</h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Privacy Policy</h4>
+          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Portfolio</h4>
         </div>
       </div>
     </div>
