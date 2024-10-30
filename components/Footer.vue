@@ -27,7 +27,7 @@ export default {
 
     <div class="flex flex-col items-center justify-center">
       <h1
-        class="text-center font-playfairDisplay text-6xl flex flex-col italic max-w-screen-sm"
+        class="text-center font-playfairDisplay text-3xl lg:text-6xl flex flex-col italic max-w-80 lg:max-w-screen-sm"
       >
        We'll definitely give you value for your money
       </h1>
@@ -43,27 +43,27 @@ export default {
 
     <!-- second layout -->
     <div
-      class="flex flex-row justify-between mt-14 font-inter text-[#D0C2B0] px-32"
+      class="flex flex-row flex-wrap gap-8 justify-between mt-14 font-inter text-[#D0C2B0] lg:px-32"
     >
       <div
-        class="border border-[#665244] border-l-0 pt-10 pb-28 w-[150rem] pl-10"
+        class="border border-[#665244] border-l-0 pt-10 pb-28 lg:w-[150rem] mx-5 lg:mx-0 lg:pl-10"
       >
-        <h4 class="uppercase">
+        <h4 class="uppercase text-sm lg:text-md">
           Subscribe to receive ModernYardz news & offers
         </h4>
 
-        <div class="bg-[#523825] w-[480px] h-[55px] mt-5 pl-5">
+        <div class="lg:bg-[#523825] lg:w-[480px] h-[55px] mt-5 lg:pl-5 ">
           <input
             type="email"
             placeholder="Enter your email"
-            class="bg-[#523825] w-[410px] h-[55px] outline-none text-[#A89C93] text-[16px] placeholder-[16px] placeholder-[#A89C93]"
+            class="bg-[#523825] pl-4 lg:pl-0 w-[90%] lg:w-[410px] h-[55px] outline-none text-[#A89C93] text-[16px] placeholder-[16px] placeholder-[#A89C93]"
           />
-          <span class="pl-4 text-[#A89C93] text-[18px]">&gt;</span>
+          <span class="hidden lg:inline pl-4 text-[#A89C93] text-[18px]">&gt;</span>
         </div>
 
-        <div class="flex flex-row gap-2">
+        <div class="flex flex-row gap-2 mt-8 lg:mt-0">
           <input type="checkbox" class="mt-6 cursor-pointer" />
-          <p class="ml-2 font-[300] text-[14px] mt-5 w-[25rem]">
+          <p class="ml-2 font-[300] text-xs lg:text-[14px] mt-5 w-[21rem] lg:w-[25rem]">
             I've read the Privacy Policy and I consent to Modern Yardz sending
             me marketing communications
           </p>
@@ -71,31 +71,31 @@ export default {
       </div>
 
       <div
-        class="flex flex-row gap-12 font-[400] text-[16px] border border-[#665244] border-r-0 py-10 pl-12 w-[180rem]"
+        class="flex flex-row gap-12 font-[400] text-[16px] border border-[#665244] border-r-0 py-10 pl-5 lg:pl-12 w-[180rem]"
       >
         <div class="flex flex-col gap-5">
-          <h4 class="uppercase cursor-pointer">Our Services</h4>
-          <h4 class="uppercase cursor-pointer">3d Packages</h4>
-          <h4 class="uppercase cursor-pointer">Our Design Process</h4>
-          <h4 class="uppercase cursor-pointer">Lowest Prices</h4>
+          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Our Services</h4>
+          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">3d Packages</h4>
+          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Our Design Process</h4>
+          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Lowest Prices</h4>
         </div>
 
         <div class="flex flex-col gap-5">
-          <h4 class="uppercase cursor-pointer">About Us</h4>
-          <h4 class="uppercase cursor-pointer">Contact Us</h4>
-          <h4 class="uppercase cursor-pointer">My Account</h4>
+          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">About Us</h4>
+          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Contact Us</h4>
+          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">My Account</h4>
         </div>
 
         <div class="flex flex-col gap-5">
-          <h4 class="uppercase cursor-pointer">Reviews</h4>
-          <h4 class="uppercase cursor-pointer">Privacy Policy</h4>
-          <h4 class="uppercase cursor-pointer">Portfolio</h4>
+          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Reviews</h4>
+          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Privacy Policy</h4>
+          <h4 class="text-sm lg:text-lg uppercase cursor-pointer">Portfolio</h4>
         </div>
       </div>
     </div>
 
     <!-- third layout -->
-    <div class="flex flex-row justify-between text-[#D0C2B0] px-32">
+    <div class="hidden lg:flex lg:flex-row justify-between text-[#D0C2B0] px-32">
       <div
         class="border border-[#665244] border-l-0 border-t-0 w-[150rem] text-[12px] font-inter font-[400]"
       >
@@ -162,14 +162,14 @@ export default {
 
     <!-- fourth layout -->
     <div
-      class="text-[#D0C2B0] flex flex-row justify-between mt-10 px-72 text-[12px] font-inter font-[400]"
+      class="hidden text-[#D0C2B0] lg:flex lg:flex-row justify-between mt-10 px-72 text-[12px] font-inter font-[400]"
     >
       <p>© 2024 MODERNYARDZ.com. All rights reserved.</p>
       <p>Privacy Policy | Terms of Use</p>
     </div>
 
 
-    <div class="relative flex-1 flex justify-center items-center mt-10 lg:mt-0">
+    <div class="hidden relative lg:flex-1 lg:flex justify-center items-center mt-10 lg:mt-0">
    
       <img
         src="public/images/hero/icons/chat.png"
