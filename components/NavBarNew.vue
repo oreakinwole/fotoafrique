@@ -16,7 +16,7 @@ const handleBookConsult = () => {
 
 <template>
   <div
-    class="hero-trigger cursor-default flex w-full items-center justify-between py-8 px-28 max-w-[1600px]"
+    class="hero-trigger flex w-full items-center justify-between pt-6 lg:py-8 px-8 lg:px-28 max-w-[1600px]"
   >
     <NuxtLink
       to="/"
@@ -31,7 +31,7 @@ const handleBookConsult = () => {
     <p
       class="text-xs font-medium animate__animated animate__flipInX animate__delay-3s"
     >
-      Start Your Transformation Today –
+      <span class="hidden lg:inline">Start Your Transformation Today –</span>
       <span
         class="font-bold border-black border-b"
         @click="handleBookConsult"
@@ -60,7 +60,7 @@ const handleBookConsult = () => {
       v-if="isShowMobileNav"
     >
       <main class="flex h-full">
-        <div class="h-full w-2/5 bg-gray-200 relative">
+        <div class="hidden h-full lg:block lg:w-2/5 bg-gray-200 relative">
           <div
             class="bg-black absolute top-0 left-0 h-full w-full opacity-85"
           ></div>
@@ -71,11 +71,15 @@ const handleBookConsult = () => {
           </video>
         </div>
 
-        <div class="w-2/3 px-8 bg-[#F8F5F3]">
+        <div class="w-full lg:w-2/3 px-8 bg-[#F8F5F3]">
           <nav class="flex justify-between pt-2 items-center h-14">
             <div class="animate__animated animate__fadeIn animate__delay-2s">
               <NuxtLink to="/">
-                <img src="@/assets/svg/logo.svg" width="70"  @click="isShowMobileNav = false" />
+                <img
+                  src="@/assets/svg/logo.svg"
+                  width="70"
+                  @click="isShowMobileNav = false"
+                />
               </NuxtLink>
             </div>
 
@@ -109,29 +113,29 @@ const handleBookConsult = () => {
           </nav>
 
           <section
-            class="flex justify-between items-center animate__animated animate__fadeIn animate__slow"
+            class="flex justify-between mt-12 lg:mt-0 lg:items-center animate__animated animate__fadeIn animate__slow"
           >
-            <ul class="space-y-10">
+            <ul class="space-y-8 lg:space-y-10">
               <li
-                class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
                 @click="isShowMobileNav = false"
               >
                 <NuxtLink to="/services">Services</NuxtLink>
               </li>
               <li
-                class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
                 @click="isShowMobileNav = false"
               >
                 <NuxtLink to="portfolio">Portfolio</NuxtLink>
               </li>
               <li
-                class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
                 @click="isShowMobileNav = false"
               >
                 <NuxtLink to="3d-packages">3D Packages</NuxtLink>
               </li>
               <li
-                class="text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
                 @click="isShowMobileNav = false"
               >
                 <NuxtLink to="contact">Contact</NuxtLink>
@@ -139,7 +143,7 @@ const handleBookConsult = () => {
             </ul>
 
             <svg
-              class="w-14"
+              class="w-12 -mt-16 lg:mt-0 lg lg:w-14 "
               width="94"
               height="442"
               viewBox="0 0 94 442"
@@ -185,7 +189,7 @@ const handleBookConsult = () => {
             </svg>
           </section>
 
-          <footer class="grid grid-cols-4 mt-8">
+          <footer class="grid grid-cols-4 lg:mt-8">
             <div class="col-span-1 space-y-4">
               <p class="text-xs font-semibold">Locations</p>
               <p class="text-xs">San Diego</p>
