@@ -55,8 +55,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <p class="px-20 text-3xl font-light">What Our Clients Are Saying</p>
-  <div class="px-20 flex mb-20" ref="autoAniSection">
+  <p class=" hidden lg:block px-20 text-3xl font-light">What Our Clients Are Saying</p>
+  <div class=" hidden  px-20 lg:flex mb-20" ref="autoAniSection">
     <div class="flex-[1] space-y-8 pt-10 cursor-default" >
       <img src="@/assets/svg/stars.svg" width="80" />
 

@@ -4,10 +4,10 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 
 <template>
   <!-- Before and After Section -->
-  <div class="bg-[#F8F5F3] w-full pt-20 pb-1 my-40">
+  <div class="bg-[#F8F5F3] w-full pt-20 pb-1 my-20 lg:my-40">
     <div class="flex flex-col justify-center items-center">
       <h3
-        class="font-playfairDisplay font-[500] text-5xl text-black"
+        class="font-playfairDisplay font-[500] text-4xl lg:text-5xl text-black"
         data-aos-duration="2000"
         data-aos="fade-down"
       >
@@ -32,7 +32,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
       </NuxtLink>
       <!--       Image Comparison Slider-->
       <div
-        class="px-32 my-20 h-[600px] relative"
+        class="px-2 lg:px-32 my-20 lg:h-[600px] relative"
         data-aos="zoom-in"
         data-aos-offset="300"
         data-aos-duration="2000"
@@ -76,7 +76,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
         </ImgComparisonSlider>
 
         <div
-          class="bg-white w-[823px] h-[80px] rounded-[50px] absolute bottom-10 ml-[20%] z-10 p-3 flex gap-5 flex-row"
+          class="bg-white hidden w-[823px] h-[80px] rounded-[50px] absolute bottom-10 ml-[20%] z-10 p-3 flex gap-5 flex-row"
         >
           <div class="flex flex-row ml-12">
             <div class="absolute">

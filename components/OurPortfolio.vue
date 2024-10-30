@@ -53,12 +53,12 @@ const isViewingFaq = ref(null);
 
 <template>
   <!--our portfolio -->
-  <div class="w-full bg-black text-white pt-20 mb-28 cursor-help">
-    <div class="space-y-8 text-center pb-32">
-      <h4 class="font-playfairDisplay font-[600] text-7xl text-white">
+  <div class="w-full bg-black text-white pt-10 lg:pt-20 mb-28 cursor-help">
+    <div class="space-y-8 text-center pb-16 lg:pb-32">
+      <h4 class="font-playfairDisplay font-[600] text-5xl lg:text-7xl text-white">
         Got Questions?
       </h4>
-      <p class="font-inter text-xs font-light text-white max-w-md mx-auto">
+      <p class="font-inter text-xs font-light text-white max-w-sm lg:max-w-md mx-auto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
         dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
         vestibulum tortor feugiat.
@@ -66,7 +66,7 @@ const isViewingFaq = ref(null);
     </div>
 
     <!-- FAQ Section -->
-    <div class="px-5" >
+    <div class="lg:px-5" >
       <div
         v-for="(faq, index) in faqs"
         :key="faq.id"
@@ -76,17 +76,17 @@ const isViewingFaq = ref(null);
         @click="isViewingFaq = index"
       >
         <div class="flex justify-between items-center">
-          <h4 class="font-[600] font-inter text-4xl tracking-wider flex-grow">
+          <h4 class="font-[600] font-inter text-xl lg:text-4xl tracking-wider flex-grow">
             {{ faq.question }}
           </h4>
-          <p class="text-lg text-white">
+          <p class="text-lg text-white hidden lg:block">
             {{ faq.fullQuestion }}
           </p>
         </div>
 
         <p
           v-if="isViewingFaq === index"
-          class="text-lg text-black font-light bg-white p-4 mt-12 animate__animated animate__slideInLeft "
+          class="lg:text-lg text-black font-light bg-white p-4 mt-12 animate__animated animate__slideInLeft "
         >
           {{ faq.description }}
         </p>
