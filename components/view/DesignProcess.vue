@@ -34,7 +34,7 @@ const stepsShowing = ref(null);
         class="overflow-hidden h-[420px] lg:h-full w-full lg:w-[300px] rounded-2xl bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
-          class="bg-black text-white h-[35%] lg:h-[30%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
+          class="bg-black text-white h-[35%] lg:h-[35%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
         >
           <h5 class="font-bold text-center">
             Step One: Free Design Consultation
@@ -69,7 +69,7 @@ const stepsShowing = ref(null);
         class="overflow-hidden h-[420px] lg:h-full w-full lg:w-[300px] rounded-2xl bg-[url('@/assets/images/step_two.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
-          class="bg-black text-white h-[35%] lg:h-[30%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
+          class="bg-black text-white h-[35%] lg:h-[35%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
         >
           <h5 class="font-bold text-center">
             Step Two: 2D Landscape Design
@@ -104,7 +104,7 @@ const stepsShowing = ref(null);
         class="overflow-hidden h-[420px] lg:h-full w-full lg:w-[300px] rounded-2xl bg-[url('@/assets/images/step_three.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
-          class="bg-black text-white h-[35%] lg:h-[30%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
+          class="bg-black text-white h-[35%] lg:h-[35%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
         >
           <h5 class="font-bold text-center">
             Step Three: 3D Design Renderings
@@ -139,7 +139,7 @@ const stepsShowing = ref(null);
         class="overflow-hidden h-[420px] lg:h-full w-full lg:w-[300px] rounded-2xl bg-[url('@/assets/images/step_four.jpg')] bg-no-repeat bg-center bg-cover relative"
       >
         <div
-          class="bg-black text-white h-[35%] lg:h-[30%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
+          class="bg-black text-white h-[35%] lg:h-[35%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
         >
           <h5 class="font-bold text-center">
             Step Four: Comprehensive Quote

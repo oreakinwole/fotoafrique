@@ -45,11 +45,13 @@ onMounted(() => {
           :iterations="1"
           :typeSpeed="100"
         />
-        <p class="text-6xl lg:text-8xl font-bold flex items-center justify-center">
+        <p
+          class="text-6xl lg:text-8xl font-bold flex items-center justify-center"
+        >
           L
           <span
             class="transition-all delay-[2600ms] duration-1000 ease-in-out w-9 h-9 py-4 lg:py-6 px-4 lg:px-7 border-[9px] lg:border-[12px] border-black rounded-full hover:rounded-5xl"
-            :class="animateCaption && 'px-20 lg:px-36'"
+            :class="animateCaption && 'xl:px-36'"
           >
             &nbsp;
           </span>
@@ -60,7 +62,7 @@ onMounted(() => {
           >
         </p>
         <p
-          class="text-xs hidden lg:block max-w-lg  lg:max-w-xl mx-auto tracking-[.3em] leading-relaxed"
+          class="text-xs hidden lg:block max-w-lg lg:max-w-xl mx-auto tracking-[.3em] leading-relaxed"
         >
           Let us turn your outdoor space into a beautiful, <br />
           custom-designed haven that you’ll enjoy for years to come.

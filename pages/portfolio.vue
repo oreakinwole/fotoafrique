@@ -25,7 +25,8 @@ onMounted(() => {
       <p class="lg:hidden font-playfairDisplay text-4xl font-medium">
         Portfoli<span class="text-new-gray font-imperial text-4xl">O</span>
       </p>
-      <ul class="flex justify-between max-w-[220px] font-medium">
+
+      <ul class=" flex lg:hidden justify-between max-w-[220px] font-medium">
         <li>Style</li>
         <li class="text-new-gray">Elegance</li>
         <li class="text-new-gray">Creative</li>
