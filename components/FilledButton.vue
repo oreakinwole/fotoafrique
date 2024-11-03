@@ -13,7 +13,7 @@ const handleBookConsult = () => {
 <template>
   <button
     @click="handleBookConsult"
-    class="relative w-[200px] h-[50px] overflow-hidden"
+    class="relative w-[200px] h-[50px] overflow-hidden rounded-xl"
     :style="{ backgroundColor: backgroundColor, color: textColor }"
   >
     <span

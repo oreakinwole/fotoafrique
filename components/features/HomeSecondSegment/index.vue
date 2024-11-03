@@ -9,25 +9,18 @@
     data-aos-easing="linear"
   >
     <div>
-      <h4 class="font-playfairDisplay text-4xl font-[500]">
-        Servi<span class="text-[#A89C93] font-imperial font-[400] text-4xl"
-          >C</span
-        >es
-      </h4>
+      <h4 class="text-4xl font-semibold">Services</h4>
     </div>
   </div>
-  <div class="mt-20 flex">
+
+  <div class="mt-12 lg:mt-48 flex">
     <div
-      class="ml-32 mt-20 hidden lg:block"
+      class="ml-32 mt-20 hidden lg:block text-center"
       data-aos="fade-up"
       data-aos-easing="linear"
     >
       <div>
-        <h4 class="font-playfairDisplay text-5xl font-[500]">
-          Servi<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
-            >C</span
-          >es
-        </h4>
+        <h4 class="text-7xl font-semibold">Services</h4>
       </div>
 
       <!-- <p
@@ -56,10 +49,10 @@
                   <img
                     src="@/assets/images/services/paver.png"
                     alt="frontyard picture"
-                    class="w-full h-full"
+                    class="w-full h-full rounded-xl"
                   />
                   <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                    class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                   ></div>
                 </div>
               </NuxtLink>
@@ -103,10 +96,10 @@
                   <img
                     src="@/assets/images/services/concrete.png"
                     alt="backyard picture"
-                    class="w-full h-full"
+                    class="w-full h-full rounded-xl"
                   />
                   <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                    class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                   ></div>
                 </div>
               </NuxtLink>
@@ -152,10 +145,10 @@
                   <img
                     src="@/assets/images/services/turf.png"
                     alt="fullyard picture"
-                    class="w-full h-full"
+                    class="w-full h-full rounded-xl"
                   />
                   <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                    class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                   ></div>
                 </div>
               </NuxtLink>
@@ -201,10 +194,10 @@
                   <img
                     src="/images/homesecondsegment/imgs/Renovation.svg"
                     alt="renovation picture"
-                    class="w-full h-full"
+                    class="w-full h-full rounded-xl"
                   />
                   <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                    class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                   ></div>
                 </div>
               </NuxtLink>
@@ -267,24 +260,24 @@
       </div>
 
       <div class="lg:hidden text-center">
-        <div class="flex flex-row flex-wrap justify-center gap-8">
-          <div>
+        <div class="flex flex-wrap justify-center gap-2 lg:gap-8">
+          <div class="w-[47%]">
             <NuxtLink to="services">
               <div
-                class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                class="relative w-full h-[290px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/services/paver.png"
                   alt="frontyard picture"
-                  class="w-full h-full"
+                  class="w-full h-full rounded-xl"
                 />
                 <div
-                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                 ></div>
               </div>
             </NuxtLink>
 
-            <div class="flex flex-row justify-between mt-5">
+            <div class="flex justify-between mt-5">
               <h4 class="font-inter font-[500] text-[18px]">Paver Patios</h4>
               <p class="font-[400] font-inter text-[16px]">
                 <svg
@@ -315,23 +308,23 @@
             </div>
           </div>
 
-          <div>
+          <div class="w-[47%]">
             <NuxtLink to="services">
               <div
-                class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                class="relative w-full h-[290px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/services/concrete.png"
                   alt="backyard picture"
-                  class="w-full h-full"
+                  class="w-full h-full rounded-xl"
                 />
                 <div
-                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                 ></div>
               </div>
             </NuxtLink>
 
-            <div class="flex flex-row justify-between mt-5">
+            <div class="flex justify-between mt-5">
               <h4 class="font-inter font-[500] text-[18px]">Concrete Patios</h4>
               <p class="font-[400] font-inter text-[16px]">
                 <svg
@@ -362,23 +355,23 @@
             </div>
           </div>
 
-          <div>
+          <div class="w-[47%]">
             <NuxtLink to="services">
               <div
-                class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                class="relative w-full h-[290px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/services/turf.png"
                   alt="fullyard picture"
-                  class="w-full h-full"
+                  class="w-full h-full rounded-xl"
                 />
                 <div
-                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                 ></div>
               </div>
             </NuxtLink>
 
-            <div class="flex flex-row justify-between mt-5">
+            <div class="flex justify-between mt-5">
               <h4 class="font-inter font-[500] text-[18px]">Artificial Turf</h4>
               <p class="font-[400] font-inter text-[16px]">
                 <svg
@@ -408,27 +401,24 @@
               </p>
             </div>
           </div>
-
-          <div>
+          <div class="w-[47%]">
             <NuxtLink to="services">
               <div
-                class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                class="relative w-full h-[290px] cursor-pointer group explore-item"
               >
                 <img
-                  src="/images/homesecondsegment/imgs/Renovation.svg"
-                  alt="renovation picture"
-                  class="w-full h-full"
+                  src="@/assets/images/services/turf.png"
+                  alt="fullyard picture"
+                  class="w-full h-full rounded-xl"
                 />
                 <div
-                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                 ></div>
               </div>
             </NuxtLink>
 
-            <div class="flex flex-row justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">
-                Outdoor Kitchens
-              </h4>
+            <div class="flex justify-between mt-5">
+              <h4 class="font-inter font-[500] text-[18px]">Outdoor Kitchens</h4>
               <p class="font-[400] font-inter text-[16px]">
                 <svg
                   width="24"
@@ -463,7 +453,7 @@
           background-color="black"
           text="SCHEDULE A CALL"
           text-color="white"
-          class="mt-28 lg-hidden mx-auto"
+          class="mt-16 w-[90%] font-semibold lg:mt-28 lg-hidden mx-auto"
         />
       </div>
     </div>

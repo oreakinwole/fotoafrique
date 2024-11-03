@@ -39,22 +39,23 @@ useHead({
     </section>
   </div> -->
 
-  <div class="pb-20 lg:pb-56">
+  <div class="pt-14 lg:pb-20">
     <h1
-      class="lg:hidden font-playfairDisplay text-center font-bold text-4xl text-[#665244] opacity-50"
+      class="lg:hidden text-center font-bold text-5xl text-[#7B7B7B] opacity-50"
     >
-      Why choose modern yardz ?
+      Why Choose<br />
+      Modern Yardz?
     </h1>
 
     <h1
-      class="hidden lg:block font-playfairDisplay text-left pl-20 font-bold text-9xl text-[#665244] opacity-50"
+      class="hidden lg:block text-left pl-20 font-bold text-9xl text-[#7B7B7B] opacity-50"
       data-aos="slide-left"
       data-aos-duration="2000"
     >
       Why Choose
     </h1>
     <h1
-      class="hidden lg:block font-playfairDisplay text-right pr-20 font-bold text-9xl text-[#665244] opacity-50"
+      class="hidden lg:block text-right pr-20 font-bold text-9xl text-[#7B7B7B] opacity-50"
       data-aos="slide-right"
       data-aos-duration="2000"
     >
@@ -62,13 +63,13 @@ useHead({
     </h1>
 
     <div
-      class="max-w-screen-lg relative pl-5 pr-5 lg:pl-36 lg:pr-0 mx-auto mt-28 space-y-8"
+      class="max-w-screen-lg relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-28 space-y-8"
     >
       <div
-        class="font-inter text-[#665244] max-w-md font-[400] text-xs leading-loose"
+        class="font-inter text-black max-w-md font-[400] text-xs leading-loose"
       >
-        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#F5F0EA]">01</span>
-        <p class="mt-4">
+        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">01</span>
+        <p class="mt-4 text-[#454545]">
           At Modern Yardz, our mission is simple: to transform your outdoor
           space into something truly special. Based right here in San Diego,
           we’ve spent decades perfecting the craft of landscape design. From
@@ -77,10 +78,10 @@ useHead({
         </p>
       </div>
       <div
-        class="font-inter text-[#665244] max-w-md font-[400] text-xs leading-loose"
+        class="font-inter text-black max-w-md font-[400] text-xs leading-loose"
       >
-        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#F5F0EA]">02</span>
-        <p class="mt-4">
+        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">02</span>
+        <p class="mt-4 text-[#454545]">
           At Modern Yardz, our mission is simple: to transform your outdoor With
           over 40 years in the business, we understand what it takes to create
           outdoor spaces that are both beautiful and functional. Our local roots
@@ -90,10 +91,10 @@ useHead({
       </div>
 
       <div
-        class="font-inter text-[#665244] max-w-md font-[400] text-xs leading-loose"
+        class="font-inter text-black max-w-md font-[400] text-xs leading-loose"
       >
-        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#F5F0EA]">03</span>
-        <p class="mt-4">
+        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">03</span>
+        <p class="mt-4 text-[#454545]">
           Whether you’re looking to revamp your yard or start from scratch,
           we’re here to guide you through every step. Trust us to turn your
           vision into reality—because you deserve a space you’ll love for years
@@ -127,11 +128,7 @@ useHead({
     data-aos-easing="linear"
   >
     <div>
-      <h4 class="font-playfairDisplay text-4xl font-[500]">
-        Packa<span class="text-[#A89C93] font-imperial font-[400] text-5xl"
-          >G</span
-        >es
-      </h4>
+      <h4 class="text-4xl font-semibold">Packages</h4>
     </div>
 
     <p class="text-[#665244] text-xs font-[400] font-inter leading-relaxed">
@@ -150,14 +147,10 @@ useHead({
       data-aos-easing="linear"
     >
       <div>
-        <h4 class="font-playfairDisplay text-5xl font-[500]">
-          Packa<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
-            >G</span
-          >es
-        </h4>
+        <h4 class="text-6xl font-semibold">Packages</h4>
       </div>
 
-      <p class="text-[#665244] text-xs font-[400] font-inter leading-relaxed">
+      <p class="text-[#665244] text-xs mt-4 font-inter leading-relaxed">
         Every outdoor space has the potential to be extraordinary. Our custom
         design packages are crafted to fit your needs, whether you’re looking to
         refresh your front yard, revamp your backyard, or completely transform
@@ -178,10 +171,10 @@ useHead({
                   <img
                     src="@/assets/images/packages/p-fullyard.jpg"
                     alt="frontyard picture"
-                    class="w-full h-full"
+                    class="w-full h-full rounded-xl"
                   />
                   <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                    class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                   ></div>
                 </div>
               </NuxtLink>
@@ -202,10 +195,10 @@ useHead({
                   <img
                     src="@/assets/images/packages/p-backyard.jpg"
                     alt="backyard picture"
-                    class="w-full h-full"
+                    class="w-full h-full rounded-xl"
                   />
                   <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                    class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                   ></div>
                 </div>
               </NuxtLink>
@@ -226,10 +219,10 @@ useHead({
                   <img
                     src="@/assets/images/packages/p-frontyard.jpg"
                     alt="fullyard picture"
-                    class="w-full h-full"
+                    class="w-full h-full rounded-xl"
                   />
                   <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                    class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                   ></div>
                 </div>
               </NuxtLink>
@@ -250,10 +243,10 @@ useHead({
                   <img
                     src="@/assets/images/packages/p-outdoor.jpg"
                     alt="renovation picture"
-                    class="w-full h-full object-cover"
+                    class="w-full h-full rounded-xl"
                   />
                   <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                    class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                   ></div>
                 </div>
               </NuxtLink>
@@ -274,10 +267,10 @@ useHead({
                   <img
                     src="/images/homesecondsegment/imgs/Renovation.svg"
                     alt="renovation picture"
-                    class="w-full h-full"
+                    class="w-full h-full rounded-xl"
                   />
                   <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                    class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                   ></div>
                 </div>
               </NuxtLink>
@@ -306,7 +299,7 @@ useHead({
                   class="w-full h-full"
                 />
                 <div
-                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                 ></div>
               </div>
             </NuxtLink>
@@ -330,7 +323,7 @@ useHead({
                   class="w-full h-full"
                 />
                 <div
-                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                 ></div>
               </div>
             </NuxtLink>
@@ -352,7 +345,7 @@ useHead({
                   class="w-full h-full"
                 />
                 <div
-                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                 ></div>
               </div>
             </NuxtLink>
@@ -376,7 +369,7 @@ useHead({
                   class="w-full h-full object-cover"
                 />
                 <div
-                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                 ></div>
               </div>
             </NuxtLink>
@@ -400,7 +393,7 @@ useHead({
                   class="w-full h-full"
                 />
                 <div
-                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
+                  class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
                 ></div>
               </div>
             </NuxtLink>
@@ -417,13 +410,13 @@ useHead({
 
   <div class="mb-28 bg-black h-[600px] relative">
     <div class="absolute top-14 lg:top-28 left-12 lg:left-20 z-10">
-      <h3
-        class="text-white leading-normal font-playfairDisplay font-[600] text-4xl lg:text-5xl"
-      >
-        Not sure which package is right for you ?<br />
-        Take our quiz to find your perfect <br />
-        design package.
-      </h3>
+      <div class="text-white font-semibold text-4xl lg:text-5xl">
+        <p class="leading-snug">
+          Not sure which package is right for you ?<br />
+          Take our quiz to find your perfect<br />
+          design package.
+        </p>
+      </div>
 
       <!-- <OutlinedButton(BLACK)
         border-color="#fff"
@@ -438,7 +431,7 @@ useHead({
       </ClientOnly>
     </div>
 
-    <div class="bg-black absolute top-0 left-0 h-full w-full opacity-85"></div>
+    <div class="bg-black absolute top-0 left-0 h-full w-full opacity-50"></div>
 
     <video class="w-full h-full object-cover" autoplay muted loop>
       <source src="/video/quizvid.mp4" type="video/mp4" />

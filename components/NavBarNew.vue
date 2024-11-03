@@ -71,7 +71,7 @@ const handleBookConsult = () => {
           </video>
         </div>
 
-        <div class="w-full lg:w-2/3 px-8 bg-[#F8F5F3]">
+        <div class="w-full lg:w-2/3 px-8">
           <nav class="flex justify-between pt-2 items-center h-14">
             <div class="animate__animated animate__fadeIn animate__delay-2s">
               <NuxtLink to="/">
@@ -115,27 +115,27 @@ const handleBookConsult = () => {
           <section
             class="flex justify-between mt-12 lg:mt-0 lg:items-center animate__animated animate__fadeIn animate__slow"
           >
-            <ul class="space-y-8 lg:space-y-10">
+            <ul class="space-y-8">
               <li
-                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
                 <NuxtLink to="/services">Services</NuxtLink>
               </li>
               <li
-                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
                 <NuxtLink to="portfolio">Portfolio</NuxtLink>
               </li>
               <li
-                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
                 <NuxtLink to="3d-packages">3D Packages</NuxtLink>
               </li>
               <li
-                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
                 <NuxtLink to="contact">Contact</NuxtLink>
@@ -189,7 +189,7 @@ const handleBookConsult = () => {
             </svg>
           </section>
 
-          <footer class="grid grid-cols-4 lg:mt-8">
+          <footer class="grid grid-cols-4 lg:mt-16">
             <div class="col-span-1 space-y-4">
               <p class="text-xs font-semibold">Locations</p>
               <p class="text-xs">San Diego</p>
