@@ -407,7 +407,7 @@ useHead({
     </div>
   </div>
 
-  <div class="mt-28 lg:mt-0 mb-28 bg-black h-[480px] lg:h-[600px] relative">
+  <div class="mt-28 lg:mt-0 mb-12 lg:mb-28 bg-black h-[480px] lg:h-[600px] relative">
     <div class="absolute top-14 lg:top-28 left-5 right-4 lg:left-20 z-10">
       <div class="text-white font-semibold text-4xl lg:text-5xl">
         <p class="leading-tight">

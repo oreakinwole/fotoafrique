@@ -51,7 +51,7 @@ const isViewingFaq = ref(null);
 
 <template>
   <!--our portfolio -->
-  <div class="w-full bg-black text-white pt-20 lg:pt-20 mb-28 cursor-help">
+  <div class="w-full bg-black text-white pt-20 lg:pt-20 lg:mb-28 cursor-help">
     <div class="space-y-4 lg:space-y-8 text-center pb-14 lg:pb-20">
       <h4
         class=" font-semibold text-5xl lg:text-8xl"
@@ -101,7 +101,7 @@ const isViewingFaq = ref(null);
         text-color="#fff"
         background-color="transparent"
         text="SEE MORE"
-        class="mt-10"
+        class="lg:mt-10 w-[90%] lg:w-[200px]"
       />
     </div>
   </div>
