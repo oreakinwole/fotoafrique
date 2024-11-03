@@ -62,7 +62,7 @@ watch(loaderCount, (val: number) => {
   </div>
 
   <div class="max-w-[1600px] mx-auto overflow-hidden" v-else>
-    <NavBarNew class="absolute top-0" />
+    <NavBarNew />
     <slot />
     <Footer class="mt-32" />
   </div>

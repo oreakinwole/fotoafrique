@@ -122,15 +122,10 @@ useHead({
 
   <Testimonial />
 
-  <div
-    class="lg:hidden mt-24 px-6"
-    data-aos="fade-up"
-    data-aos-easing="linear"
-  >
-  <h4 class="text-4xl mb-4 font-semibold">Packages</h4>
+  <div class="lg:hidden mt-24 px-6" data-aos="fade-up" data-aos-easing="linear">
+    <h4 class="text-4xl mb-4 font-semibold">Packages</h4>
 
-
-    <p class="text-[#454545] text-lg  leading-relaxed">
+    <p class="text-[#454545] text-lg leading-relaxed">
       Every outdoor space has the potential to be extraordinary. Our custom
       design packages are crafted to fit your needs, whether you’re looking to
       refresh your front yard, revamp your backyard, or completely transform
@@ -286,7 +281,9 @@ useHead({
       </div>
 
       <div class="lg:ml-20">
-        <div class="lg:hidden flex flex-row justify-center flex-wrap gap-2 lg:gap-8">
+        <div
+          class="lg:hidden flex flex-row justify-center flex-wrap gap-2 lg:gap-8"
+        >
           <div class="w-[47%]">
             <NuxtLink to="3d-packages">
               <div
@@ -407,7 +404,9 @@ useHead({
     </div>
   </div>
 
-  <div class="mt-28 lg:mt-0 mb-12 lg:mb-28 bg-black h-[480px] lg:h-[600px] relative">
+  <div
+    class="mt-28 lg:mt-0 mb-12 lg:mb-28 bg-black h-[480px] lg:h-[600px] relative"
+  >
     <div class="absolute top-14 lg:top-28 left-5 right-4 lg:left-20 z-10">
       <div class="text-white font-semibold text-4xl lg:text-5xl">
         <p class="leading-tight">
@@ -440,3 +439,17 @@ useHead({
 
   <OurPortfolio class="mb-16" />
 </template>
+
+<style lang="scss">
+[data-tf-live] button {
+  background-color: transparent !important ;
+  border: 1px solid white !important;
+  border-radius: 0.75rem !important;
+  height: 50px !important;
+  width: 200px !important;
+  font-family: "Inter" !important;
+  font-size: 1rem !important;
+
+  
+}
+</style>

@@ -35,8 +35,8 @@ onMounted(() => {
 
 <template>
   <div>
-    <div
-      class="min-h-[470px] lg:min-h-screen pt-28 bg-[url('@/assets/images/hero_bg1.png')] bg-white bg-no-repeat bg-left-top bg-cover "
+    <header
+      class="hidden lg:block min-h-[470px] lg:min-h-screen pt-28 lg:bg-[url('@/assets/images/hero_bg1.png')] bg-white bg-no-repeat bg-left-top bg-cover"
     >
       <div class="text-center space-y-3">
         <VueWriter
@@ -83,18 +83,40 @@ onMounted(() => {
           Something went wrong while playing video
         </video>
       </div>
-    </div>
+    </header>
 
-    <!-- <div class="pt-48 mb-36 h-96" data-aos="fade-up" data-aos-duration="2000">
-      <p class="uppercase text-center font-inter font-[400] text-[12px]">
-        Our Partners
-      </p>
+    <header class="h-[700px] bg-green-300 lg:hidden relative">
+      <div
+        class="bg-black text-white absolute top-0 left-0 h-full w-full opacity-35"
+      ></div>
 
-      <div class="mt-8">
-        <NuxtMarquee class="max-w-[55em] mx-auto" :speed="20">
-          <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
-        </NuxtMarquee>
+      <div class="text-white absolute bottom-0 ">
+
+        <div class="px-3">
+          <p
+          class="font-semibold text-2xl max-w-[300px] leading-normal tracking-widest"
+        >
+          DON’T JUST LIKE YOUR YARD
+        </p>
+        <p class="text-8xl font-bold leading-tight tracking-wide">LOVE IT!</p>
+        <p class="font-light text-lg leading-normal tracking-widest">
+          Let us turn your outdoor space into a beautiful, custom-designed haven
+          that you’ll enjoy for years to come.
+        </p>
+        </div>
+     
+
+        <FilledButton
+          text="Book Free Consultation"
+          text-color="white"
+          class="w-full mt-16 h-[65px] text-2xl  uppercase  bg-[#665244] rounded-none"
+        />
       </div>
-    </div> -->
+
+      <video class="w-full h-full object-cover" autoplay muted loop>
+        <source src="/video/hero-video2.mp4" type="video/mp4" />
+        Something went wrong while playing video
+      </video>
+    </header>
   </div>
 </template>

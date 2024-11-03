@@ -1,8 +1,8 @@
 <script setup></script>
 
 <template>
-  <div class="mt-12 lg:mt-28 px-4 lg:px-10 w-screen ">
-    <div class="lg:px-20 lg:text-center">
+  <div class="mt-12 lg:mt-28  lg:px-10 w-screen">
+    <div class="px-2 lg:px-20 lg:text-center">
       <p class="font-semibold text-4xl lg:text-7xl mb-2 lg:mb-5">
         Our Design Process
       </p>
@@ -21,10 +21,10 @@
     </div>
 
     <section
-      class="lg:h-[300px] flex justify-center flex-wrap gap-2 lg:gap-4 mt-12"
+      class="px-2 lg:h-[300px] flex justify-between lg:justify-center flex-wrap gap-2 lg:gap-4 mt-12"
     >
       <div
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[47%] lg:w-[300px] rounded-lg"
+        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[49%] lg:w-[300px] rounded-lg"
       >
         <header
           class="h-[78%] p-2 relative rounded-lg bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover"
@@ -105,7 +105,7 @@
       </div>
 
       <div
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[47%] lg:w-[300px] rounded-lg"
+        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[49%] lg:w-[300px] rounded-lg"
       >
         <header
           class="h-[78%] p-2 relative rounded-lg bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover"
@@ -230,7 +230,7 @@
       </div>
 
       <div
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[47%] lg:w-[300px] rounded-lg"
+        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[49%] lg:w-[300px] rounded-lg"
       >
         <header
           class="h-[78%] p-2 relative rounded-lg bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover"
@@ -339,7 +339,7 @@
       </div>
 
       <div
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[47%] lg:w-[300px] rounded-lg"
+        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[49%] lg:w-[300px] rounded-lg"
       >
         <header
           class="h-[78%] p-2 relative rounded-lg bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover"
