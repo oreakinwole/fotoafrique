@@ -13,7 +13,7 @@
     </div>
   </div>
 
-  <div class="mt-12 lg:mt-48 flex">
+  <div class="mt-12 lg:mt-28 flex">
     <div
       class="ml-32 mt-20 hidden lg:block text-center"
       data-aos="fade-up"
@@ -264,7 +264,7 @@
           <div class="w-[47%]">
             <NuxtLink to="services">
               <div
-                class="relative w-full h-[290px] cursor-pointer group explore-item"
+                class="relative w-full h-[250px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/services/paver.png"
@@ -311,7 +311,7 @@
           <div class="w-[47%]">
             <NuxtLink to="services">
               <div
-                class="relative w-full h-[290px] cursor-pointer group explore-item"
+                class="relative w-full h-[250px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/services/concrete.png"
@@ -358,7 +358,7 @@
           <div class="w-[47%]">
             <NuxtLink to="services">
               <div
-                class="relative w-full h-[290px] cursor-pointer group explore-item"
+                class="relative w-full h-[250px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/services/turf.png"
@@ -404,7 +404,7 @@
           <div class="w-[47%]">
             <NuxtLink to="services">
               <div
-                class="relative w-full h-[290px] cursor-pointer group explore-item"
+                class="relative w-full h-[250px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/services/turf.png"

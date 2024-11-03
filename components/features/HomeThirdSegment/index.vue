@@ -123,15 +123,14 @@ useHead({
   <Testimonial />
 
   <div
-    class="lg:hidden mt-12 text-center px-6"
+    class="lg:hidden mt-24 px-6"
     data-aos="fade-up"
     data-aos-easing="linear"
   >
-    <div>
-      <h4 class="text-4xl font-semibold">Packages</h4>
-    </div>
+  <h4 class="text-4xl mb-4 font-semibold">Packages</h4>
 
-    <p class="text-[#665244] text-xs font-[400] font-inter leading-relaxed">
+
+    <p class="text-[#454545] text-lg  leading-relaxed">
       Every outdoor space has the potential to be extraordinary. Our custom
       design packages are crafted to fit your needs, whether you’re looking to
       refresh your front yard, revamp your backyard, or completely transform
@@ -140,7 +139,7 @@ useHead({
     </p>
   </div>
 
-  <div class="my-20 lg:my-36 flex">
+  <div class="my-10 lg:my-36 flex">
     <div
       class="hidden lg:block ml-32 mt-20"
       data-aos="fade-up"
@@ -150,7 +149,7 @@ useHead({
         <h4 class="text-6xl font-semibold">Packages</h4>
       </div>
 
-      <p class="text-[#665244] text-xs mt-4 font-inter leading-relaxed">
+      <p class="text-[#454545] text-xs mt-4 font-inter leading-relaxed">
         Every outdoor space has the potential to be extraordinary. Our custom
         design packages are crafted to fit your needs, whether you’re looking to
         refresh your front yard, revamp your backyard, or completely transform
@@ -287,16 +286,16 @@ useHead({
       </div>
 
       <div class="lg:ml-20">
-        <div class="lg:hidden flex flex-row justify-center flex-wrap gap-8">
-          <div>
+        <div class="lg:hidden flex flex-row justify-center flex-wrap gap-2 lg:gap-8">
+          <div class="w-[47%]">
             <NuxtLink to="3d-packages">
               <div
-                class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                class="relative w-full h-[250px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/packages/p-fullyard.jpg"
                   alt="frontyard picture"
-                  class="w-full h-full"
+                  class="w-full h-full rounded-xl"
                 />
                 <div
                   class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
@@ -304,7 +303,7 @@ useHead({
               </div>
             </NuxtLink>
 
-            <div class="flex flex-row justify-between mt-5">
+            <div class="flex flex-wrap justify-between mt-5">
               <h4 class="font-inter font-[500] text-[18px]">
                 Full Yard Design
               </h4>
@@ -312,15 +311,15 @@ useHead({
             </div>
           </div>
 
-          <div>
+          <div class="w-[47%]">
             <NuxtLink to="3d-packages">
               <div
-                class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                class="relative w-full h-[250px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/packages/p-backyard.jpg"
                   alt="backyard picture"
-                  class="w-full h-full"
+                  class="w-full h-full rounded-xl"
                 />
                 <div
                   class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
@@ -328,21 +327,21 @@ useHead({
               </div>
             </NuxtLink>
 
-            <div class="flex flex-row justify-between mt-5">
+            <div class="flex flex-wrap justify-between mt-5">
               <h4 class="font-inter font-[500] text-[18px]">Backyard Design</h4>
               <p class="font-[400] font-inter text-[16px]">$1,745.99</p>
             </div>
           </div>
 
-          <div>
+          <div class="w-[47%]">
             <NuxtLink to="3d-packages">
               <div
-                class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                class="relative w-full h-[250px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/packages/p-frontyard.jpg"
                   alt="fullyard picture"
-                  class="w-full h-full"
+                  class="w-full h-full rounded-xl"
                 />
                 <div
                   class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
@@ -350,7 +349,7 @@ useHead({
               </div>
             </NuxtLink>
 
-            <div class="flex flex-row justify-between mt-5">
+            <div class="flex flex-wrap justify-between mt-5">
               <h4 class="font-inter font-[500] text-[18px]">
                 Front Yard Design
               </h4>
@@ -358,15 +357,15 @@ useHead({
             </div>
           </div>
 
-          <div>
+          <div class="w-[47%]">
             <NuxtLink to="3d-packages">
               <div
-                class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                class="relative w-full h-[250px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/packages/p-outdoor.jpg"
                   alt="renovation picture"
-                  class="w-full h-full object-cover"
+                  class="w-full h-full rounded-xl"
                 />
                 <div
                   class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
@@ -374,7 +373,7 @@ useHead({
               </div>
             </NuxtLink>
 
-            <div class="flex flex-row justify-between mt-5">
+            <div class="flex flex-wrap justify-between mt-5">
               <h4 class="font-inter font-[500] text-[18px]">
                 Outdoor Transformation
               </h4>
@@ -382,15 +381,15 @@ useHead({
             </div>
           </div>
 
-          <div>
+          <!-- <div class="w-[47%]">
             <NuxtLink to="3d-packages">
               <div
-                class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
+                class="relative w-full h-[250px] cursor-pointer group explore-item"
               >
                 <img
                   src="/images/homesecondsegment/imgs/Renovation.svg"
                   alt="renovation picture"
-                  class="w-full h-full"
+                  class="w-full h-full rounded-xl"
                 />
                 <div
                   class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
@@ -398,20 +397,20 @@ useHead({
               </div>
             </NuxtLink>
 
-            <div class="flex flex-row justify-between mt-5">
+            <div class="flex flex-wrap justify-between mt-5">
               <h4 class="font-inter font-[500] text-[18px]">Premium Design</h4>
               <p class="font-[400] font-inter text-[16px]">$4,000.00</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </div>
 
-  <div class="mb-28 bg-black h-[600px] relative">
-    <div class="absolute top-14 lg:top-28 left-12 lg:left-20 z-10">
+  <div class="mt-28 lg:mt-0 mb-28 bg-black h-[480px] lg:h-[600px] relative">
+    <div class="absolute top-14 lg:top-28 left-5 right-4 lg:left-20 z-10">
       <div class="text-white font-semibold text-4xl lg:text-5xl">
-        <p class="leading-snug">
+        <p class="leading-tight">
           Not sure which package is right for you ?<br />
           Take our quiz to find your perfect<br />
           design package.

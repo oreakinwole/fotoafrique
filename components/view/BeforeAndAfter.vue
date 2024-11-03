@@ -4,7 +4,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 
 <template>
   <!-- Before and After Section -->
-  <div class="w-full pb-1 my-20 lg:my-40">
+  <div class="w-full pb-1 my-20 lg:my-32">
     <div class="flex flex-col justify-center items-center">
       <h3
         class="font-semibold text-4xl lg:text-7xl text-black"

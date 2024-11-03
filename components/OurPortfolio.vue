@@ -1,5 +1,4 @@
 <script setup>
-
 const faqs = ref([
   {
     id: 1,
@@ -48,17 +47,18 @@ const faqs = ref([
   },
 ]);
 const isViewingFaq = ref(null);
-
 </script>
 
 <template>
   <!--our portfolio -->
-  <div class="w-full bg-black text-white pt-10 lg:pt-20 mb-28 cursor-help">
-    <div class="space-y-8 text-center pb-14 lg:pb-32">
-      <h4 class="font-playfairDisplay font-[600] text-5xl lg:text-7xl text-white">
+  <div class="w-full bg-black text-white pt-20 lg:pt-20 mb-28 cursor-help">
+    <div class="space-y-4 lg:space-y-8 text-center pb-14 lg:pb-20">
+      <h4
+        class=" font-semibold text-5xl lg:text-8xl"
+      >
         Got Questions?
       </h4>
-      <p class="font-inter text-xs font-light text-white max-w-[300px] lg:max-w-md mx-auto">
+      <p class="lg:text-xs max-w-[380px] lg:max-w-lg mx-auto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
         dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
         vestibulum tortor feugiat.
@@ -66,7 +66,7 @@ const isViewingFaq = ref(null);
     </div>
 
     <!-- FAQ Section -->
-    <div class="lg:px-5" >
+    <div class="lg:px-5">
       <div
         v-for="(faq, index) in faqs"
         :key="faq.id"
@@ -76,7 +76,9 @@ const isViewingFaq = ref(null);
         @click="isViewingFaq = index"
       >
         <div class="flex lg:space-x-4 lg:justify-between items-center">
-          <h4 class="font-[600] font-inter text-xl lg:text-4xl tracking-wider flex-grow">
+          <h4
+            class="font-[600] font-inter text-xl lg:text-4xl tracking-wider flex-grow"
+          >
             {{ faq.question }}
           </h4>
           <p class="text-lg text-white hidden lg:block">
@@ -86,7 +88,7 @@ const isViewingFaq = ref(null);
 
         <p
           v-if="isViewingFaq === index"
-          class="lg:text-lg text-black font-light bg-white p-4 mt-12 animate__animated animate__slideInLeft "
+          class="lg:text-lg text-black font-light bg-white p-4 mt-12 animate__animated animate__slideInLeft"
         >
           {{ faq.description }}
         </p>
