@@ -87,7 +87,7 @@ onMounted(() => {
 
     <header class="h-[700px] bg-green-300 lg:hidden relative">
       <div
-        class="bg-black text-white absolute top-0 left-0 h-full w-full opacity-35"
+        class="bg-black text-white absolute top-0 left-0 h-full w-full opacity-50"
       ></div>
 
       <div class="text-white absolute bottom-0 ">

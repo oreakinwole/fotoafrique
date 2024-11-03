@@ -449,7 +449,5 @@ useHead({
   width: 200px !important;
   font-family: "Inter" !important;
   font-size: 1rem !important;
-
-  
 }
 </style>
