@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <header class="text-center py-14 pt-28">
+    <header class="text-center py-14 lg:pt-28">
       <p class="text-2xl lg:text-5xl font-[500] font-playfairDisplay">
         We’d love to hear from you
       </p>

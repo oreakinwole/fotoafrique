@@ -23,7 +23,7 @@ watch(loaderCount, (val: number) => {
 
 <template>
   <div
-    class="h-screen w-full z-10 bg-black absolute top-0 left-0"
+    class="h-screen w-full z-10 bg-black absolute top-0 left-0 flex justify-center items-center"
     v-if="isShowLoader"
   >
     <div class="relative">
@@ -53,9 +53,9 @@ watch(loaderCount, (val: number) => {
       </svg>
 
       <div
-        class="absolute flex flex-col items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#D0C2B0] text-4xl"
+        class="absolute flex flex-col   items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#D0C2B0] text-4xl"
       >
-        <p>{{ loaderCount }}%</p>
+        <p class="mt-6">{{ loaderCount }}%</p>
         <p class="text-xs font-semibold">Loading...</p>
       </div>
     </div>

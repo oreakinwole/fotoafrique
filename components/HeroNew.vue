@@ -85,31 +85,29 @@ onMounted(() => {
       </div>
     </header>
 
-    <header class="h-[700px] bg-green-300 lg:hidden relative">
+    <header class="h-[700px] bg-gray-200 lg:hidden relative">
       <div
         class="bg-black text-white absolute top-0 left-0 h-full w-full opacity-50"
       ></div>
 
-      <div class="text-white absolute bottom-0 ">
-
+      <div class="text-white absolute bottom-0">
         <div class="px-3">
           <p
-          class="font-semibold text-2xl max-w-[300px] leading-normal tracking-widest"
-        >
-          DON’T JUST LIKE YOUR YARD
-        </p>
-        <p class="text-8xl font-bold leading-tight tracking-wide">LOVE IT!</p>
-        <p class="font-light text-lg leading-normal tracking-widest">
-          Let us turn your outdoor space into a beautiful, custom-designed haven
-          that you’ll enjoy for years to come.
-        </p>
+            class="font-semibold text-2xl max-w-[300px] leading-normal tracking-widest"
+          >
+            DON’T JUST LIKE YOUR YARD
+          </p>
+          <p class="text-7xl font-bold leading-tight tracking-wide">LOVE IT!</p>
+          <p class="font-light text-lg leading-normal tracking-widest">
+            Let us turn your outdoor space into a beautiful, custom-designed
+            haven that you’ll enjoy for years to come.
+          </p>
         </div>
-     
 
-        <FilledButton
+        <FlatButton
           text="Book Free Consultation"
           text-color="white"
-          class="w-full mt-16 h-[65px] text-2xl  uppercase  bg-[#665244] rounded-none"
+          class="w-full mt-16 h-[75px] uppercase bg-[#665244]"
         />
       </div>
 

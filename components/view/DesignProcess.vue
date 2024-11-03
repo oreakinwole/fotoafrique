@@ -24,7 +24,7 @@
       class="px-2 lg:h-[300px] flex justify-between lg:justify-center flex-wrap gap-2 lg:gap-4 mt-12"
     >
       <div
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[49%] lg:w-[300px] rounded-lg"
+        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[48.9%] lg:w-[300px] rounded-lg"
       >
         <header
           class="h-[78%] p-2 relative rounded-lg bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover"
@@ -105,7 +105,7 @@
       </div>
 
       <div
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[49%] lg:w-[300px] rounded-lg"
+        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[48.9%] lg:w-[300px] rounded-lg"
       >
         <header
           class="h-[78%] p-2 relative rounded-lg bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover"
@@ -230,7 +230,7 @@
       </div>
 
       <div
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[49%] lg:w-[300px] rounded-lg"
+        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[48.9%] lg:w-[300px] rounded-lg"
       >
         <header
           class="h-[78%] p-2 relative rounded-lg bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover"
@@ -339,7 +339,7 @@
       </div>
 
       <div
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[49%] lg:w-[300px] rounded-lg"
+        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[48.9%] lg:w-[300px] rounded-lg"
       >
         <header
           class="h-[78%] p-2 relative rounded-lg bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover"
