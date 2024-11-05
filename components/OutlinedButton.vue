@@ -19,7 +19,7 @@ const handleBookConsult = () => {
 <template>
   <button
     @click="noAction ? null : handleBookConsult()"
-    class="relative w-[200px] h-[50px] overflow-hidden rounded-xl"
+    class="relative w-[200px]  md:w-[30rem] h-[50px] overflow-hidden rounded-xl"
     :style="{
       backgroundColor: backgroundColor,
       color: textColor,

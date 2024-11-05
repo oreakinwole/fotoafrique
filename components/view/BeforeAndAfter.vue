@@ -4,7 +4,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 
 <template>
   <!-- Before and After Section -->
-  <div class="w-full pb-1 my-20 lg:my-32">
+  <div class="w-full pb-1 my-20 lg:my-32 ">
     <div class="flex flex-col justify-center items-center">
       <h3
         class="font-semibold text-4xl lg:text-7xl text-black"
@@ -16,7 +16,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 
       <!--       Image Comparison Slider-->
       <div
-        class="px-2 text-center  my-14 h-[300px] lg:h-[600px]"
+        class="px-2 text-center md:w-[80%] sm:w-[80%] my-14 h-[300px] lg:h-[600px] md:h-[500px] sm:h-[400px]"
         data-aos="zoom-in"
         data-aos-offset="300"
         data-aos-duration="2000"
