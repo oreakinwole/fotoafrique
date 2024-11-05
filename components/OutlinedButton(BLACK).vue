@@ -25,7 +25,7 @@ export default {
 }
 </script>
 <template>
-  <button class="relative w-[200px] h-[50px] overflow-hidden rounded-xl"
+  <button class="relative w-[200px]  md:w-[30rem] h-[50px] overflow-hidden rounded-xl"
           :style="{ backgroundColor: backgroundColor, color: textColor, border: `1px solid ${borderColor}` }">
     <span class="text-xs">{{ text }}</span>
     <span class=" inset-0 bg-black transition-transform duration-[0.5s] transform -translate-x-full"></span>

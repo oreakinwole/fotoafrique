@@ -13,7 +13,7 @@
     </div>
   </div>
 
-  <div class="mt-12 lg:mt-28 flex">
+  <div class="mt-12 lg:mt-28 lg:flex">
     <div
       class="ml-32 mt-20 hidden lg:block text-center"
       data-aos="fade-up"
@@ -38,7 +38,7 @@
     </div>
 
     <div data-aos-duration="2000" data-aos-delay="400" data-aos="fade-in">
-      <div class="ml-20 hidden lg:block">
+      <div class="ml-20 hidden lg:block ">
         <NuxtMarquee class="max-w-[95em]">
           <div class="flex flex-row gap-8">
             <div>
@@ -259,17 +259,17 @@
         </NuxtMarquee>
       </div>
 
-      <div class="lg:hidden text-center">
-        <div class="flex flex-wrap justify-center gap-2 lg:gap-8">
-          <div class="w-[47%]">
+      <div class="lg:hidden text-center md:w-full md:mx-[1px] ">
+        <div class="flex flex-wrap justify-center gap-2 lg:gap-8 md:w-full">
+          <div class="w-[47%] md:w-[49%]">
             <NuxtLink to="services">
               <div
-                class="relative w-full h-[250px] cursor-pointer group explore-item"
+                class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/services/paver.png"
                   alt="frontyard picture"
-                  class="w-full h-full rounded-xl"
+                  class="w-full  h-full rounded-xl"
                 />
                 <div
                   class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
@@ -277,9 +277,9 @@
               </div>
             </NuxtLink>
 
-            <div class="flex justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">Paver Patios</h4>
-              <p class="font-[400] font-inter text-[16px]">
+            <div class="flex justify-between mt-5 ">
+              <h4 class="font-inter font-[500] text-[18px] md:mx-2">Paver Patios</h4>
+              <p class="font-[400] font-inter text-[16px] ">
                 <svg
                   width="24"
                   height="24"
@@ -308,10 +308,10 @@
             </div>
           </div>
 
-          <div class="w-[47%]">
+          <div class="w-[47%] md:w-[49%]">
             <NuxtLink to="services">
               <div
-                class="relative w-full h-[250px] cursor-pointer group explore-item"
+                class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/services/concrete.png"
@@ -325,7 +325,7 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">Concrete Patios</h4>
+              <h4 class="font-inter font-[500] text-[18px]  md:mx-2">Concrete Patios</h4>
               <p class="font-[400] font-inter text-[16px]">
                 <svg
                   width="24"
@@ -355,10 +355,10 @@
             </div>
           </div>
 
-          <div class="w-[47%]">
+          <div class="w-[47%] md:w-[49%]">
             <NuxtLink to="services">
               <div
-                class="relative w-full h-[250px] cursor-pointer group explore-item"
+                class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/services/turf.png"
@@ -372,7 +372,7 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">Artificial Turf</h4>
+              <h4 class="font-inter font-[500] text-[18px]  md:mx-2">Artificial Turf</h4>
               <p class="font-[400] font-inter text-[16px]">
                 <svg
                   width="24"
@@ -401,10 +401,10 @@
               </p>
             </div>
           </div>
-          <div class="w-[47%]">
+          <div class="w-[47%] md:w-[49%]">
             <NuxtLink to="services">
               <div
-                class="relative w-full h-[250px] cursor-pointer group explore-item"
+                class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
                 <img
                   src="@/assets/images/services/turf.png"
@@ -418,7 +418,7 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">Outdoor Kitchens</h4>
+              <h4 class="font-inter font-[500] text-[18px]  md:mx-2">Outdoor Kitchens</h4>
               <p class="font-[400] font-inter text-[16px]">
                 <svg
                   width="24"

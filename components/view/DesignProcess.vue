@@ -1,8 +1,8 @@
 <script setup></script>
 
 <template>
-  <div class="mt-12 lg:mt-28  lg:px-10 w-screen">
-    <div class="px-2 lg:px-20 lg:text-center">
+  <div class="mt-12 lg:mt-28  lg:px-10 w-screen md:mt-20">
+    <div class="px-2 md:px-8 lg:px-20 lg:text-center">
       <p class="font-semibold text-4xl lg:text-7xl mb-2 lg:mb-5">
         Our Design Process
       </p>
@@ -11,7 +11,7 @@
         Simple Steps to Your Dream Yard, Here’s how it works:
       </p>
       <p
-        class="text-md lg:text-xs text-[#454545] mt-4 max-w-screen-sm leading-relaxed mx-auto"
+        class="text-md lg:text-xs text-[#454545] mt-4 lg:max-w-screen-sm leading-relaxed lg:mx-auto"
       >
         Creating the outdoor space you’ve always wanted is easier than you
         think. Our collaborative design process ensures that every step is clear

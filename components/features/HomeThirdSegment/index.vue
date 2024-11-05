@@ -48,7 +48,7 @@ useHead({
     </h1>
 
     <h1
-      class="hidden lg:block text-left pl-20 font-bold text-9xl text-[#7B7B7B] opacity-50"
+      class="hidden lg:block text-left  pl-20 font-bold text-9xl text-[#7B7B7B] opacity-50"
       data-aos="slide-left"
       data-aos-duration="2000"
     >
@@ -63,10 +63,10 @@ useHead({
     </h1>
 
     <div
-      class="max-w-screen-lg relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-28 space-y-8"
+      class="max-w-screen-lg relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-28 space-y-8 "
     >
       <div
-        class="font-inter text-black max-w-md font-[400] text-xs leading-loose"
+        class="font-inter text-black max-w-md font-[400] text-xs leading-loose "
       >
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">01</span>
         <p class="mt-4 text-[#454545]">
@@ -105,7 +105,7 @@ useHead({
       <div
         data-aos="slide-up"
         data-aos-duration="2000"
-        class="hidden lg:block w-[400px] h-[630px] bg-blue-100 rounded-t-full absolute -top-40 right-0"
+        class="hidden lg:block md:block md:w-[38%] md:mr-2 md:h-[500px]  w-[400px] h-[630px] bg-blue-100 rounded-t-full absolute lg:-top-40 md:-top-0 right-0"
       >
         <video
           class="w-full h-full object-cover rounded-t-full bg-[url('@/assets/images/why_ch_bg.jpg')] bg-no-repeat bg-top bg-cover"
