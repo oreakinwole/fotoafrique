@@ -91,7 +91,7 @@ onMounted(() => {
       ></div>
 
       <div class="text-white absolute bottom-0">
-        <div class="px-3">
+        <div class="px-5 md:px-8">
           <p
             class="font-semibold text-2xl max-w-[300px] leading-normal tracking-widest"
           >
