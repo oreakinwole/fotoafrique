@@ -122,6 +122,7 @@ const handleBookConsult = () => {
                 @click="isShowMobileNav = false"
               >
                 <NuxtLink to="/services">Services</NuxtLink>
+                <NuxtLink to="/services">Services</NuxtLink>
               </li>
               <li
                 class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
