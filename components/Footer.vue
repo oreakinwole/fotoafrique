@@ -9,10 +9,10 @@ const handleBookConsult = () => {
 </script>
 
 <template>
-  <footer class="w-full h-fit mt-[-10rem] lg:mt-0 lg:pb-12 bg-black text-white lg:pt-10">
+  <footer class="w-full h-fit pb-12 bg-black text-white pt-10">
     <!-- first layout -->
 
-    <div class="hidden lg:flex lg:flex-col lg:items-center lg:justify-center">
+    <div class="flex flex-col items-center justify-center">
       <h1
         class="text-center font-playfairDisplay text-3xl lg:text-6xl flex flex-col italic max-w-80 lg:max-w-screen-sm"
       >
@@ -33,7 +33,7 @@ const handleBookConsult = () => {
       class="flex flex-row flex-wrap lg:flex-nowrap gap-8 lg:gap-0 justify-between mt-14 font-inter text-[#D0C2B0] lg:px-32"
     >
       <div
-        class="lg:border border border-l-0 border-r-0 border-[#665244] lg:border-l-0 border-t-0 pt-10 pb-28 lg:w-[150rem] mx-5 lg:mx-0 lg:pl-10"
+        class="border border-[#665244] border-l-0 pt-10 pb-28 lg:w-[150rem] mx-5 lg:mx-0 lg:pl-10"
       >
         <h4 class="uppercase text-sm lg:text-md">
           Subscribe to receive ModernYardz news & offers
@@ -62,7 +62,7 @@ const handleBookConsult = () => {
       </div>
 
       <div
-        class="flex flex-row gap-12 font-[400] text-[16px] lg:border border-[#665244] lg:border-r-0 py-10 pl-5 lg:pl-12 w-[180rem]"
+        class="flex flex-row gap-12 font-[400] text-[16px] border border-[#665244] border-r-0 py-10 pl-5 lg:pl-12 w-[180rem]"
       >
         <div class="flex flex-col gap-5">
           <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
@@ -100,45 +100,36 @@ const handleBookConsult = () => {
     </div>
 
     <!-- third layout -->
-    <!-- <div
-      class="hidden lg:flex lg:flex-row justify-between text-[#D0C2B0] px-32"
-    > -->
     <div
-      class="lg:flex lg:flex-row justify-between text-[#D0C2B0] lg:px-32"
+      class="hidden lg:flex lg:flex-row justify-between text-[#D0C2B0] px-32"
     >
       <div
-        class="border border-[#665244] border-l-0 border-t-0 border-b-0 lg:border-b w-[150rem] text-[12px] font-inter font-[400]"
+        class="border border-[#665244] border-l-0 border-t-0 w-[150rem] text-[12px] font-inter font-[400]"
       >
-        <div class="uppercase lg:flex lg:flex-row">
-          <div class="lg:flex flex flex-row lg:ml-0 ml-[1rem]"><p
-            class="border border-[#665244] px-[3.9rem] py-5 lg:border-t-0 cursor-pointer"
+        <div class="uppercase flex flex-row">
+          <p
+            class="border border-[#665244] px-[3.9rem] py-5 border-t-0 cursor-pointer"
           >
             Instagram
           </p>
           <p
-            class="border border-[#665244] px-[3.9rem] py-5 lg:border-t-0 cursor-pointer"
+            class="border border-[#665244] px-[3.9rem] py-5 border-t-0 cursor-pointer"
           >
             Facebook
           </p>
-        </div>
-          
-
-
-          <div class="lg:flex flex flex-row lg:ml-0 ml-[1rem]">
-            <p
-            class="border border-[#665244] lg:px-[3.85rem] px-[3rem] py-5  border-t-0 cursor-pointer"
+          <p
+            class="border border-[#665244] px-[3.85rem] py-5 border-t-0 cursor-pointer"
           >
             Pinterest
           </p>
           <p
-            class="border border-[#665244] lg:px-[3.8rem] px-[5.3rem] py-5 border-t-0 cursor-pointer"
+            class="border border-[#665244] px-[3.8rem] py-5 border-t-0 cursor-pointer"
           >
             Twitter
           </p>
-          </div>
         </div>
 
-        <div class="pt-8 pb-4 lg:ml-16 ml-4">
+        <div class="pt-8 pb-4 ml-16">
           <select class="bg-black py-2 font-inter text-[14px] font-[300]">
             <option class="">🇺🇸 &nbsp;&nbsp; United States</option>
           </select>
@@ -146,12 +137,11 @@ const handleBookConsult = () => {
       </div>
 
       <div
-        class="flex lg:flex-row flex-col lg:space-x-4 border border-[#665244] border-b-0 lg:border-b border-r-0 w-[180rem] pl-5 lg:pt-20 border-t-0 font-inter font-[400]"
+        class="flex flex-row space-x-4 border border-[#665244] border-r-0 w-[180rem] pl-5 pt-20 border-t-0 font-inter font-[400]"
       >
         <p class="text-sm mt-1 font-light">We Accept</p>
 
-       <div class="flex gap-3 lg:mt-0 mt-3 lg:mr-0 ">
-        <div class="">
+        <div>
           <img
             src="/images/footer/icons/AmazonPay.png"
             alt="amazon icon"
@@ -194,16 +184,15 @@ const handleBookConsult = () => {
             width="35"
           />
         </div>
-       </div>
       </div>
     </div>
 
     <!-- fourth layout -->
     <div
-      class=" text-[#D0C2B0] lg:flex lg:flex-row justify-between mt-10 text-center lg:pt-0 pt-5 lg:pb-0 pb-24 lg:px-72 text-[12px] font-inter font-[400] uppercase"
+      class="hidden text-[#D0C2B0] lg:flex lg:flex-row justify-between mt-10 px-72 text-[12px] font-inter font-[400]"
     >
       <p>© 2024 MODERNYARDZ.com. All rights reserved.</p>
-      <p class="lg:mt-0 mt-3">Privacy Policy | Terms of Use</p>
+      <p>Privacy Policy | Terms of Use</p>
     </div>
 
     <div
