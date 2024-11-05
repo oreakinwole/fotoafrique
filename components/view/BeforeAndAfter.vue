@@ -61,6 +61,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 
 
         <FilledButton
+         :no-action="true"
         background-color="black"
         text="SEE MORE"
         text-color="white"

@@ -2,14 +2,14 @@
 
 <template>
   <div class="mt-20 lg:mt-28 lg:px-10 w-screen">
-    <div class=" px-4 lg:px-20 lg:text-center">
+    <div class="px-4 lg:px-20 lg:text-center">
       <p class="font-semibold text-4xl lg:text-7xl mb-12 lg:mb-5">
-        What Our Clients<br>Are Saying
+        What Our Clients<br />Are Saying
       </p>
     </div>
 
     <section
-      class="  px-2 lg:h-[300px] flex justify-between lg:justify-center flex-wrap gap-2 lg:gap-4 mt-12"
+      class="px-2 lg:h-[300px] flex justify-between lg:justify-center flex-wrap gap-2 lg:gap-4 mt-12"
     >
       <div
         class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[330px] lg:h-full w-[48.9%] lg:w-[300px] rounded-lg"
@@ -98,10 +98,11 @@
 
     <footer class="lg:px-20 mt-14 text-center">
       <FilledButton
+        :no-action="true"
         background-color="black"
         text="SEE OUR PORTFOLIO"
         text-color="white"
-        class="w-[90%]  font-semibold lg:w-[290px]"
+        class="w-[90%] font-semibold lg:w-[290px]"
       />
     </footer>
   </div>
