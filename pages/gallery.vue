@@ -5,9 +5,13 @@
 <template>
   <div>
     <div class="px-4 lg:px-20 lg:pt-28">
-      <!-- <p class="lg:hidden font-playfairDisplay text-4xl font-medium">
-          Portfoli<span class="text-new-gray font-imperial text-4xl">O</span>
-        </p> -->
+      <ul class="flex space-x-6 text-md justify-center font-medium">
+        <li>Paver Gallery</li>
+        <li>Concrete Gallery</li>
+        <li>Turf Gallery</li>
+        <li> Patio Covers </li>
+        <li>Outdoor Kitchens</li>
+      </ul>
       <section>
         <p class="font-playfairDisplay text-4xl font-medium mt-10">
           Paver
