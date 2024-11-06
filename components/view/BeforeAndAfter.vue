@@ -4,14 +4,14 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 
 <template>
   <!-- Before and After Section -->
-  <div class="w-full pb-1 my-20 lg:my-32 ">
+  <div class="w-full pb-1 my-20 lg:my-32">
     <div class="flex flex-col justify-center items-center">
       <h3
         class="font-semibold text-4xl lg:text-7xl text-black"
         data-aos-duration="2000"
         data-aos="fade-down"
       >
-      Before <span class="text-[#454545]">&</span> After
+        Before <span class="text-[#454545]">&</span> After
       </h3>
 
       <!--       Image Comparison Slider-->
@@ -27,12 +27,22 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
           <!-- eslint-disable -->
           <img
             slot="first"
-            style="width: 100%; object-fit: cover; object-position: center; height: 100%"
+            style="
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+              height: 100%;
+            "
             src="@/assets/images/before.jpg"
           />
           <img
             slot="second"
-            style="width: 100%; object-fit: cover; object-position: center; height: 100%"
+            style="
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+              height: 100%;
+            "
             src="@/assets/images/after.jpg"
           />
 
@@ -59,19 +69,16 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
           <!-- eslint-enable -->
         </ImgComparisonSlider>
 
-
         <NuxtLink to="gallery">
-        <FilledButton
-         :no-action="true"
-        background-color="black"
-        text="SEE MORE"
-        text-color="white"
-        class="w-[90%] lg:w-[200px] mt-16"
-      />
-    </NuxtLink>
+          <FilledButton
+            :no-action="true"
+            background-color="black"
+            text="SEE MORE"
+            text-color="white"
+            class="w-[90%] lg:w-[200px] mt-16"
+          />
+        </NuxtLink>
       </div>
-
-
     </div>
   </div>
 </template>

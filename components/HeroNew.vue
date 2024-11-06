@@ -67,6 +67,8 @@ onMounted(() => {
           Let us turn your outdoor space into a beautiful, <br />
           custom-designed haven that you’ll enjoy for years to come.
         </p>
+
+
       </div>
 
       <div
@@ -83,6 +85,8 @@ onMounted(() => {
           Something went wrong while playing video
         </video>
       </div>
+
+      
     </header>
 
     <header class="h-[700px] bg-gray-200 lg:hidden relative">
@@ -93,23 +97,27 @@ onMounted(() => {
       <div class="text-white absolute bottom-0">
         <div class="px-5 md:px-8">
           <p
-          data-aos="fade-in"
-        data-aos-easing="linear"
-        data-aos-duration="900"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+            data-aos-duration="900"
             class="font-semibold text-2xl max-w-[300px] leading-normal tracking-widest"
           >
             DON’T JUST LIKE YOUR YARD
           </p>
-          <p 
-          data-aos="fade-in"
-        data-aos-easing="linear"
-        data-aos-duration="900"
-          class="text-7xl font-bold leading-tight tracking-wide">LOVE IT!</p>
           <p
-          data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="1100"
-          class="font-light text-lg leading-normal tracking-widest">
+            data-aos="fade-in"
+            data-aos-easing="linear"
+            data-aos-duration="900"
+            class="text-7xl font-bold leading-tight tracking-wide"
+          >
+            LOVE IT!
+          </p>
+          <p
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1100"
+            class="font-light text-lg leading-normal tracking-widest"
+          >
             Let us turn your outdoor space into a beautiful, custom-designed
             haven that you’ll enjoy for years to come.
           </p>
@@ -128,15 +136,25 @@ onMounted(() => {
       </video>
     </header>
   </div>
-   <div class="pt-20" data-aos="fade-up" >
-      <!-- <p class="uppercase text-center font-inter font-[400] text-[12px]">
+
+  <div class="text-center mt-16">
+    <FilledButton
+    background-color="black"
+    text="Design Your Dream Yard"
+    text-color="white"
+    class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
+  />
+  </div>
+  
+  <div class="pt-16 " data-aos="fade-up">
+    <!-- <p class="uppercase text-center font-inter font-[400] text-[12px]">
         Our Partners
       </p> -->
-
-      <div class="lg:mt-8">
-        <NuxtMarquee class="max-w-[55em] mx-auto" :speed="20">
-          <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
-        </NuxtMarquee>
-      </div>
+   
+    <div class="lg:mt-8">
+      <NuxtMarquee class="max-w-[55em] mx-auto" :speed="20">
+        <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
+      </NuxtMarquee>
     </div>
+  </div>
 </template>
