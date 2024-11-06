@@ -128,12 +128,6 @@ const handleBookConsult = () => {
                 class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
-                <NuxtLink to="/finance">Finance</NuxtLink>
-              </li>
-              <li
-                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
-                @click="isShowMobileNav = false"
-              >
                 <NuxtLink to="portfolio">Portfolio</NuxtLink>
               </li>
               <li

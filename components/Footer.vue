@@ -19,12 +19,14 @@ const handleBookConsult = () => {
         We'll definitely give you value for your money
       </h1>
       <div class="font-inter font-[500] text-[16px] mt-12">
-        <OutlinedButton(BLACK)
-          border-color="#FCFBFA"
-          text-color="#FCFBFA"
-          background-color="black"
-          text="EXPLORE OUR PRODUCTS"
-        />
+        <NuxtLink to="services">
+          <OutlinedButton(BLACK)
+            border-color="#FCFBFA"
+            text-color="#FCFBFA"
+            background-color="black"
+            text="EXPLORE OUR PRODUCTS"
+          />
+        </NuxtLink>
       </div>
     </div>
 
@@ -202,7 +204,7 @@ const handleBookConsult = () => {
         @click="handleBookConsult"
         src="/images/hero/icons/chat.png"
         alt="chat icon"
-        class=" hover:scale-110 duration-200 ease-linear w-16 h-16 lg:w-14 lg:h-14 xl:w-20 xl:h-20 fixed right-4 bottom-4 lg:right-10 lg:bottom-10 cursor-pointer z-50 chat"
+        class="hover:scale-110 duration-200 ease-linear w-16 h-16 lg:w-14 lg:h-14 xl:w-20 xl:h-20 fixed right-4 bottom-4 lg:right-10 lg:bottom-10 cursor-pointer z-50 chat"
       />
     </div>
   </footer>

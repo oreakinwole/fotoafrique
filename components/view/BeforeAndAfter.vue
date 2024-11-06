@@ -11,12 +11,12 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
         data-aos-duration="2000"
         data-aos="fade-down"
       >
-      Before <span class="text-[#454545]">&</span> After
+        Before <span class="text-[#454545]">&</span> After
       </h3>
 
       <!--       Image Comparison Slider-->
       <div
-        class="px-2 text-center  my-14 h-[300px] lg:h-[600px]"
+        class="px-2 text-center md:w-[80%] sm:w-[80%] my-14 h-[300px] lg:h-[600px] md:h-[500px] sm:h-[400px]"
         data-aos="zoom-in"
         data-aos-offset="300"
         data-aos-duration="2000"
@@ -27,12 +27,22 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
           <!-- eslint-disable -->
           <img
             slot="first"
-            style="width: 100%; object-fit: cover; object-position: center; height: 100%"
+            style="
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+              height: 100%;
+            "
             src="@/assets/images/before.jpg"
           />
           <img
             slot="second"
-            style="width: 100%; object-fit: cover; object-position: center; height: 100%"
+            style="
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+              height: 100%;
+            "
             src="@/assets/images/after.jpg"
           />
 
@@ -59,16 +69,16 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
           <!-- eslint-enable -->
         </ImgComparisonSlider>
 
-
-        <FilledButton
-        background-color="black"
-        text="SEE MORE"
-        text-color="white"
-        class="w-[90%] lg:w-[200px] mt-16"
-      />
+        <NuxtLink to="gallery">
+          <FilledButton
+            :no-action="true"
+            background-color="black"
+            text="SEE MORE"
+            text-color="white"
+            class="w-[90%] lg:w-[200px] mt-16"
+          />
+        </NuxtLink>
       </div>
-
-
     </div>
   </div>
 </template>

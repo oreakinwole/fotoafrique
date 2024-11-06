@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="hidden lg:block">
     <div class="flex  justify-between px-44  ig">
       <p class="text-black font-[600] text-[32px] font-playfairDisplay">
         #modernyardz

@@ -1,5 +1,5 @@
 <script setup>
-defineProps(["text", "backgroundColor", "textColor"]);
+defineProps(["text", "backgroundColor", "textColor", "noAction"]);
 
 const handleBookConsult = () => {
   const calendly = useCalendly();
@@ -12,8 +12,8 @@ const handleBookConsult = () => {
 
 <template>
   <button
-    @click="handleBookConsult"
-    class="relative w-[200px] h-[50px] overflow-hidden rounded-xl"
+    @click="noAction ? null : handleBookConsult()"
+    class="relative lg:w-[200px] w-[80%] md:w-[30rem] h-[50px] overflow-hidden rounded-xl"
     :style="{ backgroundColor: backgroundColor, color: textColor }"
   >
     <span

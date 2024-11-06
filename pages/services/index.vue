@@ -16,9 +16,9 @@ onMounted(() => {
     },
   });
 
-  tl.to("#pin-windmill-svg", {
-    // rotateZ: 900,
-  });
+  // tl.to("#pin-windmill-svg", {
+  //   rotateZ: 900,
+  // });
 });
 </script>
 
@@ -47,10 +47,10 @@ onMounted(() => {
         />
       </div>
 
-      <div class="w-1/2 grid grid-cols-2 gap-4">
-        <main class="col-span-1 space-y-20 mt-28">
+      <div class="w-1/2 grid grid-cols-2 gap-8">
+        <main class="col-span-1 space-y-8 mt-28 ">
           <div
-            class="w-full h-[400px] hover:scale-110 duration-300 ease-linear bg-black"
+            class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
             <NuxtLink to="services/landscape">
               <img
@@ -61,7 +61,7 @@ onMounted(() => {
           </div>
 
           <div
-            class="w-full h-[400px] hover:scale-110 duration-300 ease-linear bg-black"
+            class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
             id="pin-windmill-svg"
           >
             <NuxtLink to="services/landscape">
@@ -73,7 +73,7 @@ onMounted(() => {
           </div>
 
           <div
-            class="w-full h-[400px] hover:scale-110 duration-300 ease-linear bg-black"
+            class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
             <NuxtLink to="services/landscape">
               <img
@@ -84,8 +84,7 @@ onMounted(() => {
           </div>
 
           <div
-            class="w-full h-[400px] hover:scale-110 duration-300 ease-linear bg-black"
-            id="pin-windmill-wrap"
+            class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
             <NuxtLink to="services/landscape">
               <img
@@ -95,7 +94,7 @@ onMounted(() => {
             </NuxtLink>
           </div>
           <div
-            class="w-full h-[400px] hover:scale-110 duration-300 ease-linear bg-black"
+            class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
             <NuxtLink to="services/landscape">
               <img
@@ -106,9 +105,9 @@ onMounted(() => {
           </div>
         </main>
 
-        <main class="col-span-1 space-y-20">
+        <main class="col-span-1 space-y-8">
           <div
-            class="w-full h-[400px] hover:scale-110 duration-300 ease-linear bg-black"
+            class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
             <NuxtLink to="services/landscape">
               <img
@@ -119,7 +118,7 @@ onMounted(() => {
           </div>
 
           <div
-            class="w-full h-[400px] hover:scale-110 duration-300 ease-linear bg-black"
+            class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
             <NuxtLink to="services/landscape">
               <img
@@ -130,7 +129,7 @@ onMounted(() => {
           </div>
 
           <div
-            class="w-full h-[400px] hover:scale-110 duration-300 ease-linear bg-black"
+            class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
             <NuxtLink to="services/landscape">
               <img
@@ -141,7 +140,7 @@ onMounted(() => {
           </div>
 
           <div
-            class="w-full h-[400px] hover:scale-110 duration-300 ease-linear bg-black"
+            class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
             <NuxtLink to="services/landscape">
               <img
@@ -152,8 +151,10 @@ onMounted(() => {
           </div>
 
           <div
-            class="w-[300px] h-[400px] hover:scale-110 duration-300 ease-linear bg-black"
-          >
+            class="w-[300px] min-h-[400px]  duration-300 ease-linear bg-black"
+            id="pin-windmill-wrap"
+         
+            >
             <NuxtLink to="services/landscape">
               <img
                 class="explore-item"
