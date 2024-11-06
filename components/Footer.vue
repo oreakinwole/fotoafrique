@@ -198,13 +198,13 @@ const handleBookConsult = () => {
     </div>
 
     <div
-      class="hidden relative lg:flex-1 lg:flex justify-center items-center mt-10 lg:mt-0 animate__animated animate__fadeIn animate__slower"
+      class=" relative flex-1 flex justify-center items-center mt-10 lg:mt-0 animate__animated animate__fadeIn animate__slower z-50"
     >
       <img
         @click="handleBookConsult"
         src="/images/hero/icons/chat.png"
         alt="chat icon"
-        class="hover:scale-110 duration-200 ease-linear w-16 h-16 lg:w-14 lg:h-14 xl:w-20 xl:h-20 fixed right-4 bottom-4 lg:right-10 lg:bottom-10 cursor-pointer z-50 chat"
+        class="hover:scale-110 duration-200 ease-linear w-16 h-16 lg:w-14 lg:h-14 xl:w-20 xl:h-20 fixed right-4 bottom-4 lg:right-10 lg:bottom-10 cursor-pointer  chat"
       />
     </div>
   </footer>

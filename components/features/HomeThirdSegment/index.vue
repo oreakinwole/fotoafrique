@@ -120,7 +120,7 @@ useHead({
     </div>
   </div>
 
-  <Testimonial />
+  <ViewTestimonial />
 
   <div class="lg:hidden mt-24 px-6" data-aos="fade-up" data-aos-easing="linear">
     <h4 class="text-4xl mb-4 font-semibold">Packages</h4>

@@ -5,12 +5,12 @@
 <template>
   <div>
     <div class="px-4 lg:px-20 lg:pt-28">
-      <ul class="flex space-x-6 text-md justify-center font-medium">
-        <li>Paver Gallery</li>
-        <li>Concrete Gallery</li>
-        <li>Turf Gallery</li>
-        <li> Patio Covers </li>
-        <li>Outdoor Kitchens</li>
+      <ul class="flex mt-8 lg:space-x-6 text-md justify-center font-medium">
+        <li><a href="#paver">Paver Gallery</a></li>
+        <li><a href="#concrete">Concrete Gallery</a></li>
+        <li><a href="#turf">Turf Gallery</a></li>
+        <li><a href="#patio">Patio Covers</a></li>
+        <li><a href="#outdoor">Outdoor Kitchens</a></li>
       </ul>
       <section>
         <p class="font-playfairDisplay text-4xl font-medium mt-10">
@@ -276,7 +276,7 @@
         </div>
       </section>
 
-      <section class="">
+      <section id="concrete">
         <p class="font-playfairDisplay text-4xl font-medium mt-10">
           Concrete
           <span class="text-new-gray font-imperial text-5xl">G</span>allery
@@ -296,7 +296,7 @@
         </div>
       </section>
 
-      <section class="mt-20">
+      <section id="turf" class="mt-20">
         <div>
           <p class="font-playfairDisplay text-4xl font-medium">
             Turf
@@ -315,7 +315,7 @@
         </div>
       </section>
 
-      <section class="mt-20">
+      <section id="patio" class="mt-20">
         <div>
           <p class="font-playfairDisplay text-4xl font-medium">
             Patio Covers &
@@ -328,13 +328,16 @@
               :key="i"
               class="bg-gray-100 pt-8 flex items-center justify-center"
             >
-              <img src="@/assets/images/patio.png" class="h-[330px] w-[340px]" />
+              <img
+                src="@/assets/images/patio.png"
+                class="h-[330px] w-[340px]"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="mt-20">
+      <section id="outdoor" class="mt-20">
         <div>
           <p class="font-playfairDisplay text-4xl font-medium">
             Outdoor
@@ -347,7 +350,10 @@
               :key="i"
               class="bg-gray-100 pt-8 flex items-center justify-center"
             >
-              <img src="@/assets/images/outdoor-kitchen.png" class="h-[330px] w-[340px]" />
+              <img
+                src="@/assets/images/outdoor-kitchen.png"
+                class="h-[330px] w-[340px]"
+              />
             </div>
           </div>
         </div>

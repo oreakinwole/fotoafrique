@@ -67,8 +67,6 @@ onMounted(() => {
           Let us turn your outdoor space into a beautiful, <br />
           custom-designed haven that you’ll enjoy for years to come.
         </p>
-
-
       </div>
 
       <div
@@ -85,8 +83,6 @@ onMounted(() => {
           Something went wrong while playing video
         </video>
       </div>
-
-      
     </header>
 
     <header class="h-[700px] bg-gray-200 lg:hidden relative">
@@ -137,20 +133,20 @@ onMounted(() => {
     </header>
   </div>
 
-  <div class="text-center mt-16">
+  <div class="hidden lg:block text-center mt-16">
     <FilledButton
-    background-color="black"
-    text="Design Your Dream Yard"
-    text-color="white"
-    class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
-  />
+      background-color="black"
+      text="Design Your Dream Yard"
+      text-color="white"
+      class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
+    />
   </div>
-  
-  <div class="pt-16 " data-aos="fade-up">
+
+  <div class="pt-16" data-aos="fade-up">
     <!-- <p class="uppercase text-center font-inter font-[400] text-[12px]">
         Our Partners
       </p> -->
-   
+
     <div class="lg:mt-8">
       <NuxtMarquee class="max-w-[55em] mx-auto" :speed="20">
         <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
