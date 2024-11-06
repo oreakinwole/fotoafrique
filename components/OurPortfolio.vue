@@ -54,7 +54,7 @@ const isViewingFaq = ref(null);
   <div class="w-full bg-black text-white pt-20 lg:pt-20 lg:mb-28 cursor-help">
     <div class="space-y-4 lg:space-y-8 text-center pb-14 lg:pb-20">
       <h4
-        class=" font-semibold text-5xl lg:text-8xl"
+        class=" font-semibold text-5xl lg:text-6xl"
       >
         Got Questions?
       </h4>
@@ -70,20 +70,20 @@ const isViewingFaq = ref(null);
       <div
         v-for="(faq, index) in faqs"
         :key="faq.id"
-        class="lg:max-w-[85%] lg:pl-5 px-2 border-t border-b border-[#F5F0EA] py-6 mx-3 lg:mx-8 relative"
+        class="lg:max-w-[790px]   border-t border-b border-[#F5F0EA] py-6 mx-3 lg:mx-auto relative"
         @mouseenter="faq.hover = true"
         @mouseleave="faq.hover = false"
         @click="isViewingFaq = index"
       >
         <div class="flex lg:space-x-4 lg:justify-between items-center">
           <h4
-            class="font-[600] font-inter text-xl lg:text-4xl tracking-wider flex-grow"
+            class="font-[600] font-inter text-xl lg:text-2xl tracking-wider flex-grow"
           >
             {{ faq.question }}
           </h4>
-          <p class="text-lg text-white hidden lg:block">
+          <!-- <p class="text-lg text-white hidden lg:block">
             {{ faq.fullQuestion }}
-          </p>
+          </p> -->
         </div>
 
         <p
@@ -96,13 +96,17 @@ const isViewingFaq = ref(null);
     </div>
 
     <div class="flex justify-center mx-auto py-20 pb-32">
+
+      <NuxtLink to="services">
+
       <OutlinedButton(BLACK)
         border-color="#fff"
         text-color="#fff"
         background-color="transparent"
-        text="SEE MORE"
-        class="lg:mt-10 w-[90%] lg:w-[200px]"
+        text="WHAT WE OFFER"
+        class="lg:mt-10  lg:w-[200px]"
       />
+      </NuxtLink>
     </div>
   </div>
 </template>

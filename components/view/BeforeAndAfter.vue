@@ -60,6 +60,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
         </ImgComparisonSlider>
 
 
+        <NuxtLink to="gallery">
         <FilledButton
          :no-action="true"
         background-color="black"
@@ -67,6 +68,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
         text-color="white"
         class="w-[90%] lg:w-[200px] mt-16"
       />
+    </NuxtLink>
       </div>
 
 

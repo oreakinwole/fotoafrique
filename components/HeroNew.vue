@@ -93,19 +93,30 @@ onMounted(() => {
       <div class="text-white absolute bottom-0">
         <div class="px-5 md:px-8">
           <p
+          data-aos="fade-in"
+        data-aos-easing="linear"
+        data-aos-duration="900"
             class="font-semibold text-2xl max-w-[300px] leading-normal tracking-widest"
           >
             DON’T JUST LIKE YOUR YARD
           </p>
-          <p class="text-7xl font-bold leading-tight tracking-wide">LOVE IT!</p>
-          <p class="font-light text-lg leading-normal tracking-widest">
+          <p 
+          data-aos="fade-in"
+        data-aos-easing="linear"
+        data-aos-duration="900"
+          class="text-7xl font-bold leading-tight tracking-wide">LOVE IT!</p>
+          <p
+          data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1100"
+          class="font-light text-lg leading-normal tracking-widest">
             Let us turn your outdoor space into a beautiful, custom-designed
             haven that you’ll enjoy for years to come.
           </p>
         </div>
 
         <FlatButton
-          text="Book Free Consultation"
+          text="Design your dream yard"
           text-color="white"
           class="w-full mt-16 h-[75px] uppercase bg-[#665244]"
         />
@@ -117,12 +128,12 @@ onMounted(() => {
       </video>
     </header>
   </div>
-   <div class="pt-48 mb-36 h-96" data-aos="fade-up" data-aos-duration="2000">
-      <p class="uppercase text-center font-inter font-[400] text-[12px]">
+   <div class="pt-20" data-aos="fade-up" >
+      <!-- <p class="uppercase text-center font-inter font-[400] text-[12px]">
         Our Partners
-      </p>
+      </p> -->
 
-      <div class="mt-8">
+      <div class="lg:mt-8">
         <NuxtMarquee class="max-w-[55em] mx-auto" :speed="20">
           <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
         </NuxtMarquee>

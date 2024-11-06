@@ -97,6 +97,8 @@
     </section>
 
     <footer class="lg:px-20 mt-14 text-center">
+      <NuxtLink to="gallery">
+
       <FilledButton
         :no-action="true"
         background-color="black"
@@ -104,6 +106,8 @@
         text-color="white"
         class="w-[90%] font-semibold lg:w-[290px]"
       />
+    </NuxtLink>
+
     </footer>
   </div>
 </template>

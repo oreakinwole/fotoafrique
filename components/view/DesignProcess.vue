@@ -1,8 +1,12 @@
 <script setup></script>
 
 <template>
-  <div class="mt-12 lg:mt-28  lg:px-10 w-screen md:mt-20">
-    <div class="px-2 md:px-8 lg:px-20 lg:text-center">
+  <div class="mt-20 lg:mt-28 lg:px-10 w-screen md:mt-20">
+    <div
+      class="px-2 md:px-8 lg:px-20 lg:text-center"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+    >
       <p class="font-semibold text-4xl lg:text-7xl mb-2 lg:mb-5">
         Our Design Process
       </p>
@@ -24,6 +28,8 @@
       class="px-2 lg:h-[300px] flex justify-between lg:justify-center flex-wrap gap-2 lg:gap-4 mt-12"
     >
       <div
+      data-aos="fade-up"
+        data-aos-easing="linear"
         class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[48.9%] lg:w-[300px] rounded-lg"
       >
         <header
@@ -105,6 +111,11 @@
       </div>
 
       <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-delay="400"
+        data-aos-duration="900"
+
         class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[48.9%] lg:w-[300px] rounded-lg"
       >
         <header
@@ -230,6 +241,10 @@
       </div>
 
       <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-delay="600"
+        data-aos-duration="900"
         class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[48.9%] lg:w-[300px] rounded-lg"
       >
         <header
@@ -339,6 +354,10 @@
       </div>
 
       <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-delay="800"
+        data-aos-duration="900"
         class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] lg:h-full w-[48.9%] lg:w-[300px] rounded-lg"
       >
         <header
