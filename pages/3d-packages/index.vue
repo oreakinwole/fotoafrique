@@ -37,6 +37,6 @@
       />
     </section>
 
-    <OurPortfolio />
+    <!-- <FAQs /> -->
   </div>
 </template>

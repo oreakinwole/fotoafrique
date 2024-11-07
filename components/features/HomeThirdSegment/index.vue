@@ -437,7 +437,7 @@ useHead({
     </video>
   </div>
 
-  <OurPortfolio class="mb-16" />
+  <!-- <FAQs class="mb-16" /> -->
 </template>
 
 <style lang="scss">

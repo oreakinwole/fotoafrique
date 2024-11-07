@@ -42,5 +42,5 @@
       />
     </section>
 
-    <OurPortfolio class="" />
+    <!-- <FAQs class="" /> -->
 </template>

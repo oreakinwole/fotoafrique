@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup >
+
+defineProps(["title"]);
+
+</script>
 
 <template>
   <div class="lg:px-20 lg:pt-20">
@@ -12,7 +16,7 @@
 
       <div class="flex-1 space-y-5 px-4">
         <p class="font-playfairDisplay text-5xl font-medium">
-          Landscape Design SD
+          {{ title }}
         </p>
         <p class="text-brown text-sm max-w-lg">
           San Diego, a city renowned for its stunning landscapes and vibrant

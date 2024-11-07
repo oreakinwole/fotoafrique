@@ -1,6 +1,29 @@
 <script setup>
 import autoAnimate from "@formkit/auto-animate";
 
+const faqDah = ref([
+  {
+    question: "What makes Modern Yardz a top landscaper in San Diego?",
+    acceptedAnswer:
+      "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
+  },
+  {
+    question: "Can Modern Yardz help with small landscaping projects?",
+    acceptedAnswer:
+      "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
+  },
+  {
+    question: "Does Modern Yardz offer eco-friendly landscaping solutions?",
+    acceptedAnswer:
+      "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
+  },
+  {
+    question: "How long does a typical landscaping project take to complete?",
+    acceptedAnswer:
+      "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
+  },
+]);
+
 const turfGallery = ref(1);
 const autoAniSection = ref();
 
@@ -26,7 +49,7 @@ onMounted(() => {
         Portfoli<span class="text-new-gray font-imperial text-4xl">O</span>
       </p>
 
-      <ul class=" flex lg:hidden justify-between max-w-[220px] font-medium">
+      <ul class="flex lg:hidden justify-between max-w-[220px] font-medium">
         <li>Style</li>
         <li class="text-new-gray">Elegance</li>
         <li class="text-new-gray">Creative</li>
@@ -233,7 +256,8 @@ onMounted(() => {
       </div>
     </div>
 
-    <OurPortfolio />
+    <!-- <FAQs class="mb-16" :faq-data="faqDah" /> -->
+
     <!-- <GetYourYard /> -->
   </div>
 </template>

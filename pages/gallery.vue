@@ -361,6 +361,6 @@
     </div>
   </div>
 
-  <OurPortfolio class="mt-[10rem]" />
+  <!-- <FAQs class="mt-[10rem]" /> -->
   <!-- <GetYourYard /> -->
 </template>
