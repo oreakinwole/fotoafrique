@@ -1,113 +1,152 @@
-<script setup></script>
+<script setup>
+import { ImgComparisonSlider } from "@img-comparison-slider/vue";
+</script>
 
 <template>
-  <div class="mt-20 lg:mt-28 lg:px-10 w-screen">
-    <div class="px-4 lg:px-20 lg:text-center">
-      <p class="font-semibold text-4xl lg:text-7xl mb-12 lg:mb-5">
-        What Our Clients<br />Are Saying
-      </p>
+  <div class="mt-20 lg:mt-28 px-4 lg:px-28 w-screen">
+    <div class="px-4 lg:px-20 text-center">
+      <p class="font-semibold text-4xl lg:text-6xl mb-12">Client Spotlight</p>
     </div>
 
-    <section
-      class="px-2 lg:h-[300px] flex justify-between lg:justify-center flex-wrap gap-2 lg:gap-4 mt-12"
-    >
-      <div
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[330px] lg:h-full w-[48.9%] lg:w-[300px] rounded-lg"
-      >
-        <header
-          class="h-[67%] p-2 pt-5 relative rounded-lg bg-[url('@/assets/images/testimonial/test_1.jpg')] bg-no-repeat bg-center bg-cover"
-        >
-          <span
-            class="p-3 text-sm bg-white rounded-lg text-black font-semibold"
-          >
-            Client Name
-          </span>
-        </header>
+    <div class="flex gap-4" data-aos="fade-in" data-aos-easing="linear">
+      <div class="h-full w-full">
+        <ImgComparisonSlider class="h-full w-full rounded-2xl border-black">
+          <!-- eslint-disable -->
+          <img
+            slot="first"
+            style="
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+              height: 100%;
+            "
+            src="@/assets/images/testi1before.jpg"
+          />
+          <img
+            slot="second"
+            style="
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+              height: 100%;
+            "
+            src="@/assets/images/testi1after.jpg"
+          />
 
-        <footer class="px-2 mt-[1rem]">
-          <p class="text-xs ml-2">
-            They truly listened to our ideas and turned them into something
-            better than we could have imagined.
+          <svg
+            slot="handle"
+            class="w-6 lg:w-10"
+            width="71"
+            height="71"
+            viewBox="0 0 71 71"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="35.5" cy="35.5" r="35.5" fill="white" />
+            <path
+              d="M51.1997 34.4899L49.2297 32.5199L46.0197 29.3099C45.3397 28.6399 44.1797 29.1199 44.1797 30.0799V36.3099V41.9199C44.1797 42.8799 45.3397 43.3599 46.0197 42.6799L51.1997 37.4999C52.0297 36.6799 52.0297 35.3199 51.1997 34.4899Z"
+              fill="black"
+            />
+            <path
+              d="M20.8003 34.4899L22.7703 32.5199L25.9803 29.3099C26.6603 28.6399 27.8203 29.1199 27.8203 30.0799V36.3099V41.9199C27.8203 42.8799 26.6603 43.3599 25.9803 42.6799L20.8003 37.4999C19.9703 36.6799 19.9703 35.3199 20.8003 34.4899Z"
+              fill="black"
+            />
+          </svg>
+
+          <!-- eslint-enable -->
+        </ImgComparisonSlider>
+
+        <footer class="mt-6 max-w-[90%]"
+        
+        >
+          <p class="lg:text-3xl font-bold mb-4">Rebecca Debono</p>
+          <span class="text-4xl">❝</span>
+          <p class="text-xs lg:text-md italic text-justify">
+            Honestly can't say enough good things about this company as we are
+            SO THRILLED with the finished product. We hired them to demo and
+            install all new pavers, grass turf and put in new drainage and the
+            difference to our home's entrance way and side yard is truly night
+            and day! I never thought I would be so excited about turf and cement
+            until I saw what they could do.
           </p>
         </footer>
       </div>
 
-      <div
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[330px] lg:h-full w-[48.9%] lg:w-[300px] rounded-lg"
-      >
-        <header
-          class="h-[67%] p-2 pt-5 relative rounded-lg bg-[url('@/assets/images/testimonial/test_2.jpg')] bg-no-repeat bg-center bg-cover"
-        >
-          <span
-            class="p-3 text-sm bg-white rounded-lg text-black font-semibold"
-          >
-            Client Name
-          </span>
-        </header>
+      <div class="h-full w-full">
+        <ImgComparisonSlider class="h-full w-full rounded-2xl border-black">
+          <!-- eslint-disable -->
+          <img
+            slot="first"
+            style="
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+              height: 100%;
+            "
+            src="@/assets/images/testi2before.jpg"
+          />
+          <img
+            slot="second"
+            style="
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+              height: 100%;
+            "
+            src="@/assets/images/testi2after.jpg"
+          />
 
-        <footer class="px-2 mt-[1rem]">
-          <p class="text-xs ml-2">
-            The craftsmanship and attention to detail were outstanding. We
-            couldn’t be happier with the final result.
+          <svg
+            slot="handle"
+            class="w-6 lg:w-10"
+            width="71"
+            height="71"
+            viewBox="0 0 71 71"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="35.5" cy="35.5" r="35.5" fill="white" />
+            <path
+              d="M51.1997 34.4899L49.2297 32.5199L46.0197 29.3099C45.3397 28.6399 44.1797 29.1199 44.1797 30.0799V36.3099V41.9199C44.1797 42.8799 45.3397 43.3599 46.0197 42.6799L51.1997 37.4999C52.0297 36.6799 52.0297 35.3199 51.1997 34.4899Z"
+              fill="black"
+            />
+            <path
+              d="M20.8003 34.4899L22.7703 32.5199L25.9803 29.3099C26.6603 28.6399 27.8203 29.1199 27.8203 30.0799V36.3099V41.9199C27.8203 42.8799 26.6603 43.3599 25.9803 42.6799L20.8003 37.4999C19.9703 36.6799 19.9703 35.3199 20.8003 34.4899Z"
+              fill="black"
+            />
+          </svg>
+
+          <!-- eslint-enable -->
+        </ImgComparisonSlider>
+
+        <footer class="mt-6 max-w-[90%]"
+        
+        
+        >
+          <p class="lg:text-3xl font-bold mb-4">Ryan Torres</p>
+          <span class="text-4xl">❝</span>
+          <p class="text-xs lg:text-md italic text-justify">
+            Honestly can't say enough good things about this company as we are
+            SO THRILLED with the finished product. We hired them to demo and
+            install all new pavers, grass turf and put in new drainage and the
+            difference to our home's entrance way and side yard is truly night
+            and day! I never thought I would be so excited about turf and cement
+            until I saw what they could do.
           </p>
         </footer>
       </div>
+    </div>
 
-      <div
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[330px] lg:h-full w-[48.9%] lg:w-[300px] rounded-lg"
-      >
-        <header
-          class="h-[67%] p-2 pt-5 relative rounded-lg bg-[url('@/assets/images/testimonial/test_3.jpg')] bg-no-repeat bg-center bg-cover"
-        >
-          <span
-            class="p-3 text-sm bg-white rounded-lg text-black font-semibold"
-          >
-            Client Name
-          </span>
-        </header>
-
-        <footer class="px-2 mt-[1rem]">
-          <p class="text-xs ml-2">
-            Our backyard is now a space we love to spend time in, thanks to the
-            incredible work of Modern Yardz.
-          </p>
-        </footer>
-      </div>
-
-      <div
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[330px] lg:h-full w-[48.9%] lg:w-[300px] rounded-lg"
-      >
-        <header
-          class="h-[67%] p-2 pt-5 relative rounded-lg bg-[url('@/assets/images/testimonial/test_4.jpg')] bg-no-repeat bg-center bg-cover"
-        >
-          <span
-            class="p-3 text-sm bg-white rounded-lg text-black font-semibold"
-          >
-            Client Name
-          </span>
-        </header>
-
-        <footer class="px-2 mt-[1rem]">
-          <p class="text-xs ml-2">
-            From start to finish, they made the process smooth and enjoyable.
-            The end result is stunning.
-          </p>
-        </footer>
-      </div>
-    </section>
-
-    <footer class="lg:px-20 mt-14 text-center">
+    <div class="text-center">
       <NuxtLink to="gallery">
-
-      <FilledButton
-        :no-action="true"
-        background-color="black"
-        text="SEE OUR PORTFOLIO"
-        text-color="white"
-        class="w-[90%] font-semibold lg:w-[290px]"
-      />
-    </NuxtLink>
-
-    </footer>
+        <FilledButton
+          :no-action="true"
+          background-color="black"
+          text="SEE OUR PORTFOLIO"
+          text-color="white"
+          class="w-[90%] lg:w-[200px] mt-16 font-semibold"
+        />
+      </NuxtLink>
+    </div>
   </div>
 </template>

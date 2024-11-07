@@ -48,7 +48,7 @@ useHead({
     </h1>
 
     <h1
-      class="hidden lg:block text-left  pl-20 font-bold text-9xl text-[#7B7B7B] opacity-50"
+      class="hidden lg:block text-left pl-20 font-bold text-9xl text-[#7B7B7B] opacity-50"
       data-aos="slide-left"
       data-aos-duration="2000"
     >
@@ -63,10 +63,10 @@ useHead({
     </h1>
 
     <div
-      class="max-w-screen-lg relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-28 space-y-8 "
+      class="max-w-screen-lg relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-28 space-y-8"
     >
       <div
-        class="font-inter text-black max-w-md font-[400] text-xs leading-loose "
+        class="font-inter text-black max-w-md font-[400] text-xs leading-loose"
       >
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">01</span>
         <p class="mt-4 text-[#454545]">
@@ -105,7 +105,7 @@ useHead({
       <div
         data-aos="slide-up"
         data-aos-duration="2000"
-        class="hidden lg:block md:block md:w-[38%] md:mr-2 md:h-[500px]  w-[400px] h-[630px] bg-blue-100 rounded-t-full absolute lg:-top-40 md:-top-0 right-0"
+        class="hidden lg:block md:block md:w-[38%] md:mr-2 w-[400px] h-[630px] bg-blue-100 rounded-t-full absolute lg:-top-40 md:-top-0 right-0"
       >
         <video
           class="w-full h-full object-cover rounded-t-full bg-[url('@/assets/images/why_ch_bg.jpg')] bg-no-repeat bg-top bg-cover"
@@ -123,7 +123,7 @@ useHead({
   <ViewTestimonial />
 
   <div class="lg:hidden mt-24 px-6" data-aos="fade-up" data-aos-easing="linear">
-    <h4 class="text-4xl mb-4 font-semibold">Packages</h4>
+    <h4 class="text-4xl mb-4 font-semibold">Design Packages</h4>
 
     <p class="text-[#454545] text-lg leading-relaxed">
       Every outdoor space has the potential to be extraordinary. Our custom
@@ -134,14 +134,14 @@ useHead({
     </p>
   </div>
 
-  <div class="my-10 lg:my-36 flex">
+  <div class="my-10 lg:mt-36 mb-20 flex">
     <div
       class="hidden lg:block ml-32 mt-20"
       data-aos="fade-up"
       data-aos-easing="linear"
     >
       <div>
-        <h4 class="text-6xl font-semibold">Packages</h4>
+        <h4 class="text-6xl font-semibold">Design Packages</h4>
       </div>
 
       <p class="text-[#454545] text-xs mt-4 font-inter leading-relaxed">
@@ -403,16 +403,25 @@ useHead({
       </div>
     </div>
   </div>
+  <div class="text-center">
+    <FilledButton
+      :no-action="true"
+      background-color="black"
+      text="CHOOSE YOUR PACKAGE"
+      text-color="white"
+      class="w-[90%] font-semibold lg:w-[290px] lg:mb-20"
+    />
+  </div>
 
   <div
-    class="mt-28 lg:mt-0 mb-12 lg:mb-28 bg-black h-[480px] lg:h-[600px] relative"
+    class="mt-28 lg:mt-0 mb-12 lg:mb-28 bg-black h-[430px] lg:h-[500px] relative"
   >
-    <div class="absolute top-14 lg:top-28 left-5 right-4 lg:left-20 z-10">
-      <div class="text-white font-semibold text-4xl lg:text-5xl">
-        <p class="leading-tight">
-          Not sure which package is right for you ?<br />
-          Take our quiz to find your perfect<br />
-          design package.
+    <div class="absolute top-14 lg:top-28 left-2 right-2 lg:left-20 z-10">
+      <div class="text-white font-semibold text-4xl lg:text-5xl max-w-[600px]">
+        <p class="leading-tight text-center lg:text-left">
+          Not sure where to start ? <br />
+          Take our quiz to find your design package.
+          <br />
         </p>
       </div>
 
@@ -424,8 +433,11 @@ useHead({
         class="mt-10"
       /> -->
 
-      <ClientOnly>
-        <div class="mt-12" data-tf-live="01JBCJ0CFAY1HW94C4WJCBNZQZ"></div>
+      <ClientOnly class="">
+        <div
+          class="mt-12 text-center lg:text-left"
+          data-tf-live="01JBCJ0CFAY1HW94C4WJCBNZQZ"
+        ></div>
       </ClientOnly>
     </div>
 

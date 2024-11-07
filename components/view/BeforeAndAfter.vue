@@ -16,13 +16,13 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 
       <!--       Image Comparison Slider-->
       <div
-        class="px-2 text-center md:w-[80%] sm:w-[80%] my-14 h-[300px] lg:h-[600px] md:h-[500px] sm:h-[400px]"
+        class="px-2 text-center w-[80%] my-14 h-[300px] lg:h-[600px]"
         data-aos="zoom-in"
         data-aos-offset="300"
         data-aos-duration="2000"
       >
         <ImgComparisonSlider
-          class="h-full w-full rounded-2xl shadow-2xl border-black border-8"
+          class="h-full w-full rounded-2xl shadow-2xl border-black border-4 lg:border-6"
         >
           <!-- eslint-disable -->
           <img
