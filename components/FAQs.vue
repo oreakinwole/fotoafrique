@@ -7,7 +7,7 @@ const isViewingFaq = ref(null);
 <template>
   <!--our portfolio -->
   <div
-    class="w-full bg-black text-white pt-20 lg:pt-20 lg:mb-28 cursor-help"
+    class="w-full bg-black text-white pt-20 lg:pt-20  cursor-help"
     v-if="faqData.dataArray.length > 0"
   >
     <div class="space-y-4 lg:space-y-8 text-center pb-14 lg:pb-20">
