@@ -128,19 +128,19 @@ const handleBookConsult = () => {
                 class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
-                <NuxtLink to="portfolio">Portfolio</NuxtLink>
+                <NuxtLink to="/portfolio">Portfolio</NuxtLink>
               </li>
               <li
                 class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
-                <NuxtLink to="3d-packages">3D Packages</NuxtLink>
+                <NuxtLink to="/3d-packages">3D Packages</NuxtLink>
               </li>
               <li
                 class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
-                <NuxtLink to="contact">Contact</NuxtLink>
+                <NuxtLink to="/contact">Contact</NuxtLink>
               </li>
             </ul>
 
