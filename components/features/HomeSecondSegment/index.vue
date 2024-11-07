@@ -42,7 +42,7 @@
         <NuxtMarquee class="max-w-[95em]">
           <div class="flex flex-row gap-8">
             <div>
-              <NuxtLink to="services/lanscape-sd">
+              <NuxtLink to="services/pavers-sd">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -89,7 +89,7 @@
             </div>
 
             <div>
-              <NuxtLink to="services/lanscape-sd">
+              <NuxtLink to="services/landscape-sd">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -138,7 +138,7 @@
             </div>
 
             <div>
-              <NuxtLink to="services/lanscape-sd">
+              <NuxtLink to="services/pavers-sd">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -187,7 +187,7 @@
             </div>
 
             <div>
-              <NuxtLink to="services/lanscape-sd">
+              <NuxtLink to="services/landscape-sd">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -262,7 +262,7 @@
       <div class="lg:hidden text-center md:w-full md:mx-[1px] ">
         <div class="flex flex-wrap justify-center gap-2 lg:gap-8 md:w-full">
           <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="services/lanscape-sd">
+            <NuxtLink to="services/landscape-sd">
               <div
                 class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
@@ -309,7 +309,7 @@
           </div>
 
           <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="services/lanscape-sd">
+            <NuxtLink to="services/landscape-sd">
               <div
                 class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
@@ -356,7 +356,7 @@
           </div>
 
           <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="services/lanscape-sd">
+            <NuxtLink to="services/pavers-sd">
               <div
                 class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
@@ -402,7 +402,7 @@
             </div>
           </div>
           <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="services/lanscape-sd">
+            <NuxtLink to="services/landscape-sd">
               <div
                 class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >

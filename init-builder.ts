@@ -11,6 +11,18 @@ export const registeredComponents = [
         type: "string",
         defaultValue: "Input Title Here",
       },
+
+      {
+        name: "paragraph",
+        type: "richText",
+        defaultValue: "Type your paragraph",
+      },
+
+      {
+        name: "content",
+        type: "richText",
+        defaultValue: "Type in your content",
+      },
     ],
   },
   {
@@ -21,12 +33,9 @@ export const registeredComponents = [
         name: "faqData",
         type: "object",
         defaultValue: {
-          dataArray: []
+          dataArray: [],
         },
       },
     ],
   },
 ];
-
-
-

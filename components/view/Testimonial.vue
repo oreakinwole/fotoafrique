@@ -56,12 +56,10 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
           <!-- eslint-enable -->
         </ImgComparisonSlider>
 
-        <footer class="mt-6 max-w-[90%]"
-        
-        >
+        <footer class="mt-6 max-w-[90%]">
           <p class="lg:text-3xl font-bold mb-4">Rebecca Debono</p>
           <span class="text-4xl">❝</span>
-          <p class="text-xs lg:text-md italic text-justify">
+          <p class="text-sm font-light lg:text-md italic text-justify ">
             Honestly can't say enough good things about this company as we are
             SO THRILLED with the finished product. We hired them to demo and
             install all new pavers, grass turf and put in new drainage and the
@@ -119,19 +117,16 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
           <!-- eslint-enable -->
         </ImgComparisonSlider>
 
-        <footer class="mt-6 max-w-[90%]"
-        
-        
-        >
+        <footer class="mt-6 max-w-[90%]">
           <p class="lg:text-3xl font-bold mb-4">Ryan Torres</p>
           <span class="text-4xl">❝</span>
-          <p class="text-xs lg:text-md italic text-justify">
-            Honestly can't say enough good things about this company as we are
-            SO THRILLED with the finished product. We hired them to demo and
-            install all new pavers, grass turf and put in new drainage and the
-            difference to our home's entrance way and side yard is truly night
-            and day! I never thought I would be so excited about turf and cement
-            until I saw what they could do.
+          <p class="text-sm font-light lg:text-md italic text-justify ">
+            Stumbled across Modern Yardz while Googling landscapers in San Diego
+            County. Immediately was drawn to them based on their reviews and the
+            work portrayed on their website. Submitted a free consultation and
+            was immediately contacted by Weston. On the day of the consultation,
+            Weston reviewed a poorly drawn model of the project we wanted and he
+            came up on the spot with certain revisions to the project.
           </p>
         </footer>
       </div>
