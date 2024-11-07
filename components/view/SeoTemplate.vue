@@ -31,7 +31,7 @@ defineProps(["title", "paragraph", "content"]);
   </div>
 
   <ViewDesignProcess />
-  <ViewBeforeAndAfter />
+  <!-- <ViewBeforeAndAfter /> -->
   <ViewTestimonial />
 
   <section class="lg:max-w-screen-md space-y-4 mx-auto py-32 px-4">

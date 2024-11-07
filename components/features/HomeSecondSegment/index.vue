@@ -459,7 +459,9 @@
     </div>
   </div>
 
-  <ViewBeforeAndAfter />
+  <!-- <ViewBeforeAndAfter /> -->
+  <ViewTestimonial />
+
 </template>
 
 <style>
