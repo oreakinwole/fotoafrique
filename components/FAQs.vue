@@ -43,15 +43,15 @@ const isViewingFaq = ref(null);
     </div>
 
     <div class="flex justify-center mx-auto py-20 pb-32">
-      <NuxtLink to="services">
+
         <OutlinedButton(BLACK)
           border-color="#fff"
           text-color="#fff"
           background-color="transparent"
-          text="WHAT WE OFFER"
+          text="GET STARTED TODAY!"
           class="lg:mt-10 lg:w-[200px]"
         />
-      </NuxtLink>
+
     </div>
   </div>
 </template>

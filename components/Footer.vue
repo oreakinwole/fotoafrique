@@ -16,17 +16,15 @@ const handleBookConsult = () => {
       <h1
         class="text-center font-playfairDisplay text-3xl lg:text-6xl flex flex-col italic max-w-80 lg:max-w-screen-sm"
       >
-        We'll definitely give you value for your money
+        Design your DREAM outdoor Oasis
       </h1>
       <div class="font-inter font-[500] text-[16px] mt-12">
-        <NuxtLink to="services">
-          <OutlinedButton(BLACK)
-            border-color="#FCFBFA"
-            text-color="#FCFBFA"
-            background-color="black"
-            text="EXPLORE OUR PRODUCTS"
-          />
-        </NuxtLink>
+        <OutlinedButton(BLACK)
+          border-color="#FCFBFA"
+          text-color="#FCFBFA"
+          background-color="black"
+          text="Book Your Free Design Consult Now"
+        />
       </div>
     </div>
 
@@ -198,13 +196,13 @@ const handleBookConsult = () => {
     </div>
 
     <div
-      class=" relative flex-1 flex justify-center items-center mt-10 lg:mt-0 animate__animated animate__fadeIn animate__slower z-50"
+      class="relative flex-1 flex justify-center items-center mt-10 lg:mt-0 animate__animated animate__fadeIn animate__slower z-50"
     >
       <img
         @click="handleBookConsult"
         src="/images/hero/icons/chat.png"
         alt="chat icon"
-        class="hover:scale-110 duration-200 ease-linear w-16 h-16 lg:w-14 lg:h-14 xl:w-20 xl:h-20 fixed right-4 bottom-4 lg:right-10 lg:bottom-10 cursor-pointer  chat"
+        class="hover:scale-110 duration-200 ease-linear w-16 h-16 lg:w-14 lg:h-14 xl:w-20 xl:h-20 fixed right-4 bottom-4 lg:right-10 lg:bottom-10 cursor-pointer chat"
       />
     </div>
   </footer>

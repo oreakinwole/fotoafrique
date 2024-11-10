@@ -22,11 +22,11 @@ export default {
       type: String,
     },
   },
-};
+}; 
 </script>
 <template>
   <button
-    class="relative w-[210px] md:w-[30rem] h-[50px] overflow-hidden rounded-xl"
+    class="relative w-[210px] md:w-[20rem] h-[50px] overflow-hidden rounded-xl"
     :style="{
       backgroundColor: backgroundColor,
       color: textColor,
