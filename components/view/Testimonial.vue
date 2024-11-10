@@ -4,8 +4,13 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 
 <template>
   <div class="mt-20 lg:mt-28 px-4 lg:px-28 w-screen">
-    <div class="px-4 lg:px-20 text-center">
-      <p class="font-semibold text-4xl lg:text-6xl mb-12">Client Spotlight</p>
+    <div class="px-4 lg:px-20 text-center mb-12">
+      <h4 class="font-playfairDisplay text-5xl font-[500]">
+        Cli<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
+          >E </span
+        >nt Spotlight
+      </h4>
+      
     </div>
 
     <div class="flex gap-4" data-aos="fade-in" data-aos-easing="linear">
@@ -59,7 +64,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
         <footer class="mt-6 max-w-[90%]">
           <p class="lg:text-3xl font-bold mb-4">Rebecca Debono</p>
           <span class="text-4xl">❝</span>
-          <p class="text-sm font-light lg:text-md italic text-justify ">
+          <p class="text-sm font-light lg:text-md italic text-justify">
             Honestly can't say enough good things about this company as we are
             SO THRILLED with the finished product. We hired them to demo and
             install all new pavers, grass turf and put in new drainage and the
@@ -120,7 +125,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
         <footer class="mt-6 max-w-[90%]">
           <p class="lg:text-3xl font-bold mb-4">Ryan Torres</p>
           <span class="text-4xl">❝</span>
-          <p class="text-sm font-light lg:text-md italic text-justify ">
+          <p class="text-sm font-light lg:text-md italic text-justify">
             Stumbled across Modern Yardz while Googling landscapers in San Diego
             County. Immediately was drawn to them based on their reviews and the
             work portrayed on their website. Submitted a free consultation and

@@ -7,11 +7,18 @@ const isViewingFaq = ref(null);
 <template>
   <!--our portfolio -->
   <div
-    class="w-full bg-black text-white pt-20 lg:pt-20  cursor-help"
+    class="w-full bg-black text-white pt-20 lg:pt-20 cursor-help"
     v-if="faqData.dataArray.length > 0"
   >
     <div class="space-y-4 lg:space-y-8 text-center pb-14 lg:pb-20">
-      <h4 class="font-semibold text-5xl lg:text-6xl">Got Questions?</h4>
+      <h4 class="font-semibold text-5xl lg:text-6xl"></h4>
+
+      <h4 class="font-playfairDisplay text-5xl font-[500] mb-4">
+        Got Qu<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
+          >E 
+        </span>
+        stions ?
+      </h4>
       <p class="lg:text-xs max-w-[380px] lg:max-w-lg mx-auto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
         dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
@@ -43,15 +50,13 @@ const isViewingFaq = ref(null);
     </div>
 
     <div class="flex justify-center mx-auto py-20 pb-32">
-
-        <OutlinedButton(BLACK)
-          border-color="#fff"
-          text-color="#fff"
-          background-color="transparent"
-          text="GET STARTED TODAY!"
-          class="lg:mt-10 lg:w-[200px]"
-        />
-
+      <OutlinedButton(BLACK)
+        border-color="#fff"
+        text-color="#fff"
+        background-color="transparent"
+        text="GET STARTED TODAY!"
+        class="lg:mt-10 lg:w-[200px]"
+      />
     </div>
   </div>
 </template>

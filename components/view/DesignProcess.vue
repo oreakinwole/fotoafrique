@@ -13,9 +13,11 @@ watch(isViewingDs, (val) => {
       data-aos="fade-up"
       data-aos-easing="linear"
     >
-      <p class="font-semibold text-4xl lg:text-7xl mb-2 lg:mb-5">
-        Our Design Process
-      </p>
+      <h4 class="font-playfairDisplay text-5xl font-[500] mb-4">
+        Our Desi<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
+          >G </span
+        >n Process
+      </h4>
 
       <p class="text-xl lg:text-3xl">
         Simple Steps to Your Dream Yard, Here’s how it works:
@@ -36,7 +38,7 @@ watch(isViewingDs, (val) => {
       <div
         data-aos="fade-up"
         data-aos-easing="linear"
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px]  h-[290px] w-[48.9%] lg:w-[300px] rounded-lg"
+        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] w-[48.9%] lg:w-[300px] rounded-lg"
         :class="isViewingDs === 1 && 'h-[390px]'"
       >
         <header
@@ -93,8 +95,8 @@ watch(isViewingDs, (val) => {
             </div>
 
             <svg
-            role="button"  
-            @click="isViewingDs = 1"
+              role="button"
+              @click="isViewingDs = 1"
               class="w-6"
               width="28"
               height="28"
@@ -123,8 +125,6 @@ watch(isViewingDs, (val) => {
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="600"
-
-
             v-if="isViewingDs === 1"
             class="text-sm mt-6 text-center px-4 pb-2"
           >
@@ -138,9 +138,9 @@ watch(isViewingDs, (val) => {
         data-aos-easing="linear"
         data-aos-delay="400"
         data-aos-duration="900"
-        class="overflow-hidden border border-[#808080] py-[2px] px-[3px]  h-[290px] w-[48.9%] lg:w-[300px] rounded-lg"
+        class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] w-[48.9%] lg:w-[300px] rounded-lg"
         :class="isViewingDs === 2 && 'h-[390px]'"
-        >
+      >
         <header
           class="h-56 p-2 relative rounded-lg bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover"
         >
@@ -239,8 +239,8 @@ watch(isViewingDs, (val) => {
             </div>
 
             <svg
-            role="button"  
-            @click="isViewingDs = 2"
+              role="button"
+              @click="isViewingDs = 2"
               class="w-6"
               width="28"
               height="28"
@@ -265,11 +265,9 @@ watch(isViewingDs, (val) => {
             </svg>
           </div>
           <p
-          data-aos="fade-down"
+            data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="600"
-
-
             v-if="isViewingDs === 2"
             class="text-sm mt-6 text-center px-4 pb-2"
           >
@@ -285,8 +283,8 @@ watch(isViewingDs, (val) => {
         data-aos-delay="600"
         data-aos-duration="900"
         class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] w-[48.9%] lg:w-[300px] rounded-lg"
-      :class="isViewingDs === 3 && 'h-[390px]'"
-        >
+        :class="isViewingDs === 3 && 'h-[390px]'"
+      >
         <header
           class="h-56 p-2 relative rounded-lg bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover"
         >
@@ -369,8 +367,8 @@ watch(isViewingDs, (val) => {
             </div>
 
             <svg
-            role="button"  
-            @click="isViewingDs = 3"
+              role="button"
+              @click="isViewingDs = 3"
               class="w-6"
               width="28"
               height="28"
@@ -395,11 +393,9 @@ watch(isViewingDs, (val) => {
             </svg>
           </div>
           <p
-          data-aos="fade-down"
+            data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="600"
-
-
             v-if="isViewingDs === 3"
             class="text-sm mt-6 text-center px-4 pb-2"
           >
@@ -416,7 +412,7 @@ watch(isViewingDs, (val) => {
         data-aos-duration="900"
         class="overflow-hidden border border-[#808080] py-[2px] px-[3px] h-[290px] w-[48.9%] lg:w-[300px] rounded-lg"
         :class="isViewingDs === 4 && 'h-[390px]'"
-        >
+      >
         <header
           class="h-56 p-2 relative rounded-lg bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover"
         >
@@ -475,8 +471,8 @@ watch(isViewingDs, (val) => {
             </div>
 
             <svg
-            role="button"  
-            @click="isViewingDs = 4"
+              role="button"
+              @click="isViewingDs = 4"
               class="w-6"
               width="28"
               height="28"
@@ -501,11 +497,9 @@ watch(isViewingDs, (val) => {
             </svg>
           </div>
           <p
-          data-aos="fade-down"
+            data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="600"
-
-
             v-if="isViewingDs === 4"
             class="text-sm mt-6 text-center px-4 pb-2"
           >

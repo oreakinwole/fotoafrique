@@ -9,7 +9,11 @@
     data-aos-easing="linear"
   >
     <div>
-      <h4 class="text-4xl font-semibold">Services</h4>
+      <h4 class="font-playfairDisplay text-5xl font-[500]">
+          Servi<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
+            >C </span
+          >es
+        </h4>
     </div>
   </div>
 
@@ -20,7 +24,11 @@
       data-aos-easing="linear"
     >
       <div>
-        <h4 class="text-7xl font-semibold">Services</h4>
+        <h4 class="font-playfairDisplay text-5xl font-[500]">
+          Servi<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
+            >C </span
+          >es
+        </h4>
       </div>
 
       <!-- <p

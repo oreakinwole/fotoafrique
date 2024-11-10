@@ -205,7 +205,15 @@ const datafQ = ref([
 
 
   <div class="lg:hidden mt-24 px-6" data-aos="fade-up" data-aos-easing="linear">
-    <h4 class="text-4xl mb-4 font-semibold">Design Packages</h4>
+    <h4 class="font-playfairDisplay text-4xl font-[500] mb-4">
+      Desi<span class="text-[#A89C93] font-imperial font-[400] text-5xl"
+            >G </span
+          >n
+
+          Packages
+        </h4>
+
+   
 
     <p class="text-[#454545] text-lg leading-relaxed">
       Every outdoor space has the potential to be extraordinary. Our custom
@@ -223,7 +231,13 @@ const datafQ = ref([
       data-aos-easing="linear"
     >
       <div>
-        <h4 class="text-6xl font-semibold">Design Packages</h4>
+        <h4 class="font-playfairDisplay text-5xl font-[500]">
+      Desi<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
+            >G </span
+          >n
+          Packages
+        </h4>
+        
       </div>
 
       <p class="text-[#454545] text-xs mt-4 font-inter leading-relaxed">
