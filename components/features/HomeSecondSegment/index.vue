@@ -9,8 +9,8 @@
     data-aos-easing="linear"
   >
     <div>
-      <h4 class="font-playfairDisplay text-5xl font-[500]">
-          Servi<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
+      <h4 class="font-playfairDisplay text-5xl font-medium">
+          Servi<span class="text-[#A89C93] font-imperial  text-6xl"
             >C </span
           >es
         </h4>
@@ -24,15 +24,15 @@
       data-aos-easing="linear"
     >
       <div>
-        <h4 class="font-playfairDisplay text-5xl font-[500]">
-          Servi<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
-            >C </span
+        <h4 class="font-playfairDisplay text-5xl font-semibold text-nowrap">
+          Servi<span class="text-[#A89C93] font-imperial font-normal  text-6xl"
+            >C</span
           >es
         </h4>
       </div>
 
       <!-- <p
-        class="text-[#665244] text-xs font-[400] font-inter max-w-lg leading-relaxed"
+        class="text-[#665244] text-xs  font-inter max-w-lg leading-relaxed"
       >
        Here are our main services
       </p> -->
@@ -66,8 +66,8 @@
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-inter font-[500] text-[18px]">Paver Patios</h4>
-                <p class="font-[400] font-inter text-[16px]">
+                <h4 class="font-inter font-medium text-[18px]">Paver Patios</h4>
+                <p class=" font-inter text-[16px]">
                   <svg
                     width="24"
                     height="24"
@@ -113,10 +113,10 @@
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-inter font-[500] text-[18px]">
+                <h4 class="font-inter font-medium text-[18px]">
                   Concrete Patios
                 </h4>
-                <p class="font-[400] font-inter text-[16px]">
+                <p class=" font-inter text-[16px]">
                   <svg
                     width="24"
                     height="24"
@@ -162,10 +162,10 @@
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-inter font-[500] text-[18px]">
+                <h4 class="font-inter font-medium text-[18px]">
                   Artificial Turf
                 </h4>
-                <p class="font-[400] font-inter text-[16px]">
+                <p class=" font-inter text-[16px]">
                   <svg
                     width="24"
                     height="24"
@@ -211,10 +211,10 @@
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-inter font-[500] text-[18px]">
+                <h4 class="font-inter font-medium text-[18px]">
                   Outdoor Kitchens
                 </h4>
-                <p class="font-[400] font-inter text-[16px]">
+                <p class=" font-inter text-[16px]">
                   <svg
                     width="24"
                     height="24"
@@ -286,8 +286,8 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5 ">
-              <h4 class="font-inter font-[500] text-[18px] md:mx-2">Paver Patios</h4>
-              <p class="font-[400] font-inter text-[16px] ">
+              <h4 class="font-inter font-medium text-[18px] md:mx-2">Paver Patios</h4>
+              <p class=" font-inter text-[16px] ">
                 <svg
                   width="24"
                   height="24"
@@ -333,8 +333,8 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]  md:mx-2">Concrete Patios</h4>
-              <p class="font-[400] font-inter text-[16px]">
+              <h4 class="font-inter font-medium text-[18px]  md:mx-2">Concrete Patios</h4>
+              <p class=" font-inter text-[16px]">
                 <svg
                   width="24"
                   height="24"
@@ -380,8 +380,8 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]  md:mx-2">Artificial Turf</h4>
-              <p class="font-[400] font-inter text-[16px]">
+              <h4 class="font-inter font-medium text-[18px]  md:mx-2">Artificial Turf</h4>
+              <p class=" font-inter text-[16px]">
                 <svg
                   width="24"
                   height="24"
@@ -426,8 +426,8 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]  md:mx-2">Outdoor Kitchens</h4>
-              <p class="font-[400] font-inter text-[16px]">
+              <h4 class="font-inter font-medium text-[18px]  md:mx-2">Outdoor Kitchens</h4>
+              <p class=" font-inter text-[16px]">
                 <svg
                   width="24"
                   height="24"

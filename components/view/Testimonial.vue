@@ -5,12 +5,13 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 <template>
   <div class="mt-20 lg:mt-28 px-4 lg:px-28 w-screen">
     <div class="px-4 lg:px-20 text-center mb-12">
-      <h4 class="font-playfairDisplay text-5xl font-[500]">
-        Cli<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
-          >E </span
-        >nt Spotlight
+      <h4 class="font-playfairDisplay text-5xl font-semibold">
+        <span class="font-imperial font-normal text-[#A89C93] text-7xl"
+          >C
+        </span>
+        <span class="text-[#A89C93]">lient </span>
+        Spotlight
       </h4>
-      
     </div>
 
     <div class="flex gap-4" data-aos="fade-in" data-aos-easing="linear">
