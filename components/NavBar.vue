@@ -6,7 +6,7 @@ import modernYardzIcon from "public/images/navbar/imgs/logo.png"
 import searchIcon from "public/images/navbar/icons/Search.png"
 import bagIcon from "public/images/navbar/icons/bag.png"
 import dummyProfileIcon from "public/images/navbar/icons/Icon Frame.png"
-import PopUpModal from "~/components/reusuables/PopUpModal/index.vue";
+import PopUpModal from "~/components/PopUpModal.vue";
 import MobileNavBar from "~/components/reusuables/MobileNavBar";
 import image1 from "public/images/navbar/imgs/Mask group(4).png"
 import image2 from "public/images/navbar/imgs/img.png"
