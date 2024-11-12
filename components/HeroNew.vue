@@ -36,7 +36,7 @@ onMounted(() => {
 <template>
   <div>
     <header
-      class="hidden lg:block min-h-[470px] lg:min-h-screen pt-28 lg:bg-[url('@/assets/images/hero_bg1.png')] bg-white bg-no-repeat bg-left-top bg-cover"
+      class="hidden lg:block min-h-[470px] lg:min-h-screen pt-20 lg:bg-[url('@/assets/images/hero_bg1.png')] bg-white bg-no-repeat bg-left-top bg-cover"
     >
       <div class="text-center space-y-3">
         <VueWriter

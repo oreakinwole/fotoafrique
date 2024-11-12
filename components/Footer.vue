@@ -62,7 +62,7 @@ const handleBookConsult = () => {
       </div>
 
       <div
-        class="flex flex-row gap-12   text-[16px] border border-[#665244] border-r-0 py-10 pl-5 lg:pl-12 w-[180rem]"
+        class="flex flex-row gap-12 text-[16px] border border-[#665244] border-r-0 py-10 pl-5 lg:pl-12 w-[180rem]"
       >
         <div class="flex flex-col gap-5">
           <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
@@ -104,7 +104,7 @@ const handleBookConsult = () => {
       class="hidden lg:flex lg:flex-row justify-between text-[#D0C2B0] px-32"
     >
       <div
-        class="border border-[#665244] border-l-0 border-t-0 w-[150rem] text-[12px] font-inter  "
+        class="border border-[#665244] border-l-0 border-t-0 w-[150rem] text-[12px] font-inter"
       >
         <div class="uppercase flex flex-row">
           <p
@@ -137,7 +137,7 @@ const handleBookConsult = () => {
       </div>
 
       <div
-        class="flex flex-row space-x-4 border border-[#665244] border-r-0 w-[180rem] pl-5 pt-20 border-t-0 font-inter  "
+        class="flex flex-row space-x-4 border border-[#665244] border-r-0 w-[180rem] pl-5 pt-20 border-t-0 font-inter"
       >
         <p class="text-sm mt-1 font-light">We Accept</p>
 
@@ -189,20 +189,21 @@ const handleBookConsult = () => {
 
     <!-- fourth layout -->
     <div
-      class="hidden text-[#D0C2B0] lg:flex lg:flex-row justify-between mt-10 px-72 text-[12px] font-inter  "
+      class="hidden text-[#D0C2B0] lg:flex lg:flex-row justify-between mt-10 px-72 text-[12px] font-inter"
     >
       <p>© 2024 MODERNYARDZ.com. All rights reserved.</p>
       <p>Privacy Policy | Terms of Use</p>
     </div>
 
     <div
-      class="relative flex-1 flex justify-center items-center mt-10 lg:mt-0 animate__animated animate__fadeIn animate__slower z-50"
+      @click="handleBookConsult"
+      class="fixed right-4 bottom-4 lg:right-2 lg:bottom-10 animate__animated animate__fadeIn animate__slower z-50"
     >
-      <img
-        @click="handleBookConsult"
-        src="/images/hero/icons/chat.png"
-        alt="chat icon"
-        class="hover:scale-110 duration-200 ease-linear w-16 h-16 lg:w-14 lg:h-14 xl:w-20 xl:h-20 fixed right-4 bottom-4 lg:right-10 lg:bottom-10 cursor-pointer chat"
+      <FilledButton
+        background-color="black"
+        text="BOOK NOW"
+        text-color="white"
+        class="lg:w-[120px]"
       />
     </div>
   </footer>
