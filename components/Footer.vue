@@ -199,11 +199,11 @@ const handleBookConsult = () => {
       @click="handleBookConsult"
       class="fixed right-4 bottom-4 lg:right-2 lg:bottom-10 animate__animated animate__fadeIn animate__slower z-50"
     >
-      <FilledButton
+      <FilledButtonFixed
         background-color="black"
         text="BOOK NOW"
         text-color="white"
-        class="lg:w-[125px]"
+     
       />
     </div>
   </footer>
