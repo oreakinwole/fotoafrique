@@ -1,20 +1,44 @@
 <script>
+import closeIcon from "public/images/navbar/icons/Close.png";
+import phoneIcon from "public/images/navbar/icons/call.png";
+import modernYardzIcon from "public/images/navbar/imgs/logo.png";
+import searchIcon from "public/images/navbar/icons/Search.png";
+import bagIcon from "public/images/navbar/icons/bag.png";
+import dummyProfileIcon from "public/images/navbar/icons/Icon Frame.png";
 import PopUpModal from "~/components/PopUpModal.vue";
 import MobileNavBar from "~/components/MobileNavBar.vue";
+import image1 from "public/images/navbar/imgs/Mask group(4).png";
+import image2 from "public/images/navbar/imgs/img.png";
+import allButton from "public/images/navbar/icons/See all button.png";
+
 
 export default {
   name: "NavBar",
   components: { PopUpModal, MobileNavBar },
   data() {
     return {
+      closeIcon,
+      phoneIcon,
+      modernYardzIcon,
+      dummyProfileIcon,
+      searchIcon,
+      bagIcon,
+      image1,
+      image2,
+      allButton,
       isServiceOpen: false,
       isMoreOpen: false,
       selectedOption: "Select",
       activeDropdown: null,
-      underlineText: "",
     };
   },
 
+  props: {
+    underlineText: {
+      type: String,
+      default: "",
+    },
+  },
   methods: {
     toggleServiceDropdown() {
       if (this.activeDropdown === "service") {
@@ -82,7 +106,7 @@ export default {
         <div class="flex flex-row gap-2 cursor-pointer">
           <div>
             <img
-              src="/images/navbar/icons/call.png"
+              :src="phoneIcon"
               alt="phone icon"
               class="w-16 h-16 lg:w-4 lg:h-4 xl:w-4 xl:h-4 mt-1"
             />
@@ -93,7 +117,7 @@ export default {
 
       <div class="mr-8 sm:mr-16 md:mr-24 lg:mr-10">
         <img
-          src="/images/navbar/imgs/logo.png"
+          :src="modernYardzIcon"
           alt="modern yardz logo"
           class="w-16 h-16 lg:w-[75px] lg:h-[25px] logo"
         />
@@ -103,25 +127,17 @@ export default {
         class="flex flex-row gap-6 sm:gap-8 lg:gap-20 mr-8 sm:mr-16 md:mr-24 lg:mr-36"
       >
         <div>
-          <img
-            src="/images/navbar/icons/Search.png"
-            alt="search icon"
-            class="w-4 cursor-pointer"
-          />
+          <img :src="searchIcon" alt="search icon" class="w-4 cursor-pointer" />
         </div>
         <div>
           <img
-            src="/images/navbar/icons/Icon Frame.png"
+            :src="dummyProfileIcon"
             alt="dummy profile icon"
             class="w-4 cursor-pointer"
           />
         </div>
         <div>
-          <img
-            src="/images/navbar/icons/bag.png"
-            alt="bag icon"
-            class="w-4 cursor-pointer"
-          />
+          <img :src="bagIcon" alt="bag icon" class="w-4 cursor-pointer" />
         </div>
       </div>
     </div>
@@ -132,6 +148,7 @@ export default {
     >
       <div class="flex flex-row items-center gap-16 uppercase">
         <p
+
           :class="{
             'cursor-pointer': true,
             'underline-black':
@@ -150,6 +167,7 @@ export default {
           >
             <div>
               <span
+
                 :class="{
                   'cursor-pointer': true,
                   'underline-black2':
@@ -195,11 +213,7 @@ export default {
                 <div
                   class="w-[200px] h-[104px] mt-10 ml-20 bg-[#A89C93] rounded-tl-[20px] rounded-tr-[20px] custom-cursor-button inner-cont"
                 >
-                  <img
-                    src="/images/navbar/imgs/Mask group(4).png"
-                    alt="first image"
-                    class=""
-                  />
+                  <img :src="image1" alt="first image" class="" />
                 </div>
               </button>
 
@@ -224,7 +238,7 @@ export default {
                   class="w-[200px] h-[104px] mt-10 ml-20 bg-[#665244] rounded-tl-[20px] rounded-tr-[20px] inner-cont"
                 >
                   <img
-                    src="/images/navbar/imgs/img.png"
+                    :src="image2"
                     alt="second image"
                     class="cursor-custom-cursor"
                   />
@@ -264,7 +278,7 @@ export default {
                     </div>
                     <div class="mt-[50px]">
                       <img
-                        src="/images/navbar/icons/See all button.png"
+                        :src="allButton"
                         alt="arrow"
                         class="h-[65px] w-[65px] cursor-pointer arrow"
                       />
@@ -276,9 +290,33 @@ export default {
           </div>
         </div>
 
-        <p>Gallery</p>
-        <p>Contact</p>
-        <p>3D Packages</p>
+        <p
+          :class="{
+            'cursor-pointer': true,
+            'underline-black':
+              underlineText === 'Gallery' && activeDropdown === null,
+          }"
+        >
+          Gallery
+        </p>
+        <p
+          :class="{
+            'cursor-pointer': true,
+            'underline-black':
+              underlineText === 'Contact' && activeDropdown === null,
+          }"
+        >
+          Contact
+        </p>
+        <p
+          :class="{
+            'cursor-pointer': true,
+            'underline-black':
+              underlineText === '3D Packages' && activeDropdown === null,
+          }"
+        >
+          3D Packages
+        </p>
 
         <!-- More select button -->
         <div
