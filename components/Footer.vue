@@ -203,7 +203,7 @@ const handleBookConsult = () => {
         background-color="black"
         text="BOOK NOW"
         text-color="white"
-        class="lg:w-[120px]"
+        class="lg:w-[125px]"
       />
     </div>
   </footer>
