@@ -131,14 +131,14 @@ const datafQ = ref([
     </h1>
 
     <h1
-      class="hidden lg:block text-left pl-20 font-bold text-9xl text-[#7B7B7B] opacity-50"
+      class="hidden font-playfairDisplay text-[#A89C93] lg:block text-left pl-20 font-bold text-9xl text-[#7B7B7B] opacity-50"
       data-aos="slide-left"
       data-aos-duration="2000"
     >
       Why Choose
     </h1>
     <h1
-      class="hidden lg:block text-right pr-20 font-bold text-9xl text-[#7B7B7B] opacity-50"
+      class="hidden font-playfairDisplay text-[#A89C93] lg:block text-right pr-20 font-bold text-9xl text-[#7B7B7B] opacity-50"
       data-aos="slide-right"
       data-aos-duration="2000"
     >
@@ -148,9 +148,7 @@ const datafQ = ref([
     <div
       class="max-w-screen-lg relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-28 space-y-8"
     >
-      <div
-        class="font-inter text-black max-w-md font-[400] text-xs leading-loose"
-      >
+      <div class="font-inter text-black max-w-md text-xs leading-loose">
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">01</span>
         <p class="mt-4 text-[#454545]">
           At Modern Yardz, our mission is simple: to transform your outdoor
@@ -160,9 +158,7 @@ const datafQ = ref([
           experience and a personalized touch to every project.
         </p>
       </div>
-      <div
-        class="font-inter text-black max-w-md font-[400] text-xs leading-loose"
-      >
+      <div class="font-inter text-black max-w-md text-xs leading-loose">
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">02</span>
         <p class="mt-4 text-[#454545]">
           At Modern Yardz, our mission is simple: to transform your outdoor With
@@ -173,9 +169,7 @@ const datafQ = ref([
         </p>
       </div>
 
-      <div
-        class="font-inter text-black max-w-md font-[400] text-xs leading-loose"
-      >
+      <div class="font-inter text-black max-w-md text-xs leading-loose">
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">03</span>
         <p class="mt-4 text-[#454545]">
           Whether you’re looking to revamp your yard or start from scratch,
@@ -203,17 +197,11 @@ const datafQ = ref([
     </div>
   </div>
 
-
   <div class="lg:hidden mt-24 px-6" data-aos="fade-up" data-aos-easing="linear">
     <h4 class="font-playfairDisplay text-4xl font-[500] mb-4">
-      Desi<span class="text-[#A89C93] font-imperial font-[400] text-5xl"
-            >G </span
-          >n
-
-          Packages
-        </h4>
-
-   
+      Desi<span class="text-[#A89C93] font-imperial text-5xl">G </span>n
+      Packages
+    </h4>
 
     <p class="text-[#454545] text-lg leading-relaxed">
       Every outdoor space has the potential to be extraordinary. Our custom
@@ -232,12 +220,9 @@ const datafQ = ref([
     >
       <div>
         <h4 class="font-playfairDisplay text-5xl font-[500]">
-      Desi<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
-            >G </span
-          >n
+          Desi<span class="text-[#A89C93] font-imperial text-6xl">G </span>n
           Packages
         </h4>
-        
       </div>
 
       <p class="text-[#454545] text-xs mt-4 font-inter leading-relaxed">
@@ -273,7 +258,7 @@ const datafQ = ref([
                 <h4 class="font-inter font-[500] text-[18px]">
                   Full Yard Design
                 </h4>
-                <p class="font-[400] font-inter text-[16px]">$1,890.80</p>
+                <p class="font-inter text-[16px]">$1,890.80</p>
               </div>
             </div>
 
@@ -297,7 +282,7 @@ const datafQ = ref([
                 <h4 class="font-inter font-[500] text-[18px]">
                   Backyard Design
                 </h4>
-                <p class="font-[400] font-inter text-[16px]">$1,745.99</p>
+                <p class="font-inter text-[16px]">$1,745.99</p>
               </div>
             </div>
 
@@ -321,7 +306,7 @@ const datafQ = ref([
                 <h4 class="font-inter font-[500] text-[18px]">
                   Front Yard Design
                 </h4>
-                <p class="font-[400] font-inter text-[16px]">$2,745.56</p>
+                <p class="font-inter text-[16px]">$2,745.56</p>
               </div>
             </div>
 
@@ -345,7 +330,7 @@ const datafQ = ref([
                 <h4 class="font-inter font-[500] text-[18px]">
                   Outdoor Transformation
                 </h4>
-                <p class="font-[400] font-inter text-[16px]">$2,745.56</p>
+                <p class="font-inter text-[16px]">$2,745.56</p>
               </div>
             </div>
 
@@ -369,7 +354,7 @@ const datafQ = ref([
                 <h4 class="font-inter font-[500] text-[18px]">
                   Premium Design
                 </h4>
-                <p class="font-[400] font-inter text-[16px]">$4,000.00</p>
+                <p class="font-inter text-[16px]">$4,000.00</p>
               </div>
             </div>
           </div>
@@ -400,7 +385,7 @@ const datafQ = ref([
               <h4 class="font-inter font-[500] text-[18px]">
                 Full Yard Design
               </h4>
-              <p class="font-[400] font-inter text-[16px]">$1,890.80</p>
+              <p class="font-inter text-[16px]">$1,890.80</p>
             </div>
           </div>
 
@@ -422,7 +407,7 @@ const datafQ = ref([
 
             <div class="flex flex-wrap justify-between mt-5">
               <h4 class="font-inter font-[500] text-[18px]">Backyard Design</h4>
-              <p class="font-[400] font-inter text-[16px]">$1,745.99</p>
+              <p class="font-inter text-[16px]">$1,745.99</p>
             </div>
           </div>
 
@@ -446,7 +431,7 @@ const datafQ = ref([
               <h4 class="font-inter font-[500] text-[18px]">
                 Front Yard Design
               </h4>
-              <p class="font-[400] font-inter text-[16px]">$2,745.56</p>
+              <p class="font-inter text-[16px]">$2,745.56</p>
             </div>
           </div>
 
@@ -470,7 +455,7 @@ const datafQ = ref([
               <h4 class="font-inter font-[500] text-[18px]">
                 Outdoor Transformation
               </h4>
-              <p class="font-[400] font-inter text-[16px]">$2,745.56</p>
+              <p class="font-inter text-[16px]">$2,745.56</p>
             </div>
           </div>
 
@@ -492,7 +477,7 @@ const datafQ = ref([
 
             <div class="flex flex-wrap justify-between mt-5">
               <h4 class="font-inter font-[500] text-[18px]">Premium Design</h4>
-              <p class="font-[400] font-inter text-[16px]">$4,000.00</p>
+              <p class="  font-inter text-[16px]">$4,000.00</p>
             </div>
           </div> -->
         </div>

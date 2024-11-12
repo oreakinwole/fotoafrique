@@ -62,7 +62,7 @@ const handleBookConsult = () => {
       </div>
 
       <div
-        class="flex flex-row gap-12 font-[400] text-[16px] border border-[#665244] border-r-0 py-10 pl-5 lg:pl-12 w-[180rem]"
+        class="flex flex-row gap-12   text-[16px] border border-[#665244] border-r-0 py-10 pl-5 lg:pl-12 w-[180rem]"
       >
         <div class="flex flex-col gap-5">
           <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
@@ -104,7 +104,7 @@ const handleBookConsult = () => {
       class="hidden lg:flex lg:flex-row justify-between text-[#D0C2B0] px-32"
     >
       <div
-        class="border border-[#665244] border-l-0 border-t-0 w-[150rem] text-[12px] font-inter font-[400]"
+        class="border border-[#665244] border-l-0 border-t-0 w-[150rem] text-[12px] font-inter  "
       >
         <div class="uppercase flex flex-row">
           <p
@@ -137,7 +137,7 @@ const handleBookConsult = () => {
       </div>
 
       <div
-        class="flex flex-row space-x-4 border border-[#665244] border-r-0 w-[180rem] pl-5 pt-20 border-t-0 font-inter font-[400]"
+        class="flex flex-row space-x-4 border border-[#665244] border-r-0 w-[180rem] pl-5 pt-20 border-t-0 font-inter  "
       >
         <p class="text-sm mt-1 font-light">We Accept</p>
 
@@ -189,7 +189,7 @@ const handleBookConsult = () => {
 
     <!-- fourth layout -->
     <div
-      class="hidden text-[#D0C2B0] lg:flex lg:flex-row justify-between mt-10 px-72 text-[12px] font-inter font-[400]"
+      class="hidden text-[#D0C2B0] lg:flex lg:flex-row justify-between mt-10 px-72 text-[12px] font-inter  "
     >
       <p>© 2024 MODERNYARDZ.com. All rights reserved.</p>
       <p>Privacy Policy | Terms of Use</p>

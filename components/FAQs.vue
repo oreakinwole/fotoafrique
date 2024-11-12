@@ -13,8 +13,8 @@ const isViewingFaq = ref(null);
     <div class="space-y-4 lg:space-y-8 text-center pb-14 lg:pb-20">
       <h4 class="font-semibold text-5xl lg:text-6xl"></h4>
 
-      <h4 class="font-playfairDisplay text-5xl font-[500] mb-4">
-        Got Qu<span class="text-[#A89C93] font-imperial font-[400] text-6xl"
+      <h4 class="font-playfairDisplay text-5xl font-medium mb-4">
+        Got Qu<span class="text-[#A89C93] font-imperial  text-6xl"
           >E 
         </span>
         stions ?

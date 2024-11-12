@@ -143,7 +143,7 @@ onMounted(() => {
   </div>
 
   <div class="pt-16" data-aos="fade-up">
-    <!-- <p class="uppercase text-center font-inter font-[400] text-[12px]">
+    <!-- <p class="uppercase text-center font-inter   text-[12px]">
         Our Partners
       </p> -->
 

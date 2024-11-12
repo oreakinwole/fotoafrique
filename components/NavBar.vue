@@ -194,7 +194,7 @@ export default {
                 <div class="ml-3 mt-2 text-black group-hover:text-white">
                   <p class="font-[600] text-[16px]">Landscape Design SD</p>
                   <p
-                    class="font-[400] text-[14px] text-[#A89C93] mt-1 group-hover:text-white"
+                    class="  text-[14px] text-[#A89C93] mt-1 group-hover:text-white"
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
@@ -218,7 +218,7 @@ export default {
                     Pavers San Diego
                   </p>
                   <p
-                    class="font-[400] text-[14px] text-[#A89C93] mt-1 group-hover:text-white"
+                    class="  text-[14px] text-[#A89C93] mt-1 group-hover:text-white"
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
@@ -247,19 +247,19 @@ export default {
                       <h4 class="text-[black] font-[600] text-[16px] mt-4">
                         More Services
                       </h4>
-                      <p class="font-[400] text-[15px] cursor-pointer">
+                      <p class="  text-[15px] cursor-pointer">
                         Pools and Spas
                       </p>
-                      <p class="font-[400] text-[15px] cursor-pointer">
+                      <p class="  text-[15px] cursor-pointer">
                         Outdoor Kitchens
                       </p>
-                      <p class="font-[400] text-[15px] cursor-pointer">
+                      <p class="  text-[15px] cursor-pointer">
                         Concrete San Diego
                       </p>
-                      <p class="font-[400] text-[15px] cursor-pointer">
+                      <p class="  text-[15px] cursor-pointer">
                         Artificial Turf San Diego
                       </p>
-                      <p class="font-[400] text-[15px] cursor-pointer">
+                      <p class="  text-[15px] cursor-pointer">
                         Patio Covers and Pergolas
                       </p>
                     </div>
