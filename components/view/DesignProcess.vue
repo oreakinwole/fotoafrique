@@ -9,18 +9,18 @@
 <template>
   <div class="mt-20 lg:mt-28 lg:px-10 w-screen md:mt-20">
     <div
-      class="px-2 md:px-8 lg:px-20 lg:text-center mb-20"
+      class="px-2 md:px-8 lg:px-20 text-center mb-20"
       data-aos="fade-up"
       data-aos-easing="linear"
     >
-      <h4 class="font-playfairDisplay text-5xl font-semibold mb-2">
+      <h4 class="font-playfairDisplay  text-4xl lg:text-5xl font-semibold mb-2">
         Our Design Pro<span
-          class="text-[#A89C93] font-imperial font-normal text-6xl"
+          class="text-[#A89C93] font-imperial font-normal text-5xl lg:text-6xl"
           >C</span
         >ess
       </h4>
 
-      <p class="text-xl">
+      <p class="lg:text-xl">
         Simple Steps to Your Dream Yard, Here’s how it works:
       </p>
       <p
@@ -33,7 +33,7 @@
       </p>
     </div>
 
-    <div class="flex flex-col justify-center items-center">
+    <div class="hidden lg:flex flex-col justify-center items-center">
       <!-- upper container -->
       <div class="flex">
         <div

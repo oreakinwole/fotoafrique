@@ -7,7 +7,7 @@ import searchIcon from "public/images/navbar/icons/Search.png"
 import bagIcon from "public/images/navbar/icons/bag.png"
 import dummyProfileIcon from "public/images/navbar/icons/Icon Frame.png"
 import PopUpModal from "~/components/PopUpModal.vue";
-import MobileNavBar from "~/components/reusuables/MobileNavBar";
+import MobileNavBar from "~/components/MobileNavBar.vue";
 import image1 from "public/images/navbar/imgs/Mask group(4).png"
 import image2 from "public/images/navbar/imgs/img.png"
 import allButton from "public/images/navbar/icons/See all button.png"

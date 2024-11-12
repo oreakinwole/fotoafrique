@@ -90,13 +90,13 @@ onMounted(() => {
         class="bg-black text-white absolute top-0 left-0 h-full w-full opacity-50"
       ></div>
 
-      <div class="text-white absolute bottom-0">
+      <div class="text-white text-center absolute bottom-0">
         <div class="px-5 md:px-8">
           <p
             data-aos="fade-in"
             data-aos-easing="linear"
             data-aos-duration="900"
-            class="font-semibold text-2xl max-w-[300px] leading-normal tracking-widest"
+            class="font-semibold text-2xl max-w-[400px] leading-normal tracking-widest"
           >
             DON’T JUST LIKE YOUR YARD
           </p>
