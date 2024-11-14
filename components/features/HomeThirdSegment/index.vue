@@ -124,21 +124,21 @@ const datafQ = ref([
 
   <div class="pt-14 lg:pb-20">
     <h1
-      class="lg:hidden text-center font-bold text-5xl text-[#7B7B7B] opacity-50"
+      class="lg:hidden font-playfairDisplay text-center font-bold text-5xl text-[#A89C93] opacity-50"
     >
       Why Choose<br />
       Modern Yardz?
     </h1>
 
     <h1
-      class="hidden font-playfairDisplay text-[#A89C93] lg:block text-left pl-20 font-bold text-9xl text-[#7B7B7B] opacity-50"
+      class="hidden font-playfairDisplay text-[#A89C93] lg:block text-left pl-20 font-bold text-9xl  opacity-50"
       data-aos="slide-left"
       data-aos-duration="2000"
     >
       Why Choose
     </h1>
     <h1
-      class="hidden font-playfairDisplay text-[#A89C93] lg:block text-right pr-20 font-bold text-9xl text-[#7B7B7B] opacity-50"
+      class="hidden font-playfairDisplay text-[#A89C93] lg:block text-right pr-20 font-bold text-9xl  opacity-50"
       data-aos="slide-right"
       data-aos-duration="2000"
     >
@@ -150,7 +150,7 @@ const datafQ = ref([
     >
       <div class="font-inter text-black max-w-md  leading-loose">
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">01</span>
-        <p class="mt-4 text-[#454545]">
+        <p class="mt-4 text-lg text-[#454545]">
           At Modern Yardz, our mission is simple: to transform your outdoor
           space into something truly special. Based right here in San Diego,
           we’ve spent decades perfecting the craft of landscape design. From
@@ -160,7 +160,7 @@ const datafQ = ref([
       </div>
       <div class="font-inter text-black max-w-md  leading-loose">
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">02</span>
-        <p class="mt-4 text-[#454545]">
+        <p class="mt-4 text-lg text-[#454545]">
           At Modern Yardz, our mission is simple: to transform your outdoor With
           over 40 years in the business, we understand what it takes to create
           outdoor spaces that are both beautiful and functional. Our local roots
@@ -171,7 +171,7 @@ const datafQ = ref([
 
       <div class="font-inter text-black max-w-md  leading-loose">
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">03</span>
-        <p class="mt-4 text-[#454545]">
+        <p class="mt-4 text-lg text-[#454545]">
           Whether you’re looking to revamp your yard or start from scratch,
           we’re here to guide you through every step. Trust us to turn your
           vision into reality—because you deserve a space you’ll love for years
@@ -497,7 +497,7 @@ const datafQ = ref([
   <div
     class="mt-28 lg:mt-0 mb-12 lg:mb-28 bg-black h-[430px] lg:h-[500px] relative"
   >
-    <div class="absolute top-14 lg:top-28 left-2 right-2 lg:left-20 z-10">
+    <div class="absolute top-20 lg:top-28 left-2 right-2 lg:left-20 z-10">
       <div class="text-white font-semibold text-4xl lg:text-5xl max-w-[600px]">
         <p class="leading-tight text-center lg:text-left">
           Not sure where to start ? <br />

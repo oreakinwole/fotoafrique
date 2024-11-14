@@ -32,6 +32,8 @@ onMounted(() => {
 
 <template>
   <div class="lg:hidden">
+    <PopUpModal />
+
     <MobileNavBar />
   </div>
   <!--  <div class="flex flex-col bg-navbar-color font-inter fixed w-full z-10">-->

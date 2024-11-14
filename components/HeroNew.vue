@@ -90,13 +90,13 @@ onMounted(() => {
         class="bg-black text-white absolute top-0 left-0 h-full w-full opacity-50"
       ></div>
 
-      <div class="text-white text-center absolute bottom-0">
-        <div class="px-5 md:px-8">
+      <div class="text-white text-center  absolute w-full bottom-[35%]">
+        <div class="px-5 md:px-8 space-y-4">
           <p
             data-aos="fade-in"
             data-aos-easing="linear"
             data-aos-duration="900"
-            class="font-semibold text-2xl max-w-[400px] leading-normal tracking-widest"
+            class="font-semibold text-md leading-normal tracking-[.2rem]"
           >
             DON’T JUST LIKE YOUR YARD
           </p>
@@ -112,17 +112,17 @@ onMounted(() => {
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="1100"
-            class="font-light text-lg leading-normal tracking-widest"
+            class="text-lg leading-normal tracking-widest"
           >
-            Let us turn your outdoor space into a beautiful, custom-designed
-            haven that you’ll enjoy for years to come.
+            DESIGN YOUR DREAM YARD
           </p>
         </div>
 
-        <FlatButton
-          text="Design your dream yard"
-          text-color="white"
-          class="w-full mt-16 h-[75px] uppercase bg-[#665244]"
+        <FilledButton
+          background-color="white"
+          text="Book Free Consultation"
+          text-color="black"
+          class="uppercase w-[80%] mt-12"
         />
       </div>
 
