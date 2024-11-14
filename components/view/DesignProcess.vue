@@ -24,7 +24,7 @@
         Simple Steps to Your Dream Yard, Here’s how it works:
       </p>
       <p
-        class="text-md lg:text-xs text-[#454545] mt-4 lg:max-w-screen-sm leading-relaxed lg:mx-auto"
+        class="text-md text-[#454545] mt-4 lg:max-w-screen-sm leading-relaxed lg:mx-auto"
       >
         Creating the outdoor space you’ve always wanted is easier than you
         think. Our collaborative design process ensures that every step is clear
@@ -47,7 +47,7 @@
               <p class="pt-1 text-[#A89C93] text-xs">/01</p>
             </div>
 
-            <p class="text-[#665244] text-xs mt-3">
+            <p class="text-[#665244] text-sm mt-3">
               We start with a free consultation to discuss your vision and
               goals.
             </p>
@@ -71,7 +71,7 @@
               <p class="pt-1 text-[#A89C93] text-xs">/03</p>
             </div>
 
-            <p class="text-[#665244] text-xs mt-3">
+            <p class="text-[#665244] text-sm mt-3">
               We take it a step further by transforming the 2D plan into a
               realistic 3D rendering.
             </p>
@@ -100,7 +100,7 @@
               <p class="pt-1 text-[#A89C93] text-xs">/02</p>
             </div>
 
-            <p class="text-[#665244] text-xs mt-3">
+            <p class="text-[#665244] text-sm mt-3">
               We create a 2D design plan that shows a clear, overhead view of
               your future landscape.
             </p>
@@ -125,7 +125,7 @@
               <p class="pt-1 text-[#A89C93] text-xs">/04</p>
             </div>
 
-            <p class="text-[#665244] text-xs mt-3">
+            <p class="text-[#665244] text-sm mt-3">
               Once the design is finalized, we provide a detailed, itemized
               quote.
             </p>

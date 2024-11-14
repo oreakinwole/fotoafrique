@@ -146,9 +146,9 @@ const datafQ = ref([
     </h1>
 
     <div
-      class="max-w-screen-lg relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-28 space-y-8"
+      class="max-w-screen-lg relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-20 space-y-8"
     >
-      <div class="font-inter text-black max-w-md text-xs leading-loose">
+      <div class="font-inter text-black max-w-md  leading-loose">
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">01</span>
         <p class="mt-4 text-[#454545]">
           At Modern Yardz, our mission is simple: to transform your outdoor
@@ -158,7 +158,7 @@ const datafQ = ref([
           experience and a personalized touch to every project.
         </p>
       </div>
-      <div class="font-inter text-black max-w-md text-xs leading-loose">
+      <div class="font-inter text-black max-w-md  leading-loose">
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">02</span>
         <p class="mt-4 text-[#454545]">
           At Modern Yardz, our mission is simple: to transform your outdoor With
@@ -169,7 +169,7 @@ const datafQ = ref([
         </p>
       </div>
 
-      <div class="font-inter text-black max-w-md text-xs leading-loose">
+      <div class="font-inter text-black max-w-md  leading-loose">
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">03</span>
         <p class="mt-4 text-[#454545]">
           Whether you’re looking to revamp your yard or start from scratch,
@@ -182,7 +182,7 @@ const datafQ = ref([
       <div
         data-aos="slide-up"
         data-aos-duration="2000"
-        class="hidden lg:block md:block md:w-[38%] md:mr-2 w-[400px] h-[630px] bg-blue-100 rounded-t-full absolute lg:-top-40 md:-top-0 right-0"
+        class="hidden lg:block md:block md:w-[38%] md:mr-2 w-[400px] h-[630px] bg-blue-100 rounded-t-full absolute lg:-top-36 md:-top-0 right-0"
       >
         <video
           class="w-full h-full object-cover rounded-t-full bg-[url('@/assets/images/why_ch_bg.jpg')] bg-no-repeat bg-top bg-cover"
@@ -214,7 +214,7 @@ const datafQ = ref([
 
   <div class="my-10 lg:mt-36 mb-20 flex">
     <div
-      class="hidden lg:block ml-32 mt-20"
+      class="hidden lg:block ml-32 mt-8"
       data-aos="fade-up"
       data-aos-easing="linear"
     >
@@ -225,7 +225,7 @@ const datafQ = ref([
         </h4>
       </div>
 
-      <p class="text-[#454545] text-xs mt-4 font-inter leading-relaxed">
+      <p class="text-[#454545] text-sm mt-4  leading-relaxed">
         Every outdoor space has the potential to be extraordinary. Our custom
         design packages are crafted to fit your needs, whether you’re looking to
         refresh your front yard, revamp your backyard, or completely transform

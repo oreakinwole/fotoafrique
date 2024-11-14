@@ -59,7 +59,7 @@ onMounted(() => {
             class="uppercase inline-flex items-center justify-between w-full p-2"
           >
             <div>
-              <span>Services</span>
+              <span class="font-medium">Services</span>
             </div>
             <svg
               :class="['w-5 h-5 ml-2 -mr-1', getArrowDirection(isServiceOpen)]"
@@ -172,13 +172,13 @@ onMounted(() => {
         </div>
 
         <NuxtLink to="/gallery">
-          <p @click="toggleDropdown">Gallery</p>
+          <p class="font-medium" @click="toggleDropdown">Gallery</p>
         </NuxtLink>
         <NuxtLink to="/contact">
-          <p @click="toggleDropdown">Contact</p>
+          <p class="font-medium" @click="toggleDropdown">Contact</p>
         </NuxtLink>
         <NuxtLink to="/3d-packages">
-          <p @click="toggleDropdown">3D Packages</p>
+          <p class="font-medium" @click="toggleDropdown">3D Packages</p>
         </NuxtLink>
 
         <!-- More select button -->
@@ -190,7 +190,7 @@ onMounted(() => {
             :class="route.path === '/' ? 'bg-navbar-color' : 'bg-white'"
             class="uppercase cursor-pointer inline-flex items-center justify-between w-full p-2"
           >
-            <span>More</span>
+            <span class="font-medium">More</span>
             <svg
               :class="['w-5 h-5 ml-2 -mr-1', getArrowDirection(isMoreOpen)]"
               fill="currentColor"

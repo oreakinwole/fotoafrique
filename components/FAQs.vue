@@ -18,7 +18,7 @@ const isViewingFaq = ref(null);
         Got Qu<span class="text-[#A89C93] font-imperial text-6xl">E </span>
         stions ?
       </h4>
-      <p class="lg:text-xs max-w-[380px] lg:max-w-lg mx-auto">
+      <p class=" max-w-[380px] lg:max-w-lg mx-auto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
         dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
         vestibulum tortor feugiat.
