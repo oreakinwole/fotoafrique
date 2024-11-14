@@ -131,14 +131,14 @@ const datafQ = ref([
     </h1>
 
     <h1
-      class="hidden font-playfairDisplay text-[#A89C93] lg:block text-left pl-20 font-bold text-9xl  opacity-50"
+      class="hidden font-playfairDisplay text-[#A89C93] lg:block text-left pl-20 font-bold text-9xl opacity-50"
       data-aos="slide-left"
       data-aos-duration="2000"
     >
       Why Choose
     </h1>
     <h1
-      class="hidden font-playfairDisplay text-[#A89C93] lg:block text-right pr-20 font-bold text-9xl  opacity-50"
+      class="hidden font-playfairDisplay text-[#A89C93] lg:block text-right pr-20 font-bold text-9xl opacity-50"
       data-aos="slide-right"
       data-aos-duration="2000"
     >
@@ -148,7 +148,7 @@ const datafQ = ref([
     <div
       class="max-w-screen-lg relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-20 space-y-8"
     >
-      <div class="font-inter text-black max-w-md  leading-loose">
+      <div class="font-inter text-black max-w-md leading-loose">
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">01</span>
         <p class="mt-4 text-lg text-[#454545]">
           At Modern Yardz, our mission is simple: to transform your outdoor
@@ -158,7 +158,7 @@ const datafQ = ref([
           experience and a personalized touch to every project.
         </p>
       </div>
-      <div class="font-inter text-black max-w-md  leading-loose">
+      <div class="font-inter text-black max-w-md leading-loose">
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">02</span>
         <p class="mt-4 text-lg text-[#454545]">
           At Modern Yardz, our mission is simple: to transform your outdoor With
@@ -169,7 +169,7 @@ const datafQ = ref([
         </p>
       </div>
 
-      <div class="font-inter text-black max-w-md  leading-loose">
+      <div class="font-inter text-black max-w-md leading-loose">
         <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">03</span>
         <p class="mt-4 text-lg text-[#454545]">
           Whether you’re looking to revamp your yard or start from scratch,
@@ -197,7 +197,12 @@ const datafQ = ref([
     </div>
   </div>
 
-  <div class="lg:hidden mt-24 px-6" data-aos="fade-up" data-aos-easing="linear">
+  <div
+    id="packages"
+    class="lg:hidden mt-24 px-6"
+    data-aos="fade-up"
+    data-aos-easing="linear"
+  >
     <h4 class="font-playfairDisplay text-4xl font-[500] mb-4">
       Desi<span class="text-[#A89C93] font-imperial text-5xl">G </span>n
       Packages
@@ -212,7 +217,7 @@ const datafQ = ref([
     </p>
   </div>
 
-  <div class="my-10 lg:mt-36 mb-20 flex">
+  <div id="packages" class="my-10 lg:mt-36 mb-20 flex">
     <div
       class="hidden lg:block ml-32 mt-8"
       data-aos="fade-up"
@@ -225,7 +230,7 @@ const datafQ = ref([
         </h4>
       </div>
 
-      <p class="text-[#454545] text-sm mt-4  leading-relaxed">
+      <p class="text-[#454545] text-sm mt-4 leading-relaxed">
         Every outdoor space has the potential to be extraordinary. Our custom
         design packages are crafted to fit your needs, whether you’re looking to
         refresh your front yard, revamp your backyard, or completely transform

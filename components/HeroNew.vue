@@ -90,7 +90,7 @@ onMounted(() => {
         class="bg-black text-white absolute top-0 left-0 h-full w-full opacity-50"
       ></div>
 
-      <div class="text-white text-center  absolute w-full bottom-[35%]">
+      <div class="text-white text-center absolute w-full bottom-[35%]">
         <div class="px-5 md:px-8 space-y-4">
           <p
             data-aos="fade-in"
@@ -108,14 +108,13 @@ onMounted(() => {
           >
             LOVE IT!
           </p>
-          <p
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="1100"
+
+          <VueWriter
             class="text-lg leading-normal tracking-widest"
-          >
-            DESIGN YOUR DREAM YARD
-          </p>
+            :array="[`  DESIGN YOUR DREAM YARD`]"
+            :iterations="1"
+            :typeSpeed="100"
+          />
         </div>
 
         <FilledButton
