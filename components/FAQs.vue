@@ -7,6 +7,7 @@ const isViewingFaq = ref(null);
 <template>
   <!--our portfolio -->
   <div
+    id="FAQS"
     class="w-full bg-black text-white pt-20 lg:pt-20 cursor-help"
     v-if="faqData.dataArray.length > 0"
   >
@@ -14,9 +15,7 @@ const isViewingFaq = ref(null);
       <h4 class="font-semibold text-5xl lg:text-6xl"></h4>
 
       <h4 class="font-playfairDisplay text-5xl font-medium mb-4">
-        Got Qu<span class="text-[#A89C93] font-imperial  text-6xl"
-          >E 
-        </span>
+        Got Qu<span class="text-[#A89C93] font-imperial text-6xl">E </span>
         stions ?
       </h4>
       <p class="lg:text-xs max-w-[380px] lg:max-w-lg mx-auto">

@@ -1,24 +1,24 @@
 <script setup lang="ts">
-const isShowLoader = ref(true);
+const isShowLoader = ref(false);
 
-const loaderCountInterval = ref();
-const loaderCount = ref(0);
+// const loaderCountInterval = ref();
+// const loaderCount = ref(0);
 
-onMounted(() => {
-  loaderCountInterval.value = setInterval(() => {
-    if (loaderCount.value < 100) {
-      loaderCount.value += 10;
-    }
-  }, 180);
-});
+// onMounted(() => {
+//   loaderCountInterval.value = setInterval(() => {
+//     if (loaderCount.value < 100) {
+//       loaderCount.value += 10;
+//     }
+//   }, 180);
+// });
 
-onBeforeUnmount(() => {
-  clearInterval(loaderCountInterval.value);
-});
+// onBeforeUnmount(() => {
+//   clearInterval(loaderCountInterval.value);
+// });
 
-watch(loaderCount, (val: number) => {
-  if (val === 100) isShowLoader.value = false;
-});
+// watch(loaderCount, (val: number) => {
+//   if (val === 100) isShowLoader.value = false;
+// });
 </script>
 
 <template>
@@ -62,7 +62,7 @@ watch(loaderCount, (val: number) => {
   </div>
 
   <div class="max-w-[1600px] mx-auto overflow-hidden" v-else>
-    <NavBar />
+    <Navbar />
     <slot />
     <Footer class="mt-32" />
   </div>

@@ -21,21 +21,21 @@ export default {
 </script>
 
 <template>
-  <div class="hidden lg:block">
-    <div class="flex  justify-between px-44  ig">
+  <div class="hidden lg:block" id="socials">
+    <div class="flex justify-between px-44 ig">
       <p class="text-black font-[600] text-[32px] font-playfairDisplay">
         #modernyardz
       </p>
 
-      <div class="flex  gap-2 cursor-pointer">
+      <div class="flex gap-2 cursor-pointer">
         <img :src="instagram" alt="instagram icon" class="w-[24px] h-[24px]" />
-        <p class="uppercase font-inter   text-[16px] text-[#665244]">
+        <p class="uppercase font-inter text-[16px] text-[#665244]">
           Follow us on instagram
         </p>
       </div>
     </div>
 
-    <div class="flex  justify-evenly gap-5 px-36 pt-10 ig">
+    <div class="flex justify-evenly gap-5 px-36 pt-10 ig">
       <img
         :src="image1"
         alt="image1"
