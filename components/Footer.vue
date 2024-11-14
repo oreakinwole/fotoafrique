@@ -195,7 +195,7 @@ const handleBookConsult = () => {
       <p>Privacy Policy | Terms of Use</p>
     </div>
 
-    <!-- <div
+    <div
       @click="handleBookConsult"
       class="fixed right-4 bottom-4 lg:right-2 lg:bottom-10 animate__animated animate__fadeIn animate__slower z-50"
     >
@@ -203,9 +203,8 @@ const handleBookConsult = () => {
         background-color="black"
         text="BOOK NOW"
         text-color="white"
-     
       />
-    </div> -->
+    </div>
   </footer>
 </template>
 

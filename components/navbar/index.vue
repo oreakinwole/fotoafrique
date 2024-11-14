@@ -134,7 +134,7 @@ onMounted(() => {
                     class="w-[200px] h-[104px] mt-10 ml-20 bg-[#665244] rounded-tl-[20px] rounded-tr-[20px] inner-cont"
                   >
                     <img
-                      src="/images/navbar/imgs/img.png"
+                      src="/images/navbar/imgs/img.jpg"
                       alt="second image"
                       class="cursor-custom-cursor"
                     />

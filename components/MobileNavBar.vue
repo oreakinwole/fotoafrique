@@ -134,6 +134,16 @@ function toggleMenu() {
           fill="#D0C2B0"
         />
       </svg>
+
+      <div class="flex justify-between pt-[7rem]">
+        <div>
+          <img src="/images/navbar/imgs/Rectangle 426.png" width="200" alt="picture 1" />
+        </div>
+
+        <div class="pt-5">
+          <img src="/images/navbar/imgs/Rectangle 427.png" alt="picture 2" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
