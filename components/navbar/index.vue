@@ -249,7 +249,7 @@ onMounted(() => {
                 "
                 class="block w-[30%] hover:scale-95 duration-200 ease-linear text-left px-4 py-2 border border-solid h-[251px] rounded-[25px] more-parent"
               >
-                <NuxtLink to="#FAQS">
+                <NuxtLink to="/#FAQS">
                   <div class="ml-3 mt-2">
                     <p class="font-[600] text-[16px] text-black">FAQs</p>
                     <p class="font-[400] text-[14px] text-[#A89C93] mt-1">
@@ -270,7 +270,7 @@ onMounted(() => {
                 "
                 class="block w-[30%] hover:scale-95 duration-200 ease-linear text-left px-4 py-2 border border-solid h-[251px] rounded-[25px] more-parent"
               >
-                <NuxtLink to="#socials">
+                <NuxtLink to="/#socials">
                   <div class="ml-3 mt-2">
                     <p class="font-[600] text-[16px] text-black">Social</p>
                     <p class="font-[400] text-[14px] text-[#A89C93] mt-1">

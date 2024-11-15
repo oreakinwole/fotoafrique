@@ -64,6 +64,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 
         <footer class="mt-6 max-w-[90%]">
           <p class="lg:text-3xl font-bold mb-4">Rebecca Debono</p>
+          
           <span class="text-4xl">❝</span>
           <p class="text-sm font-light lg:text-md italic text-justify">
             Honestly can't say enough good things about this company as we are
@@ -73,6 +74,9 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
             and day! I never thought I would be so excited about turf and cement
             until I saw what they could do.
           </p>
+          <div class="mt-4">
+            <img src="@/assets/images/testimonial/rebecca.png" width="40"/>
+          </div>
         </footer>
       </div>
 
@@ -134,6 +138,10 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
             Weston reviewed a poorly drawn model of the project we wanted and he
             came up on the spot with certain revisions to the project.
           </p>
+
+          <div class="mt-4">
+            <img src="@/assets/images/testimonial/rtorres.png" width="40"/>
+          </div>
         </footer>
       </div>
     </div>
