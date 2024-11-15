@@ -24,6 +24,7 @@ const handleBookConsult = () => {
           text-color="#FCFBFA"
           background-color="black"
           text="Book Your Free Design Consult Now"
+          class="w-[300px]"
         />
       </div>
     </div>

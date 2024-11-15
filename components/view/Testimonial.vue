@@ -14,7 +14,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
       </h4>
     </div>
 
-    <div class="flex gap-4" data-aos="fade-in" data-aos-easing="linear">
+    <div class="flex flex-wrap gap-4" data-aos="fade-in" data-aos-easing="linear">
       <div class="h-full w-full">
         <ImgComparisonSlider class="h-full w-full rounded-2xl border-black">
           <!-- eslint-disable -->
