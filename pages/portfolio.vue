@@ -104,16 +104,22 @@ onMounted(() => {
           />
         </div>
 
+        <NuxtLink to="#all-gallery">
+
         <OutlinedButton
+          :no-action="true"
           border-color="#000"
           text-color="#000"
           background-color="white"
-          text="SCHEDULE A CALL"
+          text="VIEW MORE"
+          class="lg:w-[230px]"
         />
+      </NuxtLink>
+
       </div>
     </section>
 
-    <section>
+    <section id="all-gallery">
       <div class="relative flex justify-center items-center mt-16 mb-10">
         <aside
           :class="[
@@ -130,10 +136,10 @@ onMounted(() => {
               </div>
 
               <aside
+                @click="isShowingCat = !isShowingCat"
                 class="w-8 h-8 flex justify-center items-center rounded-full border border-new-gray"
               >
                 <svg
-                  @click="isShowingCat = !isShowingCat"
                   :class="isShowingCat && 'rotate-180'"
                   role="button"
                   class="w-4"
@@ -216,7 +222,7 @@ onMounted(() => {
           </main>
         </aside>
 
-        <div v-html="catData[catNumber].title"></div>
+        <div class="mt-28 lg:mt-0" v-html="catData[catNumber].title"></div>
       </div>
 
       <div
