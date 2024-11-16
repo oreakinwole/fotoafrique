@@ -219,11 +219,14 @@ onMounted(() => {
         <div v-html="catData[catNumber].title"></div>
       </div>
 
-      <div class="grid grid-cols-2 lg:grid-cols-3 pt-8 gap-8" ref="autoAniSection">
+      <div
+        class="grid grid-cols-2 lg:grid-cols-3 pt-8 gap-8"
+        ref="autoAniSection"
+      >
         <div
           v-for="i in flipTimes"
           :key="i"
-          class="bg-gray-100 h-[400px]  lg:flex-1  rounded-2xl overflow-hidden"
+          class="bg-gray-100 h-[400px] lg:flex-1 rounded-2xl overflow-hidden"
         >
           <img
             :src="catData[catNumber].image"
