@@ -69,7 +69,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
           <!-- eslint-enable -->
         </ImgComparisonSlider>
 
-        <NuxtLink to="gallery">
+        <NuxtLink to="portfolio">
           <FilledButton
             :no-action="true"
             background-color="black"

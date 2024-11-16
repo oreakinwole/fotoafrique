@@ -49,7 +49,18 @@ function getArrowDirection(isOpen) {
     <!-- first layout -->
     <PopUpModal />
 
-    <NavbarSecond :toggle-dropdown="toggleDropdown" />
+    <!-- <NavbarSecond :toggle-dropdown="toggleDropdown" /> -->
+
+    <div class="mt-4 max-w-24 mx-auto">
+      <NuxtLink to="/">
+        <img
+          @click="toggleDropdown"
+          src="/images/navbar/imgs/logo.png"
+          alt="modern yardz logo"
+          width="100"
+        />
+      </NuxtLink>
+    </div>
 
     <!--third layout -->
     <div
@@ -182,8 +193,8 @@ function getArrowDirection(isOpen) {
           </div>
         </div>
 
-        <NuxtLink to="/gallery">
-          <p class="font-medium" @click="toggleDropdown">Gallery</p>
+        <NuxtLink to="/portfolio">
+          <p class="font-medium" @click="toggleDropdown">Portfolio</p>
         </NuxtLink>
         <NuxtLink to="/contact">
           <p class="font-medium" @click="toggleDropdown">Contact</p>
@@ -295,6 +306,14 @@ function getArrowDirection(isOpen) {
           </div>
         </div>
         <!-- End More select button -->
+
+        <div>
+          <img
+            src="/images/navbar/icons/Search.png"
+            alt="search icon"
+            class="w-4"
+          />
+        </div>
       </div>
     </div>
   </div>

@@ -70,14 +70,14 @@ function toggleMenu() {
         <NuxtLink to="/portfolio">
           <li @click="toggleMenu" class="py-2 px-4">Portfolio</li>
         </NuxtLink>
-        <NuxtLink to="#packages">
+        <NuxtLink to="/#packages">
           <li @click="toggleMenu" class="py-2 px-4">Design Packages</li>
         </NuxtLink>
         <NuxtLink to="/finance">
           <li @click="toggleMenu" class="py-2 px-4">Financing</li>
         </NuxtLink>
 
-        <NuxtLink to="#FAQS">
+        <NuxtLink to="/#FAQS">
           <li @click="toggleMenu" class="py-2 px-4">FAQs</li>
         </NuxtLink>
         <NuxtLink to="/contact">

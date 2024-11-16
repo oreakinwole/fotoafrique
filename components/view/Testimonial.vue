@@ -151,7 +151,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
     </div>
 
     <div class="text-center">
-      <NuxtLink to="gallery">
+      <NuxtLink to="/portfolio">
         <FilledButton
           :no-action="true"
           background-color="black"
