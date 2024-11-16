@@ -502,9 +502,11 @@ const datafQ = ref([
   <div
     class="mt-28 lg:mt-0 mb-12 lg:mb-28 bg-black h-[430px] lg:h-[500px] relative"
   >
-    <div class="absolute top-20 lg:top-28 left-2 right-2  z-10">
-      <div class="text-white font-semibold text-4xl lg:text-5xl max-w-[600px] mx-auto">
-        <p class="leading-tight text-center ">
+    <div class="absolute top-20 lg:top-28 left-2 right-2 z-10">
+      <div
+        class="text-white font-semibold text-4xl lg:text-5xl max-w-[600px] mx-auto"
+      >
+        <p class="leading-tight text-center">
           Not sure where to start ? <br />
           Take our quiz to find your design package.
           <br />
@@ -519,12 +521,10 @@ const datafQ = ref([
         class="mt-10"
       /> -->
 
-      <ClientOnly class="">
-        <div
-          class="mt-12 text-center "
-          data-tf-live="01JBCJ0CFAY1HW94C4WJCBNZQZ"
-        ></div>
-      </ClientOnly>
+      <div
+        class="mt-12 text-center"
+        data-tf-live="01JBCJ0CFAY1HW94C4WJCBNZQZ"
+      ></div>
     </div>
 
     <div class="bg-black absolute top-0 left-0 h-full w-full opacity-50"></div>
