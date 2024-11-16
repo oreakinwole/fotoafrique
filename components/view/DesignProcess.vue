@@ -1,21 +1,18 @@
 <script setup>
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+// onMounted(() => {
+//   gsap.registerPlugin(ScrollTrigger);
 
-onMounted(() => {
-  gsap.registerPlugin(ScrollTrigger);
+//   gsap.to("#desing-p-mobile", {
+//     x: -950,
 
-  gsap.to("#desing-p-mobile", {
-    x: -950,
-
-    scrollTrigger: {
-      trigger: "#desing-p-mobile",
-      pin: true,
-      scrub: true,
-      start: "bottom 50%",
-    },
-  });
-});
+//     scrollTrigger: {
+//       trigger: "#desing-p-mobile",
+//       pin: true,
+//       scrub: true,
+//       start: "bottom 50%",
+//     },
+//   });
+// });
 </script>
 
 <template>
@@ -46,12 +43,9 @@ onMounted(() => {
     </div>
 
     <!-- Start mobile view -->
-    <div
-      class="lg:hidden flex space-x-12 overflow-x-hidden w-[1350px] pl-8"
-      id="desing-p-mobile"
-    >
+    <div class="lg:hidden flex justify-center flex-wrap gap-2">
       <div
-        class="rounded-t-lg mx-auto rounded-bl-lg flex flex-col justify-between w-[300px] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
+        class="rounded-lg  flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
       >
         <main class="px-1">
           <div class="flex justify-between">
@@ -72,7 +66,7 @@ onMounted(() => {
       </div>
 
       <div
-        class="rounded-b-lg flex flex-col justify-between w-[300px] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
+        class="rounded-lg flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
       >
         <main class="px-1">
           <div class="flex justify-between">
@@ -92,7 +86,7 @@ onMounted(() => {
       </div>
 
       <div
-        class="rounded-t-lg flex flex-col justify-between w-[300px] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
+        class="rounded-lg flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
       >
         <main class="px-1">
           <div class="flex justify-between">
@@ -114,7 +108,7 @@ onMounted(() => {
       </div>
 
       <div
-        class="rounded-b-lg flex flex-col justify-between w-[300px] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
+        class="rounded-lg flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
       >
         <main class="px-1">
           <div class="flex justify-between">

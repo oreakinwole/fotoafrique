@@ -14,7 +14,11 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
       </h4>
     </div>
 
-    <div class="flex flex-wrap lg:flex-nowrap gap-8" data-aos="fade-in" data-aos-easing="linear">
+    <div
+      class="flex flex-wrap lg:flex-nowrap gap-8"
+      data-aos="fade-in"
+      data-aos-easing="linear"
+    >
       <div class="h-full w-full">
         <ImgComparisonSlider class="h-full w-full rounded-2xl border-black">
           <!-- eslint-disable -->
@@ -64,8 +68,11 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 
         <footer class="mt-6 max-w-[90%]">
           <p class="lg:text-3xl font-bold mb-4">Rebecca Debono</p>
-          
+          <div class="mb-3">
+            <img src="@/assets/images/testimonial/rebecca.png" width="40" />
+          </div>
           <span class="text-4xl">❝</span>
+
           <p class="text-sm font-light lg:text-md italic text-justify">
             Honestly can't say enough good things about this company as we are
             SO THRILLED with the finished product. We hired them to demo and
@@ -74,9 +81,6 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
             and day! I never thought I would be so excited about turf and cement
             until I saw what they could do.
           </p>
-          <div class="mt-4">
-            <img src="@/assets/images/testimonial/rebecca.png" width="40"/>
-          </div>
         </footer>
       </div>
 
@@ -129,7 +133,11 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 
         <footer class="mt-6 max-w-[90%]">
           <p class="lg:text-3xl font-bold mb-4">Ryan Torres</p>
+          <div class="mb-3">
+            <img src="@/assets/images/testimonial/rtorres.png" width="40" />
+          </div>
           <span class="text-4xl">❝</span>
+
           <p class="text-sm font-light lg:text-md italic text-justify">
             Stumbled across Modern Yardz while Googling landscapers in San Diego
             County. Immediately was drawn to them based on their reviews and the
@@ -138,10 +146,6 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
             Weston reviewed a poorly drawn model of the project we wanted and he
             came up on the spot with certain revisions to the project.
           </p>
-
-          <div class="mt-4">
-            <img src="@/assets/images/testimonial/rtorres.png" width="40"/>
-          </div>
         </footer>
       </div>
     </div>

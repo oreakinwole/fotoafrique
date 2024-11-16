@@ -1,7 +1,7 @@
 <script setup>
-import autoAnimate from "@formkit/auto-animate";
+// import autoAnimate from "@formkit/auto-animate";
 
-const autoAniSection = ref();
+// const autoAniSection = ref();
 
 const isServiceOpen = ref(false);
 const isMoreOpen = ref(false);
@@ -9,9 +9,9 @@ const isMoreOpen = ref(false);
 const route = useRoute();
 const emit = defineEmits(["navbarShowing"]);
 
-onMounted(() => {
-  autoAnimate(autoAniSection.value);
-});
+// onMounted(() => {
+//   autoAnimate(autoAniSection.value);
+// });
 
 watch([isServiceOpen, isMoreOpen], ([service, more]) => {
   emit("navbarShowing", service || more);
@@ -194,12 +194,12 @@ function getArrowDirection(isOpen) {
 
         <!-- More select button -->
 
-        <div class="relative" ref="autoAniSection">
+        <div class="relative">
           <!-- Selected Option -->
           <button
             @click="toggleDropdown('more')"
             :class="route.path === '/' ? 'bg-navbar-color' : 'bg-white'"
-            class="uppercase cursor-pointer inline-flex items-center justify-between w-full p-2"
+            class="transition-all duration-1000 animate__animated animate__flipInX uppercase cursor-pointer inline-flex items-center justify-between w-full p-2"
           >
             <span class="font-medium">More</span>
             <svg
@@ -229,7 +229,7 @@ function getArrowDirection(isOpen) {
                 :class="
                   route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'
                 "
-                class="block w-[30%] hover:scale-95 duration-200 ease-linear text-left px-4 py-2 border border-solid h-[251px] rounded-[25px] more-parent"
+                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 py-2 border border-solid h-[251px] rounded-[25px] more-parent"
               >
                 <NuxtLink to="/finance">
                   <div class="ml-3 mt-2">
@@ -256,7 +256,7 @@ function getArrowDirection(isOpen) {
                 :class="
                   route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'
                 "
-                class="block w-[30%] hover:scale-95 duration-200 ease-linear text-left px-4 py-2 border border-solid h-[251px] rounded-[25px] more-parent"
+                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 py-2 border border-solid h-[251px] rounded-[25px] more-parent"
               >
                 <NuxtLink to="/#FAQS">
                   <div class="ml-3 mt-2">
@@ -277,7 +277,7 @@ function getArrowDirection(isOpen) {
                 :class="
                   route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'
                 "
-                class="block w-[30%] hover:scale-95 duration-200 ease-linear text-left px-4 py-2 border border-solid h-[251px] rounded-[25px] more-parent"
+                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 py-2 border border-solid h-[251px] rounded-[25px] more-parent"
               >
                 <NuxtLink to="/#socials">
                   <div class="ml-3 mt-2">
