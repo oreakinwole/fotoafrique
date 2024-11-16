@@ -34,7 +34,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
+  <div class="">
     <header
       class="hidden lg:block min-h-[470px] lg:min-h-screen pt-20 lg:bg-[url('@/assets/images/hero_bg1.png')] bg-white bg-no-repeat bg-left-top bg-cover"
     >

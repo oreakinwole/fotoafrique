@@ -1,5 +1,6 @@
-<script setup lang="ts">
+<script setup>
 const isShowLoader = ref(false);
+const isShowingNav = ref(false);
 
 // const loaderCountInterval = ref();
 // const loaderCount = ref(0);
@@ -19,6 +20,8 @@ const isShowLoader = ref(false);
 // watch(loaderCount, (val: number) => {
 //   if (val === 100) isShowLoader.value = false;
 // });
+
+const handleIsWhat = (val) => (isShowingNav.value = val);
 </script>
 
 <template>
@@ -53,7 +56,7 @@ const isShowLoader = ref(false);
       </svg>
 
       <div
-        class="absolute flex flex-col   items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#D0C2B0] text-4xl"
+        class="absolute flex flex-col items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#D0C2B0] text-4xl"
       >
         <p class="mt-6">{{ loaderCount }}%</p>
         <p class="text-xs font-semibold">Loading...</p>
@@ -62,8 +65,14 @@ const isShowLoader = ref(false);
   </div>
 
   <div class="max-w-[1600px] mx-auto overflow-hidden" v-else>
-    <Navbar />
-    <slot />
+    <Navbar @navbar-showing="handleIsWhat" />
+    <div
+      class="transition-all duration-150 ease-in"
+      :class="isShowingNav && ' blur-xl'"
+    >
+      <slot />
+    </div>
+
     <Footer class="mt-32" />
   </div>
 </template>

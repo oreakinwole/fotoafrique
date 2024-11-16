@@ -7,6 +7,15 @@ const isServiceOpen = ref(false);
 const isMoreOpen = ref(false);
 
 const route = useRoute();
+const emit = defineEmits(["navbarShowing"]);
+
+onMounted(() => {
+  autoAnimate(autoAniSection.value);
+});
+
+watch([isServiceOpen, isMoreOpen], ([service, more]) => {
+  emit("navbarShowing", service || more);
+});
 
 function toggleDropdown(type) {
   if (type === "more") {
@@ -24,10 +33,6 @@ function toggleDropdown(type) {
 function getArrowDirection(isOpen) {
   return isOpen ? "rotate-180" : "";
 }
-
-onMounted(() => {
-  autoAnimate(autoAniSection.value);
-});
 </script>
 
 <template>
@@ -87,7 +92,9 @@ onMounted(() => {
               <NuxtLink to="/services/landscape-sd">
                 <button
                   @click="toggleDropdown"
-                                  :class="route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'"
+                  :class="
+                    route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'
+                  "
                   class="transition-all duration-1000 animate__animated animate__flipInX block w-full text-left px-4 py-2 border border-solid h-[251px] overflow-hidden rounded-[25px] group hover:bg-black"
                 >
                   <div class="ml-3 mt-2 text-black group-hover:text-white">
@@ -114,8 +121,10 @@ onMounted(() => {
               <NuxtLink to="/services/pavers-sd">
                 <button
                   @click="toggleDropdown"
-                                  :class="route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'"
-                  class="transition-all duration-1000 animate__animated animate__flipInX block w-full text-left px-4 py-2 border border-solid  h-[251px] overflow-hidden rounded-[25px] group hover:bg-black"
+                  :class="
+                    route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'
+                  "
+                  class="transition-all duration-1000 animate__animated animate__flipInX block w-full text-left px-4 py-2 border border-solid h-[251px] overflow-hidden rounded-[25px] group hover:bg-black"
                 >
                   <div class="ml-3 mt-2 group-hover:text-white">
                     <p
