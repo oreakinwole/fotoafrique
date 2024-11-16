@@ -49,7 +49,7 @@ function getArrowDirection(isOpen) {
     <!-- first layout -->
     <PopUpModal />
 
-    <NavbarSecond />
+    <NavbarSecond :toggle-dropdown="toggleDropdown" />
 
     <!--third layout -->
     <div
