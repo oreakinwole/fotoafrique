@@ -1,6 +1,7 @@
 <script setup>
 const isShowLoader = ref(false);
 const isShowingNav = ref(false);
+const isBodyClicked = ref(false);
 
 // const loaderCountInterval = ref();
 // const loaderCount = ref(0);
@@ -21,7 +22,10 @@ const isShowingNav = ref(false);
 //   if (val === 100) isShowLoader.value = false;
 // });
 
-const handleIsWhat = (val) => (isShowingNav.value = val);
+const handleIsNavbarShowing = (val) => {
+  isShowingNav.value = val;
+  isBodyClicked.value = false;
+};
 </script>
 
 <template>
@@ -65,10 +69,14 @@ const handleIsWhat = (val) => (isShowingNav.value = val);
   </div>
 
   <div class="max-w-[1600px] mx-auto overflow-hidden" v-else>
-    <Navbar @navbar-showing="handleIsWhat" />
+    <Navbar
+      @navbar-showing="handleIsNavbarShowing"
+      :isBodyClicked="isBodyClicked"
+    />
     <div
       class="transition-all duration-150 ease-in"
       :class="isShowingNav && ' blur-xl'"
+      @click="isBodyClicked = true"
     >
       <slot />
     </div>

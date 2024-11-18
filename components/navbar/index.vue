@@ -8,10 +8,13 @@ const isMoreOpen = ref(false);
 
 const route = useRoute();
 const emit = defineEmits(["navbarShowing"]);
+const props = defineProps(["isBodyClicked"]);
 
 // onMounted(() => {
 //   autoAnimate(autoAniSection.value);
 // });
+
+const isBodyClicked = computed(() => props.isBodyClicked);
 
 watch([isServiceOpen, isMoreOpen], ([service, more]) => {
   emit("navbarShowing", service || more);
@@ -33,6 +36,13 @@ function toggleDropdown(type) {
 function getArrowDirection(isOpen) {
   return isOpen ? "rotate-180" : "";
 }
+
+watch(isBodyClicked, (val) => {
+  if (val === true) {
+    isMoreOpen.value = false;
+    isServiceOpen.value = false;
+  }
+});
 </script>
 
 <template>
@@ -98,7 +108,7 @@ function getArrowDirection(isOpen) {
             class="absolute -left-[15rem] z-10 mt-[1px] lg:w-[70rem] border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px] shadow-custom-light space-y-4"
           >
             <!-- Dropdown content -->
-            <div class="py-1 flex items-center gap-8 px-10  mb-2">
+            <div class="py-1 flex items-center gap-8 px-10 mb-2">
               <!-- first container -->
               <NuxtLink to="/services/landscape-sd">
                 <button
@@ -108,7 +118,7 @@ function getArrowDirection(isOpen) {
                   "
                   class="transition-all duration-1000 animate__animated animate__flipInX block w-full text-left px-4 py-2 border border-solid h-[200px] overflow-hidden rounded-[25px] group hover:bg-black"
                 >
-                  <div class="ml-3  text-black group-hover:text-white">
+                  <div class="ml-3 text-black group-hover:text-white">
                     <p class="font-[600] text-[16px]">Landscape Design SD</p>
                     <!-- <p
                       class="text-[14px] text-[#A89C93] mt-1 group-hover:text-white"
@@ -137,7 +147,7 @@ function getArrowDirection(isOpen) {
                   "
                   class="transition-all duration-1000 animate__animated animate__flipInX block w-full text-left px-4 py-2 border border-solid h-[200px] overflow-hidden rounded-[25px] group hover:bg-black"
                 >
-                  <div class="ml-3  group-hover:text-white">
+                  <div class="ml-3 group-hover:text-white">
                     <p
                       class="font-[600] text-[16px] text-black group-hover:text-white"
                     >
@@ -163,52 +173,67 @@ function getArrowDirection(isOpen) {
               </NuxtLink>
               <!-- third container -->
               <div
-                class="block w-full text-left  overflow-hidden rounded-[25px]"
+                class="block w-full text-left overflow-hidden rounded-[25px]"
               >
                 <div class="">
                   <div
                     class="flex flex-row justify-between font-inter px-6 ml-[-18px]"
                   >
                     <div class="flex flex-col gap-3 pt-3">
-                      <h4 class="text-[black] font-[600] text-[14px] ">
+                      <h4 class="text-[black] font-[600] text-[14px]">
                         More Services
                       </h4>
 
                       <NuxtLink to="/services/pools-and-spas">
-                        <p class="text-[13px] hover:underline" @click="toggleDropdown">
+                        <p
+                          class="text-[13px] hover:underline"
+                          @click="toggleDropdown"
+                        >
                           Pools and Spas
                         </p>
                       </NuxtLink>
 
                       <NuxtLink to="/services/outdoor-kitchens">
-                        <p class="text-[13px] hover:underline" @click="toggleDropdown">
+                        <p
+                          class="text-[13px] hover:underline"
+                          @click="toggleDropdown"
+                        >
                           Outdoor Kitchens
                         </p>
                       </NuxtLink>
 
                       <NuxtLink to="/services/concrete-sd">
-                        <p class="text-[13px] hover:underline" @click="toggleDropdown">
+                        <p
+                          class="text-[13px] hover:underline"
+                          @click="toggleDropdown"
+                        >
                           Concrete San Diego
                         </p>
                       </NuxtLink>
 
                       <NuxtLink to="/services/artificial-turf">
-                        <p class="text-[13px] hover:underline" @click="toggleDropdown">
+                        <p
+                          class="text-[13px] hover:underline"
+                          @click="toggleDropdown"
+                        >
                           Artificial Turf San Diego
                         </p>
                       </NuxtLink>
 
                       <NuxtLink to="/services/patios-and-pergolas">
-                        <p class="text-[13px] hover:underline" @click="toggleDropdown">
+                        <p
+                          class="text-[13px] hover:underline"
+                          @click="toggleDropdown"
+                        >
                           Patio Covers and Pergolas
                         </p>
                       </NuxtLink>
                     </div>
-                    <div class="mt-[70px] ">
+                    <div class="mt-[70px]">
                       <img
                         src="/images/navbar/icons/See all button.png"
                         alt="arrow"
-                        class="h-[65px] w-[65px] "
+                        class="h-[65px] w-[65px]"
                       />
                     </div>
                   </div>
@@ -265,7 +290,7 @@ function getArrowDirection(isOpen) {
                 :class="
                   route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'
                 "
-                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4  border border-solid h-[200px] rounded-[25px] more-parent"
+                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 border border-solid h-[200px] rounded-[25px] more-parent"
               >
                 <NuxtLink to="/finance">
                   <div class="ml-3 mt-2">
@@ -292,7 +317,7 @@ function getArrowDirection(isOpen) {
                 :class="
                   route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'
                 "
-                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4  border border-solid h-[200px] rounded-[25px] more-parent"
+                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 border border-solid h-[200px] rounded-[25px] more-parent"
               >
                 <NuxtLink to="/#FAQS">
                   <div class="ml-3 mt-2">
@@ -313,7 +338,7 @@ function getArrowDirection(isOpen) {
                 :class="
                   route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'
                 "
-                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4  border border-solid h-[200px] rounded-[25px] more-parent"
+                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 border border-solid h-[200px] rounded-[25px] more-parent"
               >
                 <NuxtLink to="/#socials">
                   <div class="ml-3 mt-2">
