@@ -48,11 +48,11 @@ onMounted(() => {
       </div>
 
       <div class="w-1/2 grid grid-cols-2 gap-8">
-        <main class="col-span-1 space-y-8 mt-28 ">
+        <main class="col-span-1 space-y-32 mt-48 ">
           <div
             class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
-            <NuxtLink to="services/landscape">
+            <NuxtLink to="/services/landscape-sd">
               <img
                 src="@/assets/images/services/1slandscape_sd.jpg"
                 class="explore-item"
@@ -64,52 +64,31 @@ onMounted(() => {
             class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
             id="pin-windmill-svg"
           >
-            <NuxtLink to="services/landscape">
+            <NuxtLink to="/services/pavers-sd">
               <img
                 class="explore-item"
                 src="@/assets/images/services/2spavers_sd.jpg"
               />
             </NuxtLink>
           </div>
-
           <div
             class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
-            <NuxtLink to="services/landscape">
-              <img
-                class="explore-item"
-                src="@/assets/images/services/3spools.jpg"
-              />
-            </NuxtLink>
-          </div>
-
-          <div
-            class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
-          >
-            <NuxtLink to="services/landscape">
-              <img
-                class="explore-item"
-                src="@/assets/images/services/4outdoor.jpg"
-              />
-            </NuxtLink>
-          </div>
-          <div
-            class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
-          >
-            <NuxtLink to="services/landscape">
+            <NuxtLink to="/services/concrete-sd">
               <img
                 class="explore-item"
                 src="@/assets/images/services/5sconcretesandiego.jpg"
               />
             </NuxtLink>
           </div>
+        
         </main>
 
-        <main class="col-span-1 space-y-8">
+        <main class="col-span-1 space-y-32">
           <div
             class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
-            <NuxtLink to="services/landscape">
+            <NuxtLink to="/services/artificial-turf">
               <img
                 class="explore-item"
                 src="@/assets/images/services/6artifical.jpg"
@@ -119,8 +98,9 @@ onMounted(() => {
 
           <div
             class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
+            id="pin-windmill-wrap"
           >
-            <NuxtLink to="services/landscape">
+            <NuxtLink to="/services/patios-and-pergolas">
               <img
                 class="explore-item"
                 src="@/assets/images/services/7patio.jpg"
@@ -131,10 +111,10 @@ onMounted(() => {
           <div
             class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
-            <NuxtLink to="services/landscape">
+            <NuxtLink to="/services/pools-and-spas">
               <img
                 class="explore-item"
-                src="@/assets/images/services/8fire.jpg"
+                src="@/assets/images/services/3spools.jpg"
               />
             </NuxtLink>
           </div>
@@ -142,26 +122,14 @@ onMounted(() => {
           <div
             class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
-            <NuxtLink to="services/landscape">
+            <NuxtLink to="/services/outdoor-kitchens">
               <img
                 class="explore-item"
-                src="@/assets/images/services/9seat.jpg"
+                src="@/assets/images/services/4outdoor.jpg"
               />
             </NuxtLink>
           </div>
-
-          <div
-            class="w-[300px] min-h-[400px]  duration-300 ease-linear bg-black"
-            id="pin-windmill-wrap"
-         
-            >
-            <NuxtLink to="services/landscape">
-              <img
-                class="explore-item"
-                src="@/assets/images/services/10light.jpg"
-              />
-            </NuxtLink>
-          </div>
+        
         </main>
       </div>
     </section>
