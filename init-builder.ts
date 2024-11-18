@@ -7,6 +7,12 @@ export const registeredComponents = [
     name: "Seo Template",
     inputs: [
       {
+        name: "captImage",
+        type: "string",
+        defaultValue: "https://www.modernyardz.com/cdn/shop/files/slider1.webp?v=1708160102&width=3280",
+
+      },
+      {
         name: "title",
         type: "string",
         defaultValue: "Input Title Here",
