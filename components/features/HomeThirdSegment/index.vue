@@ -194,6 +194,14 @@ const datafQ = ref([
           Something went wrong while playing video
         </video>
       </div>
+
+      <div class="h-[600px]">
+        <img
+          src="@/assets/images/teamphoto.jpeg"
+          alt="team photo"
+          class="w-full h-full object-cover"
+        />
+      </div>
     </div>
   </div>
 
