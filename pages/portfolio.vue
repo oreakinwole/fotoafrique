@@ -8,50 +8,138 @@ import kitchenImg from "@/assets/images/outdoor-kitchen.png";
 
 const autoAniSection = ref();
 
-const isShowingCat = ref(false);
-const flipTimes = ref(3);
-const catNumber = ref(0);
+const isViewingGallery = ref(0);
 
-const catData = ref([
+const galleryData = ref([
   {
-    title: ` <p class="font-playfairDisplay text-4xl font-medium">
-          Paver
-          <span class="text-new-gray font-imperial text-5xl">G</span>allery
-        </p>`,
+    title: "Paver Gallery",
     image: paverImg,
+    imgArray: [
+      "https://www.modernyardz.com/cdn/shop/files/1.webp?v=1708357679&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/28.webp?v=1708357682&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/3.webp?v=1708357679&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/4.webp?v=1708357682&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/5.webp?v=1708357681&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/6.webp?v=1708357680&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/7_e4a6ed7e-a0ae-49fd-9ece-752fae0ffbaf.webp?v=1708357917&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/8.webp?v=1708357681&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/9.webp?v=1708357680&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/10.webp?v=1708357679&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/11.webp?v=1708357680&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/12.webp?v=1708357679&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/13.webp?v=1708357681&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/14.webp?v=1708357681&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/15.webp?v=1708357679&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/16.webp?v=1708357681&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/17.webp?v=1708357679&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/18.webp?v=1708357679&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/20.webp?v=1708357678&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/22.webp?v=1708359330&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/24.webp?v=1708357681&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/25.webp?v=1708357678&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/26.webp?v=1708357679&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/30.webp?v=1708357681&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/31.webp?v=1708357681&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/32.webp?v=1708357680&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/28.webp?v=1708357682&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/34.webp?v=1708357680&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/36.webp?v=1708357681&width=3000",
+    ],
   },
   {
-    title: ` <p class="font-playfairDisplay text-4xl font-medium mt-10">
-              Concrete
-              <span class="text-new-gray font-imperial text-5xl">G</span>allery
-            </p>`,
+    title: "Concrete Gallery",
     image: concreteImg,
+
+    imgArray: [
+      "https://www.modernyardz.com/cdn/shop/files/1_b8834d74-a5c6-42e6-bf90-c2bb2eb219db.webp?v=1708362361&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/2_38ef7e63-07e9-4328-bfb9-0525137023c7.webp?v=1708362361&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/3_dc4945ab-bc4f-4476-8db7-eb37cc1b3caf.webp?v=1708362360&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/4_5adf2a64-91ca-4735-a7d4-789f2c2f0945.webp?v=1708362362&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/5_5e600c59-edee-43fa-ae1a-cb9725814255.webp?v=1708362361&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/6_a6cd1a2b-a5f9-4773-830b-1e33060bf9f9.webp?v=1708362361&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/7_af2717ba-50d4-4cfc-984f-4f5eeba491c7.webp?v=1708362360&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/8_bcd4cd97-8831-457b-90c0-341652da7a15.webp?v=1708362360&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/8_bcd4cd97-8831-457b-90c0-341652da7a15.webp?v=1708362360&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/9_63b675a0-5270-400a-97c8-860af612e2aa.webp?v=1708362360&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/10_3e5f8081-e8cd-4e7e-862b-2945d4de464b.webp?v=1708362361&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/11_f80470fd-05a2-4777-91d8-4515cf8fe39e.webp?v=1708362360&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/12_1477d97d-f243-486a-b783-769bcbd35cce.webp?v=1708362360&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/13_07816434-d4ef-45fb-8260-1c4f781d90f9.webp?v=1708362362&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/14_27defdc3-92e6-47a9-9b67-afb31f1b50ea.webp?v=1708362361&width=3000",
+    ],
   },
   {
-    title: `  <p class="font-playfairDisplay text-4xl font-medium">
-                Turf
-                <span class="text-new-gray font-imperial text-5xl">G</span>allery`,
+    title: "Turf Gallery",
     image: turfImg,
+    imgArray: [
+      "https://www.modernyardz.com/cdn/shop/files/turf13.webp?v=1708364631&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf14.webp?v=1708364632&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf15.webp?v=1708364631&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf16.webp?v=1708364632&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf18.webp?v=1708364632&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf17.webp?v=1708364632&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf19.webp?v=1708364631&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf20.webp?v=1708364632&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf1.webp?v=1708364632&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf2.webp?v=1708364632&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf3.webp?v=1708364631&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf5.webp?v=1708364631&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf6.webp?v=1708364631&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf7.webp?v=1708364631&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf10.webp?v=1708364631&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf9.webp?v=1708364632&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/turf8.webp?v=1708364631&width=3000",
+    ],
   },
   {
-    title: ` <p class="font-playfairDisplay text-4xl font-medium">
-                Patio Covers & 
-                <span class="text-new-gray font-imperial text-5xl">P</span>ergolas
-              </p> `,
+    title: " Patio Covers & Pergolas",
     image: patioImg,
+
+    imgArray: [
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_1547.webp?v=1708447763&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_370_cg_true_m.webp?v=1708448097&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_1547_1.webp?v=1708448183&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870.webp?v=1708448247&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_1547_2.webp?v=1708448286&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_1.webp?v=1708448477&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_2.webp?v=1708448517&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_984_h_1749.webp?v=1708448564&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_3.webp?v=1708448606&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_4.webp?v=1708448653&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_5.webp?v=1708448698&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_6.webp?v=1708448738&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_7.webp?v=1708448815&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_773.webp?v=1708448850&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_773_1.webp?v=1708448887&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_8.webp?v=1708448925&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_1547_3.webp?v=1708449102&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_12.webp?v=1708449135&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_13.webp?v=1708449183&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_14.webp?v=1708449219&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_15.webp?v=1708449257&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_653.webp?v=1708449317&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_17.webp?v=1708449378&width=3000",
+    ],
   },
   {
-    title: ` <p class="font-playfairDisplay text-4xl font-medium">
-                Outdoor 
-                <span class="text-new-gray font-imperial text-5xl">K</span>ITCHENS
-              </p>`,
+    title: "Outdoor Kitchens",
     image: kitchenImg,
+
+    imgArray: [
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_20.webp?v=1708450474&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_21.webp?v=1708451245&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_22.webp?v=1708451314&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/rs_w_1160_h_870_23.webp?v=1708451361&width=3000",
+      "https://www.modernyardz.com/cdn/shop/files/6_1e7d8cd1-ce99-4415-b0c2-4195c74365c7.webp?v=1708533229&width=3000",
+    ],
   },
 ]);
 
 onMounted(() => {
   autoAnimate(autoAniSection.value, { duration: 300 });
 });
+
+const handleChangeView = (index) => (isViewingGallery.value = index);
 </script>
 
 <template>
@@ -105,139 +193,44 @@ onMounted(() => {
         </div>
 
         <NuxtLink to="#all-gallery">
-
-        <OutlinedButton
-          :no-action="true"
-          border-color="#000"
-          text-color="#000"
-          background-color="white"
-          text="VIEW MORE"
-          class="lg:w-[230px]"
-        />
-      </NuxtLink>
-
+          <OutlinedButton
+            :no-action="true"
+            border-color="#000"
+            text-color="#000"
+            background-color="white"
+            text="VIEW MORE"
+            class="lg:w-[190px]"
+          />
+        </NuxtLink>
       </div>
     </section>
 
     <section id="all-gallery">
-      <div class="relative flex justify-center items-center mt-16 mb-10">
-        <aside
-          :class="[
-            isShowingCat ? 'rounded-3xl' : 'rounded-full',
-            isShowingCat ? 'pb-b' : 'pb-1',
-          ]"
-          class="absolute top-0 left-0 z-10 bg-white w-[250px] border border-new-gray pt-[2px]"
+      <header class="flex space-x-4 justify-center my-8">
+        <div
+          v-for="(item, index) in galleryData"
+          class="transition-all duration-1000 ease-in-out py-2 px-3 rounded-3xl bg-navbar-color hover:text-white hover:bg-black"
+          :class="
+            isViewingGallery === index && 'lg:text-white lg:bg-black'
+          "
+          :key="item.title"
+          @click="handleChangeView(index)"
+          role="button"
         >
-          <main ref="autoAniSection">
-            <header class="flex justify-between items-center px-4">
-              <div>
-                <span class="text-[#A89C93] text-xs font-medium">Category</span>
-                <p class="font-semibold">All Categories</p>
-              </div>
-
-              <aside
-                @click="isShowingCat = !isShowingCat"
-                class="w-8 h-8 flex justify-center items-center rounded-full border border-new-gray"
-              >
-                <svg
-                  :class="isShowingCat && 'rotate-180'"
-                  role="button"
-                  class="w-4"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13.4391 6.13477H8.76658H4.55908C3.83908 6.13477 3.47908 7.00477 3.98908 7.51477L7.87408 11.3998C8.49658 12.0223 9.50908 12.0223 10.1316 11.3998L11.6091 9.92227L14.0166 7.51477C14.5191 7.00477 14.1591 6.13477 13.4391 6.13477Z"
-                    fill="black"
-                  />
-                </svg>
-              </aside>
-            </header>
-
-            <ul v-if="isShowingCat" class="mt-4">
-              <li
-                :class="catNumber === 0 && 'bg-[#F6F6F6]'"
-                class="font-semibold p-3 hover:bg-[#F6F6F6]'"
-                role="button"
-                @click="
-                  isShowingCat = !isShowingCat;
-                  catNumber = 0;
-                  flipTimes = 5;
-                "
-              >
-                Paver Gallery
-              </li>
-              <li
-                role="button"
-                @click="
-                  isShowingCat = !isShowingCat;
-                  catNumber = 1;
-                  flipTimes = 5;
-                "
-                :class="catNumber === 1 && 'bg-[#F6F6F6]'"
-                class="font-semibold p-3 hover:bg-[#F6F6F6]'"
-              >
-                Concrete Gallery
-              </li>
-              <li
-                role="button"
-                @click="
-                  isShowingCat = !isShowingCat;
-                  catNumber = 2;
-                  flipTimes = 5;
-                "
-                :class="catNumber === 2 && 'bg-[#F6F6F6]'"
-                class="font-semibold p-3 hover:bg-[#F6F6F6]'"
-              >
-                Turf Gallery
-              </li>
-              <li
-                role="button"
-                @click="
-                  isShowingCat = !isShowingCat;
-                  catNumber = 3;
-                  flipTimes = 5;
-                "
-                :class="catNumber === 3 && 'bg-[#F6F6F6]'"
-                class="font-semibold p-3 hover:bg-[#F6F6F6]'"
-              >
-                Patio Covers and Pergolas
-              </li>
-              <li
-                role="button"
-                @click="
-                  isShowingCat = !isShowingCat;
-                  catNumber = 4;
-                  flipTimes = 5;
-                "
-                :class="catNumber === 4 && 'bg-[#F6F6F6]'"
-                class="font-semibold p-3 hover:bg-[#F6F6F6]'"
-              >
-                Outdoor Kitchens
-              </li>
-            </ul>
-          </main>
-        </aside>
-
-        <div class="mt-28 lg:mt-0" v-html="catData[catNumber].title"></div>
-      </div>
+          {{ item.title }}
+        </div>
+      </header>
 
       <div
         class="grid grid-cols-2 lg:grid-cols-3 pt-8 gap-8"
         ref="autoAniSection"
       >
         <div
-          v-for="i in flipTimes"
-          :key="i"
+          v-for="imagey in galleryData[isViewingGallery].imgArray"
+          :key="imagey"
           class="bg-gray-100 h-[400px] lg:flex-1 rounded-2xl overflow-hidden"
         >
-          <img
-            :src="catData[catNumber].image"
-            class="h-full w-full object-cover"
-          />
+          <img :src="imagey" class="h-full w-full object-cover" />
         </div>
       </div>
     </section>
