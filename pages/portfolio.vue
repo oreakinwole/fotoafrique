@@ -10,6 +10,8 @@ const autoAniSection = ref();
 
 const isViewingGallery = ref(0);
 
+const router = useRouter();
+
 const galleryData = ref([
   {
     title: "Paver Gallery",
@@ -168,10 +170,21 @@ const handleChangeView = (index) => (isViewingGallery.value = index);
         <p class="font-playfairDisplay text-7xl font-medium">
           Portfoli<span class="text-new-gray font-imperial text-7xl">O</span>
         </p>
-        <ul class="flex justify-between max-w-[220px] font-medium">
-          <li>Style</li>
-          <li class="text-new-gray">Elegance</li>
-          <li class="text-new-gray">Creative</li>
+
+        <ul class="flex space-x-4 font-medium">
+          <li
+            v-for="(item, index) in galleryData"
+            :key="item"
+            class="transition-all duration-1000 ease-in-out hover:text-black"
+            role="button"
+            :class="!(isViewingGallery === index) && 'text-new-gray'"
+            @click="
+              handleChangeView(index);
+              router.push('#all-gallery-view');
+            "
+          >
+            {{ item.title }}
+          </li>
         </ul>
 
         <div class="my-4 mt-20 grid grid-cols-3">
@@ -192,16 +205,13 @@ const handleChangeView = (index) => (isViewingGallery.value = index);
           />
         </div>
 
-        <NuxtLink to="#all-gallery">
-          <OutlinedButton
-            :no-action="true"
-            border-color="#000"
-            text-color="#000"
-            background-color="white"
-            text="VIEW MORE"
-            class="lg:w-[190px]"
-          />
-        </NuxtLink>
+        <OutlinedButton
+          border-color="#000"
+          text-color="#000"
+          background-color="white"
+          text="Design Your Dream Yard"
+          class="lg:w-[190px]"
+        />
       </div>
     </section>
 
@@ -210,9 +220,7 @@ const handleChangeView = (index) => (isViewingGallery.value = index);
         <div
           v-for="(item, index) in galleryData"
           class="transition-all duration-1000 ease-in-out py-2 px-3 rounded-3xl bg-navbar-color hover:text-white hover:bg-black"
-          :class="
-            isViewingGallery === index && 'lg:text-white lg:bg-black'
-          "
+          :class="isViewingGallery === index && 'lg:text-white lg:bg-black'"
           :key="item.title"
           @click="handleChangeView(index)"
           role="button"
@@ -224,6 +232,7 @@ const handleChangeView = (index) => (isViewingGallery.value = index);
       <div
         class="grid grid-cols-2 lg:grid-cols-3 pt-8 gap-8"
         ref="autoAniSection"
+        id="all-gallery-view"
       >
         <div
           v-for="imagey in galleryData[isViewingGallery].imgArray"

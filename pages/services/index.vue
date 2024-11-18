@@ -23,7 +23,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="lg:pt-28">
+  <div class="lg:pt-12">
     <section class="hidden lg:flex space-x-8 w-full mb-28">
       <div class="w-1/2 h-[700px] relative" id="pin-windmill">
         <div

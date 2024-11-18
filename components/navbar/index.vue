@@ -229,12 +229,17 @@ watch(isBodyClicked, (val) => {
                         </p>
                       </NuxtLink>
                     </div>
+
                     <div class="mt-[70px]">
-                      <img
-                        src="/images/navbar/icons/See all button.png"
-                        alt="arrow"
-                        class="h-[65px] w-[65px]"
-                      />
+                      <NuxtLink to="/services">
+                        <img
+                        @click="toggleDropdown"
+                        role="button"
+                          src="/images/navbar/icons/See all button.png"
+                          alt="arrow"
+                          class="h-[65px] w-[65px]"
+                        />
+                      </NuxtLink>
                     </div>
                   </div>
                 </div>
@@ -249,8 +254,8 @@ watch(isBodyClicked, (val) => {
         <NuxtLink to="/contact">
           <p class="font-medium" @click="toggleDropdown">Contact</p>
         </NuxtLink>
-        <NuxtLink to="/3d-packages">
-          <p class="font-medium" @click="toggleDropdown">3D Packages</p>
+        <NuxtLink to="/finance">
+          <p class="font-medium" @click="toggleDropdown">Partner Deal</p>
         </NuxtLink>
 
         <!-- More select button -->
@@ -292,13 +297,13 @@ watch(isBodyClicked, (val) => {
                 "
                 class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 border border-solid h-[200px] rounded-[25px] more-parent"
               >
-                <NuxtLink to="/finance">
+                <NuxtLink to="/3d-packages">
                   <div class="ml-3 mt-2">
                     <p
                       @click="toggleDropdown"
                       class="font-[600] text-[16px] text-black"
                     >
-                      Financing
+                      3D Packages
                     </p>
 
                     <!-- <p class="font-[400] text-[14px] text-[#A89C93] mt-1">
@@ -306,8 +311,16 @@ watch(isBodyClicked, (val) => {
                     </p> -->
                   </div>
                   <div
-                    class="w-[195px] h-[124px] mt-5 ml-20 bg-[#A89C93] rounded-tl-[20px] rounded-tr-[20px] more-cont"
-                  ></div>
+                    class="w-[195px] h-[124px] mt-5 ml-20 bg-[#A89C93] rounded-tl-[20px] rounded-tr-[20px] more-cont overflow-hidden"
+                  >
+                
+                  <img
+                      src="@/assets/images/Ferrer_026.jpg"
+                      alt="first image"
+                      class="h-full w-full object-cover"
+                    />
+                </div>
+                  
                 </NuxtLink>
               </button>
 
@@ -327,8 +340,12 @@ watch(isBodyClicked, (val) => {
                     </p> -->
                   </div>
                   <div
-                    class="w-[195px] h-[124px] mt-5 ml-20 bg-[#665244] rounded-tl-[20px] rounded-tr-[20px] more-cont"
-                  ></div>
+                    class="w-[195px] h-[124px] flex justify-center items-center mt-5 ml-20 bg-navbar-color rounded-tl-[20px] rounded-tr-[20px] more-cont"
+                  >
+
+                <p class="font-playfairDisplay text-gray-900 font-bold text-8xl ">?</p>
+
+                </div>
                 </NuxtLink>
               </button>
 
@@ -348,8 +365,12 @@ watch(isBodyClicked, (val) => {
                     </p> -->
                   </div>
                   <div
-                    class="w-[195px] h-[124px] mt-5 ml-20 bg-[#D0C2B0] rounded-tl-[20px] rounded-tr-[20px] more-cont"
-                  ></div>
+                    class="w-[195px] h-[124px] flex justify-center items-center mt-5 ml-20 bg-navbar-color rounded-tl-[20px] rounded-tr-[20px] more-cont"
+                  >
+
+                <p class="font-playfairDisplay text-gray-900 font-bold text-8xl ">@</p>
+
+                </div>
                 </NuxtLink>
               </button>
             </div>
