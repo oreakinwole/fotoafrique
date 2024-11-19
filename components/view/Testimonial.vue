@@ -3,7 +3,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 </script>
 
 <template>
-  <div class="mt-20 lg:mt-28 px-4 lg:px-28 w-screen">
+  <div id="testimonials" class="mt-20 lg:mt-28 px-4 lg:px-28 w-screen">
     <div class="px-4 lg:px-20 text-center mb-12">
       <h4 class="font-playfairDisplay text-5xl font-semibold">
         <span class="font-imperial font-normal text-[#A89C93] text-7xl"

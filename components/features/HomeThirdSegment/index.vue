@@ -122,7 +122,7 @@ const datafQ = ref([
     </section>
   </div> -->
 
-  <div class="pt-14 lg:pb-20">
+  <div id="why-choose-us" class="pt-14 lg:pb-20">
     <h1
       class="lg:hidden font-playfairDisplay text-center font-bold text-5xl text-[#A89C93] opacity-50"
     >

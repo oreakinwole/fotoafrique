@@ -9,7 +9,7 @@ const handleBookConsult = () => {
 </script>
 
 <template>
-  <footer class="w-full h-fit pb-12 bg-black text-white pt-10">
+  <footer class="w-full bg-black text-white pt-10">
     <!-- first layout -->
 
     <div class="flex flex-col items-center justify-center">
@@ -31,10 +31,10 @@ const handleBookConsult = () => {
 
     <!-- second layout -->
     <div
-      class="flex flex-row flex-wrap lg:flex-nowrap gap-8 lg:gap-0 justify-between mt-14 font-inter text-[#D0C2B0] lg:px-32"
+      class="flex flex-wrap lg:flex-nowrap gap-8 lg:gap-0 justify-between mt-14 font-inter text-[#D0C2B0] lg:px-32"
     >
       <div
-        class="border border-[#665244] border-l-0 pt-10 pb-28 lg:w-[150rem] mx-5 lg:mx-0 lg:pl-10"
+        class="border border-[#665244] border-l-0 pt-10 pb-12 lg:w-[150rem] mx-5 lg:mx-0 lg:pl-10"
       >
         <h4 class="uppercase text-sm lg:text-md">
           Subscribe to receive ModernYardz news & offers
@@ -53,7 +53,7 @@ const handleBookConsult = () => {
           >
         </div>
 
-        <div class="flex flex-row gap-2 mt-8 lg:mt-0">
+        <div class="flex gap-2 mt-8 lg:mt-0">
           <input type="checkbox" class="mt-6 cursor-pointer" />
           <p
             class="ml-2 font-[300] text-xs lg:text-[14px] mt-5 w-[21rem] lg:w-[25rem]"
@@ -65,74 +65,86 @@ const handleBookConsult = () => {
       </div>
 
       <div
-        class="flex flex-row gap-12 text-[16px] border border-[#665244] border-r-0 py-10 pl-5 lg:pl-12 w-[180rem]"
+        class="flex gap-12 text-[16px] border border-[#665244] border-r-0 pt-10 pl-5 lg:pl-12 w-[180rem]"
       >
         <div class="flex flex-col gap-5">
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
-            Our Services
-          </h4>
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
-            3d Packages
-          </h4>
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
-            Our Design Process
-          </h4>
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
-            Lowest Prices
-          </h4>
+          <NuxtLink to="/services">
+            <h4 class="uppercase cursor-pointer">Our Services</h4>
+          </NuxtLink>
+
+          <NuxtLink to="/3d-packages">
+            <h4 class="uppercase cursor-pointer">3d Packages</h4>
+          </NuxtLink>
+          <NuxtLink to="/#design-process">
+            <h4 class="uppercase cursor-pointer">Our Design Process</h4>
+          </NuxtLink>
         </div>
 
         <div class="flex flex-col gap-5">
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">About Us</h4>
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
-            Contact Us
-          </h4>
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
-            My Account
-          </h4>
+          <NuxtLink to="/#why-choose-us">
+            <h4 class="uppercase cursor-pointer">About Us</h4>
+          </NuxtLink>
+          <NuxtLink to="/contact">
+            <h4 class="uppercase cursor-pointer">Contact Us</h4>
+          </NuxtLink>
+          <NuxtLink to="/finance">
+            <h4 class="uppercase cursor-pointer">Financing</h4>
+          </NuxtLink>
         </div>
 
         <div class="flex flex-col gap-5">
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Reviews</h4>
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">
-            Privacy Policy
-          </h4>
-          <h4 class="text-xs lg:text-lg uppercase cursor-pointer">Portfolio</h4>
+          <NuxtLink to="/#testimonials">
+            <h4 class="uppercase cursor-pointer">Reviews</h4>
+          </NuxtLink>
+
+          <h4 class="uppercase cursor-pointer">Privacy Policy</h4>
+
+          <NuxtLink to="/portfolio">
+            <h4 class="uppercase cursor-pointer">Portfolio</h4>
+          </NuxtLink>
         </div>
       </div>
     </div>
 
     <!-- third layout -->
-    <div
-      class="hidden lg:flex lg:flex-row justify-between text-[#D0C2B0] px-32"
-    >
+    <div class="hidden lg:flex justify-between text-[#D0C2B0] px-32">
       <div
         class="border border-[#665244] border-l-0 border-t-0 w-[150rem] text-[12px] font-inter"
       >
-        <div class="uppercase flex flex-row">
-          <p
-            class="border border-[#665244] px-[3.9rem] py-5 border-t-0 cursor-pointer"
-          >
-            Instagram
-          </p>
-          <p
-            class="border border-[#665244] px-[3.9rem] py-5 border-t-0 cursor-pointer"
-          >
-            Facebook
-          </p>
-          <p
-            class="border border-[#665244] px-[3.85rem] py-5 border-t-0 cursor-pointer"
-          >
-            Pinterest
-          </p>
-          <p
-            class="border border-[#665244] px-[3.8rem] py-5 border-t-0 cursor-pointer"
-          >
-            Twitter
-          </p>
+        <div class="uppercase flex">
+          <NuxtLink to="https://www.instagram.com/modern_yardz/">
+            <p
+              class="border border-[#665244] px-[3.9rem] py-5 border-t-0 cursor-pointer"
+            >
+              Instagram
+            </p>
+          </NuxtLink>
+          <NuxtLink to="https://www.facebook.com/modernyardz/">
+            <p
+              class="border border-[#665244] px-[3.9rem] py-5 border-t-0 cursor-pointer"
+            >
+              Facebook
+            </p>
+          </NuxtLink>
+
+          <NuxtLink to="https://www.pinterest.com/modernyardz/">
+            <p
+              class="border border-[#665244] px-[3.85rem] py-5 border-t-0 cursor-pointer"
+            >
+              Pinterest
+            </p>
+          </NuxtLink>
+
+          <NuxtLink to="https://www.x.com/modernyardz/">
+            <p
+              class="border border-[#665244] px-[3.8rem] py-5 border-t-0 cursor-pointer"
+            >
+              Twitter
+            </p>
+          </NuxtLink>
         </div>
 
-        <div class="pt-8 pb-4 ml-16">
+        <div class="py-4 ml-16">
           <select class="bg-black py-2 font-inter text-[14px] font-[300]">
             <option class="">🇺🇸 &nbsp;&nbsp; United States</option>
           </select>
@@ -140,9 +152,9 @@ const handleBookConsult = () => {
       </div>
 
       <div
-        class="flex flex-row space-x-4 border border-[#665244] border-r-0 w-[180rem] pl-5 pt-20 border-t-0 font-inter"
+        class="flex space-x-4 border border-[#665244] border-r-0 w-[180rem] pl-5 pt-10 border-t-0"
       >
-        <p class="text-sm mt-1 font-light">We Accept</p>
+        <p class="text-sm mt-1 font-light text-nowrap">We Accept</p>
 
         <div>
           <img
@@ -192,7 +204,7 @@ const handleBookConsult = () => {
 
     <!-- fourth layout -->
     <div
-      class="hidden text-[#D0C2B0] lg:flex lg:flex-row justify-between mt-10 px-72 text-[12px] font-inter"
+      class="hidden uppercase text-[#D0C2B0] lg:flex justify-between mt-10 px-72 text-[12px] font-inter"
     >
       <p>© 2024 MODERNYARDZ.com. All rights reserved.</p>
       <p>Privacy Policy | Terms of Use</p>

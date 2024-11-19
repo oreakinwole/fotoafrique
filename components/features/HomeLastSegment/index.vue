@@ -37,32 +37,28 @@ export default {
       </div>
     </div>
 
-    <div class="flex justify-evenly gap-5 px-36 pt-10 ig">
-      <img
-        :src="image1"
-        alt="image1"
-        class="w-[367px] h-[392px] lg:w-[270px] lg:h-[320px] pix"
-      />
-      <img
-        :src="image2"
-        alt="image2"
-        class="w-[366px] h-[392px] lg:w-[270px] lg:h-[320px] pix"
-      />
-      <img
-        :src="image3"
-        alt="image3"
-        class="w-[366px] h-[392px] lg:w-[270px] lg:h-[320px] pix"
-      />
-      <img
-        :src="image4"
-        alt="image4"
-        class="w-[366px] h-[392px] lg:w-[270px] lg:h-[320px] pix"
-      />
+    <div class="flex justify-evenly pt-10 px-20">
+      <div class="flex-1 h-[392px]">
+        <img
+          src="@/assets/images/patio.png"
+          class="h-full w-full object-cover"
+        />
+      </div>
+
+      <div class="flex-1 h-[392px]">
+        <img src="@/assets/images/gallery-pav1.png"  class="h-full w-full object-cover" />
+      </div>
+      <div class="flex-1 h-[392px]">
+        <img src="@/assets/images/purf.png"  class="h-full w-full object-cover" />
+      </div>
+      <div class="flex-1 h-[392px]">
+        <img src="@/assets/images/concrete.webp"  class="h-full w-full object-cover" />
+      </div>
     </div>
   </div>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 @media (min-width: 1450px) {
   .pix {
     width: 367px;
@@ -75,4 +71,4 @@ export default {
     display: none;
   }
 }
-</style>
+</style> -->
