@@ -231,7 +231,7 @@ const isShowingCat = ref(false);
         </div>
       </header>
 
-      <div class="relative  flex justify-center items-center mt-10 mb-14">
+      <div class="lg:hidden relative  flex justify-center items-center mt-10 mb-14 ">
         <aside
           :class="[
             isShowingCat ? 'rounded-3xl' : 'rounded-full',

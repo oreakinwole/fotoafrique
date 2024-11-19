@@ -359,7 +359,7 @@ watch(isBodyClicked, (val) => {
               >
                 <NuxtLink to="/#socials">
                   <div class="ml-3 mt-2">
-                    <p class="font-[600] text-[16px] text-black">Social</p>
+                    <p class="font-[600] text-[16px] text-black">Socials</p>
                     <!-- <p class="font-[400] text-[14px] text-[#A89C93] mt-1">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p> -->
