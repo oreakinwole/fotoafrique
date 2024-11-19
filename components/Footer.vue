@@ -42,6 +42,8 @@ const handleBookConsult = () => {
 
         <div class="lg:bg-[#523825] lg:w-[480px] h-[55px] mt-5 lg:pl-5">
           <input
+            disabled
+            title="Coming Soon!"
             type="email"
             placeholder="Enter your email"
             class="bg-[#523825] pl-4 lg:pl-0 w-[90%] lg:w-[410px] h-[55px] outline-none text-[#A89C93] text-[16px] placeholder-[16px] placeholder-[#A89C93]"
