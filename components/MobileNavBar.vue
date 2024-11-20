@@ -71,14 +71,16 @@ function toggleMenu() {
         </div>
       </div>
       <ul
-        class=" flex flex-col w-full  justify-center items-center pt-14 gap-5 text-[#A89C93] text-2xl font-playfairDisplay pl-2"
+        class="flex flex-col w-full justify-center items-center pt-14 gap-5 text-[#A89C93] text-2xl font-playfairDisplay pl-2"
       >
-        <div >
-          <header class="flex items-center">
-            <p class="py-2 ">Services</p>
+        <div>
+          <header
+            @click="isServicesOpen = !isServicesOpen"
+            class="flex items-center"
+          >
+            <p class="py-2">Services</p>
             <svg
-            class="ml-2 w-6"
-              @click="isServicesOpen = !isServicesOpen"
+              class="ml-2 w-6"
               :class="isServicesOpen && 'rotate-180'"
               width="24"
               height="24"
@@ -97,7 +99,10 @@ function toggleMenu() {
             </svg>
           </header>
 
-          <ul class=" animate__animated animate__fadeIn text-xs pl-8" v-if="isServicesOpen">
+          <ul
+            class="animate__animated animate__fadeIn text-xs pl-8"
+            v-if="isServicesOpen"
+          >
             <NuxtLink to="/services/landscape-sd">
               <li @click="toggleMenu" class="pb-3 underline">
                 Landscape Design SD
@@ -137,20 +142,20 @@ function toggleMenu() {
           </ul>
         </div>
         <NuxtLink to="/portfolio">
-          <li @click="toggleMenu" class="py-2 ">Portfolio</li>
+          <li @click="toggleMenu" class="py-2">Portfolio</li>
         </NuxtLink>
         <NuxtLink to="/#packages">
-          <li @click="toggleMenu" class="py-2 ">Design Packages</li>
+          <li @click="toggleMenu" class="py-2">Design Packages</li>
         </NuxtLink>
         <NuxtLink to="/finance">
-          <li @click="toggleMenu" class="py-2 ">Finance</li>
+          <li @click="toggleMenu" class="py-2">Finance</li>
         </NuxtLink>
 
         <NuxtLink to="/#FAQS">
-          <li @click="toggleMenu" class="py-2 ">FAQs</li>
+          <li @click="toggleMenu" class="py-2">FAQs</li>
         </NuxtLink>
         <NuxtLink to="/contact">
-          <li @click="toggleMenu" class="py-2 ">Contact</li>
+          <li @click="toggleMenu" class="py-2">Contact</li>
         </NuxtLink>
       </ul>
 

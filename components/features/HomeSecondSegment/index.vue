@@ -50,7 +50,7 @@
         <NuxtMarquee class="max-w-[95em]">
           <div class="flex flex-row gap-8">
             <div>
-              <NuxtLink to="services/pavers-sd">
+              <NuxtLink to="/services/pavers-san-diego">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -97,7 +97,7 @@
             </div>
 
             <div>
-              <NuxtLink to="services/landscape-sd">
+              <NuxtLink to="/services/concrete-sd">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -146,7 +146,7 @@
             </div>
 
             <div>
-              <NuxtLink to="services/pavers-sd">
+              <NuxtLink to=" /services/artificial-turf">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -195,7 +195,7 @@
             </div>
 
             <div>
-              <NuxtLink to="services/landscape-sd">
+              <NuxtLink to="/services/outdoor-kitchens">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -270,7 +270,7 @@
       <div class="lg:hidden text-center md:w-full md:mx-[1px] ">
         <div class="flex flex-wrap justify-center gap-2 lg:gap-8 md:w-full">
           <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="services/landscape-sd">
+            <NuxtLink to="/services/patios-and-pergolas">
               <div
                 class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
@@ -317,7 +317,7 @@
           </div>
 
           <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="services/landscape-sd">
+            <NuxtLink to="/services/landscape-sandiego">
               <div
                 class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
@@ -364,7 +364,7 @@
           </div>
 
           <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="services/pavers-sd">
+            <NuxtLink to="/services/pavers-san-diego">
               <div
                 class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
@@ -410,7 +410,7 @@
             </div>
           </div>
           <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="services/landscape-sd">
+            <NuxtLink to="/services/landscape-sandiego">
               <div
                 class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >

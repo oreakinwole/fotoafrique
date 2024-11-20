@@ -52,7 +52,7 @@ onMounted(() => {
           <div
             class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
           >
-            <NuxtLink to="/services/landscape-sd">
+            <NuxtLink to="/services/landscape-sandiego">
               <img
                 src="@/assets/images/services/1slandscape_sd.jpg"
                 class="explore-item"
@@ -64,7 +64,7 @@ onMounted(() => {
             class="w-full min-h-[400px]  duration-300 ease-linear bg-black"
             id="pin-windmill-svg"
           >
-            <NuxtLink to="/services/pavers-sd">
+            <NuxtLink to="/services/pavers-san-diego">
               <img
                 class="explore-item"
                 src="@/assets/images/services/2spavers_sd.jpg"

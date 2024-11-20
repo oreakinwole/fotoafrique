@@ -114,7 +114,7 @@ watch(isBodyClicked, (val) => {
             <!-- Dropdown content -->
             <div class="py-1 flex items-center gap-8 px-10 mb-2">
               <!-- first container -->
-              <NuxtLink to="/services/landscape-sd">
+              <NuxtLink to="/services/landscape-sandiego">
                 <button
                   @click="toggleDropdown"
                   :class="
@@ -143,7 +143,7 @@ watch(isBodyClicked, (val) => {
                 </button>
               </NuxtLink>
               <!-- second container -->
-              <NuxtLink to="/services/pavers-sd">
+              <NuxtLink to="/services/pavers-san-diego">
                 <button
                   @click="toggleDropdown"
                   :class="
