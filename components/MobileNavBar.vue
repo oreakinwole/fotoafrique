@@ -103,13 +103,13 @@ function toggleMenu() {
             class="animate__animated animate__fadeIn text-xs pl-8"
             v-if="isServicesOpen"
           >
-            <NuxtLink to="/services/landscape-sd">
+            <NuxtLink to="/services/landscape-sandiego">
               <li @click="toggleMenu" class="pb-3 underline">
                 Landscape Design SD
               </li>
             </NuxtLink>
 
-            <NuxtLink to="/services/pavers-sd">
+            <NuxtLink to="/services/pavers-san-diego">
               <li @click="toggleMenu" class="pb-3 underline">
                 Pavers San Diego
               </li>
