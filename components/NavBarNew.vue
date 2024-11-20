@@ -16,7 +16,7 @@ const handleBookConsult = () => {
 
 <template>
   <div
-    class="hero-trigger flex w-full items-center justify-between pt-6 lg:py-8 px-8 lg:px-28 max-w-[1600px]"
+    class="lg:absolute lg:top-0 hero-trigger lg:bg-none flex w-full items-center justify-between py-4 lg:py-8 px-8 lg:px-28 max-w-[1600px]"
   >
     <NuxtLink
       to="/"
@@ -26,24 +26,25 @@ const handleBookConsult = () => {
           : 'animate__animated animate__fadeIn animate__slow'
       "
     >
-      <img src="@/assets/svg/logo.svg" class="w-16 lg:w-20" />
+      <img src="@/assets/svg/logo.svg" class="w-24" />
     </NuxtLink>
     <p
-      class="text-xs font-medium animate__animated animate__flipInX animate__delay-3s"
+      class="hidden lg:block text-xs font-medium animate__animated animate__flipInX animate__delay-3s"
     >
-      <span class="hidden lg:inline">Start Your Transformation Today –</span>
+      <span class="">Start Your Transformation Today –</span>
       <span
         class="font-bold border-black border-b"
         @click="handleBookConsult"
         role="button"
-        > Book a Free Consultation</span
+      >
+        Book a Free Consultation</span
       >
     </p>
 
     <svg
       role="button"
       @click="toggleNav"
-      class="w-5 lg:w-8"
+      class="w-7 lg:w-8"
       width="60"
       height="39"
       viewBox="0 0 60 39"
@@ -71,7 +72,7 @@ const handleBookConsult = () => {
           </video>
         </div>
 
-        <div class="w-full lg:w-2/3 px-8 bg-[#F8F5F3]">
+        <div class="w-full lg:w-2/3 px-8">
           <nav class="flex justify-between pt-2 items-center h-14">
             <div class="animate__animated animate__fadeIn animate__delay-2s">
               <NuxtLink to="/">
@@ -115,35 +116,36 @@ const handleBookConsult = () => {
           <section
             class="flex justify-between mt-12 lg:mt-0 lg:items-center animate__animated animate__fadeIn animate__slow"
           >
-            <ul class="space-y-8 lg:space-y-10">
+            <ul class="space-y-8">
               <li
-                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
                 <NuxtLink to="/services">Services</NuxtLink>
               </li>
+
               <li
-                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
-                <NuxtLink to="portfolio">Portfolio</NuxtLink>
+                <NuxtLink to="/portfolio">Portfolio</NuxtLink>
               </li>
               <li
-                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
-                <NuxtLink to="3d-packages">3D Packages</NuxtLink>
+                <NuxtLink to="/3d-packages">3D Packages</NuxtLink>
               </li>
               <li
-                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-playfairDisplay"
+                class="text-5xl lg:text-6xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
-                <NuxtLink to="contact">Contact</NuxtLink>
+                <NuxtLink to="/contact">Contact</NuxtLink>
               </li>
             </ul>
 
             <svg
-              class="w-12 -mt-16 lg:mt-0 lg lg:w-14 "
+              class="w-12 -mt-16 lg:mt-0 lg lg:w-14"
               width="94"
               height="442"
               viewBox="0 0 94 442"
@@ -189,7 +191,7 @@ const handleBookConsult = () => {
             </svg>
           </section>
 
-          <footer class="grid grid-cols-4 lg:mt-8">
+          <footer class="grid grid-cols-4 lg:mt-16">
             <div class="col-span-1 space-y-4">
               <p class="text-xs font-semibold">Locations</p>
               <p class="text-xs">San Diego</p>

@@ -103,7 +103,7 @@ export default {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           luctus tem.
         </h4>
-        <h4 class="font-[400] text-[#A89C93] text-[18px]">
+        <h4 class="  text-[#A89C93] text-[18px]">
           Nicole, Home Owner
         </h4>
       </div>

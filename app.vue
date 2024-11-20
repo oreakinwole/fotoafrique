@@ -7,7 +7,7 @@
       :throttle="0"
     >
       <template #default>
-        <div class="h-screen">
+        <div class="h-screen flex lg:block justify-center  items-center">
           <svg
             class="spinner"
             width="174px"

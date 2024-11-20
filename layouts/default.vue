@@ -1,29 +1,36 @@
-<script setup lang="ts">
-const isShowLoader = ref(true);
+<script setup>
+const isShowLoader = ref(false);
+const isShowingNav = ref(false);
+const isBodyClicked = ref(false);
 
-const loaderCountInterval = ref();
-const loaderCount = ref(0);
+// const loaderCountInterval = ref();
+// const loaderCount = ref(0);
 
-onMounted(() => {
-  loaderCountInterval.value = setInterval(() => {
-    if (loaderCount.value < 100) {
-      loaderCount.value += 10;
-    }
-  }, 180);
-});
+// onMounted(() => {
+//   loaderCountInterval.value = setInterval(() => {
+//     if (loaderCount.value < 100) {
+//       loaderCount.value += 10;
+//     }
+//   }, 180);
+// });
 
-onBeforeUnmount(() => {
-  clearInterval(loaderCountInterval.value);
-});
+// onBeforeUnmount(() => {
+//   clearInterval(loaderCountInterval.value);
+// });
 
-watch(loaderCount, (val: number) => {
-  if (val === 100) isShowLoader.value = false;
-});
+// watch(loaderCount, (val: number) => {
+//   if (val === 100) isShowLoader.value = false;
+// });
+
+const handleIsNavbarShowing = (val) => {
+  isShowingNav.value = val;
+  isBodyClicked.value = false;
+};
 </script>
 
 <template>
   <div
-    class="h-screen w-full z-10 bg-black absolute top-0 left-0"
+    class="h-screen w-full z-10 bg-black absolute top-0 left-0 flex justify-center items-center"
     v-if="isShowLoader"
   >
     <div class="relative">
@@ -55,15 +62,25 @@ watch(loaderCount, (val: number) => {
       <div
         class="absolute flex flex-col items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#D0C2B0] text-4xl"
       >
-        <p>{{ loaderCount }}%</p>
+        <p class="mt-6">{{ loaderCount }}%</p>
         <p class="text-xs font-semibold">Loading...</p>
       </div>
     </div>
   </div>
 
   <div class="max-w-[1600px] mx-auto overflow-hidden" v-else>
-    <NavBarNew class="absolute top-0" />
-    <slot />
+    <Navbar
+      @navbar-showing="handleIsNavbarShowing"
+      :isBodyClicked="isBodyClicked"
+    />
+    <div
+      class="transition-all duration-150 ease-in"
+      :class="isShowingNav && ' blur-xl'"
+      @click="isBodyClicked = true"
+    >
+      <slot />
+    </div>
+
     <Footer class="mt-32" />
   </div>
 </template>

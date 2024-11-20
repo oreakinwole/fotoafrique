@@ -34,9 +34,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
-    <div
-      class="min-h-[470px] lg:min-h-screen pt-28 bg-[url('@/assets/images/hero_bg1.png')] bg-no-repeat bg-top bg-cover"
+  <div class="">
+    <header
+      class="hidden lg:block min-h-[470px] lg:min-h-screen pt-20 lg:bg-[url('@/assets/images/hero_bg1.png')] bg-white bg-no-repeat bg-left-top bg-cover"
     >
       <div class="text-center space-y-3">
         <VueWriter
@@ -83,18 +83,73 @@ onMounted(() => {
           Something went wrong while playing video
         </video>
       </div>
-    </div>
+    </header>
 
-    <!-- <div class="pt-48 mb-36 h-96" data-aos="fade-up" data-aos-duration="2000">
-      <p class="uppercase text-center font-inter font-[400] text-[12px]">
-        Our Partners
-      </p>
+    <header class="h-[700px] bg-gray-200 lg:hidden relative">
+      <div
+        class="bg-black text-white absolute top-0 left-0 h-full w-full opacity-50"
+      ></div>
 
-      <div class="mt-8">
-        <NuxtMarquee class="max-w-[55em] mx-auto" :speed="20">
-          <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
-        </NuxtMarquee>
+      <div class="text-white text-center absolute w-full bottom-[35%]">
+        <div class="px-5 md:px-8 space-y-4">
+          <p
+            data-aos="fade-in"
+            data-aos-easing="linear"
+            data-aos-duration="900"
+            class="font-semibold text-md leading-normal tracking-[.2rem]"
+          >
+            DON’T JUST LIKE YOUR YARD
+          </p>
+          <p
+            data-aos="fade-in"
+            data-aos-easing="linear"
+            data-aos-duration="900"
+            class="text-7xl font-bold leading-tight tracking-wide"
+          >
+            LOVE IT!
+          </p>
+
+          <VueWriter
+            class="text-lg leading-normal tracking-widest"
+            :array="[`  DESIGN YOUR DREAM YARD`]"
+            :iterations="1"
+            :typeSpeed="100"
+          />
+        </div>
+
+        <FilledButton
+          background-color="white"
+          text="Book Free Consultation"
+          text-color="black"
+          class="uppercase w-[80%] mt-12"
+        />
       </div>
-    </div> -->
+
+      <video class="w-full h-full object-cover" playsinline autoplay muted loop>
+        <source src="/video/hero-video2.mp4" type="video/mp4" />
+        Something went wrong while playing video
+      </video>
+    </header>
+  </div>
+
+  <div class="hidden lg:block text-center mt-16">
+    <FilledButton
+      background-color="black"
+      text="Design Your Dream Yard"
+      text-color="white"
+      class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
+    />
+  </div>
+
+  <div data-aos="fade-up">
+    <!-- <p class="uppercase text-center font-inter   text-[12px]">
+        Our Partners
+      </p> -->
+
+    <div class="lg:mt-8">
+      <NuxtMarquee class="max-w-[55em] mx-auto" :speed="20">
+        <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
+      </NuxtMarquee>
+    </div>
   </div>
 </template>

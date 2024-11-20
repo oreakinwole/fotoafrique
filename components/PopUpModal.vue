@@ -1,42 +1,27 @@
-<script>
-import closeIcon from "public/images/navbar/icons/Close.png";
-export default {
-  name: "PopUpModal",
-  props: {
-    text: {
-      default: "",
-      type: String,
-      required: true,
-    },
-  },
-  data() {
-    return {
-      closeIcon,
-      isVisible: true,
-    };
-  },
-  methods: {
-    closeModal() {
-      this.isVisible = false;
-    },
-    handleBookConsult() {
-      const calendly = useCalendly();
+<script setup>
+function handleBookConsult() {
+  const calendly = useCalendly();
 
-      calendly.initPopupWidget({
-        url: "https://calendly.com/d/2sx-n9t-6g7",
-      });
-    },
-  },
-};
+  calendly.initPopupWidget({
+    url: "https://calendly.com/d/2sx-n9t-6g7",
+  });
+}
 </script>
 
 <template>
-  <div
-    v-if="isVisible"
-    class="flex flex-row bg-black items-center justify-center relative py-2 font-inter text-[11px]"
-    @click="handleBookConsult"
-  >
-    <h4 class="text-white text-center uppercase cursor-pointer">{{ text }}</h4>
+  <div class="flex bg-black items-center justify-center py-3">
+    <!-- <h4 class="text-white text-center uppercase cursor-pointer">{{ text }}</h4> -->
+
+    <p class="text-[11px] font-medium animate__animated animate__flipInX">
+      <span class="text-white">Start Your Transformation Today –</span>
+      <span
+        class="font-bold text-white border-white border-b"
+        @click="handleBookConsult"
+        role="button"
+      >
+        Book a Free Consultation</span
+      >
+    </p>
     <!-- <img :src="closeIcon" alt="close png" class="cursor-pointer absolute right-36" width="16" @click="closeModal"> -->
   </div>
   <!-- 

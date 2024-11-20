@@ -21,48 +21,44 @@ export default {
 </script>
 
 <template>
-  
-
-  <div class="">
-    <div class="flex flex-row justify-between px-44 pt-28 ig">
+  <div class="hidden lg:block" id="socials">
+    <div class="flex justify-between px-44 ig">
       <p class="text-black font-[600] text-[32px] font-playfairDisplay">
         #modernyardz
       </p>
 
-      <div class="flex flex-row gap-2 cursor-pointer">
+      <div class="flex gap-2 cursor-pointer">
         <img :src="instagram" alt="instagram icon" class="w-[24px] h-[24px]" />
-        <p class="uppercase font-inter font-[400] text-[16px] text-[#665244]">
-          Follow us on instagram
-        </p>
+        <NuxtLink to="https://www.instagram.com/modern_yardz/">
+          <p class="uppercase font-inter text-[16px] text-[#665244]">
+            Follow us on instagram
+          </p>
+        </NuxtLink>
       </div>
     </div>
 
-    <div class="flex flex-row justify-evenly gap-5 px-36 pt-10 ig">
-      <img
-        :src="image1"
-        alt="image1"
-        class="w-[367px] h-[392px] lg:w-[270px] lg:h-[320px] pix"
-      />
-      <img
-        :src="image2"
-        alt="image2"
-        class="w-[366px] h-[392px] lg:w-[270px] lg:h-[320px] pix"
-      />
-      <img
-        :src="image3"
-        alt="image3"
-        class="w-[366px] h-[392px] lg:w-[270px] lg:h-[320px] pix"
-      />
-      <img
-        :src="image4"
-        alt="image4"
-        class="w-[366px] h-[392px] lg:w-[270px] lg:h-[320px] pix"
-      />
+    <div class="flex justify-evenly pt-10 px-20">
+      <div class="flex-1 h-[392px]">
+        <img
+          src="@/assets/images/patio.png"
+          class="h-full w-full object-cover"
+        />
+      </div>
+
+      <div class="flex-1 h-[392px]">
+        <img src="@/assets/images/gallery-pav1.png"  class="h-full w-full object-cover" />
+      </div>
+      <div class="flex-1 h-[392px]">
+        <img src="@/assets/images/purf.png"  class="h-full w-full object-cover" />
+      </div>
+      <div class="flex-1 h-[392px]">
+        <img src="@/assets/images/concrete.webp"  class="h-full w-full object-cover" />
+      </div>
     </div>
   </div>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 @media (min-width: 1450px) {
   .pix {
     width: 367px;
@@ -75,4 +71,4 @@ export default {
     display: none;
   }
 }
-</style>
+</style> -->

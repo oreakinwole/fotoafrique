@@ -1,204 +1,246 @@
 <script setup>
-const stepsShowing = ref(null);
+// onMounted(() => {
+//   gsap.registerPlugin(ScrollTrigger);
+
+//   gsap.to("#desing-p-mobile", {
+//     x: -950,
+
+//     scrollTrigger: {
+//       trigger: "#desing-p-mobile",
+//       pin: true,
+//       scrub: true,
+//       start: "bottom 50%",
+//     },
+//   });
+// });
 </script>
 
 <template>
-  <div class="mt-12 lg:mt-28 px-10 w-screen">
-    <div class="leading-[3.4em] lg:px-20 max-w-screen-lg">
-      <p
-        class="font-normal text-4xl lg:text-5xl font-playfairDisplay mb-5 lg:mb-8"
-      >
-        Our Design Pro<span class="font-imperial text-5xl text-[#A89C93]"
+  <div id="design-process" class="mt-20 lg:mt-28 lg:px-10 w-screen md:mt-20">
+    <div
+      class="px-2 md:px-8 lg:px-20 text-center mb-20"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+    >
+      <h4 class="font-playfairDisplay text-4xl lg:text-5xl font-semibold mb-2">
+        Our Design Pro<span
+          class="text-[#A89C93] font-imperial font-normal text-5xl lg:text-6xl"
           >C</span
         >ess
+      </h4>
+
+      <p class="text-xl">
+        Simple Steps to Your Dream Yard, Here’s how it works:
       </p>
-      <p class="text-2xl lg:text-4xl lg:font-medium font-playfairDisplay">
-        Creating the outdoor space you’ve always wanted is
-        <span
-          class="font-imperial text-4xl lg:text-6xl text-[#A89C93] border-b border-dashed p-0"
-          >easier&nbsp;</span
-        >
-        than you think.
+      <p
+        class="text-lg text-[#454545] mt-4 lg:max-w-screen-sm leading-relaxed lg:mx-auto"
+      >
+        Creating the outdoor space you’ve always wanted is easier than you
+        think. Our collaborative design process ensures that every step is clear
+        and tailored to your needs, from the first meeting to the final
+        installation.
       </p>
-      <!-- <p class="text-3xl  mt-6 font-playfairDisplay">
-        Here is how it works:
-      </p> -->
     </div>
 
-    <section
-      class=" h-[1780px] lg:h-[450px] flex justify-center flex-wrap gap-4 mt-20 relative"
-    >
+    <!-- Start mobile view -->
+    <div class="lg:hidden flex justify-center flex-wrap gap-2">
       <div
-        @mouseover="stepsShowing = 1"
-        @mouseleave="stepsShowing = null"
-        class="overflow-hidden h-[420px] lg:h-full w-full lg:w-[300px] rounded-2xl bg-[url('@/assets/images/step_one.jpg')] bg-no-repeat bg-center bg-cover relative"
+        class="hover:bg-navbar-color rounded-lg  flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
       >
-        <div
-          class="bg-black text-white h-[35%] lg:h-[35%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
-        >
-          <h5 class="font-bold text-center">
-            Step One: Free Design Consultation
-          </h5>
-
-          <div>
-            <div>
-              <p class="py-4 text-sm">
-                We start with a free consultation to discuss your vision and
-                goals.
-              </p>
-
-              <!-- <ul class="text-sm list-disc leading-loose">
-                <li>
-                  Understand your style, needs, and how you want to use your
-                  outdoor space.
-                </li>
-                <li>Measure your yard for accuracy.</li>
-
-                <li>
-                  Take photos and videos to ensure every detail is covered.
-                </li>
-              </ul> -->
-            </div>
+        <main class="px-1">
+          <div class="flex justify-between">
+            <h3 class="flex flex-col font-bold text-md">
+              Free Design Consultation
+            </h3>
+            <p class="pt-1 text-[#A89C93] text-xs">/01</p>
           </div>
-        </div>
+
+          <p class="text-[#665244] text-sm mt-3">
+            We start with a free consultation to discuss your vision and goals.
+          </p>
+        </main>
+
+        <footer
+          class="bg-gray-400 h-3/5 rounded-t-lg bg-[url('@/assets/images/designp_1.webp')] bg-no-repeat bg-left-top bg-cover"
+        ></footer>
       </div>
 
       <div
-       @mouseover="stepsShowing = 2"
-        @mouseleave="stepsShowing = null"
-        class="overflow-hidden h-[420px] lg:h-full w-full lg:w-[300px] rounded-2xl bg-[url('@/assets/images/step_two.jpg')] bg-no-repeat bg-center bg-cover relative"
+        class="hover:bg-navbar-color rounded-lg flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
       >
-        <div
-          class="bg-black text-white h-[35%] lg:h-[35%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
-        >
-          <h5 class="font-bold text-center">
-            Step Two: 2D Landscape Design
-          </h5>
-
-          <div>
-            <div>
-              <p class="py-4 text-sm">
-                We create a 2D design plan that shows a clear, overhead view of
-                your future landscape.
-              </p>
-
-              <!-- <ul class="text-sm list-disc leading-loose">
-                <li>
-                  Understand your style, needs, and how you want to use your
-                  outdoor space.
-                </li>
-                <li>Measure your yard for accuracy.</li>
-
-                <li>
-                  Take photos and videos to ensure every detail is covered.
-                </li>
-              </ul> -->
-            </div>
+        <main class="px-1">
+          <div class="flex justify-between">
+            <h3 class="flex flex-col font-bold text-md">2D Landscape Design</h3>
+            <p class="pt-1 text-[#A89C93] text-xs">/02</p>
           </div>
-        </div>
+
+          <p class="text-[#665244] text-sm mt-3">
+            We create a 2D design plan that shows a clear, overhead view of your
+            future landscape.
+          </p>
+        </main>
+
+        <footer
+          class="bg-gray-400 h-3/5 rounded-t-lg bg-[url('@/assets/images/designp_2.webp')] bg-no-repeat bg-center bg-cover"
+        ></footer>
       </div>
 
       <div
-        @mouseover="stepsShowing = 3"
-        @mouseleave="stepsShowing = null"
-        class="overflow-hidden h-[420px] lg:h-full w-full lg:w-[300px] rounded-2xl bg-[url('@/assets/images/step_three.jpg')] bg-no-repeat bg-center bg-cover relative"
+        class="hover:bg-navbar-color rounded-lg flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
       >
-        <div
-          class="bg-black text-white h-[35%] lg:h-[35%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
-        >
-          <h5 class="font-bold text-center">
-            Step Three: 3D Design Renderings
-          </h5>
-
-          <div>
-            <div>
-              <p class="py-4 text-sm">
-                We take it a step further by transforming the 2D plan into a
-                realistic 3D rendering.
-              </p>
-
-              <!-- <ul class="text-sm list-disc leading-loose">
-                <li>
-                  Understand your style, needs, and how you want to use your
-                  outdoor space.
-                </li>
-                <li>Measure your yard for accuracy.</li>
-
-                <li>
-                  Take photos and videos to ensure every detail is covered.
-                </li>
-              </ul> -->
-            </div>
+        <main class="px-1">
+          <div class="flex justify-between">
+            <h3 class="flex flex-col font-bold text-md">
+              3D Design Renderings
+            </h3>
+            <p class="pt-1 text-[#A89C93] text-xs">/03</p>
           </div>
-        </div>
+
+          <p class="text-[#665244] text-sm mt-3">
+            We take it a step further by transforming the 2D plan into a
+            realistic 3D rendering.
+          </p>
+        </main>
+
+        <footer
+          class="bg-gray-400 h-3/5 rounded-t-lg bg-[url('@/assets/images/designp_3.webp')] bg-no-repeat bg-center bg-cover"
+        ></footer>
       </div>
 
       <div
-        @mouseover="stepsShowing = 4"
-        @mouseleave="stepsShowing = null"
-        class="overflow-hidden h-[420px] lg:h-full w-full lg:w-[300px] rounded-2xl bg-[url('@/assets/images/step_four.jpg')] bg-no-repeat bg-center bg-cover relative"
+        class="hover:bg-navbar-color rounded-lg flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
       >
-        <div
-          class="bg-black text-white h-[35%] lg:h-[35%] rounded-2xl p-5 absolute left-1 bottom-2 w-[98%]"
-        >
-          <h5 class="font-bold text-center">
-            Step Four: Comprehensive Quote
-          </h5>
-
-          <div>
-            <div>
-              <p class="py-4 text-sm">
-                Once the design is finalized, we provide a detailed, itemized
-                quote.
-              </p>
-
-              <!-- <ul class="text-sm list-disc leading-loose">
-                <li>
-                  Understand your style, needs, and how you want to use your
-                  outdoor space.
-                </li>
-                <li>Measure your yard for accuracy.</li>
-
-                <li>
-                  Take photos and videos to ensure every detail is covered.
-                </li>
-              </ul> -->
-            </div>
+        <main class="px-1">
+          <div class="flex justify-between">
+            <h3 class="flex flex-col font-bold text-md">Comprehensive Quote</h3>
+            <p class="pt-1 text-[#A89C93] text-xs">/04</p>
           </div>
+
+          <p class="text-[#665244] text-sm mt-3">
+            Once the design is finalized, we provide a detailed, itemized quote.
+          </p>
+        </main>
+
+        <footer
+          class="h-3/5 rounded-t-lg bg-[url('@/assets/images/designp_4.webp')] bg-no-repeat bg-top bg-cover"
+        ></footer>
+      </div>
+    </div>
+    <!-- End mobile view -->
+
+    <!-- Desktop view -->
+    <div class="hidden lg:flex flex-col justify-center items-center">
+      <!-- upper container -->
+      <div class="flex">
+        <div
+          class="hover:bg-navbar-color  rounded-t-lg rounded-bl-lg flex flex-col justify-between w-[300px] h-[295px] lg:w-[300px] border border-[#A89C93]  px-1 pt-2 pb-1"
+        >
+          <main class="px-1">
+            <div class="flex justify-between">
+              <h3 class="flex flex-col font-bold text-md">
+                Free Design Consultation
+              </h3>
+              <p class="pt-1 text-[#A89C93] text-xs">/01</p>
+            </div>
+
+            <p class=" text-[#665244] text-sm mt-3">
+              We start with a free consultation to discuss your vision and
+              goals.
+            </p>
+          </main>
+
+          <footer
+            class="bg-gray-400 h-3/5 rounded-t-lg bg-[url('@/assets/images/designp_1.webp')] bg-no-repeat bg-left-top bg-cover"
+          ></footer>
+        </div>
+
+        <div class="w-[300px] h-[295px] lg:w-[300px]"></div>
+
+        <div
+          class=" hover:bg-navbar-color rounded-t-lg flex flex-col justify-between w-[300px] h-[295px] lg:w-[300px] border border-[#A89C93] px-1 pt-2 pb-1"
+        >
+          <main class="px-1">
+            <div class="flex justify-between">
+              <h3 class="flex flex-col font-bold text-md">
+                3D Design Renderings
+              </h3>
+              <p class="pt-1 text-[#A89C93] text-xs">/03</p>
+            </div>
+
+            <p class="text-[#665244] text-sm mt-3">
+              We take it a step further by transforming the 2D plan into a
+              realistic 3D rendering.
+            </p>
+          </main>
+
+          <footer
+            class="bg-gray-400 h-3/5 rounded-t-lg bg-[url('@/assets/images/designp_3.webp')] bg-no-repeat bg-center bg-cover"
+          ></footer>
+        </div>
+
+        <div class="w-[300px] h-[295px] lg:w-[300px]"></div>
+      </div>
+
+      <!-- lower container -->
+      <div class="flex -mt-[1px]">
+        <div class="w-[300px] h-[295px] lg:w-[300px]"></div>
+
+        <div
+          class="hover:bg-navbar-color rounded-b-lg flex flex-col justify-between w-[300px] h-[295px] lg:w-[300px] border border-[#A89C93] px-1 pt-2 pb-1"
+        >
+          <main class="px-1">
+            <div class="flex justify-between">
+              <h3 class="flex flex-col font-bold text-md">
+                2D Landscape Design
+              </h3>
+              <p class="pt-1 text-[#A89C93] text-xs">/02</p>
+            </div>
+
+            <p class="text-[#665244] text-sm mt-3">
+              We create a 2D design plan that shows a clear, overhead view of
+              your future landscape.
+            </p>
+          </main>
+
+          <footer
+            class="bg-gray-400 h-3/5 rounded-t-lg bg-[url('@/assets/images/designp_2.webp')] bg-no-repeat bg-center bg-cover"
+          ></footer>
+        </div>
+
+        <div class="w-[300px] h-[295px] lg:w-[300px]"></div>
+
+        <div
+          class="hover:bg-navbar-color rounded-b-lg flex flex-col justify-between w-[300px] h-[295px] lg:w-[300px] border border-[#A89C93] px-1 pt-2 pb-1"
+        >
+          <main class="px-1">
+            <div class="flex justify-between">
+              <h3 class="flex flex-col font-bold text-md">
+                Comprehensive Quote
+              </h3>
+              <p class="pt-1 text-[#A89C93] text-xs">/04</p>
+            </div>
+
+            <p class="text-[#665244] text-sm mt-3">
+              Once the design is finalized, we provide a detailed, itemized
+              quote.
+            </p>
+          </main>
+
+          <footer
+            class="h-3/5 rounded-t-lg bg-[url('@/assets/images/designp_4.webp')] bg-no-repeat bg-top bg-cover"
+          ></footer>
         </div>
       </div>
-    </section>
+    </div>
 
-    <footer
-      class="flex items-center justify-center lg:justify-between lg:px-20 mt-10"
-    >
+    <footer class="lg:px-20 mt-14 text-center">
+      <p class="text-[#454545] font-semibold mb-4">Ready to Get Started?</p>
       <FilledButton
         background-color="black"
-        text="Book Your Free Design Consultation Today!"
+        text="Design Your Dream Yard"
         text-color="white"
-        class="uppercase lg:w-[390px]"
+        class="uppercase w-[90%] font-semibold lg:w-[290px]"
       />
-
-      <p class="text-xs hidden lg:block text-brown w-2/4 max-w-lg">
-        Transform your outdoor space with ease. Book your free design
-        consultation today and let’s create a yard you’ll love!
-      </p>
     </footer>
   </div>
 </template>
-
-<!-- <style lang="scss">
-.process-item::after {
-  content: url("@/assets/images/hov_process.png");
-  position: absolute;
-  opacity: 0;
-  transition: all 1s;
-  top: 0;
-  cursor: url("@/assets/images/process_cursor_small.svg"), auto;
-}
-
-.process-item:hover::after {
-  opacity: 1;
-  top: -6em;
-}
-</style> -->
