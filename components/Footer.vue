@@ -206,8 +206,8 @@ const handleBookConsult = () => {
     <div
       class="hidden uppercase text-[#D0C2B0] lg:flex justify-between mt-10 px-72 text-[12px] font-inter"
     >
-      <p>© 2024 MODERNYARDZ.com. All rights reserved.</p>
-      <p>Privacy Policy | Terms of Use</p>
+    <p>© {{ new Date().getFullYear() }} MODERNYARDZ.com. All rights reserved.</p>
+    <p>Privacy Policy | Terms of Use</p>
     </div>
 
     <div
