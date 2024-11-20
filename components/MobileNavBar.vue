@@ -1,5 +1,15 @@
 <script setup>
+// import autoAnimate from "@formkit/auto-animate";
+
 const isMenuOpen = ref(false);
+const isServicesOpen = ref(false);
+
+// const autoAniSection = ref();
+
+// onMounted(() => {
+//   autoAnimate(autoAniSection.value, { duration: 300 });
+// });
+
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;
 }
@@ -39,9 +49,9 @@ function toggleMenu() {
     <!-- Dropdown menu -->
     <div
       v-if="isMenuOpen"
-      class="animate__animated animate__slideInRight absolute top-0 left-0 w-full h-full bg-black shadow-md z-60"
+      class="animate__animated animate__slideInRight absolute top-0 left-0 w-full bg-black shadow-md z-60"
     >
-      <div class="flex flex-row justify-between px-4 pt-16">
+      <div class="flex flex-row justify-between px-4 pt-8">
         <div class="pl-2">
           <NuxtLink to="/">
             <img
@@ -61,31 +71,91 @@ function toggleMenu() {
         </div>
       </div>
       <ul
-        class="flex flex-col items-center pt-14 gap-5 text-[#A89C93] text-2xl font-playfairDisplay pl-2"
+        class=" flex flex-col w-full  justify-center items-center pt-14 gap-5 text-[#A89C93] text-2xl font-playfairDisplay pl-2"
       >
-        <NuxtLink to="/services">
-          <li @click="toggleMenu" class="py-2 px-4">Services</li>
-        </NuxtLink>
+        <div >
+          <header class="flex items-center">
+            <p @click="toggleMenu" class="py-2 ">Services</p>
+            <svg
+            class="ml-2 w-6"
+              @click="isServicesOpen = !isServicesOpen"
+              :class="isServicesOpen && 'rotate-180'"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.9181 8.94922L13.3981 15.4692C12.6281 16.2392 11.3681 16.2392 10.5981 15.4692L4.07812 8.94922"
+                stroke="#665244"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </header>
+
+          <ul class=" animate__animated animate__fadeIn text-xs pl-8" v-if="isServicesOpen">
+            <NuxtLink to="/services/landscape-sd">
+              <li @click="toggleMenu" class="pb-3 underline">
+                Landscape Design SD
+              </li>
+            </NuxtLink>
+
+            <NuxtLink to="/services/pavers-sd">
+              <li @click="toggleMenu" class="pb-3 underline">
+                Pavers San Diego
+              </li>
+            </NuxtLink>
+
+            <NuxtLink to="/services/pools-and-spas">
+              <li @click="toggleMenu" class="pb-3 underline">Pools and Spas</li>
+            </NuxtLink>
+
+            <NuxtLink to="/services/outdoor-kitchens">
+              <li @click="toggleMenu" class="pb-3 underline">
+                Outdoor Kitchens
+              </li>
+            </NuxtLink>
+            <NuxtLink to="/services/concrete-sd">
+              <li @click="toggleMenu" class="pb-3 underline">
+                Concrete San Diego
+              </li>
+            </NuxtLink>
+            <NuxtLink to="/services/artificial-turf">
+              <li @click="toggleMenu" class="pb-3 underline">
+                Artificial Turf San Diego
+              </li>
+            </NuxtLink>
+            <NuxtLink to="/services/patios-and-pergolas">
+              <li @click="toggleMenu" class="pb-3 underline">
+                Patio Covers and Pergolas
+              </li>
+            </NuxtLink>
+          </ul>
+        </div>
         <NuxtLink to="/portfolio">
-          <li @click="toggleMenu" class="py-2 px-4">Portfolio</li>
+          <li @click="toggleMenu" class="py-2 ">Portfolio</li>
         </NuxtLink>
         <NuxtLink to="/#packages">
-          <li @click="toggleMenu" class="py-2 px-4">Design Packages</li>
+          <li @click="toggleMenu" class="py-2 ">Design Packages</li>
         </NuxtLink>
         <NuxtLink to="/finance">
-          <li @click="toggleMenu" class="py-2 px-4">Financing</li>
+          <li @click="toggleMenu" class="py-2 ">Finance</li>
         </NuxtLink>
 
         <NuxtLink to="/#FAQS">
-          <li @click="toggleMenu" class="py-2 px-4">FAQs</li>
+          <li @click="toggleMenu" class="py-2 ">FAQs</li>
         </NuxtLink>
         <NuxtLink to="/contact">
-          <li @click="toggleMenu" class="py-2 px-4">Contact</li>
+          <li @click="toggleMenu" class="py-2 ">Contact</li>
         </NuxtLink>
       </ul>
 
       <svg
-        class="mx-auto mt-8"
+        class="ml-[40%] mt-12"
         width="195"
         height="30"
         viewBox="0 0 195 30"
@@ -122,7 +192,7 @@ function toggleMenu() {
             fill="#D0C2B0"
           />
         </NuxtLink>
-        <path
+        <!-- <path
           d="M125.033 30.01H124.967C116.714 30.01 110 23.2935 110 15.038V14.972C110 6.71651 116.714 0 124.967 0H125.033C133.286 0 140 6.71651 140 14.972V15.038C140 23.2935 133.286 30.01 125.033 30.01ZM124.967 1.01581C117.274 1.01581 111.015 7.27622 111.015 14.972V15.038C111.015 22.7338 117.274 28.9942 124.967 28.9942H125.033C132.726 28.9942 138.985 22.7338 138.985 15.038V14.972C138.985 7.27622 132.726 1.01581 125.033 1.01581H124.967Z"
           fill="#D0C2B0"
         />
@@ -145,7 +215,7 @@ function toggleMenu() {
             d="M178.672 18.9694C178.655 19.0293 178.639 19.0801 178.626 19.1309C177.859 22.1357 177.774 22.8031 176.986 24.1988C176.61 24.8621 176.187 25.4909 175.718 26.0923C175.666 26.1603 175.616 26.2477 175.51 26.2264C175.394 26.202 175.385 26.0983 175.373 26.0049C175.247 25.0917 175.177 24.1765 175.208 23.2541C175.247 22.0534 175.395 21.641 176.943 15.1317C176.965 15.0321 176.94 14.9499 176.907 14.8605C176.537 13.8609 176.464 12.8461 176.788 11.8181C177.488 9.59758 180.005 9.42794 180.444 11.2594C180.715 12.3921 179.999 13.8752 179.448 16.0673C178.992 17.8754 181.121 19.1614 182.939 17.8409C184.617 16.6239 185.268 13.7065 185.144 11.6383C184.9 7.51518 180.38 6.62431 177.514 7.95197C174.227 9.47263 173.479 13.548 174.964 15.411C175.152 15.6477 175.506 15.793 175.444 16.0327C175.349 16.4055 175.264 16.7814 175.161 17.1521C175.084 17.4284 174.644 17.529 174.365 17.4152C173.817 17.1938 173.361 16.8454 172.992 16.3862C171.732 14.8249 171.371 11.7369 173.038 9.12218C174.884 6.22612 178.318 5.05387 181.454 5.4094C185.199 5.83503 187.566 8.39486 188.009 11.299C188.211 12.6216 188.065 15.8834 186.209 18.1893C184.074 20.8385 180.612 21.0142 179.015 19.3879C178.892 19.263 178.793 19.1177 178.672 18.9684V18.9694Z"
             fill="#D0C2B0"
           />
-        </NuxtLink>
+        </NuxtLink> -->
       </svg>
 
       <div class="flex justify-between pt-[7rem]">

@@ -141,13 +141,10 @@ onMounted(() => {
 
 const handleChangeView = (index) => (isViewingGallery.value = index);
 
-// For Mobile
-
-const isShowingCat = ref(false);
 </script>
 
 <template>
-  <div class="px-4 lg:px-20 lg:pt-6">
+  <div class="px-4 lg:px-20 pt-6">
     <p class="lg:hidden font-playfairDisplay text-4xl font-medium">
       Portfoli<span class="text-new-gray font-imperial text-4xl">O</span>
     </p>
@@ -159,7 +156,7 @@ const isShowingCat = ref(false);
     </ul> -->
 
     <section
-      class="flex gap-x-8 justify-between h-[580px] py-10 pb-20 border-b border-new-gray border-opacity-25"
+      class="flex gap-x-8 justify-between h-[580px] py-10 pb-10 border-b border-new-gray border-opacity-25"
     >
       <div class="w-full lg:w-1/3 h-full rounded-2xl overflow-hidden">
         <img
@@ -218,10 +215,10 @@ const isShowingCat = ref(false);
     </section>
 
     <section id="all-gallery">
-      <header class="hidden lg:flex space-x-4 justify-center my-8">
+      <header class="flex flex-wrap gap-4 lg:space-x-4 justify-center mt-4 lg:my-8">
         <div
           v-for="(item, index) in galleryData"
-          class="transition-all duration-1000 ease-in-out py-2 px-3 rounded-3xl bg-navbar-color hover:text-white hover:bg-black"
+          class="text-xs lg:text-sm transition-all duration-1000 ease-in-out py-2 px-3 rounded-3xl bg-navbar-color hover:text-white hover:bg-black"
           :class="isViewingGallery === index && 'lg:text-white lg:bg-black'"
           :key="item.title"
           @click="handleChangeView(index)"
@@ -231,104 +228,7 @@ const isShowingCat = ref(false);
         </div>
       </header>
 
-      <div class="lg:hidden relative  flex justify-center items-center mt-10 mb-14 ">
-        <aside
-          :class="[
-            isShowingCat ? 'rounded-3xl' : 'rounded-full',
-            isShowingCat ? 'pb-b' : 'pb-1',
-          ]"
-          class="absolute top-0 left-0 z-10 bg-white w-[250px] border border-new-gray pt-[2px]"
-        >
-          <main ref="autoAniSection">
-            <header class="flex justify-between items-center px-4">
-              <div>
-                <span class="text-[#A89C93] text-xs font-medium">Category</span>
-                <p class="font-semibold">All Categories</p>
-              </div>
-
-              <aside
-                @click="isShowingCat = !isShowingCat"
-                class="w-8 h-8 flex justify-center items-center rounded-full border border-new-gray"
-              >
-                <svg
-                  :class="isShowingCat && 'rotate-180'"
-                  role="button"
-                  class="w-4"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13.4391 6.13477H8.76658H4.55908C3.83908 6.13477 3.47908 7.00477 3.98908 7.51477L7.87408 11.3998C8.49658 12.0223 9.50908 12.0223 10.1316 11.3998L11.6091 9.92227L14.0166 7.51477C14.5191 7.00477 14.1591 6.13477 13.4391 6.13477Z"
-                    fill="black"
-                  />
-                </svg>
-              </aside>
-            </header>
-
-            <ul v-if="isShowingCat" class="mt-4">
-              <li
-                :class="isViewingGallery === 0 && 'bg-[#F6F6F6]'"
-                class="font-semibold p-3 hover:bg-[#F6F6F6]'"
-                role="button"
-                @click="
-                  isShowingCat = !isShowingCat;
-                  isViewingGallery = 0;
-                "
-              >
-                Paver Gallery
-              </li>
-              <li
-                role="button"
-                @click="
-                  isShowingCat = !isShowingCat;
-                  isViewingGallery = 1;
-                "
-                :class="isViewingGallery === 1 && 'bg-[#F6F6F6]'"
-                class="font-semibold p-3 hover:bg-[#F6F6F6]'"
-              >
-                Concrete Gallery
-              </li>
-              <li
-                role="button"
-                @click="
-                  isShowingCat = !isShowingCat;
-                  isViewingGallery = 2;
-                "
-                :class="isViewingGallery === 2 && 'bg-[#F6F6F6]'"
-                class="font-semibold p-3 hover:bg-[#F6F6F6]'"
-              >
-                Turf Gallery
-              </li>
-              <li
-                role="button"
-                @click="
-                  isShowingCat = !isShowingCat;
-                  isViewingGallery = 3;
-                "
-                :class="isViewingGallery === 3 && 'bg-[#F6F6F6]'"
-                class="font-semibold p-3 hover:bg-[#F6F6F6]'"
-              >
-                Patio Covers and Pergolas
-              </li>
-              <li
-                role="button"
-                @click="
-                  isShowingCat = !isShowingCat;
-                  isViewingGallery = 4;
-                "
-                :class="isViewingGallery === 4 && 'bg-[#F6F6F6]'"
-                class="font-semibold p-3 hover:bg-[#F6F6F6]'"
-              >
-                Outdoor Kitchens
-              </li>
-            </ul>
-          </main>
-        </aside>
-      </div>
-
+     
       <div
         class="grid grid-cols-2 lg:grid-cols-3 pt-8 gap-2 lg:gap-8"
         ref="autoAniSection"

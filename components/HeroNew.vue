@@ -125,7 +125,7 @@ onMounted(() => {
         />
       </div>
 
-      <video class="w-full h-full object-cover" autoplay muted loop>
+      <video class="w-full h-full object-cover" playsinline autoplay muted loop>
         <source src="/video/hero-video2.mp4" type="video/mp4" />
         Something went wrong while playing video
       </video>

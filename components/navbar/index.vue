@@ -77,6 +77,10 @@ watch(isBodyClicked, (val) => {
       class="flex justify-center items-center border-b border-black mt-6 text-sm sm:text-base md:text-lg lg:text-[13px]"
     >
       <div class="flex flex-row items-center gap-16 uppercase">
+
+        <NuxtLink to="/">
+          <p class="font-medium" @click="toggleDropdown">Home</p>
+        </NuxtLink>
         <!-- Service select button -->
         <div class="relative">
           <!-- Selected Option -->
@@ -255,7 +259,7 @@ watch(isBodyClicked, (val) => {
           <p class="font-medium" @click="toggleDropdown">Contact</p>
         </NuxtLink>
         <NuxtLink to="/finance">
-          <p class="font-medium" @click="toggleDropdown">Partner Deal</p>
+          <p class="font-medium" @click="toggleDropdown">Finance</p>
         </NuxtLink>
 
         <!-- More select button -->

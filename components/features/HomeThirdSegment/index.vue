@@ -122,35 +122,27 @@ const datafQ = ref([
     </section>
   </div> -->
 
-  <div id="why-choose-us" class="pt-14 lg:pb-20">
-    <h1
-      class="lg:hidden font-playfairDisplay text-center font-bold text-5xl text-[#A89C93] opacity-50"
-    >
-      Why Choose<br />
+  <div id="why-choose-us" class="pt-14 px-20">
+    <h4 class="font-playfairDisplay text-5xl font-semibold text-center">
+      Why
+      <span class="font-imperial font-normal text-[#A89C93] text-7xl">C </span>
+      <span class="text-[#A89C93]">hoose </span>
       Modern Yardz?
-    </h1>
-
-    <h1
-      class="hidden font-playfairDisplay text-[#A89C93] lg:block text-left pl-20 font-bold text-9xl opacity-50"
-      data-aos="slide-left"
-      data-aos-duration="2000"
-    >
-      Why Choose
-    </h1>
-    <h1
-      class="hidden font-playfairDisplay text-[#A89C93] lg:block text-right pr-20 font-bold text-9xl opacity-50"
-      data-aos="slide-right"
-      data-aos-duration="2000"
-    >
-      Modern Yardz?
-    </h1>
+    </h4>
+    <div class="h-[400px] mt-12 rounded-xl overflow-hidden">
+      <img
+        src="@/assets/images/teamphoto.jpeg"
+        alt="team photo"
+        class="w-full h-full object-cover"
+      />
+    </div>
 
     <div
-      class="max-w-screen-lg relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-20 space-y-8"
+      class="max-w-screen-lg  relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-20 space-y-8"
     >
-      <div class="font-inter text-black max-w-md leading-loose">
-        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">01</span>
-        <p class="mt-4 text-lg text-[#454545]">
+      <div class="font-inter text-black max-w-lg leading-loose">
+        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6] text-sm">01</span>
+        <p class="mt-4 text-md text-[#454545]">
           At Modern Yardz, our mission is simple: to transform your outdoor
           space into something truly special. Based right here in San Diego,
           we’ve spent decades perfecting the craft of landscape design. From
@@ -158,9 +150,9 @@ const datafQ = ref([
           experience and a personalized touch to every project.
         </p>
       </div>
-      <div class="font-inter text-black max-w-md leading-loose">
-        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">02</span>
-        <p class="mt-4 text-lg text-[#454545]">
+      <div class="font-inter text-black max-w-lg leading-loose">
+        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6] text-sm">02</span>
+        <p class="mt-4 text-md text-[#454545]">
           At Modern Yardz, our mission is simple: to transform your outdoor With
           over 40 years in the business, we understand what it takes to create
           outdoor spaces that are both beautiful and functional. Our local roots
@@ -169,9 +161,9 @@ const datafQ = ref([
         </p>
       </div>
 
-      <div class="font-inter text-black max-w-md leading-loose">
-        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6]">03</span>
-        <p class="mt-4 text-lg text-[#454545]">
+      <div class="font-inter text-black max-w-lg leading-loose">
+        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6] text-sm">03</span>
+        <p class="mt-4 text-md text-[#454545]">
           Whether you’re looking to revamp your yard or start from scratch,
           we’re here to guide you through every step. Trust us to turn your
           vision into reality—because you deserve a space you’ll love for years
@@ -182,24 +174,12 @@ const datafQ = ref([
       <div
         data-aos="slide-up"
         data-aos-duration="2000"
-        class="hidden lg:block md:block md:w-[38%] md:mr-2 w-[400px] h-[630px] bg-blue-100 rounded-t-full absolute lg:-top-36 md:-top-0 right-0"
+        class="hidden lg:block md:block md:w-[38%] md:mr-2 w-[400px] h-[630px] bg-blue-100 rounded-full absolute lg:-top-10 md:-top-0 right-0"
       >
-        <video
-          class="w-full h-full object-cover rounded-t-full bg-[url('@/assets/images/why_ch_bg.jpg')] bg-no-repeat bg-top bg-cover"
-          autoplay
-          muted
-          loop
-        >
-          <source src="/video/why_ch_vid2.mp4" type="video/mp4" />
-          Something went wrong while playing video
-        </video>
-      </div>
-
-      <div class="h-[600px]">
         <img
-          src="@/assets/images/teamphoto.jpeg"
+          src="@/assets/images/thomas_oww.jpeg"
           alt="team photo"
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover rounded-xl"
         />
       </div>
     </div>
