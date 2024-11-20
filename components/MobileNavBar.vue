@@ -75,7 +75,7 @@ function toggleMenu() {
       >
         <div >
           <header class="flex items-center">
-            <p @click="toggleMenu" class="py-2 ">Services</p>
+            <p class="py-2 ">Services</p>
             <svg
             class="ml-2 w-6"
               @click="isServicesOpen = !isServicesOpen"

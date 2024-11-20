@@ -122,14 +122,22 @@ const datafQ = ref([
     </section>
   </div> -->
 
-  <div id="why-choose-us" class="pt-14 px-20">
-    <h4 class="font-playfairDisplay text-5xl font-semibold text-center">
+  <div id="why-choose-us" class="pt-14 px-4 lg:px-20">
+    <h4 class="hidden lg:block font-playfairDisplay text-5xl font-semibold text-center">
       Why
       <span class="font-imperial font-normal text-[#A89C93] text-7xl">C </span>
       <span class="text-[#A89C93]">hoose </span>
       Modern Yardz?
     </h4>
-    <div class="h-[400px] mt-12 rounded-xl overflow-hidden">
+
+    <h4 class="lg:hidden font-playfairDisplay text-4xl font-semibold text-center">
+      Why
+      <span class="font-imperial font-normal text-[#A89C93] text-6xl">C </span>
+      <span class="text-[#A89C93]">hoose </span>
+      Modern Yardz?
+    </h4>
+
+    <div class="h-[200px] lg:h-[400px] mt-12 rounded-xl overflow-hidden">
       <img
         src="@/assets/images/teamphoto.jpeg"
         alt="team photo"

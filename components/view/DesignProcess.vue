@@ -45,7 +45,7 @@
     <!-- Start mobile view -->
     <div class="lg:hidden flex justify-center flex-wrap gap-2">
       <div
-        class="rounded-lg  flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
+        class="hover:bg-navbar-color rounded-lg  flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
       >
         <main class="px-1">
           <div class="flex justify-between">
@@ -66,7 +66,7 @@
       </div>
 
       <div
-        class="rounded-lg flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
+        class="hover:bg-navbar-color rounded-lg flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
       >
         <main class="px-1">
           <div class="flex justify-between">
@@ -86,7 +86,7 @@
       </div>
 
       <div
-        class="rounded-lg flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
+        class="hover:bg-navbar-color rounded-lg flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
       >
         <main class="px-1">
           <div class="flex justify-between">
@@ -108,7 +108,7 @@
       </div>
 
       <div
-        class="rounded-lg flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
+        class="hover:bg-navbar-color rounded-lg flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
       >
         <main class="px-1">
           <div class="flex justify-between">
@@ -133,7 +133,7 @@
       <!-- upper container -->
       <div class="flex">
         <div
-          class="rounded-t-lg rounded-bl-lg flex flex-col justify-between w-[300px] h-[295px] lg:w-[300px] border border-[#A89C93] px-1 pt-2 pb-1"
+          class="hover:bg-navbar-color  rounded-t-lg rounded-bl-lg flex flex-col justify-between w-[300px] h-[295px] lg:w-[300px] border border-[#A89C93]  px-1 pt-2 pb-1"
         >
           <main class="px-1">
             <div class="flex justify-between">
@@ -143,7 +143,7 @@
               <p class="pt-1 text-[#A89C93] text-xs">/01</p>
             </div>
 
-            <p class="text-[#665244] text-sm mt-3">
+            <p class=" text-[#665244] text-sm mt-3">
               We start with a free consultation to discuss your vision and
               goals.
             </p>
@@ -157,7 +157,7 @@
         <div class="w-[300px] h-[295px] lg:w-[300px]"></div>
 
         <div
-          class="rounded-t-lg flex flex-col justify-between w-[300px] h-[295px] lg:w-[300px] border border-[#A89C93] px-1 pt-2 pb-1"
+          class=" hover:bg-navbar-color rounded-t-lg flex flex-col justify-between w-[300px] h-[295px] lg:w-[300px] border border-[#A89C93] px-1 pt-2 pb-1"
         >
           <main class="px-1">
             <div class="flex justify-between">
@@ -186,7 +186,7 @@
         <div class="w-[300px] h-[295px] lg:w-[300px]"></div>
 
         <div
-          class="rounded-b-lg flex flex-col justify-between w-[300px] h-[295px] lg:w-[300px] border border-[#A89C93] px-1 pt-2 pb-1"
+          class="hover:bg-navbar-color rounded-b-lg flex flex-col justify-between w-[300px] h-[295px] lg:w-[300px] border border-[#A89C93] px-1 pt-2 pb-1"
         >
           <main class="px-1">
             <div class="flex justify-between">
@@ -210,7 +210,7 @@
         <div class="w-[300px] h-[295px] lg:w-[300px]"></div>
 
         <div
-          class="rounded-b-lg flex flex-col justify-between w-[300px] h-[295px] lg:w-[300px] border border-[#A89C93] px-1 pt-2 pb-1"
+          class="hover:bg-navbar-color rounded-b-lg flex flex-col justify-between w-[300px] h-[295px] lg:w-[300px] border border-[#A89C93] px-1 pt-2 pb-1"
         >
           <main class="px-1">
             <div class="flex justify-between">
