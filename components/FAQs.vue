@@ -1,7 +1,26 @@
 <script setup>
-defineProps(["faqData"]);
+const props = defineProps(["faqData"]);
 
 const isViewingFaq = ref(null);
+
+// In mainEntity property dataArray is a Proxy array because of vue reactivity, so we are normalizing to clean array
+props.faqData?.dataArray &&
+  useHead({
+    script: [
+      {
+        type: "application/ld+json",
+        innerHTML: `{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        
+        "mainEntity": ${JSON.stringify(
+          JSON.parse(JSON.stringify(props.faqData.dataArray))
+        )}
+      }`,
+        tagPosition: "bodyClose",
+      },
+    ],
+  });
 </script>
 
 <template>
@@ -18,9 +37,10 @@ const isViewingFaq = ref(null);
         Got Qu<span class="text-[#A89C93] font-imperial text-6xl">E </span>
         stions ?
       </h4>
-      <p class=" max-w-[380px] lg:max-w-lg mx-auto">
-        Frequently Asked Questions<br>
-        Here are some common questions. Find the answers you're looking for below.
+      <p class="max-w-[380px] lg:max-w-lg mx-auto">
+        Frequently Asked Questions<br />
+        Here are some common questions. Find the answers you're looking for
+        below.
       </p>
     </div>
 
