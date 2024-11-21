@@ -39,13 +39,13 @@ onMounted(() => {
       class="hidden lg:block min-h-[470px] lg:min-h-screen pt-20 lg:bg-[url('@/assets/images/hero_bg1.png')] bg-white bg-no-repeat bg-left-top bg-cover"
     >
       <div class="text-center space-y-3">
-        <VueWriter
-          class="text-xs lg:text-md font-semibold tracking-[.6em]"
-          :array="[`DON'T JUST LIKE YOUR YARD`]"
-          :iterations="1"
-          :typeSpeed="100"
-        />
         <p
+          class="animate__animated animate__slideInUp text-xs lg:text-md font-semibold tracking-[.6em]"
+        >
+          TRANSFORM YOUR YARD INTO A
+        </p>
+
+        <!-- <p
           class="text-6xl lg:text-8xl font-bold flex items-center justify-center"
         >
           L
@@ -60,12 +60,26 @@ onMounted(() => {
             class="animate__animated animate__bounceIn animate__delay-4s"
             >!</span
           >
-        </p>
+        </p> -->
+
+        <div class="flex items-center justify-center">
+          <VueWriter
+            class="text-6xl lg:text-8xl font-bold flex items-center justify-center tracking-widest"
+            :array="[`MASTERPIECE`]"
+            :iterations="1"
+            :type-speeed=300
+          />
+          <span
+            class="animate__animated animate__bounceIn animate__delay-3s ext-6xl lg:text-8xl font-bold"
+            >!</span
+          >
+        </div>
         <p
           class="text-xs hidden lg:block max-w-lg lg:max-w-xl mx-auto tracking-[.3em] leading-relaxed"
         >
-          Let us turn your outdoor space into a beautiful, <br />
-          custom-designed haven that you’ll enjoy for years to come.
+          We’re a cut above the rest, designing custom outdoor spaces
+          <br />
+          that are as beautiful as they are functional.
         </p>
       </div>
 
@@ -85,41 +99,34 @@ onMounted(() => {
       </div>
     </header>
 
-    <header class="h-[700px] bg-gray-200 lg:hidden relative">
+    <header class="h-[600px] bg-gray-200 lg:hidden relative">
       <div
         class="bg-black text-white absolute top-0 left-0 h-full w-full opacity-50"
       ></div>
 
-      <div class="text-white text-center absolute w-full bottom-[35%]">
-        <div class="px-5 md:px-8 space-y-4">
+      <div class="text-white text-center absolute w-full bottom-[29%]">
+        <div class="md:px-8 space-y-4">
           <p
-            data-aos="fade-in"
-            data-aos-easing="linear"
-            data-aos-duration="900"
-            class="font-semibold text-md leading-normal tracking-[.2rem]"
+            class="animate__animated animate__fadeInUp font-normal text-md leading-normal tracking-[.2rem]"
           >
-            DON’T JUST LIKE YOUR YARD
-          </p>
-          <p
-            data-aos="fade-in"
-            data-aos-easing="linear"
-            data-aos-duration="900"
-            class="text-7xl font-bold leading-tight tracking-wide"
-          >
-            LOVE IT!
+            TRANSFORM YOUR YARD INTO A
           </p>
 
           <VueWriter
-            class="text-lg leading-normal tracking-widest"
-            :array="[`  DESIGN YOUR DREAM YARD`]"
+            class="text-4xl text- pl-4  font-black tracking-widest"
+            :array="['MASTERPIECE!']"
             :iterations="1"
-            :typeSpeed="100"
+
           />
+          <p class="text-lg mx-2 leading-normal tracking-widest">
+            We’re a cut above the rest, designing custom outdoor spaces that are
+            as beautiful as they are functional.
+          </p>
         </div>
 
         <FilledButton
           background-color="white"
-          text="Book Free Consultation"
+          text="Design Your Dream Yard Today"
           text-color="black"
           class="uppercase w-[80%] mt-12"
         />
@@ -135,7 +142,7 @@ onMounted(() => {
   <div class="hidden lg:block text-center mt-16">
     <FilledButton
       background-color="black"
-      text="Design Your Dream Yard"
+      text="Design Your Dream Yard Today"
       text-color="white"
       class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
     />
