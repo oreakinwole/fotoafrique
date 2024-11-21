@@ -8,7 +8,7 @@ import { registeredComponents } from "../init-builder.ts";
 const route = useRoute();
 
 // TO DO: Add your Public API Key here
-const apiKey = "7ae0abad7c284f1caab7d3c34c596171";
+const apiKey = "b3ff931cbdeb4be8a5a0522db3de4c73";
 const canShowContent = ref(true);
 const model = "page";
 

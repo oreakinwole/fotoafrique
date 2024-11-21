@@ -19,9 +19,8 @@ const isViewingFaq = ref(null);
         stions ?
       </h4>
       <p class=" max-w-[380px] lg:max-w-lg mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
-        dictum diam. Vivamus dignissim turpis nec dui molestie, sit amet
-        vestibulum tortor feugiat.
+        Frequently Asked Questions<br>
+        Here are some common questions. Find the answers you're looking for below.
       </p>
     </div>
 
