@@ -237,7 +237,7 @@
       <p class="text-[#454545] font-semibold mb-4">Ready to Get Started?</p>
       <FilledButton
         background-color="black"
-        text="Design Your Dream Yard"
+        text="book free design consult"
         text-color="white"
         class="uppercase w-[90%] font-semibold lg:w-[290px]"
       />

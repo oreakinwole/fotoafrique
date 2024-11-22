@@ -10,7 +10,7 @@
   >
     <div>
       <h4 class="font-playfairDisplay text-5xl font-medium">
-          Servi<span class="text-[#A89C93] font-imperial  text-6xl"
+          Our Servi<span class="text-[#A89C93] font-imperial  text-6xl"
             >C </span
           >es
         </h4>
@@ -19,13 +19,13 @@
 
   <div class="mt-12 lg:mt-28 lg:flex">
     <div
-      class="ml-32 mt-20 hidden lg:block text-center"
+      class="ml-32 mt-10 hidden lg:block text-center"
       data-aos="fade-up"
       data-aos-easing="linear"
     >
       <div>
-        <h4 class="font-playfairDisplay text-5xl font-semibold text-nowrap">
-          Servi<span class="text-[#A89C93] font-imperial font-normal  text-6xl"
+        <h4 class="font-playfairDisplay text-5xl font-semibold leading-relaxed">
+          Our Servi<span class="text-[#A89C93] font-imperial font-normal  text-6xl"
             >C</span
           >es
         </h4>

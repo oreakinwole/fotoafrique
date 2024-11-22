@@ -1,4 +1,13 @@
 <script setup>
+// Default to top is instant
+const { scrollToTop } = useAnchorScroll({
+  toTop: {
+    scrollOptions: {
+      behavior: "smooth",
+      offsetTop: 0,
+    },
+  },
+});
 const handleBookConsult = () => {
   const calendly = useCalendly();
 
@@ -31,7 +40,7 @@ const handleBookConsult = () => {
 
     <!-- second layout -->
     <div
-      class="flex flex-wrap lg:flex-nowrap gap-8 lg:gap-0 justify-between mt-14 font-inter text-[#D0C2B0] lg:px-32"
+      class="flex flex-wrap lg:flex-nowrap gap-8 lg:gap-0 justify-between lg:mt-14 font-inter text-[#D0C2B0] lg:px-32"
     >
       <div
         class="border border-[#665244] border-l-0 pt-10 pb-12 lg:w-[150rem] mx-5 lg:mx-0 lg:pl-10"
@@ -54,7 +63,7 @@ const handleBookConsult = () => {
         </div>
 
         <div class="flex gap-2 mt-8 lg:mt-0">
-          <input type="checkbox" class="mt-6 cursor-pointer" />
+          <input type="checkbox" class="mt-6" />
           <p
             class="ml-2 font-[300] text-xs lg:text-[14px] mt-5 w-[21rem] lg:w-[25rem]"
           >
@@ -65,42 +74,42 @@ const handleBookConsult = () => {
       </div>
 
       <div
-        class="flex gap-12 text-[16px] border border-[#665244] border-r-0 pt-10 pl-5 lg:pl-12 w-[180rem]"
+        class="flex gap-12 border border-[#665244] border-r-0 pt-4 lg:pt-10 pl-5 lg:pl-12 w-[180rem]"
       >
         <div class="flex flex-col gap-5">
           <NuxtLink to="/services">
-            <h4 class="uppercase cursor-pointer">Our Services</h4>
+            <h4 class="text-sm lg:text-[16px] uppercase">Our Services</h4>
           </NuxtLink>
 
           <NuxtLink to="/3d-packages">
-            <h4 class="uppercase cursor-pointer">3d Packages</h4>
+            <h4 class="text-sm lg:text-[16px] uppercase">3d Packages</h4>
           </NuxtLink>
           <NuxtLink to="/#design-process">
-            <h4 class="uppercase cursor-pointer">Our Design Process</h4>
+            <h4 class="text-sm lg:text-[16px] uppercase">Our Design Process</h4>
           </NuxtLink>
         </div>
 
         <div class="flex flex-col gap-5">
           <NuxtLink to="/#why-choose-us">
-            <h4 class="uppercase cursor-pointer">About Us</h4>
+            <h4 class="text-sm lg:text-[16px] uppercase">About Us</h4>
           </NuxtLink>
           <NuxtLink to="/contact">
-            <h4 class="uppercase cursor-pointer">Contact Us</h4>
+            <h4 class="text-sm lg:text-[16px] uppercase">Contact Us</h4>
           </NuxtLink>
           <NuxtLink to="/finance">
-            <h4 class="uppercase cursor-pointer">Financing</h4>
+            <h4 class="text-sm lg:text-[16px] uppercase">Financing</h4>
           </NuxtLink>
         </div>
 
         <div class="flex flex-col gap-5">
           <NuxtLink to="/#testimonials">
-            <h4 class="uppercase cursor-pointer">Reviews</h4>
+            <h4 class="uppercase">Reviews</h4>
           </NuxtLink>
 
-          <h4 class="uppercase cursor-pointer">Privacy Policy</h4>
+          <h4 class="uppercase">Privacy Policy</h4>
 
           <NuxtLink to="/portfolio">
-            <h4 class="uppercase cursor-pointer">Portfolio</h4>
+            <h4 class="uppercase">Portfolio</h4>
           </NuxtLink>
         </div>
       </div>
@@ -113,32 +122,24 @@ const handleBookConsult = () => {
       >
         <div class="uppercase flex">
           <NuxtLink to="https://www.instagram.com/modern_yardz/">
-            <p
-              class="border border-[#665244] px-[3.9rem] py-5 border-t-0 cursor-pointer"
-            >
+            <p class="border border-[#665244] px-[3.9rem] py-5 border-t-0">
               Instagram
             </p>
           </NuxtLink>
           <NuxtLink to="https://www.facebook.com/modernyardz/">
-            <p
-              class="border border-[#665244] px-[3.9rem] py-5 border-t-0 cursor-pointer"
-            >
+            <p class="border border-[#665244] px-[3.9rem] py-5 border-t-0">
               Facebook
             </p>
           </NuxtLink>
 
           <NuxtLink to="https://www.pinterest.com/modernyardz/">
-            <p
-              class="border border-[#665244] px-[3.85rem] py-5 border-t-0 cursor-pointer"
-            >
+            <p class="border border-[#665244] px-[3.85rem] py-5 border-t-0">
               Pinterest
             </p>
           </NuxtLink>
 
           <NuxtLink to="https://www.x.com/modernyardz/">
-            <p
-              class="border border-[#665244] px-[3.8rem] py-5 border-t-0 cursor-pointer"
-            >
+            <p class="border border-[#665244] px-[3.8rem] py-5 border-t-0">
               Twitter
             </p>
           </NuxtLink>
@@ -156,51 +157,51 @@ const handleBookConsult = () => {
       >
         <p class="text-sm mt-1 font-light text-nowrap">We Accept</p>
 
-       <div class="flex gap-3 lg:mt-0 mt-3 lg:mr-0 ">
-        <div class="">
-          <img
-            src="/images/footer/icons/AmazonPay.png"
-            alt="amazon icon"
-            width="35"
-          />
-        </div>
+        <div class="flex gap-3 lg:mt-0 mt-3 lg:mr-0">
+          <div class="">
+            <img
+              src="/images/footer/icons/AmazonPay.png"
+              alt="amazon icon"
+              width="35"
+            />
+          </div>
 
-        <div>
-          <img
-            src="/images/footer/icons/ApplePay.png"
-            alt="apple pay icon"
-            width="35"
-          />
-        </div>
+          <div>
+            <img
+              src="/images/footer/icons/ApplePay.png"
+              alt="apple pay icon"
+              width="35"
+            />
+          </div>
 
-        <div>
-          <img
-            src="/images/footer/icons/GooglePay.png"
-            alt="google pay icon"
-            width="35"
-          />
-        </div>
+          <div>
+            <img
+              src="/images/footer/icons/GooglePay.png"
+              alt="google pay icon"
+              width="35"
+            />
+          </div>
 
-        <div>
-          <img src="/images/footer/icons/JCB.png" alt="jcb icon" width="35" />
-        </div>
+          <div>
+            <img src="/images/footer/icons/JCB.png" alt="jcb icon" width="35" />
+          </div>
 
-        <div>
-          <img
-            src="/images/footer/icons/Mastercard.png"
-            alt="master card icon"
-            width="35"
-          />
-        </div>
+          <div>
+            <img
+              src="/images/footer/icons/Mastercard.png"
+              alt="master card icon"
+              width="35"
+            />
+          </div>
 
-        <div>
-          <img
-            src="/images/footer/icons/Visa Classic.png"
-            alt="visa classic icon"
-            width="35"
-          />
+          <div>
+            <img
+              src="/images/footer/icons/Visa Classic.png"
+              alt="visa classic icon"
+              width="35"
+            />
+          </div>
         </div>
-       </div>
       </div>
     </div>
 
@@ -208,13 +209,34 @@ const handleBookConsult = () => {
     <div
       class="hidden uppercase text-[#D0C2B0] lg:flex justify-between mt-10 px-72 text-[12px] font-inter"
     >
-    <p>© {{ new Date().getFullYear() }} MODERNYARDZ.com. All rights reserved.</p>
-    <p>Privacy Policy | Terms of Use</p>
+      <p>
+        © {{ new Date().getFullYear() }} MODERNYARDZ.com. All rights reserved.
+      </p>
+      <p>Privacy Policy | Terms of Use</p>
+    </div>
+
+    <div
+      role="button"
+      @click="scrollToTop"
+      class="fixed lg:hidden right-4 bottom-32 rounded-full flex justify-center items-center w-12 h-12 bg-[#A89C93] z-50"
+    >
+      <svg
+        class="w-32"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="m12.354 5.646l5 5a.5.5 0 0 1-.708.708L12.5 7.207V18a.5.5 0 0 1-1 0V7.207l-4.146 4.147a.5.5 0 0 1-.708-.708l5-5a.5.5 0 0 1 .708 0"
+        />
+      </svg>
     </div>
 
     <div
       @click="handleBookConsult"
-      class="fixed right-4 bottom-4 lg:right-2 lg:bottom-10 animate__animated animate__fadeIn animate__slower z-50"
+      class="fixed right-4 bottom-4 lg:right-2 lg:bottom-10 animate__animated animate__fadeIn animate__slower z-30"
     >
       <FilledButtonFixed
         background-color="black"

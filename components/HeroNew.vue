@@ -65,14 +65,14 @@ onMounted(() => {
         <div class="flex items-center justify-center">
           <VueWriter
             class="text-6xl lg:text-8xl font-bold flex items-center justify-center tracking-widest"
-            :array="[`MASTERPIECE`]"
+            :array="[`MASTERPIECE!`]"
             :iterations="1"
-            :type-speeed=300
+            :type-speeed="300"
           />
-          <span
+          <!-- <span
             class="animate__animated animate__bounceIn animate__delay-3s ext-6xl lg:text-8xl font-bold"
             >!</span
-          >
+          > -->
         </div>
         <p
           class="text-xs hidden lg:block max-w-lg lg:max-w-xl mx-auto tracking-[.3em] leading-relaxed"
@@ -104,21 +104,20 @@ onMounted(() => {
         class="bg-black text-white absolute top-0 left-0 h-full w-full opacity-50"
       ></div>
 
-      <div class="text-white text-center absolute w-full bottom-[29%]">
-        <div class="md:px-8 space-y-4">
-          <p
-            class="animate__animated animate__fadeInUp font-normal text-md leading-normal tracking-[.2rem]"
-          >
+      <div class="text-white text-center absolute w-full bottom-[20%]">
+        <div class="md:px-8">
+          <p class="text-3xl px-3 font-black tracking-widest animate__animated animate__fadeInUp">
             TRANSFORM YOUR YARD INTO A
           </p>
 
           <VueWriter
-            class="text-4xl text- pl-4  font-black tracking-widest"
+            class="text-4xl pl-4 mt-2 font-black tracking-widest"
             :array="['MASTERPIECE!']"
             :iterations="1"
-
           />
-          <p class="text-lg mx-2 leading-normal tracking-widest">
+
+
+          <p class="text-lg mx-2 mt-8  leading-normal tracking-widest">
             We’re a cut above the rest, designing custom outdoor spaces that are
             as beautiful as they are functional.
           </p>

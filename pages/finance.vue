@@ -77,6 +77,6 @@
       class="lg:w-[230px] "
     />
   </section>
-
-  <OurPortfolio class="" />
+<ViewDesignProcess/>
+  <ViewTestimonial />
 </template>

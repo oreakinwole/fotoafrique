@@ -123,14 +123,18 @@ const datafQ = ref([
   </div> -->
 
   <div id="why-choose-us" class="pt-14 px-4 lg:px-20">
-    <h4 class="hidden lg:block font-playfairDisplay text-5xl font-semibold text-center">
+    <h4
+      class="hidden lg:block font-playfairDisplay text-5xl font-semibold text-center"
+    >
       Why
       <span class="font-imperial font-normal text-[#A89C93] text-7xl">C </span>
       <span class="text-[#A89C93]">hoose </span>
       Modern Yardz?
     </h4>
 
-    <h4 class="lg:hidden font-playfairDisplay text-4xl font-semibold text-center">
+    <h4
+      class="lg:hidden font-playfairDisplay text-4xl font-semibold text-center"
+    >
       Why
       <span class="font-imperial font-normal text-[#A89C93] text-6xl">C </span>
       <span class="text-[#A89C93]">hoose </span>
@@ -146,10 +150,24 @@ const datafQ = ref([
     </div>
 
     <div
-      class="max-w-screen-lg  relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-20 space-y-8"
+      class="max-w-screen-lg relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-20 space-y-8"
     >
       <div class="font-inter text-black max-w-lg leading-loose">
-        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6] text-sm">01</span>
+        <header
+          class="rounded-2xl w-10 flex justify-center items-center font-semibold py-1 bg-[#E6E6E6] text-sm"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 1024 1024"
+          >
+            <path
+              fill="currentColor"
+              d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h360c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H184V184h656v320c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V144c0-17.7-14.3-32-32-32M653.3 599.4l52.2-52.2a8.01 8.01 0 0 0-4.7-13.6l-179.4-21c-5.1-.6-9.5 3.7-8.9 8.9l21 179.4c.8 6.6 8.9 9.4 13.6 4.7l52.4-52.4l256.2 256.2c3.1 3.1 8.2 3.1 11.3 0l42.4-42.4c3.1-3.1 3.1-8.2 0-11.3z"
+            />
+          </svg>
+        </header>
         <p class="mt-4 text-md text-[#454545]">
           At Modern Yardz, our mission is simple: to transform your outdoor
           space into something truly special. Based right here in San Diego,
@@ -159,18 +177,45 @@ const datafQ = ref([
         </p>
       </div>
       <div class="font-inter text-black max-w-lg leading-loose">
-        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6] text-sm">02</span>
+        <header
+          class="rounded-2xl w-10 flex justify-center items-center font-semibold py-1 bg-[#E6E6E6] text-sm"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 1024 1024"
+          >
+            <path
+              fill="currentColor"
+              d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h360c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H184V184h656v320c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V144c0-17.7-14.3-32-32-32M653.3 599.4l52.2-52.2a8.01 8.01 0 0 0-4.7-13.6l-179.4-21c-5.1-.6-9.5 3.7-8.9 8.9l21 179.4c.8 6.6 8.9 9.4 13.6 4.7l52.4-52.4l256.2 256.2c3.1 3.1 8.2 3.1 11.3 0l42.4-42.4c3.1-3.1 3.1-8.2 0-11.3z"
+            />
+          </svg>
+        </header>
         <p class="mt-4 text-md text-[#454545]">
-          At Modern Yardz, our mission is simple: to transform your outdoor With
-          over 40 years in the business, we understand what it takes to create
-          outdoor spaces that are both beautiful and functional. Our local roots
-          mean we know San Diego’s unique landscape, and we’re committed to
-          delivering results that exceed your expectations.
+          With over 40 years in the business, we understand what it takes to
+          create outdoor spaces that are both beautiful and functional. Our
+          local roots mean we know San Diego’s unique landscape, and we’re
+          committed to delivering results that exceed your expectations.
         </p>
       </div>
 
       <div class="font-inter text-black max-w-lg leading-loose">
-        <span class="rounded-2xl font-semibold px-4 py-1 bg-[#E6E6E6] text-sm">03</span>
+        <header
+          class="rounded-2xl w-10 flex justify-center items-center font-semibold py-1 bg-[#E6E6E6] text-sm"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 1024 1024"
+          >
+            <path
+              fill="currentColor"
+              d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h360c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H184V184h656v320c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V144c0-17.7-14.3-32-32-32M653.3 599.4l52.2-52.2a8.01 8.01 0 0 0-4.7-13.6l-179.4-21c-5.1-.6-9.5 3.7-8.9 8.9l21 179.4c.8 6.6 8.9 9.4 13.6 4.7l52.4-52.4l256.2 256.2c3.1 3.1 8.2 3.1 11.3 0l42.4-42.4c3.1-3.1 3.1-8.2 0-11.3z"
+            />
+          </svg>
+        </header>
         <p class="mt-4 text-md text-[#454545]">
           Whether you’re looking to revamp your yard or start from scratch,
           we’re here to guide you through every step. Trust us to turn your
