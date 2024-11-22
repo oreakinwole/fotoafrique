@@ -1,4 +1,19 @@
 <script setup>
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to("#scroll-top", {
+    display: "flex",
+    scrollTrigger: {
+      trigger: "#mobile-hero",
+      start: "bottom 20%",
+      scrub: true,
+    },
+  });
+});
 // Default to top is instant
 const { scrollToTop } = useAnchorScroll({
   toTop: {
@@ -103,13 +118,13 @@ const handleBookConsult = () => {
 
         <div class="flex flex-col gap-5">
           <NuxtLink to="/#testimonials">
-            <h4 class="uppercase">Reviews</h4>
+            <h4 class="text-sm lg:text-[16px] uppercase">Reviews</h4>
           </NuxtLink>
 
-          <h4 class="uppercase">Privacy Policy</h4>
+          <h4 class="text-sm lg:text-[16px] uppercase">Privacy Policy</h4>
 
           <NuxtLink to="/portfolio">
-            <h4 class="uppercase">Portfolio</h4>
+            <h4 class="text-sm lg:text-[16px] uppercase">Portfolio</h4>
           </NuxtLink>
         </div>
       </div>
@@ -216,9 +231,10 @@ const handleBookConsult = () => {
     </div>
 
     <div
+      id="scroll-top"
       role="button"
       @click="scrollToTop"
-      class="fixed lg:hidden right-4 bottom-32 rounded-full flex justify-center items-center w-12 h-12 bg-[#A89C93] z-50"
+      class="fixed right-4 bottom-32 rounded-full hidden justify-center items-center lg:hidden w-12 h-12 bg-[#A89C93] z-50"
     >
       <svg
         class="w-32"

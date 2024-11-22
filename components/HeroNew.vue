@@ -99,7 +99,7 @@ onMounted(() => {
       </div>
     </header>
 
-    <header class="h-[600px] bg-gray-200 lg:hidden relative">
+    <header id="mobile-hero" class="h-[600px] bg-gray-200 lg:hidden relative">
       <div
         class="bg-black text-white absolute top-0 left-0 h-full w-full opacity-50"
       ></div>
