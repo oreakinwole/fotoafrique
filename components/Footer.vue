@@ -42,7 +42,7 @@ const handleBookConsult = () => {
       >
         Design Your DREAM outdoor Oasis
       </h1>
-      <div class="font-inter font-[500] text-[16px] mt-12">
+      <div class=" font-[500] text-[16px] mt-12">
         <OutlinedButton(BLACK)
           border-color="#FCFBFA"
           text-color="#FCFBFA"
@@ -55,7 +55,7 @@ const handleBookConsult = () => {
 
     <!-- second layout -->
     <div
-      class="flex flex-wrap lg:flex-nowrap gap-8 lg:gap-0 justify-between lg:mt-14 font-inter text-[#D0C2B0] lg:px-32"
+      class="flex flex-wrap lg:flex-nowrap gap-8 lg:gap-0 justify-between lg:mt-14  text-[#D0C2B0] lg:px-32"
     >
       <div
         class="border border-[#665244] border-l-0 pt-10 pb-12 lg:w-[150rem] mx-5 lg:mx-0 lg:pl-10"
@@ -89,7 +89,7 @@ const handleBookConsult = () => {
       </div>
 
       <div
-        class="flex gap-12 border border-[#665244] border-r-0 pt-4 lg:pt-10 pl-5 lg:pl-12 w-[180rem]"
+        class="flex gap-12 border border-[#665244] border-r-0 py-4  lg:pt-10 pl-5 lg:pl-12 w-[180rem]"
       >
         <div class="flex flex-col gap-5">
           <NuxtLink to="/services">
@@ -133,7 +133,7 @@ const handleBookConsult = () => {
     <!-- third layout -->
     <div class="hidden lg:flex justify-between text-[#D0C2B0] px-32">
       <div
-        class="border border-[#665244] border-l-0 border-t-0 w-[150rem] text-[12px] font-inter"
+        class="border border-[#665244] border-l-0 border-t-0 w-[150rem] text-[12px] "
       >
         <div class="uppercase flex">
           <NuxtLink to="https://www.instagram.com/modern_yardz/">
@@ -161,7 +161,7 @@ const handleBookConsult = () => {
         </div>
 
         <div class="py-4 ml-16">
-          <select class="bg-black py-2 font-inter text-[14px] font-[300]">
+          <select class="bg-black py-2  text-[14px] font-[300]">
             <option class="">🇺🇸 &nbsp;&nbsp; United States</option>
           </select>
         </div>
@@ -222,7 +222,7 @@ const handleBookConsult = () => {
 
     <!-- fourth layout -->
     <div
-      class="hidden uppercase text-[#D0C2B0] lg:flex justify-between mt-10 px-72 text-[12px] font-inter"
+      class=" uppercase text-[#D0C2B0] flex flex-wrap justify-center gap-4 lg:justify-between mt-10 pb-48 lg:pb-0  lg:px-72 text-[12px] "
     >
       <p>
         © {{ new Date().getFullYear() }} MODERNYARDZ.com. All rights reserved.
