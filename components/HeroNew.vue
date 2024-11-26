@@ -106,18 +106,15 @@ onMounted(() => {
 
       <div class="text-white text-center absolute w-full bottom-[20%]">
         <div class="md:px-8">
-          <p class="text-3xl px-3 font-black tracking-widest animate__animated animate__fadeInUp">
-            TRANSFORM YOUR YARD INTO A
+          <p
+            class="font-playfairDisplay text-3xl px-3 font-bold tracking-widest animate__animated animate__fadeInUp"
+          >
+            Transform Your Yard Into A Masterpiece
           </p>
 
-          <VueWriter
-            class="text-4xl pl-4 mt-2 font-black tracking-widest"
-            :array="['MASTERPIECE!']"
-            :iterations="1"
-          />
-
-
-          <p class="text-lg mx-2 mt-8  leading-normal tracking-widest">
+          <p
+            class="uppercase font-extralight text-lg mx-4 mt-6 leading-normal tracking-widest animate__animated animate__fadeInUp"
+          >
             We’re a cut above the rest, designing custom outdoor spaces that are
             as beautiful as they are functional.
           </p>
@@ -131,10 +128,15 @@ onMounted(() => {
         />
       </div>
 
-      <video class="w-full h-full object-cover" playsinline autoplay muted loop>
-        <source src="/video/hero-video2.mp4" type="video/mp4" />
-        Something went wrong while playing video
-      </video>
+      <!-- <div class="lg:hidden h-[60px] flex justify-center items-center  absolute bottom-0 left-0">
+        <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
+      </div> -->
+
+      <img
+        class="w-full h-full object-cover"
+        src="@/assets/images/img-hero.jpg"
+        alt="hero pic"
+      />
     </header>
   </div>
 
@@ -147,15 +149,7 @@ onMounted(() => {
     />
   </div>
 
-  <div data-aos="fade-up">
-    <!-- <p class="uppercase text-center font-inter   text-[12px]">
-        Our Partners
-      </p> -->
-
-    <div class="lg:mt-8">
-      <NuxtMarquee class="max-w-[55em] mx-auto" :speed="20">
-        <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
-      </NuxtMarquee>
-    </div>
+  <div data-aos="fade-up" class=" mt-0 max-w-[55em] mx-auto">
+    <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
   </div>
 </template>
