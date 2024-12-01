@@ -17,13 +17,13 @@ function toggleMenu() {
 
 <template>
   <div
-    class="flex bg-transparent justify-between w-full h-[50px] items-center px-4"
+    class="flex absolute top-14 z-10 justify-between w-full  items-center px-4"
   >
     <!-- Logo -->
     <div>
       <NuxtLink to="/">
         <img
-          src="/images/navbar/imgs/logo.png"
+          src="@/assets/svg/logo_white.svg"
           alt="logo"
           class="w-20"
           :class="isMenuOpen && 'animate__animated animate__fadeOut'"
@@ -39,9 +39,9 @@ function toggleMenu() {
         <span class="block w-6 h-0.5 bg-black"></span> -->
 
         <img
-          src="/images/navbar/icons/menu.png"
+           src="@/assets/svg/menu_white.svg"
           alt="menu"
-          class="w-[25px] h-[25px]"
+          class="w-9"
         />
       </div>
     </div>

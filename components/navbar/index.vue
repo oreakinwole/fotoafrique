@@ -49,7 +49,7 @@ watch(isBodyClicked, (val) => {
   <div class="lg:hidden">
     <PopUpModal />
 
-    <MobileNavBar />
+    <MobileNavBar  />
   </div>
   <!--  <div class="flex flex-col bg-navbar-color font-inter fixed w-full z-10">-->
   <div
