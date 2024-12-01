@@ -41,7 +41,7 @@ defineProps(["captImage", "title", "paragraph", "content", "moreContent"]);
 
     <div class="leading-8 text-[#665244]" v-html="content" />
 
-    <p role="button" @click="showMore = true" class="text-center">
+    <p role="button" @click="showMore = !showMore" class="text-sm text-center">
       {{ showMore ? "Collapse " : "Read More ..." }}
     </p>
 
