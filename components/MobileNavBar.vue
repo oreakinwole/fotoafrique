@@ -17,7 +17,7 @@ function toggleMenu() {
 
 <template>
   <div
-    class="flex absolute top-14 z-10 justify-between w-full  items-center px-4"
+    class="flex absolute top-14 z-10 justify-between w-full items-center px-4"
   >
     <!-- Logo -->
     <div>
@@ -38,11 +38,7 @@ function toggleMenu() {
         <span class="block w-6 h-0.5 bg-black"></span>
         <span class="block w-6 h-0.5 bg-black"></span> -->
 
-        <img
-           src="@/assets/svg/menu_white.svg"
-          alt="menu"
-          class="w-9"
-        />
+        <img src="@/assets/svg/menu_white.svg" alt="menu" class="w-9" />
       </div>
     </div>
 

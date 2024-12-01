@@ -29,6 +29,11 @@ export const registeredComponents = [
         type: "richText",
         defaultValue: "Type in your content",
       },
+      {
+        name: "moreContent",
+        type: "richText",
+        defaultValue: "Type in the rest of your content",
+      },
     ],
   },
   {
