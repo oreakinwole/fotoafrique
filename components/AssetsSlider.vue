@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import "vue3-carousel/dist/carousel.css";
 
 const settings = ref({

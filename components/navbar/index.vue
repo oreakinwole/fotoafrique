@@ -382,13 +382,13 @@ watch(isBodyClicked, (val) => {
         </div>
         <!-- End More select button -->
 
-        <div>
+        <!-- <div>
           <img
             src="/images/navbar/icons/Search.png"
             alt="search icon"
             class="w-4"
           />
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

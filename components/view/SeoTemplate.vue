@@ -24,7 +24,7 @@ defineProps(["captImage", "title", "paragraph", "content", "moreContent"]);
 
         <FilledButton
           background-color="black"
-          text="GET FREE QUOTE"
+          text="TRANSFORM YOUR YARD TODAY"
           text-color="white"
           class="w-full"
         />
