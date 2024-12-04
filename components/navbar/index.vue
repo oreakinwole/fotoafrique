@@ -1,4 +1,6 @@
 <script setup>
+import logoBlack from '/images/navbar/imgs/logo.png'
+import logoWhite from '@/assets/svg/logo_white.svg'
 // import autoAnimate from "@formkit/auto-animate";
 
 // const autoAniSection = ref();
@@ -49,23 +51,24 @@ watch(isBodyClicked, (val) => {
   <div class="lg:hidden">
     <PopUpModal />
 
-    <MobileNavBar  />
+    <MobileNavBar />
   </div>
-  <!--  <div class="flex flex-col bg-navbar-color font-inter fixed w-full z-10">-->
-  <div
-    class="hidden lg:flex flex-col"
-    :class="route.path === '/' ? 'bg-navbar-color' : 'bg-white'"
-  >
+  <!--  <div class="flex flex-col bg-navbar-color  fixed w-full z-10">-->
+  <div class="hidden lg:absolute top-0 left-0 z-10 w-full lg:flex flex-col">
     <!-- first layout -->
-    <PopUpModal />
+    <!-- <PopUpModal /> -->
 
     <!-- <NavbarSecond :toggle-dropdown="toggleDropdown" /> -->
 
-    <div class="mt-4 max-w-24 mx-auto">
+    <div class="mt-6 max-w-24 mx-auto">
       <NuxtLink to="/">
         <img
           @click="toggleDropdown"
-          src="/images/navbar/imgs/logo.png"
+          :src="
+            route.path !== '/'
+              ? logoBlack
+              : logoWhite
+          "
           alt="modern yardz logo"
           width="100"
         />
@@ -74,10 +77,12 @@ watch(isBodyClicked, (val) => {
 
     <!--third layout -->
     <div
-      class="flex justify-center items-center border-b border-black mt-6 text-sm sm:text-base md:text-lg lg:text-[13px]"
+      class="flex font-playfairDisplay tracking-widest justify-center items-center mt-6 text-lg"
+      :class="{
+        'text-white': route.path === '/',
+      }"
     >
       <div class="flex flex-row items-center gap-16 uppercase">
-
         <NuxtLink to="/">
           <p class="font-medium" @click="toggleDropdown">Home</p>
         </NuxtLink>
@@ -87,7 +92,6 @@ watch(isBodyClicked, (val) => {
           <div
             @click="toggleDropdown('service')"
             role="button"
-            :class="route.path === '/' ? 'bg-navbar-color' : 'bg-white'"
             class="uppercase inline-flex items-center justify-between w-full p-2"
           >
             <div>
@@ -108,7 +112,6 @@ watch(isBodyClicked, (val) => {
 
           <div
             v-if="isServiceOpen"
-            :class="route.path === '/' ? 'bg-navbar-color' : 'bg-white'"
             class="absolute -left-[15rem] z-10 mt-[1px] lg:w-[70rem] border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px] shadow-custom-light space-y-4"
           >
             <!-- Dropdown content -->
@@ -117,12 +120,9 @@ watch(isBodyClicked, (val) => {
               <NuxtLink to="/services/landscape-sandiego">
                 <button
                   @click="toggleDropdown"
-                  :class="
-                    route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'
-                  "
-                  class="transition-all duration-1000 animate__animated animate__flipInX block w-full text-left px-4 py-2 border border-solid h-[200px] overflow-hidden rounded-[25px] group hover:bg-black"
+                  class="transition-all duration-1000 animate__animated animate__flipInX block w-full text-left px-4 py-2 border-[.5px] h-[200px] overflow-hidden rounded-[25px] group"
                 >
-                  <div class="ml-3 text-black group-hover:text-white">
+                  <div class="ml-3 group-hover:text-white">
                     <p class="font-[600] text-[16px]">Landscape Design SD</p>
                     <!-- <p
                       class="text-[14px] text-[#A89C93] mt-1 group-hover:text-white"
@@ -146,15 +146,10 @@ watch(isBodyClicked, (val) => {
               <NuxtLink to="/services/pavers-san-diego">
                 <button
                   @click="toggleDropdown"
-                  :class="
-                    route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'
-                  "
-                  class="transition-all duration-1000 animate__animated animate__flipInX block w-full text-left px-4 py-2 border border-solid h-[200px] overflow-hidden rounded-[25px] group hover:bg-black"
+                  class="transition-all duration-1000 animate__animated animate__flipInX block w-full text-left px-4 py-2 border-[.5px] h-[200px] overflow-hidden rounded-[25px] group hover:bg-black"
                 >
                   <div class="ml-3 group-hover:text-white">
-                    <p
-                      class="font-[600] text-[16px] text-black group-hover:text-white"
-                    >
+                    <p class="font-[600] text-[16px] group-hover:text-white">
                       Pavers San Diego
                     </p>
                     <!-- <p
@@ -180,13 +175,9 @@ watch(isBodyClicked, (val) => {
                 class="block w-full text-left overflow-hidden rounded-[25px]"
               >
                 <div class="">
-                  <div
-                    class="flex flex-row justify-between font-inter px-6 ml-[-18px]"
-                  >
+                  <div class="flex flex-row justify-between px-6 ml-[-18px]">
                     <div class="flex flex-col gap-3 pt-3">
-                      <h4 class="text-[black] font-[600] text-[14px]">
-                        More Services
-                      </h4>
+                      <h4 class="font-[600] text-[14px]">More Services</h4>
 
                       <NuxtLink to="/services/pools-and-spas">
                         <p
@@ -237,8 +228,8 @@ watch(isBodyClicked, (val) => {
                     <div class="mt-[70px]">
                       <NuxtLink to="/services">
                         <img
-                        @click="toggleDropdown"
-                        role="button"
+                          @click="toggleDropdown"
+                          role="button"
                           src="/images/navbar/icons/See all button.png"
                           alt="arrow"
                           class="h-[65px] w-[65px]"
@@ -268,7 +259,6 @@ watch(isBodyClicked, (val) => {
           <!-- Selected Option -->
           <button
             @click="toggleDropdown('more')"
-            :class="route.path === '/' ? 'bg-navbar-color' : 'bg-white'"
             class="transition-all duration-1000 animate__animated animate__flipInX uppercase cursor-pointer inline-flex items-center justify-between w-full p-2"
           >
             <span class="font-medium">More</span>
@@ -287,7 +277,6 @@ watch(isBodyClicked, (val) => {
 
           <div
             v-if="isMoreOpen"
-            :class="route.path === '/' ? 'bg-navbar-color' : 'bg-white'"
             class="absolute left-[-51rem] z-10 mt-[1px] w-[71rem] origin-top-right border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px] shadow-custom-light space-y-4 more-dropdown"
           >
             <!-- Dropdown content -->
@@ -296,17 +285,11 @@ watch(isBodyClicked, (val) => {
 
               <button
                 @click="toggleDropdown"
-                :class="
-                  route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'
-                "
-                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 border border-solid h-[200px] rounded-[25px] more-parent"
+                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 border-[.5px] h-[200px] rounded-[25px] more-parent"
               >
                 <NuxtLink to="/3d-packages">
                   <div class="ml-3 mt-2">
-                    <p
-                      @click="toggleDropdown"
-                      class="font-[600] text-[16px] text-black"
-                    >
+                    <p @click="toggleDropdown" class="font-[600] text-[16px]">
                       3D Packages
                     </p>
 
@@ -317,28 +300,23 @@ watch(isBodyClicked, (val) => {
                   <div
                     class="w-[195px] h-[124px] mt-5 ml-20 bg-[#A89C93] rounded-tl-[20px] rounded-tr-[20px] more-cont overflow-hidden"
                   >
-                
-                  <img
+                    <img
                       src="@/assets/images/Ferrer_026.jpg"
                       alt="first image"
                       class="h-full w-full object-cover"
                     />
-                </div>
-                  
+                  </div>
                 </NuxtLink>
               </button>
 
               <!-- second container -->
               <button
                 @click="toggleDropdown"
-                :class="
-                  route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'
-                "
-                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 border border-solid h-[200px] rounded-[25px] more-parent"
+                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 border-[.5px] h-[200px] rounded-[25px] more-parent"
               >
                 <NuxtLink to="/#FAQS">
                   <div class="ml-3 mt-2">
-                    <p class="font-[600] text-[16px] text-black">FAQs</p>
+                    <p class="font-[600] text-[16px]">FAQs</p>
                     <!-- <p class="font-[400] text-[14px] text-[#A89C93] mt-1">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p> -->
@@ -346,24 +324,23 @@ watch(isBodyClicked, (val) => {
                   <div
                     class="w-[195px] h-[124px] flex justify-center items-center mt-5 ml-20 bg-navbar-color rounded-tl-[20px] rounded-tr-[20px] more-cont"
                   >
-
-                <p class="font-playfairDisplay text-gray-900 font-bold text-8xl ">?</p>
-
-                </div>
+                    <p
+                      class="font-playfairDisplay text-gray-900 font-bold text-8xl"
+                    >
+                      ?
+                    </p>
+                  </div>
                 </NuxtLink>
               </button>
 
               <!-- third container -->
               <button
                 @click="toggleDropdown"
-                :class="
-                  route.path === '/' ? 'border-[#E4DBD1]' : 'border-gray-200'
-                "
-                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 border border-solid h-[200px] rounded-[25px] more-parent"
+                class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 border-[.5px] h-[200px] rounded-[25px] more-parent"
               >
                 <NuxtLink to="/#socials">
                   <div class="ml-3 mt-2">
-                    <p class="font-[600] text-[16px] text-black">Socials</p>
+                    <p class="font-[600] text-[16px]">Socials</p>
                     <!-- <p class="font-[400] text-[14px] text-[#A89C93] mt-1">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p> -->
@@ -371,10 +348,12 @@ watch(isBodyClicked, (val) => {
                   <div
                     class="w-[195px] h-[124px] flex justify-center items-center mt-5 ml-20 bg-navbar-color rounded-tl-[20px] rounded-tr-[20px] more-cont"
                   >
-
-                <p class="font-playfairDisplay text-gray-900 font-bold text-8xl ">@</p>
-
-                </div>
+                    <p
+                      class="font-playfairDisplay text-gray-900 font-bold text-8xl"
+                    >
+                      @
+                    </p>
+                  </div>
                 </NuxtLink>
               </button>
             </div>

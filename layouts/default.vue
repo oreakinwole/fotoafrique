@@ -3,6 +3,8 @@ const isShowLoader = ref(false);
 const isShowingNav = ref(false);
 const isBodyClicked = ref(false);
 
+const route = useRoute()
+
 // const loaderCountInterval = ref();
 // const loaderCount = ref(0);
 
@@ -75,7 +77,10 @@ const handleIsNavbarShowing = (val) => {
     />
     <div
       class="transition-all duration-150 ease-in"
-      :class="isShowingNav && ' blur-xl'"
+      :class="{
+        ' blur-xl': isShowingNav,
+        'pt-28': route.path !== '/',
+      }"
       @click="isBodyClicked = true"
     >
       <slot />
