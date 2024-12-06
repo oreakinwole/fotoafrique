@@ -33,7 +33,7 @@
         Simple Steps to Your Dream Yard, Here’s how it works:
       </p>
       <p
-        class="text-lg text-[#454545] mt-4 lg:max-w-screen-sm leading-relaxed lg:mx-auto"
+        class="text-md text-[#454545] mt-4 lg:max-w-screen-sm leading-relaxed lg:mx-auto"
       >
         Creating the outdoor space you’ve always wanted is easier than you
         think. Our collaborative design process ensures that every step is clear
@@ -41,12 +41,11 @@
         installation.
       </p>
     </div>
-    
+
     <MobileDesignProcess />
 
     <!-- Write Your Code here -->
-
-   
+    <ProcDes />
 
     <!-- End here -->
 
