@@ -1,33 +1,65 @@
+<script setup>
+import pr1Img from "@/assets/images/designp_1.webp";
+import pr2Img from "@/assets/images/designp_2.webp";
+import pr3Img from "@/assets/images/designp_3.webp";
+import pr4Img from "@/assets/images/designp_4.webp";
+const dProcesses = [
+  {
+    title: "Free Design Consultation",
+    descr:
+      "  We start with a free consultation to discuss your vision and goals.",
+    img: pr1Img,
+  },
+
+  {
+    title: "2D Landscape Design",
+    descr:
+      "We create a 2D design plan that shows a clear, overhead view of your future landscape.",
+    img: pr2Img,
+  },
+
+  {
+    title: "3D Design Renderings",
+    descr:
+      "We take it a step further by transforming the 2D plan into a realistic 3D rendering.",
+    img: pr3Img,
+  },
+  {
+    title: "Comprehensive Quote",
+    descr:
+      "Once the design is finalized, we provide a detailed, itemized quote.",
+    img: pr4Img,
+  },
+];
+
+const isViewing = ref(0);
+
+const handleChangeView = (index) => (isViewing.value = index);
+</script>
+
 <template>
   <!--our portfolio -->
   <div class="h-[780px] relative pt-32 pb-32 px-28 bg-black text-white">
-    <!-- <svg
-      class="w-20 text-green-600 rotate-90"
-      xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
-      viewBox="0 0 24 24"
-    >
-      <path
-        fill="currentColor"
-        d="m12.354 5.646l5 5a.5.5 0 0 1-.708.708L12.5 7.207V18a.5.5 0 0 1-1 0V7.207l-4.146 4.147a.5.5 0 0 1-.708-.708l5-5a.5.5 0 0 1 .708 0"
-      />
-    </svg> -->
+    <div class="flex justify-between font-thin text-xl mb-2">
+      <p role="button">Next</p>
+      <p role="button">Prev</p>
+    </div>
 
     <div
-      class="h-full relative pt-6 bg-gray-900 bg-[url('@/assets/images/designp_1.webp')] bg-no-repeat bg-center bg-cover bg-opacity-50 bg-blend-overlay"
+      class="h-full relative pt-8 bg-gray-900 bg-[url(@/assets/images/designp_1.webp)] bg-no-repeat bg-center bg-cover bg-opacity-50 bg-blend-overlay"
+      :class="`bg-[url(${pr1Img})]`"
     >
       <h3
-        class="max-w-[600px] uppercase tracking-widest mx-auto text-center text-white font-light text-md mb-[-7rem]"
+        class="max-w-[400px] uppercase tracking-widest mx-auto text-center text-white font-light text-md mb-[-7rem]"
       >
-      We start with a free consultation to discuss your vision and goals.
+        {{ dProcesses[isViewing].descr }}
       </h3>
     </div>
 
     <h4
-      class="max-w-96 uppercase absolute bottom-10 text-center left-[36%]  text-white font-[700] text-5xl leading-relaxed tracking-wider"
+      class="max-w-96 uppercase absolute bottom-10 text-center left-[36%] text-white font-[700] text-5xl leading-relaxed tracking-wider"
     >
-      Free Design Consultation
+      {{ dProcesses[isViewing].title }}
     </h4>
   </div>
 </template>
