@@ -18,7 +18,7 @@
 <template>
   <div id="design-process" class="mt-20 lg:mt-28 w-screen">
     <div
-      class="px-2 md:px-8 lg:px-20 text-center mb-20"
+      class="lg:hidden px-2 md:px-8 lg:px-20 text-center mb-10"
       data-aos="fade-up"
       data-aos-easing="linear"
     >
@@ -29,16 +29,12 @@
         >ess
       </h4>
 
-      <p class="text-xl">
-        Simple Steps to Your Dream Yard, Here’s how it works:
-      </p>
+      <p class="text-xl">Simple Steps to Your Dream Yard</p>
       <p
         class="text-md text-[#454545] mt-4 lg:max-w-screen-sm leading-relaxed lg:mx-auto"
       >
-        Creating the outdoor space you’ve always wanted is easier than you
-        think. Our collaborative design process ensures that every step is clear
-        and tailored to your needs, from the first meeting to the final
-        installation.
+        We make creating your ideal outdoor space easy and enjoyable with our
+        proven & easy 4-step design & build process:
       </p>
     </div>
 
@@ -53,7 +49,7 @@
       <p class="text-[#454545] font-semibold mb-4">Ready to Get Started?</p>
       <FilledButton
         background-color="black"
-        text="book free design consult"
+        text="Book Your Free Consultation Today"
         text-color="white"
         class="uppercase w-[90%] font-semibold lg:w-[290px]"
       />

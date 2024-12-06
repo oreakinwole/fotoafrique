@@ -15,7 +15,7 @@
         </div>
 
         <p class="text-[#665244] text-sm mt-3">
-          We start with a free consultation to discuss your vision and goals.
+          We visit your home to discuss your goals, measure the space, and capture photos for reference.
         </p>
       </main>
 
@@ -29,13 +29,12 @@
     >
       <main class="px-1">
         <div class="flex justify-between">
-          <h3 class="flex flex-col font-bold text-md">2D Landscape Design</h3>
+          <h3 class="flex flex-col font-bold text-md">2D & 3D Designs</h3>
           <p class="pt-1 text-[#A89C93] text-xs">/02</p>
         </div>
 
         <p class="text-[#665244] text-sm mt-3">
-          We create a 2D design plan that shows a clear, overhead view of your
-          future landscape.
+          We create a detailed 2D layout and ultra-realistic 3D renderings so you can visualize your new yard.
         </p>
       </main>
 
@@ -49,18 +48,17 @@
     >
       <main class="px-1">
         <div class="flex justify-between">
-          <h3 class="flex flex-col font-bold text-md">3D Design Renderings</h3>
+          <h3 class="flex flex-col font-bold text-md">Detailed Quote</h3>
           <p class="pt-1 text-[#A89C93] text-xs">/03</p>
         </div>
 
         <p class="text-[#665244] text-sm mt-3">
-          We take it a step further by transforming the 2D plan into a realistic
-          3D rendering.
+          You’ll receive an itemized quote with a clear breakdown of costs and scope of work.
         </p>
       </main>
 
       <footer
-        class="bg-gray-400 h-3/5 rounded-t-lg bg-[url('@/assets/images/designp_3.webp')] bg-no-repeat bg-center bg-cover"
+        class="bg-gray-400 h-3/5 rounded-t-lg bg-[url('@/assets/images/designp_4.webp')] bg-no-repeat bg-center bg-cover"
       ></footer>
     </div>
 
@@ -69,17 +67,18 @@
     >
       <main class="px-1">
         <div class="flex justify-between">
-          <h3 class="flex flex-col font-bold text-md">Comprehensive Quote</h3>
+          <h3 class="flex flex-col font-bold text-md">Build & Transform</h3>
+         
           <p class="pt-1 text-[#A89C93] text-xs">/04</p>
         </div>
 
         <p class="text-[#665244] text-sm mt-3">
-          Once the design is finalized, we provide a detailed, itemized quote.
+          Our expert team brings the design to life with precision and care, ensuring every detail exceeds expectations.
         </p>
       </main>
 
       <footer
-        class="h-3/5 rounded-t-lg bg-[url('@/assets/images/designp_4.webp')] bg-no-repeat bg-top bg-cover"
+        class="h-3/5 rounded-t-lg bg-[url('@/assets/images/designp_3.webp')] bg-no-repeat bg-top bg-cover"
       ></footer>
     </div>
   </div>
