@@ -41,13 +41,14 @@
         installation.
       </p>
     </div>
-
+    
     <MobileDesignProcess />
 
-   <!-- Write Your Code here -->
+    <!-- Write Your Code here -->
 
+   
 
-   <!-- End here -->
+    <!-- End here -->
 
     <footer class="lg:px-20 mt-14 text-center">
       <p class="text-[#454545] font-semibold mb-4">Ready to Get Started?</p>
@@ -61,6 +62,4 @@
   </div>
 </template>
 
-<style lang="css" scoped>
-
-</style>
+<style lang="css" scoped></style>
