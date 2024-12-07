@@ -21,8 +21,11 @@
     data-aos="fade-up"
     data-aos-easing="linear"
   >
-    <h4 class="font-playfairDisplay tracking-wide text-4xl lg:text-5xl font-semibold mb-2">
-      San  <span
+    <h4
+      class="font-playfairDisplay tracking-wide text-4xl lg:text-5xl font-semibold mb-2"
+    >
+      San
+      <span
         class="text-[#A89C93] font-imperial font-normal text-6xl lg:text-6xl"
         >D </span
       >iego’s Premier Design & Build Landscaping Experts
@@ -50,4 +53,7 @@
       class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
     />
   </div>
+
+ <ViewIntroduction/>
+ <!-- <ViewWhatWeDo /> -->
 </template>
