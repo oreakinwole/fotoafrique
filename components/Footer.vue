@@ -38,7 +38,7 @@ const handleBookConsult = () => {
 
     <div class="hidden lg:flex lg:flex-col lg:items-center lg:justify-center">
       <h1
-        class="text-center font-playfairDisplay text-3xl lg:text-6xl flex flex-col italic max-w-80 lg:max-w-screen-sm"
+        class="text-center tracking-wider font-playfairDisplay text-3xl lg:text-6xl flex flex-col italic max-w-80 lg:max-w-screen-sm"
       >
         Design Your DREAM outdoor Oasis
       </h1>
@@ -60,7 +60,7 @@ const handleBookConsult = () => {
       <div
         class="border border-[#665244] border-l-0 pt-10 pb-12 lg:w-[150rem] mx-5 lg:mx-0 lg:pl-10"
       >
-        <h4 class="uppercase text-sm lg:text-md">
+        <h4 class="uppercase text-sm  lg:text-md">
           Subscribe to receive ModernYardz news & offers
         </h4>
 

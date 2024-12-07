@@ -54,13 +54,13 @@ props.faqData?.dataArray &&
         @mouseleave="faq.hover = false"
         @click="isViewingFaq = index"
       >
-        <h4 class="font-[600]   text-lg tracking-wider flex-grow">
+        <h4 class="font-[600]   text-lg tracking-widest flex-grow">
           {{ faq.name }}
         </h4>
 
         <p
           v-if="isViewingFaq === index"
-          class="lg:text-md text-black font-light bg-white p-3 mt-12 animate__animated animate__slideInLeft"
+          class="lg:text-md text-black font-light tracking-widest bg-white p-3 mt-12 animate__animated animate__slideInLeft"
         >
           {{ faq.acceptedAnswer.text }}
         </p>
