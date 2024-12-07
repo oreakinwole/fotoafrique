@@ -2,6 +2,8 @@
 
 <template>
   <ViewDesignProcess />
+  <ViewTestimonial />
+
 
   <div
     class="mt-24 lg:hidden text-center"
@@ -468,7 +470,6 @@
   </div>
 
   <!-- <ViewBeforeAndAfter /> -->
-  <ViewTestimonial />
 
 </template>
 

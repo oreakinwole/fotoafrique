@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <div>
     <div class="hidden lg:block bg-black h-[700px] relative">
@@ -54,6 +52,8 @@
     />
   </div>
 
- <ViewIntroduction/>
- <!-- <ViewWhatWeDo /> -->
+  <ViewIntroduction />
+  <!-- <ViewWhatWeDo /> -->
+  <ViewWhyChooseUs />
+
 </template>
