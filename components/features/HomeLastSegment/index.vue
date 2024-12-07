@@ -30,7 +30,7 @@ export default {
       <div class="flex gap-2 cursor-pointer">
         <img :src="instagram" alt="instagram icon" class="w-[24px] h-[24px]" />
         <NuxtLink to="https://www.instagram.com/modern_yardz/">
-          <p class="uppercase font-inter text-[16px] text-[#665244]">
+          <p class="uppercase   text-[16px] text-[#665244]">
             Follow us on instagram
           </p>
         </NuxtLink>

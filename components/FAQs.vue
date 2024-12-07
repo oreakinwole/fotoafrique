@@ -33,11 +33,11 @@ props.faqData?.dataArray &&
     <div class="space-y-4 lg:space-y-8 text-center pb-14 lg:pb-20">
       <h4 class="font-semibold text-5xl lg:text-6xl"></h4>
 
-      <h4 class="font-playfairDisplay text-5xl font-medium mb-4">
+      <h4 class="font-playfairDisplay tracking-wide text-5xl font-medium mb-4">
         Got Qu<span class="text-[#A89C93] font-imperial text-6xl">E </span>
         stions ?
       </h4>
-      <p class="max-w-[380px] lg:max-w-lg mx-auto">
+      <p class="max-w-[380px] tracking-widest lg:max-w-lg mx-auto">
         Frequently Asked Questions<br />
         Here are some common questions. Find the answers you're looking for
         below.
@@ -54,7 +54,7 @@ props.faqData?.dataArray &&
         @mouseleave="faq.hover = false"
         @click="isViewingFaq = index"
       >
-        <h4 class="font-[600] font-inter text-lg tracking-wider flex-grow">
+        <h4 class="font-[600]   text-lg tracking-wider flex-grow">
           {{ faq.name }}
         </h4>
 

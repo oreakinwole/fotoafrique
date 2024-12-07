@@ -85,6 +85,29 @@ const datafQ = ref([
     },
   },
 ]);
+
+const whyUs = [
+  {
+    title: "Decades of Experience:",
+    descr:
+      "With 40+ years in the industry, we’ve honed the art of landscape design and construction.",
+  },
+
+  {
+    title: "Local Roots",
+    descr:
+      "As San Diego locals, we understand the area’s unique landscape and design needs.",
+  },
+  {
+    title: "Custom Approach",
+    descr: "Every project is tailored to your vision, preferences, and budget.",
+  },
+  {
+    title: "Full-Service Excellence",
+    descr:
+      "From design to build, we handle every detail, ensuring a seamless experience.",
+  },
+];
 </script>
 
 <template>
@@ -123,9 +146,11 @@ const datafQ = ref([
   </div> -->
 
   <div id="why-choose-us" class="pt-14 px-4 lg:px-20">
-    <div class="mt-20 h-[650px] flex justify-between">
+    <div class="mt-20 min-h-[720px] flex justify-between">
       <section class="max-w-lg">
-        <h4 class="hidden lg:block font-playfairDisplay text-5xl tracking-widest font-semibold">
+        <h4
+          class="hidden lg:block font-playfairDisplay text-5xl tracking-wide font-semibold"
+        >
           Why
           <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
             >C
@@ -134,7 +159,7 @@ const datafQ = ref([
         </h4>
 
         <div class="text-black my-6 leading-loose">
-          <div class="font-bold  tracking-widest text-lg">
+          <div class="font-bold tracking-widest text-lg">
             Your <span class="text-[#A89C93] font-bold">V</span>ision. Our
             <span class="text-[#A89C93] font-bold">E</span>xpertise.
           </div>
@@ -146,38 +171,54 @@ const datafQ = ref([
           </p>
         </div>
 
-        <div class="mt-12">
-          <header class="flex space-x-4 items-center">
-            <svg
-              class="rotate-90 w-5 text-[#454545]"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
+        <div class="mt-8 space-y-5">
+          <div v-for="item in whyUs" :key="item.title">
+            <header class="flex space-x-4 items-center">
+              <svg
+                class="rotate-90 w-4 text-[#454545]"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M18.69 12.027L13.636 3.59a1.914 1.914 0 0 0-3.274 0L2.257 17.125a1.914 1.914 0 0 0 1.636 2.871H12M16 19h6m-3-3v6"
+                />
+              </svg>
+              <p class="font-normal text-sm tracking-widest">
+                {{ item.title }}
+              </p>
+            </header>
+            <p
+              class="mt-3 font-light text-xs max-w-96 tracking-widest text-[#454545]"
             >
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M18.69 12.027L13.636 3.59a1.914 1.914 0 0 0-3.274 0L2.257 17.125a1.914 1.914 0 0 0 1.636 2.871H12M16 19h6m-3-3v6"
-              />
-            </svg>
-            <p class="font-normal tracking-widest">Decades of Experience:</p>
-          </header>
-          <p class="mt-3 font-light tracking-widest text-[#454545]">With 40+ years in the industry, we’ve honed the art of landscape design and construction.
-          </p>
+              {{ item.descr }}
+            </p>
+          </div>
         </div>
       </section>
 
-      <div class="hidden lg:block w-1/2 h-full bg-blue-100 rounded-3xl">
+      <div class="hidden lg:block h-[700px] w-1/2 bg-blue-100 rounded-3xl">
         <img
           src="@/assets/images/teamphoto.jpeg"
           alt="team photo"
           class="w-full h-full object-cover rounded-3xl"
         />
       </div>
+    </div>
+
+    <div class="hidden lg:block text-center mt-16">
+      <FilledButton
+        background-color="black"
+        text="Book Your Free Consultation Today"
+        text-color="white"
+        class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
+      />
     </div>
   </div>
 
@@ -206,13 +247,13 @@ const datafQ = ref([
       data-aos-easing="linear"
     >
       <div>
-        <h4 class="font-playfairDisplay text-5xl font-[500]">
+        <h4 class="font-playfairDisplay text-5xl tracking-wide font-[500]">
           Desi<span class="text-[#A89C93] font-imperial text-6xl">G </span>n
           Packages
         </h4>
       </div>
 
-      <p class="text-[#454545] text-sm mt-4 leading-relaxed">
+      <p class="text-[#454545] text-sm mt-4 leading-relaxed tracking-widest">
         Whether you’re looking for a front yard refresh or a full backyard
         makeover, our design packages make it easy to get started. Choose the
         perfect package for your project, and let us handle the rest.
@@ -473,7 +514,7 @@ const datafQ = ref([
       <div
         class="text-white font-semibold text-4xl lg:text-5xl max-w-[600px] mx-auto"
       >
-        <p class="leading-tight text-center">
+        <p class="leading-tight tracking-wider text-center">
           Not sure where to start ? <br />
           Take our quiz to find your design package.
           <br />
