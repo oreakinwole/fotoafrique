@@ -58,18 +58,18 @@ const handlePrev = () => {
       data-aos="fade-up"
       data-aos-easing="linear"
     >
-      <h4 class="font-playfairDisplay text-4xl lg:text-5xl font-semibold mb-2">
+      <h4 class="font-playfairDisplay tracking-wide text-4xl lg:text-5xl font-semibold mb-2">
         Our Design Pro<span
           class="text-[#A89C93] font-imperial font-normal text-5xl lg:text-6xl"
           >C</span
         >ess
       </h4>
 
-      <p class="text-xl">
+      <p class="text-xl tracking-widest">
         Simple Steps to Your Dream Yard
       </p>
       <p
-        class="text-md text-[#9e9e9e] mt-4 lg:max-w-screen-xs leading-relaxed lg:mx-auto"
+        class="text-md tracking-widest text-[#9e9e9e] mt-4 lg:max-w-screen-xs leading-relaxed lg:mx-auto"
       >
       We make creating your ideal outdoor space easy and enjoyable with our
       proven & easy 4-step design & build process:
@@ -85,14 +85,14 @@ const handlePrev = () => {
       :style="{ backgroundImage: `url(${dProcesses[isViewing].img})` }"
     >
       <h3
-        class="max-w-[400px] uppercase tracking-widest mx-auto text-center text-white font-light text-md mb-[-7rem]"
+        class="max-w-[400px]  uppercase tracking-widest mx-auto text-center text-white font-light text-md mb-[-7rem]"
       >
         {{ dProcesses[isViewing].descr }}
       </h3>
     </div>
 
     <h4
-      class="max-w-96 uppercase absolute bottom-10 text-center left-[36%] text-white font-[700] text-5xl leading-relaxed tracking-wider"
+      class="max-w-96 uppercase  absolute bottom-10 text-center left-[36%] text-white font-[700] text-5xl leading-relaxed tracking-wider"
     >
       {{ dProcesses[isViewing].title }}
     </h4>

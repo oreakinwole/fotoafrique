@@ -56,7 +56,7 @@ watch(isBodyClicked, (val) => {
   <!--  <div class="flex flex-col bg-navbar-color  fixed w-full z-10">-->
   <div class="hidden lg:absolute top-0 left-0 z-10 w-full lg:flex flex-col">
     <!-- first layout -->
-    <!-- <PopUpModal /> -->
+    <PopUpModal />
 
     <!-- <NavbarSecond :toggle-dropdown="toggleDropdown" /> -->
 

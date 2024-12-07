@@ -6,25 +6,24 @@
       class="bg-black text-white absolute top-0 left-0 h-full w-full opacity-50"
     ></div>
 
-    <div class="text-white text-center absolute w-full bottom-[40%]">
+    <div class="text-white text-center absolute w-full bottom-[30%]">
       <div class="md:px-8">
         <p
           class="font-playfairDisplay text-4xl px-3 font-bold leading-tight tracking-normal animate__animated animate__fadeInUp"
         >
-          Transform Your Yard Into A Masterpiece
+        San Diego’s Premier Design & Build Landscaping Experts
         </p>
 
         <p
           class="uppercase font-light text-lg mx-4 mt-6 leading-relaxed tracking-widest animate__animated animate__fadeInUp"
         >
-          We’re a cut above the rest, designing custom outdoor spaces that are
-          as beautiful as they are functional.
+        We transform outdoor spaces into stunning retreats with custom pools, patios, fire pits, and more. Let’s create your dream yard.
         </p>
       </div>
 
       <FilledButton
         background-color="white"
-        text="Design Your Dream Yard Today"
+        text="Book Your Free Consultation Today"
         text-color="black"
         class="uppercase font-medium w-[95%] h-[58px] mt-10"
       />

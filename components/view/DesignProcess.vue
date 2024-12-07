@@ -22,7 +22,7 @@
       data-aos="fade-up"
       data-aos-easing="linear"
     >
-      <h4 class="font-playfairDisplay text-4xl lg:text-5xl font-semibold mb-2">
+      <h4 class="font-playfairDisplay  text-4xl lg:text-5xl font-semibold mb-2">
         Our Design Pro<span
           class="text-[#A89C93] font-imperial font-normal text-5xl lg:text-6xl"
           >C</span
@@ -46,7 +46,7 @@
     <!-- End here -->
 
     <footer class="lg:px-20 mt-14 text-center">
-      <p class="text-[#454545] font-semibold mb-4">Ready to Get Started?</p>
+      <p class="text-[#454545] font-semibold mb-4 tracking-wide">Ready to Get Started?</p>
       <FilledButton
         background-color="black"
         text="Book Your Free Consultation Today"

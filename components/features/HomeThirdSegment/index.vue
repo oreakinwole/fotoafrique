@@ -123,116 +123,59 @@ const datafQ = ref([
   </div> -->
 
   <div id="why-choose-us" class="pt-14 px-4 lg:px-20">
-    <h4
-      class="hidden lg:block font-playfairDisplay text-5xl font-semibold text-center"
-    >
-      Why
-      <span class="font-imperial font-normal text-[#A89C93] text-7xl">C </span>
-      <span class="text-[#A89C93]">hoose </span>
-      Modern Yardz?
-    </h4>
+    <div class="mt-20 h-[650px] flex justify-between">
+      <section class="max-w-lg">
+        <h4 class="hidden lg:block font-playfairDisplay text-5xl tracking-widest font-semibold">
+          Why
+          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
+            >C
+          </span>
+          hoose Modern Yardz?
+        </h4>
 
-    <h4
-      class="lg:hidden font-playfairDisplay text-4xl font-semibold text-center"
-    >
-      Why
-      <span class="font-imperial font-normal text-[#A89C93] text-6xl">C </span>
-      <span class="text-[#A89C93]">hoose </span>
-      Modern Yardz?
-    </h4>
+        <div class="text-black my-6 leading-loose">
+          <div class="font-bold  tracking-widest text-lg">
+            Your <span class="text-[#A89C93] font-bold">V</span>ision. Our
+            <span class="text-[#A89C93] font-bold">E</span>xpertise.
+          </div>
 
-    <div class="h-[200px] lg:h-[400px] mt-12 rounded-xl overflow-hidden">
-      <img
-        src="@/assets/images/teamphoto.jpeg"
-        alt="team photo"
-        class="w-full h-full object-cover"
-      />
-    </div>
+          <p class="mt-1 font-light tracking-widest text-md text-[#454545]">
+            Modern Yardz is a cut above the rest. We’ve built our reputation on
+            delivering high-quality outdoor spaces that transform homes and
+            elevate lifestyles. Here’s what sets us apart:
+          </p>
+        </div>
 
-    <div
-      class="max-w-screen-lg relative pl-5 pr-5 lg:pr-0 mx-auto mt-10 lg:mt-20 space-y-8"
-    >
-      <div class="font-inter text-black max-w-lg leading-loose">
-        <header
-          class="rounded-2xl w-10 flex justify-center items-center font-semibold py-1 bg-[#E6E6E6] text-sm"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="1em"
-            viewBox="0 0 1024 1024"
-          >
-            <path
-              fill="currentColor"
-              d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h360c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H184V184h656v320c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V144c0-17.7-14.3-32-32-32M653.3 599.4l52.2-52.2a8.01 8.01 0 0 0-4.7-13.6l-179.4-21c-5.1-.6-9.5 3.7-8.9 8.9l21 179.4c.8 6.6 8.9 9.4 13.6 4.7l52.4-52.4l256.2 256.2c3.1 3.1 8.2 3.1 11.3 0l42.4-42.4c3.1-3.1 3.1-8.2 0-11.3z"
-            />
-          </svg>
-        </header>
-        <p class="mt-4 text-md text-[#454545]">
-          At Modern Yardz, our mission is simple: to transform your outdoor
-          space into something truly special. Based right here in San Diego,
-          we’ve spent decades perfecting the craft of landscape design. From
-          custom patios to complete backyard makeovers, we bring hands-on
-          experience and a personalized touch to every project.
-        </p>
-      </div>
-      <div class="font-inter text-black max-w-lg leading-loose">
-        <header
-          class="rounded-2xl w-10 flex justify-center items-center font-semibold py-1 bg-[#E6E6E6] text-sm"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="1em"
-            viewBox="0 0 1024 1024"
-          >
-            <path
-              fill="currentColor"
-              d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h360c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H184V184h656v320c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V144c0-17.7-14.3-32-32-32M653.3 599.4l52.2-52.2a8.01 8.01 0 0 0-4.7-13.6l-179.4-21c-5.1-.6-9.5 3.7-8.9 8.9l21 179.4c.8 6.6 8.9 9.4 13.6 4.7l52.4-52.4l256.2 256.2c3.1 3.1 8.2 3.1 11.3 0l42.4-42.4c3.1-3.1 3.1-8.2 0-11.3z"
-            />
-          </svg>
-        </header>
-        <p class="mt-4 text-md text-[#454545]">
-          With over 40 years in the business, we understand what it takes to
-          create outdoor spaces that are both beautiful and functional. Our
-          local roots mean we know San Diego’s unique landscape, and we’re
-          committed to delivering results that exceed your expectations.
-        </p>
-      </div>
+        <div class="mt-12">
+          <header class="flex space-x-4 items-center">
+            <svg
+              class="rotate-90 w-5 text-[#454545]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M18.69 12.027L13.636 3.59a1.914 1.914 0 0 0-3.274 0L2.257 17.125a1.914 1.914 0 0 0 1.636 2.871H12M16 19h6m-3-3v6"
+              />
+            </svg>
+            <p class="font-normal tracking-widest">Decades of Experience:</p>
+          </header>
+          <p class="mt-3 font-light tracking-widest text-[#454545]">With 40+ years in the industry, we’ve honed the art of landscape design and construction.
+          </p>
+        </div>
+      </section>
 
-      <div class="font-inter text-black max-w-lg leading-loose">
-        <header
-          class="rounded-2xl w-10 flex justify-center items-center font-semibold py-1 bg-[#E6E6E6] text-sm"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="1em"
-            viewBox="0 0 1024 1024"
-          >
-            <path
-              fill="currentColor"
-              d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h360c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H184V184h656v320c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V144c0-17.7-14.3-32-32-32M653.3 599.4l52.2-52.2a8.01 8.01 0 0 0-4.7-13.6l-179.4-21c-5.1-.6-9.5 3.7-8.9 8.9l21 179.4c.8 6.6 8.9 9.4 13.6 4.7l52.4-52.4l256.2 256.2c3.1 3.1 8.2 3.1 11.3 0l42.4-42.4c3.1-3.1 3.1-8.2 0-11.3z"
-            />
-          </svg>
-        </header>
-        <p class="mt-4 text-md text-[#454545]">
-          Whether you’re looking to revamp your yard or start from scratch,
-          we’re here to guide you through every step. Trust us to turn your
-          vision into reality—because you deserve a space you’ll love for years
-          to come.
-        </p>
-      </div>
-
-      <div
-        data-aos="slide-up"
-        data-aos-duration="2000"
-        class="hidden lg:block md:block md:w-[38%] md:mr-2 w-[400px] h-[630px] bg-blue-100 rounded-full absolute lg:-top-10 md:-top-0 right-0"
-      >
+      <div class="hidden lg:block w-1/2 h-full bg-blue-100 rounded-3xl">
         <img
-          src="@/assets/images/thomas_oww.jpeg"
+          src="@/assets/images/teamphoto.jpeg"
           alt="team photo"
-          class="w-full h-full object-cover rounded-xl"
+          class="w-full h-full object-cover rounded-3xl"
         />
       </div>
     </div>
@@ -250,17 +193,15 @@ const datafQ = ref([
     </h4>
 
     <p class="text-[#454545] text-lg leading-relaxed">
-      Every outdoor space has the potential to be extraordinary. Our custom
-      design packages are crafted to fit your needs, whether you’re looking to
-      refresh your front yard, revamp your backyard, or completely transform
-      your outdoor living space. Choose the package that works best for you, and
-      let us bring your vision to life.
+      Whether you’re looking for a front yard refresh or a full backyard
+      makeover, our design packages make it easy to get started. Choose the
+      perfect package for your project, and let us handle the rest.
     </p>
   </div>
 
   <div id="packages" class="my-10 lg:mt-36 mb-20 flex">
     <div
-      class="hidden lg:block ml-32 mt-8"
+      class="hidden lg:block ml-32 mt-16"
       data-aos="fade-up"
       data-aos-easing="linear"
     >
@@ -272,11 +213,9 @@ const datafQ = ref([
       </div>
 
       <p class="text-[#454545] text-sm mt-4 leading-relaxed">
-        Every outdoor space has the potential to be extraordinary. Our custom
-        design packages are crafted to fit your needs, whether you’re looking to
-        refresh your front yard, revamp your backyard, or completely transform
-        your outdoor living space. Choose the package that works best for you,
-        and let us bring your vision to life.
+        Whether you’re looking for a front yard refresh or a full backyard
+        makeover, our design packages make it easy to get started. Choose the
+        perfect package for your project, and let us handle the rest.
       </p>
     </div>
 
@@ -301,10 +240,8 @@ const datafQ = ref([
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-inter font-[500] text-[18px]">
-                  Full Yard Design
-                </h4>
-                <p class="font-inter text-[16px]">$1,890.80</p>
+                <h4 class="font-[500] text-[18px]">Full Yard Design</h4>
+                <p class="text-[16px]">$1,890.80</p>
               </div>
             </div>
 
@@ -325,10 +262,8 @@ const datafQ = ref([
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-inter font-[500] text-[18px]">
-                  Backyard Design
-                </h4>
-                <p class="font-inter text-[16px]">$1,745.99</p>
+                <h4 class="font-[500] text-[18px]">Backyard Design</h4>
+                <p class="text-[16px]">$1,745.99</p>
               </div>
             </div>
 
@@ -349,10 +284,8 @@ const datafQ = ref([
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-inter font-[500] text-[18px]">
-                  Front Yard Design
-                </h4>
-                <p class="font-inter text-[16px]">$2,745.56</p>
+                <h4 class="font-[500] text-[18px]">Front Yard Design</h4>
+                <p class="text-[16px]">$2,745.56</p>
               </div>
             </div>
 
@@ -373,10 +306,8 @@ const datafQ = ref([
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-inter font-[500] text-[18px]">
-                  Outdoor Transformation
-                </h4>
-                <p class="font-inter text-[16px]">$2,745.56</p>
+                <h4 class="font-[500] text-[18px]">Outdoor Transformation</h4>
+                <p class="text-[16px]">$2,745.56</p>
               </div>
             </div>
 
@@ -397,10 +328,8 @@ const datafQ = ref([
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-inter font-[500] text-[18px]">
-                  Premium Design
-                </h4>
-                <p class="font-inter text-[16px]">$4,000.00</p>
+                <h4 class="font-[500] text-[18px]">Premium Design</h4>
+                <p class="text-[16px]">$4,000.00</p>
               </div>
             </div>
           </div>
@@ -428,10 +357,8 @@ const datafQ = ref([
             </NuxtLink>
 
             <div class="flex flex-wrap justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">
-                Full Yard Design
-              </h4>
-              <p class="font-inter text-[16px]">$1,890.80</p>
+              <h4 class="font-[500] text-[18px]">Full Yard Design</h4>
+              <p class="text-[16px]">$1,890.80</p>
             </div>
           </div>
 
@@ -452,8 +379,8 @@ const datafQ = ref([
             </NuxtLink>
 
             <div class="flex flex-wrap justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">Backyard Design</h4>
-              <p class="font-inter text-[16px]">$1,745.99</p>
+              <h4 class="font-[500] text-[18px]">Backyard Design</h4>
+              <p class="text-[16px]">$1,745.99</p>
             </div>
           </div>
 
@@ -474,10 +401,8 @@ const datafQ = ref([
             </NuxtLink>
 
             <div class="flex flex-wrap justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">
-                Front Yard Design
-              </h4>
-              <p class="font-inter text-[16px]">$2,745.56</p>
+              <h4 class="font-[500] text-[18px]">Front Yard Design</h4>
+              <p class="text-[16px]">$2,745.56</p>
             </div>
           </div>
 
@@ -498,10 +423,8 @@ const datafQ = ref([
             </NuxtLink>
 
             <div class="flex flex-wrap justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">
-                Outdoor Transformation
-              </h4>
-              <p class="font-inter text-[16px]">$2,745.56</p>
+              <h4 class="font-[500] text-[18px]">Outdoor Transformation</h4>
+              <p class="text-[16px]">$2,745.56</p>
             </div>
           </div>
 
@@ -522,8 +445,8 @@ const datafQ = ref([
             </NuxtLink>
 
             <div class="flex flex-wrap justify-between mt-5">
-              <h4 class="font-inter font-[500] text-[18px]">Premium Design</h4>
-              <p class="  font-inter text-[16px]">$4,000.00</p>
+              <h4 class=" font-[500] text-[18px]">Premium Design</h4>
+              <p class="   text-[16px]">$4,000.00</p>
             </div>
           </div> -->
         </div>
@@ -531,16 +454,19 @@ const datafQ = ref([
     </div>
   </div>
   <div class="text-center">
-    <FilledButton
-      :no-action="true"
-      background-color="black"
-      text="CHOOSE YOUR PACKAGE"
-      text-color="white"
-      class="w-[90%] font-semibold lg:w-[290px] lg:mb-20"
-    />
+    <NuxtLink to="#quiz">
+      <FilledButton
+        :no-action="true"
+        background-color="black"
+        text="Take Our Quiz to Find Your Package"
+        text-color="white"
+        class="w-[90%] font-semibold lg:w-[290px] lg:mb-20"
+      />
+    </NuxtLink>
   </div>
 
   <div
+    id="quiz"
     class="mt-28 lg:mt-0 mb-12 lg:mb-28 bg-black h-[430px] lg:h-[500px] relative"
   >
     <div class="absolute top-20 lg:top-28 left-2 right-2 z-10">

@@ -24,7 +24,7 @@
       data-aos-easing="linear"
     >
       <div>
-        <h4 class="font-playfairDisplay text-5xl font-semibold leading-relaxed">
+        <h4 class="font-playfairDisplay tracking-wide text-5xl font-semibold leading-relaxed">
           Our Servi<span class="text-[#A89C93] font-imperial font-normal  text-6xl"
             >C</span
           >es
