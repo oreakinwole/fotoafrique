@@ -13,8 +13,15 @@ export default defineNuxtConfig({
   //   },
   // },
 
-  modules: [// '@nuxtjs/color-mode',
-  "@nuxt/image", "@builder.io/sdk-vue/nuxt", "vue3-carousel-nuxt", "nuxt-aos", "nuxt-calendly", "nuxt-marquee", "nuxt-schema-org"],
+  modules: [
+    // '@nuxtjs/color-mode',
+    "@nuxt/image",
+    "@builder.io/sdk-vue/nuxt",
+    "vue3-carousel-nuxt",
+    "nuxt-aos",
+    "nuxt-calendly",
+    "nuxt-marquee",
+  ],
 
   css: ["~/assets/css/app.css"],
 
