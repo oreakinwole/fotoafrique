@@ -1,131 +1,234 @@
 <script setup>
-const isShowLoader = ref(false);
-const isShowingNav = ref(false);
-const isBodyClicked = ref(false);
+import logoWhite from "@/assets/svg/logo_white.svg";
 
-const route = useRoute();
+const isShowMobileNav = ref(false);
 
-// const loaderCountInterval = ref();
-// const loaderCount = ref(0);
+const toggleNav = () => {
+  isShowMobileNav.value = !isShowMobileNav.value;
+};
 
-// onMounted(() => {
-//   loaderCountInterval.value = setInterval(() => {
-//     if (loaderCount.value < 100) {
-//       loaderCount.value += 10;
-//     }
-//   }, 180);
-// });
+const handleBookConsult = () => {
+  const calendly = useCalendly();
 
-// onBeforeUnmount(() => {
-//   clearInterval(loaderCountInterval.value);
-// });
-
-// watch(loaderCount, (val: number) => {
-//   if (val === 100) isShowLoader.value = false;
-// });
-
-/* for Nabar component */
-const handleIsNavbarShowing = (val) => {
-  isShowingNav.value = val;
-  isBodyClicked.value = false;
+  calendly.initPopupWidget({
+    url: "https://calendly.com/d/2sx-n9t-6g7",
+  });
 };
 </script>
 
 <template>
+  <PopUpModal />
   <div
-    class="h-screen w-full z-10 bg-black absolute top-0 left-0 flex justify-center items-center"
-    v-if="isShowLoader"
+    class="lg:absolute lg:top-10 hero-trigger lg:bg-none flex w-full items-center justify-between py-4 lg:py-8 px-8 lg:px-28 max-w-[1600px] z-20"
   >
-    <div class="relative">
-      <svg
-        class="spinner"
-        width="174px"
-        height="174px"
-        viewBox="0 0 66 66"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          class="pathspin"
-          fill="transparent"
-          stroke-width=".5"
-          cx="33"
-          cy="33"
-          r="30"
-          stroke="url(#gradient)"
-        ></circle>
-        <defs>
-          <linearGradient id="gradient">
-            <stop offset="50%" stop-color="#D0C2B0" stop-opacity="1" />
-            <stop offset="65%" stop-color="#D0C2B0" stop-opacity=".5" />
-            <stop offset="100%" stop-color="#D0C2B0" stop-opacity="0" />
-          </linearGradient>
-        </defs>
-      </svg>
-
-      <div
-        class="absolute flex flex-col items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#D0C2B0] text-4xl"
-      >
-        <p class="mt-6">{{ loaderCount }}%</p>
-        <p class="text-xs font-semibold">Loading...</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="max-w-[1600px] mx-auto overflow-hidden" v-else>
-    <NavBarNew />
-    <div
-      class="transition-all duration-150 ease-in"
-      :class="{
-        ' blur-xl': isShowingNav,
-        'pt-28': route.path !== '/',
-      }"
-      @click="isBodyClicked = true"
+    <NuxtLink
+      to="/"
+      :class="
+        isShowMobileNav
+          ? 'animate__animated animate__fadeOut animate__slow'
+          : 'animate__animated animate__fadeIn animate__slow'
+      "
     >
-      <slot />
+      <img :src="logoWhite" alt="modern yardz logo" class="w-24" />
+    </NuxtLink>
+
+    <div class="flex flex-row items-center gap-16 uppercase text-white">
+      <NuxtLink to="/">
+        <p class="font-medium">Home</p>
+      </NuxtLink>
+      <NuxtLink to="/">
+        <p class="font-medium">Portfolio</p>
+      </NuxtLink>
+
+      <NuxtLink to="/">
+        <p class="font-medium">Contact</p>
+      </NuxtLink>
     </div>
 
-    <Footer class="mt-32" />
+    <svg width="190" height="40" viewBox="0 0 190 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="19.8422" cy="19.8422" r="19.3422" stroke="white"/>
+<path d="M20.9963 16.132V18.0367H23.223L22.8704 20.6023H20.9963V26.5135C20.6205 26.5687 20.2361 26.5975 19.8459 26.5975C19.3954 26.5975 18.9531 26.5595 18.5223 26.486V20.6023H16.4688V18.0367H18.5223V15.7062C18.5223 14.2605 19.6299 13.0879 20.9968 13.0879V13.0891C21.0009 13.0891 21.0044 13.0879 21.0084 13.0879H23.2235V15.3068H21.7761C21.346 15.3068 20.9968 15.6762 20.9968 16.1314L20.9963 16.132Z" fill="white"/>
+<circle cx="94.5297" cy="19.8422" r="19.3422" stroke="white"/>
+<path d="M97.9193 13.0869H90.8737C88.9273 13.0869 87.3438 14.6709 87.3438 16.6179V23.0655C87.3438 25.0125 88.9273 26.5965 90.8737 26.5965H97.9193C99.8658 26.5965 101.449 25.0125 101.449 23.0655V16.6179C101.449 14.6709 99.8658 13.0869 97.9193 13.0869ZM88.589 16.6179C88.589 15.3579 89.6141 14.3325 90.8737 14.3325H97.9193C99.1789 14.3325 100.204 15.3579 100.204 16.6179V23.0655C100.204 24.3255 99.1789 25.3509 97.9193 25.3509H90.8737C89.6141 25.3509 88.589 24.3255 88.589 23.0655V16.6179Z" fill="white"/>
+<path d="M94.3929 23.1255C96.2029 23.1255 97.6763 21.6525 97.6763 19.8411C97.6763 18.0297 96.2037 16.5566 94.3929 16.5566C92.582 16.5566 91.1094 18.0297 91.1094 19.8411C91.1094 21.6525 92.582 23.1255 94.3929 23.1255ZM94.3929 17.8031C95.5169 17.8031 96.4311 18.7175 96.4311 19.8419C96.4311 20.9662 95.5169 21.8807 94.3929 21.8807C93.2688 21.8807 92.3546 20.9662 92.3546 19.8419C92.3546 18.7175 93.2688 17.8031 94.3929 17.8031Z" fill="white"/>
+<path d="M97.9784 17.0863C98.4658 17.0863 98.8631 16.6897 98.8631 16.2014C98.8631 15.713 98.4666 15.3164 97.9784 15.3164C97.4902 15.3164 97.0938 15.713 97.0938 16.2014C97.0938 16.6897 97.4902 17.0863 97.9784 17.0863Z" fill="white"/>
+<circle cx="169.209" cy="19.8422" r="19.3422" stroke="white"/>
+<path d="M162.074 13.0869L167.645 20.5381L162.039 26.5965H163.301L168.21 21.2926L172.176 26.5965H176.47L170.585 18.7261L175.804 13.0869H174.542L170.021 17.9717L166.369 13.0869H162.075H162.074ZM163.929 14.0166H165.902L174.613 25.6668H172.64L163.929 14.0166Z" fill="white"/>
+</svg>
+
+
+    <svg
+      @click="toggleNav"
+      class="w-7 lg:w-8 cursor-pointer"
+      width="55"
+      height="55"
+      viewBox="0 0 55 55"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect opacity="0.1" width="55" height="55" rx="8" fill="white" />
+      <path
+        d="M12.125 18.958H42.875"
+        stroke="white"
+        stroke-width="2.5"
+        stroke-linecap="round"
+      />
+      <path
+        d="M12.125 27.5H42.875"
+        stroke="white"
+        stroke-width="2.5"
+        stroke-linecap="round"
+      />
+      <path
+        d="M12.125 36.041H42.875"
+        stroke="white"
+        stroke-width="2.5"
+        stroke-linecap="round"
+      />
+    </svg>
+
+    <div
+      class="animate__animated animate__slideInDown fixed top-0 right-0 bg-white h-screen w-full z-20"
+      v-if="isShowMobileNav"
+    >
+      <main class="flex flex-row-reverse h-full">
+        <div class="hidden h-full bg-white lg:block lg:w-1/2 relative">
+          <nav class="flex justify-end pt-2 items-center h-14 pr-12">
+            <svg
+              role="button"
+              @click="toggleNav"
+              class="w-6"
+              width="46"
+              height="45"
+              viewBox="0 0 46 45"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="1.93934"
+                y1="43.9393"
+                x2="44.3657"
+                y2="1.51293"
+                stroke="black"
+                stroke-width="3"
+              />
+              <line
+                y1="-1.5"
+                x2="60"
+                y2="-1.5"
+                transform="matrix(0.707107 0.707107 0.707107 -0.707107 3 0)"
+                stroke="black"
+                stroke-width="3"
+              />
+            </svg>
+          </nav>
+          <section class="w-3/5 h-4/5 pt-16 rounded-xl overflow-hidden">
+            <video
+              class="h-full w-full object-cover rounded-xl"
+              autoplay
+              muted
+              loop
+            >
+              <source src="/video/quizvid.mp4" type="video/mp4" />
+              Something went wrong while playing video
+            </video>
+          </section>
+        </div>
+
+        <div class="w-full lg:w-1/2 pl-16  ">
+          <nav class="flex justify-between pt-2 items-center h-14">
+            <div class="animate__animated animate__fadeIn animate__delay-2s">
+              <NuxtLink to="/">
+                <img
+                  src="@/assets/svg/logo.svg"
+                  width="70"
+                  @click="isShowMobileNav = false"
+                />
+              </NuxtLink>
+            </div>
+          </nav>
+
+          <section
+            class="flex justify-between mt-12 lg:mt-16 lg:pl-14  lg:items-center animate__animated animate__fadeIn animate__slow"
+          >
+            <ul class="space-y-12">
+              <li
+                class="text-5xl hover:scale-x-90 duration-200 ease-linear font-semibold"
+                @click="isShowMobileNav = false"
+              >
+                <NuxtLink to="/services">Design</NuxtLink>
+              </li>
+
+              <li
+                class="text-5xl hover:scale-x-90 duration-200 ease-linear font-semibold"
+                @click="isShowMobileNav = false"
+              >
+                <NuxtLink to="/portfolio">Build</NuxtLink>
+              </li>
+              <li
+                class="text-5xl hover:scale-x-90 duration-200 ease-linear font-semibold"
+                @click="isShowMobileNav = false"
+              >
+                <NuxtLink to="/3d-packages">Scheedule</NuxtLink>
+              </li>
+              <li
+                class="text-5xl hover:scale-x-90 duration-200 ease-linear font-semibold"
+                @click="Schedule = false"
+              >
+                <NuxtLink to="/contact">More</NuxtLink>
+              </li>
+            </ul>
+          </section>
+
+          <footer class="grid grid-cols-4 lg:mt-28 lg:pl-14">
+            <svg
+              class="w-56"
+              width="469"
+              height="94"
+              viewBox="0 0 469 94"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="422" cy="47" r="46.5" stroke="black" />
+              <path
+                d="M430.05 31H413.361C408.751 31 405 34.7519 405 39.3639V54.6361C405 59.2481 408.751 63 413.361 63H430.05C434.661 63 438.412 59.2481 438.412 54.6361V39.3639C438.412 34.7519 434.661 31 430.05 31ZM407.95 39.3639C407.95 36.3793 410.378 33.9505 413.361 33.9505H430.05C433.034 33.9505 435.462 36.3793 435.462 39.3639V54.6361C435.462 57.6207 433.034 60.0495 430.05 60.0495H413.361C410.378 60.0495 407.95 57.6207 407.95 54.6361V39.3639Z"
+                fill="black"
+              />
+              <path
+                d="M421.707 54.7783C425.995 54.7783 429.485 51.2892 429.485 46.9985C429.485 42.7079 425.997 39.2188 421.707 39.2188C417.418 39.2188 413.93 42.7079 413.93 46.9985C413.93 51.2892 417.418 54.7783 421.707 54.7783ZM421.707 42.1711C424.37 42.1711 426.535 44.3372 426.535 47.0004C426.535 49.6636 424.37 51.8297 421.707 51.8297C419.045 51.8297 416.879 49.6636 416.879 47.0004C416.879 44.3372 419.045 42.1711 421.707 42.1711Z"
+                fill="black"
+              />
+              <path
+                d="M430.205 40.4736C431.359 40.4736 432.3 39.5342 432.3 38.3774C432.3 37.2207 431.361 36.2812 430.205 36.2812C429.048 36.2812 428.109 37.2207 428.109 38.3774C428.109 39.5342 429.048 40.4736 430.205 40.4736Z"
+                fill="black"
+              />
+              <circle cx="297" cy="47" r="46.5" stroke="black" />
+              <path
+                d="M280.082 31L293.279 48.6496L280 63H282.99L294.617 50.4367L304.01 63H314.182L300.243 44.3576L312.604 31H309.615L298.908 42.5706L290.256 31H280.084H280.082ZM284.477 33.2022H289.149L309.783 60.7978H305.111L284.477 33.2022Z"
+                fill="black"
+              />
+              <circle cx="172" cy="47" r="46.5" stroke="black" />
+              <path
+                d="M180.05 31H163.361C158.751 31 155 34.7519 155 39.3639V54.6361C155 59.2481 158.751 63 163.361 63H180.05C184.661 63 188.412 59.2481 188.412 54.6361V39.3639C188.412 34.7519 184.661 31 180.05 31ZM157.95 39.3639C157.95 36.3793 160.378 33.9505 163.361 33.9505H180.05C183.034 33.9505 185.462 36.3793 185.462 39.3639V54.6361C185.462 57.6207 183.034 60.0495 180.05 60.0495H163.361C160.378 60.0495 157.95 57.6207 157.95 54.6361V39.3639Z"
+                fill="black"
+              />
+              <path
+                d="M171.707 54.7783C175.995 54.7783 179.485 51.2892 179.485 46.9985C179.485 42.7079 175.997 39.2188 171.707 39.2188C167.418 39.2188 163.93 42.7079 163.93 46.9985C163.93 51.2892 167.418 54.7783 171.707 54.7783ZM171.707 42.1711C174.37 42.1711 176.535 44.3372 176.535 47.0004C176.535 49.6636 174.37 51.8297 171.707 51.8297C169.045 51.8297 166.879 49.6636 166.879 47.0004C166.879 44.3372 169.045 42.1711 171.707 42.1711Z"
+                fill="black"
+              />
+              <path
+                d="M180.205 40.4736C181.359 40.4736 182.3 39.5342 182.3 38.3774C182.3 37.2207 181.361 36.2812 180.205 36.2812C179.048 36.2812 178.109 37.2207 178.109 38.3774C178.109 39.5342 179.048 40.4736 180.205 40.4736Z"
+                fill="black"
+              />
+              <circle cx="47" cy="47" r="46.5" stroke="black" />
+              <path
+                d="M49.7243 38.2106V42.7221H54.9986L54.1635 48.7994H49.7243V62.8012C48.8342 62.9318 47.9236 63 46.9993 63C45.9324 63 44.8846 62.91 43.8643 62.7359V48.7994H39V42.7221H43.8643V37.2021C43.8643 33.7774 46.4878 31 49.7256 31V31.0029C49.7352 31.0029 49.7435 31 49.7531 31H55V36.2559H51.5715C50.5526 36.2559 49.7256 37.131 49.7256 38.2091L49.7243 38.2106Z"
+                fill="black"
+              />
+            </svg>
+          </footer>
+        </div>
+      </main>
+    </div>
   </div>
 </template>
-
-<style scoped>
-.spinner {
-  animation: rotate 1.4s linear infinite;
-  -webkit-animation: rotate 1.4s linear infinite;
-  -moz-animation: rotate 1.4s linear infinite;
-  width: 174px;
-  height: 174px;
-  margin: 20% auto 0;
-  position: relative;
-}
-
-.spinner-dot {
-  width: 274px;
-  height: 274px;
-  position: relative;
-  top: 0;
-}
-
-@keyframes rotate {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes rotate {
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@-moz-keyframes rotate {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.pathspin {
-  stroke-dasharray: 170;
-  stroke-dashoffset: 20;
-}
-</style>
