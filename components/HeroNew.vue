@@ -1,167 +1,59 @@
-<script setup>
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-const animateCaption = ref(false);
-
-onMounted(() => {
-  animateCaption.value = true;
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.to(".anihero", {
-    // borderRadius: 0,
-    // border: "none",
-    width: "100%",
-
-    scrollTrigger: {
-      trigger: ".hero-trigger",
-      start: "top top",
-      end: "+=500",
-      scrub: true,
-    },
-  });
-
-  gsap.to(".anihero", {
-    borderRadius: 0,
-    border: "none",
-    scrollTrigger: {
-      trigger: "#hero-vid-sect",
-      start: "top top",
-      scrub: true,
-    },
-  });
-});
-</script>
-
 <template>
-  <div class="">
-    <header
-      class="hidden lg:block min-h-[470px] lg:min-h-screen pt-20 lg:bg-[url('@/assets/images/hero_bg1.png')] bg-white bg-no-repeat bg-left-top bg-cover"
-    >
-      <div class="text-center space-y-3">
-        <p
-          class="animate__animated animate__slideInUp text-xs lg:text-md font-semibold tracking-[.6em]"
-        >
-          TRANSFORM YOUR YARD INTO A
-        </p>
-
-        <!-- <p
-          class="text-6xl lg:text-8xl font-bold flex items-center justify-center"
-        >
-          L
-          <span
-            class="transition-all delay-[2600ms] duration-1000 ease-in-out w-9 h-9 py-4 lg:py-6 px-4 lg:px-7 border-[9px] lg:border-[12px] border-black rounded-full hover:rounded-5xl"
-            :class="animateCaption && 'xl:px-36'"
-          >
-            &nbsp;
-          </span>
-
-          VE IT<span
-            class="animate__animated animate__bounceIn animate__delay-4s"
-            >!</span
-          >
-        </p> -->
-
-        <div class="flex items-center justify-center">
-          <VueWriter
-            class="text-6xl lg:text-8xl font-bold flex items-center justify-center tracking-widest"
-            :array="[`MASTERPIECE!`]"
-            :iterations="1"
-            :type-speeed="300"
-          />
-          <!-- <span
-            class="animate__animated animate__bounceIn animate__delay-3s ext-6xl lg:text-8xl font-bold"
-            >!</span
-          > -->
-        </div>
-        <p
-          class="text-xs hidden lg:block max-w-lg lg:max-w-xl mx-auto tracking-[.3em] leading-relaxed"
-        >
-          We’re a cut above the rest, designing custom outdoor spaces
-          <br />
-          that are as beautiful as they are functional.
-        </p>
-      </div>
-
+  <div>
+    <div class="hidden lg:block bg-black h-[700px] relative">
       <div
-        id="hero-vid-sect"
-        class="w-4/5 lg:h-[780px] bg-blue-100 mt-8 shadow-2xl rounded-2xl border-black border-8 mx-auto anihero"
-      >
-        <video
-          class="w-full h-full bg-blue-100 object-cover"
-          autoplay
-          muted
-          loop
-        >
-          <source src="/video/hero-video2.mp4" type="video/mp4" />
-          Something went wrong while playing video
-        </video>
-      </div>
-    </header>
-
-    <header id="mobile-hero" class="h-screen bg-gray-200 lg:hidden relative">
-      <div
-        class="bg-black text-white absolute top-0 left-0 h-full w-full opacity-50"
+        class="bg-gray-900 absolute top-0 left-0 h-full w-full opacity-50"
       ></div>
 
-      <div class="text-white text-center absolute w-full bottom-[40%]">
-        <div class="md:px-8">
-          <p
-            class="font-playfairDisplay text-4xl px-3 font-bold leading-tight tracking-normal animate__animated animate__fadeInUp"
-          >
-            Transform Your Yard Into A Masterpiece
-          </p>
+      <video class="w-full h-full object-cover" autoplay muted loop>
+        <source src="/video/new_hero-vid.mp4" type="video/mp4" />
+        Something went wrong while playing video
+      </video>
+    </div>
 
-          <p
-            class="uppercase font-light text-lg mx-4 mt-6 leading-relaxed tracking-widest animate__animated animate__fadeInUp"
-          >
-            We’re a cut above the rest, designing custom outdoor spaces that are
-            as beautiful as they are functional.
-          </p>
-        </div>
+    <MobileHero />
+  </div>
 
-        <FilledButton
-          background-color="white"
-          text="Design Your Dream Yard Today"
-          text-color="black"
-          class="uppercase font-medium w-[95%] h-[58px] mt-10"
-        />
-      </div>
+  <div
+    class="hidden lg:block px-2 md:px-8 lg:px-20 mt-20 max-w-screen-lg mx-auto text-center text-black mb-10"
+    data-aos="fade-up"
+    data-aos-easing="linear"
+  >
+    <h4
+      class="font-playfairDisplay tracking-wide text-4xl lg:text-5xl font-semibold mb-2"
+    >
+      San
+      <span
+        class="text-[#A89C93] font-imperial font-normal text-6xl lg:text-6xl"
+        >D </span
+      >iego’s Premier Design & Build Landscaping Experts
 
-      <div
-        class="lg:hidden bg-white bg-opacity-20 w-full h-[100px] absolute bottom-0 left-0"
-      >
-        <NuxtMarquee class="w-full h-full">
-          <img
-            src="@/assets/svg/partners.svg"
-            class="w-full h-full object-cover"
-          />
-        </NuxtMarquee>
-      </div>
+      <!-- <span
+          class="text-[#A89C93] font-imperial font-normal text-5xl lg:text-6xl"
+          >C</span
+        > -->
+    </h4>
 
-      <!-- <div
-        class="lg:hidden bg-white bg-opacity-20 h-[100px] flex justify-center items-center absolute bottom-0 left-0"
-      >
-        <img
-          src="@/assets/svg/partners.svg"
-          class="w-full h-full object-cover"
-        />
-      </div> -->
-
-      <img
-        class="w-full h-full object-cover"
-        src="@/assets/images/img-hero.jpg"
-        alt="hero pic"
-      />
-    </header>
+    <p class="text-xl mt-2 tracking-widest">Let’s create your dream yard</p>
+    <p
+      class="text-md text-[#9e9e9e] mt-4 lg:max-w-screen-xs leading-relaxed tracking-widest lg:mx-auto"
+    >
+      We transform outdoor spaces into stunning retreats with custom pools,
+      patios, fire pits, and more.
+    </p>
   </div>
 
   <div class="hidden lg:block text-center mt-16">
     <FilledButton
       background-color="black"
-      text="Design Your Dream Yard Today"
+      text="Book Your Free Consultation Today"
       text-color="white"
       class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
     />
   </div>
+
+  <ViewIntroduction />
+  <!-- <ViewWhatWeDo /> -->
+  <ViewWhyChooseUs />
+
 </template>

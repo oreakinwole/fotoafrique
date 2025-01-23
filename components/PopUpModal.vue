@@ -29,7 +29,7 @@ function handleBookConsult() {
     v-if="isVisible"
     @click="handleBookConsult"
 
-    class="flex flex-row bg-black items-center justify-center relative h-[40px] font-inter text-[12px] gas xe"
+    class="flex flex-row bg-black items-center justify-center relative h-[40px]   text-[12px] gas xe"
   >
     <h4 class="text-white text-center uppercase cursor-pointer number">{{ text }}</h4>
     <img :src="closeIcon" alt="close png" class="cursor-pointer absolute right-24" width="16" @click="closeModal">

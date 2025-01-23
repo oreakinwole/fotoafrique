@@ -3,6 +3,8 @@ const isShowLoader = ref(false);
 const isShowingNav = ref(false);
 const isBodyClicked = ref(false);
 
+const route = useRoute();
+
 // const loaderCountInterval = ref();
 // const loaderCount = ref(0);
 
@@ -22,6 +24,7 @@ const isBodyClicked = ref(false);
 //   if (val === 100) isShowLoader.value = false;
 // });
 
+/* for Nabar component */
 const handleIsNavbarShowing = (val) => {
   isShowingNav.value = val;
   isBodyClicked.value = false;
@@ -69,13 +72,13 @@ const handleIsNavbarShowing = (val) => {
   </div>
 
   <div class="max-w-[1600px] mx-auto overflow-hidden" v-else>
-    <Navbar
-      @navbar-showing="handleIsNavbarShowing"
-      :isBodyClicked="isBodyClicked"
-    />
+    <NavBarNew />
     <div
       class="transition-all duration-150 ease-in"
-      :class="isShowingNav && ' blur-xl'"
+      :class="{
+        ' blur-xl': isShowingNav,
+        'pt-28': route.path !== '/',
+      }"
       @click="isBodyClicked = true"
     >
       <slot />
