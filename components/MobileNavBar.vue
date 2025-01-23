@@ -17,13 +17,13 @@ function toggleMenu() {
 
 <template>
   <div
-    class="flex bg-transparent justify-between w-full h-[50px] items-center px-4"
+    class="flex absolute top-14 z-10 justify-between w-full items-center px-4"
   >
     <!-- Logo -->
     <div>
       <NuxtLink to="/">
         <img
-          src="/images/navbar/imgs/logo.png"
+          src="@/assets/svg/logo_white.svg"
           alt="logo"
           class="w-20"
           :class="isMenuOpen && 'animate__animated animate__fadeOut'"
@@ -38,11 +38,7 @@ function toggleMenu() {
         <span class="block w-6 h-0.5 bg-black"></span>
         <span class="block w-6 h-0.5 bg-black"></span> -->
 
-        <img
-          src="/images/navbar/icons/menu.png"
-          alt="menu"
-          class="w-[25px] h-[25px]"
-        />
+        <img src="@/assets/svg/menu_white.svg" alt="menu" class="w-9" />
       </div>
     </div>
 
@@ -71,14 +67,16 @@ function toggleMenu() {
         </div>
       </div>
       <ul
-        class=" flex flex-col w-full  justify-center items-center pt-14 gap-5 text-[#A89C93] text-2xl font-playfairDisplay pl-2"
+        class="flex flex-col w-full justify-center items-center pt-14 gap-5 text-[#A89C93] text-2xl font-playfairDisplay pl-2"
       >
-        <div >
-          <header class="flex items-center">
-            <p class="py-2 ">Services</p>
+        <div>
+          <header
+            @click="isServicesOpen = !isServicesOpen"
+            class="flex items-center"
+          >
+            <p class="py-2">Services</p>
             <svg
-            class="ml-2 w-6"
-              @click="isServicesOpen = !isServicesOpen"
+              class="ml-2 w-6"
               :class="isServicesOpen && 'rotate-180'"
               width="24"
               height="24"
@@ -97,14 +95,17 @@ function toggleMenu() {
             </svg>
           </header>
 
-          <ul class=" animate__animated animate__fadeIn text-xs pl-8" v-if="isServicesOpen">
-            <NuxtLink to="/services/landscape-sd">
+          <ul
+            class="animate__animated animate__fadeIn text-xs pl-8"
+            v-if="isServicesOpen"
+          >
+            <NuxtLink to="/services/landscape-sandiego">
               <li @click="toggleMenu" class="pb-3 underline">
                 Landscape Design SD
               </li>
             </NuxtLink>
 
-            <NuxtLink to="/services/pavers-sd">
+            <NuxtLink to="/services/pavers-san-diego">
               <li @click="toggleMenu" class="pb-3 underline">
                 Pavers San Diego
               </li>
@@ -137,20 +138,20 @@ function toggleMenu() {
           </ul>
         </div>
         <NuxtLink to="/portfolio">
-          <li @click="toggleMenu" class="py-2 ">Portfolio</li>
+          <li @click="toggleMenu" class="py-2">Portfolio</li>
         </NuxtLink>
         <NuxtLink to="/#packages">
-          <li @click="toggleMenu" class="py-2 ">Design Packages</li>
+          <li @click="toggleMenu" class="py-2">Design Packages</li>
         </NuxtLink>
         <NuxtLink to="/finance">
-          <li @click="toggleMenu" class="py-2 ">Finance</li>
+          <li @click="toggleMenu" class="py-2">Finance</li>
         </NuxtLink>
 
         <NuxtLink to="/#FAQS">
-          <li @click="toggleMenu" class="py-2 ">FAQs</li>
+          <li @click="toggleMenu" class="py-2">FAQs</li>
         </NuxtLink>
         <NuxtLink to="/contact">
-          <li @click="toggleMenu" class="py-2 ">Contact</li>
+          <li @click="toggleMenu" class="py-2">Contact</li>
         </NuxtLink>
       </ul>
 

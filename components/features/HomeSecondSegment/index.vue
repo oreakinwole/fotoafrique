@@ -2,6 +2,8 @@
 
 <template>
   <ViewDesignProcess />
+  <ViewTestimonial />
+
 
   <div
     class="mt-24 lg:hidden text-center"
@@ -10,7 +12,7 @@
   >
     <div>
       <h4 class="font-playfairDisplay text-5xl font-medium">
-          Servi<span class="text-[#A89C93] font-imperial  text-6xl"
+          Our Servi<span class="text-[#A89C93] font-imperial  text-6xl"
             >C </span
           >es
         </h4>
@@ -19,20 +21,20 @@
 
   <div class="mt-12 lg:mt-28 lg:flex">
     <div
-      class="ml-32 mt-20 hidden lg:block text-center"
+      class="ml-32 mt-10 hidden lg:block text-center"
       data-aos="fade-up"
       data-aos-easing="linear"
     >
       <div>
-        <h4 class="font-playfairDisplay text-5xl font-semibold text-nowrap">
-          Servi<span class="text-[#A89C93] font-imperial font-normal  text-6xl"
+        <h4 class="font-playfairDisplay tracking-wide text-5xl font-semibold leading-relaxed">
+          Our Servi<span class="text-[#A89C93] font-imperial font-normal  text-6xl"
             >C</span
           >es
         </h4>
       </div>
 
       <!-- <p
-        class="text-[#665244] text-xs  font-inter max-w-lg leading-relaxed"
+        class="text-[#665244] text-xs    max-w-lg leading-relaxed"
       >
        Here are our main services
       </p> -->
@@ -50,7 +52,7 @@
         <NuxtMarquee class="max-w-[95em]">
           <div class="flex flex-row gap-8">
             <div>
-              <NuxtLink to="services/pavers-sd">
+              <NuxtLink to="/services/pavers-san-diego">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -66,8 +68,8 @@
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-inter font-medium text-[18px]">Paver Patios</h4>
-                <p class=" font-inter text-[16px]">
+                <h4 class="  font-medium text-[18px]">Paver Patios</h4>
+                <p class="   text-[16px]">
                   <svg
                     width="24"
                     height="24"
@@ -97,7 +99,7 @@
             </div>
 
             <div>
-              <NuxtLink to="services/landscape-sd">
+              <NuxtLink to="/services/concrete-sd">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -113,10 +115,10 @@
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-inter font-medium text-[18px]">
+                <h4 class="  font-medium text-[18px]">
                   Concrete Patios
                 </h4>
-                <p class=" font-inter text-[16px]">
+                <p class="   text-[16px]">
                   <svg
                     width="24"
                     height="24"
@@ -146,7 +148,7 @@
             </div>
 
             <div>
-              <NuxtLink to="services/pavers-sd">
+              <NuxtLink to=" /services/artificial-turf">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -162,10 +164,10 @@
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-inter font-medium text-[18px]">
+                <h4 class="  font-medium text-[18px]">
                   Artificial Turf
                 </h4>
-                <p class=" font-inter text-[16px]">
+                <p class="   text-[16px]">
                   <svg
                     width="24"
                     height="24"
@@ -195,7 +197,7 @@
             </div>
 
             <div>
-              <NuxtLink to="services/landscape-sd">
+              <NuxtLink to="/services/outdoor-kitchens">
                 <div
                   class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
                 >
@@ -211,10 +213,10 @@
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-inter font-medium text-[18px]">
+                <h4 class="  font-medium text-[18px]">
                   Outdoor Kitchens
                 </h4>
-                <p class=" font-inter text-[16px]">
+                <p class="   text-[16px]">
                   <svg
                     width="24"
                     height="24"
@@ -270,7 +272,7 @@
       <div class="lg:hidden text-center md:w-full md:mx-[1px] ">
         <div class="flex flex-wrap justify-center gap-2 lg:gap-8 md:w-full">
           <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="services/landscape-sd">
+            <NuxtLink to="/services/patios-and-pergolas">
               <div
                 class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
@@ -286,8 +288,8 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5 ">
-              <h4 class="font-inter font-medium text-[18px] md:mx-2">Paver Patios</h4>
-              <p class=" font-inter text-[16px] ">
+              <h4 class="  font-medium text-[18px] md:mx-2">Paver Patios</h4>
+              <p class="   text-[16px] ">
                 <svg
                   width="24"
                   height="24"
@@ -317,7 +319,7 @@
           </div>
 
           <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="services/landscape-sd">
+            <NuxtLink to="/services/landscape-sandiego">
               <div
                 class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
@@ -333,8 +335,8 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5">
-              <h4 class="font-inter font-medium text-[18px]  md:mx-2">Concrete Patios</h4>
-              <p class=" font-inter text-[16px]">
+              <h4 class="  font-medium text-[18px]  md:mx-2">Concrete Patios</h4>
+              <p class="   text-[16px]">
                 <svg
                   width="24"
                   height="24"
@@ -364,7 +366,7 @@
           </div>
 
           <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="services/pavers-sd">
+            <NuxtLink to="/services/pavers-san-diego">
               <div
                 class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
@@ -380,8 +382,8 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5">
-              <h4 class="font-inter font-medium text-[18px]  md:mx-2">Artificial Turf</h4>
-              <p class=" font-inter text-[16px]">
+              <h4 class="  font-medium text-[18px]  md:mx-2">Artificial Turf</h4>
+              <p class="   text-[16px]">
                 <svg
                   width="24"
                   height="24"
@@ -410,7 +412,7 @@
             </div>
           </div>
           <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="services/landscape-sd">
+            <NuxtLink to="/services/landscape-sandiego">
               <div
                 class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
               >
@@ -426,8 +428,8 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5">
-              <h4 class="font-inter font-medium text-[18px]  md:mx-2">Outdoor Kitchens</h4>
-              <p class=" font-inter text-[16px]">
+              <h4 class="  font-medium text-[18px]  md:mx-2">Outdoor Kitchens</h4>
+              <p class="   text-[16px]">
                 <svg
                   width="24"
                   height="24"
@@ -468,7 +470,6 @@
   </div>
 
   <!-- <ViewBeforeAndAfter /> -->
-  <ViewTestimonial />
 
 </template>
 

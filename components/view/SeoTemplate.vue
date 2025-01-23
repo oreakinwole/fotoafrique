@@ -1,5 +1,6 @@
 <script setup>
-defineProps(["captImage", "title", "paragraph", "content"]);
+const showMore = ref(false);
+defineProps(["captImage", "title", "paragraph", "content", "moreContent"]);
 </script>
 
 <template>
@@ -23,7 +24,7 @@ defineProps(["captImage", "title", "paragraph", "content"]);
 
         <FilledButton
           background-color="black"
-          text="GET FREE QUOTE"
+          text="TRANSFORM YOUR YARD TODAY"
           text-color="white"
           class="w-full"
         />
@@ -39,6 +40,16 @@ defineProps(["captImage", "title", "paragraph", "content"]);
     <h2 class="mb-8 font-bold uppercase">{{ title }}</h2>
 
     <div class="leading-8 text-[#665244]" v-html="content" />
+
+    <p role="button" @click="showMore = !showMore" class="text-sm text-center">
+      {{ showMore ? "Collapse " : "Read More ..." }}
+    </p>
+
+    <div
+      v-show="showMore"
+      class="leading-8 text-[#665244]"
+      v-html="moreContent"
+    />
   </section>
 </template>
 

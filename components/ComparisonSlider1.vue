@@ -99,7 +99,7 @@ export default {
       </div>
 
       <div class="pt-1 ml-10">
-        <h4 class="font-inter font-[500] text-[18px]">
+        <h4 class="  font-[500] text-[18px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           luctus tem.
         </h4>
