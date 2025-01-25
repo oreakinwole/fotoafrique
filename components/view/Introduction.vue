@@ -1,8 +1,7 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
+ 
   <div id="introduction" class="pt-14 px-4 lg:px-20">
     <div class="mt-20 min-h-[720px] flex flex-row-reverse justify-between">
       <section class="max-w-lg">
@@ -18,8 +17,8 @@
 
         <div class="text-black my-6 space-y-4 leading-loose">
           <div class="font-bold tracking-widest text-lg">
-            We Create <span class="text-[#A89C93] font-bold">Y</span>our dream   <span class="text-[#A89C93] font-bold">Y</span>ard
-         
+            We Create <span class="text-[#A89C93] font-bold">Y</span>our dream
+            <span class="text-[#A89C93] font-bold">Y</span>ard
           </div>
 
           <p class="mt-1 font-light tracking-widest text-md text-[#454545]">
