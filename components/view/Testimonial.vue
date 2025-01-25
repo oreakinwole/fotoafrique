@@ -74,7 +74,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
         </ImgComparisonSlider>
 
         <footer class="mt-6 max-w-[90%]">
-          <p class="lg:text-3xl font-bold mb-4 tracking-wide">Rebecca Debono</p>
+          <p class="lg:text-3xl font-bold mb-4 tracking-wide">Rebecca</p>
           <div class="mb-3">
             <img src="@/assets/images/testimonial/rebecca.png" width="40" />
           </div>
@@ -139,7 +139,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
         </ImgComparisonSlider>
 
         <footer class="mt-6 max-w-[90%]">
-          <p class="lg:text-3xl font-bold mb-4 tracking-wide">Ryan Torres</p>
+          <p class="lg:text-3xl font-bold mb-4 tracking-wide">Ryan</p>
           <div class="mb-3">
             <img src="@/assets/images/testimonial/rtorres.png" width="40" />
           </div>

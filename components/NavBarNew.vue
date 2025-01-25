@@ -33,18 +33,18 @@ const handleBookConsult = () => {
     </NuxtLink>
 
     <div class="flex flex-row items-center gap-16 uppercase tracking-widest text-white">
+      <!-- <NuxtLink to="/">
+        <p class="font-light ">Home</p>
+      </NuxtLink> -->
       <NuxtLink to="/">
-        <p class="font-medium ">Home</p>
-      </NuxtLink>
-      <NuxtLink to="/">
-        <p class="font-medium">Design</p>
+        <p class="font-light">Design</p>
       </NuxtLink>
 
       <NuxtLink to="/">
-        <p class="font-medium">Build</p>
+        <p class="font-light">Build</p>
       </NuxtLink>
       <NuxtLink to="/">
-        <p class="font-medium">Schedule</p>
+        <p class="font-light">Schedule</p>
       </NuxtLink>
     </div>
 

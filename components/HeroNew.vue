@@ -14,8 +14,18 @@
     <MobileHero />
   </div>
 
+  <div class="pt-20">
+    <p class="uppercase text-center font-medium tracking-widest text-lg">Our Partners</p>
+
+    <div class="lg:mt-4">
+      <NuxtMarquee class="max-w-[55em] mx-auto" :speed="20">
+        <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
+      </NuxtMarquee>
+    </div>
+  </div>
+
   <div
-    class="hidden lg:block px-2 md:px-8 lg:px-20 mt-20 max-w-screen-lg mx-auto text-center text-black mb-10"
+    class="hidden lg:block px-2 md:px-8 lg:px-20 mt-28 max-w-screen-lg mx-auto text-center text-black mb-10"
     data-aos="fade-up"
     data-aos-easing="linear"
   >
@@ -55,5 +65,4 @@
   <ViewIntroduction />
   <!-- <ViewWhatWeDo /> -->
   <ViewWhyChooseUs />
-
 </template>
