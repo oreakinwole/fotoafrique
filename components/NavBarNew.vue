@@ -3,6 +3,8 @@ import logoWhite from "@/assets/svg/logo_white.svg";
 
 const isShowMobileNav = ref(false);
 
+const route = useRoute();
+
 const toggleNav = () => {
   isShowMobileNav.value = !isShowMobileNav.value;
 };
@@ -19,6 +21,7 @@ const handleBookConsult = () => {
 <template>
   <PopUpModal />
   <div
+    :class="route.path !== '/' && 'bg-gray-400'"
     class="lg:absolute lg:top-10 hero-trigger lg:bg-none flex w-full items-center justify-between py-4 lg:py-8 px-8 lg:px-28 max-w-[1600px] z-20"
   >
     <NuxtLink
@@ -32,7 +35,9 @@ const handleBookConsult = () => {
       <img :src="logoWhite" alt="modern yardz logo" class="w-28" />
     </NuxtLink>
 
-    <div class="flex flex-row items-center gap-16 uppercase tracking-widest text-white">
+    <div
+      class="flex flex-row items-center gap-16 uppercase tracking-widest text-white"
+    >
       <!-- <NuxtLink to="/">
         <p class="font-light ">Home</p>
       </NuxtLink> -->
@@ -40,7 +45,7 @@ const handleBookConsult = () => {
         <p class="font-light">Design</p>
       </NuxtLink>
 
-      <NuxtLink to="/">
+      <NuxtLink to="/build-steps">
         <p class="font-light">Build</p>
       </NuxtLink>
       <NuxtLink to="/">
@@ -80,7 +85,7 @@ const handleBookConsult = () => {
       />
     </svg>
 
-    <svg
+    <!-- <svg
       @click="toggleNav"
       class="w-7 lg:w-8 cursor-pointer"
       width="55"
@@ -108,7 +113,7 @@ const handleBookConsult = () => {
         stroke-width="2.5"
         stroke-linecap="round"
       />
-    </svg>
+    </svg> -->
 
     <div
       class="animate__animated animate__slideInDown fixed top-0 right-0 bg-white h-screen w-full z-20"
