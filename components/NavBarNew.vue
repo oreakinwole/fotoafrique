@@ -19,17 +19,23 @@ const handleBookConsult = () => {
   });
 };
 
-function toggleDropdown(type) {
+function clickDropdown(type) {
+  if (type === "design") {
+    isBuildOpen.value = false;
+    if (isDesignOpen.value === true) isDesignOpen.value = false;
+  } else if (type === "build") {
+    isDesignOpen.value = false;
+    if (isBuildOpen.value === true) isBuildOpen.value = false;
+  }
+}
+
+function hoverDropdown(type) {
   if (type === "design") {
     isBuildOpen.value = false;
     if (isDesignOpen.value === false) isDesignOpen.value = true;
-
   } else if (type === "build") {
     isDesignOpen.value = false;
     if (isBuildOpen.value === false) isBuildOpen.value = true;
-  } else {
-    isDesignOpen.value = false;
-    isBuildOpen.value = false;
   }
 }
 </script>
@@ -57,10 +63,16 @@ function toggleDropdown(type) {
       <!-- <NuxtLink to="/">
         <p class="font-light ">Home</p>
       </NuxtLink> -->
-      <NuxtLink to="/" class="relative" @mouseover="toggleDropdown('design')">
+      <NuxtLink
+        to="/"
+        class="relative"
+        @mouseover="hoverDropdown('design')"
+        @click="clickDropdown('design')"
+      >
         <p class="font-light">Design</p>
         <div
           v-if="isDesignOpen"
+          :class="route.path !== '/' && 'bg-gray-400'"
           class="absolute -left-[15rem] top-14 z-10 mt-[1px] lg:w-[70rem] border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px] shadow-custom-light space-y-4"
         >
           <!-- Dropdown content -->
@@ -137,7 +149,7 @@ function toggleDropdown(type) {
                     <NuxtLink to="/services/concrete-sd">
                       <p
                         class="text-[13px] hover:underline"
-                        @click="toggleDropdown"
+                        @click="clickDropdown"
                       >
                         Concrete San Diego
                       </p>
@@ -146,7 +158,7 @@ function toggleDropdown(type) {
                     <NuxtLink to="/services/artificial-turf">
                       <p
                         class="text-[13px] hover:underline"
-                        @click="toggleDropdown"
+                        @click="clickDropdown"
                       >
                         Artificial Turf San Diego
                       </p>
@@ -155,7 +167,7 @@ function toggleDropdown(type) {
                     <NuxtLink to="/services/patios-and-pergolas">
                       <p
                         class="text-[13px] hover:underline"
-                        @click="toggleDropdown"
+                        @click="clickDropdown"
                       >
                         Patio Covers and Pergolas
                       </p>
@@ -165,7 +177,7 @@ function toggleDropdown(type) {
                   <div class="mt-[70px]">
                     <NuxtLink to="/services">
                       <img
-                        @click="toggleDropdown"
+                        @click="clickDropdown"
                         role="button"
                         src="/images/navbar/icons/See all button.png"
                         alt="arrow"
@@ -183,11 +195,13 @@ function toggleDropdown(type) {
       <NuxtLink
         to="/build-steps"
         class="relative"
-        @mouseover="toggleDropdown('build')"
+        @mouseover="hoverDropdown('build')"
+        @click="clickDropdown('build')"
       >
         <p class="font-light">Build</p>
         <div
           v-if="isBuildOpen"
+          :class="route.path !== '/' && 'bg-gray-400'"
           class="absolute left-[-30rem] top-10 z-10 mt-[1px] w-[71rem] origin-top-right border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px] shadow-custom-light space-y-4 more-dropdown"
         >
           <!-- Dropdown content -->
