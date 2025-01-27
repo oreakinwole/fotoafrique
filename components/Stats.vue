@@ -8,7 +8,7 @@ const stats = ref([
 </script>
 
 <template>
-  <div class="bg-gray-100 py-12">
+  <div class="py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
         Our Achievements
@@ -17,7 +17,7 @@ const stats = ref([
         <div
           v-for="stat in stats"
           :key="stat.id"
-          class="text-center bg-white p-6 rounded-2xl shadow-md"
+          class="text-center  p-6 rounded-2xl border border-[#A89C93] "
         >
           <h3 class="text-4xl font-extrabold text-gray-800">
             <!-- <count-up

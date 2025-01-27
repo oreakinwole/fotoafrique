@@ -73,7 +73,7 @@ const handleIsNavbarShowing = (val) => {
   </div>
 
   <div class="max-w-[1600px] mx-auto overflow-hidden" v-else>
-    <NavBarNew />
+    <NavBarNew :is-body-clicked="isBodyClicked" />
     <div
       class="transition-all duration-150 ease-in"
       :class="{

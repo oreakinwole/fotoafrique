@@ -5,6 +5,10 @@ const isShowMobileNav = ref(false);
 const isDesignOpen = ref(false);
 const isBuildOpen = ref(false);
 
+const props = defineProps(["isBodyClicked"]);
+
+const isBodyClicked = computed(() => props.isBodyClicked);
+
 const route = useRoute();
 
 const toggleNav = () => {
@@ -38,6 +42,14 @@ function hoverDropdown(type) {
     if (isBuildOpen.value === false) isBuildOpen.value = true;
   }
 }
+
+watch(isBodyClicked, (val) => {
+  console.log('Val', val)
+  if (val === true) {
+    isBuildOpen.value = false;
+    isDesignOpen.value = false;
+  }
+});
 </script>
 
 <template>
@@ -415,26 +427,26 @@ function hoverDropdown(type) {
                 class="text-5xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
-                <NuxtLink to="/services">Design</NuxtLink>
+                <NuxtLink to="/portfolio">Portfolio</NuxtLink>
               </li>
 
               <li
                 class="text-5xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
-                <NuxtLink to="/portfolio">Build</NuxtLink>
+                <NuxtLink to="/finance">Finance</NuxtLink>
               </li>
               <li
                 class="text-5xl hover:scale-x-90 duration-200 ease-linear font-semibold"
                 @click="isShowMobileNav = false"
               >
-                <NuxtLink to="/3d-packages">Scheedule</NuxtLink>
+                <NuxtLink to="/gallery">Gallery</NuxtLink>
               </li>
               <li
                 class="text-5xl hover:scale-x-90 duration-200 ease-linear font-semibold"
-                @click="Schedule = false"
+                @click="isShowMobileNav = false"
               >
-                <NuxtLink to="/contact">More</NuxtLink>
+                <NuxtLink to="/contact">Contact</NuxtLink>
               </li>
             </ul>
           </section>
