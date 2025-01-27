@@ -34,6 +34,7 @@
     "animate.css": "^4.1.1",
     "gsap": "^3.12.5",
     "ipx": "^3.0.1",
+    "vue-countup-v3": "^1.4.2",
     "vue-router": "^4.4.3",
     "vue-writer": "^1.2.0"
   }

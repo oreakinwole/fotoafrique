@@ -3,6 +3,8 @@
 <template>
  
   <div id="introduction" class="pt-14 px-4 lg:px-20">
+  <Stats/>
+
     <div class="mt-20 min-h-[720px] flex flex-row-reverse justify-between">
       <section class="max-w-lg">
         <h4
@@ -38,6 +40,8 @@
           </p>
         </div>
       </section>
+      
+
 
       <div class="hidden lg:block h-[700px] w-1/2 bg-blue-100 rounded-3xl">
         <img
@@ -56,5 +60,7 @@
         class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
       />
     </div>
+
   </div>
+
 </template>

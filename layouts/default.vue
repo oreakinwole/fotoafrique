@@ -1,5 +1,6 @@
 <script setup>
 const isShowLoader = ref(false);
+/* This activates the Blur on the nav */
 const isShowingNav = ref(false);
 const isBodyClicked = ref(false);
 

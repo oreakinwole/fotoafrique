@@ -2,6 +2,8 @@
 import logoWhite from "@/assets/svg/logo_white.svg";
 
 const isShowMobileNav = ref(false);
+const isDesignOpen = ref(false);
+const isBuildOpen = ref(false);
 
 const route = useRoute();
 
@@ -16,6 +18,20 @@ const handleBookConsult = () => {
     url: "https://calendly.com/d/2sx-n9t-6g7",
   });
 };
+
+function toggleDropdown(type) {
+  if (type === "design") {
+    isBuildOpen.value = false;
+    if (isDesignOpen.value === false) isDesignOpen.value = true;
+
+  } else if (type === "build") {
+    isDesignOpen.value = false;
+    if (isBuildOpen.value === false) isBuildOpen.value = true;
+  } else {
+    isDesignOpen.value = false;
+    isBuildOpen.value = false;
+  }
+}
 </script>
 
 <template>
@@ -41,12 +57,213 @@ const handleBookConsult = () => {
       <!-- <NuxtLink to="/">
         <p class="font-light ">Home</p>
       </NuxtLink> -->
-      <NuxtLink to="/">
+      <NuxtLink to="/" class="relative" @mouseover="toggleDropdown('design')">
         <p class="font-light">Design</p>
+        <div
+          v-if="isDesignOpen"
+          class="absolute -left-[15rem] top-14 z-10 mt-[1px] lg:w-[70rem] border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px] shadow-custom-light space-y-4"
+        >
+          <!-- Dropdown content -->
+          <div class="py-1 flex items-center gap-8 px-10 mb-2">
+            <!-- first container -->
+            <NuxtLink to="/services/landscape-sandiego">
+              <button
+                class="transition-all duration-1000 animate__animated animate__flipInX block w-full text-left px-4 py-2 border-[.5px] h-[200px] overflow-hidden rounded-[25px] group"
+              >
+                <div class="ml-3 group-hover:text-white">
+                  <p class="font-[600] text-[16px]">Landscape Design SD</p>
+                  <!-- <p
+                      class="text-[14px] text-[#A89C93] mt-1 group-hover:text-white"
+                    >
+                      San Diego, a city renowned for its stunning landscapes and
+                      vibrant outdoor life.
+                    </p> -->
+                </div>
+                <div
+                  class="w-[200px] h-[104px] mt-10 ml-20 bg-[#A89C93] rounded-tl-[20px] rounded-tr-[20px] custom-cursor-button"
+                >
+                  <img
+                    src="/images/navbar/imgs/Mask group(4).png"
+                    alt="first image"
+                    class=""
+                  />
+                </div>
+              </button>
+            </NuxtLink>
+            <!-- second container -->
+            <NuxtLink to="/services/pavers-san-diego">
+              <button
+                class="transition-all duration-1000 animate__animated animate__flipInX block w-full text-left px-4 py-2 border-[.5px] h-[200px] overflow-hidden rounded-[25px] group hover:bg-black"
+              >
+                <div class="ml-3 group-hover:text-white">
+                  <p class="font-[600] text-[16px] group-hover:text-white">
+                    Pavers San Diego
+                  </p>
+                  <!-- <p
+                      class="text-[14px] text-[#A89C93] mt-1 group-hover:text-white"
+                    >
+                      Interlocking concrete pavers, a top choice for enhancing
+                      outdoor areas.
+                    </p> -->
+                </div>
+                <div
+                  class="w-[200px] h-[104px] mt-10 ml-20 bg-[#665244] rounded-tl-[20px] rounded-tr-[20px] inner-cont"
+                >
+                  <img
+                    src="/images/navbar/imgs/img.jpg"
+                    alt="second image"
+                    class="cursor-custom-cursor"
+                  />
+                </div>
+              </button>
+            </NuxtLink>
+            <!-- third container -->
+            <div class="block w-full text-left overflow-hidden rounded-[25px]">
+              <div class="">
+                <div class="flex flex-row justify-between px-6 ml-[-18px]">
+                  <div class="flex flex-col gap-3 pt-3">
+                    <h4 class="font-[600] text-[14px]">More Services</h4>
+
+                    <NuxtLink to="/services/pools-and-spas">
+                      <p class="text-[13px] hover:underline">Pools and Spas</p>
+                    </NuxtLink>
+
+                    <NuxtLink to="/services/outdoor-kitchens">
+                      <p class="text-[13px] hover:underline">
+                        Outdoor Kitchens
+                      </p>
+                    </NuxtLink>
+
+                    <NuxtLink to="/services/concrete-sd">
+                      <p
+                        class="text-[13px] hover:underline"
+                        @click="toggleDropdown"
+                      >
+                        Concrete San Diego
+                      </p>
+                    </NuxtLink>
+
+                    <NuxtLink to="/services/artificial-turf">
+                      <p
+                        class="text-[13px] hover:underline"
+                        @click="toggleDropdown"
+                      >
+                        Artificial Turf San Diego
+                      </p>
+                    </NuxtLink>
+
+                    <NuxtLink to="/services/patios-and-pergolas">
+                      <p
+                        class="text-[13px] hover:underline"
+                        @click="toggleDropdown"
+                      >
+                        Patio Covers and Pergolas
+                      </p>
+                    </NuxtLink>
+                  </div>
+
+                  <div class="mt-[70px]">
+                    <NuxtLink to="/services">
+                      <img
+                        @click="toggleDropdown"
+                        role="button"
+                        src="/images/navbar/icons/See all button.png"
+                        alt="arrow"
+                        class="h-[65px] w-[65px]"
+                      />
+                    </NuxtLink>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </NuxtLink>
 
-      <NuxtLink to="/build-steps">
+      <NuxtLink
+        to="/build-steps"
+        class="relative"
+        @mouseover="toggleDropdown('build')"
+      >
         <p class="font-light">Build</p>
+        <div
+          v-if="isBuildOpen"
+          class="absolute left-[-30rem] top-10 z-10 mt-[1px] w-[71rem] origin-top-right border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px] shadow-custom-light space-y-4 more-dropdown"
+        >
+          <!-- Dropdown content -->
+          <div class="py-1 flex flex-row gap-10 px-10 mt-5 mb-5">
+            <!-- first container -->
+
+            <button
+              class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 border-[.5px] h-[200px] rounded-[25px] more-parent"
+            >
+              <NuxtLink to="/3d-packages">
+                <div class="ml-3 mt-2">
+                  <p class="font-[600] text-[16px]">3D Packages</p>
+
+                  <!-- <p class="font-[400] text-[14px] text-[#A89C93] mt-1">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p> -->
+                </div>
+                <div
+                  class="w-[195px] h-[124px] mt-5 ml-20 bg-[#A89C93] rounded-tl-[20px] rounded-tr-[20px] more-cont overflow-hidden"
+                >
+                  <img
+                    src="@/assets/images/Ferrer_026.jpg"
+                    alt="first image"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+              </NuxtLink>
+            </button>
+
+            <!-- second container -->
+            <button
+              class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 border-[.5px] h-[200px] rounded-[25px] more-parent"
+            >
+              <NuxtLink to="/#FAQS">
+                <div class="ml-3 mt-2">
+                  <p class="font-[600] text-[16px]">FAQs</p>
+                  <!-- <p class="font-[400] text-[14px] text-[#A89C93] mt-1">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p> -->
+                </div>
+                <div
+                  class="w-[195px] h-[124px] flex justify-center items-center mt-5 ml-20 bg-navbar-color rounded-tl-[20px] rounded-tr-[20px] more-cont"
+                >
+                  <p
+                    class="font-playfairDisplay text-gray-900 font-bold text-8xl"
+                  >
+                    ?
+                  </p>
+                </div>
+              </NuxtLink>
+            </button>
+
+            <!-- third container -->
+            <button
+              class="transition-all duration-1000 animate__animated animate__flipInX block w-[30%] text-left px-4 border-[.5px] h-[200px] rounded-[25px] more-parent"
+            >
+              <NuxtLink to="/#socials">
+                <div class="ml-3 mt-2">
+                  <p class="font-[600] text-[16px]">Socials</p>
+                  <!-- <p class="font-[400] text-[14px] text-[#A89C93] mt-1">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p> -->
+                </div>
+                <div
+                  class="w-[195px] h-[124px] flex justify-center items-center mt-5 ml-20 bg-navbar-color rounded-tl-[20px] rounded-tr-[20px] more-cont"
+                >
+                  <p
+                    class="font-playfairDisplay text-gray-900 font-bold text-8xl"
+                  >
+                    @
+                  </p>
+                </div>
+              </NuxtLink>
+            </button>
+          </div>
+        </div>
       </NuxtLink>
       <NuxtLink to="/">
         <p class="font-light">Schedule</p>
@@ -85,7 +302,7 @@ const handleBookConsult = () => {
       />
     </svg>
 
-    <!-- <svg
+    <svg
       @click="toggleNav"
       class="w-7 lg:w-8 cursor-pointer"
       width="55"
@@ -113,7 +330,7 @@ const handleBookConsult = () => {
         stroke-width="2.5"
         stroke-linecap="round"
       />
-    </svg> -->
+    </svg>
 
     <div
       class="animate__animated animate__slideInDown fixed top-0 right-0 bg-white h-screen w-full z-20"

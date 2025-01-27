@@ -1,16 +1,13 @@
-
 <script setup>
 import "animate.css";
-
 
 </script>
 
 <template>
   <div class="landing-container">
     <ViewBuildSteps />
-  <!-- <ViewWhatWeDo /> -->
-  <!-- <ViewWhyChooseUs /> -->
-   
+    <!-- <ViewWhatWeDo /> -->
+    <!-- <ViewWhyChooseUs /> -->
   </div>
 </template>
 

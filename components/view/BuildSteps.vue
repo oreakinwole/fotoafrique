@@ -1,4 +1,26 @@
-<script setup></script>
+<script setup>
+const galleryData = ref([
+  "https://www.modernyardz.com/cdn/shop/files/1.webp?v=1708357679&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/28.webp?v=1708357682&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/3.webp?v=1708357679&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/4.webp?v=1708357682&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/5.webp?v=1708357681&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/6.webp?v=1708357680&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/7_e4a6ed7e-a0ae-49fd-9ece-752fae0ffbaf.webp?v=1708357917&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/8.webp?v=1708357681&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/9.webp?v=1708357680&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/10.webp?v=1708357679&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/11.webp?v=1708357680&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/12.webp?v=1708357679&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/13.webp?v=1708357681&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/14.webp?v=1708357681&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/15.webp?v=1708357679&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/16.webp?v=1708357681&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/17.webp?v=1708357679&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/18.webp?v=1708357679&width=3000",
+  "https://www.modernyardz.com/cdn/shop/files/20.webp?v=1708357678&width=3000",
+]);
+</script>
 
 <template>
   <div class="pt-14 px-4 lg:px-20">
@@ -150,13 +172,18 @@
     <span class="text-new-gray font-imperial text-5xl">P </span>rojects we have
     worked on
   </p>
-  <div class="grid grid-cols-3 gap-4 mt-5">
+
+  <div
+    class="grid grid-cols-2 lg:grid-cols-3 pt-8 gap-2 lg:gap-8 px-4 lg:px-14"
+    ref="autoAniSection"
+    id="all-gallery-view"
+  >
     <div
-      v-for="(item, index) in Array(10).fill(0)"
-      :key="index"
-      class="bg-gray-100 pt-8 flex items-center justify-center"
+      v-for="imagey in galleryData"
+      :key="imagey"
+      class="bg-gray-100 h-[200px] lg:h-[400px] lg:flex-1 rounded-2xl overflow-hidden"
     >
-      <img src="@/assets/images/gallery-pav1.png" class="h-[330px] w-[340px]" />
+      <img :src="imagey" class="h-full w-full object-cover" />
     </div>
   </div>
 </template>
