@@ -6,87 +6,125 @@ useHead({
 const datafQ = ref([
   {
     "@type": "Question",
-    name: "What makes Modern Yardz a top landscaper in San Diego?",
+    name: "What is the Modern Yardz minimum budget for a project?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Modern Yardz stands out for our decades of experience, passion for crafting beautiful, functional outdoor spaces, and personalized service tailored to each client's unique vision.",
+      text: "$20k",
     },
   },
   {
     "@type": "Question",
-    name: "How can I find the best landscaping services near me in San Diego?",
+    name: "Will Modern Yardz bid a design that was provided by another design company?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Look for landscapers with a strong local reputation, a portfolio of diverse projects, and services that match your outdoor vision. Modern Yardz meets all these criteria, offering comprehensive landscaping solutions across San Diego.",
+      text: "Yes, Modern Yardz will bid other companies' designs.",
     },
   },
   {
     "@type": "Question",
-    name: "What types of landscaping services does Modern Yardz offer?",
+    name: "Will Modern Yardz work alongside another contractor on a project?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "We specialize in a variety of services including garden design, artificial turf installation, outdoor kitchens, pools & spas, patio covers, pergolas, fire features, and custom concrete work.",
+      text: "Typically yes, but we do take it on a case-by-case basis.",
     },
   },
   {
     "@type": "Question",
-    name: "Can Modern Yardz help with small landscaping projects?",
+    name: "Does Modern Yardz handle all of the permitting?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Absolutely! We cater to projects of all sizes, from minor enhancements to major transformations, ensuring each client receives the attention and expertise their outdoor space deserves.",
+      text: "Yes, we submit all paperwork for permits and handle all onsite inspections.",
     },
   },
   {
     "@type": "Question",
-    name: "Does Modern Yardz offer eco-friendly landscaping options?",
+    name: "Does Modern Yardz handle HOA submittal?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Yes, we're committed to sustainability, offering drought-tolerant landscapes, native plant selections, and efficient irrigation systems to minimize water use and support the local ecosystem.",
+      text: "Yes, we will create all the required documents for your HOA approval, but it is the client's responsibility to fill out the application with their personal information and submit all documents to their HOA.",
     },
   },
   {
     "@type": "Question",
-    name: "How does the landscape design process work with Modern Yardz?",
+    name: "Does Modern Yardz pay for the HOA submittal fees?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Our process begins with a consultation to understand your vision and needs. We then provide a detailed design proposal, including 3D renderings, before starting the installation, ensuring your complete satisfaction with the final outcome.",
+      text: "No, all HOA landscape submittal fees are to be paid for by the property owner.",
     },
   },
   {
     "@type": "Question",
-    name: "What is the average cost of landscaping services in San Diego?",
+    name: "Does Modern Yardz offer free consultations?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Costs vary widely depending on project scope, materials, and design complexity. Contact Modern Yardz for a free quote tailored to your specific landscaping needs and budget.",
+      text: "Yes, we offer complimentary 1-hour consultations.",
     },
   },
   {
     "@type": "Question",
-    name: "How long does a typical landscaping project take with Modern Yardz?",
+    name: "Does Modern Yardz offer any financing?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Project timelines can vary from a few days for simple installations to several weeks for comprehensive designs, depending on the project's scale and complexity. We prioritize efficiency and quality, keeping you informed every step of the way.",
+      text: "Yes, (link to financing page)",
     },
   },
   {
     "@type": "Question",
-    name: "Can Modern Yardz incorporate existing landscape features into a new design?",
+    name: "Does Modern Yardz use Sub-Contractors?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Yes, we excel at blending new designs with existing landscape elements, enhancing your outdoor space while preserving its unique character and features you love.",
+      text: "Yes, we use a mix of in-house crews and sub-contractors for a variety of trades.",
     },
   },
   {
     "@type": "Question",
-    name: "How can I maintain my new landscape to keep it looking great year-round?",
+    name: "Does Modern Yardz outsource their design services?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Modern Yardz offers maintenance advice and services, including proper watering, pruning, and care tips tailored to your landscape's specific needs, ensuring it thrives in every season.",
+      text: "No! We have two in-house designers.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Does Modern Yardz carry the proper insurance for the work they perform?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Yes, and upon request we can provide copies of our Bonds, General Liability, and Workers Compensation Insurance.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "What is the Modern Yardz Warranty?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "We have a 5-year Workmanship Warranty.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Does Modern Yardz have a state of California contractor's license?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Yes, our License # is 1082881.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Does Modern Yardz have a physical office location?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Yes, Modern Yardz office is located at 5595 Magnatron Blvd. Suite E, San Diego, CA 92111.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "What areas does Modern Yardz service?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "We service all of San Diego, from Oceanside to Chula Vista, and as far east as El Cajon.",
     },
   },
 ]);
-
-
 </script>
 
 <template>
@@ -123,8 +161,6 @@ const datafQ = ref([
       </div>
     </section>
   </div> -->
-
-  
 
   <div
     id="packages"

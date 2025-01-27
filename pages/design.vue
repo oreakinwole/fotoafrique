@@ -5,9 +5,10 @@ import "animate.css";
 
 <template>
   <div class="landing-container">
-    <ViewBuildSteps />
+    <ViewDesignSteps />
     <!-- <ViewWhatWeDo /> -->
     <!-- <ViewWhyChooseUs /> -->
   </div>
 </template>
+
 

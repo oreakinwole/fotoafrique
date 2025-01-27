@@ -12,6 +12,8 @@ const isBodyClicked = computed(() => props.isBodyClicked);
 const route = useRoute();
 
 const toggleNav = () => {
+  isBuildOpen.value = false;
+  isDesignOpen.value = false;
   isShowMobileNav.value = !isShowMobileNav.value;
 };
 
@@ -44,7 +46,7 @@ function hoverDropdown(type) {
 }
 
 watch(isBodyClicked, (val) => {
-  console.log('Val', val)
+  console.log("Val", val);
   if (val === true) {
     isBuildOpen.value = false;
     isDesignOpen.value = false;
@@ -76,7 +78,7 @@ watch(isBodyClicked, (val) => {
         <p class="font-light ">Home</p>
       </NuxtLink> -->
       <NuxtLink
-        to="/"
+        to="/design"
         class="relative"
         @mouseover="hoverDropdown('design')"
         @click="clickDropdown('design')"
