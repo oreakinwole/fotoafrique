@@ -9,7 +9,7 @@ function handleBookConsult() {
 </script>
 
 <template>
-  <div class="flex bg-black items-center justify-center py-3">
+  <div class="flex bg-gray-900 items-center justify-center py-3">
     <!-- <h4 class="text-white text-center uppercase cursor-pointer">{{ text }}</h4> -->
 
     <p class="text-xs font-medium animate__animated animate__flipInX">

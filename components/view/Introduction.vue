@@ -1,9 +1,8 @@
 <script setup></script>
 
 <template>
- 
   <div id="introduction" class="pt-14 px-4 lg:px-20">
-  <Stats/>
+    <Stats />
 
     <div class="mt-20 min-h-[720px] flex flex-row-reverse justify-between">
       <section class="max-w-lg">
@@ -40,15 +39,23 @@
           </p>
         </div>
       </section>
-      
-
 
       <div class="hidden lg:block h-[700px] w-1/2 bg-blue-100 rounded-3xl">
-        <img
+        <!-- <img
           src="@/assets/images/148-web-or-mls-DSC09212.jpg"
           alt="team photo"
           class="w-full h-full object-cover rounded-3xl"
-        />
+        /> -->
+
+        <video
+          class="h-full w-full object-cover rounded-xl"
+          autoplay
+          muted
+          loop
+        >
+          <source src="/video/quizvid.mp4" type="video/mp4" />
+          Something went wrong while playing video
+        </video>
       </div>
     </div>
 
@@ -60,7 +67,5 @@
         class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
       />
     </div>
-
   </div>
-
 </template>

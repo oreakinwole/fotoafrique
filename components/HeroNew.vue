@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="relative">
     <div class="hidden lg:block bg-black h-[700px] relative">
       <div
         class="bg-gray-900 absolute top-0 left-0 h-full w-full opacity-50"
@@ -12,9 +12,15 @@
     </div>
 
     <MobileHero />
+    
+    <div
+      class="bg-gray-400 bg-opacity-20 h-[80px] w-full absolute bottom-0"
+    >
+      <img src="@/assets/svg/partners.svg" class="w-full h-full object-cover" />
+    </div>
   </div>
 
-  <div class="pt-20">
+  <!-- <div class="pt-20">
     <p class="uppercase text-center font-medium tracking-widest text-lg">Our Partners</p>
 
     <div class="lg:mt-4">
@@ -22,10 +28,10 @@
         <img src="@/assets/svg/partners.svg" width="900" class="mx-auto" />
       </NuxtMarquee>
     </div>
-  </div>
+  </div> -->
 
   <div
-    class="hidden lg:block px-2 md:px-8 lg:px-20 mt-28 max-w-screen-lg mx-auto text-center text-black mb-10"
+    class="hidden lg:block px-2 md:px-8 lg:px-20 mt-24 max-w-screen-lg mx-auto text-center text-black mb-10"
     data-aos="fade-up"
     data-aos-easing="linear"
   >

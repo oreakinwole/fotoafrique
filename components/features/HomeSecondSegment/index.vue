@@ -19,7 +19,7 @@
     </div>
   </div>
 
-  <div class="mt-12 lg:mt-28 lg:flex">
+  <div class="mt-12 lg:my-28 lg:flex">
     <div
       class="ml-32 mt-10 hidden lg:block text-center"
       data-aos="fade-up"
