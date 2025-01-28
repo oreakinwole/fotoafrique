@@ -1,9 +1,9 @@
 <script setup>
 const stats = ref([
-  { id: 1, value: 2000, label: "Satisfied Customers" },
-  { id: 2, value: 25, label: "Years of Experience" },
-  { id: 3, value: 1000, label: "Design Consultations" },
-  { id: 4, value: 100, label: "Transparency", suffix: "%" },
+  { id: 1, value: 3500, label: "Satisfied Customers" },
+  { id: 2, value: 40, label: "Years of Experience" },
+  { id: 3, value: 10000, label: "Design Consultations" },
+  { id: 4, value: '100%', label: "Transparency", suffix: "%" },
 ]);
 </script>
 
@@ -11,9 +11,9 @@ const stats = ref([
   <div class="py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2
-        class="text-3xl font-bold text-center text-gray-800 mb-8 rounded-tr rounded-tl border-t mx-auto pt-3 max-w-xs border-[#A89C93]"
+        class="text-3xl font-light text-center text-gray-800 mb-8 rounded-tr rounded-tl border-t mx-auto pt-3 max-w-xs border-[#A89C93]"
       >
-        Our Achievements
+        A CUT ABOVE THE REST
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div

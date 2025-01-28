@@ -9,18 +9,18 @@ function handleBookConsult() {
 </script>
 
 <template>
-  <div class="flex bg-gray-900 items-center justify-center py-3">
+  <div class="flex bg-gray-400 items-center justify-center py-3">
     <!-- <h4 class="text-white text-center uppercase cursor-pointer">{{ text }}</h4> -->
 
     <p class="text-xs font-medium animate__animated animate__flipInX">
-      <span class="text-white">Start Your Transformation Today –</span>
+      <!-- <span class="text-white">Start Your Transformation Today –</span> -->
       <span
-        class="font-bold text-white border-white border-b"
+        class="font-bold text-white border-white tracking-widest border-b"
         @click="handleBookConsult"
         role="button"
       >
-        Book a Free Consultation</span
-      >
+        BOOK YOUR FREE DESIGN CONSULTATION
+      </span>
     </p>
     <!-- <img :src="closeIcon" alt="close png" class="cursor-pointer absolute right-36" width="16" @click="closeModal"> -->
   </div>
