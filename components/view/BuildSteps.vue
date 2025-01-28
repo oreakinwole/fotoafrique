@@ -23,6 +23,47 @@ const galleryData = ref([
 </script>
 
 <template>
+  <div class="mt-28 px-4 lg:px-20 bg-green-50">
+    <div class="flex justify-between">
+      <section class="max-w-lg">
+        <h4
+          class="hidden lg:block mt-8 font-playfairDisplay text-5xl tracking-wide font-semibold"
+        >
+          How Yardzen
+          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
+            >W
+          </span>
+          orks
+        </h4>
+
+        <div class="text-black my-6 space-y-8 leading-loose">
+          <p>
+            Owner Thomas Jackson breaks down the Modern Yardz Build process.
+          </p>
+
+          <div>
+            <h3 class="font-bold">Thomas Jackson</h3>
+            <p>Design Director & Owner, Modernyardz.</p>
+          </div>
+          <!-- <ul
+            class="list-disc list-inside mt-1 font-light tracking-widest text-md text-[#454545]"
+          >
+            <li>Daily project check in with project manager</li>
+            <li>Inspections with city officials</li>
+            <li>Coordination with all trades</li>
+          </ul> -->
+        </div>
+      </section>
+
+      <div class="hidden lg:block h-[500px] w-1/2 bg-blue-100 rounded-3xl">
+        <img
+          src="@/assets/images/Screenshot_owner.png"
+          alt="step 1"
+          class="w-full h-full object-cover rounded-3xl"
+        />
+      </div>
+    </div>
+  </div>
   <div class="pt-14 px-4 lg:px-20">
     <div class="flex flex-row-reverse justify-between">
       <section class="max-w-lg">
@@ -125,49 +166,7 @@ const galleryData = ref([
     </div>
   </div>
 
-  <!-- VIDEO -->
-
-  <div class="mt-28 px-4 lg:px-20 bg-green-50">
-    <div class="flex justify-between">
-      <section class="max-w-lg">
-        <h4
-          class="hidden lg:block mt-8 font-playfairDisplay text-5xl tracking-wide font-semibold"
-        >
-          How Yardzen
-          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >W
-          </span>
-          orks
-        </h4>
-
-        <div class="text-black my-6 space-y-4 leading-loose">
-          <p>Design Director Kevin breaks down the Yardzen process.</p>
-
-          <h3 class="font-bold">Kevin Lenhart</h3>
-          <p>
-            Design Director & Landscape Architect Landscape Architecture,
-            University of California, Berkeley
-          </p>
-          <!-- <ul
-            class="list-disc list-inside mt-1 font-light tracking-widest text-md text-[#454545]"
-          >
-            <li>Daily project check in with project manager</li>
-            <li>Inspections with city officials</li>
-            <li>Coordination with all trades</li>
-          </ul> -->
-        </div>
-      </section>
-
-      <div class="hidden lg:block h-[500px] w-1/2 bg-blue-100 rounded-3xl">
-        <img
-          src="@/assets/images/Screenshot_owner.png"
-          alt="step 1"
-          class="w-full h-full object-cover rounded-3xl"
-        />
-      </div>
-    </div>
-  </div>
-
+  <!-- 
   <p class="font-playfairDisplay text-4xl text-center font-medium mt-28">
     <span class="text-new-gray font-imperial text-5xl">P </span>rojects we have
     worked on
@@ -185,5 +184,5 @@ const galleryData = ref([
     >
       <img :src="imagey" class="h-full w-full object-cover" />
     </div>
-  </div>
+  </div> -->
 </template>

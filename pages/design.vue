@@ -1,5 +1,38 @@
 <script setup>
 import "animate.css";
+const features = ref([
+  "1 consultation with a designer",
+  "Up to 3 design revisions",
+  "Comprehensive planting plan",
+  "Hardscape layout",
+  "Outdoor lighting design",
+  "2D landscape plans for a clear project blueprint",
+]);
+const features2 = ref([
+  "1 consultation with a designer",
+  "Up to 10 design revisions",
+  "Comprehensive planting plan",
+  "Irrigation plan for efficient water management",
+  "Hardscape layout",
+  "Drainage planning for long-term durability",
+  "Outdoor lighting design",
+  "2D landscape plans for easy visualization",
+  "High-quality 3D renderings of your outdoor space",
+]);
+
+const features3 = ref([
+  "Unlimited 1:1 designer consultations for 30 days",
+  "Unlimited design revisions for ultimate flexibility",
+  "Comprehensive planting plan",
+  "Irrigation plan for optimal water use",
+  "Hardscape layout for stunning walkways, patios, and features",
+  "Drainage planning to protect your investment",
+  "Outdoor lighting design",
+  "Detailed 2D landscape plans",
+  "Ultra-realistic 3D renderings",
+  "3D Fly-Through Video: A virtual tour of your new yard",
+  "3D Nightscape: Visualize your design with stunning nighttime lighting",
+]);
 </script>
 
 <template>
@@ -20,303 +53,187 @@ import "animate.css";
           Professional landscape design simplified
         </p>
         <FilledButton
+
           background-color="black"
           text="Book Free Design Consultation"
           text-color="white"
-          class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
+          class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto "
         />
       </div>
     </div>
 
     <ViewDesignSteps />
     <ViewDesignProcess />
-
     <ViewTestimonial />
-    <div
-      id="packages"
-      class="lg:hidden mt-24 px-6"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-    >
-      <h4 class="font-playfairDisplay text-4xl font-[500] mb-4">
-        Desi<span class="text-[#A89C93] font-imperial text-5xl">G </span>n
-        Packages
-      </h4>
 
-      <p class="text-[#454545] text-lg leading-relaxed">
-        Whether you’re looking for a front yard refresh or a full backyard
-        makeover, our design packages make it easy to get started. Choose the
-        perfect package for your project, and let us handle the rest.
+    <div id="packages" class="my-10 lg:my-20 max-w-lg mx-auto">
+      <div>
+        <h4 class="font-playfairDisplay text-5xl tracking-wide font-[500]">
+          Desi<span class="text-[#A89C93] font-imperial text-6xl">G </span>n
+          Packages
+        </h4>
+      </div>
+
+      <p class="text-[#454545] text-sm mt-4 leading-relaxed tracking-widest">
+        Transform your outdoor space with our expertly crafted design packages.
+        Each package is tailored to meet your needs, whether you’re looking for
+        foundational plans or a fully immersive, luxury experience. With access
+        to cutting-edge designs, we make your dream yard a reality.
       </p>
     </div>
 
-    <div id="packages" class="my-10 lg:mt-36 mb-20 flex">
+    <div class="flex flex-wrap gap-8">
       <div
-        class="hidden lg:block ml-32 mt-16"
-        data-aos="fade-up"
-        data-aos-easing="linear"
+        class="max-w-md mx-auto shadow-lg rounded-2xl border border-gray-200"
       >
-        <div>
-          <h4 class="font-playfairDisplay text-5xl tracking-wide font-[500]">
-            Desi<span class="text-[#A89C93] font-imperial text-6xl">G </span>n
-            Packages
-          </h4>
+        <div class="text-center bg-gray-100 rounded-t-2xl p-4">
+          <h2 class="text-2xl font-bold">Standard Design Package</h2>
+          <p class="mt-2 text-gray-600">
+            Perfect for homeowners looking for professional landscape plans to
+            get started.
+          </p>
         </div>
-
-        <p class="text-[#454545] text-sm mt-4 leading-relaxed tracking-widest">
-          Whether you’re looking for a front yard refresh or a full backyard
-          makeover, our design packages make it easy to get started. Choose the
-          perfect package for your project, and let us handle the rest.
-        </p>
-      </div>
-
-      <div data-aos-duration="2000" data-aos-delay="400" data-aos="fade-in">
-        <div class="hidden lg:block ml-20">
-          <NuxtMarquee class="max-w-[120em]">
-            <div class="flex flex-row gap-8">
-              <div>
-                <NuxtLink to="3d-packages">
-                  <div
-                    class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
-                  >
-                    <img
-                      src="@/assets/images/packages/p-fullyard.jpg"
-                      alt="frontyard picture"
-                      class="w-full h-full rounded-xl"
-                    />
-                    <div
-                      class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                    ></div>
-                  </div>
-                </NuxtLink>
-
-                <div class="flex flex-row justify-between mt-5">
-                  <h4 class="font-[500] text-[18px]">Premium</h4>
-                  <p class="text-[16px]">$3,295</p>
-                </div>
-              </div>
-
-              <div>
-                <NuxtLink to="3d-packages">
-                  <div
-                    class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
-                  >
-                    <img
-                      src="@/assets/images/packages/p-backyard.jpg"
-                      alt="backyard picture"
-                      class="w-full h-full rounded-xl"
-                    />
-                    <div
-                      class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                    ></div>
-                  </div>
-                </NuxtLink>
-
-                <div class="flex flex-row justify-between mt-5">
-                  <h4 class="font-[500] text-[18px]">Full Yard</h4>
-                  <p class="text-[16px]">$1,595</p>
-                </div>
-              </div>
-
-              <div>
-                <NuxtLink to="3d-packages">
-                  <div
-                    class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
-                  >
-                    <img
-                      src="@/assets/images/packages/p-frontyard.jpg"
-                      alt="fullyard picture"
-                      class="w-full h-full rounded-xl"
-                    />
-                    <div
-                      class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                    ></div>
-                  </div>
-                </NuxtLink>
-
-                <div class="flex flex-row justify-between mt-5">
-                  <h4 class="font-[500] text-[18px]">Front Yard</h4>
-                  <p class="text-[16px]">$1,195</p>
-                </div>
-              </div>
-
-              <div>
-                <NuxtLink to="3d-packages">
-                  <div
-                    class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
-                  >
-                    <img
-                      src="@/assets/images/packages/p-outdoor.jpg"
-                      alt="renovation picture"
-                      class="w-full h-full rounded-xl"
-                    />
-                    <div
-                      class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                    ></div>
-                  </div>
-                </NuxtLink>
-
-                <div class="flex flex-row justify-between mt-5">
-                  <h4 class="font-[500] text-[18px]">Back Yard</h4>
-                  <p class="text-[16px]">$1,395</p>
-                </div>
-              </div>
-
-              <div>
-                <NuxtLink to="3d-packages">
-                  <div
-                    class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
-                  >
-                    <img
-                      src="/images/homesecondsegment/imgs/Renovation.svg"
-                      alt="renovation picture"
-                      class="w-full h-full rounded-xl"
-                    />
-                    <div
-                      class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                    ></div>
-                  </div>
-                </NuxtLink>
-
-                <div class="flex flex-row justify-between mt-5">
-                  <h4 class="font-[500] text-[18px]">Premium Design</h4>
-                  <p class="text-[16px]">$4,000.00</p>
-                </div>
-              </div>
-            </div>
-          </NuxtMarquee>
-        </div>
-
-        <div class="lg:ml-20">
-          <div
-            class="lg:hidden flex flex-row justify-center flex-wrap gap-2 lg:gap-8"
-          >
-            <div class="w-[47%]">
-              <NuxtLink to="3d-packages">
-                <div
-                  class="relative w-full h-[250px] cursor-pointer group explore-item"
-                >
-                  <img
-                    src="@/assets/images/packages/p-fullyard.jpg"
-                    alt="frontyard picture"
-                    class="w-full h-full rounded-xl"
-                  />
-                  <div
-                    class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                  ></div>
-                </div>
-              </NuxtLink>
-
-              <div class="flex flex-wrap justify-between mt-5">
-                <h4 class="font-[500] text-[18px]">Full Yard Design</h4>
-                <p class="text-[16px]">$1,890.80</p>
-              </div>
-            </div>
-
-            <div class="w-[47%]">
-              <NuxtLink to="3d-packages">
-                <div
-                  class="relative w-full h-[250px] cursor-pointer group explore-item"
-                >
-                  <img
-                    src="@/assets/images/packages/p-backyard.jpg"
-                    alt="backyard picture"
-                    class="w-full h-full rounded-xl"
-                  />
-                  <div
-                    class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                  ></div>
-                </div>
-              </NuxtLink>
-
-              <div class="flex flex-wrap justify-between mt-5">
-                <h4 class="font-[500] text-[18px]">Backyard Design</h4>
-                <p class="text-[16px]">$1,745.99</p>
-              </div>
-            </div>
-
-            <div class="w-[47%]">
-              <NuxtLink to="3d-packages">
-                <div
-                  class="relative w-full h-[250px] cursor-pointer group explore-item"
-                >
-                  <img
-                    src="@/assets/images/packages/p-frontyard.jpg"
-                    alt="fullyard picture"
-                    class="w-full h-full rounded-xl"
-                  />
-                  <div
-                    class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                  ></div>
-                </div>
-              </NuxtLink>
-
-              <div class="flex flex-wrap justify-between mt-5">
-                <h4 class="font-[500] text-[18px]">Front Yard Design</h4>
-                <p class="text-[16px]">$2,745.56</p>
-              </div>
-            </div>
-
-            <div class="w-[47%]">
-              <NuxtLink to="3d-packages">
-                <div
-                  class="relative w-full h-[250px] cursor-pointer group explore-item"
-                >
-                  <img
-                    src="@/assets/images/packages/p-outdoor.jpg"
-                    alt="renovation picture"
-                    class="w-full h-full rounded-xl"
-                  />
-                  <div
-                    class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                  ></div>
-                </div>
-              </NuxtLink>
-
-              <div class="flex flex-wrap justify-between mt-5">
-                <h4 class="font-[500] text-[18px]">Outdoor Transformation</h4>
-                <p class="text-[16px]">$2,745.56</p>
-              </div>
-            </div>
-
-            <!-- <div class="w-[47%]">
-            <NuxtLink to="3d-packages">
-              <div
-                class="relative w-full h-[250px] cursor-pointer group explore-item"
+        <div class="p-6 space-y-4">
+          <ul class="space-y-2 text-gray-700">
+            <li
+              v-for="(item, index) in features"
+              :key="index"
+              class="flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 text-black mr-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
               >
-                <img
-                  src="/images/homesecondsegment/imgs/Renovation.svg"
-                  alt="renovation picture"
-                  class="w-full h-full rounded-xl"
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 00-1.414 0L7 13.586 4.707 11.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l9-9a1 1 0 000-1.414z"
+                  clip-rule="evenodd"
                 />
-                <div
-                  class="absolute inset-0 bg-black rounded-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                ></div>
-              </div>
-            </NuxtLink>
-
-            <div class="flex flex-wrap justify-between mt-5">
-              <h4 class=" font-[500] text-[18px]">Premium Design</h4>
-              <p class="   text-[16px]">$4,000.00</p>
-            </div>
-          </div> -->
+              </svg>
+              {{ item }}
+            </li>
+          </ul>
+          <div class="text-center">
+            <FilledButton
+              :noAction="true"
+              background-color="black"
+              text=" Explore the Standard Package"
+              text-color="white"
+              class="mt-32"
+            />
           </div>
         </div>
       </div>
-    </div>
-    <div class="text-center">
-      <NuxtLink to="/#quiz">
-        <FilledButton
-          :no-action="true"
-          background-color="black"
-          text="Take Our Quiz to Find Your Package"
-          text-color="white"
-          class="w-[90%] font-semibold lg:w-[290px] lg:mb-20"
-        />
-      </NuxtLink>
+
+      <!--  -->
+
+      <div
+        class="max-w-md mx-auto shadow-lg rounded-2xl border border-gray-200"
+      >
+        <div class="text-center bg-gray-100 rounded-t-2xl p-4">
+          <h2 class="text-2xl font-bold">Premium Design Package</h2>
+          <p class="mt-2 text-gray-600">
+            Ideal for more complex projects requiring detailed planning and
+            customization.
+          </p>
+        </div>
+        <div class="p-6 space-y-4">
+          <ul class="space-y-2 text-gray-700">
+            <li
+              v-for="(item, index) in features2"
+              :key="index"
+              class="flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 text-black mr-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 00-1.414 0L7 13.586 4.707 11.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l9-9a1 1 0 000-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              {{ item }}
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <FilledButton
+              :noAction="true"
+              background-color="black"
+              text="Discover the Premium Package"
+              text-color="white"
+              class="mt-8"
+            />
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <div
+        class="max-w-md mx-auto shadow-lg rounded-2xl border border-gray-200"
+      >
+        <div class="text-center bg-gray-100 rounded-t-2xl p-4">
+          <h2 class="text-2xl font-bold">Luxe Design Package</h2>
+          <p class="mt-2 text-gray-600">
+            Our most immersive package for clients seeking a fully customized
+            experience.
+          </p>
+        </div>
+        <div class="p-6 space-y-4">
+          <ul class="space-y-2 text-gray-700">
+            <li
+              v-for="(item, index) in features3"
+              :key="index"
+              class="flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 text-black mr-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 00-1.414 0L7 13.586 4.707 11.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l9-9a1 1 0 000-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              {{ item }}
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <FilledButton
+              :noAction="true"
+              background-color="black"
+              text="Upgrade to Luxe"
+              text-color="white"
+              class="mt-8"
+            />
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- <ViewWhatWeDo /> -->
     <!-- <ViewWhyChooseUs /> -->
   </div>
 </template>
+
+<style scoped>
+.text-green-600 {
+  color: #16a34a;
+}
+.bg-green-500 {
+  background-color: #16a34a;
+}
+.bg-green-600:hover {
+  background-color: #15803d;
+}
+</style>

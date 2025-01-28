@@ -28,6 +28,8 @@ import "animate.css";
       </div>
     </div>
     <ViewBuildSteps />
+    <ViewTestimonial />
+
     <!-- <ViewWhatWeDo /> -->
     <!-- <ViewWhyChooseUs /> -->
   </div>
