@@ -12,9 +12,11 @@ const isBodyClicked = computed(() => props.isBodyClicked);
 const route = useRoute();
 
 const toggleNav = () => {
-  isBuildOpen.value = false;
-  isDesignOpen.value = false;
   isShowMobileNav.value = !isShowMobileNav.value;
+  if (!isShowMobileNav.value) {
+    isBuildOpen.value = false;
+    isDesignOpen.value = false;
+  }
 };
 
 const handleBookConsult = () => {
@@ -27,11 +29,11 @@ const handleBookConsult = () => {
 
 function clickDropdown(type) {
   if (type === "design") {
+    isDesignOpen.value = !isDesignOpen.value;
     isBuildOpen.value = false;
-    if (isDesignOpen.value === true) isDesignOpen.value = false;
   } else if (type === "build") {
+    isBuildOpen.value = !isBuildOpen.value;
     isDesignOpen.value = false;
-    if (isBuildOpen.value === true) isBuildOpen.value = false;
   }
 }
 
@@ -99,7 +101,7 @@ watch(isBodyClicked, (val) => {
         <p class="font-medium">Build</p>
         <NavdropBuild
           v-if="isBuildOpen"
-          :class="route.path !== '/' &&  'bg-black'"
+          :class="route.path !== '/' && 'bg-black'"
         />
       </NuxtLink>
       <NuxtLink to="/">
