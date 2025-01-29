@@ -29,7 +29,7 @@ const galleryData = ref([
         <h4
           class="hidden lg:block mt-8 font-playfairDisplay text-5xl tracking-wide font-semibold"
         >
-          How Modernyardz<br>
+          How Modernyardz<br />
           <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
             >W
           </span>
@@ -37,14 +37,13 @@ const galleryData = ref([
         </h4>
 
         <div class="text-black my-6 space-y-8 leading-loose">
-          <p>Owner Thomas Jackson breaks down the Modern Yardz Design process.</p>
+          <p>
+            Owner Thomas Jackson breaks down the Modern Yardz Design process.
+          </p>
 
           <div>
             <h3 class="font-bold">Thomas Jackson</h3>
-          <p>
-            Design Director & Owner,
-            Modernyardz.
-          </p>
+            <p>Design Director & Owner, Modernyardz.</p>
           </div>
           <!-- <ul
             class="list-disc list-inside mt-1 font-light tracking-widest text-md text-[#454545]"
@@ -73,15 +72,14 @@ const galleryData = ref([
         >
           Step 1:
           <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >P
+            >F
           </span>
-          re-Construction Meeting
+          ree Design Consultation
         </h4>
 
         <div class="text-black my-6 space-y-4 leading-loose">
           <p class="mt-1 font-light tracking-widest text-md text-[#454545]">
-            Sales Rep, Project Manager, Project Foreman & Clients all meet
-            onsite to review the plans/scope of work.
+            We start with a free consultation to discuss your vision and goals.
           </p>
         </div>
       </section>
@@ -96,7 +94,6 @@ const galleryData = ref([
     </div>
   </div>
 
-
   <div class="px-4 lg:px-20">
     <div class="mt-12 flex justify-between">
       <section class="max-w-lg">
@@ -105,19 +102,17 @@ const galleryData = ref([
         >
           Step 2:
           <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >P
+            >2
           </span>
-          roject Mobilization
+
+          D Landscape Design
         </h4>
 
         <div class="text-black my-6 space-y-4 leading-loose">
-          <ul
-            class="list-disc list-inside mt-6 font-light tracking-widest text-md text-[#454545]"
-          >
-            <li>Daily project check in with project manager</li>
-            <li>Inspections with city officials</li>
-            <li>Coordination with all trades</li>
-          </ul>
+          <p class="mt-1 font-light tracking-widest text-md text-[#454545]">
+            We create a 2D design plan that shows a clear, overhead view of your
+            future landscape.
+          </p>
         </div>
       </section>
 
@@ -141,19 +136,16 @@ const galleryData = ref([
         >
           Step 3:
           <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >P
+            >3
           </span>
-          roject Management
+          D Design Renderings
         </h4>
 
         <div class="text-black my-6 space-y-4 leading-loose">
-          <ul
-            class="list-disc list-inside mt-1 font-light tracking-widest text-md text-[#454545]"
-          >
-            <li>Daily project check in with project manager</li>
-            <li>Inspections with city officials</li>
-            <li>Coordination with all trades</li>
-          </ul>
+          <p class="mt-1 font-light tracking-widest text-md text-[#454545]">
+            We take it a step further by transforming the 2D plan into a
+            realistic 3D rendering.
+          </p>
         </div>
       </section>
 
@@ -175,23 +167,15 @@ const galleryData = ref([
         >
           Step 4:
           <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >P
+            >C
           </span>
-          roject Execution
+          om-<br>prehensive Quote
         </h4>
 
         <div class="text-black my-6 space-y-4 leading-loose">
-          <ul
-            class="list-disc list-inside mt-6 font-light tracking-widest text-md text-[#454545]"
-          >
-            <li>Fully executed landscape plan</li>
-            <li>Final walkthrough</li>
-            <li>
-              Tutorials on how everything works, from irrigation to lighting,
-              grills and kitchen components. We want our clients to understand
-              how everything we just installed works.
-            </li>
-          </ul>
+          <p class="mt-1 font-light tracking-widest text-md text-[#454545]">
+            Once the design is finalized, we provide a detailed, itemized quote.
+          </p>
         </div>
       </section>
 
@@ -205,8 +189,17 @@ const galleryData = ref([
     </div>
   </div>
 
-  
-<!-- 
+  <footer class="lg:px-20 mt-14 text-center">
+    <p class="text-[#454545] font-semibold mb-4">Ready to Get Started?</p>
+    <FilledButton
+      background-color="black"
+      text="Design Your Dream Yard"
+      text-color="white"
+      class="uppercase w-[90%] font-semibold lg:w-[290px]"
+    />
+  </footer>
+
+  <!-- 
   <p class="font-playfairDisplay text-4xl text-center font-medium mt-28">
     <span class="text-new-gray font-imperial text-5xl">P </span>rojects we have
     worked on

@@ -48,7 +48,7 @@ const features3 = ref([
       <div
         class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4"
       >
-        <h1 class="text-5xl font-bold md:text-6xl">Landscape Design</h1>
+        <h1 class="text-5xl font-bold md:text-6xl">Our Design Process</h1>
         <p class="mt-4 mb-12 text-lg md:text-xl max-w-2xl">
           Professional landscape design simplified
         </p>
@@ -63,7 +63,7 @@ const features3 = ref([
     </div>
 
     <ViewDesignSteps />
-    <ViewDesignProcessOld />
+
     <ViewTestimonial />
 
     <div id="packages" class="my-10 lg:my-20 max-w-lg mx-auto">
