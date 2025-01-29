@@ -32,7 +32,7 @@ defineProps(["captImage", "title", "paragraph", "content", "moreContent"]);
     </section>
   </div>
 
-  <ViewDesignProcess />
+  <ViewDesignProcessOld />
   <!-- <ViewBeforeAndAfter /> -->
   <ViewTestimonial />
 

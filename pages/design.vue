@@ -63,7 +63,7 @@ const features3 = ref([
     </div>
 
     <ViewDesignSteps />
-    <ViewDesignProcess />
+    <ViewDesignProcessOld />
     <ViewTestimonial />
 
     <div id="packages" class="my-10 lg:my-20 max-w-lg mx-auto">
