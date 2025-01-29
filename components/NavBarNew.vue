@@ -103,7 +103,7 @@ watch(isBodyClicked, (val) => {
         />
       </NuxtLink>
       <NuxtLink to="/">
-        <p class="font-medium">Schedule</p>
+        <p class="font-medium border-t p-2 rounded-xl">Schedule Consultation</p>
       </NuxtLink>
       <NuxtLink to="/portfolio" @click="clickDropdown('build')">
         <p class="font-medium">Portfolio</p>

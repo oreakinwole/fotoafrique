@@ -125,6 +125,40 @@ const datafQ = ref([
     },
   },
 ]);
+
+const features = ref([
+  "1 consultation with a designer",
+  "Up to 3 design revisions",
+  "Comprehensive planting plan",
+  "Hardscape layout",
+  "Outdoor lighting design",
+  "2D landscape plans for a clear project blueprint",
+]);
+const features2 = ref([
+  "1 consultation with a designer",
+  "Up to 10 design revisions",
+  "Comprehensive planting plan",
+  "Irrigation plan for efficient water management",
+  "Hardscape layout",
+  "Drainage planning for long-term durability",
+  "Outdoor lighting design",
+  "2D landscape plans for easy visualization",
+  "High-quality 3D renderings of your outdoor space",
+]);
+
+const features3 = ref([
+  "Unlimited 1:1 designer consultations for 30 days",
+  "Unlimited design revisions for ultimate flexibility",
+  "Comprehensive planting plan",
+  "Irrigation plan for optimal water use",
+  "Hardscape layout for stunning walkways, patios, and features",
+  "Drainage planning to protect your investment",
+  "Outdoor lighting design",
+  "Detailed 2D landscape plans",
+  "Ultra-realistic 3D renderings",
+  "3D Fly-Through Video: A virtual tour of your new yard",
+  "3D Nightscape: Visualize your design with stunning nighttime lighting",
+]);
 </script>
 
 <template>
@@ -162,7 +196,160 @@ const datafQ = ref([
     </section>
   </div> -->
 
-  
+  <div  class="my-10 lg:my-20 max-w-lg mx-auto">
+      <div>
+        <h4 class="font-playfairDisplay text-5xl tracking-wide font-[500]">
+          Desi<span class="text-[#A89C93] font-imperial text-6xl">G </span>n
+          Packages
+        </h4>
+      </div>
+
+      <p class="text-[#454545] text-sm mt-4 leading-relaxed tracking-widest">
+        Transform your outdoor space with our expertly crafted design packages.
+        Each package is tailored to meet your needs, whether you’re looking for
+        foundational plans or a fully immersive, luxury experience. With access
+        to cutting-edge designs, we make your dream yard a reality.
+      </p>
+    </div>
+
+    <div class="flex flex-wrap gap-8">
+      <div
+        class="max-w-md mx-auto shadow-lg rounded-2xl border border-gray-200"
+      >
+        <div class="text-center bg-gray-100 rounded-t-2xl p-4">
+          <h2 class="text-2xl font-bold">Standard Design Package</h2>
+          <p class="mt-2 text-gray-600">
+            Perfect for homeowners looking for professional landscape plans to
+            get started.
+          </p>
+        </div>
+        <div class="p-6 space-y-4">
+          <ul class="space-y-2 text-gray-700">
+            <li
+              v-for="(item, index) in features"
+              :key="index"
+              class="flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 text-black mr-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 00-1.414 0L7 13.586 4.707 11.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l9-9a1 1 0 000-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              {{ item }}
+            </li>
+          </ul>
+          <div class="text-center">
+            <FilledButton
+              :noAction="true"
+              background-color="black"
+              text=" Explore the Standard Package"
+              text-color="white"
+              class="mt-32"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+
+      <div
+        class="max-w-md mx-auto shadow-lg rounded-2xl border border-gray-200"
+      >
+        <div class="text-center bg-gray-100 rounded-t-2xl p-4">
+          <h2 class="text-2xl font-bold">Premium Design Package</h2>
+          <p class="mt-2 text-gray-600">
+            Ideal for more complex projects requiring detailed planning and
+            customization.
+          </p>
+        </div>
+        <div class="p-6 space-y-4">
+          <ul class="space-y-2 text-gray-700">
+            <li
+              v-for="(item, index) in features2"
+              :key="index"
+              class="flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 text-black mr-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 00-1.414 0L7 13.586 4.707 11.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l9-9a1 1 0 000-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              {{ item }}
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <FilledButton
+              :noAction="true"
+              background-color="black"
+              text="Discover the Premium Package"
+              text-color="white"
+              class="mt-8"
+            />
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <div
+        class="max-w-md mx-auto shadow-lg rounded-2xl border border-gray-200"
+      >
+        <div class="text-center bg-gray-100 rounded-t-2xl p-4">
+          <h2 class="text-2xl font-bold">Luxe Design Package</h2>
+          <p class="mt-2 text-gray-600">
+            Our most immersive package for clients seeking a fully customized
+            experience.
+          </p>
+        </div>
+        <div class="p-6 space-y-4">
+          <ul class="space-y-2 text-gray-700">
+            <li
+              v-for="(item, index) in features3"
+              :key="index"
+              class="flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 text-black mr-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 00-1.414 0L7 13.586 4.707 11.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l9-9a1 1 0 000-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              {{ item }}
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <FilledButton
+              :noAction="true"
+              background-color="black"
+              text="Upgrade to Luxe"
+              text-color="white"
+              class="mt-8"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
 
   <div
     id="quiz"

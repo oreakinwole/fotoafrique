@@ -96,7 +96,7 @@ const galleryData = ref([
     </div>
   </div>
 
-  <!-- Why Us -->
+
   <div class="px-4 lg:px-20">
     <div class="mt-12 flex justify-between">
       <section class="max-w-lg">
@@ -167,7 +167,43 @@ const galleryData = ref([
     </div>
   </div>
 
+  <div class="px-4 lg:px-20">
+    <div class="mt-12 flex justify-between">
+      <section class="max-w-lg">
+        <h4
+          class="hidden lg:block font-playfairDisplay text-5xl tracking-wide font-semibold"
+        >
+          Step 4:
+          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
+            >P
+          </span>
+          roject Execution
+        </h4>
 
+        <div class="text-black my-6 space-y-4 leading-loose">
+          <ul
+            class="list-disc list-inside mt-6 font-light tracking-widest text-md text-[#454545]"
+          >
+            <li>Fully executed landscape plan</li>
+            <li>Final walkthrough</li>
+            <li>
+              Tutorials on how everything works, from irrigation to lighting,
+              grills and kitchen components. We want our clients to understand
+              how everything we just installed works.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="hidden lg:block h-[500px] w-1/2 bg-blue-100 rounded-3xl">
+        <img
+          src="https://yardzen.wpenginepowered.com/wp-content/uploads/2024/10/Step-2.png"
+          alt="team photo"
+          class="w-full h-full object-cover rounded-3xl"
+        />
+      </div>
+    </div>
+  </div>
 
   
 <!-- 
