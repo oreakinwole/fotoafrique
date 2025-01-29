@@ -16,7 +16,10 @@
     <div
       class="bg-gray-400 bg-opacity-20 h-[80px] w-full absolute bottom-0"
     >
+    <NuxtMarquee class="w-full h-full">
       <img src="@/assets/svg/partners.svg" class="w-full h-full object-cover" />
+
+    </NuxtMarquee>
     </div>
   </div>
 
