@@ -1,5 +1,5 @@
 <script setup>
-import logoWhite from "@/assets/svg/logo_white.svg";
+import logo from "@/assets/svg/logo.svg";
 
 const isShowMobileNav = ref(false);
 const isDesignOpen = ref(false);
@@ -60,7 +60,7 @@ watch(isBodyClicked, (val) => {
   <PopUpModal />
   <div
     :class="route.path !== '/' && 'bg-black'"
-    class="lg:absolute lg:top-10 hero-trigger lg:bg-none flex w-full items-center justify-between py-4 lg:py-8 px-8 lg:px-28 max-w-[1600px] z-20"
+    class="lg:absolute lg:top-10 hero-trigger lg:bg-[#F1EDE8] flex w-full items-center justify-between py-4 lg:py-8 px-8 lg:px-28 max-w-[1600px] z-20"
   >
     <NuxtLink
       to="/"
@@ -70,11 +70,11 @@ watch(isBodyClicked, (val) => {
           : 'animate__animated animate__fadeIn animate__slow'
       "
     >
-      <img :src="logoWhite" alt="modern yardz logo" class="w-28" />
+      <img :src="logo" alt="modern yardz logo" class="w-28" />
     </NuxtLink>
 
     <div
-      class="flex flex-row items-center gap-16 uppercase tracking-widest text-white"
+      class="flex flex-row items-center gap-16 uppercase tracking-widest text-black"
     >
       <!-- <NuxtLink to="/">
         <p class="font-light ">Home</p>
@@ -105,7 +105,9 @@ watch(isBodyClicked, (val) => {
         />
       </NuxtLink>
       <NuxtLink to="/">
-        <p class="font-medium border-t p-2 rounded-xl">Schedule Consultation</p>
+        <p class="font-medium border-t border-black p-2 rounded-xl">
+          Schedule Consultation
+        </p>
       </NuxtLink>
       <NuxtLink to="/portfolio" @click="clickDropdown('build')">
         <p class="font-medium">Portfolio</p>
@@ -119,56 +121,56 @@ watch(isBodyClicked, (val) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="19.8422" cy="19.8422" r="19.3422" stroke="white" />
+      <circle cx="19.8422" cy="19.8422" r="19.3422" stroke="#000" />
       <path
         d="M20.9963 16.132V18.0367H23.223L22.8704 20.6023H20.9963V26.5135C20.6205 26.5687 20.2361 26.5975 19.8459 26.5975C19.3954 26.5975 18.9531 26.5595 18.5223 26.486V20.6023H16.4688V18.0367H18.5223V15.7062C18.5223 14.2605 19.6299 13.0879 20.9968 13.0879V13.0891C21.0009 13.0891 21.0044 13.0879 21.0084 13.0879H23.2235V15.3068H21.7761C21.346 15.3068 20.9968 15.6762 20.9968 16.1314L20.9963 16.132Z"
-        fill="white"
+        fill="#000"
       />
-      <circle cx="94.5297" cy="19.8422" r="19.3422" stroke="white" />
+      <circle cx="94.5297" cy="19.8422" r="19.3422" stroke="#000" />
       <path
         d="M97.9193 13.0869H90.8737C88.9273 13.0869 87.3438 14.6709 87.3438 16.6179V23.0655C87.3438 25.0125 88.9273 26.5965 90.8737 26.5965H97.9193C99.8658 26.5965 101.449 25.0125 101.449 23.0655V16.6179C101.449 14.6709 99.8658 13.0869 97.9193 13.0869ZM88.589 16.6179C88.589 15.3579 89.6141 14.3325 90.8737 14.3325H97.9193C99.1789 14.3325 100.204 15.3579 100.204 16.6179V23.0655C100.204 24.3255 99.1789 25.3509 97.9193 25.3509H90.8737C89.6141 25.3509 88.589 24.3255 88.589 23.0655V16.6179Z"
-        fill="white"
+        fill="#000"
       />
       <path
         d="M94.3929 23.1255C96.2029 23.1255 97.6763 21.6525 97.6763 19.8411C97.6763 18.0297 96.2037 16.5566 94.3929 16.5566C92.582 16.5566 91.1094 18.0297 91.1094 19.8411C91.1094 21.6525 92.582 23.1255 94.3929 23.1255ZM94.3929 17.8031C95.5169 17.8031 96.4311 18.7175 96.4311 19.8419C96.4311 20.9662 95.5169 21.8807 94.3929 21.8807C93.2688 21.8807 92.3546 20.9662 92.3546 19.8419C92.3546 18.7175 93.2688 17.8031 94.3929 17.8031Z"
-        fill="white"
+        fill="#000"
       />
       <path
         d="M97.9784 17.0863C98.4658 17.0863 98.8631 16.6897 98.8631 16.2014C98.8631 15.713 98.4666 15.3164 97.9784 15.3164C97.4902 15.3164 97.0938 15.713 97.0938 16.2014C97.0938 16.6897 97.4902 17.0863 97.9784 17.0863Z"
-        fill="white"
+        fill="#000"
       />
-      <circle cx="169.209" cy="19.8422" r="19.3422" stroke="white" />
+      <circle cx="169.209" cy="19.8422" r="19.3422" stroke="#000" />
       <path
         d="M162.074 13.0869L167.645 20.5381L162.039 26.5965H163.301L168.21 21.2926L172.176 26.5965H176.47L170.585 18.7261L175.804 13.0869H174.542L170.021 17.9717L166.369 13.0869H162.075H162.074ZM163.929 14.0166H165.902L174.613 25.6668H172.64L163.929 14.0166Z"
-        fill="white"
+        fill="#000"
       />
     </svg>
 
     <svg
       @click="toggleNav"
-      class="w-7 lg:w-8 cursor-pointer"
+        class="w-7 lg:w-8 cursor-pointer"
       width="55"
       height="55"
       viewBox="0 0 55 55"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect opacity="0.1" width="55" height="55" rx="8" fill="white" />
+      <rect opacity="0.05" width="55" height="55" rx="8" fill="#090908" />
       <path
-        d="M12.125 18.958H42.875"
-        stroke="white"
+        d="M12.125 18.959H42.875"
+        stroke="#090908"
         stroke-width="2.5"
         stroke-linecap="round"
       />
       <path
         d="M12.125 27.5H42.875"
-        stroke="white"
+        stroke="#090908"
         stroke-width="2.5"
         stroke-linecap="round"
       />
       <path
         d="M12.125 36.041H42.875"
-        stroke="white"
+        stroke="#090908"
         stroke-width="2.5"
         stroke-linecap="round"
       />

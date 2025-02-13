@@ -22,11 +22,8 @@
       data-aos="fade-up"
       data-aos-easing="linear"
     >
-      <h4 class="font-playfairDisplay text-4xl lg:text-5xl font-semibold mb-2">
-        Our Design Pro<span
-          class="text-[#A89C93] font-imperial font-normal text-5xl lg:text-6xl"
-          >C</span
-        >ess
+      <h4 class=" text-4xl lg:text-5xl font-semibold mb-2">
+        OUR DESIGN PROCESS
       </h4>
 
       <p class="text-xl">

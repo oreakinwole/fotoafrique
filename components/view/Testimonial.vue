@@ -3,16 +3,15 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 </script>
 
 <template>
-  <div id="testimonials" class="mt-20 lg:mt-28 px-4 lg:px-28 w-screen">
+  <div
+    id="testimonials"
+    class="mt-20 bg-[#F9F4EE] lg:py-28 px-4 lg:px-28 w-screen"
+  >
     <div class="px-4 lg:px-20 text-center mb-12">
-      <h4 class="font-playfairDisplay tracking-wide text-5xl font-semibold">
-        <span class="font-imperial font-normal text-[#A89C93] text-7xl"
-          >C
-        </span>
-        <span class="text-[#A89C93]">lient </span>
-        Spotlight
-      </h4>
-      <p class="text-lg mt-2 text-[#454545] tracking-widest">Transformations We’re Proud Of</p>
+      <h4 class="tracking-wide text-5xl font-semibold">CLIENT SPOTLIGHT</h4>
+      <p class="text-lg mt-2 font-medium tracking-widest">
+        TRANSFORMATIONS WE ARE PROUD OF
+      </p>
       <!-- <p
         class="text-md text-[#454545] mt-4 lg:max-w-screen-sm leading-relaxed lg:mx-auto"
       >
@@ -78,9 +77,11 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
           <div class="mb-3">
             <img src="@/assets/images/testimonial/rebecca.png" width="40" />
           </div>
-          <span class="text-4xl">❝</span>
+          <span class="text-4xl">“</span>
 
-          <p class="text-sm font-light tracking-widest lg:text-md italic text-justify">
+          <p
+            class="text-sm font-light  lg:text-md  text-justify"
+          >
             Honestly can't say enough good things about this company as we are
             SO THRILLED with the finished product. We hired them to demo and
             install all new pavers, grass turf and put in new drainage and the
@@ -143,9 +144,9 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
           <div class="mb-3">
             <img src="@/assets/images/testimonial/rtorres.png" width="40" />
           </div>
-          <span class="text-4xl">❝</span>
+          <span class="text-4xl">“</span>
 
-          <p class="text-sm font-light lg:text-md italic tracking-widest text-justify">
+          <p class="text-sm font-light lg:text-md  text-justify">
             Stumbled across Modern Yardz while Googling landscapers in San Diego
             County. Immediately was drawn to them based on their reviews and the
             work portrayed on their website. Submitted a free consultation and

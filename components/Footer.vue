@@ -38,9 +38,9 @@ const handleBookConsult = () => {
 
     <div class="hidden lg:flex lg:flex-col lg:items-center lg:justify-center">
       <h1
-        class="text-center tracking-wider font-playfairDisplay text-3xl lg:text-6xl flex flex-col italic max-w-80 lg:max-w-screen-sm"
+        class="text-center text-3xl lg:text-6xl flex flex-col max-w-80 lg:max-w-screen-sm"
       >
-        Design Your DREAM outdoor Oasis
+        Design your dream outdoor Oasis
       </h1>
       <div class="font-[500] text-[16px] mt-12">
         <OutlinedButton(BLACK)

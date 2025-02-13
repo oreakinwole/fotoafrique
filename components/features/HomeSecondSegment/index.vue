@@ -4,7 +4,6 @@
   <ViewDesignProcessOld />
   <ViewTestimonial />
 
-
   <div
     class="mt-24 lg:hidden text-center"
     data-aos="fade-up"
@@ -12,10 +11,8 @@
   >
     <div>
       <h4 class="font-playfairDisplay text-5xl font-medium">
-          Our Servi<span class="text-[#A89C93] font-imperial  text-6xl"
-            >C </span
-          >es
-        </h4>
+        Our Servi<span class="text-[#A89C93] font-imperial text-6xl">C </span>es
+      </h4>
     </div>
   </div>
 
@@ -26,11 +23,7 @@
       data-aos-easing="linear"
     >
       <div>
-        <h4 class="font-playfairDisplay tracking-wide text-5xl font-semibold leading-relaxed">
-          Our Servi<span class="text-[#A89C93] font-imperial font-normal  text-6xl"
-            >C</span
-          >es
-        </h4>
+        <h4 class="text-5xl font-semibold leading-relaxed">OUR SERVICES</h4>
       </div>
 
       <!-- <p
@@ -48,7 +41,7 @@
     </div>
 
     <div data-aos-duration="2000" data-aos-delay="400" data-aos="fade-in">
-      <div class="ml-20 hidden lg:block ">
+      <div class="ml-20 hidden lg:block">
         <NuxtMarquee class="max-w-[95em]">
           <div class="flex flex-row gap-8">
             <div>
@@ -68,8 +61,8 @@
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="  font-medium text-[18px]">Paver Patios</h4>
-                <p class="   text-[16px]">
+                <h4 class="font-medium text-[18px]">Paver Patios</h4>
+                <p class="text-[16px]">
                   <svg
                     width="24"
                     height="24"
@@ -115,10 +108,8 @@
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="  font-medium text-[18px]">
-                  Concrete Patios
-                </h4>
-                <p class="   text-[16px]">
+                <h4 class="font-medium text-[18px]">Concrete Patios</h4>
+                <p class="text-[16px]">
                   <svg
                     width="24"
                     height="24"
@@ -164,10 +155,8 @@
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="  font-medium text-[18px]">
-                  Artificial Turf
-                </h4>
-                <p class="   text-[16px]">
+                <h4 class="font-medium text-[18px]">Artificial Turf</h4>
+                <p class="text-[16px]">
                   <svg
                     width="24"
                     height="24"
@@ -213,10 +202,8 @@
               </NuxtLink>
 
               <div class="flex flex-row justify-between mt-5">
-                <h4 class="  font-medium text-[18px]">
-                  Outdoor Kitchens
-                </h4>
-                <p class="   text-[16px]">
+                <h4 class="font-medium text-[18px]">Outdoor Kitchens</h4>
+                <p class="text-[16px]">
                   <svg
                     width="24"
                     height="24"
@@ -269,7 +256,7 @@
         </NuxtMarquee>
       </div>
 
-      <div class="lg:hidden text-center md:w-full md:mx-[1px] ">
+      <div class="lg:hidden text-center md:w-full md:mx-[1px]">
         <div class="flex flex-wrap justify-center gap-2 lg:gap-8 md:w-full">
           <div class="w-[47%] md:w-[49%]">
             <NuxtLink to="/services/patios-and-pergolas">
@@ -279,7 +266,7 @@
                 <img
                   src="@/assets/images/services/paver.png"
                   alt="frontyard picture"
-                  class="w-full  h-full rounded-xl"
+                  class="w-full h-full rounded-xl"
                 />
                 <div
                   class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
@@ -287,9 +274,9 @@
               </div>
             </NuxtLink>
 
-            <div class="flex justify-between mt-5 ">
-              <h4 class="  font-medium text-[18px] md:mx-2">Paver Patios</h4>
-              <p class="   text-[16px] ">
+            <div class="flex justify-between mt-5">
+              <h4 class="font-medium text-[18px] md:mx-2">Paver Patios</h4>
+              <p class="text-[16px]">
                 <svg
                   width="24"
                   height="24"
@@ -335,8 +322,8 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5">
-              <h4 class="  font-medium text-[18px]  md:mx-2">Concrete Patios</h4>
-              <p class="   text-[16px]">
+              <h4 class="font-medium text-[18px] md:mx-2">Concrete Patios</h4>
+              <p class="text-[16px]">
                 <svg
                   width="24"
                   height="24"
@@ -382,8 +369,8 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5">
-              <h4 class="  font-medium text-[18px]  md:mx-2">Artificial Turf</h4>
-              <p class="   text-[16px]">
+              <h4 class="font-medium text-[18px] md:mx-2">Artificial Turf</h4>
+              <p class="text-[16px]">
                 <svg
                   width="24"
                   height="24"
@@ -428,8 +415,8 @@
             </NuxtLink>
 
             <div class="flex justify-between mt-5">
-              <h4 class="  font-medium text-[18px]  md:mx-2">Outdoor Kitchens</h4>
-              <p class="   text-[16px]">
+              <h4 class="font-medium text-[18px] md:mx-2">Outdoor Kitchens</h4>
+              <p class="text-[16px]">
                 <svg
                   width="24"
                   height="24"
@@ -470,7 +457,6 @@
   </div>
 
   <!-- <ViewBeforeAndAfter /> -->
-
 </template>
 
 <style>
