@@ -60,7 +60,7 @@ watch(isBodyClicked, (val) => {
   <PopUpModal />
   <div
     :class="route.path !== '/' && 'bg-black'"
-    class="lg:absolute lg:top-10 hero-trigger lg:bg-[#F1EDE8] flex w-full items-center justify-between py-4 lg:py-8 px-8 lg:px-28 max-w-[1600px] z-20"
+    class="lg:absolute lg:top-10 hero-trigger lg:bg-[#F1EDE8] flex w-full items-center justify-between py-4 px-8 lg:px-12 max-w-[1600px] z-20"
   >
     <NuxtLink
       to="/"
@@ -73,36 +73,47 @@ watch(isBodyClicked, (val) => {
       <img :src="logo" alt="modern yardz logo" class="w-28" />
     </NuxtLink>
 
-    <div
-      class="flex flex-row items-center gap-16 uppercase tracking-widest text-black"
-    >
+    <nav>
       <!-- <NuxtLink to="/">
         <p class="font-light ">Home</p>
       </NuxtLink> -->
-      <NuxtLink to="/design" class="relative">
-        <p class="font-medium">Design</p>
-        <NavdropDesign
-          v-if="isDesignOpen"
-          :class="route.path !== '/' && 'bg-black'"
-        />
-      </NuxtLink>
+      <ul
+        class="flex flex-row items-center gap-16 uppercase tracking-widest text-black"
+      >
+        <li>
+          <NuxtLink to="/design" class="relative group max-h-[100px]">
+            <p class="font-medium">Design</p>
+            <NavdropDesign
+              class="absolute -left-[10rem] top-14 z-10 mt-[1px] w-[50rem] origin-top-right border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px] opacity-0 invisible shadow-custom-light space-y-4 group-hover:opacity-100 group-hover:visible transition-all"
+            />
+          </NuxtLink>
+        </li>
 
-      <NuxtLink to="/build-steps" class="relative">
-        <p class="font-medium">Build</p>
-        <NavdropBuild
-          v-if="isBuildOpen"
-          :class="route.path !== '/' && 'bg-black'"
-        />
-      </NuxtLink>
-      <NuxtLink to="/">
-        <p class="font-medium border-t border-black p-2 rounded-xl">
-          Schedule Consultation
-        </p>
-      </NuxtLink>
-      <NuxtLink to="/portfolio">
-        <p class="font-medium">Portfolio</p>
-      </NuxtLink>
-    </div>
+        <li>
+          <NuxtLink to="/build-steps" class="relative">
+            <p class="font-medium">Build</p>
+            <NavdropBuild
+              v-if="isBuildOpen"
+              :class="route.path !== '/' && 'bg-black'"
+            />
+          </NuxtLink>
+        </li>
+
+        <li>
+          <NuxtLink to="/">
+            <p class="font-medium border-t border-black p-2 rounded-xl">
+              Schedule Consultation
+            </p>
+          </NuxtLink>
+        </li>
+
+        <li>
+          <NuxtLink to="/portfolio">
+            <p class="font-medium">Portfolio</p>
+          </NuxtLink>
+        </li>
+      </ul>
+    </nav>
 
     <svg
       width="190"

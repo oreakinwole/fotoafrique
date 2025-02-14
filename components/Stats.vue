@@ -15,7 +15,7 @@ const stats = ref([
       </h2>
 
       <div
-        class="mt-20 w-full sm:h-[580px] flex sm:flex-row flex-col justify-between bg-[#161813] text-white"
+        class="mt-20 w-full rounded-xl overflow-hidden sm:h-[580px] flex sm:flex-row flex-col justify-between bg-[#161813] text-white"
       >
         <div class="sm:w-2/3 w-full h-full bg-blue-100">
           <video class="h-full w-full object-cover" autoplay muted loop>

@@ -12,10 +12,10 @@ function handleBookConsult() {
   <div class="flex bg-black items-center justify-center py-3">
     <!-- <h4 class="text-white text-center uppercase cursor-pointer">{{ text }}</h4> -->
 
-    <p class="text-xs font-medium animate__animated animate__flipInX">
+    <p class="text-xs  animate__animated animate__flipInX">
       <!-- <span class="text-white">Start Your Transformation Today –</span> -->
       <span
-        class="font-bold text-white border-white tracking-widest border-b"
+        class="font-bold  text-white border-white tracking-widest border-b"
         @click="handleBookConsult"
         role="button"
       >
