@@ -14,44 +14,42 @@ const stats = ref([
         A CUT ABOVE THE REST
       </h2>
 
-      <div class="mt-20 h-[580px] flex flex-row-reverse justify-center">
-        <section class="w-1/3 h-full bg-[#161813] text-white pl-16 pt-12 space-y-16">
-          <div class="space-y-4">
-            <span class="px-4 py-1 text-center rounded-md bg-[#EFF4E4] text-xs font-medium text-[#161813]">SATISFACTION</span>
-            <p class="text-5xl font-medium tracking-wide">3500</p>
-            <p class="text-sm font-light tracking-wide">Satisfied Customers</p>
-          </div>
-         
-          <div class="space-y-4">
-            <span class="px-4 py-1 text-center rounded-md bg-[#EFF4E4] text-xs font-medium text-[#161813]">SATISFACTION</span>
-            <p class="text-5xl font-medium tracking-wide">3500</p>
-            <p class="text-sm font-light tracking-wide">Satisfied Customers</p>
-          </div>
-         
-          <div class="space-y-4">
-            <span class="px-4 py-1 text-center rounded-md bg-[#EFF4E4] text-xs font-medium text-[#161813]">SATISFACTION</span>
-            <p class="text-5xl font-medium tracking-wide">3500</p>
-            <p class="text-sm font-light tracking-wide">Satisfied Customers</p>
-          </div>
-         
-        </section>
-
-        <div class="hidden lg:block w-1/2 h-full bg-blue-100">
-          <!-- <img
-          src="@/assets/images/148-web-or-mls-DSC09212.jpg"
-          alt="team photo"
-          class="w-full h-full object-cover rounded-3xl"
-        /> -->
-
-          <video
-            class="h-full w-full object-cover"
-            autoplay
-            muted
-            loop
-          >
+      <div
+        class="mt-20 w-full sm:h-[580px] flex sm:flex-row flex-col justify-between bg-[#161813] text-white"
+      >
+        <div class="sm:w-2/3 w-full h-full bg-blue-100">
+          <video class="h-full w-full object-cover" autoplay muted loop>
             <source src="/video/quizvid.mp4" type="video/mp4" />
             Something went wrong while playing video
           </video>
+        </div>
+        <div
+          class="flex-1 flex justify-around items-center sm:flex-col flex-row flex-wrap gap-8 py-8 px-6"
+        >
+          <div class="space-y-2">
+            <span
+              class="px-4 py-1 text-center rounded-md bg-[#EFF4E4] text-xs font-medium text-[#161813]"
+              >SATISFACTION</span
+            >
+            <p class="text-5xl font-medium tracking-wide">3500</p>
+            <p class="text-sm font-light tracking-wide">Satisfied Customers</p>
+          </div>
+          <div class="space-y-2">
+            <span
+              class="px-4 py-1 text-center rounded-md bg-[#EFF4E4] text-xs font-medium text-[#161813]"
+              >SATISFACTION</span
+            >
+            <p class="text-5xl font-medium tracking-wide">3500</p>
+            <p class="text-sm font-light tracking-wide">Satisfied Customers</p>
+          </div>
+          <div class="space-y-2">
+            <span
+              class="px-4 py-1 text-center rounded-md bg-[#EFF4E4] text-xs font-medium text-[#161813]"
+              >SATISFACTION</span
+            >
+            <p class="text-5xl font-medium tracking-wide">3500</p>
+            <p class="text-sm font-light tracking-wide">Satisfied Customers</p>
+          </div>
         </div>
       </div>
     </div>

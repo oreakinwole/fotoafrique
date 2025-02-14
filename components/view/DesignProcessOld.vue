@@ -22,7 +22,7 @@
       data-aos="fade-up"
       data-aos-easing="linear"
     >
-      <h4 class=" text-4xl lg:text-5xl font-semibold mb-2">
+      <h4 class="text-4xl lg:text-5xl font-semibold mb-2">
         OUR DESIGN PROCESS
       </h4>
 
@@ -42,7 +42,7 @@
     <!-- Start mobile view -->
     <div class="lg:hidden flex justify-center flex-wrap gap-2">
       <div
-        class="rounded-lg  flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
+        class="rounded-lg flex flex-col justify-between w-[48%] h-[295px] border border-[#A89C93] px-1 pt-2 pb-1"
       >
         <main class="px-1">
           <div class="flex justify-between">
