@@ -12,9 +12,9 @@
     <MobileHero />
 
     <div
-      class="bg-gray-400 bg-opacity-20 h-[80px] w-full absolute bottom-0 overflow-hidden"
+      class="bg-[#090908] bg-opacity-50 h-[80px] w-full absolute bottom-0 overflow-hidden"
     >
-      <NuxtMarquee class="w-full h-full">
+      <NuxtMarquee class="w-full h-full overflow-hidden">
         <img
           src="@/assets/svg/partners.svg"
           class="w-full h-full object-cover"
