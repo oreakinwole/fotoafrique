@@ -1,7 +1,9 @@
 <script setup>
 const props = defineProps(["faqData"]);
-
-const isViewingFaq = ref(null);
+const openIndex = ref(null);
+const toggleFAQ = (index) => {
+  openIndex.value = openIndex === index ? null : index;
+};
 
 // In mainEntity property dataArray is a Proxy array because of vue reactivity, so we are normalizing to clean array
 props.faqData?.dataArray &&
@@ -24,54 +26,83 @@ props.faqData?.dataArray &&
 </script>
 
 <template>
-  <div class=" px-4 lg:px-20">
-    <div class="mt-12 flex justify-between">
+  <div class="py-14 px-4 lg:px-20 bg-black text-white">
+    <div class="mt-20 min-h-[720px] flex justify-between">
       <section class="max-w-lg">
-        <h4
-          class="hidden lg:block font-playfairDisplay text-5xl tracking-wide font-semibold"
-        >
-          Got
-          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >Q
-          </span>
-          uestions ?
+        <h4 class="hidden lg:block text-5xl tracking-wide font-semibold">
+          GOT QUESTIONS?
         </h4>
-        <p class="text-sm tracking-widest mb-12 max-w-md mt-4">
-          Frequently Asked Questions. Here are some common questions. Find the
-          answers you're looking for below.
-        </p>
 
-        <!-- FAQ Section -->
-        <div class="lg:px-5 space-y-8">
+        <div class="text-white my-6 leading-loose">
+          <p class="mt-1 font-light tracking-widest text-md text-[#D9D9D9]">
+            Frequently Asked Questions. Here are some common questions. Find the
+            answers you're looking for below.
+          </p>
+        </div>
+
+        <div class="space-y-2">
           <div
             v-for="(faq, index) in faqData.dataArray.slice(0, 6)"
             :key="faq.question"
-            class="lg:max-w-[600px] border-t border-b border-[#F5F0EA] py-3 mx-3 lg:mx-auto relative"
-            @mouseenter="faq.hover = true"
-            @mouseleave="faq.hover = false"
-            @click="isViewingFaq = index"
+            class="overflow-hidden border-b-[.3px]"
           >
-            <h4 class="font-[600] text-sm tracking-widest flex-grow">
-              {{ faq.name }}
-            </h4>
+            <button
+              class="flex w-full space-x-4 items-center p-4"
+              @click="toggleFAQ(index)"
+            >
+              <svg
+                class="h-4 w-4"
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.25 12.5H18.75"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.5 18.75V6.25"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
 
-            <p
-              v-if="isViewingFaq === index"
-              class="lg:text-sm text-black font-light tracking-widest bg-white p-3 mt-12 animate__animated animate__slideInLeft"
+              <span class="text-sm font-semibold">{{ faq.name }}</span>
+            </button>
+            <div
+              :class="` text-sm overflow-hidden transition-all duration-300 ease-in-out ${
+                openIndex === index ? 'max-h-40 p-4' : 'max-h-0 p-0'
+              }`"
             >
               {{ faq.acceptedAnswer.text }}
-            </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <div class="hidden lg:block h-[500px] w-1/2 bg-blue-100 rounded-3xl">
+      <div class="hidden lg:block h-[700px] w-1/2 bg-blue-100 rounded-3xl">
         <img
           src="https://yardzen.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6dgb2p7c933b%2F7gkM7nBCoazww2g684nXxq%2F7775a31f37a1d3d1af671a4c507435f4%2FimgCard-2.png&w=1200&q=75"
           alt="team photo"
           class="w-full h-full object-cover rounded-3xl"
         />
       </div>
+    </div>
+
+    <div class="hidden lg:block text-center mt-16">
+      <FilledButton
+        background-color="white"
+        text="Book Your Free Consultation Today"
+        text-color="black"
+        class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
+      />
     </div>
   </div>
 </template>

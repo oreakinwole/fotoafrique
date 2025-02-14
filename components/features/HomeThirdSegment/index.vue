@@ -353,7 +353,7 @@ const features3 = ref([
 
   <div
     id="quiz"
-    class="mt-28 lg:mt-0 mb-12 lg:mb-28 bg-black h-[430px] lg:h-[500px] relative"
+    class="mt-28 lg:mt-0  bg-black h-[430px] lg:h-[500px] relative"
   >
     <div class="absolute top-20 lg:top-28 left-2 right-2 z-10">
       <div

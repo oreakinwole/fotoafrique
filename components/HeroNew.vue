@@ -1,10 +1,11 @@
 <template>
   <div class="relative">
     <div class="hidden lg:block bg-black h-[700px] relative">
-      <div
-        class="bg-gray-900 absolute top-0 left-0 h-full w-full opacity-50"
-      ></div>
-
+   
+      <img
+          src="https://ucarecdn.com/18d3611c-5890-43ce-ae22-e1ee47901562/Group1000008999.jpg"
+          class="w-full h-full object-cover"
+        />
       
     </div>
 

@@ -29,12 +29,12 @@ const whyUs = [
       class="mt-20 min-h-[720px] flex flex-row-reverse items-center justify-between"
     >
       <section class="max-w-lg">
-        <h4 class="hidden lg:block text-5xl tracking-wide font-semibold">
+        <h4 class="hidden lg:block  text-5xl tracking-wide font-semibold">
           WELCOME TO MODERN YARDZ
         </h4>
 
         <div class="text-white my-6 space-y-6 leading-loose">
-          <div class="font-bold tracking-widest text-lg">
+          <div class="font-bold tracking-widest text-[#D0C2B0] text-lg">
             WE CREATE YOUR DREAM YARD
           </div>
 
