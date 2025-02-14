@@ -212,11 +212,11 @@ const features = ref([
   <section class="pb-20 px-4 lg:px-20 bg-[#EFF4E4]">
     <div class="py-20 max-w-full sm:max-w-xl lg:max-w-lg mx-auto">
       <div>
-        <h4 class="text-5xl tracking-wide font-[500] text-center">
+        <h4 class="text-5xl tracking-wide font-semibold text-center">
           Design Packages
         </h4>
       </div>
-      <p class="text-[#454545] text-sm mt-4 leading-relaxed tracking-widest">
+      <p class="text-[#454545] text-sm mt-4 text-center leading-relaxed tracking-widest">
         Transform your outdoor space with our expertly crafted design packages.
         Each package is tailored to meet your needs, whether you’re looking for
         foundational plans or a fully immersive, luxury experience. With access

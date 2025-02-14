@@ -18,12 +18,12 @@
 
   <div class="mt-12 lg:my-28 lg:flex">
     <div
-      class="ml-32 mt-10 hidden lg:block text-center"
+      class="ml-32 mt-10 hidden lg:block"
       data-aos="fade-up"
       data-aos-easing="linear"
     >
       <div>
-        <h4 class="text-5xl font-semibold leading-relaxed">OUR SERVICES</h4>
+        <h4 class="text-5xl font-semibold leading-normal">OUR SERVICES</h4>
       </div>
 
       <!-- <p
@@ -36,7 +36,7 @@
         background-color="black"
         text="SCHEDULE A CALL"
         text-color="white"
-        class="mt-28"
+        class="mt-16"
       />
     </div>
 

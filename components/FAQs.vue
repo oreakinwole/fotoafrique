@@ -34,13 +34,13 @@ props.faqData?.dataArray &&
         </h4>
 
         <div class="text-white my-6 leading-loose">
-          <p class="mt-1 font-light tracking-widest text-md text-[#D9D9D9]">
+          <p class="mt-1 font-light tracking-widest text-sm text-[#D9D9D9]">
             Frequently Asked Questions. Here are some common questions. Find the
             answers you're looking for below.
           </p>
         </div>
 
-        <div class="space-y-2">
+        <div class="space-y-2 mt-16">
           <div
             v-for="(faq, index) in faqData.dataArray.slice(0, 6)"
             :key="faq.question"
@@ -89,7 +89,7 @@ props.faqData?.dataArray &&
 
       <div class="hidden lg:block h-[700px] w-1/2 bg-blue-100 rounded-3xl">
         <img
-          src="https://yardzen.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6dgb2p7c933b%2F7gkM7nBCoazww2g684nXxq%2F7775a31f37a1d3d1af671a4c507435f4%2FimgCard-2.png&w=1200&q=75"
+          src="https://ucarecdn.com/133fd044-a6ad-4994-b151-522479630cb4/Img.jpg"
           alt="team photo"
           class="w-full h-full object-cover rounded-3xl"
         />

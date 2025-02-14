@@ -28,7 +28,7 @@ const whyUs = [
     <div class="mt-20 flex items-center justify-between gap-10">
       <div class="h-[700px] w-1/2 hidden lg:block bg-blue-100 rounded-3xl">
         <img
-          src="@/assets/images/teamphoto.jpeg"
+          src="https://ucarecdn.com/133fd044-a6ad-4994-b151-522479630cb4/Img.jpg"
           alt="team photo"
           class="w-full h-full object-cover rounded-3xl"
         />

@@ -22,37 +22,46 @@ export default {
 
 <template>
   <div class="hidden lg:block" id="socials">
-    <div class="flex justify-between px-44 ig">
-      <p class="text-black font-[600] text-[32px] font-playfairDisplay">
-        #modernyardz
+    <div class="flex justify-between items-center lg:px-20">
+      <p class="text-black font-semibold text-3xl">
+        <span class="text-2xl">#</span>modernyardz
       </p>
 
-      <div class="flex gap-2 cursor-pointer">
+      <div class="flex items-center gap-2 pr-1 cursor-pointer">
         <img :src="instagram" alt="instagram icon" class="w-[24px] h-[24px]" />
         <NuxtLink to="https://www.instagram.com/modern_yardz/">
-          <p class="uppercase   text-[16px] text-[#665244]">
+          <p class="uppercase text-sm text-[#665244]">
             Follow us on instagram
           </p>
         </NuxtLink>
       </div>
     </div>
 
-    <div class="flex justify-evenly pt-10 px-20">
-      <div class="flex-1 h-[392px]">
+    <div class="flex justify-between gap-6 pt-10 lg:px-20">
+      <div class="flex-1 rounded-xl overflow-hidden h-[300px]">
         <img
           src="@/assets/images/patio.png"
           class="h-full w-full object-cover"
         />
       </div>
 
-      <div class="flex-1 h-[392px]">
-        <img src="@/assets/images/gallery-pav1.png"  class="h-full w-full object-cover" />
+      <div class="flex-1 rounded-xl overflow-hidden h-[300px]">
+        <img
+          src="@/assets/images/gallery-pav1.png"
+          class="h-full w-full object-cover"
+        />
       </div>
-      <div class="flex-1 h-[392px]">
-        <img src="@/assets/images/purf.png"  class="h-full w-full object-cover" />
+      <div class="flex-1 rounded-xl overflow-hidden h-[300px]">
+        <img
+          src="@/assets/images/purf.png"
+          class="h-full w-full object-cover"
+        />
       </div>
-      <div class="flex-1 h-[392px]">
-        <img src="@/assets/images/concrete.webp"  class="h-full w-full object-cover" />
+      <div class="flex-1 rounded-xl overflow-hidden h-[300px]">
+        <img
+          src="@/assets/images/concrete.webp"
+          class="h-full w-full object-cover"
+        />
       </div>
     </div>
   </div>

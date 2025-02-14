@@ -79,12 +79,7 @@ watch(isBodyClicked, (val) => {
       <!-- <NuxtLink to="/">
         <p class="font-light ">Home</p>
       </NuxtLink> -->
-      <NuxtLink
-        to="/design"
-        class="relative"
-        @mouseover="hoverDropdown('design')"
-        @click="clickDropdown('design')"
-      >
+      <NuxtLink to="/design" class="relative">
         <p class="font-medium">Design</p>
         <NavdropDesign
           v-if="isDesignOpen"
@@ -92,12 +87,7 @@ watch(isBodyClicked, (val) => {
         />
       </NuxtLink>
 
-      <NuxtLink
-        to="/build-steps"
-        class="relative"
-        @mouseover="hoverDropdown('build')"
-        @click="clickDropdown('build')"
-      >
+      <NuxtLink to="/build-steps" class="relative">
         <p class="font-medium">Build</p>
         <NavdropBuild
           v-if="isBuildOpen"
@@ -109,7 +99,7 @@ watch(isBodyClicked, (val) => {
           Schedule Consultation
         </p>
       </NuxtLink>
-      <NuxtLink to="/portfolio" @click="clickDropdown('build')">
+      <NuxtLink to="/portfolio">
         <p class="font-medium">Portfolio</p>
       </NuxtLink>
     </div>
@@ -148,7 +138,7 @@ watch(isBodyClicked, (val) => {
 
     <svg
       @click="toggleNav"
-        class="w-7 lg:w-8 cursor-pointer"
+      class="w-7 lg:w-8 cursor-pointer"
       width="55"
       height="55"
       viewBox="0 0 55 55"
