@@ -15,7 +15,7 @@ const stats = ref([
       </h2>
 
       <div
-        class="mt-20 w-full h-[580px] flex sm:flex-row flex-col justify-between bg-[#161813] text-white"
+        class="mt-20 w-full sm:h-[580px] flex sm:flex-row flex-col justify-between bg-[#161813] text-white"
       >
         <div class="sm:w-2/3 w-full h-full bg-blue-100">
           <video class="h-full w-full object-cover" autoplay muted loop>
@@ -23,8 +23,10 @@ const stats = ref([
             Something went wrong while playing video
           </video>
         </div>
-        <div class="flex-1 flex justify-around sm:flex-col flex-row gap-4 p-8">
-          <div class="space-y-3">
+        <div
+          class="flex-1 flex justify-around items-center sm:flex-col flex-row flex-wrap gap-8 py-8 px-6"
+        >
+          <div class="space-y-2">
             <span
               class="px-4 py-1 text-center rounded-md bg-[#EFF4E4] text-xs font-medium text-[#161813]"
               >SATISFACTION</span
@@ -32,7 +34,7 @@ const stats = ref([
             <p class="text-5xl font-medium tracking-wide">3500</p>
             <p class="text-sm font-light tracking-wide">Satisfied Customers</p>
           </div>
-          <div class="space-y-4">
+          <div class="space-y-2">
             <span
               class="px-4 py-1 text-center rounded-md bg-[#EFF4E4] text-xs font-medium text-[#161813]"
               >SATISFACTION</span
@@ -40,7 +42,7 @@ const stats = ref([
             <p class="text-5xl font-medium tracking-wide">3500</p>
             <p class="text-sm font-light tracking-wide">Satisfied Customers</p>
           </div>
-          <div class="space-y-4">
+          <div class="space-y-2">
             <span
               class="px-4 py-1 text-center rounded-md bg-[#EFF4E4] text-xs font-medium text-[#161813]"
               >SATISFACTION</span
