@@ -24,12 +24,15 @@ const whyUs = [
 </script>
 
 <template>
-  <div class="py-14 px-4 lg:px-20 bg-black text-white">
-    <div class="mt-20 min-h-[720px] flex justify-between">
-      <section class="max-w-lg">
-        <h4 class="hidden lg:block text-5xl tracking-wide font-semibold">
-          WHY CHOOSE
-          MODERN YARDZ?
+  <section class="py-14 px-4 lg:px-20 bg-black text-white">
+    <div class="mt-20 flex justify-between gap-10">
+      <div
+        class="max-w-full sm:max-w-full lg:max-w-lg"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+      >
+        <h4 class="hidden sm:block text-5xl tracking-wide font-semibold">
+          WHY CHOOSE MODERN YARDZ?
         </h4>
 
         <div class="text-white my-6 leading-loose">
@@ -80,9 +83,8 @@ const whyUs = [
             </p>
           </div>
         </div>
-      </section>
-
-      <div class="hidden lg:block h-[700px] w-1/2 bg-blue-100 rounded-3xl">
+      </div>
+      <div class="hidden lg:block h-[700px] bg-blue-100 rounded-3xl">
         <img
           src="@/assets/images/teamphoto.jpeg"
           alt="team photo"
@@ -99,5 +101,5 @@ const whyUs = [
         class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
       />
     </div>
-  </div>
+  </section>
 </template>

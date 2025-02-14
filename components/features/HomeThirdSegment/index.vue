@@ -210,9 +210,11 @@ const features = ref([
   </div> -->
 
   <section class="py-32 px-4 lg:px-20 bg-slate-100">
-    <div class="my-10 lg:my-20 max-w-lg mx-auto">
+    <div class="my-10 lg:my-20 max-w-full sm:max-w-xl lg:max-w-lg mx-auto">
       <div>
-        <h4 class="font-playfairDisplay text-5xl tracking-wide font-[500]">
+        <h4
+          class="font-playfairDisplay text-5xl tracking-wide font-[500] text-center"
+        >
           Desi<span class="text-[#A89C93] font-imperial text-6xl">G </span>n
           Packages
         </h4>
@@ -234,6 +236,8 @@ const features = ref([
             : 'bg-black text-white'
         "
         class="rounded-lg px-8 py-6 w-full sm:min-h-80 sm:max-w-[330px] flex flex-col justify-between shadow"
+        data-aos="fade-up"
+        data-aos-easing="linear"
       >
         <div>
           <h2 class="font-bold text-3xl mt-4">{{ item.title }}</h2>
