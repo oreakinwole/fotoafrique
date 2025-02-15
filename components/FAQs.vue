@@ -47,7 +47,7 @@ props.faqData?.dataArray &&
             class="overflow-hidden border-b-[.3px]"
           >
             <button
-              class="flex w-full space-x-4 items-center p-4"
+              class="flex w-full space-x-2 items-center p-4"
               @click="toggleFAQ(index)"
             >
               <svg
@@ -74,7 +74,7 @@ props.faqData?.dataArray &&
                 />
               </svg>
 
-              <span class="text-sm font-semibold">{{ faq.name }}</span>
+              <span class="text-sm  font-semibold text-left">{{ faq.name }}</span>
             </button>
             <div
               :class="` text-sm overflow-hidden transition-all duration-300 ease-in-out ${
