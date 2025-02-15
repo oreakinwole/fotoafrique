@@ -75,7 +75,7 @@ const handleIsNavbarShowing = (val) => {
   <div class="max-w-[1600px] mx-auto overflow-hidden" v-else>
     <NavBarNew :is-body-clicked="isBodyClicked" />
     <div
-      class="transition-all duration-150 ease-in"
+      class="transition-all duration-150 ease-in "
       :class="{
         ' blur-xl': isShowingNav,
         'pt-28': route.path !== '/',

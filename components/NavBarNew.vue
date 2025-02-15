@@ -81,35 +81,35 @@ watch(isBodyClicked, (val) => {
         class="flex flex-row items-center gap-16 uppercase tracking-widest text-black"
       >
         <li>
-          <NuxtLink to="/design" class="relative group max-h-[100px]">
-            <p class="font-medium">Design</p>
+          <div class="relative group max-h-[100px]">
+            <NuxtLink to="/design" class="font-medium">Design</NuxtLink>
             <NavdropDesign
-              class="absolute -left-[10rem] top-14 z-10 mt-[1px] w-[50rem] origin-top-right border border-black border-t-0 border-opacity-20 rounded-bl-[25px] rounded-br-[25px] opacity-0 invisible shadow-custom-light space-y-4 group-hover:opacity-100 group-hover:visible transition-all"
+              class="absolute -left-[10rem] top-14 z-10 mt-[1px] w-[50rem] origin-top-right border border-black border-t-0 border-opacity-20 rounded-bl-sm rounded-br-sm opacity-0 invisible shadow-custom-light space-y-4 group-hover:opacity-100 group-hover:visible transition-all"
             />
-          </NuxtLink>
+          </div>
         </li>
 
         <li>
-          <NuxtLink to="/build-steps" class="relative">
-            <p class="font-medium">Build</p>
+          <div class="relative">
+            <NuxtLink to="/build-steps" class="font-medium">Build</NuxtLink>
             <NavdropBuild
               v-if="isBuildOpen"
               :class="route.path !== '/' && 'bg-black'"
             />
-          </NuxtLink>
-        </li>
-
-        <li>
-          <NuxtLink to="/">
-            <p class="font-medium border-t border-black p-2 rounded-xl">
-              Schedule Consultation
-            </p>
-          </NuxtLink>
+          </div>
         </li>
 
         <li>
           <NuxtLink to="/portfolio">
             <p class="font-medium">Portfolio</p>
+          </NuxtLink>
+        </li>
+
+        <li>
+          <NuxtLink to="/">
+            <p class="font-light text-sm hover:bg-opacity-80 bg-[#A89C93] p-2 px-6 text-white rounded-lg">
+              Schedule Consultation
+            </p>
           </NuxtLink>
         </li>
       </ul>

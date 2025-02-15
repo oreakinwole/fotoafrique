@@ -33,11 +33,7 @@ const whyUs = [
           class="w-full h-full object-cover rounded-3xl"
         />
       </div>
-      <div
-        class="max-w-full sm:max-w-full lg:max-w-lg"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-      >
+      <div class="max-w-full sm:max-w-full lg:max-w-lg">
         <h4 class="hidden sm:block text-5xl tracking-wide font-semibold">
           WELCOME TO MODERN YARDZ
         </h4>
