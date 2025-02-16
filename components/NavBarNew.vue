@@ -63,8 +63,7 @@ watch(isBodyClicked, (val) => {
     <PopUpModal />
     <MobileNavBar />
     <div
-      :class="route.path !== '/' && 'bg-black'"
-      class="hidden lg:absolute lg:flex lg:top-10 hero-trigger lg:bg-[#F1EDE8] w-full items-center justify-between py-4 px-8 lg:px-12 max-w-[1600px] z-20"
+      class="hidden xl:absolute xl:flex xl:top-10 hero-trigger bg-[#F1EDE8] w-full items-center justify-between py-4 px-8 lg:px-12 max-w-[1600px] z-20"
     >
       <NuxtLink
         to="/"
