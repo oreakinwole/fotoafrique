@@ -3,8 +3,24 @@ useHead({
   script: [{ src: "https://embed.typeform.com/next/embed.js" }],
 });
 
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 
+const windowWidth = ref(0);
+const updateWindowWidth = () => {
+  if (typeof window === "undefined") return;
+  windowWidth.value = window.innerWidth;
+};
+onMounted(() => {
+  window.addEventListener("resize", updateWindowWidth);
+});
+onUnmounted(() => {
+  window.removeEventListener("resize", updateWindowWidth);
+});
+watch(windowWidth, (newWidth, oldWidth) => {
+  features.value.forEach((feature) => {
+    feature.isExpanded = newWidth > 700;
+  });
+});
 const datafQ = ref([
   {
     "@type": "Question",
@@ -251,7 +267,8 @@ const toggle = (index) => {
               <h2 class="font-bold text-3xl mt-4">{{ item.title }}</h2>
             </div>
             <div
-              class="rounded-lg p-4 sm:hidden block cursor-pointer"
+              v-show="windowWidth < 700"
+              class="rounded-lg p-4 cursor-pointer"
               :class="
                 cardContainerIndex % 2 === 0
                   ? 'hover:bg-gray-200'
