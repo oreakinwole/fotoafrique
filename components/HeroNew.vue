@@ -12,7 +12,7 @@
     <MobileHero />
 
     <div
-      class="bg-[#090908] bg-opacity-50 h-[80px] w-full absolute bottom-0 overflow-hidden"
+      class="bg-[#090908] hidden lg:block bg-opacity-50 h-[80px] w-full absolute bottom-0 overflow-hidden"
     >
       <NuxtMarquee class="w-full h-full overflow-hidden">
         <img

@@ -17,7 +17,7 @@ function toggleMenu() {
 
 <template>
   <div
-    class="flex absolute top-14 z-10 justify-between w-full items-center px-4"
+    class="flex absolute bg-black/30 top-9 z-10 justify-between w-full items-center py-5 px-4"
   >
     <!-- Logo -->
     <div>
@@ -25,7 +25,7 @@ function toggleMenu() {
         <img
           src="@/assets/svg/logo_white.svg"
           alt="logo"
-          class="w-20"
+          class="w-36"
           :class="isMenuOpen && 'animate__animated animate__fadeOut'"
         />
       </NuxtLink>
