@@ -5,7 +5,7 @@
 
 <template>
     <div>
-      <div class="px-4 lg:px-20 lg:pt-28">
+      <div class="px-4 lg:px-20">
         <!-- <p class="lg:hidden font-playfairDisplay text-4xl font-medium">
           Portfoli<span class="text-new-gray font-imperial text-4xl">O</span>
         </p> -->

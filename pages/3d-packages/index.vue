@@ -1,8 +1,8 @@
-<script setup lang="ts">
-</script>
+
 
 <template>
   <div>
+  <!-- <div>
     <div class="lg:pl-28 ">
      <div class="px-4 lg:px-0">
       <p class="font-playfairDisplay text-4xl lg:text-6xl pb-5 lg:py-10 font-[500]">
@@ -35,7 +35,7 @@
         text="SCHEDULE A CALL"
         class="lg:mt-10"
       />
-    </section>
+    </section> -->
 
     <!-- <FAQs /> -->
   </div>

@@ -111,13 +111,14 @@ watch(isBodyClicked, (val) => {
       </nav>
 
       <div class="flex items-center gap-12">
-        <NuxtLink to="/">
-          <p
-            class="uppercase text-xs hover:bg-opacity-80 bg-[#A89C93] p-2.5 px-6 text-white rounded-lg"
-          >
-            Schedule Consultation
-          </p>
-        </NuxtLink>
+        <p
+        role="button"
+          @click="handleBookConsult"
+          class="uppercase text-xs hover:bg-opacity-80 bg-[#A89C93] p-2.5 px-6 text-white rounded-lg"
+        >
+          Schedule Consultation
+        </p>
+
         <svg
           class="w-40"
           width="190"

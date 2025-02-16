@@ -49,6 +49,7 @@ const handleBookConsult = () => {
           background-color="black"
           text="Book Your Free Design Consult Now"
           class="w-[300px]"
+          @click="handleBookConsult"
         />
       </div>
     </div>

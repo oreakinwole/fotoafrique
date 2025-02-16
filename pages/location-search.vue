@@ -19,9 +19,9 @@ const fetchPages = async () => {
   // console.log("DATA", routessss);
 };
 
-watch(searchTerm, () => {
-  // fetchPages();
-});
+// watch(searchTerm, () => {
+//   fetchPages();
+// });
 </script>
 
 <template>
