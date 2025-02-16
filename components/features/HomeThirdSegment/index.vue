@@ -3,6 +3,8 @@ useHead({
   script: [{ src: "https://embed.typeform.com/next/embed.js" }],
 });
 
+import { ref } from "vue";
+
 const datafQ = ref([
   {
     "@type": "Question",
@@ -138,6 +140,7 @@ const features = ref([
       "2D landscape plans for a clear project blueprint",
     ],
     priceRange: "$1,195 - $1,595",
+    isExpanded: false,
   },
   {
     title: "Premium",
@@ -153,6 +156,7 @@ const features = ref([
       "High-quality 3D renderings of your outdoor space",
     ],
     priceRange: "$1,195 - $1,595",
+    isExpanded: false,
   },
   {
     title: "Luxe",
@@ -170,8 +174,13 @@ const features = ref([
       "3D Nightscape: Visualize your design with stunning nighttime lighting",
     ],
     priceRange: "",
+    isExpanded: false,
   },
 ]);
+
+const toggle = (index) => {
+  features.value[index].isExpanded = !features.value[index].isExpanded;
+};
 </script>
 
 <template>
@@ -216,7 +225,9 @@ const features = ref([
           Design Packages
         </h4>
       </div>
-      <p class="text-[#454545] text-sm mt-4 text-center leading-relaxed tracking-widest">
+      <p
+        class="text-[#454545] text-sm mt-4 text-center leading-relaxed tracking-widest"
+      >
         Transform your outdoor space with our expertly crafted design packages.
         Each package is tailored to meet your needs, whether you’re looking for
         foundational plans or a fully immersive, luxury experience. With access
@@ -232,14 +243,50 @@ const features = ref([
             ? 'bg-white text-black'
             : 'bg-black text-white'
         "
-        class="rounded-lg px-8 py-6 w-full sm:min-h-80 sm:max-w-[330px] flex flex-col justify-between shadow"
+        class="rounded-lg px-8 py-6 w-full sm:max-w-[330px] flex flex-col justify-between shadow"
       >
         <div>
-          <h2 class="font-bold text-3xl mt-4">{{ item.title }}</h2>
+          <div class="flex items-center justify-between">
+            <div>
+              <h2 class="font-bold text-3xl mt-4">{{ item.title }}</h2>
+            </div>
+            <div
+              class="rounded-lg p-4 sm:hidden block cursor-pointer"
+              :class="
+                cardContainerIndex % 2 === 0
+                  ? 'hover:bg-gray-200'
+                  : 'hover:bg-white'
+              "
+              @click="toggle(cardContainerIndex)"
+            >
+              <button class="flex items-center justify-between">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke="#9ca3af"
+                  fill="none"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  :class="
+                    item.isExpanded
+                      ? 'transform transition-transform duration-300 rotate-180'
+                      : ''
+                  "
+                  class="transform transition-transform duration-300"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+            </div>
+          </div>
           <hr class="my-4 border-gray-400" />
           <ul class="space-y-2 py-4">
             <li
-              v-for="(item, index) in item.attributes"
+              v-for="(attrs, index) in item.attributes"
+              v-show="item.isExpanded"
               :key="index"
               class="flex gap-4 items-center"
             >
@@ -257,12 +304,12 @@ const features = ref([
                   />
                 </svg>
               </div>
-              <p>{{ item }}</p>
+              <p>{{ attrs }}</p>
             </li>
           </ul>
         </div>
         <div>
-          <hr class="my-4 border-gray-400" />
+          <hr v-show="item.isExpanded" class="my-4 border-gray-400" />
           <div class="flex justify-between items-center">
             <p class="text-sm font-bold">{{ item.priceRange }}</p>
             <FilledButton
