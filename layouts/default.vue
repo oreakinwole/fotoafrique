@@ -77,8 +77,8 @@ const handleIsNavbarShowing = (val) => {
     <div
       class="transition-all duration-150 ease-in "
       :class="{
-        ' blur-xl': isShowingNav,
-        '': route.path !== '/',
+        'blur-xl': isShowingNav,
+        'pt-28': route.path !== '/',
       }"
       @click="isBodyClicked = true"
     >

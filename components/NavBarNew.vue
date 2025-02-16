@@ -78,7 +78,7 @@ watch(isBodyClicked, (val) => {
         <p class="font-light ">Home</p>
       </NuxtLink> -->
       <ul
-        class="flex flex-row items-center gap-16 uppercase tracking-widest text-black"
+        class="flex items-center gap-16 uppercase tracking-widest text-black"
       >
         <li>
           <div class="relative group max-h-[100px]">
@@ -105,17 +105,18 @@ watch(isBodyClicked, (val) => {
           </NuxtLink>
         </li>
 
-        <li>
-          <NuxtLink to="/">
-            <p class="font-light text-sm hover:bg-opacity-80 bg-[#A89C93] p-2 px-6 text-white rounded-lg">
-              Schedule Consultation
-            </p>
-          </NuxtLink>
-        </li>
+       
       </ul>
     </nav>
 
-    <svg
+    <div class="flex items-center gap-12">
+      <NuxtLink to="/">
+            <p class="uppercase text-xs hover:bg-opacity-80 bg-[#A89C93] p-2.5 px-6 text-white rounded-lg">
+              Schedule Consultation
+            </p>
+          </NuxtLink>
+      <svg
+    class=" w-40"
       width="190"
       height="40"
       viewBox="0 0 190 40"
@@ -176,6 +177,7 @@ watch(isBodyClicked, (val) => {
         stroke-linecap="round"
       />
     </svg>
+    </div>
 
     <div
       class="animate__animated animate__slideInDown fixed top-0 right-0 bg-white h-screen w-full z-20"
