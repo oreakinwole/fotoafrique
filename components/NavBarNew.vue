@@ -9,6 +9,8 @@ const props = defineProps(["isBodyClicked"]);
 
 const isBodyClicked = computed(() => props.isBodyClicked);
 
+const isServicesOpen = ref(false);
+
 const route = useRoute();
 
 const toggleNav = () => {
@@ -246,30 +248,157 @@ watch(isBodyClicked, (val) => {
               class="flex justify-between mt-12 lg:mt-16 lg:pl-14 lg:items-center animate__animated animate__fadeIn animate__slow"
             >
               <ul class="space-y-12">
+                <ul class="flex flex-col">
+                  <div>
+                    <header
+                      @click="isServicesOpen = !isServicesOpen"
+                      class="flex items-center"
+                    >
+                      <p class="text-5xl font-semibold">Services</p>
+                      <svg
+                        class="ml-2 w-6"
+                        :class="isServicesOpen && 'rotate-180'"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19.9181 8.94922L13.3981 15.4692C12.6281 16.2392 11.3681 16.2392 10.5981 15.4692L4.07812 8.94922"
+                          stroke="#665244"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </header>
+
+                    <ul
+                      class="animate__animated animate__fadeIn text-sm pt-8"
+                      v-if="isServicesOpen"
+                    >
+                      <NuxtLink to="/services/landscape-sandiego">
+                        <li
+                          @click="
+                            isShowMobileNav = false;
+                            isServicesOpen = false;
+                          "
+                          class="pb-3 underline"
+                        >
+                          Landscape Design SD
+                        </li>
+                      </NuxtLink>
+
+                      <NuxtLink to="/services/pavers-san-diego">
+                        <li
+                          @click="
+                            isShowMobileNav = false;
+                            isServicesOpen = false;
+                          "
+                          class="pb-3 underline"
+                        >
+                          Pavers San Diego
+                        </li>
+                      </NuxtLink>
+
+                      <NuxtLink to="/services/pools-and-spas">
+                        <li
+                          @click="
+                            isShowMobileNav = false;
+                            isServicesOpen = false;
+                          "
+                          class="pb-3 underline"
+                        >
+                          Pools and Spas
+                        </li>
+                      </NuxtLink>
+
+                      <NuxtLink to="/services/outdoor-kitchens">
+                        <li
+                          @click="
+                            isShowMobileNav = false;
+                            isServicesOpen = false;
+                          "
+                          class="pb-3 underline"
+                        >
+                          Outdoor Kitchens
+                        </li>
+                      </NuxtLink>
+                      <NuxtLink to="/services/concrete-sd">
+                        <li
+                          @click="
+                            isShowMobileNav = false;
+                            isServicesOpen = false;
+                          "
+                          class="pb-3 underline"
+                        >
+                          Concrete San Diego
+                        </li>
+                      </NuxtLink>
+                      <NuxtLink to="/services/artificial-turf">
+                        <li
+                          @click="
+                            isShowMobileNav = false;
+                            isServicesOpen = false;
+                          "
+                          class="pb-3 underline"
+                        >
+                          Artificial Turf San Diego
+                        </li>
+                      </NuxtLink>
+                      <NuxtLink to="/services/patios-and-pergolas">
+                        <li
+                          @click="
+                            isShowMobileNav = false;
+                            isServicesOpen = false;
+                          "
+                          class="pb-3 underline"
+                        >
+                          Patio Covers and Pergolas
+                        </li>
+                      </NuxtLink>
+                    </ul>
+                  </div>
+                </ul>
+
                 <li
-                  class="text-5xl hover:scale-x-90 duration-200 ease-linear font-semibold"
-                  @click="isShowMobileNav = false"
+                  class="text-5xl font-semibold"
+                  @click="
+                    isShowMobileNav = false;
+                    isServicesOpen = false;
+                  "
                 >
                   <NuxtLink to="/finance">Finance</NuxtLink>
                 </li>
 
                 <li
-                  class="text-5xl hover:scale-x-90 duration-200 ease-linear font-semibold"
-                  @click="isShowMobileNav = false"
+                  class="text-5xl font-semibold"
+                  @click="
+                    isShowMobileNav = false;
+                    isServicesOpen = false;
+                  "
                 >
                   <NuxtLink to="/contact">Contact Us</NuxtLink>
                 </li>
 
                 <li
-                  class="text-5xl hover:scale-x-90 duration-200 ease-linear font-semibold"
-                  @click="isShowMobileNav = false"
+                  class="text-5xl font-semibold"
+                  @click="
+                    isShowMobileNav = false;
+                    isServicesOpen = false;
+                  "
                 >
                   <NuxtLink to="/#testimonials">Reviews</NuxtLink>
                 </li>
 
                 <li
-                  class="text-5xl hover:scale-x-90 duration-200 ease-linear font-semibold"
-                  @click="isShowMobileNav = false"
+                  class="text-5xl font-semibold"
+                  @click="
+                    isShowMobileNav = false;
+                    isServicesOpen = false;
+                  "
                 >
                   <NuxtLink to="/">Privacy Policy</NuxtLink>
                 </li>
