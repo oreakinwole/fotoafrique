@@ -1,9 +1,20 @@
 <script setup>
 const stats = ref([
-  { id: 1, value: 3500, label: "Satisfied Customers" },
-  { id: 2, value: 40, label: "Years of Experience" },
-  { id: 3, value: 10000, label: "Design Consultations" },
-  { id: 4, value: "100%", label: "Transparency", suffix: "%" },
+  { id: 1, value: 3500, title: "Satisfaction", label: "Satisfied Customers" },
+  { id: 2, value: 40, title: "Experience", label: "Years of Experience" },
+  {
+    id: 3,
+    value: 10000,
+    title: "Consultations",
+    label: "Design Consultations",
+  },
+  {
+    id: 4,
+    value: 100,
+    title: "No doubts",
+    label: "Transparency",
+    suffix: "%",
+  },
 ]);
 </script>
 
@@ -17,7 +28,7 @@ const stats = ref([
       <div
         class="mt-20 w-full rounded-xl overflow-hidden sm:h-[760px] flex sm:flex-row flex-col justify-between bg-[#161813] text-white"
       >
-        <div class="sm:w-2/3 w-full h-full bg-blue-100">
+        <div class="sm:w-2/3 sm:block hidden w-full h-full bg-blue-100">
           <video class="h-full w-full object-cover" autoplay muted loop>
             <source src="/video/quizvid.mp4" type="video/mp4" />
             Something went wrong while playing video
@@ -25,47 +36,20 @@ const stats = ref([
         </div>
 
         <div
-          class="flex-1 flex justify-around sm:flex-col flex-row flex-wrap gap-8 py-8 lg:pl-16"
+          class="flex-1 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-1 justify-items-center content-center gap-8 py-8 px-6"
         >
-          <div data-aos="fade-up" data-aos-easing="linear" class="space-y-4">
+          <div v-for="stat in stats" :key="stat.id" class="space-y-2">
             <span
-              class="px-4 py-2 text-center rounded-md bg-[#EFF4E4] text-xs font-medium text-[#161813]"
-              >SATISFACTION</span
+              class="px-4 py-1 text-center rounded-md bg-[#EFF4E4] text-xs uppercase font-medium text-[#161813]"
+              >{{ stat.title }}</span
             >
-            <p class="text-5xl font-medium tracking-wide">6,924</p>
-            <p class="text-sm font-light tracking-wide max-w-[200px]">
-              Satisfied Customers
+            <p v-if="stat.suffix" class="text-5xl font-medium tracking-wide">
+              {{ stat.value.toLocaleString() + stat.suffix }}
             </p>
-          </div>
-          <div data-aos="fade-up" data-aos-easing="linear" class="space-y-4">
-            <span
-              class="px-4 py-2 text-center rounded-md bg-[#EFF4E4] text-xs font-medium text-[#161813]"
-              >EXPERIENCE</span
-            >
-            <p class="text-5xl font-medium tracking-wide">25+</p>
-            <p class="text-sm font-light tracking-wide max-w-[200px]">
-              Years of Experience with Dedicated Specialized Crews
+            <p v-else class="text-5xl font-medium tracking-wide">
+              {{ stat.value.toLocaleString() }}
             </p>
-          </div>
-          <div data-aos="fade-up" data-aos-easing="linear" class="space-y-4">
-            <span
-              class="px-4 py-2 text-center rounded-md bg-[#EFF4E4] text-xs font-medium text-[#161813]"
-              >CONSULTATIONS</span
-            >
-            <p class="text-5xl font-medium tracking-wide">$0</p>
-            <p class="text-sm font-light tracking-wide max-w-[200px]">
-              Free Design Consultation & Estimatee
-            </p>
-          </div>
-          <div data-aos="fade-up" data-aos-easing="linear" class="space-y-4">
-            <span
-              class="px-4 py-2 text-center rounded-md bg-[#EFF4E4] text-xs font-medium text-[#161813]"
-              >TRANSPARENCY</span
-            >
-            <p class="text-5xl font-medium tracking-wide">100%</p>
-            <p class="text-sm font-light tracking-wide max-w-[200px]">
-              Transparency. No Sales Tactics, Just Our Best Price
-            </p>
+            <p class="text-sm font-light tracking-wide">{{ stat.label }}</p>
           </div>
         </div>
       </div>

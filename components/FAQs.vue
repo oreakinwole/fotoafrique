@@ -27,9 +27,11 @@ props.faqData?.dataArray &&
 
 <template>
   <div class="py-14 px-4 lg:px-20 bg-black text-white">
-    <div class="mt-20 min-h-[720px] flex justify-between">
-      <section class="max-w-lg">
-        <h4 class="hidden lg:block text-5xl tracking-wide font-semibold">
+    <div class="mt-20 min-h-[720px] flex justify-between gap-10">
+      <section class="flex-1 w-full">
+        <h4
+          class="text-5xl sm:text-left text-center tracking-wide font-semibold"
+        >
           GOT QUESTIONS?
         </h4>
 
@@ -44,7 +46,7 @@ props.faqData?.dataArray &&
           <div
             v-for="(faq, index) in faqData.dataArray.slice(0, 6)"
             :key="faq.question"
-            class="overflow-hidden border-b-[.3px]"
+            class="overflow-hidden border-b-[.3px] border-[#414141]"
           >
             <button
               class="flex w-full space-x-2 items-center p-4"
@@ -74,10 +76,12 @@ props.faqData?.dataArray &&
                 />
               </svg>
 
-              <span class="text-sm  font-semibold text-left">{{ faq.name }}</span>
+              <span class="text-sm text-left font-semibold">{{
+                faq.name
+              }}</span>
             </button>
             <div
-              :class="` text-sm overflow-hidden transition-all duration-300 ease-in-out ${
+              :class="`text-sm overflow-hidden transition-all duration-300 ease-in-out ${
                 openIndex === index ? 'max-h-40 p-4' : 'max-h-0 p-0'
               }`"
             >
@@ -87,7 +91,9 @@ props.faqData?.dataArray &&
         </div>
       </section>
 
-      <div class="hidden lg:block h-[700px] w-1/2 bg-blue-100 rounded-3xl">
+      <div
+        class="hidden lg:block max-h-[700px] lg:max-w-[50%] w-full bg-blue-100 rounded-3xl"
+      >
         <img
           src="https://ucarecdn.com/133fd044-a6ad-4994-b151-522479630cb4/Img.jpg"
           alt="team photo"

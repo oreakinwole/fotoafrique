@@ -25,16 +25,20 @@ const whyUs = [
 
 <template>
   <div class="py-14 px-4 lg:px-20 bg-[#161813] text-white">
-    <div class="mt-20 flex items-center justify-between gap-10">
-      <div class="h-[700px] w-1/2 hidden lg:block bg-blue-100 rounded-3xl">
+    <div
+      class="mt-20 flex lg:flex-row flex-col items-center justify-between gap-10"
+    >
+      <div
+        class="md:h-[700px] h-[300px] lg:max-w-[50%] w-full bg-blue-100 rounded-3xl"
+      >
         <img
           src="https://ucarecdn.com/133fd044-a6ad-4994-b151-522479630cb4/Img.jpg"
           alt="team photo"
           class="w-full h-full object-cover rounded-3xl"
         />
       </div>
-      <div class="max-w-full sm:max-w-full lg:max-w-lg">
-        <h4 class="hidden sm:block text-5xl tracking-wide font-semibold">
+      <div class="w-full flex-1" data-aos="fade-up" data-aos-easing="linear">
+        <h4 class="text-5xl tracking-wide font-semibold">
           WELCOME TO MODERN YARDZ
         </h4>
 
