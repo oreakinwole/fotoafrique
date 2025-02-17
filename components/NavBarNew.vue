@@ -100,16 +100,15 @@ watch(isBodyClicked, (val) => {
         </li>
 
         <li>
+          <NuxtLink to="/portfolio">
+            <p class="font-medium">Portfolio</p>
+          </NuxtLink>
+        </li>
+        <li>
           <NuxtLink to="/">
             <p class="font-medium border-t border-black p-2 rounded-xl">
               Schedule Consultation
             </p>
-          </NuxtLink>
-        </li>
-
-        <li>
-          <NuxtLink to="/portfolio">
-            <p class="font-medium">Portfolio</p>
           </NuxtLink>
         </li>
       </ul>

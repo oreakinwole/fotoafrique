@@ -156,7 +156,7 @@ const features = ref([
       "2D landscape plans for a clear project blueprint",
     ],
     priceRange: "$1,195 - $1,595",
-    isExpanded: false,
+    isExpanded: true,
   },
   {
     title: "Premium",
@@ -172,7 +172,7 @@ const features = ref([
       "High-quality 3D renderings of your outdoor space",
     ],
     priceRange: "$1,195 - $1,595",
-    isExpanded: false,
+    isExpanded: true,
   },
   {
     title: "Luxe",
@@ -190,7 +190,7 @@ const features = ref([
       "3D Nightscape: Visualize your design with stunning nighttime lighting",
     ],
     priceRange: "",
-    isExpanded: false,
+    isExpanded: true,
   },
 ]);
 

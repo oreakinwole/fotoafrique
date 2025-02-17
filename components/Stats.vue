@@ -35,7 +35,7 @@ const stats = ref([
           </video>
         </div>
         <div
-          class="flex-1 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-1 justify-items-center gap-8 py-8 px-6"
+          class="flex-1 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-1 justify-items-center content-center gap-8 py-8 px-6"
         >
           <div v-for="stat in stats" :key="stat.id" class="space-y-2">
             <span
