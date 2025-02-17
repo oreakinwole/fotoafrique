@@ -5,7 +5,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 <template>
   <div
     id="testimonials"
-    class="mt-20 bg-[#F9F4EE] lg:py-28 px-4 lg:px-28 w-screen"
+    class="mt-20 bg-[#F9F4EE] py-28 px-4 lg:px-28 w-screen"
   >
     <div class="px-4 lg:px-20 text-center mb-12">
       <h4 class="tracking-wide text-5xl font-semibold">CLIENT SPOTLIGHT</h4>

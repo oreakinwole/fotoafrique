@@ -26,7 +26,7 @@ const whyUs = [
 <template>
   <div class="py-14 px-4 lg:px-20 bg-[#161813] text-white">
     <div
-      class="mt-20 flex lg:flex-row flex-col items-center justify-between gap-10"
+      class="md:mt-20 flex lg:flex-row flex-col items-center justify-between gap-10"
     >
       <div
         class="md:h-[700px] h-[300px] lg:max-w-[50%] w-full bg-blue-100 rounded-3xl"

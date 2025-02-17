@@ -24,7 +24,7 @@ const whyUs = [
 
 <template>
   <section class="py-14 px-4 lg:px-20 bg-black text-white">
-    <div class="mt-20 flex justify-between lg:flex-row flex-col-reverse gap-10">
+    <div class="md:mt-20 flex justify-between lg:flex-row flex-col-reverse gap-10">
       <div class="flex-1 w-full" data-aos="fade-up" data-aos-easing="linear">
         <h4 class="text-5xl tracking-wide font-semibold">
           WHY CHOOSE MODERN YARDZ?
