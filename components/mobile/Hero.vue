@@ -11,13 +11,14 @@
         <p
           class="font-playfairDisplay text-4xl px-3 font-bold leading-tight tracking-normal animate__animated animate__fadeInUp"
         >
-        San Diego’s Premier Design & Build Landscaping Experts
+          San Diego’s Premier Design & Build Landscaping Experts
         </p>
 
         <p
           class="uppercase font-light text-lg mx-4 mt-6 leading-relaxed tracking-widest animate__animated animate__fadeInUp"
         >
-        We transform outdoor spaces into stunning retreats with custom pools, patios, fire pits, and more. Let’s create your dream yard.
+          We transform outdoor spaces into stunning retreats with custom pools,
+          patios, fire pits, and more. Let’s create your dream yard.
         </p>
       </div>
 
