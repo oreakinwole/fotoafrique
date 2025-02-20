@@ -24,54 +24,65 @@ const whyUs = [
 </script>
 
 <template>
-  <div class="py-14 px-4 lg:px-20 bg-[#161813] text-white">
-    <div
-      class="md:mt-20 flex lg:flex-row flex-col items-center justify-between gap-10"
-    >
-      <div
-        class="md:h-[700px] h-[300px] lg:max-w-[50%] w-full bg-blue-100 rounded-3xl"
-      >
+  <div class="pt-24 px-4 lg:px-40 bg-[#000] text-white">
+    <div className="grid grid-cols-2 grid-rows-2 gap-4 ">
+      <div className="bg-[#2c2c2c] h-[530px]  rounded-xl ">
         <img
           src="https://ucarecdn.com/133fd044-a6ad-4994-b151-522479630cb4/Img.jpg"
           alt="team photo"
-          class="w-full h-full object-cover rounded-3xl"
+          class="w-full h-full object-cover rounded-xl"
         />
       </div>
-      <div class="w-full flex-1" data-aos="fade-up" data-aos-easing="linear">
-        <h4 class="text-5xl tracking-wide font-semibold">
-          WELCOME TO MODERN YARDZ
+      <div
+        className="bg-[#2c2c2c] text-white h-[530px] px-8 space-y-8 pt-10 rounded-xl"
+      >
+        <h4 class="text-3xl tracking-wide font-semibold">
+          Welcome To Modern Yardz
         </h4>
 
-        <div class="text-white my-6 space-y-6 leading-loose">
-          <div class="font-bold tracking-widest text-[#D0C2B0] text-lg">
-            WE CREATE YOUR DREAM YARD
-          </div>
+        <p class="mt-1 font-light tracking-widest text-md text-[#adabab]">
+          Modern Yardz is a full-service landscaping design and build company
+          serving the San Diego community for over 40 years. From Chula Vista to
+          Rancho Santa Fe, we specialize in creating custom outdoor spaces that
+          bring your vision to life. Whether it’s a modern patio, luxurious
+          pool, cozy fire pit, or lush artificial turf, we handle every step of
+          the process, from design to construction, with care and precision.
+        </p>
 
-          <p class="mt-1 font-light tracking-widest text-md text-[#858484]">
-            Modern Yardz is a full-service landscaping design and build company
-            serving the San Diego community for over 40 years. From Chula Vista
-            to Rancho Santa Fe, we specialize in creating custom outdoor spaces
-            that bring your vision to life. Whether it’s a modern patio,
-            luxurious pool, cozy fire pit, or lush artificial turf, we handle
-            every step of the process, from design to construction, with care
-            and precision.
-          </p>
+        <p class="mt-1 font-light tracking-widest text-md text-[#adabab]">
+          We’re not just building yards; we’re building spaces where memories
+          are made. With local roots and decades of expertise, we’re here to
+          help San Diego homeowners create outdoor spaces that are as functional
+          as they are beautiful.
+        </p>
+      </div>
+      <div className="bg-[#2c2c2c] text-white h-[530px] px-8  pt-10 rounded-xl">
+        <h4 class="text-3xl tracking-wide mb-8 font-semibold">
+          Welcome To Modern Yardz
+        </h4>
+        <hr class="opacity-15" />
+        <h5 class="text-2xl tracking-wide my-6">Our mission</h5>
+        <p class="mt-1 font-light tracking-widest text-md text-[#adabab]">
+          Modern Yardz is a full-service landscaping design and build company
+          serving the San Diego community for over 40 years. From Chula Vista to
+          Rancho Santa Fe, we specialize in creating custom outdoor spaces that
+        </p>
 
-          <p class="mt-1 font-light tracking-widest text-md text-[#858484]">
-            We’re not just building yards; we’re building spaces where memories
-            are made. With local roots and decades of expertise, we’re here to
-            help San Diego homeowners create outdoor spaces that are as
-            functional as they are beautiful.
-          </p>
-        </div>
-        <div class="hidden lg:block mt-8">
-          <FilledButton
-            background-color="white"
-            text="Book Your Free Consultation Today"
-            text-color="black"
-            class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
-          />
-        </div>
+        <h5 class="text-2xl tracking-wide my-6">Our vison</h5>
+
+        <p class="mt-1 font-light tracking-widest text-md text-[#adabab]">
+          We’re not just building yards; we’re building spaces where memories
+          are made. With local roots and decades of expertise, we’re here to
+        </p>
+      </div>
+      <div
+        className="bg-[#2c2c2c] text-white h-[530px] p-6 rounded-xl flex items-center justify-center"
+      >
+        <img
+          src=" @/assets/images/patio.png"
+          alt="team photo"
+          class="w-full h-full object-cover rounded-xl"
+        />
       </div>
     </div>
   </div>

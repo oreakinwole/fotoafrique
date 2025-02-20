@@ -2,7 +2,7 @@
 
 <template>
   <div id="introduction">
-    <Stats />
+    <!-- <Stats /> -->
 
     <ViewWelcomeToMod />
   </div>
