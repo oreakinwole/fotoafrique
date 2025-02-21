@@ -18,11 +18,13 @@
         <div
           class="absolute bottom-5 left-10 w-full p-4 tracking-widest text-white"
         >
-          <h3 class="text-4xl font-bold flex items-center space-x-2">
-            <span>Outdoor Kitchens</span>
+          <NuxtLink to="/services/outdoor-kitchens">
+            <h3 class="text-4xl font-bold flex items-center space-x-2">
+              <span>Outdoor Kitchens</span>
 
-            <IconChevron class="rotate-90 opacity-70" />
-          </h3>
+              <IconChevron class="rotate-90 opacity-70" />
+            </h3>
+          </NuxtLink>
         </div>
       </div>
       <div class="bg-[#2c2c2c] h-[500px] rounded-xl relative">
@@ -39,11 +41,13 @@
         <div
           class="absolute bottom-5 left-10 w-full p-4 tracking-widest text-white"
         >
-          <h3 class="text-4xl font-bold flex items-center space-x-2">
-            <span>Concrete Patios</span>
+          <NuxtLink to="/services/concrete-sd">
+            <h3 class="text-4xl font-bold flex items-center space-x-2">
+              <span>Concrete Patios</span>
 
-            <IconChevron class="rotate-90 opacity-70" />
-          </h3>
+              <IconChevron class="rotate-90 opacity-70" />
+            </h3>
+          </NuxtLink>
         </div>
       </div>
       <div class="bg-[#2c2c2c] h-[500px] rounded-xl relative">
@@ -60,11 +64,13 @@
         <div
           class="absolute bottom-5 left-10 w-full p-4 tracking-widest text-white"
         >
-          <h3 class="text-4xl font-bold flex items-center space-x-2">
-            <span>Artificial Turf</span>
+          <NuxtLink to="/services/artificial-turf">
+            <h3 class="text-4xl font-bold flex items-center space-x-2">
+              <span>Artificial Turf</span>
 
-            <IconChevron class="rotate-90 opacity-70" />
-          </h3>
+              <IconChevron class="rotate-90 opacity-70" />
+            </h3>
+          </NuxtLink>
         </div>
       </div>
       <div
@@ -83,11 +89,13 @@
         <div
           class="absolute bottom-5 left-10 w-full p-4 tracking-widest text-white"
         >
-          <h3 class="text-4xl font-bold flex items-center space-x-2">
-            <span>Paver Patios</span>
+          <NuxtLink to="/services/patios-and-pergolas">
+            <h3 class="text-4xl font-bold flex items-center space-x-2">
+              <span>Paver Patios</span>
 
-            <IconChevron class="rotate-90 opacity-70" />
-          </h3>
+              <IconChevron class="rotate-90 opacity-70" />
+            </h3>
+          </NuxtLink>
         </div>
       </div>
     </div>
