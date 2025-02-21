@@ -3,8 +3,8 @@
 <template>
   <ViewDesignProcessOld />
 
-  <div class="py-24 px-4 lg:px-40 bg-[#000] text-white">
-    <div class="grid grid-cols-2 grid-rows-2 gap-6">
+  <div class="py-24 px-4 xl:px-40 bg-[#000] text-white">
+    <div class="grid lg:grid-cols-2 lg:grid-rows-2 gap-2 lg:gap-6 lg:p-4">
       <div class="bg-[#2c2c2c] h-[500px] rounded-xl relative">
         <header
           class="absolute bottom-0 h-[45%] w-full bg-gradient-to-t from-black via-gray-950 to-gray-950 opacity-50 blur-lg"

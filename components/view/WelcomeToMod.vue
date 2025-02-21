@@ -32,8 +32,8 @@ const stats = ref([
 
 <template>
   <div class="py-24 px-4 lg:px-40 bg-[#000] text-white">
-    <div class="grid grid-cols-2 grid-rows-2 gap-6 p-4">
-      <div class="bg-[#2c2c2c] h-[530px]   rounded-xl ">
+    <div class="grid lg:grid-cols-2 lg:grid-rows-2 gap-2 lg:gap-6 lg:p-4">
+      <div class="bg-[#2c2c2c] xl:h-[530px]   rounded-xl ">
         <img
           src="https://ucarecdn.com/133fd044-a6ad-4994-b151-522479630cb4/Img.jpg"
           alt="team photo"
@@ -41,13 +41,13 @@ const stats = ref([
         />
       </div>
       <div
-        class="bg-[#2c2c2c] text-white h-[530px]  px-8 space-y-8 pt-10 rounded-xl"
+        class="bg-[#2c2c2c] text-white  xl:h-[530px]  px-8 space-y-8 py-10 rounded-xl"
       >
         <h4 class="text-3xl tracking-wide font-semibold">
           Welcome To Modern Yardz
         </h4>
 
-        <p class="mt-1 font-light tracking-widest text-md text-[#adabab]">
+        <p class="mt-1 font-light tracking-widest text-sm lg:text-md text-[#adabab]">
           Modern Yardz is a full-service landscaping design and build company
           serving the San Diego community for over 40 years. From Chula Vista to
           Rancho Santa Fe, we specialize in creating custom outdoor spaces that
@@ -64,7 +64,7 @@ const stats = ref([
         </p>
       </div>
       <div
-        class="bg-[#2c2c2c] text-white h-[530px]  px-8  pt-10 rounded-xl"
+        class="bg-[#2c2c2c] text-white xl:h-[530px]  px-8  py-10 rounded-xl"
       >
         <h4 class="text-3xl tracking-wide mb-8 font-semibold">
           Welcome To Modern Yardz
@@ -85,7 +85,7 @@ const stats = ref([
         </p>
       </div>
       <div
-        class="bg-[#2c2c2c] text-white h-[530px]  p-6 rounded-xl flex items-center justify-center"
+        class="bg-[#2c2c2c] text-white xl:h-[530px]  rounded-xl flex items-center justify-center"
       >
         <img
           src=" @/assets/images/patio.png"
