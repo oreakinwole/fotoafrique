@@ -16,7 +16,7 @@
 </script>
 
 <template>
-  <div class="mt-20 lg:mt-28 lg:px-10 w-screen md:mt-20 md:mb-20">
+  <div class="mt-20 lg:mt-28 lg:px-10 pb-10 w-screen md:mt-20 md:mb-20">
     <div
       class="px-2 md:px-8 lg:px-20 text-center mb-20"
       data-aos="fade-up"

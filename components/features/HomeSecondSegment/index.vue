@@ -16,7 +16,7 @@
         />
 
         <div
-          class="absolute bottom-5 left-10 w-full p-4 tracking-widest text-white"
+          class="absolute bottom-5 xl:left-10 w-full p-4 tracking-widest text-white"
         >
           <NuxtLink to="/services/outdoor-kitchens">
             <h3 class="text-4xl font-bold flex items-center space-x-2">
@@ -39,7 +39,7 @@
         ></header>
 
         <div
-          class="absolute bottom-5 left-10 w-full p-4 tracking-widest text-white"
+          class="absolute bottom-5 xl:left-10 w-full p-4 tracking-widest text-white"
         >
           <NuxtLink to="/services/concrete-sd">
             <h3 class="text-4xl font-bold flex items-center space-x-2">
@@ -62,7 +62,7 @@
         ></header>
 
         <div
-          class="absolute bottom-5 left-10 w-full p-4 tracking-widest text-white"
+          class="absolute bottom-5 xl:left-10 w-full p-4 tracking-widest text-white"
         >
           <NuxtLink to="/services/artificial-turf">
             <h3 class="text-4xl font-bold flex items-center space-x-2">
@@ -87,7 +87,7 @@
         ></header>
 
         <div
-          class="absolute bottom-5 left-10 w-full p-4 tracking-widest text-white"
+          class="absolute bottom-5 xl:left-10 w-full p-4 tracking-widest text-white"
         >
           <NuxtLink to="/services/patios-and-pergolas">
             <h3 class="text-4xl font-bold flex items-center space-x-2">

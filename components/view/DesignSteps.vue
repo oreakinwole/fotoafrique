@@ -24,9 +24,9 @@ const galleryData = ref([
 
 <template>
   <div class="mt-28 px-4 lg:px-20 bg-green-50">
-    <div class="flex justify-between">
+    <div class="flex flex-wrap justify-between">
       <section class="max-w-lg">
-        <h4 class="hidden lg:block mt-8 text-5xl tracking-wide font-semibold">
+        <h4 class=" mt-8 text-5xl tracking-wide font-semibold">
           How Modernyardz<br />
           Works
         </h4>
@@ -50,7 +50,7 @@ const galleryData = ref([
         </div>
       </section>
 
-      <div class="hidden lg:block h-[500px] w-1/2 bg-blue-100 rounded-3xl">
+      <div class=" h-[500px] xl:w-1/2 bg-blue-100 rounded-3xl">
         <img
           src="@/assets/images/Screenshot_owner.png"
           alt="step 1"
@@ -62,7 +62,7 @@ const galleryData = ref([
   <div class="pt-14 px-4 lg:px-20">
     <div class="flex flex-row-reverse justify-between">
       <section class="max-w-lg">
-        <h4 class="hidden lg:block mt-8 text-5xl tracking-wide font-semibold">
+        <h4 class="mt-8 xl:text-5xl tracking-wide font-semibold">
           Step 1: Free Design Consultation
         </h4>
 
@@ -86,7 +86,7 @@ const galleryData = ref([
   <div class="px-4 lg:px-20">
     <div class="mt-12 flex justify-between">
       <section class="max-w-lg">
-        <h4 class="hidden lg:block text-5xl tracking-wide font-semibold">
+        <h4 class="xl:text-5xl tracking-wide font-semibold">
           Step 2: 2D Landscape Design
         </h4>
 
@@ -113,7 +113,7 @@ const galleryData = ref([
   <div class="px-4 lg:px-20">
     <div class="mt-12 flex flex-row-reverse justify-between">
       <section class="max-w-lg">
-        <h4 class="hidden lg:block mt-8 text-5xl tracking-wide font-semibold">
+        <h4 class=" mt-8 xl:text-5xl tracking-wide font-semibold">
           Step 3: 3D Design Renderings
         </h4>
 
@@ -138,7 +138,7 @@ const galleryData = ref([
   <div class="px-4 lg:px-20 pb-20">
     <div class="mt-12 flex justify-between">
       <section class="max-w-lg">
-        <h4 class="hidden lg:block text-5xl tracking-wide font-semibold">
+        <h4 class="xl:text-5xl tracking-wide font-semibold">
           Step 4: Com-<br />prehensive Quote
         </h4>
 

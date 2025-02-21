@@ -67,7 +67,7 @@ const stats = ref([
         class="bg-[#2c2c2c] text-white xl:h-[530px]  px-8  py-10 rounded-xl"
       >
         <h4 class="text-3xl tracking-wide mb-8 font-semibold">
-          Welcome To Modern Yardz
+          About us
         </h4>
         <hr class="opacity-15" />
         <h5 class="text-2xl tracking-wide my-6">Our mission</h5>
