@@ -14,36 +14,36 @@ const catNumber = ref(0);
 
 const catData = ref([
   {
-    title: ` <p class="font-playfairDisplay text-4xl font-medium">
+    title: ` <p class="  text-4xl font-medium">
           Paver
-          <span class="text-new-gray font-imperial text-5xl">G</span>allery
+          <span class="text-new-gray   text-5xl">G</span>allery
         </p>`,
     image: paverImg,
   },
   {
-    title: ` <p class="font-playfairDisplay text-4xl font-medium mt-10">
+    title: ` <p class="  text-4xl font-medium mt-10">
               Concrete
-              <span class="text-new-gray font-imperial text-5xl">G</span>allery
+              <span class="text-new-gray   text-5xl">G</span>allery
             </p>`,
     image: concreteImg,
   },
   {
-    title: `  <p class="font-playfairDisplay text-4xl font-medium">
+    title: `  <p class="  text-4xl font-medium">
                 Turf
-                <span class="text-new-gray font-imperial text-5xl">G</span>allery`,
+                <span class="text-new-gray   text-5xl">G</span>allery`,
     image: turfImg,
   },
   {
-    title: ` <p class="font-playfairDisplay text-4xl font-medium">
+    title: ` <p class="  text-4xl font-medium">
                 Patio Covers & 
-                <span class="text-new-gray font-imperial text-5xl">P</span>ergolas
+                <span class="text-new-gray   text-5xl">P</span>ergolas
               </p> `,
     image: patioImg,
   },
   {
-    title: ` <p class="font-playfairDisplay text-4xl font-medium">
+    title: ` <p class="  text-4xl font-medium">
                 Outdoor 
-                <span class="text-new-gray font-imperial text-5xl">K</span>ITCHENS
+                <span class="text-new-gray   text-5xl">K</span>ITCHENS
               </p>`,
     image: kitchenImg,
   },
@@ -56,8 +56,8 @@ onMounted(() => {
 
 <template>
   <div class="px-4 lg:px-20 lg:pt-6">
-    <p class="lg:hidden font-playfairDisplay text-4xl font-medium">
-      Portfoli<span class="text-new-gray font-imperial text-4xl">O</span>
+    <p class="lg:hidden   text-4xl font-medium">
+      Portfoli<span class="text-new-gray   text-4xl">O</span>
     </p>
 
     <ul class="flex lg:hidden justify-between max-w-[220px] font-medium">
@@ -77,8 +77,8 @@ onMounted(() => {
       </div>
 
       <div class="hidden lg:block w-2/3 h-full">
-        <p class="font-playfairDisplay text-7xl font-medium">
-          Portfoli<span class="text-new-gray font-imperial text-7xl">O</span>
+        <p class="  text-7xl font-medium">
+          Portfoli<span class="text-new-gray   text-7xl">O</span>
         </p>
         <ul class="flex justify-between max-w-[220px] font-medium">
           <li>Style</li>

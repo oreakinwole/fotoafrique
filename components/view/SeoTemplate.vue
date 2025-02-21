@@ -15,7 +15,7 @@ defineProps(["captImage", "title", "paragraph", "content", "moreContent"]);
       </div>
 
       <div class="flex-1 space-y-5 px-4">
-        <p class="font-playfairDisplay text-5xl font-medium">
+        <p class="  text-5xl font-medium">
           {{ title }}
         </p>
         <div class="text-brown text-sm max-w-lg" v-html="paragraph" />
@@ -24,8 +24,8 @@ defineProps(["captImage", "title", "paragraph", "content", "moreContent"]);
 
         <FilledButton
           background-color="black"
-          text="TRANSFORM YOUR YARD TODAY"
-          text-color="white"
+          text="TRANSFORM YOUR YARD"
+          text-color="white "
           class="w-full"
         />
       </div>

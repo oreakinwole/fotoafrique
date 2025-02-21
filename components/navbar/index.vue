@@ -77,7 +77,7 @@ watch(isBodyClicked, (val) => {
 
     <!--third layout -->
     <div
-      class="flex font-playfairDisplay tracking-widest justify-center items-center mt-6 text-lg"
+      class="flex   tracking-widest justify-center items-center mt-6 text-lg"
       :class="{
         'text-white': route.path === '/',
       }"
@@ -325,7 +325,7 @@ watch(isBodyClicked, (val) => {
                     class="w-[195px] h-[124px] flex justify-center items-center mt-5 ml-20 bg-navbar-color rounded-tl-[20px] rounded-tr-[20px] more-cont"
                   >
                     <p
-                      class="font-playfairDisplay text-gray-900 font-bold text-8xl"
+                      class="  text-gray-900 font-bold text-8xl"
                     >
                       ?
                     </p>
@@ -349,7 +349,7 @@ watch(isBodyClicked, (val) => {
                     class="w-[195px] h-[124px] flex justify-center items-center mt-5 ml-20 bg-navbar-color rounded-tl-[20px] rounded-tr-[20px] more-cont"
                   >
                     <p
-                      class="font-playfairDisplay text-gray-900 font-bold text-8xl"
+                      class="  text-gray-900 font-bold text-8xl"
                     >
                       @
                     </p>

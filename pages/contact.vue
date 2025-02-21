@@ -3,7 +3,7 @@
 <template>
   <div>
     <header class="text-center py-14 ">
-      <p class="text-2xl lg:text-5xl font-[500] font-playfairDisplay">
+      <p class="text-2xl lg:text-5xl font-[500]  ">
         We would love to hear from you
       </p>
       <p class="text-xs max-w-[220px] lg:max-w-sm mx-auto mt-2 lg:mt-6 text-brown">

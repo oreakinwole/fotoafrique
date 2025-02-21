@@ -6,7 +6,7 @@
   <div class="flex flex-col lg:flex-row justify-between items-center lg:px-20">
     <div class="p-6 flex-1">
       <h1
-        class="uppercase font-playfairDisplay text-center lg:text-left text-[2rem] lg:text-[3rem] font-semibold"
+        class="uppercase   text-center lg:text-left text-[2rem] lg:text-[3rem] font-semibold"
       >
         Partner with Our Trusted Finance Providers
       </h1>

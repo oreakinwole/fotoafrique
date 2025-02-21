@@ -5,7 +5,7 @@
   <!-- <div>
     <div class="lg:pl-28 ">
      <div class="px-4 lg:px-0">
-      <p class="font-playfairDisplay text-4xl lg:text-6xl pb-5 lg:py-10 font-[500]">
+      <p class="  text-4xl lg:text-6xl pb-5 lg:py-10 font-[500]">
         Custom <span class="italic text-new-gray">3D Design</span> Assets
       </p>
       <ul class="flex justify-between max-w-[280px] font-medium">

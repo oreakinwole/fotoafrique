@@ -6,14 +6,14 @@
 <template>
     <div>
       <div class="px-4 lg:px-20">
-        <!-- <p class="lg:hidden font-playfairDisplay text-4xl font-medium">
-          Portfoli<span class="text-new-gray font-imperial text-4xl">O</span>
+        <!-- <p class="lg:hidden   text-4xl font-medium">
+          Portfoli<span class="text-new-gray   text-4xl">O</span>
         </p> -->
            <section>
       
-            <p class="font-playfairDisplay text-4xl font-medium mt-10">
+            <p class="  text-4xl font-medium mt-10">
               Paver 
-              <span class="text-new-gray font-imperial text-5xl">G</span>allery
+              <span class="text-new-gray   text-5xl">G</span>allery
             </p>
 
             <div class="grid grid-cols-3 gap-4 mt-5">
@@ -151,9 +151,9 @@
           </section>
   
           <section class="h-[420px] lg:h-[680px]">
-            <p class="font-playfairDisplay text-4xl font-medium mt-10">
+            <p class="  text-4xl font-medium mt-10">
               Concrete
-              <span class="text-new-gray font-imperial text-5xl">G</span>allery
+              <span class="text-new-gray   text-5xl">G</span>allery
             </p>
 
             <div class="grid grid-cols-3 gap-4 mt-5">
@@ -283,9 +283,9 @@
   
           <section class="h-[510px] lg:h-[680px] mt-[270rem]">
             <div>
-              <p class="font-playfairDisplay text-4xl font-medium">
+              <p class="  text-4xl font-medium">
                 Turf
-                <span class="text-new-gray font-imperial text-5xl">G</span>allery
+                <span class="text-new-gray   text-5xl">G</span>allery
               </p> 
 
               <div class="grid grid-cols-3 gap-4 mt-5">
@@ -421,9 +421,9 @@
 
           <section class="h-[510px] lg:h-[680px] mt-[270rem]">
             <div>
-              <p class="font-playfairDisplay text-4xl font-medium">
+              <p class="  text-4xl font-medium">
                 Patio Covers & 
-                <span class="text-new-gray font-imperial text-5xl">P</span>ergolas
+                <span class="text-new-gray   text-5xl">P</span>ergolas
               </p> 
 
               <div class="grid grid-cols-3 gap-4 mt-5">
@@ -558,9 +558,9 @@
 
           <section class="h-[510px] lg:h-[680px] mt-[270rem]">
             <div>
-              <p class="font-playfairDisplay text-4xl font-medium">
+              <p class="  text-4xl font-medium">
                 Outdoor 
-                <span class="text-new-gray font-imperial text-5xl">K</span>ITCHENS
+                <span class="text-new-gray   text-5xl">K</span>ITCHENS
               </p> 
 
               <div class="grid grid-cols-3 gap-4 mt-5">

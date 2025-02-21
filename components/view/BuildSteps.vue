@@ -26,14 +26,8 @@ const galleryData = ref([
   <div class="mt-28 px-4 lg:px-20 bg-green-50">
     <div class="flex justify-between">
       <section class="max-w-lg">
-        <h4
-          class="hidden lg:block mt-8 font-playfairDisplay text-5xl tracking-wide font-semibold"
-        >
-          How Yardzen
-          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >W
-          </span>
-          orks
+        <h4 class="hidden lg:block mt-8 text-5xl tracking-wide font-semibold">
+          How Modernyardz Works
         </h4>
 
         <div class="text-black my-6 space-y-8 leading-loose">
@@ -67,14 +61,8 @@ const galleryData = ref([
   <div class="pt-14 px-4 lg:px-20">
     <div class="flex flex-row-reverse justify-between">
       <section class="max-w-lg">
-        <h4
-          class="hidden lg:block mt-8 font-playfairDisplay text-5xl tracking-wide font-semibold"
-        >
-          Step 1:
-          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >P
-          </span>
-          re-Construction Meeting
+        <h4 class="hidden lg:block mt-8 text-5xl tracking-wide font-semibold">
+          Step 1: Pre-Construction Meeting
         </h4>
 
         <div class="text-black my-6 space-y-4 leading-loose">
@@ -98,14 +86,8 @@ const galleryData = ref([
   <div class="px-4 lg:px-20">
     <div class="mt-12 flex justify-between">
       <section class="max-w-lg">
-        <h4
-          class="hidden lg:block font-playfairDisplay text-5xl tracking-wide font-semibold"
-        >
-          Step 2:
-          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >P
-          </span>
-          roject Mobilization
+        <h4 class="hidden lg:block text-5xl tracking-wide font-semibold">
+          Step 2: Project Mobilization
         </h4>
 
         <div class="text-black my-6 space-y-4 leading-loose">
@@ -134,14 +116,8 @@ const galleryData = ref([
   <div class="px-4 lg:px-20">
     <div class="mt-12 flex flex-row-reverse justify-between">
       <section class="max-w-lg">
-        <h4
-          class="hidden lg:block mt-8 font-playfairDisplay text-5xl tracking-wide font-semibold"
-        >
-          Step 3:
-          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >P
-          </span>
-          roject Management
+        <h4 class="hidden lg:block mt-8 text-5xl tracking-wide font-semibold">
+          Step 3: Project Management
         </h4>
 
         <div class="text-black my-6 space-y-4 leading-loose">
@@ -165,17 +141,11 @@ const galleryData = ref([
     </div>
   </div>
 
-  <div class="px-4 lg:px-20">
+  <div class="px-4 lg:px-20 pb-20">
     <div class="mt-12 flex justify-between">
       <section class="max-w-lg">
-        <h4
-          class="hidden lg:block font-playfairDisplay text-5xl tracking-wide font-semibold"
-        >
-          Step 4:
-          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >P
-          </span>
-          roject Execution
+        <h4 class="hidden lg:block text-5xl tracking-wide font-semibold">
+          Step 4: Project Execution
         </h4>
 
         <div class="text-black my-6 space-y-4 leading-loose">
@@ -204,8 +174,8 @@ const galleryData = ref([
   </div>
 
   <!-- 
-  <p class="font-playfairDisplay text-4xl text-center font-medium mt-28">
-    <span class="text-new-gray font-imperial text-5xl">P </span>rojects we have
+  <p class="  text-4xl text-center font-medium mt-28">
+    <span class="text-new-gray   text-5xl">P </span>rojects we have
     worked on
   </p>
 

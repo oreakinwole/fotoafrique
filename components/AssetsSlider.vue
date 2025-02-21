@@ -27,9 +27,9 @@ const prev = () => carousel.value.prev();
 
 <template>
   <section class="pt-48 space-y-5 max-w-md">
-    <p class="text-4xl font-medium font-playfairDisplay">
+    <p class="text-4xl font-medium  ">
       More
-      <span class="text-new-gray font-imperial text-5xl uppercase">S </span
+      <span class="text-new-gray   text-5xl uppercase">S </span
       >ervices
     </p>
 

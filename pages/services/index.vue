@@ -32,7 +32,7 @@ onMounted(() => {
 
         <div class="absolute bottom-28 left-20 z-10">
           <h2
-            class="text-white leading-tight font-playfairDisplay font-[600] text-5xl"
+            class="text-white leading-tight   font-[600] text-5xl"
           >
             Sweating the Small Stuff<br />
             For
@@ -142,7 +142,7 @@ onMounted(() => {
 
         <div class="absolute bottom-28 left-5 z-10">
           <h2
-            class="text-white leading-tight font-playfairDisplay font-[600] text-5xl"
+            class="text-white leading-tight   font-[600] text-5xl"
           >
             Sweating the Small Stuff<br />
             For

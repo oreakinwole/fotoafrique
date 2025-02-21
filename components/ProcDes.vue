@@ -58,9 +58,9 @@ const handlePrev = () => {
       data-aos="fade-up"
       data-aos-easing="linear"
     >
-      <h4 class="font-playfairDisplay tracking-wide text-4xl lg:text-5xl font-semibold mb-2">
+      <h4 class="  tracking-wide text-4xl lg:text-5xl font-semibold mb-2">
         Our Design Pro<span
-          class="text-[#A89C93] font-imperial font-normal text-5xl lg:text-6xl"
+          class="text-[#A89C93]   font-normal text-5xl lg:text-6xl"
           >C</span
         >ess
       </h4>

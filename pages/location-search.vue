@@ -42,8 +42,8 @@ const fetchPages = async () => {
     data-aos="fade-up"
     data-aos-easing="linear"
   >
-    <h4 class="font-playfairDisplay text-4xl font-[500] mb-4">
-      Desi<span class="text-[#A89C93] font-imperial text-5xl">G </span>n
+    <h4 class="  text-4xl font-[500] mb-4">
+      Desi<span class="text-[#A89C93]   text-5xl">G </span>n
       Packages
     </h4>
 
@@ -61,8 +61,8 @@ const fetchPages = async () => {
       data-aos-easing="linear"
     >
       <div>
-        <h4 class="font-playfairDisplay text-5xl tracking-wide font-[500]">
-          Desi<span class="text-[#A89C93] font-imperial text-6xl">G </span>n
+        <h4 class="  text-5xl tracking-wide font-[500]">
+          Desi<span class="text-[#A89C93]   text-6xl">G </span>n
           Packages
         </h4>
       </div>

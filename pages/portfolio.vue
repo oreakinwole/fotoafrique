@@ -145,8 +145,8 @@ const handleChangeView = (index) => (isViewingGallery.value = index);
 
 <template>
   <div class="px-4 lg:px-20 pt-6">
-    <p class="lg:hidden font-playfairDisplay text-4xl font-medium">
-      Portfoli<span class="text-new-gray font-imperial text-4xl">O</span>
+    <p class="lg:hidden   text-4xl font-medium">
+      Portfolio
     </p>
 
     <!-- <ul class="flex lg:hidden justify-between max-w-[220px] font-medium">
@@ -166,8 +166,8 @@ const handleChangeView = (index) => (isViewingGallery.value = index);
       </div>
 
       <div class="hidden lg:block w-2/3 h-full">
-        <p class="font-playfairDisplay text-7xl font-medium">
-          Portfoli<span class="text-new-gray font-imperial text-7xl">O</span>
+        <p class="  text-7xl font-medium">
+          Portfolio
         </p>
 
         <ul class="flex space-x-4 font-medium">

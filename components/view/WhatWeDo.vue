@@ -5,9 +5,9 @@
     <div class="mt-20 min-h-[720px] flex justify-between">
       <section class="max-w-lg">
         <h4
-          class="hidden lg:block font-playfairDisplay text-5xl tracking-wide font-semibold"
+          class="hidden lg:block   text-5xl tracking-wide font-semibold"
         >
-          What We <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl">D </span
+          What We <span class="text-[#A89C93]   font-normal lg:text-7xl">D </span
             >o
         </h4>
 

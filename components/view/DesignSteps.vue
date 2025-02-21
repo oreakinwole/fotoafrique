@@ -26,14 +26,9 @@ const galleryData = ref([
   <div class="mt-28 px-4 lg:px-20 bg-green-50">
     <div class="flex justify-between">
       <section class="max-w-lg">
-        <h4
-          class="hidden lg:block mt-8 font-playfairDisplay text-5xl tracking-wide font-semibold"
-        >
+        <h4 class="hidden lg:block mt-8 text-5xl tracking-wide font-semibold">
           How Modernyardz<br />
-          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >W
-          </span>
-          orks
+          Works
         </h4>
 
         <div class="text-black my-6 space-y-8 leading-loose">
@@ -67,14 +62,8 @@ const galleryData = ref([
   <div class="pt-14 px-4 lg:px-20">
     <div class="flex flex-row-reverse justify-between">
       <section class="max-w-lg">
-        <h4
-          class="hidden lg:block mt-8 font-playfairDisplay text-5xl tracking-wide font-semibold"
-        >
-          Step 1:
-          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >F
-          </span>
-          ree Design Consultation
+        <h4 class="hidden lg:block mt-8 text-5xl tracking-wide font-semibold">
+          Step 1: Free Design Consultation
         </h4>
 
         <div class="text-black my-6 space-y-4 leading-loose">
@@ -97,15 +86,8 @@ const galleryData = ref([
   <div class="px-4 lg:px-20">
     <div class="mt-12 flex justify-between">
       <section class="max-w-lg">
-        <h4
-          class="hidden lg:block font-playfairDisplay text-5xl tracking-wide font-semibold"
-        >
-          Step 2:
-          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >2
-          </span>
-
-          D Landscape Design
+        <h4 class="hidden lg:block text-5xl tracking-wide font-semibold">
+          Step 2: 2D Landscape Design
         </h4>
 
         <div class="text-black my-6 space-y-4 leading-loose">
@@ -131,14 +113,8 @@ const galleryData = ref([
   <div class="px-4 lg:px-20">
     <div class="mt-12 flex flex-row-reverse justify-between">
       <section class="max-w-lg">
-        <h4
-          class="hidden lg:block mt-8 font-playfairDisplay text-5xl tracking-wide font-semibold"
-        >
-          Step 3:
-          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >3
-          </span>
-          D Design Renderings
+        <h4 class="hidden lg:block mt-8 text-5xl tracking-wide font-semibold">
+          Step 3: 3D Design Renderings
         </h4>
 
         <div class="text-black my-6 space-y-4 leading-loose">
@@ -159,17 +135,11 @@ const galleryData = ref([
     </div>
   </div>
 
-  <div class="px-4 lg:px-20">
+  <div class="px-4 lg:px-20 pb-20">
     <div class="mt-12 flex justify-between">
       <section class="max-w-lg">
-        <h4
-          class="hidden lg:block font-playfairDisplay text-5xl tracking-wide font-semibold"
-        >
-          Step 4:
-          <span class="text-[#A89C93] font-imperial font-normal lg:text-7xl"
-            >C
-          </span>
-          om-<br>prehensive Quote
+        <h4 class="hidden lg:block text-5xl tracking-wide font-semibold">
+          Step 4: Com-<br />prehensive Quote
         </h4>
 
         <div class="text-black my-6 space-y-4 leading-loose">
@@ -187,9 +157,7 @@ const galleryData = ref([
         />
       </div>
     </div>
-  </div>
-
-  <footer class="lg:px-20 mt-14 text-center">
+    <footer class="lg:px-20 mt-14 text-center">
     <p class="text-[#454545] font-semibold mb-4">Ready to Get Started?</p>
     <FilledButton
       background-color="black"
@@ -198,10 +166,13 @@ const galleryData = ref([
       class="uppercase w-[90%] font-semibold lg:w-[290px]"
     />
   </footer>
+  </div>
+
+ 
 
   <!-- 
-  <p class="font-playfairDisplay text-4xl text-center font-medium mt-28">
-    <span class="text-new-gray font-imperial text-5xl">P </span>rojects we have
+  <p class="  text-4xl text-center font-medium mt-28">
+    <span class="text-new-gray   text-5xl">P </span>rojects we have
     worked on
   </p>
 

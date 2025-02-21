@@ -12,7 +12,7 @@
       </div>
 
       <div class="w-1/2 h-full space-y-5">
-        <p class="font-playfairDisplay text-5xl font-medium">
+        <p class="  text-5xl font-medium">
           Small Yard, Big Design
         </p>
         <p class="text-brown text-sm max-w-lg">
@@ -53,9 +53,9 @@
     <section class="pt-48">
       <div class="flex max-w-screen-md mx-auto gap-x-12">
         <div class="w-1/2 pt-16">
-          <p class="text-4xl font-medium font-playfairDisplay">
+          <p class="text-4xl font-medium  ">
             Package
-            <span class="text-new-gray font-imperial text-5xl uppercase"
+            <span class="text-new-gray   text-5xl uppercase"
               >D </span
             >etails
           </p>
@@ -88,9 +88,9 @@
     </section>
 
     <section class="pt-48 space-y-5 max-w-md">
-      <p class="text-4xl font-medium font-playfairDisplay">
+      <p class="text-4xl font-medium  ">
         More
-        <span class="text-new-gray font-imperial text-5xl uppercase">3D </span
+        <span class="text-new-gray   text-5xl uppercase">3D </span
         >Assets
       </p>
 
