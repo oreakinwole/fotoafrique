@@ -21,10 +21,17 @@ const whyUs = [
       "From design to build, we handle every detail, ensuring a seamless experience.",
   },
 ];
+
+const stats = ref([
+  { id: 1, value: 2000, label: "Satisfied Customers" },
+  { id: 2, value: 25, label: "Years of Experience" },
+  { id: 3, value: 1000, label: "Design Consultations" },
+  { id: 4, value: 100, label: "Transparency", suffix: "%" },
+]);
 </script>
 
 <template>
-  <div class="pt-24 px-4 lg:px-40 bg-[#000] text-white">
+  <div class="py-24 px-4 lg:px-40 bg-[#000] text-white">
     <div className="grid grid-cols-2 grid-rows-2 gap-4 ">
       <div className="bg-[#2c2c2c] h-[530px]  rounded-xl ">
         <img
@@ -84,6 +91,44 @@ const whyUs = [
           class="w-full h-full object-cover rounded-xl"
         />
       </div>
+    </div>
+
+    <div class="mx-auto px-4 sm:px-6 lg:px-8 mt-20">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div
+          v-for="(stat, index) in stats"
+          :key="stat.id"
+          class="text-center p-6 rounded-2xl shadow-md"
+        >
+          <h3
+            v-if="index === stats.length - 1"
+            class="text-4xl text-white align-middle"
+          >
+            {{ stat.value }} %
+          </h3>
+
+          <h3
+          v-else
+          class="text-4xl text-white align-middle">
+            {{ stat.value }}
+            <span class="text-[25px] text-[#ab856a] align-top">+</span>
+          </h3>
+          <p class="mt-6 whitespace-nowrap text-md text-white">
+            {{ stat.label }}
+          </p>
+        </div>
+
+        <!-- <count-up :startVal="0" :endVal="2022" :duration="4"></count-up> -->
+      </div>
+    </div>
+
+    <div class="text-center mt-10">
+      <FilledButton
+        background-color="white"
+        text="Book Your Free Consultation Today"
+        text-color="black"
+        class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
+      />
     </div>
   </div>
 </template>

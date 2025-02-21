@@ -2,459 +2,57 @@
 
 <template>
   <ViewDesignProcessOld />
-  <ViewTestimonial />
 
-  <div
-    class="mt-24 lg:hidden text-center"
-    data-aos="fade-up"
-    data-aos-easing="linear"
-  >
-    <div>
-      <h4 class="font-playfairDisplay text-5xl font-medium">
-        Our Servi<span class="text-[#A89C93] font-imperial text-6xl">C </span>es
-      </h4>
-    </div>
-  </div>
-
-  <div class="mt-12 my-28 lg:flex">
-    <div
-      class="ml-32 mt-10 hidden lg:block"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-    >
-      <div>
-        <h4 class="text-5xl font-semibold leading-normal">OUR SERVICES</h4>
+  
+  <div class="py-24 px-4 lg:px-40 bg-[#000] text-white">
+    <div className="grid grid-cols-2 grid-rows-2 gap-4 ">
+      <div className="bg-[#2c2c2c] h-[530px]  rounded-xl ">
+        <img
+              src="/images/homesecondsegment/imgs/Renovation.svg"
+          alt="team photo"
+          class="w-full h-full object-cover rounded-xl"
+        />
       </div>
-
-      <!-- <p
-        class="text-[#665244] text-xs    max-w-lg leading-relaxed"
+      <div className="bg-[#2c2c2c] h-[530px]  rounded-xl ">
+        <img
+              src="@/assets/images/services/concrete.png"
+          alt="team photo"
+          class="w-full h-full object-cover rounded-xl"
+        />
+      </div>
+      <div className="bg-[#2c2c2c] h-[530px]  rounded-xl ">
+        <img
+               src="@/assets/images/services/turf.png"
+          alt="team photo"
+          class="w-full h-full object-cover rounded-xl"
+        />
+      </div>
+      <div
+        className="bg-[#2c2c2c] text-white h-[530px] rounded-xl flex items-center justify-center"
       >
-       Here are our main services
-      </p> -->
-
-      <FilledButton
-        background-color="black"
-        text="SCHEDULE A CALL"
-        text-color="white"
-        class="mt-16"
-      />
-    </div>
-
-    <div data-aos-duration="2000" data-aos-delay="400" data-aos="fade-in">
-      <div class="ml-20 hidden lg:block">
-        <NuxtMarquee class="max-w-[95em]">
-          <div class="flex flex-row gap-8">
-            <div>
-              <NuxtLink to="/services/pavers-san-diego">
-                <div
-                  class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
-                >
-                  <img
-                    src="@/assets/images/services/paver.png"
-                    alt="frontyard picture"
-                    class="w-full h-full rounded-xl"
-                  />
-                  <div
-                    class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                  ></div>
-                </div>
-              </NuxtLink>
-
-              <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-medium text-[18px]">Paver Patios</h4>
-                <p class="text-[16px]">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697"
-                      stroke="black"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M3.5 12H20.33"
-                      stroke="black"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <NuxtLink to="/services/concrete-sd">
-                <div
-                  class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
-                >
-                  <img
-                    src="@/assets/images/services/concrete.png"
-                    alt="backyard picture"
-                    class="w-full h-full rounded-xl"
-                  />
-                  <div
-                    class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                  ></div>
-                </div>
-              </NuxtLink>
-
-              <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-medium text-[18px]">Concrete Patios</h4>
-                <p class="text-[16px]">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697"
-                      stroke="black"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M3.5 12H20.33"
-                      stroke="black"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <NuxtLink to=" /services/artificial-turf">
-                <div
-                  class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
-                >
-                  <img
-                    src="@/assets/images/services/turf.png"
-                    alt="fullyard picture"
-                    class="w-full h-full rounded-xl"
-                  />
-                  <div
-                    class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                  ></div>
-                </div>
-              </NuxtLink>
-
-              <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-medium text-[18px]">Artificial Turf</h4>
-                <p class="text-[16px]">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697"
-                      stroke="black"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M3.5 12H20.33"
-                      stroke="black"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <NuxtLink to="/services/outdoor-kitchens">
-                <div
-                  class="relative w-[340px] h-[420px] cursor-pointer group explore-item"
-                >
-                  <img
-                    src="/images/homesecondsegment/imgs/Renovation.svg"
-                    alt="renovation picture"
-                    class="w-full h-full rounded-xl"
-                  />
-                  <div
-                    class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                  ></div>
-                </div>
-              </NuxtLink>
-
-              <div class="flex flex-row justify-between mt-5">
-                <h4 class="font-medium text-[18px]">Outdoor Kitchens</h4>
-                <p class="text-[16px]">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697"
-                      stroke="black"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M3.5 12H20.33"
-                      stroke="black"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div>
-            <div class="flex flex-row justify-between mt-12">
-              <div class="w-[67.8rem] h-[1px] bg-[#A89C93]"></div>
-
-              <div
-                class="flex flex-row gap-8 justify-end mr-[17.8rem] font-[300] mt-[-9px]"
-              >
-                <img
-                  src="/images/homesecondsegment/icons/lst.svg"
-                  alt="less than icon"
-                  class="cursor-pointer"
-                />
-                <img
-                  src="/images/homesecondsegment/icons/grt.svg"
-                  alt="graeter than icon"
-                  class="cursor-pointer"
-                />
-              </div>
-            </div>
-          </div> -->
-        </NuxtMarquee>
-      </div>
-
-      <div class="lg:hidden text-center md:w-full md:mx-[1px]">
-        <div class="flex flex-wrap justify-center gap-2 lg:gap-8 md:w-full">
-          <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="/services/patios-and-pergolas">
-              <div
-                class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
-              >
-                <img
-                  src="@/assets/images/services/paver.png"
-                  alt="frontyard picture"
-                  class="w-full h-full rounded-xl"
-                />
-                <div
-                  class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                ></div>
-              </div>
-            </NuxtLink>
-
-            <div class="flex justify-between mt-5">
-              <h4 class="font-medium text-[18px] md:mx-2">Paver Patios</h4>
-              <p class="text-[16px]">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 12H20.33"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </p>
-            </div>
-          </div>
-
-          <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="/services/landscape-sandiego">
-              <div
-                class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
-              >
-                <img
-                  src="@/assets/images/services/concrete.png"
-                  alt="backyard picture"
-                  class="w-full h-full rounded-xl"
-                />
-                <div
-                  class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                ></div>
-              </div>
-            </NuxtLink>
-
-            <div class="flex justify-between mt-5">
-              <h4 class="font-medium text-[18px] md:mx-2">Concrete Patios</h4>
-              <p class="text-[16px]">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 12H20.33"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </p>
-            </div>
-          </div>
-
-          <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="/services/pavers-san-diego">
-              <div
-                class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
-              >
-                <img
-                  src="@/assets/images/services/turf.png"
-                  alt="fullyard picture"
-                  class="w-full h-full rounded-xl"
-                />
-                <div
-                  class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                ></div>
-              </div>
-            </NuxtLink>
-
-            <div class="flex justify-between mt-5">
-              <h4 class="font-medium text-[18px] md:mx-2">Artificial Turf</h4>
-              <p class="text-[16px]">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 12H20.33"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </p>
-            </div>
-          </div>
-          <div class="w-[47%] md:w-[49%]">
-            <NuxtLink to="/services/landscape-sandiego">
-              <div
-                class="relative w-full h-[250px] md:h-[270px] cursor-pointer group explore-item"
-              >
-                <img
-                  src="@/assets/images/services/turf.png"
-                  alt="fullyard picture"
-                  class="w-full h-full rounded-xl"
-                />
-                <div
-                  class="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"
-                ></div>
-              </div>
-            </NuxtLink>
-
-            <div class="flex justify-between mt-5">
-              <h4 class="font-medium text-[18px] md:mx-2">Outdoor Kitchens</h4>
-              <p class="text-[16px]">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3.5 12H20.33"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <FilledButton
-          background-color="black"
-          text="SCHEDULE A CALL"
-          text-color="white"
-          class="mt-16 w-[90%] font-semibold lg:mt-28 lg-hidden mx-auto"
+        <img
+             src="@/assets/images/services/paver.png"
+          alt="team photo"
+          class="w-full h-full object-cover rounded-xl"
         />
       </div>
     </div>
+
+  
+
+    <div class="text-center mt-10">
+      <FilledButton
+        background-color="white"
+        text="Book Your Free Consultation Today"
+        text-color="black"
+        class="uppercase w-[90%] font-semibold lg:w-[290px] mx-auto"
+      />
+    </div>
   </div>
+ 
+
+  <ViewTestimonial />
+
 
   <!-- <ViewBeforeAndAfter /> -->
 </template>
