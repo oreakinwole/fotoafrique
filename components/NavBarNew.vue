@@ -112,7 +112,7 @@ watch(isBodyClicked, (val) => {
 
       <div class="flex items-center gap-12">
         <p
-        role="button"
+          role="button"
           @click="handleBookConsult"
           class="uppercase text-xs hover:bg-opacity-80 bg-[#A89C93] p-2.5 px-6 text-white rounded-lg"
         >
@@ -370,6 +370,25 @@ watch(isBodyClicked, (val) => {
                     isServicesOpen = false;
                   "
                 >
+                  <NuxtLink to="/build-steps">Build</NuxtLink>
+                </li>
+
+                <li
+                  class="text-5xl font-semibold"
+                  @click="
+                    isShowMobileNav = false;
+                    isServicesOpen = false;
+                  "
+                >
+                  <NuxtLink to="/design">Design</NuxtLink>
+                </li>
+                <li
+                  class="text-5xl font-semibold"
+                  @click="
+                    isShowMobileNav = false;
+                    isServicesOpen = false;
+                  "
+                >
                   <NuxtLink to="/finance">Finance</NuxtLink>
                 </li>
 
@@ -381,26 +400,6 @@ watch(isBodyClicked, (val) => {
                   "
                 >
                   <NuxtLink to="/contact">Contact Us</NuxtLink>
-                </li>
-
-                <li
-                  class="text-5xl font-semibold"
-                  @click="
-                    isShowMobileNav = false;
-                    isServicesOpen = false;
-                  "
-                >
-                  <NuxtLink to="/#testimonials">Reviews</NuxtLink>
-                </li>
-
-                <li
-                  class="text-5xl font-semibold"
-                  @click="
-                    isShowMobileNav = false;
-                    isServicesOpen = false;
-                  "
-                >
-                  <NuxtLink to="/">Privacy Policy</NuxtLink>
                 </li>
               </ul>
             </section>
