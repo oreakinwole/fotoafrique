@@ -32,8 +32,8 @@ const stats = ref([
 
 <template>
   <div class="py-24 px-4 lg:px-40 bg-[#000] text-white">
-    <div className="grid grid-cols-2 grid-rows-2 gap-4 ">
-      <div className="bg-[#2c2c2c] h-[530px]  rounded-xl ">
+    <div class="grid grid-cols-2 grid-rows-2 gap-6 p-4">
+      <div class="bg-[#2c2c2c] h-[530px]   rounded-xl ">
         <img
           src="https://ucarecdn.com/133fd044-a6ad-4994-b151-522479630cb4/Img.jpg"
           alt="team photo"
@@ -41,7 +41,7 @@ const stats = ref([
         />
       </div>
       <div
-        className="bg-[#2c2c2c] text-white h-[530px] px-8 space-y-8 pt-10 rounded-xl"
+        class="bg-[#2c2c2c] text-white h-[530px]  px-8 space-y-8 pt-10 rounded-xl"
       >
         <h4 class="text-3xl tracking-wide font-semibold">
           Welcome To Modern Yardz
@@ -63,7 +63,9 @@ const stats = ref([
           as they are beautiful.
         </p>
       </div>
-      <div className="bg-[#2c2c2c] text-white h-[530px] px-8  pt-10 rounded-xl">
+      <div
+        class="bg-[#2c2c2c] text-white h-[530px]  px-8  pt-10 rounded-xl"
+      >
         <h4 class="text-3xl tracking-wide mb-8 font-semibold">
           Welcome To Modern Yardz
         </h4>
@@ -83,7 +85,7 @@ const stats = ref([
         </p>
       </div>
       <div
-        className="bg-[#2c2c2c] text-white h-[530px] p-6 rounded-xl flex items-center justify-center"
+        class="bg-[#2c2c2c] text-white h-[530px]  p-6 rounded-xl flex items-center justify-center"
       >
         <img
           src=" @/assets/images/patio.png"
@@ -107,9 +109,7 @@ const stats = ref([
             {{ stat.value }} %
           </h3>
 
-          <h3
-          v-else
-          class="text-4xl text-white align-middle">
+          <h3 v-else class="text-4xl text-white align-middle">
             {{ stat.value }}
             <span class="text-[25px] text-[#ab856a] align-top">+</span>
           </h3>

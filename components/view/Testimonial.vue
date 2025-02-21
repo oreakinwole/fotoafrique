@@ -5,7 +5,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 <template>
   <div
     id="testimonials"
-    class="mt-20 bg-[#F9F4EE] py-28 px-4 lg:px-28 w-screen"
+    class=" bg-[#e7e7e7] py-28 px-4 lg:px-28 w-screen"
   >
     <div class="px-4 lg:px-20 text-center mb-12">
       <h4 class="tracking-wide text-5xl font-semibold">CLIENT SPOTLIGHT</h4>
@@ -73,22 +73,31 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
         </ImgComparisonSlider>
 
         <footer class="mt-6 max-w-[90%]">
-          <p class="lg:text-3xl font-bold mb-4 tracking-wide">Rebecca</p>
-          <div class="mb-3">
-            <img src="@/assets/images/testimonial/rebecca.png" width="40" />
-          </div>
-          <span class="text-4xl">“</span>
-
-          <p
-            class="text-sm font-light  lg:text-md  text-justify"
-          >
-            Honestly can't say enough good things about this company as we are
+         <div class="flex items-center ">
+          <IconStar v-for="i in 5" :key="i" class="w-8 h-8 text-yellow-500" />
+         </div>
+          <p class="text-sm pt-4 lg:text-md text-justify">
+            "Honestly can't say enough good things about this company as we are
             SO THRILLED with the finished product. We hired them to demo and
             install all new pavers, grass turf and put in new drainage and the
             difference to our home's entrance way and side yard is truly night
             and day! I never thought I would be so excited about turf and cement
-            until I saw what they could do.
+            until I saw what they could do."
           </p>
+
+          <div class="mb-3 flex space-x-4 items-center mt-8">
+            <div>
+              <img src="@/assets/images/testimonial/rebecca.png" width="50" />
+            </div>
+
+            <div class="space-y-1">
+              <p class="text-md font-medium">Rebecca</p>
+              <p class="flex items-center space-x-1">
+                <IconBadge class="w-5 h-5" />
+                <span>Verified Customer</span>
+              </p>
+            </div>
+          </div>
         </footer>
       </div>
 
@@ -140,20 +149,32 @@ import { ImgComparisonSlider } from "@img-comparison-slider/vue";
         </ImgComparisonSlider>
 
         <footer class="mt-6 max-w-[90%]">
-          <p class="lg:text-3xl font-bold mb-4 tracking-wide">Ryan</p>
-          <div class="mb-3">
-            <img src="@/assets/images/testimonial/rtorres.png" width="40" />
-          </div>
-          <span class="text-4xl">“</span>
-
-          <p class="text-sm font-light lg:text-md  text-justify">
-            Stumbled across Modern Yardz while Googling landscapers in San Diego
-            County. Immediately was drawn to them based on their reviews and the
-            work portrayed on their website. Submitted a free consultation and
-            was immediately contacted by Weston. On the day of the consultation,
-            Weston reviewed a poorly drawn model of the project we wanted and he
-            came up on the spot with certain revisions to the project.
+          <div class="flex items-center ">
+          <IconStar v-for="i in 5" :key="i" class="w-8 h-8 text-yellow-500" />
+         </div>
+          <p class="text-sm pt-4 lg:text-md text-justify">
+            "Stumbled across Modern Yardz while Googling landscapers in San
+            Diego County. Immediately was drawn to them based on their reviews
+            and the work portrayed on their website. Submitted a free
+            consultation and was immediately contacted by Weston. On the day of
+            the consultation, Weston reviewed a poorly drawn model of the
+            project we wanted and he came up on the spot with certain revisions
+            to the project."
           </p>
+
+          <div class="mb-3 flex space-x-4 items-center mt-4">
+            <div>
+              <img src="@/assets/images/testimonial/rtorres.png" width="50" />
+            </div>
+
+            <div class="space-y-1">
+              <p class="text-md font-medium">Ryan</p>
+              <p class="flex items-center space-x-1">
+                <IconBadge class="w-5 h-5" />
+                <span>Verified Customer</span>
+              </p>
+            </div>
+          </div>
         </footer>
       </div>
     </div>
