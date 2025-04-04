@@ -2,11 +2,11 @@
 defineProps(["text", "backgroundColor", "textColor", "noAction", "width"]);
 
 const handleBookConsult = () => {
-  const calendly = useCalendly();
+  // const calendly = useCalendly();
 
-  calendly.initPopupWidget({
-    url: "https://calendly.com/d/2sx-n9t-6g7",
-  });
+  // calendly.initPopupWidget({
+  //   url: "https://calendly.com/d/2sx-n9t-6g7",
+  // });
 };
 </script>
 

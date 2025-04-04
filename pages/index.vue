@@ -5,10 +5,7 @@ import "animate.css";
 
 <template>
   <div class="landing-container">
-    <HeroNew />
-    <FeaturesHomeSecondSegment />
-    <FeaturesHomeThirdSegment />
-    <FeaturesHomeLastSegment />
+    <EventPage />
   </div>
 </template>
 
