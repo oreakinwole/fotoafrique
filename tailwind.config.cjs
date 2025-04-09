@@ -39,6 +39,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        opensans: ['Open Sans', 'sans-serif'],
         playfairDisplay : ['Playfair Display', 'serif'],
         imperial : ["Imperial Script", 'system-ui']
       },
